@@ -4,6 +4,8 @@ About
 This project is intended to be an up-to-date reference for developers using the [Google v8](http://code.google.com/p/v8/)
 api. The reference is automatically created by [doxygen](http://www.stack.nl/~dimitri/doxygen/).
 
+**This is not the official v8 repository. The v8 is not ours, it's an open-source project developed by Google.**
+
 Contribute
 ----------
 
@@ -23,4 +25,3 @@ you don't have [doxygen](http://www.stack.nl/~dimitri/doxygen/): There are ready
 Disclaimer
 ----------
 
-This is **not the official** v8 repository. v8 is an open-source project developed by Google.
