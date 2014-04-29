@@ -1,0 +1,126 @@
+\hypertarget{classv8_1_1Message}{\section{v8\-:\-:Message Class Reference}
+\label{classv8_1_1Message}\index{v8\-::\-Message@{v8\-::\-Message}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1Message_a72f26c7b684bbfbd14d5970849fdf3d2}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ {\bfseries Get} () const }\label{classv8_1_1Message_a72f26c7b684bbfbd14d5970849fdf3d2}
+
+\item 
+\hypertarget{classv8_1_1Message_a0d5cceb5128a147818c72b82950e475d}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ {\bfseries Get\-Source\-Line} () const }\label{classv8_1_1Message_a0d5cceb5128a147818c72b82950e475d}
+
+\item 
+\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Message_ac5d31afb758897cd1653c5eb3327a4d6}{Get\-Script\-Resource\-Name} () const 
+\item 
+\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Message_ace10c210ccbb542b1b75cadefbc4e899}{Get\-Script\-Data} () const 
+\item 
+\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1StackTrace}{Stack\-Trace} $>$ \hyperlink{classv8_1_1Message_adeffa297a5a28955dd16c084632aa645}{Get\-Stack\-Trace} () const 
+\item 
+int \hyperlink{classv8_1_1Message_a67f97fd76b8f98ed65743b9615d64a79}{Get\-Line\-Number} () const 
+\item 
+int \hyperlink{classv8_1_1Message_a31a550a1d3d09a2d72d0742be821956f}{Get\-Start\-Position} () const 
+\item 
+int \hyperlink{classv8_1_1Message_a50cbec87379e628b1647466926882037}{Get\-End\-Position} () const 
+\item 
+int \hyperlink{classv8_1_1Message_aab8007ba81d3f195280bce0693810cc2}{Get\-Start\-Column} () const 
+\item 
+int \hyperlink{classv8_1_1Message_aaf82cd7f7449add5f50d4253499cad05}{Get\-End\-Column} () const 
+\item 
+bool \hyperlink{classv8_1_1Message_a03228f50c40c45da52f424bdd64598d1}{Is\-Shared\-Cross\-Origin} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1Message_ae5d67d123c5611e6bc36824c938cbfa5}{static void {\bfseries Print\-Current\-Stack\-Trace} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, F\-I\-L\-E $\ast$out)}\label{classv8_1_1Message_ae5d67d123c5611e6bc36824c938cbfa5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1Message_a35649a6c0c813ba82c9886a2b17da124}{static const int {\bfseries k\-No\-Line\-Number\-Info} = 0}\label{classv8_1_1Message_a35649a6c0c813ba82c9886a2b17da124}
+
+\item 
+\hypertarget{classv8_1_1Message_a8cb643dbf408b0fd2526b23a8202c4a6}{static const int {\bfseries k\-No\-Column\-Info} = 0}\label{classv8_1_1Message_a8cb643dbf408b0fd2526b23a8202c4a6}
+
+\item 
+\hypertarget{classv8_1_1Message_a5aac643173466e88544cb1daa74553d6}{static const int {\bfseries k\-No\-Script\-Id\-Info} = 0}\label{classv8_1_1Message_a5aac643173466e88544cb1daa74553d6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An error message. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1Message_aaf82cd7f7449add5f50d4253499cad05}{\index{v8\-::\-Message@{v8\-::\-Message}!Get\-End\-Column@{Get\-End\-Column}}
+\index{Get\-End\-Column@{Get\-End\-Column}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Get\-End\-Column}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Message\-::\-Get\-End\-Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_aaf82cd7f7449add5f50d4253499cad05}
+Returns the index within the line of the last character where the error occurred. \hypertarget{classv8_1_1Message_a50cbec87379e628b1647466926882037}{\index{v8\-::\-Message@{v8\-::\-Message}!Get\-End\-Position@{Get\-End\-Position}}
+\index{Get\-End\-Position@{Get\-End\-Position}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Get\-End\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Message\-::\-Get\-End\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_a50cbec87379e628b1647466926882037}
+Returns the index within the script of the last character where the error occurred. \hypertarget{classv8_1_1Message_a67f97fd76b8f98ed65743b9615d64a79}{\index{v8\-::\-Message@{v8\-::\-Message}!Get\-Line\-Number@{Get\-Line\-Number}}
+\index{Get\-Line\-Number@{Get\-Line\-Number}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Get\-Line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Message\-::\-Get\-Line\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_a67f97fd76b8f98ed65743b9615d64a79}
+Returns the number, 1-\/based, of the line where the error occurred. \hypertarget{classv8_1_1Message_ace10c210ccbb542b1b75cadefbc4e899}{\index{v8\-::\-Message@{v8\-::\-Message}!Get\-Script\-Data@{Get\-Script\-Data}}
+\index{Get\-Script\-Data@{Get\-Script\-Data}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Get\-Script\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf Value}$>$ v8\-::\-Message\-::\-Get\-Script\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_ace10c210ccbb542b1b75cadefbc4e899}
+Returns the resource data for the script from where the function causing the error originates. \hypertarget{classv8_1_1Message_ac5d31afb758897cd1653c5eb3327a4d6}{\index{v8\-::\-Message@{v8\-::\-Message}!Get\-Script\-Resource\-Name@{Get\-Script\-Resource\-Name}}
+\index{Get\-Script\-Resource\-Name@{Get\-Script\-Resource\-Name}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Get\-Script\-Resource\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf Value}$>$ v8\-::\-Message\-::\-Get\-Script\-Resource\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_ac5d31afb758897cd1653c5eb3327a4d6}
+Returns the resource name for the script from where the function causing the error originates. \hypertarget{classv8_1_1Message_adeffa297a5a28955dd16c084632aa645}{\index{v8\-::\-Message@{v8\-::\-Message}!Get\-Stack\-Trace@{Get\-Stack\-Trace}}
+\index{Get\-Stack\-Trace@{Get\-Stack\-Trace}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Get\-Stack\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf Stack\-Trace}$>$ v8\-::\-Message\-::\-Get\-Stack\-Trace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_adeffa297a5a28955dd16c084632aa645}
+\hyperlink{classv8_1_1Exception}{Exception} stack trace. By default stack traces are not captured for uncaught exceptions. Set\-Capture\-Stack\-Trace\-For\-Uncaught\-Exceptions allows to change this option. \hypertarget{classv8_1_1Message_aab8007ba81d3f195280bce0693810cc2}{\index{v8\-::\-Message@{v8\-::\-Message}!Get\-Start\-Column@{Get\-Start\-Column}}
+\index{Get\-Start\-Column@{Get\-Start\-Column}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Get\-Start\-Column}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Message\-::\-Get\-Start\-Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_aab8007ba81d3f195280bce0693810cc2}
+Returns the index within the line of the first character where the error occurred. \hypertarget{classv8_1_1Message_a31a550a1d3d09a2d72d0742be821956f}{\index{v8\-::\-Message@{v8\-::\-Message}!Get\-Start\-Position@{Get\-Start\-Position}}
+\index{Get\-Start\-Position@{Get\-Start\-Position}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Get\-Start\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Message\-::\-Get\-Start\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_a31a550a1d3d09a2d72d0742be821956f}
+Returns the index within the script of the first character where the error occurred. \hypertarget{classv8_1_1Message_a03228f50c40c45da52f424bdd64598d1}{\index{v8\-::\-Message@{v8\-::\-Message}!Is\-Shared\-Cross\-Origin@{Is\-Shared\-Cross\-Origin}}
+\index{Is\-Shared\-Cross\-Origin@{Is\-Shared\-Cross\-Origin}!v8::Message@{v8\-::\-Message}}
+\subsubsection[{Is\-Shared\-Cross\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Message\-::\-Is\-Shared\-Cross\-Origin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Message_a03228f50c40c45da52f424bdd64598d1}
+Passes on the value set by the embedder when it fed the script from which this \hyperlink{classv8_1_1Message}{Message} was generated to \hyperlink{classv8_1_1V8}{V8}. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

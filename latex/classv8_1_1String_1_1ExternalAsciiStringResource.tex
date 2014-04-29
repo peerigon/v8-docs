@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1String_1_1ExternalAsciiStringResource}{\section{v8\-:\-:String\-:\-:External\-Ascii\-String\-Resource Class Reference}
+\label{classv8_1_1String_1_1ExternalAsciiStringResource}\index{v8\-::\-String\-::\-External\-Ascii\-String\-Resource@{v8\-::\-String\-::\-External\-Ascii\-String\-Resource}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+Inheritance diagram for v8\-:\-:String\-:\-:External\-Ascii\-String\-Resource\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classv8_1_1String_1_1ExternalAsciiStringResource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource_acd8790ae14be1b90794b363d24a147d0}{$\sim$\-External\-Ascii\-String\-Resource} ()
+\item 
+virtual const char $\ast$ \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource_adeb99e8c8c630e2dac5ad76476249d2f}{data} () const =0
+\item 
+virtual size\-\_\-t \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource_aeecccc52434c2057d3dc5c9732458a8e}{length} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource}{External\-Ascii\-String\-Resource} is a wrapper around an A\-S\-C\-I\-I string buffer that resides outside \hyperlink{classv8_1_1V8}{V8}'s heap. Implement an \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource}{External\-Ascii\-String\-Resource} to manage the life cycle of the underlying buffer. Note that the string data must be immutable and that the data must be strict (7-\/bit) A\-S\-C\-I\-I, not Latin-\/1 or U\-T\-F-\/8, which would require special treatment internally in the engine and, in the case of U\-T\-F-\/8, do not allow efficient indexing. Use String\-::\-New or convert to 16 bit data for non-\/\-A\-S\-C\-I\-I. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classv8_1_1String_1_1ExternalAsciiStringResource_acd8790ae14be1b90794b363d24a147d0}{\index{v8\-::\-String\-::\-External\-Ascii\-String\-Resource@{v8\-::\-String\-::\-External\-Ascii\-String\-Resource}!$\sim$\-External\-Ascii\-String\-Resource@{$\sim$\-External\-Ascii\-String\-Resource}}
+\index{$\sim$\-External\-Ascii\-String\-Resource@{$\sim$\-External\-Ascii\-String\-Resource}!v8::String::ExternalAsciiStringResource@{v8\-::\-String\-::\-External\-Ascii\-String\-Resource}}
+\subsubsection[{$\sim$\-External\-Ascii\-String\-Resource}]{\setlength{\rightskip}{0pt plus 5cm}virtual v8\-::\-String\-::\-External\-Ascii\-String\-Resource\-::$\sim$\-External\-Ascii\-String\-Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classv8_1_1String_1_1ExternalAsciiStringResource_acd8790ae14be1b90794b363d24a147d0}
+Override the destructor to manage the life cycle of the underlying buffer. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1String_1_1ExternalAsciiStringResource_adeb99e8c8c630e2dac5ad76476249d2f}{\index{v8\-::\-String\-::\-External\-Ascii\-String\-Resource@{v8\-::\-String\-::\-External\-Ascii\-String\-Resource}!data@{data}}
+\index{data@{data}!v8::String::ExternalAsciiStringResource@{v8\-::\-String\-::\-External\-Ascii\-String\-Resource}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ v8\-::\-String\-::\-External\-Ascii\-String\-Resource\-::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1String_1_1ExternalAsciiStringResource_adeb99e8c8c630e2dac5ad76476249d2f}
+The string data from the underlying buffer. 
+
+Implemented in \hyperlink{classv8_1_1ExternalAsciiStringResourceImpl_a39719832d6d06fbfd8a86cf1cd6f9d6f}{v8\-::\-External\-Ascii\-String\-Resource\-Impl}.
+
+\hypertarget{classv8_1_1String_1_1ExternalAsciiStringResource_aeecccc52434c2057d3dc5c9732458a8e}{\index{v8\-::\-String\-::\-External\-Ascii\-String\-Resource@{v8\-::\-String\-::\-External\-Ascii\-String\-Resource}!length@{length}}
+\index{length@{length}!v8::String::ExternalAsciiStringResource@{v8\-::\-String\-::\-External\-Ascii\-String\-Resource}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\-\_\-t v8\-::\-String\-::\-External\-Ascii\-String\-Resource\-::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1String_1_1ExternalAsciiStringResource_aeecccc52434c2057d3dc5c9732458a8e}
+The number of A\-S\-C\-I\-I characters in the string. 
+
+Implemented in \hyperlink{classv8_1_1ExternalAsciiStringResourceImpl_a8f37b80039c1ef29b0c755354a11424a}{v8\-::\-External\-Ascii\-String\-Resource\-Impl}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{classv8_1_1OutputStream}{\section{v8\-:\-:Output\-Stream Class Reference}
+\label{classv8_1_1OutputStream}\index{v8\-::\-Output\-Stream@{v8\-::\-Output\-Stream}}
+}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Write\-Result} \{ {\bfseries k\-Continue} =  0, 
+{\bfseries k\-Abort} =  1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}{End\-Of\-Stream} ()=0
+\item 
+virtual int \hyperlink{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}{Get\-Chunk\-Size} ()
+\item 
+virtual Write\-Result \hyperlink{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}{Write\-Ascii\-Chunk} (char $\ast$data, int size)=0
+\item 
+virtual Write\-Result \hyperlink{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}{Write\-Heap\-Stats\-Chunk} (\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\-Stats\-Update} $\ast$data, int count)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface for exporting data from \hyperlink{classv8_1_1V8}{V8}, using \char`\"{}push\char`\"{} model. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}{\index{v8\-::\-Output\-Stream@{v8\-::\-Output\-Stream}!End\-Of\-Stream@{End\-Of\-Stream}}
+\index{End\-Of\-Stream@{End\-Of\-Stream}!v8::OutputStream@{v8\-::\-Output\-Stream}}
+\subsubsection[{End\-Of\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\-::\-Output\-Stream\-::\-End\-Of\-Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}
+Notify about the end of stream. \hypertarget{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}{\index{v8\-::\-Output\-Stream@{v8\-::\-Output\-Stream}!Get\-Chunk\-Size@{Get\-Chunk\-Size}}
+\index{Get\-Chunk\-Size@{Get\-Chunk\-Size}!v8::OutputStream@{v8\-::\-Output\-Stream}}
+\subsubsection[{Get\-Chunk\-Size}]{\setlength{\rightskip}{0pt plus 5cm}virtual int v8\-::\-Output\-Stream\-::\-Get\-Chunk\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}
+Get preferred output chunk size. Called only once. \hypertarget{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}{\index{v8\-::\-Output\-Stream@{v8\-::\-Output\-Stream}!Write\-Ascii\-Chunk@{Write\-Ascii\-Chunk}}
+\index{Write\-Ascii\-Chunk@{Write\-Ascii\-Chunk}!v8::OutputStream@{v8\-::\-Output\-Stream}}
+\subsubsection[{Write\-Ascii\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}virtual Write\-Result v8\-::\-Output\-Stream\-::\-Write\-Ascii\-Chunk (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{data, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}
+Writes the next chunk of snapshot data into the stream. Writing can be stopped by returning k\-Abort as function result. End\-Of\-Stream will not be called in case writing was aborted. \hypertarget{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}{\index{v8\-::\-Output\-Stream@{v8\-::\-Output\-Stream}!Write\-Heap\-Stats\-Chunk@{Write\-Heap\-Stats\-Chunk}}
+\index{Write\-Heap\-Stats\-Chunk@{Write\-Heap\-Stats\-Chunk}!v8::OutputStream@{v8\-::\-Output\-Stream}}
+\subsubsection[{Write\-Heap\-Stats\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}virtual Write\-Result v8\-::\-Output\-Stream\-::\-Write\-Heap\-Stats\-Chunk (
+\begin{DoxyParamCaption}
+\item[{{\bf Heap\-Stats\-Update} $\ast$}]{data, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}
+Writes the next chunk of heap stats data into the stream. Writing can be stopped by returning k\-Abort as function result. End\-Of\-Stream will not be called in case writing was aborted. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\-h\end{DoxyCompactItemize}

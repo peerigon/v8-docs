@@ -1,0 +1,87 @@
+\hypertarget{classv8_1_1Debug_1_1Message}{\section{v8\-:\-:Debug\-:\-:Message Class Reference}
+\label{classv8_1_1Debug_1_1Message}\index{v8\-::\-Debug\-::\-Message@{v8\-::\-Debug\-::\-Message}}
+}
+
+
+{\ttfamily \#include $<$v8-\/debug.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classv8_1_1Debug_1_1Message_a36ade83a9c960ce581b1a4051f763785}{Is\-Event} () const =0
+\item 
+\hypertarget{classv8_1_1Debug_1_1Message_a1d65d6efbb5adb96406f7e285bb25ee3}{virtual bool {\bfseries Is\-Response} () const =0}\label{classv8_1_1Debug_1_1Message_a1d65d6efbb5adb96406f7e285bb25ee3}
+
+\item 
+\hypertarget{classv8_1_1Debug_1_1Message_a8a99a5c9fe0db14fbaccaed297d9c203}{virtual Debug\-Event {\bfseries Get\-Event} () const =0}\label{classv8_1_1Debug_1_1Message_a8a99a5c9fe0db14fbaccaed297d9c203}
+
+\item 
+virtual bool \hyperlink{classv8_1_1Debug_1_1Message_af8d236b6a334423732a38cbf8cfd7aef}{Will\-Start\-Running} () const =0
+\item 
+virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Debug_1_1Message_aa54e11b06d304e8b8f34cc79ee49d869}{Get\-Execution\-State} () const =0
+\item 
+\hypertarget{classv8_1_1Debug_1_1Message_aa18f6c01d91d176d4e3d0a018890e59a}{virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ {\bfseries Get\-Event\-Data} () const =0}\label{classv8_1_1Debug_1_1Message_aa18f6c01d91d176d4e3d0a018890e59a}
+
+\item 
+virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1Debug_1_1Message_a41076f64f82c927cbb2fe5c8325557d5}{Get\-J\-S\-O\-N} () const =0
+\item 
+virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_1_1Message_a34ff90d879888746a7a0eacebd6aa088}{Get\-Event\-Context} () const =0
+\item 
+virtual \hyperlink{classv8_1_1Debug_1_1ClientData}{Client\-Data} $\ast$ \hyperlink{classv8_1_1Debug_1_1Message_ab81bb81d233f5f37e6626a7bcac22142}{Get\-Client\-Data} () const =0
+\item 
+\hypertarget{classv8_1_1Debug_1_1Message_a71b3624e8f851108330d6b64bbb611f5}{virtual \hyperlink{classv8_1_1Isolate}{Isolate} $\ast$ {\bfseries Get\-Isolate} () const =0}\label{classv8_1_1Debug_1_1Message_a71b3624e8f851108330d6b64bbb611f5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A message object passed to the debug message handler. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1Debug_1_1Message_ab81bb81d233f5f37e6626a7bcac22142}{\index{v8\-::\-Debug\-::\-Message@{v8\-::\-Debug\-::\-Message}!Get\-Client\-Data@{Get\-Client\-Data}}
+\index{Get\-Client\-Data@{Get\-Client\-Data}!v8::Debug::Message@{v8\-::\-Debug\-::\-Message}}
+\subsubsection[{Get\-Client\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Client\-Data}$\ast$ v8\-::\-Debug\-::\-Message\-::\-Get\-Client\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1Debug_1_1Message_ab81bb81d233f5f37e6626a7bcac22142}
+Client data passed with the corresponding request if any. This is the client\-\_\-data data value passed into Debug\-::\-Send\-Command along with the request that led to the message or N\-U\-L\-L if the message is an event. The debugger takes ownership of the data and will delete it even if there is no message handler. \hypertarget{classv8_1_1Debug_1_1Message_a34ff90d879888746a7a0eacebd6aa088}{\index{v8\-::\-Debug\-::\-Message@{v8\-::\-Debug\-::\-Message}!Get\-Event\-Context@{Get\-Event\-Context}}
+\index{Get\-Event\-Context@{Get\-Event\-Context}!v8::Debug::Message@{v8\-::\-Debug\-::\-Message}}
+\subsubsection[{Get\-Event\-Context}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf Context}$>$ v8\-::\-Debug\-::\-Message\-::\-Get\-Event\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1Debug_1_1Message_a34ff90d879888746a7a0eacebd6aa088}
+Get the context active when the debug event happened. Note this is not the current active context as the Java\-Script part of the debugger is running in its own context which is entered at this point. \hypertarget{classv8_1_1Debug_1_1Message_aa54e11b06d304e8b8f34cc79ee49d869}{\index{v8\-::\-Debug\-::\-Message@{v8\-::\-Debug\-::\-Message}!Get\-Execution\-State@{Get\-Execution\-State}}
+\index{Get\-Execution\-State@{Get\-Execution\-State}!v8::Debug::Message@{v8\-::\-Debug\-::\-Message}}
+\subsubsection[{Get\-Execution\-State}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf Object}$>$ v8\-::\-Debug\-::\-Message\-::\-Get\-Execution\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1Debug_1_1Message_aa54e11b06d304e8b8f34cc79ee49d869}
+Access to execution state and event data. Don't store these cross callbacks as their content becomes invalid. These objects are from the debugger event that started the debug message loop. \hypertarget{classv8_1_1Debug_1_1Message_a41076f64f82c927cbb2fe5c8325557d5}{\index{v8\-::\-Debug\-::\-Message@{v8\-::\-Debug\-::\-Message}!Get\-J\-S\-O\-N@{Get\-J\-S\-O\-N}}
+\index{Get\-J\-S\-O\-N@{Get\-J\-S\-O\-N}!v8::Debug::Message@{v8\-::\-Debug\-::\-Message}}
+\subsubsection[{Get\-J\-S\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf String}$>$ v8\-::\-Debug\-::\-Message\-::\-Get\-J\-S\-O\-N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1Debug_1_1Message_a41076f64f82c927cbb2fe5c8325557d5}
+Get the debugger protocol \hyperlink{classv8_1_1JSON}{J\-S\-O\-N}. \hypertarget{classv8_1_1Debug_1_1Message_a36ade83a9c960ce581b1a4051f763785}{\index{v8\-::\-Debug\-::\-Message@{v8\-::\-Debug\-::\-Message}!Is\-Event@{Is\-Event}}
+\index{Is\-Event@{Is\-Event}!v8::Debug::Message@{v8\-::\-Debug\-::\-Message}}
+\subsubsection[{Is\-Event}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool v8\-::\-Debug\-::\-Message\-::\-Is\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1Debug_1_1Message_a36ade83a9c960ce581b1a4051f763785}
+Check type of message. \hypertarget{classv8_1_1Debug_1_1Message_af8d236b6a334423732a38cbf8cfd7aef}{\index{v8\-::\-Debug\-::\-Message@{v8\-::\-Debug\-::\-Message}!Will\-Start\-Running@{Will\-Start\-Running}}
+\index{Will\-Start\-Running@{Will\-Start\-Running}!v8::Debug::Message@{v8\-::\-Debug\-::\-Message}}
+\subsubsection[{Will\-Start\-Running}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool v8\-::\-Debug\-::\-Message\-::\-Will\-Start\-Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1Debug_1_1Message_af8d236b6a334423732a38cbf8cfd7aef}
+Indicate whether this is a response to a continue command which will start the V\-M running after this is processed. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/debug.\-h\end{DoxyCompactItemize}

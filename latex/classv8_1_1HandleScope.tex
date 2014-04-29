@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1HandleScope}{\section{v8\-:\-:Handle\-Scope Class Reference}
+\label{classv8_1_1HandleScope}\index{v8\-::\-Handle\-Scope@{v8\-::\-Handle\-Scope}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+Inheritance diagram for v8\-:\-:Handle\-Scope\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1HandleScope}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1HandleScope_afdb3053d852ea467f026b025ed431e79}{{\bfseries Handle\-Scope} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)}\label{classv8_1_1HandleScope_afdb3053d852ea467f026b025ed431e79}
+
+\item 
+\hypertarget{classv8_1_1HandleScope_a15d1a1e76d8cd8a10d3947c3ca2e8a8d}{V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1Isolate}{Isolate} $\ast$ {\bfseries Get\-Isolate} () const }\label{classv8_1_1HandleScope_a15d1a1e76d8cd8a10d3947c3ca2e8a8d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classv8_1_1HandleScope_abab7214c9b9388b02f575fd5270b7e2f}{Number\-Of\-Handles} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1HandleScope_a7bb8631c1c8756b05e9232b8414dd992}{void {\bfseries Initialize} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)}\label{classv8_1_1HandleScope_a7bb8631c1c8756b05e9232b8414dd992}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1HandleScope_a3f63aa8552a0371606305f58187d80e2}{static internal\-::\-Object $\ast$$\ast$ {\bfseries Create\-Handle} (internal\-::\-Isolate $\ast$isolate, internal\-::\-Object $\ast$value)}\label{classv8_1_1HandleScope_a3f63aa8552a0371606305f58187d80e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1HandleScope_a0320da7f4056d4493dc1f8e49985d06e}{class {\bfseries Local}}\label{classv8_1_1HandleScope_a0320da7f4056d4493dc1f8e49985d06e}
+
+\item 
+\hypertarget{classv8_1_1HandleScope_a0720b5f434e636e22a3ed34f847eec57}{class {\bfseries Object}}\label{classv8_1_1HandleScope_a0720b5f434e636e22a3ed34f847eec57}
+
+\item 
+\hypertarget{classv8_1_1HandleScope_ac26c806e60ca4a0547680edb68f6e39b}{class {\bfseries Context}}\label{classv8_1_1HandleScope_ac26c806e60ca4a0547680edb68f6e39b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A stack-\/allocated class that governs a number of local handles. After a handle scope has been created, all local handles will be allocated within that handle scope until either the handle scope is deleted or another handle scope is created. If there is already a handle scope and a new one is created, all allocations will take place in the new handle scope until it is deleted. After that, new handles will again be allocated in the original handle scope.
+
+After the handle scope of a local handle has been deleted the garbage collector will no longer track the object stored in the handle and may deallocate it. The behavior of accessing a handle for which the handle scope has been deleted is undefined. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1HandleScope_abab7214c9b9388b02f575fd5270b7e2f}{\index{v8\-::\-Handle\-Scope@{v8\-::\-Handle\-Scope}!Number\-Of\-Handles@{Number\-Of\-Handles}}
+\index{Number\-Of\-Handles@{Number\-Of\-Handles}!v8::HandleScope@{v8\-::\-Handle\-Scope}}
+\subsubsection[{Number\-Of\-Handles}]{\setlength{\rightskip}{0pt plus 5cm}static int v8\-::\-Handle\-Scope\-::\-Number\-Of\-Handles (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1HandleScope_abab7214c9b9388b02f575fd5270b7e2f}
+Counts the number of allocated handles. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

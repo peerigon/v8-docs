@@ -1,0 +1,222 @@
+\hypertarget{classv8_1_1Context}{\section{v8\-:\-:Context Class Reference}
+\label{classv8_1_1Context}\index{v8\-::\-Context@{v8\-::\-Context}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1Context_1_1Scope}{Scope}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}{Global} ()
+\item 
+void \hyperlink{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}{Detach\-Global} ()
+\item 
+void \hyperlink{classv8_1_1Context_a288d8549547f6bdf4312f5333f60f24d}{Set\-Security\-Token} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ token)
+\item 
+void \hyperlink{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}{Use\-Default\-Security\-Token} ()
+\item 
+\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Context_a8e71e658633518ca7718c0f6e938c6a9}{Get\-Security\-Token} ()
+\item 
+void \hyperlink{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}{Enter} ()
+\item 
+void \hyperlink{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}{Exit} ()
+\item 
+\hyperlink{classv8_1_1Context_a6a4ca53837ec39c684cdbfc73ab44e4e}{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} (\char`\"{}This can no longer happen. O\-O\-M is a fatal error.\char`\"{}, bool Has\-Out\-Of\-Memory\-Exception())
+\item 
+\hyperlink{classv8_1_1Isolate}{v8\-::\-Isolate} $\ast$ \hyperlink{classv8_1_1Context_af55552d8658ecb20eff7af2c83e8ede2}{Get\-Isolate} ()
+\item 
+V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}{Get\-Embedder\-Data} (int index)
+\item 
+void \hyperlink{classv8_1_1Context_ae18e007074770872e78e0040f36de8c6}{Set\-Embedder\-Data} (int index, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)
+\item 
+V8\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ \hyperlink{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}{Get\-Aligned\-Pointer\-From\-Embedder\-Data} (int index)
+\item 
+void \hyperlink{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}{Set\-Aligned\-Pointer\-In\-Embedder\-Data} (int index, void $\ast$value)
+\item 
+void \hyperlink{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{Allow\-Code\-Generation\-From\-Strings} (bool allow)
+\item 
+bool \hyperlink{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}{Is\-Code\-Generation\-From\-Strings\-Allowed} ()
+\item 
+void \hyperlink{classv8_1_1Context_a6a8d067b246b8792b19e8075bc410f1d}{Set\-Error\-Message\-For\-Code\-Generation\-From\-Strings} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ message)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Context_a43329765465b5f525ff28368b0cef2d4}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ExtensionConfiguration}{Extension\-Configuration} $\ast$extensions=N\-U\-L\-L, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1ObjectTemplate}{Object\-Template} $>$ global\-\_\-template=\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1ObjectTemplate}{Object\-Template} $>$(), \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ global\-\_\-object=\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1Context_aeceedf6e1a7d48a588516ce2b1983d6f}{class {\bfseries Value}}\label{classv8_1_1Context_aeceedf6e1a7d48a588516ce2b1983d6f}
+
+\item 
+\hypertarget{classv8_1_1Context_ae98eaa96d1b24e087f3c3e372fb09dce}{class {\bfseries Script}}\label{classv8_1_1Context_ae98eaa96d1b24e087f3c3e372fb09dce}
+
+\item 
+\hypertarget{classv8_1_1Context_a0720b5f434e636e22a3ed34f847eec57}{class {\bfseries Object}}\label{classv8_1_1Context_a0720b5f434e636e22a3ed34f847eec57}
+
+\item 
+\hypertarget{classv8_1_1Context_ab7194606aa12931e96f8f5448d418ed0}{class {\bfseries Function}}\label{classv8_1_1Context_ab7194606aa12931e96f8f5448d418ed0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A sandboxed execution context with its own set of built-\/in objects and functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{\index{v8\-::\-Context@{v8\-::\-Context}!Allow\-Code\-Generation\-From\-Strings@{Allow\-Code\-Generation\-From\-Strings}}
+\index{Allow\-Code\-Generation\-From\-Strings@{Allow\-Code\-Generation\-From\-Strings}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Allow\-Code\-Generation\-From\-Strings}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Allow\-Code\-Generation\-From\-Strings (
+\begin{DoxyParamCaption}
+\item[{bool}]{allow}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}
+Control whether code generation from strings is allowed. Calling this method with false will disable 'eval' and the '\hyperlink{classv8_1_1Function}{Function}' constructor for code running in this context. If 'eval' or the '\hyperlink{classv8_1_1Function}{Function}' constructor are used an exception will be thrown.
+
+If code generation from strings is not allowed the V8\-::\-Allow\-Code\-Generation\-From\-Strings callback will be invoked if set before blocking the call to 'eval' or the '\hyperlink{classv8_1_1Function}{Function}' constructor. If that callback returns true, the call will be allowed, otherwise an exception will be thrown. If no callback is set an exception will be thrown. \hypertarget{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}{\index{v8\-::\-Context@{v8\-::\-Context}!Detach\-Global@{Detach\-Global}}
+\index{Detach\-Global@{Detach\-Global}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Detach\-Global}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Detach\-Global (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}
+Detaches the global object from its context before the global object can be reused to create a new context. \hypertarget{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}{\index{v8\-::\-Context@{v8\-::\-Context}!Enter@{Enter}}
+\index{Enter@{Enter}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Enter}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Enter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}
+Enter this context. After entering a context, all code compiled and run is compiled and run in this context. If another context is already entered, this old context is saved so it can be restored when the new context is exited. \hypertarget{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}{\index{v8\-::\-Context@{v8\-::\-Context}!Exit@{Exit}}
+\index{Exit@{Exit}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Exit}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}
+Exit this context. Exiting the current context restores the context that was in place when entering the current context. \hypertarget{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}{\index{v8\-::\-Context@{v8\-::\-Context}!Get\-Aligned\-Pointer\-From\-Embedder\-Data@{Get\-Aligned\-Pointer\-From\-Embedder\-Data}}
+\index{Get\-Aligned\-Pointer\-From\-Embedder\-Data@{Get\-Aligned\-Pointer\-From\-Embedder\-Data}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Get\-Aligned\-Pointer\-From\-Embedder\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ v8\-::\-Context\-::\-Get\-Aligned\-Pointer\-From\-Embedder\-Data (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}
+Gets a 2-\/byte-\/aligned native pointer from the embedder data with the given index, which must have bees set by a previous call to Set\-Aligned\-Pointer\-In\-Embedder\-Data with the same index. Note that index 0 currently has a special meaning for Chrome's debugger. \hypertarget{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}{\index{v8\-::\-Context@{v8\-::\-Context}!Get\-Embedder\-Data@{Get\-Embedder\-Data}}
+\index{Get\-Embedder\-Data@{Get\-Embedder\-Data}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Get\-Embedder\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<$ {\bf Value} $>$ v8\-::\-Context\-::\-Get\-Embedder\-Data (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}
+Gets the embedder data with the given index, which must have been set by a previous call to Set\-Embedder\-Data with the same index. Note that index 0 currently has a special meaning for Chrome's debugger. \hypertarget{classv8_1_1Context_af55552d8658ecb20eff7af2c83e8ede2}{\index{v8\-::\-Context@{v8\-::\-Context}!Get\-Isolate@{Get\-Isolate}}
+\index{Get\-Isolate@{Get\-Isolate}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Get\-Isolate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf v8\-::\-Isolate}$\ast$ v8\-::\-Context\-::\-Get\-Isolate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_af55552d8658ecb20eff7af2c83e8ede2}
+Returns an isolate associated with a current context. \hypertarget{classv8_1_1Context_a8e71e658633518ca7718c0f6e938c6a9}{\index{v8\-::\-Context@{v8\-::\-Context}!Get\-Security\-Token@{Get\-Security\-Token}}
+\index{Get\-Security\-Token@{Get\-Security\-Token}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Get\-Security\-Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf Value}$>$ v8\-::\-Context\-::\-Get\-Security\-Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a8e71e658633518ca7718c0f6e938c6a9}
+Returns the security token of this context. \hypertarget{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}{\index{v8\-::\-Context@{v8\-::\-Context}!Global@{Global}}
+\index{Global@{Global}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Global}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Object}$>$ v8\-::\-Context\-::\-Global (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}
+Returns the global proxy object.
+
+Global proxy object is a thin wrapper whose prototype points to actual context's global object with the properties like \hyperlink{classv8_1_1Object}{Object}, etc. This is done that way for security reasons (for more details see \href{https://wiki.mozilla.org/Gecko:SplitWindow}{\tt https\-://wiki.\-mozilla.\-org/\-Gecko\-:\-Split\-Window}).
+
+Please note that changes to global proxy object prototype most probably would break V\-M---\hyperlink{namespacev8}{v8} expects only global object as a prototype of global proxy object. \hypertarget{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}{\index{v8\-::\-Context@{v8\-::\-Context}!Is\-Code\-Generation\-From\-Strings\-Allowed@{Is\-Code\-Generation\-From\-Strings\-Allowed}}
+\index{Is\-Code\-Generation\-From\-Strings\-Allowed@{Is\-Code\-Generation\-From\-Strings\-Allowed}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Is\-Code\-Generation\-From\-Strings\-Allowed}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Context\-::\-Is\-Code\-Generation\-From\-Strings\-Allowed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}
+Returns true if code generation from strings is allowed for the context. For more details see \hyperlink{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{Allow\-Code\-Generation\-From\-Strings(bool)} documentation. \hypertarget{classv8_1_1Context_a43329765465b5f525ff28368b0cef2d4}{\index{v8\-::\-Context@{v8\-::\-Context}!New@{New}}
+\index{New@{New}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Context}$>$ v8\-::\-Context\-::\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Extension\-Configuration} $\ast$}]{extensions = {\ttfamily NULL}, }
+\item[{{\bf Handle}$<$ {\bf Object\-Template} $>$}]{global\-\_\-template = {\ttfamily {\bf Handle}$<$~{\bf Object\-Template}~$>$()}, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{global\-\_\-object = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1Context_a43329765465b5f525ff28368b0cef2d4}
+Creates a new context and returns a handle to the newly allocated context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em isolate} & The isolate in which to create the context.\\
+\hline
+{\em extensions} & An optional extension configuration containing the extensions to be installed in the newly created context.\\
+\hline
+{\em global\-\_\-template} & An optional object template from which the global object for the newly created context will be created.\\
+\hline
+{\em global\-\_\-object} & An optional global object to be reused for the newly created context. This global object must have been created by a previous call to \hyperlink{classv8_1_1Context_a43329765465b5f525ff28368b0cef2d4}{Context\-::\-New} with the same global template. The state of the global object will be completely reset and only object identify will remain. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}{\index{v8\-::\-Context@{v8\-::\-Context}!Set\-Aligned\-Pointer\-In\-Embedder\-Data@{Set\-Aligned\-Pointer\-In\-Embedder\-Data}}
+\index{Set\-Aligned\-Pointer\-In\-Embedder\-Data@{Set\-Aligned\-Pointer\-In\-Embedder\-Data}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Set\-Aligned\-Pointer\-In\-Embedder\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Set\-Aligned\-Pointer\-In\-Embedder\-Data (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{void $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}
+Sets a 2-\/byte-\/aligned native pointer in the embedder data with the given index, growing the data as needed. Note that index 0 currently has a special meaning for Chrome's debugger. \hypertarget{classv8_1_1Context_ae18e007074770872e78e0040f36de8c6}{\index{v8\-::\-Context@{v8\-::\-Context}!Set\-Embedder\-Data@{Set\-Embedder\-Data}}
+\index{Set\-Embedder\-Data@{Set\-Embedder\-Data}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Set\-Embedder\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Set\-Embedder\-Data (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{value}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_ae18e007074770872e78e0040f36de8c6}
+Sets the embedder data with the given index, growing the data as needed. Note that index 0 currently has a special meaning for Chrome's debugger. \hypertarget{classv8_1_1Context_a6a8d067b246b8792b19e8075bc410f1d}{\index{v8\-::\-Context@{v8\-::\-Context}!Set\-Error\-Message\-For\-Code\-Generation\-From\-Strings@{Set\-Error\-Message\-For\-Code\-Generation\-From\-Strings}}
+\index{Set\-Error\-Message\-For\-Code\-Generation\-From\-Strings@{Set\-Error\-Message\-For\-Code\-Generation\-From\-Strings}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Set\-Error\-Message\-For\-Code\-Generation\-From\-Strings}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Set\-Error\-Message\-For\-Code\-Generation\-From\-Strings (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{message}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a6a8d067b246b8792b19e8075bc410f1d}
+Sets the error description for the exception that is thrown when code generation from strings is not allowed and 'eval' or the '\hyperlink{classv8_1_1Function}{Function}' constructor are called. \hypertarget{classv8_1_1Context_a288d8549547f6bdf4312f5333f60f24d}{\index{v8\-::\-Context@{v8\-::\-Context}!Set\-Security\-Token@{Set\-Security\-Token}}
+\index{Set\-Security\-Token@{Set\-Security\-Token}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Set\-Security\-Token}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Set\-Security\-Token (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{token}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_a288d8549547f6bdf4312f5333f60f24d}
+Sets the security token for the context. To access an object in another context, the security tokens must match. \hypertarget{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}{\index{v8\-::\-Context@{v8\-::\-Context}!Use\-Default\-Security\-Token@{Use\-Default\-Security\-Token}}
+\index{Use\-Default\-Security\-Token@{Use\-Default\-Security\-Token}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{Use\-Default\-Security\-Token}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Context\-::\-Use\-Default\-Security\-Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}
+Restores the security token to the default value. \hypertarget{classv8_1_1Context_a6a4ca53837ec39c684cdbfc73ab44e4e}{\index{v8\-::\-Context@{v8\-::\-Context}!V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D@{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}}
+\index{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D@{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}!v8::Context@{v8\-::\-Context}}
+\subsubsection[{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}v8\-::\-Context\-::\-V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}This can no longer happen. O\-O\-M is a fatal error.\char`\"{}}]{, }
+\item[{bool }]{Has\-Out\-Of\-Memory\-Exception()}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classv8_1_1Context_a6a4ca53837ec39c684cdbfc73ab44e4e}
+Returns true if the context has experienced an out of memory situation. Since \hyperlink{classv8_1_1V8}{V8} always treats O\-O\-M as fatal error, this can no longer return true. Therefore this is now deprecated. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

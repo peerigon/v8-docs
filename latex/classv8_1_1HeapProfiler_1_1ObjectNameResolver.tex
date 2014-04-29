@@ -1,0 +1,30 @@
+\hypertarget{classv8_1_1HeapProfiler_1_1ObjectNameResolver}{\section{v8\-:\-:Heap\-Profiler\-:\-:Object\-Name\-Resolver Class Reference}
+\label{classv8_1_1HeapProfiler_1_1ObjectNameResolver}\index{v8\-::\-Heap\-Profiler\-::\-Object\-Name\-Resolver@{v8\-::\-Heap\-Profiler\-::\-Object\-Name\-Resolver}}
+}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const char $\ast$ \hyperlink{classv8_1_1HeapProfiler_1_1ObjectNameResolver_ad0d7c5b2ac71e468b2e05f18a590d3ae}{Get\-Name} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ object)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback interface for retrieving user friendly names of global objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1HeapProfiler_1_1ObjectNameResolver_ad0d7c5b2ac71e468b2e05f18a590d3ae}{\index{v8\-::\-Heap\-Profiler\-::\-Object\-Name\-Resolver@{v8\-::\-Heap\-Profiler\-::\-Object\-Name\-Resolver}!Get\-Name@{Get\-Name}}
+\index{Get\-Name@{Get\-Name}!v8::HeapProfiler::ObjectNameResolver@{v8\-::\-Heap\-Profiler\-::\-Object\-Name\-Resolver}}
+\subsubsection[{Get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ v8\-::\-Heap\-Profiler\-::\-Object\-Name\-Resolver\-::\-Get\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf Object} $>$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1HeapProfiler_1_1ObjectNameResolver_ad0d7c5b2ac71e468b2e05f18a590d3ae}
+Returns name to be used in the heap snapshot for given node. Returned string must stay alive until snapshot collection is completed. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\-h\end{DoxyCompactItemize}

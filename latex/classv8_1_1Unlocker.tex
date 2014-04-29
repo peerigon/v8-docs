@@ -1,0 +1,90 @@
+\hypertarget{classv8_1_1Unlocker}{\section{v8\-:\-:Unlocker Class Reference}
+\label{classv8_1_1Unlocker}\index{v8\-::\-Unlocker@{v8\-::\-Unlocker}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1Unlocker_a2faeb117d7308b65ac85fdad390e4c1f}{Unlocker} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Multiple threads in \hyperlink{classv8_1_1V8}{V8} are allowed, but only one thread at a time is allowed to use any given \hyperlink{classv8_1_1V8}{V8} isolate, see the comments in the \hyperlink{classv8_1_1Isolate}{Isolate} class. The definition of 'using a \hyperlink{classv8_1_1V8}{V8} isolate' includes accessing handles or holding onto object pointers obtained from \hyperlink{classv8_1_1V8}{V8} handles while in the particular \hyperlink{classv8_1_1V8}{V8} isolate. It is up to the user of \hyperlink{classv8_1_1V8}{V8} to ensure, perhaps with locking, that this constraint is not violated. In addition to any other synchronization mechanism that may be used, the \hyperlink{classv8_1_1Locker}{v8\-::\-Locker} and \hyperlink{classv8_1_1Unlocker}{v8\-::\-Unlocker} classes must be used to signal thead switches to \hyperlink{classv8_1_1V8}{V8}.
+
+\hyperlink{classv8_1_1Locker}{v8\-::\-Locker} is a scoped lock object. While it's active, i.\-e. between its construction and destruction, the current thread is allowed to use the locked isolate. \hyperlink{classv8_1_1V8}{V8} guarantees that an isolate can be locked by at most one thread at any time. In other words, the scope of a \hyperlink{classv8_1_1Locker}{v8\-::\-Locker} is a critical section.
+
+Sample usage\-: 
+\begin{DoxyCode}
+...
+\{
+  \hyperlink{classv8_1_1Locker}{v8::Locker} locker(isolate);
+  \hyperlink{classv8_1_1Isolate_1_1Scope}{v8::Isolate::Scope} isolate\_scope(isolate);
+  ...
+  \textcolor{comment}{// Code using V8 and isolate goes here.}
+  ...
+\} \textcolor{comment}{// Destructor called here}
+\end{DoxyCode}
+
+
+If you wish to stop using \hyperlink{classv8_1_1V8}{V8} in a thread A you can do this either by destroying the \hyperlink{classv8_1_1Locker}{v8\-::\-Locker} object as above or by constructing a \hyperlink{classv8_1_1Unlocker}{v8\-::\-Unlocker} object\-:
+
+
+\begin{DoxyCode}
+\{
+  isolate->Exit();
+  \hyperlink{classv8_1_1Unlocker}{v8::Unlocker} unlocker(isolate);
+  ...
+  \textcolor{comment}{// Code not using V8 goes here while V8 can run in another thread.}
+  ...
+\} \textcolor{comment}{// Destructor called here.}
+isolate->Enter();
+\end{DoxyCode}
+
+
+The \hyperlink{classv8_1_1Unlocker}{Unlocker} object is intended for use in a long-\/running callback from \hyperlink{classv8_1_1V8}{V8}, where you want to release the \hyperlink{classv8_1_1V8}{V8} lock for other threads to use.
+
+The \hyperlink{classv8_1_1Locker}{v8\-::\-Locker} is a recursive lock, i.\-e. you can lock more than once in a given thread. This can be useful if you have code that can be called either from code that holds the lock or from code that does not. The \hyperlink{classv8_1_1Unlocker}{Unlocker} is not recursive so you can not have several Unlockers on the stack at once, and you can not use an \hyperlink{classv8_1_1Unlocker}{Unlocker} in a thread that is not inside a \hyperlink{classv8_1_1Locker}{Locker}'s scope.
+
+An unlocker will unlock several lockers if it has to and reinstate the correct depth of locking on its destruction, e.\-g.\-:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// V8 not locked.}
+\{
+  \hyperlink{classv8_1_1Locker}{v8::Locker} locker(isolate);
+  Isolate::Scope isolate\_scope(isolate);
+  \textcolor{comment}{// V8 locked.}
+  \{
+    \hyperlink{classv8_1_1Locker}{v8::Locker} another\_locker(isolate);
+    \textcolor{comment}{// V8 still locked (2 levels).}
+    \{
+      isolate->Exit();
+      \hyperlink{classv8_1_1Unlocker}{v8::Unlocker} unlocker(isolate);
+      \textcolor{comment}{// V8 not locked.}
+    \}
+    isolate->Enter();
+    \textcolor{comment}{// V8 locked again (2 levels).}
+  \}
+  \textcolor{comment}{// V8 still locked (1 level).}
+\}
+\textcolor{comment}{// V8 Now no longer locked.}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classv8_1_1Unlocker_a2faeb117d7308b65ac85fdad390e4c1f}{\index{v8\-::\-Unlocker@{v8\-::\-Unlocker}!Unlocker@{Unlocker}}
+\index{Unlocker@{Unlocker}!v8::Unlocker@{v8\-::\-Unlocker}}
+\subsubsection[{Unlocker}]{\setlength{\rightskip}{0pt plus 5cm}V8\-\_\-\-I\-N\-L\-I\-N\-E v8\-::\-Unlocker\-::\-Unlocker (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classv8_1_1Unlocker_a2faeb117d7308b65ac85fdad390e4c1f}
+Initialize \hyperlink{classv8_1_1Unlocker}{Unlocker} for a given \hyperlink{classv8_1_1Isolate}{Isolate}. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

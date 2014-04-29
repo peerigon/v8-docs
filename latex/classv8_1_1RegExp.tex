@@ -1,0 +1,78 @@
+\hypertarget{classv8_1_1RegExp}{\section{v8\-:\-:Reg\-Exp Class Reference}
+\label{classv8_1_1RegExp}\index{v8\-::\-Reg\-Exp@{v8\-::\-Reg\-Exp}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+Inheritance diagram for v8\-:\-:Reg\-Exp\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1RegExp}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} \{ {\bfseries k\-None} =  0, 
+{\bfseries k\-Global} =  1, 
+{\bfseries k\-Ignore\-Case} =  2, 
+{\bfseries k\-Multiline} =  4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1RegExp_a448213f2a92d964ed260b51429d5e590}{Get\-Source} () const 
+\item 
+\hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} \hyperlink{classv8_1_1RegExp_ad5a5e77e6e626b3c7c69eef7ba2908cc}{Get\-Flags} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1RegExp}{Reg\-Exp} $>$ \hyperlink{classv8_1_1RegExp_ac92fcff5a40cf8c698aefd021c823c2e}{New} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ pattern, \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} flags)
+\item 
+\hypertarget{classv8_1_1RegExp_ac06d8f61c0ebb2e7292e6aeff7108f26}{static V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1RegExp}{Reg\-Exp} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{v8\-::\-Value} $\ast$obj)}\label{classv8_1_1RegExp_ac06d8f61c0ebb2e7292e6aeff7108f26}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An instance of the built-\/in \hyperlink{classv8_1_1RegExp}{Reg\-Exp} constructor (E\-C\-M\-A-\/262, 15.\-10). 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{\index{v8\-::\-Reg\-Exp@{v8\-::\-Reg\-Exp}!Flags@{Flags}}
+\index{Flags@{Flags}!v8::RegExp@{v8\-::\-Reg\-Exp}}
+\subsubsection[{Flags}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\-::\-Reg\-Exp\-::\-Flags}}}\label{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}
+Regular expression flag bits. They can be or'ed to enable a set of flags. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1RegExp_ad5a5e77e6e626b3c7c69eef7ba2908cc}{\index{v8\-::\-Reg\-Exp@{v8\-::\-Reg\-Exp}!Get\-Flags@{Get\-Flags}}
+\index{Get\-Flags@{Get\-Flags}!v8::RegExp@{v8\-::\-Reg\-Exp}}
+\subsubsection[{Get\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Flags} v8\-::\-Reg\-Exp\-::\-Get\-Flags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1RegExp_ad5a5e77e6e626b3c7c69eef7ba2908cc}
+Returns the flags bit field. \hypertarget{classv8_1_1RegExp_a448213f2a92d964ed260b51429d5e590}{\index{v8\-::\-Reg\-Exp@{v8\-::\-Reg\-Exp}!Get\-Source@{Get\-Source}}
+\index{Get\-Source@{Get\-Source}!v8::RegExp@{v8\-::\-Reg\-Exp}}
+\subsubsection[{Get\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\-::\-Reg\-Exp\-::\-Get\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1RegExp_a448213f2a92d964ed260b51429d5e590}
+Returns the value of the source property\-: a string representing the regular expression. \hypertarget{classv8_1_1RegExp_ac92fcff5a40cf8c698aefd021c823c2e}{\index{v8\-::\-Reg\-Exp@{v8\-::\-Reg\-Exp}!New@{New}}
+\index{New@{New}!v8::RegExp@{v8\-::\-Reg\-Exp}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Reg\-Exp}$>$ v8\-::\-Reg\-Exp\-::\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{pattern, }
+\item[{{\bf Flags}}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1RegExp_ac92fcff5a40cf8c698aefd021c823c2e}
+Creates a regular expression from the given pattern string and the flags bit field. May throw a Java\-Script exception as described in E\-C\-M\-A-\/262, 15.\-10.\-4.\-1.
+
+For example, \hyperlink{classv8_1_1RegExp_ac92fcff5a40cf8c698aefd021c823c2e}{Reg\-Exp\-::\-New}(v8\-::\-String\-::\-New(\char`\"{}foo\char`\"{}), static\-\_\-cast$<$\-Reg\-Exp\-::\-Flags$>$(k\-Global $|$ k\-Multiline)) is equivalent to evaluating \char`\"{}/foo/gm\char`\"{}. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

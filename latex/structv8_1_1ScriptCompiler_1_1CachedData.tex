@@ -1,0 +1,40 @@
+\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData}{\section{v8\-:\-:Script\-Compiler\-:\-:Cached\-Data Struct Reference}
+\label{structv8_1_1ScriptCompiler_1_1CachedData}\index{v8\-::\-Script\-Compiler\-::\-Cached\-Data@{v8\-::\-Script\-Compiler\-::\-Cached\-Data}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Buffer\-Policy} \{ {\bfseries Buffer\-Not\-Owned}, 
+{\bfseries Buffer\-Owned}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_ab45b2bd22aa86eafd0b8eecbdc72d44e}{{\bfseries Cached\-Data} (const uint8\-\_\-t $\ast$data, int length, Buffer\-Policy buffer\-\_\-policy=Buffer\-Not\-Owned)}\label{structv8_1_1ScriptCompiler_1_1CachedData_ab45b2bd22aa86eafd0b8eecbdc72d44e}
+
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_a31e313a969170116f98d5a76c110fe61}{const uint8\-\_\-t $\ast$ {\bfseries data}}\label{structv8_1_1ScriptCompiler_1_1CachedData_a31e313a969170116f98d5a76c110fe61}
+
+\item 
+\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_ad7b8b1b672095a2c33621d3d5b5c7f8f}{int {\bfseries length}}\label{structv8_1_1ScriptCompiler_1_1CachedData_ad7b8b1b672095a2c33621d3d5b5c7f8f}
+
+\item 
+\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_a1e5c9ff625ac790139aec4294493fe32}{Buffer\-Policy {\bfseries buffer\-\_\-policy}}\label{structv8_1_1ScriptCompiler_1_1CachedData_a1e5c9ff625ac790139aec4294493fe32}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compilation data that the embedder can cache and pass back to speed up future compilations. The data is produced if the Compiler\-Options passed to the compilation functions in \hyperlink{classv8_1_1ScriptCompiler}{Script\-Compiler} contains produce\-\_\-data\-\_\-to\-\_\-cache = true. The data to cache can then can be retrieved from \hyperlink{classv8_1_1UnboundScript}{Unbound\-Script}. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1CpuProfiler}{\section{v8\-:\-:Cpu\-Profiler Class Reference}
+\label{classv8_1_1CpuProfiler}\index{v8\-::\-Cpu\-Profiler@{v8\-::\-Cpu\-Profiler}}
+}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}{Set\-Sampling\-Interval} (int us)
+\item 
+void \hyperlink{classv8_1_1CpuProfiler_a429a16655bbed7649b1869eefebb4fe9}{Start\-Profiling} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ title, bool record\-\_\-samples=false)
+\item 
+\hyperlink{classv8_1_1CpuProfiler_a26af7927eff24c33196beee4507d8924}{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} (\char`\"{}Use \hyperlink{classv8_1_1CpuProfiler_a429a16655bbed7649b1869eefebb4fe9}{Start\-Profiling}\char`\"{}, void Start\-Cpu\-Profiling(\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ title, bool record\-\_\-samples=false))
+\item 
+\hyperlink{classv8_1_1CpuProfile}{Cpu\-Profile} $\ast$ \hyperlink{classv8_1_1CpuProfiler_a538b947e27524bc64ceab85df5e81c5f}{Stop\-Profiling} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ title)
+\item 
+\hyperlink{classv8_1_1CpuProfiler_ad134cf9b3676fced85e430b3f2566275}{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} (\char`\"{}Use \hyperlink{classv8_1_1CpuProfiler_a538b947e27524bc64ceab85df5e81c5f}{Stop\-Profiling}\char`\"{}, const \hyperlink{classv8_1_1CpuProfile}{Cpu\-Profile} $\ast$Stop\-Cpu\-Profiling(\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ title))
+\item 
+void \hyperlink{classv8_1_1CpuProfiler_a68e6da6f9ff4a0d3bde505f378a9a7fa}{Set\-Idle} (bool is\-\_\-idle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for controlling C\-P\-U profiling. Instance of the profiler can be retrieved using \hyperlink{classv8_1_1Isolate_a7eb415d9210d912aa57877ab6416fec8}{v8\-::\-Isolate\-::\-Get\-Cpu\-Profiler}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1CpuProfiler_a68e6da6f9ff4a0d3bde505f378a9a7fa}{\index{v8\-::\-Cpu\-Profiler@{v8\-::\-Cpu\-Profiler}!Set\-Idle@{Set\-Idle}}
+\index{Set\-Idle@{Set\-Idle}!v8::CpuProfiler@{v8\-::\-Cpu\-Profiler}}
+\subsubsection[{Set\-Idle}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Cpu\-Profiler\-::\-Set\-Idle (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-\_\-idle}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1CpuProfiler_a68e6da6f9ff4a0d3bde505f378a9a7fa}
+Tells the profiler whether the embedder is idle. \hypertarget{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}{\index{v8\-::\-Cpu\-Profiler@{v8\-::\-Cpu\-Profiler}!Set\-Sampling\-Interval@{Set\-Sampling\-Interval}}
+\index{Set\-Sampling\-Interval@{Set\-Sampling\-Interval}!v8::CpuProfiler@{v8\-::\-Cpu\-Profiler}}
+\subsubsection[{Set\-Sampling\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Cpu\-Profiler\-::\-Set\-Sampling\-Interval (
+\begin{DoxyParamCaption}
+\item[{int}]{us}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}
+Changes default C\-P\-U profiler sampling interval to the specified number of microseconds. Default interval is 1000us. This method must be called when there are no profiles being recorded. \hypertarget{classv8_1_1CpuProfiler_a429a16655bbed7649b1869eefebb4fe9}{\index{v8\-::\-Cpu\-Profiler@{v8\-::\-Cpu\-Profiler}!Start\-Profiling@{Start\-Profiling}}
+\index{Start\-Profiling@{Start\-Profiling}!v8::CpuProfiler@{v8\-::\-Cpu\-Profiler}}
+\subsubsection[{Start\-Profiling}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Cpu\-Profiler\-::\-Start\-Profiling (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{title, }
+\item[{bool}]{record\-\_\-samples = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1CpuProfiler_a429a16655bbed7649b1869eefebb4fe9}
+Starts collecting C\-P\-U profile. Title may be an empty string. It is allowed to have several profiles being collected at once. Attempts to start collecting several profiles with the same title are silently ignored. While collecting a profile, functions from all security contexts are included in it. The token-\/based filtering is only performed when querying for a profile.
+
+$|$record\-\_\-samples$|$ parameter controls whether individual samples should be recorded in addition to the aggregated tree. \hypertarget{classv8_1_1CpuProfiler_a538b947e27524bc64ceab85df5e81c5f}{\index{v8\-::\-Cpu\-Profiler@{v8\-::\-Cpu\-Profiler}!Stop\-Profiling@{Stop\-Profiling}}
+\index{Stop\-Profiling@{Stop\-Profiling}!v8::CpuProfiler@{v8\-::\-Cpu\-Profiler}}
+\subsubsection[{Stop\-Profiling}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cpu\-Profile}$\ast$ v8\-::\-Cpu\-Profiler\-::\-Stop\-Profiling (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{title}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1CpuProfiler_a538b947e27524bc64ceab85df5e81c5f}
+Stops collecting C\-P\-U profile with a given title and returns it. If the title given is empty, finishes the last profile started. \hypertarget{classv8_1_1CpuProfiler_a26af7927eff24c33196beee4507d8924}{\index{v8\-::\-Cpu\-Profiler@{v8\-::\-Cpu\-Profiler}!V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D@{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}}
+\index{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D@{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}!v8::CpuProfiler@{v8\-::\-Cpu\-Profiler}}
+\subsubsection[{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}v8\-::\-Cpu\-Profiler\-::\-V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use {\bf Start\-Profiling}\char`\"{}}]{, }
+\item[{void }]{Start\-Cpu\-ProfilingHandle$<$ String $>$ title, bool record\-\_\-samples=false}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1CpuProfiler_a26af7927eff24c33196beee4507d8924}
+Deprecated. Use Start\-Profiling instead. \hypertarget{classv8_1_1CpuProfiler_ad134cf9b3676fced85e430b3f2566275}{\index{v8\-::\-Cpu\-Profiler@{v8\-::\-Cpu\-Profiler}!V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D@{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}}
+\index{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D@{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}!v8::CpuProfiler@{v8\-::\-Cpu\-Profiler}}
+\subsubsection[{V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}v8\-::\-Cpu\-Profiler\-::\-V8\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use {\bf Stop\-Profiling}\char`\"{}}]{, }
+\item[{const {\bf Cpu\-Profile} $\ast$}]{Stop\-Cpu\-ProfilingHandle$<$ String $>$ title}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1CpuProfiler_ad134cf9b3676fced85e430b3f2566275}
+Deprecated. Use Stop\-Profiling instead. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\-h\end{DoxyCompactItemize}

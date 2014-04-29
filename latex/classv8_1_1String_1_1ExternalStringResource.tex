@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1String_1_1ExternalStringResource}{\section{v8\-:\-:String\-:\-:External\-String\-Resource Class Reference}
+\label{classv8_1_1String_1_1ExternalStringResource}\index{v8\-::\-String\-::\-External\-String\-Resource@{v8\-::\-String\-::\-External\-String\-Resource}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+Inheritance diagram for v8\-:\-:String\-:\-:External\-String\-Resource\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1String_1_1ExternalStringResource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}{$\sim$\-External\-String\-Resource} ()
+\item 
+virtual const uint16\-\_\-t $\ast$ \hyperlink{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}{data} () const =0
+\item 
+virtual size\-\_\-t \hyperlink{classv8_1_1String_1_1ExternalStringResource_ab5ca300fea077d7c7774ec49d32e4da1}{length} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An \hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\-String\-Resource} is a wrapper around a two-\/byte string buffer that resides outside \hyperlink{classv8_1_1V8}{V8}'s heap. Implement an \hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\-String\-Resource} to manage the life cycle of the underlying buffer. Note that the string data must be immutable. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}{\index{v8\-::\-String\-::\-External\-String\-Resource@{v8\-::\-String\-::\-External\-String\-Resource}!$\sim$\-External\-String\-Resource@{$\sim$\-External\-String\-Resource}}
+\index{$\sim$\-External\-String\-Resource@{$\sim$\-External\-String\-Resource}!v8::String::ExternalStringResource@{v8\-::\-String\-::\-External\-String\-Resource}}
+\subsubsection[{$\sim$\-External\-String\-Resource}]{\setlength{\rightskip}{0pt plus 5cm}virtual v8\-::\-String\-::\-External\-String\-Resource\-::$\sim$\-External\-String\-Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}
+Override the destructor to manage the life cycle of the underlying buffer. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}{\index{v8\-::\-String\-::\-External\-String\-Resource@{v8\-::\-String\-::\-External\-String\-Resource}!data@{data}}
+\index{data@{data}!v8::String::ExternalStringResource@{v8\-::\-String\-::\-External\-String\-Resource}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}virtual const uint16\-\_\-t$\ast$ v8\-::\-String\-::\-External\-String\-Resource\-::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}
+The string data from the underlying buffer. \hypertarget{classv8_1_1String_1_1ExternalStringResource_ab5ca300fea077d7c7774ec49d32e4da1}{\index{v8\-::\-String\-::\-External\-String\-Resource@{v8\-::\-String\-::\-External\-String\-Resource}!length@{length}}
+\index{length@{length}!v8::String::ExternalStringResource@{v8\-::\-String\-::\-External\-String\-Resource}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\-\_\-t v8\-::\-String\-::\-External\-String\-Resource\-::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1String_1_1ExternalStringResource_ab5ca300fea077d7c7774ec49d32e4da1}
+The length of the string. That is, the number of two-\/byte characters. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

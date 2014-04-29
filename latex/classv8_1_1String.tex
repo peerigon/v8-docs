@@ -1,0 +1,298 @@
+\hypertarget{classv8_1_1String}{\section{v8\-:\-:String Class Reference}
+\label{classv8_1_1String}\index{v8\-::\-String@{v8\-::\-String}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+Inheritance diagram for v8\-:\-:String\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1String}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource}{External\-Ascii\-String\-Resource}
+\item 
+class \hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\-String\-Resource}
+\item 
+class \hyperlink{classv8_1_1String_1_1ExternalStringResourceBase}{External\-String\-Resource\-Base}
+\item 
+class \hyperlink{classv8_1_1String_1_1Utf8Value}{Utf8\-Value}
+\item 
+class \hyperlink{classv8_1_1String_1_1Value}{Value}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Encoding} \{ {\bfseries U\-N\-K\-N\-O\-W\-N\-\_\-\-E\-N\-C\-O\-D\-I\-N\-G} =  0x1, 
+{\bfseries T\-W\-O\-\_\-\-B\-Y\-T\-E\-\_\-\-E\-N\-C\-O\-D\-I\-N\-G} =  0x0, 
+{\bfseries A\-S\-C\-I\-I\-\_\-\-E\-N\-C\-O\-D\-I\-N\-G} =  0x4, 
+{\bfseries O\-N\-E\-\_\-\-B\-Y\-T\-E\-\_\-\-E\-N\-C\-O\-D\-I\-N\-G} =  0x4
+ \}
+\item 
+enum \hyperlink{classv8_1_1String_a9ce7f1458ffd08f8eb2b9c8dc056e616}{Write\-Options} \{ \\*
+{\bfseries N\-O\-\_\-\-O\-P\-T\-I\-O\-N\-S} =  0, 
+{\bfseries H\-I\-N\-T\-\_\-\-M\-A\-N\-Y\-\_\-\-W\-R\-I\-T\-E\-S\-\_\-\-E\-X\-P\-E\-C\-T\-E\-D} =  1, 
+{\bfseries N\-O\-\_\-\-N\-U\-L\-L\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-I\-O\-N} =  2, 
+{\bfseries P\-R\-E\-S\-E\-R\-V\-E\-\_\-\-A\-S\-C\-I\-I\-\_\-\-N\-U\-L\-L} =  4, 
+\\*
+{\bfseries R\-E\-P\-L\-A\-C\-E\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-T\-F8} =  8
+ \}
+\item 
+enum {\bfseries New\-String\-Type} \{ {\bfseries k\-Normal\-String}, 
+{\bfseries k\-Internalized\-String}, 
+{\bfseries k\-Undetectable\-String}
+ \}
+\item 
+\hypertarget{classv8_1_1String_aefa36d4416f7f2b0c415dfa2d225e728}{typedef \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource}{External\-Ascii\-String\-Resource} {\bfseries External\-One\-Byte\-String\-Resource}}\label{classv8_1_1String_aefa36d4416f7f2b0c415dfa2d225e728}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classv8_1_1String_a94353cd764d2bf0cda141714c3c9eb6c}{Length} () const 
+\item 
+int \hyperlink{classv8_1_1String_afb2bb302d3ffe807e66a0797d6ac4189}{Utf8\-Length} () const 
+\item 
+bool \hyperlink{classv8_1_1String_a2e6771bd8fbd0e2d1fa01811d3e8c7dc}{Is\-One\-Byte} () const 
+\item 
+bool \hyperlink{classv8_1_1String_a4ae1fe1175bd5b96bfa53f5f5ee835e9}{Contains\-Only\-One\-Byte} () const 
+\item 
+\hypertarget{classv8_1_1String_ab1ee96f8adf969958faeff9eced9a56f}{int {\bfseries Write} (uint16\-\_\-t $\ast$buffer, int start=0, int length=-\/1, int options=N\-O\-\_\-\-O\-P\-T\-I\-O\-N\-S) const }\label{classv8_1_1String_ab1ee96f8adf969958faeff9eced9a56f}
+
+\item 
+\hypertarget{classv8_1_1String_a61114324ef659345f04b2730679eb456}{int {\bfseries Write\-One\-Byte} (uint8\-\_\-t $\ast$buffer, int start=0, int length=-\/1, int options=N\-O\-\_\-\-O\-P\-T\-I\-O\-N\-S) const }\label{classv8_1_1String_a61114324ef659345f04b2730679eb456}
+
+\item 
+\hypertarget{classv8_1_1String_ad62145c723fa0ce55095223223263f41}{int {\bfseries Write\-Utf8} (char $\ast$buffer, int length=-\/1, int $\ast$nchars\-\_\-ref=N\-U\-L\-L, int options=N\-O\-\_\-\-O\-P\-T\-I\-O\-N\-S) const }\label{classv8_1_1String_ad62145c723fa0ce55095223223263f41}
+
+\item 
+bool \hyperlink{classv8_1_1String_abbf623aabba9446cd57af14018877398}{Is\-External} () const 
+\item 
+bool \hyperlink{classv8_1_1String_a470adeefeeb419860d4e069714fed42e}{Is\-External\-Ascii} () const 
+\item 
+V8\-\_\-\-I\-N\-L\-I\-N\-E \\*
+\hyperlink{classv8_1_1String_1_1ExternalStringResourceBase}{External\-String\-Resource\-Base} $\ast$ \hyperlink{classv8_1_1String_a471cf0e3ca135d839e59d25da66894e0}{Get\-External\-String\-Resource\-Base} (Encoding $\ast$encoding\-\_\-out) const 
+\item 
+V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\-String\-Resource} $\ast$ \hyperlink{classv8_1_1String_a1a78c6fe39dbdd6322ca576e224f0cba}{Get\-External\-String\-Resource} () const 
+\item 
+const \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource}{External\-Ascii\-String\-Resource} $\ast$ \hyperlink{classv8_1_1String_a1e6b2d33868b12e3b8fc4553b8b11d24}{Get\-External\-Ascii\-String\-Resource} () const 
+\item 
+bool \hyperlink{classv8_1_1String_a5efd1eba40c1fa8a6aae2c4a175a63be}{Make\-External} (\hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\-String\-Resource} $\ast$resource)
+\item 
+bool \hyperlink{classv8_1_1String_a19db11c97e2ce01244e06f5cbcd094f2}{Make\-External} (\hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource}{External\-Ascii\-String\-Resource} $\ast$resource)
+\item 
+bool \hyperlink{classv8_1_1String_a0fe076838af046506ffebbfadcde812a}{Can\-Make\-External} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1Local}{v8\-::\-Local}\\*
+$<$ \hyperlink{classv8_1_1String}{v8\-::\-String} $>$ \hyperlink{classv8_1_1String_aa393d47baa54467fe57001065e49194b}{Empty} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\item 
+\hypertarget{classv8_1_1String_a826d60798dc152cea64a7636737b03b9}{static V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1String}{String} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{v8\-::\-Value} $\ast$obj)}\label{classv8_1_1String_a826d60798dc152cea64a7636737b03b9}
+
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1String_aa4b8c052f5108ca6350c45922602b9d4}{New\-From\-Utf8} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const char $\ast$data, New\-String\-Type type=k\-Normal\-String, int length=-\/1)
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1String_afa8026ed1337564a9fd15dc56aceaa83}{New\-From\-One\-Byte} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const uint8\-\_\-t $\ast$data, New\-String\-Type type=k\-Normal\-String, int length=-\/1)
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1String_a876615eb027092a6a71a4e7d69b82d00}{New\-From\-Two\-Byte} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const uint16\-\_\-t $\ast$data, New\-String\-Type type=k\-Normal\-String, int length=-\/1)
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1String_a3d0b9c9208cf5054adb048e360fb73ff}{Concat} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ left, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ right)
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1String_a5574e60f0000c5042cf558f145a8aba2}{New\-External} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\-String\-Resource} $\ast$resource)
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1String_a7d48181c3af1ec31204ecec9b3d81e33}{New\-External} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource}{External\-Ascii\-String\-Resource} $\ast$resource)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Java\-Script string value (E\-C\-M\-A-\/262, 4.\-3.\-17). 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classv8_1_1String_a9ce7f1458ffd08f8eb2b9c8dc056e616}{\index{v8\-::\-String@{v8\-::\-String}!Write\-Options@{Write\-Options}}
+\index{Write\-Options@{Write\-Options}!v8::String@{v8\-::\-String}}
+\subsubsection[{Write\-Options}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\-::\-String\-::\-Write\-Options}}}\label{classv8_1_1String_a9ce7f1458ffd08f8eb2b9c8dc056e616}
+Write the contents of the string to an external buffer. If no arguments are given, expects the buffer to be large enough to hold the entire string and N\-U\-L\-L terminator. Copies the contents of the string and the N\-U\-L\-L terminator into the buffer.
+
+Write\-Utf8 will not write partial U\-T\-F-\/8 sequences, preferring to stop before the end of the buffer.
+
+Copies up to length characters into the output buffer. Only null-\/terminates if there is enough space in the buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer into which the string will be copied. \\
+\hline
+{\em start} & The starting position within the string at which copying begins. \\
+\hline
+{\em length} & The number of characters to copy from the string. For Write\-Utf8 the number of bytes in the buffer. \\
+\hline
+{\em nchars\-\_\-ref} & The number of characters written, can be N\-U\-L\-L. \\
+\hline
+{\em options} & Various options that might affect performance of this or subsequent operations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters copied to the buffer excluding the null terminator. For Write\-Utf8\-: The number of bytes copied to the buffer including the null terminator (if written). 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1String_a0fe076838af046506ffebbfadcde812a}{\index{v8\-::\-String@{v8\-::\-String}!Can\-Make\-External@{Can\-Make\-External}}
+\index{Can\-Make\-External@{Can\-Make\-External}!v8::String@{v8\-::\-String}}
+\subsubsection[{Can\-Make\-External}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-String\-::\-Can\-Make\-External (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1String_a0fe076838af046506ffebbfadcde812a}
+Returns true if this string can be made external. \hypertarget{classv8_1_1String_a3d0b9c9208cf5054adb048e360fb73ff}{\index{v8\-::\-String@{v8\-::\-String}!Concat@{Concat}}
+\index{Concat@{Concat}!v8::String@{v8\-::\-String}}
+\subsubsection[{Concat}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf String}$>$ v8\-::\-String\-::\-Concat (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{left, }
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1String_a3d0b9c9208cf5054adb048e360fb73ff}
+Creates a new string by concatenating the left and the right strings passed in as parameters. \hypertarget{classv8_1_1String_a4ae1fe1175bd5b96bfa53f5f5ee835e9}{\index{v8\-::\-String@{v8\-::\-String}!Contains\-Only\-One\-Byte@{Contains\-Only\-One\-Byte}}
+\index{Contains\-Only\-One\-Byte@{Contains\-Only\-One\-Byte}!v8::String@{v8\-::\-String}}
+\subsubsection[{Contains\-Only\-One\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-String\-::\-Contains\-Only\-One\-Byte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_a4ae1fe1175bd5b96bfa53f5f5ee835e9}
+Returns whether this string contain only one byte data. Will read the entire string in some cases. \hypertarget{classv8_1_1String_aa393d47baa54467fe57001065e49194b}{\index{v8\-::\-String@{v8\-::\-String}!Empty@{Empty}}
+\index{Empty@{Empty}!v8::String@{v8\-::\-String}}
+\subsubsection[{Empty}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<$ {\bf String} $>$ v8\-::\-String\-::\-Empty (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1String_aa393d47baa54467fe57001065e49194b}
+A zero length string. \hypertarget{classv8_1_1String_a1e6b2d33868b12e3b8fc4553b8b11d24}{\index{v8\-::\-String@{v8\-::\-String}!Get\-External\-Ascii\-String\-Resource@{Get\-External\-Ascii\-String\-Resource}}
+\index{Get\-External\-Ascii\-String\-Resource@{Get\-External\-Ascii\-String\-Resource}!v8::String@{v8\-::\-String}}
+\subsubsection[{Get\-External\-Ascii\-String\-Resource}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf External\-Ascii\-String\-Resource}$\ast$ v8\-::\-String\-::\-Get\-External\-Ascii\-String\-Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_a1e6b2d33868b12e3b8fc4553b8b11d24}
+Get the \hyperlink{classv8_1_1String_1_1ExternalAsciiStringResource}{External\-Ascii\-String\-Resource} for an external A\-S\-C\-I\-I string. Returns N\-U\-L\-L if \hyperlink{classv8_1_1String_a470adeefeeb419860d4e069714fed42e}{Is\-External\-Ascii()} doesn't return true. \hypertarget{classv8_1_1String_a1a78c6fe39dbdd6322ca576e224f0cba}{\index{v8\-::\-String@{v8\-::\-String}!Get\-External\-String\-Resource@{Get\-External\-String\-Resource}}
+\index{Get\-External\-String\-Resource@{Get\-External\-String\-Resource}!v8::String@{v8\-::\-String}}
+\subsubsection[{Get\-External\-String\-Resource}]{\setlength{\rightskip}{0pt plus 5cm}{\bf String\-::\-External\-String\-Resource} $\ast$ v8\-::\-String\-::\-Get\-External\-String\-Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_a1a78c6fe39dbdd6322ca576e224f0cba}
+Get the \hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\-String\-Resource} for an external string. Returns N\-U\-L\-L if \hyperlink{classv8_1_1String_abbf623aabba9446cd57af14018877398}{Is\-External()} doesn't return true. \hypertarget{classv8_1_1String_a471cf0e3ca135d839e59d25da66894e0}{\index{v8\-::\-String@{v8\-::\-String}!Get\-External\-String\-Resource\-Base@{Get\-External\-String\-Resource\-Base}}
+\index{Get\-External\-String\-Resource\-Base@{Get\-External\-String\-Resource\-Base}!v8::String@{v8\-::\-String}}
+\subsubsection[{Get\-External\-String\-Resource\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf String\-::\-External\-String\-Resource\-Base} $\ast$ v8\-::\-String\-::\-Get\-External\-String\-Resource\-Base (
+\begin{DoxyParamCaption}
+\item[{String\-::\-Encoding $\ast$}]{encoding\-\_\-out}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_a471cf0e3ca135d839e59d25da66894e0}
+If the string is an external string, return the \hyperlink{classv8_1_1String_1_1ExternalStringResourceBase}{External\-String\-Resource\-Base} regardless of the encoding, otherwise return N\-U\-L\-L. The encoding of the string is returned in encoding\-\_\-out. \hypertarget{classv8_1_1String_abbf623aabba9446cd57af14018877398}{\index{v8\-::\-String@{v8\-::\-String}!Is\-External@{Is\-External}}
+\index{Is\-External@{Is\-External}!v8::String@{v8\-::\-String}}
+\subsubsection[{Is\-External}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-String\-::\-Is\-External (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_abbf623aabba9446cd57af14018877398}
+Returns true if the string is external 
+
+Reimplemented from \hyperlink{classv8_1_1Value_a7ac61a325c18af8dcb6d7d5bf47d2503}{v8\-::\-Value}.
+
+\hypertarget{classv8_1_1String_a470adeefeeb419860d4e069714fed42e}{\index{v8\-::\-String@{v8\-::\-String}!Is\-External\-Ascii@{Is\-External\-Ascii}}
+\index{Is\-External\-Ascii@{Is\-External\-Ascii}!v8::String@{v8\-::\-String}}
+\subsubsection[{Is\-External\-Ascii}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-String\-::\-Is\-External\-Ascii (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_a470adeefeeb419860d4e069714fed42e}
+Returns true if the string is both external and A\-S\-C\-I\-I \hypertarget{classv8_1_1String_a2e6771bd8fbd0e2d1fa01811d3e8c7dc}{\index{v8\-::\-String@{v8\-::\-String}!Is\-One\-Byte@{Is\-One\-Byte}}
+\index{Is\-One\-Byte@{Is\-One\-Byte}!v8::String@{v8\-::\-String}}
+\subsubsection[{Is\-One\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-String\-::\-Is\-One\-Byte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_a2e6771bd8fbd0e2d1fa01811d3e8c7dc}
+Returns whether this string is known to contain only one byte data. Does not read the string. False negatives are possible. \hypertarget{classv8_1_1String_a94353cd764d2bf0cda141714c3c9eb6c}{\index{v8\-::\-String@{v8\-::\-String}!Length@{Length}}
+\index{Length@{Length}!v8::String@{v8\-::\-String}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-String\-::\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_a94353cd764d2bf0cda141714c3c9eb6c}
+Returns the number of characters in this string. \hypertarget{classv8_1_1String_a5efd1eba40c1fa8a6aae2c4a175a63be}{\index{v8\-::\-String@{v8\-::\-String}!Make\-External@{Make\-External}}
+\index{Make\-External@{Make\-External}!v8::String@{v8\-::\-String}}
+\subsubsection[{Make\-External}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-String\-::\-Make\-External (
+\begin{DoxyParamCaption}
+\item[{{\bf External\-String\-Resource} $\ast$}]{resource}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1String_a5efd1eba40c1fa8a6aae2c4a175a63be}
+Associate an external string resource with this string by transforming it in place so that existing references to this string in the Java\-Script heap will use the external string resource. The external string resource's character contents need to be equivalent to this string. Returns true if the string has been changed to be an external string. The string is not modified if the operation fails. See New\-External for information on the lifetime of the resource. \hypertarget{classv8_1_1String_a19db11c97e2ce01244e06f5cbcd094f2}{\index{v8\-::\-String@{v8\-::\-String}!Make\-External@{Make\-External}}
+\index{Make\-External@{Make\-External}!v8::String@{v8\-::\-String}}
+\subsubsection[{Make\-External}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-String\-::\-Make\-External (
+\begin{DoxyParamCaption}
+\item[{{\bf External\-Ascii\-String\-Resource} $\ast$}]{resource}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1String_a19db11c97e2ce01244e06f5cbcd094f2}
+Associate an external string resource with this string by transforming it in place so that existing references to this string in the Java\-Script heap will use the external string resource. The external string resource's character contents need to be equivalent to this string. Returns true if the string has been changed to be an external string. The string is not modified if the operation fails. See New\-External for information on the lifetime of the resource. \hypertarget{classv8_1_1String_a5574e60f0000c5042cf558f145a8aba2}{\index{v8\-::\-String@{v8\-::\-String}!New\-External@{New\-External}}
+\index{New\-External@{New\-External}!v8::String@{v8\-::\-String}}
+\subsubsection[{New\-External}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf String}$>$ v8\-::\-String\-::\-New\-External (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf External\-String\-Resource} $\ast$}]{resource}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1String_a5574e60f0000c5042cf558f145a8aba2}
+Creates a new external string using the data defined in the given resource. When the external string is no longer live on \hyperlink{classv8_1_1V8}{V8}'s heap the resource will be disposed by calling its Dispose method. The caller of this function should not otherwise delete or modify the resource. Neither should the underlying buffer be deallocated or modified except through the destructor of the external string resource. \hypertarget{classv8_1_1String_a7d48181c3af1ec31204ecec9b3d81e33}{\index{v8\-::\-String@{v8\-::\-String}!New\-External@{New\-External}}
+\index{New\-External@{New\-External}!v8::String@{v8\-::\-String}}
+\subsubsection[{New\-External}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf String}$>$ v8\-::\-String\-::\-New\-External (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf External\-Ascii\-String\-Resource} $\ast$}]{resource}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1String_a7d48181c3af1ec31204ecec9b3d81e33}
+Creates a new external string using the A\-S\-C\-I\-I data defined in the given resource. When the external string is no longer live on \hyperlink{classv8_1_1V8}{V8}'s heap the resource will be disposed by calling its Dispose method. The caller of this function should not otherwise delete or modify the resource. Neither should the underlying buffer be deallocated or modified except through the destructor of the external string resource. \hypertarget{classv8_1_1String_afa8026ed1337564a9fd15dc56aceaa83}{\index{v8\-::\-String@{v8\-::\-String}!New\-From\-One\-Byte@{New\-From\-One\-Byte}}
+\index{New\-From\-One\-Byte@{New\-From\-One\-Byte}!v8::String@{v8\-::\-String}}
+\subsubsection[{New\-From\-One\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf String}$>$ v8\-::\-String\-::\-New\-From\-One\-Byte (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{const uint8\-\_\-t $\ast$}]{data, }
+\item[{New\-String\-Type}]{type = {\ttfamily kNormalString}, }
+\item[{int}]{length = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1String_afa8026ed1337564a9fd15dc56aceaa83}
+Allocates a new string from Latin-\/1 data. \hypertarget{classv8_1_1String_a876615eb027092a6a71a4e7d69b82d00}{\index{v8\-::\-String@{v8\-::\-String}!New\-From\-Two\-Byte@{New\-From\-Two\-Byte}}
+\index{New\-From\-Two\-Byte@{New\-From\-Two\-Byte}!v8::String@{v8\-::\-String}}
+\subsubsection[{New\-From\-Two\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf String}$>$ v8\-::\-String\-::\-New\-From\-Two\-Byte (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{const uint16\-\_\-t $\ast$}]{data, }
+\item[{New\-String\-Type}]{type = {\ttfamily kNormalString}, }
+\item[{int}]{length = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1String_a876615eb027092a6a71a4e7d69b82d00}
+Allocates a new string from U\-T\-F-\/16 data. \hypertarget{classv8_1_1String_aa4b8c052f5108ca6350c45922602b9d4}{\index{v8\-::\-String@{v8\-::\-String}!New\-From\-Utf8@{New\-From\-Utf8}}
+\index{New\-From\-Utf8@{New\-From\-Utf8}!v8::String@{v8\-::\-String}}
+\subsubsection[{New\-From\-Utf8}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf String}$>$ v8\-::\-String\-::\-New\-From\-Utf8 (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{const char $\ast$}]{data, }
+\item[{New\-String\-Type}]{type = {\ttfamily kNormalString}, }
+\item[{int}]{length = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1String_aa4b8c052f5108ca6350c45922602b9d4}
+Allocates a new string from U\-T\-F-\/8 data. \hypertarget{classv8_1_1String_afb2bb302d3ffe807e66a0797d6ac4189}{\index{v8\-::\-String@{v8\-::\-String}!Utf8\-Length@{Utf8\-Length}}
+\index{Utf8\-Length@{Utf8\-Length}!v8::String@{v8\-::\-String}}
+\subsubsection[{Utf8\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-String\-::\-Utf8\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1String_afb2bb302d3ffe807e66a0797d6ac4189}
+Returns the number of bytes in the U\-T\-F-\/8 encoded representation of this string. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

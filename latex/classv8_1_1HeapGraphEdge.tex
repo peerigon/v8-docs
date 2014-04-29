@@ -1,0 +1,71 @@
+\hypertarget{classv8_1_1HeapGraphEdge}{\section{v8\-:\-:Heap\-Graph\-Edge Class Reference}
+\label{classv8_1_1HeapGraphEdge}\index{v8\-::\-Heap\-Graph\-Edge@{v8\-::\-Heap\-Graph\-Edge}}
+}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ \\*
+{\bfseries k\-Context\-Variable} =  0, 
+{\bfseries k\-Element} =  1, 
+{\bfseries k\-Property} =  2, 
+{\bfseries k\-Internal} =  3, 
+\\*
+{\bfseries k\-Hidden} =  4, 
+{\bfseries k\-Shortcut} =  5, 
+{\bfseries k\-Weak} =  6
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Type \hyperlink{classv8_1_1HeapGraphEdge_a7f4923098074ee4c47d901f363728d08}{Get\-Type} () const 
+\item 
+\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1HeapGraphEdge_aa91362db6bfdbecfc48d3ba57d292705}{Get\-Name} () const 
+\item 
+const \hyperlink{classv8_1_1HeapGraphNode}{Heap\-Graph\-Node} $\ast$ \hyperlink{classv8_1_1HeapGraphEdge_acd43a5082f1862b7c0c0094fc75af631}{Get\-From\-Node} () const 
+\item 
+const \hyperlink{classv8_1_1HeapGraphNode}{Heap\-Graph\-Node} $\ast$ \hyperlink{classv8_1_1HeapGraphEdge_ad8fd8fa121a0e778a8b120a0c5fa227c}{Get\-To\-Node} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Heap\-Snapshot\-Edge represents a directed connection between heap graph nodes\-: from retainers to retained nodes. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1HeapGraphEdge_acd43a5082f1862b7c0c0094fc75af631}{\index{v8\-::\-Heap\-Graph\-Edge@{v8\-::\-Heap\-Graph\-Edge}!Get\-From\-Node@{Get\-From\-Node}}
+\index{Get\-From\-Node@{Get\-From\-Node}!v8::HeapGraphEdge@{v8\-::\-Heap\-Graph\-Edge}}
+\subsubsection[{Get\-From\-Node}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Heap\-Graph\-Node}$\ast$ v8\-::\-Heap\-Graph\-Edge\-::\-Get\-From\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1HeapGraphEdge_acd43a5082f1862b7c0c0094fc75af631}
+Returns origin node. \hypertarget{classv8_1_1HeapGraphEdge_aa91362db6bfdbecfc48d3ba57d292705}{\index{v8\-::\-Heap\-Graph\-Edge@{v8\-::\-Heap\-Graph\-Edge}!Get\-Name@{Get\-Name}}
+\index{Get\-Name@{Get\-Name}!v8::HeapGraphEdge@{v8\-::\-Heap\-Graph\-Edge}}
+\subsubsection[{Get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf Value}$>$ v8\-::\-Heap\-Graph\-Edge\-::\-Get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1HeapGraphEdge_aa91362db6bfdbecfc48d3ba57d292705}
+Returns edge name. This can be a variable name, an element index, or a property name. \hypertarget{classv8_1_1HeapGraphEdge_ad8fd8fa121a0e778a8b120a0c5fa227c}{\index{v8\-::\-Heap\-Graph\-Edge@{v8\-::\-Heap\-Graph\-Edge}!Get\-To\-Node@{Get\-To\-Node}}
+\index{Get\-To\-Node@{Get\-To\-Node}!v8::HeapGraphEdge@{v8\-::\-Heap\-Graph\-Edge}}
+\subsubsection[{Get\-To\-Node}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Heap\-Graph\-Node}$\ast$ v8\-::\-Heap\-Graph\-Edge\-::\-Get\-To\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1HeapGraphEdge_ad8fd8fa121a0e778a8b120a0c5fa227c}
+Returns destination node. \hypertarget{classv8_1_1HeapGraphEdge_a7f4923098074ee4c47d901f363728d08}{\index{v8\-::\-Heap\-Graph\-Edge@{v8\-::\-Heap\-Graph\-Edge}!Get\-Type@{Get\-Type}}
+\index{Get\-Type@{Get\-Type}!v8::HeapGraphEdge@{v8\-::\-Heap\-Graph\-Edge}}
+\subsubsection[{Get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}Type v8\-::\-Heap\-Graph\-Edge\-::\-Get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1HeapGraphEdge_a7f4923098074ee4c47d901f363728d08}
+Returns edge type (see Heap\-Graph\-Edge\-::\-Type). 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,152 @@
+\hypertarget{classv8_1_1TryCatch}{\section{v8\-:\-:Try\-Catch Class Reference}
+\label{classv8_1_1TryCatch}\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1TryCatch_adc9b1b11e73b0325df727914c348053d}{Try\-Catch} ()
+\item 
+\hyperlink{classv8_1_1TryCatch_a2c9ad4b40d17dd31c6dd020736b30679}{$\sim$\-Try\-Catch} ()
+\item 
+bool \hyperlink{classv8_1_1TryCatch_a48f704fbf2b82564b5d2a4ff596e4137}{Has\-Caught} () const 
+\item 
+bool \hyperlink{classv8_1_1TryCatch_a2ec467d4653d26c064d749cab98791cb}{Can\-Continue} () const 
+\item 
+bool \hyperlink{classv8_1_1TryCatch_a7e012477ac47db9480f85d55427987c7}{Has\-Terminated} () const 
+\item 
+\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1TryCatch_a4a7506617800bbc49c3c08bbfefb9c2d}{Re\-Throw} ()
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1TryCatch_a99c425f29b3355b4294cbe762377f99b}{Exception} () const 
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1TryCatch_a1ee3e6ee74a4fc50185443ccdc4d3ae7}{Stack\-Trace} () const 
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Message}{v8\-::\-Message} $>$ \hyperlink{classv8_1_1TryCatch_a2811e500fbb906ee505895a3d94fc66f}{Message} () const 
+\item 
+void \hyperlink{classv8_1_1TryCatch_a3aae8acab4c99b374b7d782763d4c8e1}{Reset} ()
+\item 
+void \hyperlink{classv8_1_1TryCatch_a032cd889d76bd596e2616df11ced8682}{Set\-Verbose} (bool value)
+\item 
+void \hyperlink{classv8_1_1TryCatch_a541b8fa6951bd5a439692c22d5c7b73c}{Set\-Capture\-Message} (bool value)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1TryCatch_acda8e558d20805fa72df899e935081aa}{class {\bfseries v8\-::internal\-::\-Isolate}}\label{classv8_1_1TryCatch_acda8e558d20805fa72df899e935081aa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An external exception handler. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classv8_1_1TryCatch_adc9b1b11e73b0325df727914c348053d}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Try\-Catch@{Try\-Catch}}
+\index{Try\-Catch@{Try\-Catch}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Try\-Catch}]{\setlength{\rightskip}{0pt plus 5cm}v8\-::\-Try\-Catch\-::\-Try\-Catch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1TryCatch_adc9b1b11e73b0325df727914c348053d}
+Creates a new try/catch block and registers it with \hyperlink{namespacev8}{v8}. Note that all \hyperlink{classv8_1_1TryCatch}{Try\-Catch} blocks should be stack allocated because the memory location itself is compared against Java\-Script try/catch blocks. \hypertarget{classv8_1_1TryCatch_a2c9ad4b40d17dd31c6dd020736b30679}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!$\sim$\-Try\-Catch@{$\sim$\-Try\-Catch}}
+\index{$\sim$\-Try\-Catch@{$\sim$\-Try\-Catch}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{$\sim$\-Try\-Catch}]{\setlength{\rightskip}{0pt plus 5cm}v8\-::\-Try\-Catch\-::$\sim$\-Try\-Catch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1TryCatch_a2c9ad4b40d17dd31c6dd020736b30679}
+Unregisters and deletes this try/catch block. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1TryCatch_a2ec467d4653d26c064d749cab98791cb}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Can\-Continue@{Can\-Continue}}
+\index{Can\-Continue@{Can\-Continue}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Can\-Continue}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Try\-Catch\-::\-Can\-Continue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1TryCatch_a2ec467d4653d26c064d749cab98791cb}
+For certain types of exceptions, it makes no sense to continue execution.
+
+If Can\-Continue returns false, the correct action is to perform any C++ cleanup needed and then return. If Can\-Continue returns false and Has\-Terminated returns true, it is possible to call Cancel\-Terminate\-Execution in order to continue calling into the engine. \hypertarget{classv8_1_1TryCatch_a99c425f29b3355b4294cbe762377f99b}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Exception@{Exception}}
+\index{Exception@{Exception}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Exception}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Value}$>$ v8\-::\-Try\-Catch\-::\-Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1TryCatch_a99c425f29b3355b4294cbe762377f99b}
+Returns the exception caught by this try/catch block. If no exception has been caught an empty handle is returned.
+
+The returned handle is valid until this \hyperlink{classv8_1_1TryCatch}{Try\-Catch} block has been destroyed. \hypertarget{classv8_1_1TryCatch_a48f704fbf2b82564b5d2a4ff596e4137}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Has\-Caught@{Has\-Caught}}
+\index{Has\-Caught@{Has\-Caught}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Has\-Caught}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Try\-Catch\-::\-Has\-Caught (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1TryCatch_a48f704fbf2b82564b5d2a4ff596e4137}
+Returns true if an exception has been caught by this try/catch block. \hypertarget{classv8_1_1TryCatch_a7e012477ac47db9480f85d55427987c7}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Has\-Terminated@{Has\-Terminated}}
+\index{Has\-Terminated@{Has\-Terminated}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Has\-Terminated}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Try\-Catch\-::\-Has\-Terminated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1TryCatch_a7e012477ac47db9480f85d55427987c7}
+Returns true if an exception has been caught due to script execution being terminated.
+
+There is no Java\-Script representation of an execution termination exception. Such exceptions are thrown when the Terminate\-Execution methods are called to terminate a long-\/running script.
+
+If such an exception has been thrown, Has\-Terminated will return true, indicating that it is possible to call Cancel\-Terminate\-Execution in order to continue calling into the engine. \hypertarget{classv8_1_1TryCatch_a2811e500fbb906ee505895a3d94fc66f}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Message@{Message}}
+\index{Message@{Message}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf v8\-::\-Message}$>$ v8\-::\-Try\-Catch\-::\-Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1TryCatch_a2811e500fbb906ee505895a3d94fc66f}
+Returns the message associated with this exception. If there is no message associated an empty handle is returned.
+
+The returned handle is valid until this \hyperlink{classv8_1_1TryCatch}{Try\-Catch} block has been destroyed. \hypertarget{classv8_1_1TryCatch_a3aae8acab4c99b374b7d782763d4c8e1}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Reset@{Reset}}
+\index{Reset@{Reset}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Try\-Catch\-::\-Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1TryCatch_a3aae8acab4c99b374b7d782763d4c8e1}
+Clears any exceptions that may have been caught by this try/catch block. After this method has been called, \hyperlink{classv8_1_1TryCatch_a48f704fbf2b82564b5d2a4ff596e4137}{Has\-Caught()} will return false.
+
+It is not necessary to clear a try/catch block before using it again; if another exception is thrown the previously caught exception will just be overwritten. However, it is often a good idea since it makes it easier to determine which operation threw a given exception. \hypertarget{classv8_1_1TryCatch_a4a7506617800bbc49c3c08bbfefb9c2d}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Re\-Throw@{Re\-Throw}}
+\index{Re\-Throw@{Re\-Throw}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Re\-Throw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf Value}$>$ v8\-::\-Try\-Catch\-::\-Re\-Throw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1TryCatch_a4a7506617800bbc49c3c08bbfefb9c2d}
+Throws the exception caught by this \hyperlink{classv8_1_1TryCatch}{Try\-Catch} in a way that avoids it being caught again by this same \hyperlink{classv8_1_1TryCatch}{Try\-Catch}. As with Throw\-Exception it is illegal to execute any Java\-Script operations after calling Re\-Throw; the caller must return immediately to where the exception is caught. \hypertarget{classv8_1_1TryCatch_a541b8fa6951bd5a439692c22d5c7b73c}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Set\-Capture\-Message@{Set\-Capture\-Message}}
+\index{Set\-Capture\-Message@{Set\-Capture\-Message}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Set\-Capture\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Try\-Catch\-::\-Set\-Capture\-Message (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1TryCatch_a541b8fa6951bd5a439692c22d5c7b73c}
+Set whether or not this \hyperlink{classv8_1_1TryCatch}{Try\-Catch} should capture a \hyperlink{classv8_1_1Message}{Message} object which holds source information about where the exception occurred. True by default. \hypertarget{classv8_1_1TryCatch_a032cd889d76bd596e2616df11ced8682}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Set\-Verbose@{Set\-Verbose}}
+\index{Set\-Verbose@{Set\-Verbose}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Set\-Verbose}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Try\-Catch\-::\-Set\-Verbose (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1TryCatch_a032cd889d76bd596e2616df11ced8682}
+Set verbosity of the external exception handler.
+
+By default, exceptions that are caught by an external exception handler are not reported. Call Set\-Verbose with true on an external exception handler to have exceptions caught by the handler reported as if they were not caught. \hypertarget{classv8_1_1TryCatch_a1ee3e6ee74a4fc50185443ccdc4d3ae7}{\index{v8\-::\-Try\-Catch@{v8\-::\-Try\-Catch}!Stack\-Trace@{Stack\-Trace}}
+\index{Stack\-Trace@{Stack\-Trace}!v8::TryCatch@{v8\-::\-Try\-Catch}}
+\subsubsection[{Stack\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Value}$>$ v8\-::\-Try\-Catch\-::\-Stack\-Trace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1TryCatch_a1ee3e6ee74a4fc50185443ccdc4d3ae7}
+Returns the .stack property of the thrown object. If no .stack property is present an empty handle is returned. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{classv8_1_1Promise_1_1Resolver}{\section{v8\-:\-:Promise\-:\-:Resolver Class Reference}
+\label{classv8_1_1Promise_1_1Resolver}\index{v8\-::\-Promise\-::\-Resolver@{v8\-::\-Promise\-::\-Resolver}}
+}
+Inheritance diagram for v8\-:\-:Promise\-:\-:Resolver\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1Promise_1_1Resolver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ \hyperlink{classv8_1_1Promise_1_1Resolver_a41fd1ffef546a62e363a639935fc8ae3}{Get\-Promise} ()
+\item 
+void \hyperlink{classv8_1_1Promise_1_1Resolver_aa1f7f6883d57879a7956e84e63b2d935}{Resolve} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)
+\item 
+\hypertarget{classv8_1_1Promise_1_1Resolver_a12b1f6ef41dd7d759443631135502847}{void {\bfseries Reject} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)}\label{classv8_1_1Promise_1_1Resolver_a12b1f6ef41dd7d759443631135502847}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver} $>$ \hyperlink{classv8_1_1Promise_1_1Resolver_a80b9e402b6b49f41d57d404ed9e00c9d}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\item 
+\hypertarget{classv8_1_1Promise_1_1Resolver_ab2b541cb210158ed0c757c8b7dc46279}{static V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)}\label{classv8_1_1Promise_1_1Resolver_ab2b541cb210158ed0c757c8b7dc46279}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1Promise_1_1Resolver_a41fd1ffef546a62e363a639935fc8ae3}{\index{v8\-::\-Promise\-::\-Resolver@{v8\-::\-Promise\-::\-Resolver}!Get\-Promise@{Get\-Promise}}
+\index{Get\-Promise@{Get\-Promise}!v8::Promise::Resolver@{v8\-::\-Promise\-::\-Resolver}}
+\subsubsection[{Get\-Promise}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Promise}$>$ v8\-::\-Promise\-::\-Resolver\-::\-Get\-Promise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Promise_1_1Resolver_a41fd1ffef546a62e363a639935fc8ae3}
+Extract the associated promise. \hypertarget{classv8_1_1Promise_1_1Resolver_a80b9e402b6b49f41d57d404ed9e00c9d}{\index{v8\-::\-Promise\-::\-Resolver@{v8\-::\-Promise\-::\-Resolver}!New@{New}}
+\index{New@{New}!v8::Promise::Resolver@{v8\-::\-Promise\-::\-Resolver}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Resolver}$>$ v8\-::\-Promise\-::\-Resolver\-::\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1Promise_1_1Resolver_a80b9e402b6b49f41d57d404ed9e00c9d}
+Create a new resolver, along with an associated promise in pending state. 
+
+Reimplemented from \hyperlink{classv8_1_1Object}{v8\-::\-Object}.
+
+\hypertarget{classv8_1_1Promise_1_1Resolver_aa1f7f6883d57879a7956e84e63b2d935}{\index{v8\-::\-Promise\-::\-Resolver@{v8\-::\-Promise\-::\-Resolver}!Resolve@{Resolve}}
+\index{Resolve@{Resolve}!v8::Promise::Resolver@{v8\-::\-Promise\-::\-Resolver}}
+\subsubsection[{Resolve}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Promise\-::\-Resolver\-::\-Resolve (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{value}
+\end{DoxyParamCaption}
+)}}\label{classv8_1_1Promise_1_1Resolver_aa1f7f6883d57879a7956e84e63b2d935}
+Resolve/reject the associated promise with a given value. Ignored if the promise is no longer pending. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

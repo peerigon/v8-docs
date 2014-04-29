@@ -1,0 +1,515 @@
+\hypertarget{classv8_1_1V8}{\section{v8\-:\-:V8 Class Reference}
+\label{classv8_1_1V8}\index{v8\-::\-V8@{v8\-::\-V8}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classv8_1_1V8_ab386f81a6d58dcf481d00446e8d15c9e}{Set\-Fatal\-Error\-Handler} (Fatal\-Error\-Callback that)
+\item 
+static void \hyperlink{classv8_1_1V8_ad4abec314050af6e68df3a339634293e}{Set\-Allow\-Code\-Generation\-From\-Strings\-Callback} (\hyperlink{namespacev8_ac236e6d6b2b45dd69a3fa4408d63353f}{Allow\-Code\-Generation\-From\-Strings\-Callback} that)
+\item 
+static void \hyperlink{classv8_1_1V8_abc40950a39f8cb6946dc8a1ad41eea84}{Set\-Array\-Buffer\-Allocator} (\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator}{Array\-Buffer\-::\-Allocator} $\ast$allocator)
+\item 
+static bool \hyperlink{classv8_1_1V8_a0d5593ecf0d41035e4d9ee512119f0b7}{Is\-Dead} ()
+\item 
+static \\*
+Startup\-Data\-::\-Compression\-Algorithm \hyperlink{classv8_1_1V8_a6d1b72d0cecdc64d0a0b8e784025b625}{Get\-Compressed\-Startup\-Data\-Algorithm} ()
+\item 
+\hypertarget{classv8_1_1V8_ab598cfc79ebbc85fdeb2171b84ce53e6}{static int {\bfseries Get\-Compressed\-Startup\-Data\-Count} ()}\label{classv8_1_1V8_ab598cfc79ebbc85fdeb2171b84ce53e6}
+
+\item 
+\hypertarget{classv8_1_1V8_a736d6ddfdbbd72ca5838f931002334df}{static void {\bfseries Get\-Compressed\-Startup\-Data} (\hyperlink{classv8_1_1StartupData}{Startup\-Data} $\ast$compressed\-\_\-data)}\label{classv8_1_1V8_a736d6ddfdbbd72ca5838f931002334df}
+
+\item 
+\hypertarget{classv8_1_1V8_a46d5618689f239b70425b8d7917cebf5}{static void {\bfseries Set\-Decompressed\-Startup\-Data} (\hyperlink{classv8_1_1StartupData}{Startup\-Data} $\ast$decompressed\-\_\-data)}\label{classv8_1_1V8_a46d5618689f239b70425b8d7917cebf5}
+
+\item 
+static bool \hyperlink{classv8_1_1V8_a125dadf8feb6178a42333f2a6412ea73}{Add\-Message\-Listener} (Message\-Callback that, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())
+\item 
+static void \hyperlink{classv8_1_1V8_a024f57744e8dfdcb2ea1417024b4805c}{Remove\-Message\-Listeners} (Message\-Callback that)
+\item 
+static void \hyperlink{classv8_1_1V8_a9998ccddad62571d73039ea12f598236}{Set\-Capture\-Stack\-Trace\-For\-Uncaught\-Exceptions} (bool capture, int frame\-\_\-limit=10, \hyperlink{classv8_1_1StackTrace_a9704e4a37949eb8eb8ccddbddf161492}{Stack\-Trace\-::\-Stack\-Trace\-Options} options=Stack\-Trace\-::k\-Overview)
+\item 
+static void \hyperlink{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}{Set\-Flags\-From\-String} (const char $\ast$str, int length)
+\item 
+static void \hyperlink{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}{Set\-Flags\-From\-Command\-Line} (int $\ast$argc, char $\ast$$\ast$argv, bool remove\-\_\-flags)
+\item 
+static const char $\ast$ \hyperlink{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}{Get\-Version} ()
+\item 
+static void \hyperlink{classv8_1_1V8_a830d3ba2704b6e7c361188b22318c0be}{Set\-Counter\-Function} (Counter\-Lookup\-Callback)
+\item 
+static void \hyperlink{classv8_1_1V8_ac4db0dff0f29c750d30fcac65c4d1968}{Set\-Create\-Histogram\-Function} (Create\-Histogram\-Callback)
+\item 
+\hypertarget{classv8_1_1V8_acbd552ca4282f1a7648c221aa70ff93e}{static void {\bfseries Set\-Add\-Histogram\-Sample\-Function} (Add\-Histogram\-Sample\-Callback)}\label{classv8_1_1V8_acbd552ca4282f1a7648c221aa70ff93e}
+
+\item 
+static void \hyperlink{classv8_1_1V8_aa6ed646d43360c209881871b3ac747aa}{Set\-Failed\-Access\-Check\-Callback\-Function} (Failed\-Access\-Check\-Callback)
+\item 
+static void \hyperlink{classv8_1_1V8_a49c016f17c67f700387f801b2b29b5ab}{Add\-G\-C\-Prologue\-Callback} (G\-C\-Prologue\-Callback callback, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\-C\-Type} gc\-\_\-type\-\_\-filter=k\-G\-C\-Type\-All)
+\item 
+static void \hyperlink{classv8_1_1V8_a7cdceb9c8ea5cd0887f69fd3bd97193f}{Remove\-G\-C\-Prologue\-Callback} (G\-C\-Prologue\-Callback callback)
+\item 
+static void \hyperlink{classv8_1_1V8_a37aadf3536c772eb5bbf67fa7822679a}{Add\-G\-C\-Epilogue\-Callback} (G\-C\-Epilogue\-Callback callback, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\-C\-Type} gc\-\_\-type\-\_\-filter=k\-G\-C\-Type\-All)
+\item 
+static void \hyperlink{classv8_1_1V8_a3382e4dae9865909242a8ee0b1d6bf77}{Remove\-G\-C\-Epilogue\-Callback} (G\-C\-Epilogue\-Callback callback)
+\item 
+static void \hyperlink{classv8_1_1V8_ac9718f8dc3f3c498bf07282eb7c1618e}{Add\-Memory\-Allocation\-Callback} (Memory\-Allocation\-Callback callback, Object\-Space space, Allocation\-Action action)
+\item 
+static void \hyperlink{classv8_1_1V8_a1e181f5bf42174b60cd5f4e3a0c20ce8}{Remove\-Memory\-Allocation\-Callback} (Memory\-Allocation\-Callback callback)
+\item 
+static void \hyperlink{classv8_1_1V8_abca192a0a78615ad2b0ae3590e35c64b}{Run\-Microtasks} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\item 
+static void \hyperlink{classv8_1_1V8_a84fc6b8fa0cb839be61301b6c5663c73}{Enqueue\-Microtask} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ microtask)
+\item 
+static void \hyperlink{classv8_1_1V8_a3fcc5fa4d4a10aab7faa2f0e9bfc7288}{Set\-Autorun\-Microtasks} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$source, bool autorun)
+\item 
+static bool \hyperlink{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{Initialize} ()
+\item 
+static void \hyperlink{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}{Set\-Entropy\-Source} (\hyperlink{namespacev8_a3a9840e090970cbda2427cf6f5594fba}{Entropy\-Source} source)
+\item 
+static void \hyperlink{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}{Set\-Return\-Address\-Location\-Resolver} (\hyperlink{namespacev8_ada64a30dd6abd8c4cbf34503cb4d3a7a}{Return\-Address\-Location\-Resolver} return\-\_\-address\-\_\-resolver)
+\item 
+static bool \hyperlink{classv8_1_1V8_a156ba8ae8d0e4112725ad2dd410e280d}{Set\-Function\-Entry\-Hook} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{namespacev8_ad971c67718652f0d12cac5c0a0161e6c}{Function\-Entry\-Hook} entry\-\_\-hook)
+\item 
+static void \hyperlink{classv8_1_1V8_abf1b71bf2e3cb73fa44c6939bd70ab5e}{Set\-Jit\-Code\-Event\-Handler} (\hyperlink{namespacev8_a06f34fa4fa4cfc8518366808d1d461c1}{Jit\-Code\-Event\-Options} options, \hyperlink{namespacev8_a20e628e93f848c3350dcd4e49992bae6}{Jit\-Code\-Event\-Handler} event\-\_\-handler)
+\item 
+static void \hyperlink{classv8_1_1V8_a8ff3cfb774c8540cf7b2c3967d5755dd}{Terminate\-Execution} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\item 
+static bool \hyperlink{classv8_1_1V8_a8e0ad59109f022ecca7121e2ea990997}{Is\-Execution\-Terminating} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate=N\-U\-L\-L)
+\item 
+static void \hyperlink{classv8_1_1V8_ac2fb064870a2ca3bf6f7933c3dff6d85}{Cancel\-Terminate\-Execution} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\item 
+static bool \hyperlink{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}{Dispose} ()
+\item 
+static void \hyperlink{classv8_1_1V8_a1fd57739642c8304dc8a34dd283da840}{Visit\-External\-Resources} (\hyperlink{classv8_1_1ExternalResourceVisitor}{External\-Resource\-Visitor} $\ast$visitor)
+\item 
+static void \hyperlink{classv8_1_1V8_a5bf6f26e51cd3e9d71a662fe7efa5206}{Visit\-Handles\-With\-Class\-Ids} (\hyperlink{classv8_1_1PersistentHandleVisitor}{Persistent\-Handle\-Visitor} $\ast$visitor)
+\item 
+static void \hyperlink{classv8_1_1V8_ab2e242c45c73a0cee755e55acec71bd5}{Visit\-Handles\-For\-Partial\-Dependence} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1PersistentHandleVisitor}{Persistent\-Handle\-Visitor} $\ast$visitor)
+\item 
+static bool \hyperlink{classv8_1_1V8_abcafb07ace99c980e42662299eb9eb1d}{Idle\-Notification} (int hint=1000)
+\item 
+static void \hyperlink{classv8_1_1V8_a7df118b9667d04903f8e9fb7452fd1ac}{Low\-Memory\-Notification} ()
+\item 
+static int \hyperlink{classv8_1_1V8_a06126bd2345c086a376f934ec1fbcce6}{Context\-Disposed\-Notification} ()
+\item 
+static bool \hyperlink{classv8_1_1V8_a525b8e053a796b880fa809d0a4fc096a}{Initialize\-I\-C\-U} (const char $\ast$icu\-\_\-data\-\_\-file=N\-U\-L\-L)
+\item 
+static void \hyperlink{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}{Initialize\-Platform} (\hyperlink{classv8_1_1Platform}{Platform} $\ast$platform)
+\item 
+static void \hyperlink{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}{Shutdown\-Platform} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1V8_a9470c7f2c90465ee28ee0cd19af986ea}{class {\bfseries Handle}}\label{classv8_1_1V8_a9470c7f2c90465ee28ee0cd19af986ea}
+
+\item 
+\hypertarget{classv8_1_1V8_a0320da7f4056d4493dc1f8e49985d06e}{class {\bfseries Local}}\label{classv8_1_1V8_a0320da7f4056d4493dc1f8e49985d06e}
+
+\item 
+\hypertarget{classv8_1_1V8_a31da7f47947c3bca4f48852e61448b50}{class {\bfseries Eternal}}\label{classv8_1_1V8_a31da7f47947c3bca4f48852e61448b50}
+
+\item 
+\hypertarget{classv8_1_1V8_a8937e9c9319f676bc78975d9438314ff}{class {\bfseries Persistent\-Base}}\label{classv8_1_1V8_a8937e9c9319f676bc78975d9438314ff}
+
+\item 
+\hypertarget{classv8_1_1V8_a3f9b9166ff006dd19d2335aaf93aa937}{class {\bfseries Persistent}}\label{classv8_1_1V8_a3f9b9166ff006dd19d2335aaf93aa937}
+
+\item 
+\hypertarget{classv8_1_1V8_ac26c806e60ca4a0547680edb68f6e39b}{class {\bfseries Context}}\label{classv8_1_1V8_ac26c806e60ca4a0547680edb68f6e39b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container class for static utility functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1V8_a37aadf3536c772eb5bbf67fa7822679a}{\index{v8\-::\-V8@{v8\-::\-V8}!Add\-G\-C\-Epilogue\-Callback@{Add\-G\-C\-Epilogue\-Callback}}
+\index{Add\-G\-C\-Epilogue\-Callback@{Add\-G\-C\-Epilogue\-Callback}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Add\-G\-C\-Epilogue\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Add\-G\-C\-Epilogue\-Callback (
+\begin{DoxyParamCaption}
+\item[{G\-C\-Epilogue\-Callback}]{callback, }
+\item[{{\bf G\-C\-Type}}]{gc\-\_\-type\-\_\-filter = {\ttfamily kGCTypeAll}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a37aadf3536c772eb5bbf67fa7822679a}
+Enables the host application to receive a notification after a garbage collection. Allocations are not allowed in the callback function, you therefore cannot manipulate objects (set or delete properties for example) since it is possible such operations will result in the allocation of objects. It is possible to specify the G\-C\-Type filter for your callback. But it is not possible to register the same callback function two times with different G\-C\-Type filters. \hypertarget{classv8_1_1V8_a49c016f17c67f700387f801b2b29b5ab}{\index{v8\-::\-V8@{v8\-::\-V8}!Add\-G\-C\-Prologue\-Callback@{Add\-G\-C\-Prologue\-Callback}}
+\index{Add\-G\-C\-Prologue\-Callback@{Add\-G\-C\-Prologue\-Callback}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Add\-G\-C\-Prologue\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Add\-G\-C\-Prologue\-Callback (
+\begin{DoxyParamCaption}
+\item[{G\-C\-Prologue\-Callback}]{callback, }
+\item[{{\bf G\-C\-Type}}]{gc\-\_\-type\-\_\-filter = {\ttfamily kGCTypeAll}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a49c016f17c67f700387f801b2b29b5ab}
+Enables the host application to receive a notification before a garbage collection. Allocations are not allowed in the callback function, you therefore cannot manipulate objects (set or delete properties for example) since it is possible such operations will result in the allocation of objects. It is possible to specify the G\-C\-Type filter for your callback. But it is not possible to register the same callback function two times with different G\-C\-Type filters. \hypertarget{classv8_1_1V8_ac9718f8dc3f3c498bf07282eb7c1618e}{\index{v8\-::\-V8@{v8\-::\-V8}!Add\-Memory\-Allocation\-Callback@{Add\-Memory\-Allocation\-Callback}}
+\index{Add\-Memory\-Allocation\-Callback@{Add\-Memory\-Allocation\-Callback}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Add\-Memory\-Allocation\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Add\-Memory\-Allocation\-Callback (
+\begin{DoxyParamCaption}
+\item[{Memory\-Allocation\-Callback}]{callback, }
+\item[{Object\-Space}]{space, }
+\item[{Allocation\-Action}]{action}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_ac9718f8dc3f3c498bf07282eb7c1618e}
+Enables the host application to provide a mechanism to be notified and perform custom logging when \hyperlink{classv8_1_1V8}{V8} Allocates Executable Memory. \hypertarget{classv8_1_1V8_a125dadf8feb6178a42333f2a6412ea73}{\index{v8\-::\-V8@{v8\-::\-V8}!Add\-Message\-Listener@{Add\-Message\-Listener}}
+\index{Add\-Message\-Listener@{Add\-Message\-Listener}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Add\-Message\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\-::\-V8\-::\-Add\-Message\-Listener (
+\begin{DoxyParamCaption}
+\item[{Message\-Callback}]{that, }
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{data = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a125dadf8feb6178a42333f2a6412ea73}
+Adds a message listener.
+
+The same message listener can be added more than once and in that case it will be called more than once for each message.
+
+If data is specified, it will be passed to the callback when it is called. Otherwise, the exception object will be passed to the callback instead. \hypertarget{classv8_1_1V8_ac2fb064870a2ca3bf6f7933c3dff6d85}{\index{v8\-::\-V8@{v8\-::\-V8}!Cancel\-Terminate\-Execution@{Cancel\-Terminate\-Execution}}
+\index{Cancel\-Terminate\-Execution@{Cancel\-Terminate\-Execution}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Cancel\-Terminate\-Execution}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Cancel\-Terminate\-Execution (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_ac2fb064870a2ca3bf6f7933c3dff6d85}
+Resume execution capability in the given isolate, whose execution was previously forcefully terminated using \hyperlink{classv8_1_1V8_a8ff3cfb774c8540cf7b2c3967d5755dd}{Terminate\-Execution()}.
+
+When execution is forcefully terminated using \hyperlink{classv8_1_1V8_a8ff3cfb774c8540cf7b2c3967d5755dd}{Terminate\-Execution()}, the isolate can not resume execution until all Java\-Script frames have propagated the uncatchable exception which is generated. This method allows the program embedding the engine to handle the termination event and resume execution capability, even if Java\-Script frames remain on the stack.
+
+This method can be used by any thread even if that thread has not acquired the \hyperlink{classv8_1_1V8}{V8} lock with a \hyperlink{classv8_1_1Locker}{Locker} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em isolate} & The isolate in which to resume execution capability. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classv8_1_1V8_a06126bd2345c086a376f934ec1fbcce6}{\index{v8\-::\-V8@{v8\-::\-V8}!Context\-Disposed\-Notification@{Context\-Disposed\-Notification}}
+\index{Context\-Disposed\-Notification@{Context\-Disposed\-Notification}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Context\-Disposed\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}static int v8\-::\-V8\-::\-Context\-Disposed\-Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a06126bd2345c086a376f934ec1fbcce6}
+Optional notification that a context has been disposed. \hyperlink{classv8_1_1V8}{V8} uses these notifications to guide the G\-C heuristic. Returns the number of context disposals -\/ including this one -\/ since the last time \hyperlink{classv8_1_1V8}{V8} had a chance to clean up. \hypertarget{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}{\index{v8\-::\-V8@{v8\-::\-V8}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\-::\-V8\-::\-Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}
+Releases any resources used by \hyperlink{namespacev8}{v8} and stops any utility threads that may be running. Note that disposing \hyperlink{namespacev8}{v8} is permanent, it cannot be reinitialized.
+
+It should generally not be necessary to dispose \hyperlink{namespacev8}{v8} before exiting a process, this should happen automatically. It is only necessary to use if the process needs the resources taken up by \hyperlink{namespacev8}{v8}. \hypertarget{classv8_1_1V8_a84fc6b8fa0cb839be61301b6c5663c73}{\index{v8\-::\-V8@{v8\-::\-V8}!Enqueue\-Microtask@{Enqueue\-Microtask}}
+\index{Enqueue\-Microtask@{Enqueue\-Microtask}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Enqueue\-Microtask}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Enqueue\-Microtask (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Handle}$<$ {\bf Function} $>$}]{microtask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a84fc6b8fa0cb839be61301b6c5663c73}
+Experimental\-: Enqueues the callback to the Microtask Work Queue \hypertarget{classv8_1_1V8_a6d1b72d0cecdc64d0a0b8e784025b625}{\index{v8\-::\-V8@{v8\-::\-V8}!Get\-Compressed\-Startup\-Data\-Algorithm@{Get\-Compressed\-Startup\-Data\-Algorithm}}
+\index{Get\-Compressed\-Startup\-Data\-Algorithm@{Get\-Compressed\-Startup\-Data\-Algorithm}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Get\-Compressed\-Startup\-Data\-Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}static Startup\-Data\-::\-Compression\-Algorithm v8\-::\-V8\-::\-Get\-Compressed\-Startup\-Data\-Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a6d1b72d0cecdc64d0a0b8e784025b625}
+The following 4 functions are to be used when \hyperlink{classv8_1_1V8}{V8} is built with the 'compress\-\_\-startup\-\_\-data' flag enabled. In this case, the embedder must decompress startup data prior to initializing \hyperlink{classv8_1_1V8}{V8}.
+
+This is how interaction with \hyperlink{classv8_1_1V8}{V8} should look like\-: int compressed\-\_\-data\-\_\-count = v8\-::\-V8\-::\-Get\-Compressed\-Startup\-Data\-Count(); \hyperlink{classv8_1_1StartupData}{v8\-::\-Startup\-Data}$\ast$ compressed\-\_\-data = new \hyperlink{classv8_1_1StartupData}{v8\-::\-Startup\-Data}\mbox{[}compressed\-\_\-data\-\_\-count\mbox{]}; v8\-::\-V8\-::\-Get\-Compressed\-Startup\-Data(compressed\-\_\-data); ... decompress data (compressed\-\_\-data can be updated in-\/place) ... v8\-::\-V8\-::\-Set\-Decompressed\-Startup\-Data(compressed\-\_\-data); ... now \hyperlink{classv8_1_1V8}{V8} can be initialized ... make sure the decompressed data stays valid until \hyperlink{classv8_1_1V8}{V8} shutdown
+
+A helper class \hyperlink{classv8_1_1StartupDataDecompressor}{Startup\-Data\-Decompressor} is provided. It implements the protocol of the interaction described above, and can be used in most cases instead of calling these A\-P\-I functions directly. \hypertarget{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}{\index{v8\-::\-V8@{v8\-::\-V8}!Get\-Version@{Get\-Version}}
+\index{Get\-Version@{Get\-Version}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Get\-Version}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ v8\-::\-V8\-::\-Get\-Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}
+Get the version string. \hypertarget{classv8_1_1V8_abcafb07ace99c980e42662299eb9eb1d}{\index{v8\-::\-V8@{v8\-::\-V8}!Idle\-Notification@{Idle\-Notification}}
+\index{Idle\-Notification@{Idle\-Notification}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Idle\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\-::\-V8\-::\-Idle\-Notification (
+\begin{DoxyParamCaption}
+\item[{int}]{hint = {\ttfamily 1000}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_abcafb07ace99c980e42662299eb9eb1d}
+Optional notification that the embedder is idle. \hyperlink{classv8_1_1V8}{V8} uses the notification to reduce memory footprint. This call can be used repeatedly if the embedder remains idle. Returns true if the embedder should stop calling Idle\-Notification until real work has been done. This indicates that \hyperlink{classv8_1_1V8}{V8} has done as much cleanup as it will be able to do.
+
+The hint argument specifies the amount of work to be done in the function on scale from 1 to 1000. There is no guarantee that the actual work will match the hint. \hypertarget{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{\index{v8\-::\-V8@{v8\-::\-V8}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\-::\-V8\-::\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}
+Initializes from snapshot if possible. Otherwise, attempts to initialize from scratch. This function is called implicitly if you use the A\-P\-I without calling it first. \hypertarget{classv8_1_1V8_a525b8e053a796b880fa809d0a4fc096a}{\index{v8\-::\-V8@{v8\-::\-V8}!Initialize\-I\-C\-U@{Initialize\-I\-C\-U}}
+\index{Initialize\-I\-C\-U@{Initialize\-I\-C\-U}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Initialize\-I\-C\-U}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\-::\-V8\-::\-Initialize\-I\-C\-U (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{icu\-\_\-data\-\_\-file = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a525b8e053a796b880fa809d0a4fc096a}
+Initialize the I\-C\-U library bundled with \hyperlink{classv8_1_1V8}{V8}. The embedder should only invoke this method when using the bundled I\-C\-U. Returns true on success.
+
+If \hyperlink{classv8_1_1V8}{V8} was compiled with the I\-C\-U data in an external file, the location of the data file has to be provided. \hypertarget{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}{\index{v8\-::\-V8@{v8\-::\-V8}!Initialize\-Platform@{Initialize\-Platform}}
+\index{Initialize\-Platform@{Initialize\-Platform}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Initialize\-Platform}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Initialize\-Platform (
+\begin{DoxyParamCaption}
+\item[{{\bf Platform} $\ast$}]{platform}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}
+Sets the \hyperlink{classv8_1_1Platform}{v8\-::\-Platform} to use. This should be invoked before \hyperlink{classv8_1_1V8}{V8} is initialized. \hypertarget{classv8_1_1V8_a0d5593ecf0d41035e4d9ee512119f0b7}{\index{v8\-::\-V8@{v8\-::\-V8}!Is\-Dead@{Is\-Dead}}
+\index{Is\-Dead@{Is\-Dead}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Is\-Dead}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\-::\-V8\-::\-Is\-Dead (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a0d5593ecf0d41035e4d9ee512119f0b7}
+Check if \hyperlink{classv8_1_1V8}{V8} is dead and therefore unusable. This is the case after fatal errors such as out-\/of-\/memory situations. \hypertarget{classv8_1_1V8_a8e0ad59109f022ecca7121e2ea990997}{\index{v8\-::\-V8@{v8\-::\-V8}!Is\-Execution\-Terminating@{Is\-Execution\-Terminating}}
+\index{Is\-Execution\-Terminating@{Is\-Execution\-Terminating}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Is\-Execution\-Terminating}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\-::\-V8\-::\-Is\-Execution\-Terminating (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a8e0ad59109f022ecca7121e2ea990997}
+Is \hyperlink{classv8_1_1V8}{V8} terminating Java\-Script execution.
+
+Returns true if Java\-Script execution is currently terminating because of a call to Terminate\-Execution. In that case there are still Java\-Script frames on the stack and the termination exception is still active.
+
+
+\begin{DoxyParams}{Parameters}
+{\em isolate} & The isolate in which to check. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classv8_1_1V8_a7df118b9667d04903f8e9fb7452fd1ac}{\index{v8\-::\-V8@{v8\-::\-V8}!Low\-Memory\-Notification@{Low\-Memory\-Notification}}
+\index{Low\-Memory\-Notification@{Low\-Memory\-Notification}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Low\-Memory\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Low\-Memory\-Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a7df118b9667d04903f8e9fb7452fd1ac}
+Optional notification that the system is running low on memory. \hyperlink{classv8_1_1V8}{V8} uses these notifications to attempt to free memory. \hypertarget{classv8_1_1V8_a3382e4dae9865909242a8ee0b1d6bf77}{\index{v8\-::\-V8@{v8\-::\-V8}!Remove\-G\-C\-Epilogue\-Callback@{Remove\-G\-C\-Epilogue\-Callback}}
+\index{Remove\-G\-C\-Epilogue\-Callback@{Remove\-G\-C\-Epilogue\-Callback}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Remove\-G\-C\-Epilogue\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Remove\-G\-C\-Epilogue\-Callback (
+\begin{DoxyParamCaption}
+\item[{G\-C\-Epilogue\-Callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a3382e4dae9865909242a8ee0b1d6bf77}
+This function removes callback which was installed by Add\-G\-C\-Epilogue\-Callback function. \hypertarget{classv8_1_1V8_a7cdceb9c8ea5cd0887f69fd3bd97193f}{\index{v8\-::\-V8@{v8\-::\-V8}!Remove\-G\-C\-Prologue\-Callback@{Remove\-G\-C\-Prologue\-Callback}}
+\index{Remove\-G\-C\-Prologue\-Callback@{Remove\-G\-C\-Prologue\-Callback}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Remove\-G\-C\-Prologue\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Remove\-G\-C\-Prologue\-Callback (
+\begin{DoxyParamCaption}
+\item[{G\-C\-Prologue\-Callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a7cdceb9c8ea5cd0887f69fd3bd97193f}
+This function removes callback which was installed by Add\-G\-C\-Prologue\-Callback function. \hypertarget{classv8_1_1V8_a1e181f5bf42174b60cd5f4e3a0c20ce8}{\index{v8\-::\-V8@{v8\-::\-V8}!Remove\-Memory\-Allocation\-Callback@{Remove\-Memory\-Allocation\-Callback}}
+\index{Remove\-Memory\-Allocation\-Callback@{Remove\-Memory\-Allocation\-Callback}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Remove\-Memory\-Allocation\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Remove\-Memory\-Allocation\-Callback (
+\begin{DoxyParamCaption}
+\item[{Memory\-Allocation\-Callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a1e181f5bf42174b60cd5f4e3a0c20ce8}
+Removes callback that was installed by Add\-Memory\-Allocation\-Callback. \hypertarget{classv8_1_1V8_a024f57744e8dfdcb2ea1417024b4805c}{\index{v8\-::\-V8@{v8\-::\-V8}!Remove\-Message\-Listeners@{Remove\-Message\-Listeners}}
+\index{Remove\-Message\-Listeners@{Remove\-Message\-Listeners}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Remove\-Message\-Listeners}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Remove\-Message\-Listeners (
+\begin{DoxyParamCaption}
+\item[{Message\-Callback}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a024f57744e8dfdcb2ea1417024b4805c}
+Remove all message listeners from the specified callback function. \hypertarget{classv8_1_1V8_abca192a0a78615ad2b0ae3590e35c64b}{\index{v8\-::\-V8@{v8\-::\-V8}!Run\-Microtasks@{Run\-Microtasks}}
+\index{Run\-Microtasks@{Run\-Microtasks}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Run\-Microtasks}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Run\-Microtasks (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_abca192a0a78615ad2b0ae3590e35c64b}
+Experimental\-: Runs the Microtask Work Queue until empty \hypertarget{classv8_1_1V8_ad4abec314050af6e68df3a339634293e}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Allow\-Code\-Generation\-From\-Strings\-Callback@{Set\-Allow\-Code\-Generation\-From\-Strings\-Callback}}
+\index{Set\-Allow\-Code\-Generation\-From\-Strings\-Callback@{Set\-Allow\-Code\-Generation\-From\-Strings\-Callback}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Allow\-Code\-Generation\-From\-Strings\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Allow\-Code\-Generation\-From\-Strings\-Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Allow\-Code\-Generation\-From\-Strings\-Callback}}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_ad4abec314050af6e68df3a339634293e}
+Set the callback to invoke to check if code generation from strings should be allowed. \hypertarget{classv8_1_1V8_abc40950a39f8cb6946dc8a1ad41eea84}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Array\-Buffer\-Allocator@{Set\-Array\-Buffer\-Allocator}}
+\index{Set\-Array\-Buffer\-Allocator@{Set\-Array\-Buffer\-Allocator}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Array\-Buffer\-Allocator}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Array\-Buffer\-Allocator (
+\begin{DoxyParamCaption}
+\item[{{\bf Array\-Buffer\-::\-Allocator} $\ast$}]{allocator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_abc40950a39f8cb6946dc8a1ad41eea84}
+Set allocator to use for \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} memory. The allocator should be set only once. The allocator should be set before any code tha uses Array\-Buffers is executed. This allocator is used in all isolates. \hypertarget{classv8_1_1V8_a3fcc5fa4d4a10aab7faa2f0e9bfc7288}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Autorun\-Microtasks@{Set\-Autorun\-Microtasks}}
+\index{Set\-Autorun\-Microtasks@{Set\-Autorun\-Microtasks}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Autorun\-Microtasks}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Autorun\-Microtasks (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{source, }
+\item[{bool}]{autorun}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a3fcc5fa4d4a10aab7faa2f0e9bfc7288}
+Experimental\-: Controls whether the Microtask Work Queue is automatically run when the script call depth decrements to zero. \hypertarget{classv8_1_1V8_a9998ccddad62571d73039ea12f598236}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Capture\-Stack\-Trace\-For\-Uncaught\-Exceptions@{Set\-Capture\-Stack\-Trace\-For\-Uncaught\-Exceptions}}
+\index{Set\-Capture\-Stack\-Trace\-For\-Uncaught\-Exceptions@{Set\-Capture\-Stack\-Trace\-For\-Uncaught\-Exceptions}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Capture\-Stack\-Trace\-For\-Uncaught\-Exceptions}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Capture\-Stack\-Trace\-For\-Uncaught\-Exceptions (
+\begin{DoxyParamCaption}
+\item[{bool}]{capture, }
+\item[{int}]{frame\-\_\-limit = {\ttfamily 10}, }
+\item[{{\bf Stack\-Trace\-::\-Stack\-Trace\-Options}}]{options = {\ttfamily StackTrace\-:\-:kOverview}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a9998ccddad62571d73039ea12f598236}
+Tells \hyperlink{classv8_1_1V8}{V8} to capture current stack trace when uncaught exception occurs and report it to the message listeners. The option is off by default. \hypertarget{classv8_1_1V8_a830d3ba2704b6e7c361188b22318c0be}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Counter\-Function@{Set\-Counter\-Function}}
+\index{Set\-Counter\-Function@{Set\-Counter\-Function}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Counter\-Function}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Counter\-Function (
+\begin{DoxyParamCaption}
+\item[{Counter\-Lookup\-Callback}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a830d3ba2704b6e7c361188b22318c0be}
+Enables the host application to provide a mechanism for recording statistics counters. \hypertarget{classv8_1_1V8_ac4db0dff0f29c750d30fcac65c4d1968}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Create\-Histogram\-Function@{Set\-Create\-Histogram\-Function}}
+\index{Set\-Create\-Histogram\-Function@{Set\-Create\-Histogram\-Function}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Create\-Histogram\-Function}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Create\-Histogram\-Function (
+\begin{DoxyParamCaption}
+\item[{Create\-Histogram\-Callback}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_ac4db0dff0f29c750d30fcac65c4d1968}
+Enables the host application to provide a mechanism for recording histograms. The Create\-Histogram function returns a histogram which will later be passed to the Add\-Histogram\-Sample function. \hypertarget{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Entropy\-Source@{Set\-Entropy\-Source}}
+\index{Set\-Entropy\-Source@{Set\-Entropy\-Source}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Entropy\-Source}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Entropy\-Source (
+\begin{DoxyParamCaption}
+\item[{{\bf Entropy\-Source}}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}
+Allows the host application to provide a callback which can be used as a source of entropy for random number generators. \hypertarget{classv8_1_1V8_aa6ed646d43360c209881871b3ac747aa}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Failed\-Access\-Check\-Callback\-Function@{Set\-Failed\-Access\-Check\-Callback\-Function}}
+\index{Set\-Failed\-Access\-Check\-Callback\-Function@{Set\-Failed\-Access\-Check\-Callback\-Function}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Failed\-Access\-Check\-Callback\-Function}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Failed\-Access\-Check\-Callback\-Function (
+\begin{DoxyParamCaption}
+\item[{Failed\-Access\-Check\-Callback}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_aa6ed646d43360c209881871b3ac747aa}
+Callback function for reporting failed access checks. \hypertarget{classv8_1_1V8_ab386f81a6d58dcf481d00446e8d15c9e}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Fatal\-Error\-Handler@{Set\-Fatal\-Error\-Handler}}
+\index{Set\-Fatal\-Error\-Handler@{Set\-Fatal\-Error\-Handler}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Fatal\-Error\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Fatal\-Error\-Handler (
+\begin{DoxyParamCaption}
+\item[{Fatal\-Error\-Callback}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_ab386f81a6d58dcf481d00446e8d15c9e}
+Set the callback to invoke in case of fatal errors. \hypertarget{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Flags\-From\-Command\-Line@{Set\-Flags\-From\-Command\-Line}}
+\index{Set\-Flags\-From\-Command\-Line@{Set\-Flags\-From\-Command\-Line}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Flags\-From\-Command\-Line}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Flags\-From\-Command\-Line (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{bool}]{remove\-\_\-flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}
+Sets \hyperlink{classv8_1_1V8}{V8} flags from the command line. \hypertarget{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Flags\-From\-String@{Set\-Flags\-From\-String}}
+\index{Set\-Flags\-From\-String@{Set\-Flags\-From\-String}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Flags\-From\-String}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Flags\-From\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}
+Sets \hyperlink{classv8_1_1V8}{V8} flags from a string. \hypertarget{classv8_1_1V8_a156ba8ae8d0e4112725ad2dd410e280d}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Function\-Entry\-Hook@{Set\-Function\-Entry\-Hook}}
+\index{Set\-Function\-Entry\-Hook@{Set\-Function\-Entry\-Hook}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Function\-Entry\-Hook}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\-::\-V8\-::\-Set\-Function\-Entry\-Hook (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Function\-Entry\-Hook}}]{entry\-\_\-hook}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a156ba8ae8d0e4112725ad2dd410e280d}
+Allows the host application to provide the address of a function that's invoked on entry to every V8-\/generated function. Note that {\ttfamily entry\-\_\-hook} is invoked at the very start of each generated function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em isolate} & the isolate to operate on. \\
+\hline
+{\em entry\-\_\-hook} & a function that will be invoked on entry to every V8-\/generated function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success on supported platforms, false on failure. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Setting an entry hook can only be done very early in an isolates lifetime, and once set, the entry hook cannot be revoked. 
+\end{DoxyNote}
+\hypertarget{classv8_1_1V8_abf1b71bf2e3cb73fa44c6939bd70ab5e}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Jit\-Code\-Event\-Handler@{Set\-Jit\-Code\-Event\-Handler}}
+\index{Set\-Jit\-Code\-Event\-Handler@{Set\-Jit\-Code\-Event\-Handler}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Jit\-Code\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Jit\-Code\-Event\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Jit\-Code\-Event\-Options}}]{options, }
+\item[{{\bf Jit\-Code\-Event\-Handler}}]{event\-\_\-handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_abf1b71bf2e3cb73fa44c6939bd70ab5e}
+Allows the host application to provide the address of a function that is notified each time code is added, moved or removed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & options for the J\-I\-T code event handler. \\
+\hline
+{\em event\-\_\-handler} & the J\-I\-T code event handler, which will be invoked each time code is added, moved or removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+{\ttfamily event\-\_\-handler} won't get notified of existent code. 
+
+since code removal notifications are not currently issued, the {\ttfamily event\-\_\-handler} may get notifications of code that overlaps earlier code notifications. This happens when code areas are reused, and the earlier overlapping code areas should therefore be discarded. 
+
+the events passed to {\ttfamily event\-\_\-handler} and the strings they point to are not guaranteed to live past each call. The {\ttfamily event\-\_\-handler} must copy strings and other parameters it needs to keep around. 
+
+the set of events declared in Jit\-Code\-Event\-::\-Event\-Type is expected to grow over time, and the \hyperlink{structv8_1_1JitCodeEvent}{Jit\-Code\-Event} structure is expected to accrue new members. The {\ttfamily event\-\_\-handler} function must ignore event codes it does not recognize to maintain future compatibility. 
+\end{DoxyNote}
+\hypertarget{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}{\index{v8\-::\-V8@{v8\-::\-V8}!Set\-Return\-Address\-Location\-Resolver@{Set\-Return\-Address\-Location\-Resolver}}
+\index{Set\-Return\-Address\-Location\-Resolver@{Set\-Return\-Address\-Location\-Resolver}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Set\-Return\-Address\-Location\-Resolver}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Set\-Return\-Address\-Location\-Resolver (
+\begin{DoxyParamCaption}
+\item[{{\bf Return\-Address\-Location\-Resolver}}]{return\-\_\-address\-\_\-resolver}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}
+Allows the host application to provide a callback that allows \hyperlink{namespacev8}{v8} to cooperate with a profiler that rewrites return addresses on stack. \hypertarget{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}{\index{v8\-::\-V8@{v8\-::\-V8}!Shutdown\-Platform@{Shutdown\-Platform}}
+\index{Shutdown\-Platform@{Shutdown\-Platform}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Shutdown\-Platform}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Shutdown\-Platform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}
+Clears all references to the \hyperlink{classv8_1_1Platform}{v8\-::\-Platform}. This should be invoked after \hyperlink{classv8_1_1V8}{V8} was disposed. \hypertarget{classv8_1_1V8_a8ff3cfb774c8540cf7b2c3967d5755dd}{\index{v8\-::\-V8@{v8\-::\-V8}!Terminate\-Execution@{Terminate\-Execution}}
+\index{Terminate\-Execution@{Terminate\-Execution}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Terminate\-Execution}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Terminate\-Execution (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a8ff3cfb774c8540cf7b2c3967d5755dd}
+Forcefully terminate the current thread of Java\-Script execution in the given isolate.
+
+This method can be used by any thread even if that thread has not acquired the \hyperlink{classv8_1_1V8}{V8} lock with a \hyperlink{classv8_1_1Locker}{Locker} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em isolate} & The isolate in which to terminate the current J\-S execution. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classv8_1_1V8_a1fd57739642c8304dc8a34dd283da840}{\index{v8\-::\-V8@{v8\-::\-V8}!Visit\-External\-Resources@{Visit\-External\-Resources}}
+\index{Visit\-External\-Resources@{Visit\-External\-Resources}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Visit\-External\-Resources}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Visit\-External\-Resources (
+\begin{DoxyParamCaption}
+\item[{{\bf External\-Resource\-Visitor} $\ast$}]{visitor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a1fd57739642c8304dc8a34dd283da840}
+Iterates through all external resources referenced from current isolate heap. G\-C is not invoked prior to iterating, therefore there is no guarantee that visited objects are still alive. \hypertarget{classv8_1_1V8_ab2e242c45c73a0cee755e55acec71bd5}{\index{v8\-::\-V8@{v8\-::\-V8}!Visit\-Handles\-For\-Partial\-Dependence@{Visit\-Handles\-For\-Partial\-Dependence}}
+\index{Visit\-Handles\-For\-Partial\-Dependence@{Visit\-Handles\-For\-Partial\-Dependence}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Visit\-Handles\-For\-Partial\-Dependence}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Visit\-Handles\-For\-Partial\-Dependence (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Persistent\-Handle\-Visitor} $\ast$}]{visitor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_ab2e242c45c73a0cee755e55acec71bd5}
+Iterates through all the persistent handles in the current isolate's heap that have class\-\_\-ids and are candidates to be marked as partially dependent handles. This will visit handles to young objects created since the last garbage collection but is free to visit an arbitrary superset of these objects. \hypertarget{classv8_1_1V8_a5bf6f26e51cd3e9d71a662fe7efa5206}{\index{v8\-::\-V8@{v8\-::\-V8}!Visit\-Handles\-With\-Class\-Ids@{Visit\-Handles\-With\-Class\-Ids}}
+\index{Visit\-Handles\-With\-Class\-Ids@{Visit\-Handles\-With\-Class\-Ids}!v8::V8@{v8\-::\-V8}}
+\subsubsection[{Visit\-Handles\-With\-Class\-Ids}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\-::\-V8\-::\-Visit\-Handles\-With\-Class\-Ids (
+\begin{DoxyParamCaption}
+\item[{{\bf Persistent\-Handle\-Visitor} $\ast$}]{visitor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1V8_a5bf6f26e51cd3e9d71a662fe7efa5206}
+Iterates through all the persistent handles in the current isolate's heap that have class\-\_\-ids. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

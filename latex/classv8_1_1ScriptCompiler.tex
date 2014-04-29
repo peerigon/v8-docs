@@ -1,0 +1,79 @@
+\hypertarget{classv8_1_1ScriptCompiler}{\section{v8\-:\-:Script\-Compiler Class Reference}
+\label{classv8_1_1ScriptCompiler}\index{v8\-::\-Script\-Compiler@{v8\-::\-Script\-Compiler}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1ScriptCompiler_1_1CachedData}{Cached\-Data}
+\item 
+class \hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Compile\-Options} \{ {\bfseries k\-No\-Compile\-Options}, 
+{\bfseries k\-Produce\-Data\-To\-Cache} =  1 $<$$<$ 0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1UnboundScript}{Unbound\-Script} $>$ \hyperlink{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}{Compile\-Unbound} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source} $\ast$source, Compile\-Options options=k\-No\-Compile\-Options)
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Script}{Script} $>$ \hyperlink{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}{Compile} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source} $\ast$source, Compile\-Options options=k\-No\-Compile\-Options)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+For compiling scripts. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}{\index{v8\-::\-Script\-Compiler@{v8\-::\-Script\-Compiler}!Compile@{Compile}}
+\index{Compile@{Compile}!v8::ScriptCompiler@{v8\-::\-Script\-Compiler}}
+\subsubsection[{Compile}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Script}$>$ v8\-::\-Script\-Compiler\-::\-Compile (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Source} $\ast$}]{source, }
+\item[{Compile\-Options}]{options = {\ttfamily kNoCompileOptions}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}
+Compiles the specified script (bound to current context).
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \hyperlink{classv8_1_1Script}{Script} source code. \\
+\hline
+{\em pre\-\_\-data} & Pre-\/parsing data, as obtained by Script\-Data\-::\-Pre\-Compile() using pre\-\_\-data speeds compilation if it's done multiple times. Owned by caller, no references are kept when this function returns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Compiled script object, bound to the context that was active when this function was called. When run it will always use this context. 
+\end{DoxyReturn}
+\hypertarget{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}{\index{v8\-::\-Script\-Compiler@{v8\-::\-Script\-Compiler}!Compile\-Unbound@{Compile\-Unbound}}
+\index{Compile\-Unbound@{Compile\-Unbound}!v8::ScriptCompiler@{v8\-::\-Script\-Compiler}}
+\subsubsection[{Compile\-Unbound}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Unbound\-Script}$>$ v8\-::\-Script\-Compiler\-::\-Compile\-Unbound (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Source} $\ast$}]{source, }
+\item[{Compile\-Options}]{options = {\ttfamily kNoCompileOptions}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}
+Compiles the specified script (context-\/independent).
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \hyperlink{classv8_1_1Script}{Script} source code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Compiled script object (context independent; for running it must be bound to a context). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}

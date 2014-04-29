@@ -1,0 +1,129 @@
+\hypertarget{classv8_1_1CpuProfileNode}{\section{v8\-:\-:Cpu\-Profile\-Node Class Reference}
+\label{classv8_1_1CpuProfileNode}\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}}
+}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1CpuProfileNode_affbc7842b66986012285602ab65aa5f8}{Get\-Function\-Name} () const 
+\item 
+int \hyperlink{classv8_1_1CpuProfileNode_acf6f384df08ec40ff306d3e229f77258}{Get\-Script\-Id} () const 
+\item 
+\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1CpuProfileNode_a140dd536e7096701a36be0083c18c268}{Get\-Script\-Resource\-Name} () const 
+\item 
+int \hyperlink{classv8_1_1CpuProfileNode_a45ea035661c7152e4f3eb47f73787a75}{Get\-Line\-Number} () const 
+\item 
+int \hyperlink{classv8_1_1CpuProfileNode_a43cf237ea6f254a61a6e2a81d554aa1a}{Get\-Column\-Number} () const 
+\item 
+const char $\ast$ \hyperlink{classv8_1_1CpuProfileNode_a16cd3d8d7ef307784838a35022507031}{Get\-Bailout\-Reason} () const 
+\item 
+unsigned \hyperlink{classv8_1_1CpuProfileNode_a8d297f185b0bbd9f6853f6ed193b656e}{Get\-Hit\-Count} () const 
+\item 
+unsigned \hyperlink{classv8_1_1CpuProfileNode_a245092eb223b948fc9441664d9e2701e}{Get\-Call\-Uid} () const 
+\item 
+unsigned \hyperlink{classv8_1_1CpuProfileNode_ae2971c5003353a984ef72b6cddf5e298}{Get\-Node\-Id} () const 
+\item 
+int \hyperlink{classv8_1_1CpuProfileNode_ac4612b91e43a2901ac20c3705288955b}{Get\-Children\-Count} () const 
+\item 
+const \hyperlink{classv8_1_1CpuProfileNode}{Cpu\-Profile\-Node} $\ast$ \hyperlink{classv8_1_1CpuProfileNode_aa397db1e0f5147155164c5ea3e854d69}{Get\-Child} (int index) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1CpuProfileNode_ad54213fe8a795cb6669566f0272fc5ba}{static const int {\bfseries k\-No\-Line\-Number\-Info} = Message\-::k\-No\-Line\-Number\-Info}\label{classv8_1_1CpuProfileNode_ad54213fe8a795cb6669566f0272fc5ba}
+
+\item 
+\hypertarget{classv8_1_1CpuProfileNode_a7c8c1dea3ae0cf4c219b7b1f15a8405b}{static const int {\bfseries k\-No\-Column\-Number\-Info} = Message\-::k\-No\-Column\-Info}\label{classv8_1_1CpuProfileNode_a7c8c1dea3ae0cf4c219b7b1f15a8405b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classv8_1_1CpuProfileNode}{Cpu\-Profile\-Node} represents a node in a call graph. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1CpuProfileNode_a16cd3d8d7ef307784838a35022507031}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Bailout\-Reason@{Get\-Bailout\-Reason}}
+\index{Get\-Bailout\-Reason@{Get\-Bailout\-Reason}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Bailout\-Reason}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Bailout\-Reason (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_a16cd3d8d7ef307784838a35022507031}
+Returns bailout reason for the function if the optimization was disabled for it. \hypertarget{classv8_1_1CpuProfileNode_a245092eb223b948fc9441664d9e2701e}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Call\-Uid@{Get\-Call\-Uid}}
+\index{Get\-Call\-Uid@{Get\-Call\-Uid}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Call\-Uid}]{\setlength{\rightskip}{0pt plus 5cm}unsigned v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Call\-Uid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_a245092eb223b948fc9441664d9e2701e}
+Returns function entry U\-I\-D. \hypertarget{classv8_1_1CpuProfileNode_aa397db1e0f5147155164c5ea3e854d69}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Child@{Get\-Child}}
+\index{Get\-Child@{Get\-Child}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Child}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cpu\-Profile\-Node}$\ast$ v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Child (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_aa397db1e0f5147155164c5ea3e854d69}
+Retrieves a child node by index. \hypertarget{classv8_1_1CpuProfileNode_ac4612b91e43a2901ac20c3705288955b}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Children\-Count@{Get\-Children\-Count}}
+\index{Get\-Children\-Count@{Get\-Children\-Count}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Children\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Children\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_ac4612b91e43a2901ac20c3705288955b}
+Returns child nodes count of the node. \hypertarget{classv8_1_1CpuProfileNode_a43cf237ea6f254a61a6e2a81d554aa1a}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Column\-Number@{Get\-Column\-Number}}
+\index{Get\-Column\-Number@{Get\-Column\-Number}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Column\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Column\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_a43cf237ea6f254a61a6e2a81d554aa1a}
+Returns 1-\/based number of the column where the function originates. k\-No\-Column\-Number\-Info if no column number information is available. \hypertarget{classv8_1_1CpuProfileNode_affbc7842b66986012285602ab65aa5f8}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Function\-Name@{Get\-Function\-Name}}
+\index{Get\-Function\-Name@{Get\-Function\-Name}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Function\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf String}$>$ v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Function\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_affbc7842b66986012285602ab65aa5f8}
+Returns function name (empty string for anonymous functions.) \hypertarget{classv8_1_1CpuProfileNode_a8d297f185b0bbd9f6853f6ed193b656e}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Hit\-Count@{Get\-Hit\-Count}}
+\index{Get\-Hit\-Count@{Get\-Hit\-Count}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Hit\-Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Hit\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_a8d297f185b0bbd9f6853f6ed193b656e}
+Returns the count of samples where the function was currently executing. \hypertarget{classv8_1_1CpuProfileNode_a45ea035661c7152e4f3eb47f73787a75}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Line\-Number@{Get\-Line\-Number}}
+\index{Get\-Line\-Number@{Get\-Line\-Number}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Line\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_a45ea035661c7152e4f3eb47f73787a75}
+Returns the number, 1-\/based, of the line where the function originates. k\-No\-Line\-Number\-Info if no line number information is available. \hypertarget{classv8_1_1CpuProfileNode_ae2971c5003353a984ef72b6cddf5e298}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Node\-Id@{Get\-Node\-Id}}
+\index{Get\-Node\-Id@{Get\-Node\-Id}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Node\-Id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Node\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_ae2971c5003353a984ef72b6cddf5e298}
+Returns id of the node. The id is unique within the tree \hypertarget{classv8_1_1CpuProfileNode_acf6f384df08ec40ff306d3e229f77258}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Script\-Id@{Get\-Script\-Id}}
+\index{Get\-Script\-Id@{Get\-Script\-Id}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Script\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Script\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_acf6f384df08ec40ff306d3e229f77258}
+Returns id of the script where function is located. \hypertarget{classv8_1_1CpuProfileNode_a140dd536e7096701a36be0083c18c268}{\index{v8\-::\-Cpu\-Profile\-Node@{v8\-::\-Cpu\-Profile\-Node}!Get\-Script\-Resource\-Name@{Get\-Script\-Resource\-Name}}
+\index{Get\-Script\-Resource\-Name@{Get\-Script\-Resource\-Name}!v8::CpuProfileNode@{v8\-::\-Cpu\-Profile\-Node}}
+\subsubsection[{Get\-Script\-Resource\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf String}$>$ v8\-::\-Cpu\-Profile\-Node\-::\-Get\-Script\-Resource\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1CpuProfileNode_a140dd536e7096701a36be0083c18c268}
+Returns resource name for script from where the function originates. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\-h\end{DoxyCompactItemize}

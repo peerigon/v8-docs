@@ -1,0 +1,415 @@
+\hypertarget{classv8_1_1Value}{\section{v8\-:\-:Value Class Reference}
+\label{classv8_1_1Value}\index{v8\-::\-Value@{v8\-::\-Value}}
+}
+
+
+{\ttfamily \#include $<$v8.\-h$>$}
+
+Inheritance diagram for v8\-:\-:Value\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.914893cm]{classv8_1_1Value}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V8\-\_\-\-I\-N\-L\-I\-N\-E bool \hyperlink{classv8_1_1Value_aea287b745656baa8a12a2ae1d69744b6}{Is\-Undefined} () const 
+\item 
+V8\-\_\-\-I\-N\-L\-I\-N\-E bool \hyperlink{classv8_1_1Value_aa2c6ed8ef832223a7e2cd81e6ac61c78}{Is\-Null} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a8f27462322186b295195eecb3e81d6d7}{Is\-True} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a68c0296071d01ca899825d7643cf495a}{Is\-False} () const 
+\item 
+V8\-\_\-\-I\-N\-L\-I\-N\-E bool \hyperlink{classv8_1_1Value_ab23a34b7df62806808e01b0908bf5f00}{Is\-String} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_af3e6081c22d09a7bbc0a2aff59ed60a5}{Is\-Symbol} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a05532a34cdd215f273163830ed8b77e7}{Is\-Function} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_aaee0b144087d20eae02314c9393ff80f}{Is\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a355b7991c5c978c0341f6f961b63c5a2}{Is\-Object} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a0aceb7645e71b096df5cd73d1252b1b0}{Is\-Boolean} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a1bd51e3e55f67c65b9a8f587fbffb7c7}{Is\-Number} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a7ac61a325c18af8dcb6d7d5bf47d2503}{Is\-External} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a01e1db51c65b2feace248b7acbf71a2c}{Is\-Int32} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a783c89631bac4ef3c4b909f40cc2b8d8}{Is\-Uint32} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a8bc11fab0aded4a805722ab6df173cae}{Is\-Date} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_abe7bc06283e5e66013f2f056a943168b}{Is\-Boolean\-Object} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a5f4aa9504a6d8fc3af9489330179fe14}{Is\-Number\-Object} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a3e0f2727455fd01a39a60b92f77e28e0}{Is\-String\-Object} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a867baa94cb8f1069452359e6cef6751e}{Is\-Symbol\-Object} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a579fb52e893cdc24f8b77e5acc77d06d}{Is\-Native\-Error} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_aae41e43486937d6122c297a0d43ac0b8}{Is\-Reg\-Exp} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a93d6a0817b15a1d28050ba16e131e6b4}{Is\-Promise} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a65f9dad740f2468b44dc16349611c351}{Is\-Array\-Buffer} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_ad54475d15b7e6b6e17fc80fb4570cdf2}{Is\-Array\-Buffer\-View} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_ac2f2f6c39f14a39fbb5b43577125dfe4}{Is\-Typed\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_acbe2cd9c9cce96ee498677ba37c8466d}{Is\-Uint8\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_ad3cb464ab5ef0215bd2cbdd4eb2b7e3d}{Is\-Uint8\-Clamped\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a10a88a2794271dfcd9c3abd565e8f28a}{Is\-Int8\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a4a45fabf58b241f5de3086a3dd0a09ae}{Is\-Uint16\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a928c586639dd75ae4efdaa66b1fc4d50}{Is\-Int16\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a5e39229dc74d534835cf4ceba10676f4}{Is\-Uint32\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a48eac78a49c8b42d9f8cf05c514b3750}{Is\-Int32\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a4effc7ca1a221dd8c1e23c0f28145ef0}{Is\-Float32\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_a293f140b81b0219d1497e937ed948b1e}{Is\-Float64\-Array} () const 
+\item 
+bool \hyperlink{classv8_1_1Value_afd20ab51e79658acc405c12dad2260ab}{Is\-Data\-View} () const 
+\item 
+\hypertarget{classv8_1_1Value_a73d653dc4a4999ce7258b40a4d8a1510}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Boolean}{Boolean} $>$ {\bfseries To\-Boolean} () const }\label{classv8_1_1Value_a73d653dc4a4999ce7258b40a4d8a1510}
+
+\item 
+\hypertarget{classv8_1_1Value_a2706d2c0cf684a5179e76e8e404b3a5d}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Number}{Number} $>$ {\bfseries To\-Number} () const }\label{classv8_1_1Value_a2706d2c0cf684a5179e76e8e404b3a5d}
+
+\item 
+\hypertarget{classv8_1_1Value_aef5739280886eb7a98ae0e98371dae39}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ {\bfseries To\-String} () const }\label{classv8_1_1Value_aef5739280886eb7a98ae0e98371dae39}
+
+\item 
+\hypertarget{classv8_1_1Value_acff61b07d724079dc3a90d3e3fd57cb3}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ {\bfseries To\-Detail\-String} () const }\label{classv8_1_1Value_acff61b07d724079dc3a90d3e3fd57cb3}
+
+\item 
+\hypertarget{classv8_1_1Value_af40feaf010e829f2cdb787eb975b941d}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ {\bfseries To\-Object} () const }\label{classv8_1_1Value_af40feaf010e829f2cdb787eb975b941d}
+
+\item 
+\hypertarget{classv8_1_1Value_a3941f80b54b0707c6153657cc688ac93}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Integer}{Integer} $>$ {\bfseries To\-Integer} () const }\label{classv8_1_1Value_a3941f80b54b0707c6153657cc688ac93}
+
+\item 
+\hypertarget{classv8_1_1Value_aed71590ec8bd5ef7972d7a0d844b2cd7}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Uint32}{Uint32} $>$ {\bfseries To\-Uint32} () const }\label{classv8_1_1Value_aed71590ec8bd5ef7972d7a0d844b2cd7}
+
+\item 
+\hypertarget{classv8_1_1Value_adf5d2c0c0bf58d60f2401d8437df26b0}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Int32}{Int32} $>$ {\bfseries To\-Int32} () const }\label{classv8_1_1Value_adf5d2c0c0bf58d60f2401d8437df26b0}
+
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Uint32}{Uint32} $>$ \hyperlink{classv8_1_1Value_ae810be0ae81a87f677592d0176daac48}{To\-Array\-Index} () const 
+\item 
+\hypertarget{classv8_1_1Value_a392d60e0ab58b5b13c0ac1e5b4b9f04b}{bool {\bfseries Boolean\-Value} () const }\label{classv8_1_1Value_a392d60e0ab58b5b13c0ac1e5b4b9f04b}
+
+\item 
+\hypertarget{classv8_1_1Value_a4634d525bae654cdc50c398bfaee11aa}{double {\bfseries Number\-Value} () const }\label{classv8_1_1Value_a4634d525bae654cdc50c398bfaee11aa}
+
+\item 
+\hypertarget{classv8_1_1Value_ac61c74a94dea10f48a64f5906b6dd43d}{int64\-\_\-t {\bfseries Integer\-Value} () const }\label{classv8_1_1Value_ac61c74a94dea10f48a64f5906b6dd43d}
+
+\item 
+\hypertarget{classv8_1_1Value_af25557359e6bb79436ed60df18703d66}{uint32\-\_\-t {\bfseries Uint32\-Value} () const }\label{classv8_1_1Value_af25557359e6bb79436ed60df18703d66}
+
+\item 
+\hypertarget{classv8_1_1Value_a24daae9d99d02ff2e24b60287dcd4d95}{int32\-\_\-t {\bfseries Int32\-Value} () const }\label{classv8_1_1Value_a24daae9d99d02ff2e24b60287dcd4d95}
+
+\item 
+bool \hyperlink{classv8_1_1Value_adc2a7a92a120675bbd4c992163a20869}{Equals} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ that) const 
+\item 
+\hypertarget{classv8_1_1Value_abb564818715b818957adc97716a076ba}{bool {\bfseries Strict\-Equals} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ that) const }\label{classv8_1_1Value_abb564818715b818957adc97716a076ba}
+
+\item 
+\hypertarget{classv8_1_1Value_a7e49ca617f5d1773a81bae18a8062084}{bool {\bfseries Same\-Value} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ that) const }\label{classv8_1_1Value_a7e49ca617f5d1773a81bae18a8062084}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1Value_a1e7d6c8a037ff22009be4996f88fab21}{{\footnotesize template$<$class T $>$ }\\static V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1Value}{Value} $\ast$ {\bfseries Cast} (T $\ast$value)}\label{classv8_1_1Value_a1e7d6c8a037ff22009be4996f88fab21}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The superclass of all Java\-Script values and objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1Value_adc2a7a92a120675bbd4c992163a20869}{\index{v8\-::\-Value@{v8\-::\-Value}!Equals@{Equals}}
+\index{Equals@{Equals}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Equals}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Handle}$<$ {\bf Value} $>$}]{that}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_adc2a7a92a120675bbd4c992163a20869}
+J\-S == \hypertarget{classv8_1_1Value_aaee0b144087d20eae02314c9393ff80f}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Array@{Is\-Array}}
+\index{Is\-Array@{Is\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_aaee0b144087d20eae02314c9393ff80f}
+Returns true if this value is an array. \hypertarget{classv8_1_1Value_a65f9dad740f2468b44dc16349611c351}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Array\-Buffer@{Is\-Array\-Buffer}}
+\index{Is\-Array\-Buffer@{Is\-Array\-Buffer}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Array\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Array\-Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a65f9dad740f2468b44dc16349611c351}
+Returns true if this value is an \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer}. This is an experimental feature. \hypertarget{classv8_1_1Value_ad54475d15b7e6b6e17fc80fb4570cdf2}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Array\-Buffer\-View@{Is\-Array\-Buffer\-View}}
+\index{Is\-Array\-Buffer\-View@{Is\-Array\-Buffer\-View}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Array\-Buffer\-View}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Array\-Buffer\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_ad54475d15b7e6b6e17fc80fb4570cdf2}
+Returns true if this value is an \hyperlink{classv8_1_1ArrayBufferView}{Array\-Buffer\-View}. This is an experimental feature. \hypertarget{classv8_1_1Value_a0aceb7645e71b096df5cd73d1252b1b0}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Boolean@{Is\-Boolean}}
+\index{Is\-Boolean@{Is\-Boolean}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Boolean}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Boolean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a0aceb7645e71b096df5cd73d1252b1b0}
+Returns true if this value is boolean. \hypertarget{classv8_1_1Value_abe7bc06283e5e66013f2f056a943168b}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Boolean\-Object@{Is\-Boolean\-Object}}
+\index{Is\-Boolean\-Object@{Is\-Boolean\-Object}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Boolean\-Object}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Boolean\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_abe7bc06283e5e66013f2f056a943168b}
+Returns true if this value is a \hyperlink{classv8_1_1Boolean}{Boolean} object. \hypertarget{classv8_1_1Value_afd20ab51e79658acc405c12dad2260ab}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Data\-View@{Is\-Data\-View}}
+\index{Is\-Data\-View@{Is\-Data\-View}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Data\-View}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Data\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_afd20ab51e79658acc405c12dad2260ab}
+Returns true if this value is a \hyperlink{classv8_1_1DataView}{Data\-View}. This is an experimental feature. \hypertarget{classv8_1_1Value_a8bc11fab0aded4a805722ab6df173cae}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Date@{Is\-Date}}
+\index{Is\-Date@{Is\-Date}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Date}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a8bc11fab0aded4a805722ab6df173cae}
+Returns true if this value is a \hyperlink{classv8_1_1Date}{Date}. \hypertarget{classv8_1_1Value_a7ac61a325c18af8dcb6d7d5bf47d2503}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-External@{Is\-External}}
+\index{Is\-External@{Is\-External}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-External}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-External (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a7ac61a325c18af8dcb6d7d5bf47d2503}
+Returns true if this value is external. 
+
+Reimplemented in \hyperlink{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}{v8\-::\-Array\-Buffer}, and \hyperlink{classv8_1_1String_abbf623aabba9446cd57af14018877398}{v8\-::\-String}.
+
+\hypertarget{classv8_1_1Value_a68c0296071d01ca899825d7643cf495a}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-False@{Is\-False}}
+\index{Is\-False@{Is\-False}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-False}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-False (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a68c0296071d01ca899825d7643cf495a}
+Returns true if this value is false. \hypertarget{classv8_1_1Value_a4effc7ca1a221dd8c1e23c0f28145ef0}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Float32\-Array@{Is\-Float32\-Array}}
+\index{Is\-Float32\-Array@{Is\-Float32\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Float32\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Float32\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a4effc7ca1a221dd8c1e23c0f28145ef0}
+Returns true if this value is a \hyperlink{classv8_1_1Float32Array}{Float32\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_a293f140b81b0219d1497e937ed948b1e}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Float64\-Array@{Is\-Float64\-Array}}
+\index{Is\-Float64\-Array@{Is\-Float64\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Float64\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Float64\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a293f140b81b0219d1497e937ed948b1e}
+Returns true if this value is a \hyperlink{classv8_1_1Float64Array}{Float64\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_a05532a34cdd215f273163830ed8b77e7}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Function@{Is\-Function}}
+\index{Is\-Function@{Is\-Function}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Function}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Function (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a05532a34cdd215f273163830ed8b77e7}
+Returns true if this value is a function. \hypertarget{classv8_1_1Value_a928c586639dd75ae4efdaa66b1fc4d50}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Int16\-Array@{Is\-Int16\-Array}}
+\index{Is\-Int16\-Array@{Is\-Int16\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Int16\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Int16\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a928c586639dd75ae4efdaa66b1fc4d50}
+Returns true if this value is an \hyperlink{classv8_1_1Int16Array}{Int16\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_a01e1db51c65b2feace248b7acbf71a2c}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Int32@{Is\-Int32}}
+\index{Is\-Int32@{Is\-Int32}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Int32}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Int32 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a01e1db51c65b2feace248b7acbf71a2c}
+Returns true if this value is a 32-\/bit signed integer. \hypertarget{classv8_1_1Value_a48eac78a49c8b42d9f8cf05c514b3750}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Int32\-Array@{Is\-Int32\-Array}}
+\index{Is\-Int32\-Array@{Is\-Int32\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Int32\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Int32\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a48eac78a49c8b42d9f8cf05c514b3750}
+Returns true if this value is an \hyperlink{classv8_1_1Int32Array}{Int32\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_a10a88a2794271dfcd9c3abd565e8f28a}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Int8\-Array@{Is\-Int8\-Array}}
+\index{Is\-Int8\-Array@{Is\-Int8\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Int8\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Int8\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a10a88a2794271dfcd9c3abd565e8f28a}
+Returns true if this value is an \hyperlink{classv8_1_1Int8Array}{Int8\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_a579fb52e893cdc24f8b77e5acc77d06d}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Native\-Error@{Is\-Native\-Error}}
+\index{Is\-Native\-Error@{Is\-Native\-Error}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Native\-Error}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Native\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a579fb52e893cdc24f8b77e5acc77d06d}
+Returns true if this value is a Native\-Error. \hypertarget{classv8_1_1Value_aa2c6ed8ef832223a7e2cd81e6ac61c78}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Null@{Is\-Null}}
+\index{Is\-Null@{Is\-Null}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Null}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_aa2c6ed8ef832223a7e2cd81e6ac61c78}
+Returns true if this value is the null value. See E\-C\-M\-A-\/262 4.\-3.\-11. \hypertarget{classv8_1_1Value_a1bd51e3e55f67c65b9a8f587fbffb7c7}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Number@{Is\-Number}}
+\index{Is\-Number@{Is\-Number}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Number}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a1bd51e3e55f67c65b9a8f587fbffb7c7}
+Returns true if this value is a number. \hypertarget{classv8_1_1Value_a5f4aa9504a6d8fc3af9489330179fe14}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Number\-Object@{Is\-Number\-Object}}
+\index{Is\-Number\-Object@{Is\-Number\-Object}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Number\-Object}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Number\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a5f4aa9504a6d8fc3af9489330179fe14}
+Returns true if this value is a \hyperlink{classv8_1_1Number}{Number} object. \hypertarget{classv8_1_1Value_a355b7991c5c978c0341f6f961b63c5a2}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Object@{Is\-Object}}
+\index{Is\-Object@{Is\-Object}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Object}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a355b7991c5c978c0341f6f961b63c5a2}
+Returns true if this value is an object. \hypertarget{classv8_1_1Value_a93d6a0817b15a1d28050ba16e131e6b4}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Promise@{Is\-Promise}}
+\index{Is\-Promise@{Is\-Promise}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Promise}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Promise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a93d6a0817b15a1d28050ba16e131e6b4}
+Returns true if this value is a \hyperlink{classv8_1_1Promise}{Promise}. This is an experimental feature. \hypertarget{classv8_1_1Value_aae41e43486937d6122c297a0d43ac0b8}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Reg\-Exp@{Is\-Reg\-Exp}}
+\index{Is\-Reg\-Exp@{Is\-Reg\-Exp}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Reg\-Exp}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Reg\-Exp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_aae41e43486937d6122c297a0d43ac0b8}
+Returns true if this value is a \hyperlink{classv8_1_1RegExp}{Reg\-Exp}. \hypertarget{classv8_1_1Value_ab23a34b7df62806808e01b0908bf5f00}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-String@{Is\-String}}
+\index{Is\-String@{Is\-String}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-String}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_ab23a34b7df62806808e01b0908bf5f00}
+Returns true if this value is an instance of the \hyperlink{classv8_1_1String}{String} type. See E\-C\-M\-A-\/262 8.\-4. \hypertarget{classv8_1_1Value_a3e0f2727455fd01a39a60b92f77e28e0}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-String\-Object@{Is\-String\-Object}}
+\index{Is\-String\-Object@{Is\-String\-Object}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-String\-Object}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-String\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a3e0f2727455fd01a39a60b92f77e28e0}
+Returns true if this value is a \hyperlink{classv8_1_1String}{String} object. \hypertarget{classv8_1_1Value_af3e6081c22d09a7bbc0a2aff59ed60a5}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Symbol@{Is\-Symbol}}
+\index{Is\-Symbol@{Is\-Symbol}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Symbol}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Symbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_af3e6081c22d09a7bbc0a2aff59ed60a5}
+Returns true if this value is a symbol. This is an experimental feature. \hypertarget{classv8_1_1Value_a867baa94cb8f1069452359e6cef6751e}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Symbol\-Object@{Is\-Symbol\-Object}}
+\index{Is\-Symbol\-Object@{Is\-Symbol\-Object}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Symbol\-Object}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Symbol\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a867baa94cb8f1069452359e6cef6751e}
+Returns true if this value is a \hyperlink{classv8_1_1Symbol}{Symbol} object. This is an experimental feature. \hypertarget{classv8_1_1Value_a8f27462322186b295195eecb3e81d6d7}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-True@{Is\-True}}
+\index{Is\-True@{Is\-True}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-True}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-True (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a8f27462322186b295195eecb3e81d6d7}
+Returns true if this value is true. \hypertarget{classv8_1_1Value_ac2f2f6c39f14a39fbb5b43577125dfe4}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Typed\-Array@{Is\-Typed\-Array}}
+\index{Is\-Typed\-Array@{Is\-Typed\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Typed\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Typed\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_ac2f2f6c39f14a39fbb5b43577125dfe4}
+Returns true if this value is one of Typed\-Arrays. This is an experimental feature. \hypertarget{classv8_1_1Value_a4a45fabf58b241f5de3086a3dd0a09ae}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Uint16\-Array@{Is\-Uint16\-Array}}
+\index{Is\-Uint16\-Array@{Is\-Uint16\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Uint16\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Uint16\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a4a45fabf58b241f5de3086a3dd0a09ae}
+Returns true if this value is an \hyperlink{classv8_1_1Uint16Array}{Uint16\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_a783c89631bac4ef3c4b909f40cc2b8d8}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Uint32@{Is\-Uint32}}
+\index{Is\-Uint32@{Is\-Uint32}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Uint32}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Uint32 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a783c89631bac4ef3c4b909f40cc2b8d8}
+Returns true if this value is a 32-\/bit unsigned integer. \hypertarget{classv8_1_1Value_a5e39229dc74d534835cf4ceba10676f4}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Uint32\-Array@{Is\-Uint32\-Array}}
+\index{Is\-Uint32\-Array@{Is\-Uint32\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Uint32\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Uint32\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_a5e39229dc74d534835cf4ceba10676f4}
+Returns true if this value is an \hyperlink{classv8_1_1Uint32Array}{Uint32\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_acbe2cd9c9cce96ee498677ba37c8466d}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Uint8\-Array@{Is\-Uint8\-Array}}
+\index{Is\-Uint8\-Array@{Is\-Uint8\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Uint8\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Uint8\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_acbe2cd9c9cce96ee498677ba37c8466d}
+Returns true if this value is an \hyperlink{classv8_1_1Uint8Array}{Uint8\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_ad3cb464ab5ef0215bd2cbdd4eb2b7e3d}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Uint8\-Clamped\-Array@{Is\-Uint8\-Clamped\-Array}}
+\index{Is\-Uint8\-Clamped\-Array@{Is\-Uint8\-Clamped\-Array}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Uint8\-Clamped\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Uint8\-Clamped\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_ad3cb464ab5ef0215bd2cbdd4eb2b7e3d}
+Returns true if this value is an \hyperlink{classv8_1_1Uint8ClampedArray}{Uint8\-Clamped\-Array}. This is an experimental feature. \hypertarget{classv8_1_1Value_aea287b745656baa8a12a2ae1d69744b6}{\index{v8\-::\-Value@{v8\-::\-Value}!Is\-Undefined@{Is\-Undefined}}
+\index{Is\-Undefined@{Is\-Undefined}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{Is\-Undefined}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Value\-::\-Is\-Undefined (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_aea287b745656baa8a12a2ae1d69744b6}
+Returns true if this value is the undefined value. See E\-C\-M\-A-\/262 4.\-3.\-10. \hypertarget{classv8_1_1Value_ae810be0ae81a87f677592d0176daac48}{\index{v8\-::\-Value@{v8\-::\-Value}!To\-Array\-Index@{To\-Array\-Index}}
+\index{To\-Array\-Index@{To\-Array\-Index}!v8::Value@{v8\-::\-Value}}
+\subsubsection[{To\-Array\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Uint32}$>$ v8\-::\-Value\-::\-To\-Array\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classv8_1_1Value_ae810be0ae81a87f677592d0176daac48}
+Attempts to convert a string to an array index. Returns an empty handle if the conversion fails. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\-h\end{DoxyCompactItemize}
