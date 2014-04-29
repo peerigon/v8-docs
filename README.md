@@ -21,7 +21,3 @@ Contribute
 [doxygen](http://www.stack.nl/~dimitri/doxygen/) automatically pulls the `Doxyfile` and generates the docs. If
 you don't have [doxygen](http://www.stack.nl/~dimitri/doxygen/): There are ready-to-use binaries for
 [every major platform](http://www.stack.nl/~dimitri/doxygen/download.html).
-
-Disclaimer
-----------
-
