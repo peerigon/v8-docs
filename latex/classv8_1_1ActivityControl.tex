@@ -1,21 +1,21 @@
-\hypertarget{classv8_1_1ActivityControl}{\section{v8\-:\-:Activity\-Control Class Reference}
-\label{classv8_1_1ActivityControl}\index{v8\-::\-Activity\-Control@{v8\-::\-Activity\-Control}}
-}
+\hypertarget{classv8_1_1ActivityControl}{}\section{v8\+:\+:Activity\+Control Class Reference}
+\label{classv8_1_1ActivityControl}\index{v8\+::\+Activity\+Control@{v8\+::\+Activity\+Control}}
 
 
-{\ttfamily \#include $<$v8-\/profiler.\-h$>$}
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum {\bfseries Control\-Option} \{ {\bfseries k\-Continue} =  0, 
-{\bfseries k\-Abort} =  1
- \}
+\hypertarget{classv8_1_1ActivityControl_a6d261e8c21e8076ce86b4add231a8ef9}{}enum {\bfseries Control\+Option} \{ {\bfseries k\+Continue} = 0, 
+{\bfseries k\+Abort} = 1
+ \}\label{classv8_1_1ActivityControl_a6d261e8c21e8076ce86b4add231a8ef9}
+
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual Control\-Option \hyperlink{classv8_1_1ActivityControl_a1300f10611306a3e8f79239e057eb0bf}{Report\-Progress\-Value} (int done, int total)=0
+virtual Control\+Option \hyperlink{classv8_1_1ActivityControl_a1300f10611306a3e8f79239e057eb0bf}{Report\+Progress\+Value} (int done, int total)=0
 \end{DoxyCompactItemize}
 
 
@@ -23,16 +23,16 @@ virtual Control\-Option \hyperlink{classv8_1_1ActivityControl_a1300f10611306a3e8
 An interface for reporting progress and controlling long-\/running activities. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1ActivityControl_a1300f10611306a3e8f79239e057eb0bf}{\index{v8\-::\-Activity\-Control@{v8\-::\-Activity\-Control}!Report\-Progress\-Value@{Report\-Progress\-Value}}
-\index{Report\-Progress\-Value@{Report\-Progress\-Value}!v8::ActivityControl@{v8\-::\-Activity\-Control}}
-\subsubsection[{Report\-Progress\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual Control\-Option v8\-::\-Activity\-Control\-::\-Report\-Progress\-Value (
+\hypertarget{classv8_1_1ActivityControl_a1300f10611306a3e8f79239e057eb0bf}{}\index{v8\+::\+Activity\+Control@{v8\+::\+Activity\+Control}!Report\+Progress\+Value@{Report\+Progress\+Value}}
+\index{Report\+Progress\+Value@{Report\+Progress\+Value}!v8\+::\+Activity\+Control@{v8\+::\+Activity\+Control}}
+\subsubsection[{Report\+Progress\+Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual Control\+Option v8\+::\+Activity\+Control\+::\+Report\+Progress\+Value (
 \begin{DoxyParamCaption}
 \item[{int}]{done, }
 \item[{int}]{total}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1ActivityControl_a1300f10611306a3e8f79239e057eb0bf}
-Notify about current progress. The activity can be stopped by returning k\-Abort as the callback result. 
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1ActivityControl_a1300f10611306a3e8f79239e057eb0bf}
+Notify about current progress. The activity can be stopped by returning k\+Abort as the callback result. 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8-\/profiler.\-h\end{DoxyCompactItemize}
+v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

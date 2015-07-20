@@ -1,0 +1,40 @@
+\hypertarget{structv8_1_1Isolate_1_1CreateParams}{}\section{v8\+:\+:Isolate\+:\+:Create\+Params Struct Reference}
+\label{structv8_1_1Isolate_1_1CreateParams}\index{v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacev8_aaf07fb6bb13f295da3c6568938b7dec5}{Function\+Entry\+Hook} \hyperlink{structv8_1_1Isolate_1_1CreateParams_aa7aa18bbe2d86713e5b074a93b38dc60}{entry\+\_\+hook}
+\item 
+\hyperlink{namespacev8_a39243bc91e63d64d111452fdb98c4733}{Jit\+Code\+Event\+Handler} \hyperlink{structv8_1_1Isolate_1_1CreateParams_a783e3eba90ce6e2800bdd69197bbccdd}{code\+\_\+event\+\_\+handler}
+\item 
+\hyperlink{classv8_1_1ResourceConstraints}{Resource\+Constraints} \hyperlink{structv8_1_1Isolate_1_1CreateParams_a2c570b306aa8c1c24cfe70e8eee50fa1}{constraints}
+\item 
+bool \hyperlink{structv8_1_1Isolate_1_1CreateParams_a6dae371b4c28bf7e8b3534dc24f13323}{enable\+\_\+serializer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Initial configuration parameters for a new \hyperlink{classv8_1_1Isolate}{Isolate}. 
+
+\subsection{Field Documentation}
+\hypertarget{structv8_1_1Isolate_1_1CreateParams_a783e3eba90ce6e2800bdd69197bbccdd}{}\index{v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}!code\+\_\+event\+\_\+handler@{code\+\_\+event\+\_\+handler}}
+\index{code\+\_\+event\+\_\+handler@{code\+\_\+event\+\_\+handler}!v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}}
+\subsubsection[{code\+\_\+event\+\_\+handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Jit\+Code\+Event\+Handler} v8\+::\+Isolate\+::\+Create\+Params\+::code\+\_\+event\+\_\+handler}\label{structv8_1_1Isolate_1_1CreateParams_a783e3eba90ce6e2800bdd69197bbccdd}
+Allows the host application to provide the address of a function that is notified each time code is added, moved or removed. \hypertarget{structv8_1_1Isolate_1_1CreateParams_a2c570b306aa8c1c24cfe70e8eee50fa1}{}\index{v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}!constraints@{constraints}}
+\index{constraints@{constraints}!v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}}
+\subsubsection[{constraints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource\+Constraints} v8\+::\+Isolate\+::\+Create\+Params\+::constraints}\label{structv8_1_1Isolate_1_1CreateParams_a2c570b306aa8c1c24cfe70e8eee50fa1}
+\hyperlink{classv8_1_1ResourceConstraints}{Resource\+Constraints} to use for the new \hyperlink{classv8_1_1Isolate}{Isolate}. \hypertarget{structv8_1_1Isolate_1_1CreateParams_a6dae371b4c28bf7e8b3534dc24f13323}{}\index{v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}!enable\+\_\+serializer@{enable\+\_\+serializer}}
+\index{enable\+\_\+serializer@{enable\+\_\+serializer}!v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}}
+\subsubsection[{enable\+\_\+serializer}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Create\+Params\+::enable\+\_\+serializer}\label{structv8_1_1Isolate_1_1CreateParams_a6dae371b4c28bf7e8b3534dc24f13323}
+This flag currently renders the \hyperlink{classv8_1_1Isolate}{Isolate} unusable. \hypertarget{structv8_1_1Isolate_1_1CreateParams_aa7aa18bbe2d86713e5b074a93b38dc60}{}\index{v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}!entry\+\_\+hook@{entry\+\_\+hook}}
+\index{entry\+\_\+hook@{entry\+\_\+hook}!v8\+::\+Isolate\+::\+Create\+Params@{v8\+::\+Isolate\+::\+Create\+Params}}
+\subsubsection[{entry\+\_\+hook}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Entry\+Hook} v8\+::\+Isolate\+::\+Create\+Params\+::entry\+\_\+hook}\label{structv8_1_1Isolate_1_1CreateParams_aa7aa18bbe2d86713e5b074a93b38dc60}
+The optional entry\+\_\+hook allows the host application to provide the address of a function that\textquotesingle{}s invoked on entry to every V8-\/generated function. Note that entry\+\_\+hook is invoked at the very start of each generated function. Furthermore, if an entry\+\_\+hook is given, \hyperlink{classv8_1_1V8}{V8} will always run without a context snapshot. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

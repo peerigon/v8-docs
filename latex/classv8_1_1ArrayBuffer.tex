@@ -1,11 +1,10 @@
-\hypertarget{classv8_1_1ArrayBuffer}{\section{v8\-:\-:Array\-Buffer Class Reference}
-\label{classv8_1_1ArrayBuffer}\index{v8\-::\-Array\-Buffer@{v8\-::\-Array\-Buffer}}
-}
+\hypertarget{classv8_1_1ArrayBuffer}{}\section{v8\+:\+:Array\+Buffer Class Reference}
+\label{classv8_1_1ArrayBuffer}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
 
 
-{\ttfamily \#include $<$v8.\-h$>$}
+{\ttfamily \#include $<$v8.\+h$>$}
 
-Inheritance diagram for v8\-:\-:Array\-Buffer\-:\begin{figure}[H]
+Inheritance diagram for v8\+:\+:Array\+Buffer\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=4.000000cm]{classv8_1_1ArrayBuffer}
@@ -21,9 +20,11 @@ class \hyperlink{classv8_1_1ArrayBuffer_1_1Contents}{Contents}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-size\-\_\-t \hyperlink{classv8_1_1ArrayBuffer_ab73b98ba6436b57c5a1b3d29429e0199}{Byte\-Length} () const 
+size\+\_\+t \hyperlink{classv8_1_1ArrayBuffer_ab73b98ba6436b57c5a1b3d29429e0199}{Byte\+Length} () const 
 \item 
-bool \hyperlink{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}{Is\-External} () const 
+bool \hyperlink{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}{Is\+External} () const 
+\item 
+bool \hyperlink{classv8_1_1ArrayBuffer_aed177cd83c3368837f740fa2929b3c8d}{Is\+Neuterable} () const 
 \item 
 void \hyperlink{classv8_1_1ArrayBuffer_a3420f7d38a8fe20e8f40fb82e6acb325}{Neuter} ()
 \item 
@@ -32,78 +33,81 @@ void \hyperlink{classv8_1_1ArrayBuffer_a3420f7d38a8fe20e8f40fb82e6acb325}{Neuter
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} $>$ \hyperlink{classv8_1_1ArrayBuffer_ad752e03d7cc7fe863656ad6183785ab7}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, size\-\_\-t byte\-\_\-length)
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} $>$ \hyperlink{classv8_1_1ArrayBuffer_ad752e03d7cc7fe863656ad6183785ab7}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, size\+\_\+t byte\+\_\+length)
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} $>$ \hyperlink{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, void $\ast$data, size\-\_\-t byte\-\_\-length)
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} $>$ \hyperlink{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, void $\ast$data, size\+\_\+t byte\+\_\+length)
 \item 
-\hypertarget{classv8_1_1ArrayBuffer_a4b0a703ae34217507a8ebc9cabf7336a}{static V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)}\label{classv8_1_1ArrayBuffer_a4b0a703ae34217507a8ebc9cabf7336a}
+\hypertarget{classv8_1_1ArrayBuffer_a4b0a703ae34217507a8ebc9cabf7336a}{}static V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)\label{classv8_1_1ArrayBuffer_a4b0a703ae34217507a8ebc9cabf7336a}
 
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classv8_1_1ArrayBuffer_af49000a2ea120e49da846ef02a42ac69}{static const int {\bfseries k\-Internal\-Field\-Count} = V8\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-\_\-\-F\-I\-E\-L\-D\-\_\-\-C\-O\-U\-N\-T}\label{classv8_1_1ArrayBuffer_af49000a2ea120e49da846ef02a42ac69}
+\hypertarget{classv8_1_1ArrayBuffer_af49000a2ea120e49da846ef02a42ac69}{}static const int {\bfseries k\+Internal\+Field\+Count} = V8\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+O\+U\+N\+T\label{classv8_1_1ArrayBuffer_af49000a2ea120e49da846ef02a42ac69}
 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-An instance of the built-\/in \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} constructor (E\-S6 draft 15.\-13.\-5). This A\-P\-I is experimental and may change significantly. 
+An instance of the built-\/in \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} constructor (E\+S6 draft 15.\+13.\+5). This A\+P\+I is experimental and may change significantly. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1ArrayBuffer_ab73b98ba6436b57c5a1b3d29429e0199}{\index{v8\-::\-Array\-Buffer@{v8\-::\-Array\-Buffer}!Byte\-Length@{Byte\-Length}}
-\index{Byte\-Length@{Byte\-Length}!v8::ArrayBuffer@{v8\-::\-Array\-Buffer}}
-\subsubsection[{Byte\-Length}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t v8\-::\-Array\-Buffer\-::\-Byte\-Length (
+\hypertarget{classv8_1_1ArrayBuffer_ab73b98ba6436b57c5a1b3d29429e0199}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Byte\+Length@{Byte\+Length}}
+\index{Byte\+Length@{Byte\+Length}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{Byte\+Length}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Array\+Buffer\+::\+Byte\+Length (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1ArrayBuffer_ab73b98ba6436b57c5a1b3d29429e0199}
-\hyperlink{classv8_1_1Data}{Data} length in bytes. \hypertarget{classv8_1_1ArrayBuffer_a8b90b72486cfacb4fbec157f4803f889}{\index{v8\-::\-Array\-Buffer@{v8\-::\-Array\-Buffer}!Externalize@{Externalize}}
-\index{Externalize@{Externalize}!v8::ArrayBuffer@{v8\-::\-Array\-Buffer}}
-\subsubsection[{Externalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contents} v8\-::\-Array\-Buffer\-::\-Externalize (
+) const}\label{classv8_1_1ArrayBuffer_ab73b98ba6436b57c5a1b3d29429e0199}
+\hyperlink{classv8_1_1Data}{Data} length in bytes. \hypertarget{classv8_1_1ArrayBuffer_a8b90b72486cfacb4fbec157f4803f889}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Externalize@{Externalize}}
+\index{Externalize@{Externalize}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{Externalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contents} v8\+::\+Array\+Buffer\+::\+Externalize (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classv8_1_1ArrayBuffer_a8b90b72486cfacb4fbec157f4803f889}
-Make this \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} external. The pointer to underlying memory block and byte length are returned as $|$\-Contents$|$ structure. After \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} had been etxrenalized, it does no longer owns the memory block. The caller should take steps to free memory when it is no longer needed.
+)}\label{classv8_1_1ArrayBuffer_a8b90b72486cfacb4fbec157f4803f889}
+Make this \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} external. The pointer to underlying memory block and byte length are returned as $\vert$\+Contents$\vert$ structure. After \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} had been etxrenalized, it does no longer owns the memory block. The caller should take steps to free memory when it is no longer needed.
 
-The memory block is guaranteed to be allocated with $|$\-Allocator\-::\-Allocate$|$ that has been set with \hyperlink{classv8_1_1V8_abc40950a39f8cb6946dc8a1ad41eea84}{V8\-::\-Set\-Array\-Buffer\-Allocator}. \hypertarget{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}{\index{v8\-::\-Array\-Buffer@{v8\-::\-Array\-Buffer}!Is\-External@{Is\-External}}
-\index{Is\-External@{Is\-External}!v8::ArrayBuffer@{v8\-::\-Array\-Buffer}}
-\subsubsection[{Is\-External}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Array\-Buffer\-::\-Is\-External (
+The memory block is guaranteed to be allocated with $\vert$\+Allocator\+::\+Allocate$\vert$ that has been set with \hyperlink{classv8_1_1V8_abc40950a39f8cb6946dc8a1ad41eea84}{V8\+::\+Set\+Array\+Buffer\+Allocator}. \hypertarget{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Is\+External@{Is\+External}}
+\index{Is\+External@{Is\+External}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{Is\+External}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Array\+Buffer\+::\+Is\+External (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}
-Returns true if \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} is extrenalized, that is, does not own its memory block. 
-
-Reimplemented from \hyperlink{classv8_1_1Value_a7ac61a325c18af8dcb6d7d5bf47d2503}{v8\-::\-Value}.
-
-\hypertarget{classv8_1_1ArrayBuffer_a3420f7d38a8fe20e8f40fb82e6acb325}{\index{v8\-::\-Array\-Buffer@{v8\-::\-Array\-Buffer}!Neuter@{Neuter}}
-\index{Neuter@{Neuter}!v8::ArrayBuffer@{v8\-::\-Array\-Buffer}}
-\subsubsection[{Neuter}]{\setlength{\rightskip}{0pt plus 5cm}void v8\-::\-Array\-Buffer\-::\-Neuter (
+) const}\label{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}
+Returns true if \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} is extrenalized, that is, does not own its memory block. \hypertarget{classv8_1_1ArrayBuffer_aed177cd83c3368837f740fa2929b3c8d}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Is\+Neuterable@{Is\+Neuterable}}
+\index{Is\+Neuterable@{Is\+Neuterable}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{Is\+Neuterable}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Array\+Buffer\+::\+Is\+Neuterable (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classv8_1_1ArrayBuffer_a3420f7d38a8fe20e8f40fb82e6acb325}
-Neuters this \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} and all its views (typed arrays). Neutering sets the byte length of the buffer and all typed arrays to zero, preventing Java\-Script from ever accessing underlying backing store. \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} should have been externalized. \hypertarget{classv8_1_1ArrayBuffer_ad752e03d7cc7fe863656ad6183785ab7}{\index{v8\-::\-Array\-Buffer@{v8\-::\-Array\-Buffer}!New@{New}}
-\index{New@{New}!v8::ArrayBuffer@{v8\-::\-Array\-Buffer}}
-\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array\-Buffer}$>$ v8\-::\-Array\-Buffer\-::\-New (
+) const}\label{classv8_1_1ArrayBuffer_aed177cd83c3368837f740fa2929b3c8d}
+Returns true if this \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} may be neutered. \hypertarget{classv8_1_1ArrayBuffer_a3420f7d38a8fe20e8f40fb82e6acb325}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Neuter@{Neuter}}
+\index{Neuter@{Neuter}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{Neuter}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Array\+Buffer\+::\+Neuter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1ArrayBuffer_a3420f7d38a8fe20e8f40fb82e6acb325}
+Neuters this \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} and all its views (typed arrays). Neutering sets the byte length of the buffer and all typed arrays to zero, preventing Java\+Script from ever accessing underlying backing store. \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} should have been externalized and must be neuterable. \hypertarget{classv8_1_1ArrayBuffer_ad752e03d7cc7fe863656ad6183785ab7}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!New@{New}}
+\index{New@{New}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array\+Buffer}$>$ v8\+::\+Array\+Buffer\+::\+New (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
-\item[{size\-\_\-t}]{byte\-\_\-length}
+\item[{size\+\_\+t}]{byte\+\_\+length}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1ArrayBuffer_ad752e03d7cc7fe863656ad6183785ab7}
-Create a new \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer}. Allocate $|$byte\-\_\-length$|$ bytes. Allocated memory will be owned by a created \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} and will be deallocated when it is garbage-\/collected, unless the object is externalized. \hypertarget{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}{\index{v8\-::\-Array\-Buffer@{v8\-::\-Array\-Buffer}!New@{New}}
-\index{New@{New}!v8::ArrayBuffer@{v8\-::\-Array\-Buffer}}
-\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array\-Buffer}$>$ v8\-::\-Array\-Buffer\-::\-New (
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ArrayBuffer_ad752e03d7cc7fe863656ad6183785ab7}
+Create a new \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}. Allocate $\vert$byte\+\_\+length$\vert$ bytes. Allocated memory will be owned by a created \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} and will be deallocated when it is garbage-\/collected, unless the object is externalized. \hypertarget{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!New@{New}}
+\index{New@{New}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array\+Buffer}$>$ v8\+::\+Array\+Buffer\+::\+New (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
 \item[{void $\ast$}]{data, }
-\item[{size\-\_\-t}]{byte\-\_\-length}
+\item[{size\+\_\+t}]{byte\+\_\+length}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}
-Create a new \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} over an existing memory block. The created array buffer is immediately in externalized state. The memory block will not be reclaimed when a created \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer} is garbage-\/collected. 
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}
+Create a new \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} over an existing memory block. The created array buffer is immediately in externalized state. The memory block will not be reclaimed when a created \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} is garbage-\/collected. 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\-h\end{DoxyCompactItemize}
+v8/include/v8.\+h\end{DoxyCompactItemize}

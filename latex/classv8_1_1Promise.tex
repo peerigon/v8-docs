@@ -1,11 +1,10 @@
-\hypertarget{classv8_1_1Promise}{\section{v8\-:\-:Promise Class Reference}
-\label{classv8_1_1Promise}\index{v8\-::\-Promise@{v8\-::\-Promise}}
-}
+\hypertarget{classv8_1_1Promise}{}\section{v8\+:\+:Promise Class Reference}
+\label{classv8_1_1Promise}\index{v8\+::\+Promise@{v8\+::\+Promise}}
 
 
-{\ttfamily \#include $<$v8.\-h$>$}
+{\ttfamily \#include $<$v8.\+h$>$}
 
-Inheritance diagram for v8\-:\-:Promise\-:\begin{figure}[H]
+Inheritance diagram for v8\+:\+:Promise\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=4.000000cm]{classv8_1_1Promise}
@@ -21,30 +20,42 @@ class \hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver}
 \item 
 \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ \hyperlink{classv8_1_1Promise_af56616dc11de23d6d515b0fa5d42e1eb}{Chain} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler)
 \item 
-\hypertarget{classv8_1_1Promise_aab3dea5d0875e1506b9c8fc822b0e005}{\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ {\bfseries Catch} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler)}\label{classv8_1_1Promise_aab3dea5d0875e1506b9c8fc822b0e005}
+\hypertarget{classv8_1_1Promise_aab3dea5d0875e1506b9c8fc822b0e005}{}\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ {\bfseries Catch} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler)\label{classv8_1_1Promise_aab3dea5d0875e1506b9c8fc822b0e005}
 
+\item 
+\hypertarget{classv8_1_1Promise_a22a7ce609a7ddf0b15bf316e61b0178f}{}\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ {\bfseries Then} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler)\label{classv8_1_1Promise_a22a7ce609a7ddf0b15bf316e61b0178f}
+
+\item 
+bool \hyperlink{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}{Has\+Handler} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classv8_1_1Promise_adfa3b953beb2678dd3b5d6ddb3f0746d}{static V8\-\_\-\-I\-N\-L\-I\-N\-E \hyperlink{classv8_1_1Promise}{Promise} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)}\label{classv8_1_1Promise_adfa3b953beb2678dd3b5d6ddb3f0746d}
+\hypertarget{classv8_1_1Promise_adfa3b953beb2678dd3b5d6ddb3f0746d}{}static V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Promise}{Promise} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)\label{classv8_1_1Promise_adfa3b953beb2678dd3b5d6ddb3f0746d}
 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-An instance of the built-\/in \hyperlink{classv8_1_1Promise}{Promise} constructor (E\-S6 draft). This A\-P\-I is experimental. Only works with --harmony flag. 
+An instance of the built-\/in \hyperlink{classv8_1_1Promise}{Promise} constructor (E\+S6 draft). This A\+P\+I is experimental. Only works with --harmony flag. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1Promise_af56616dc11de23d6d515b0fa5d42e1eb}{\index{v8\-::\-Promise@{v8\-::\-Promise}!Chain@{Chain}}
-\index{Chain@{Chain}!v8::Promise@{v8\-::\-Promise}}
-\subsubsection[{Chain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Promise}$>$ v8\-::\-Promise\-::\-Chain (
+\hypertarget{classv8_1_1Promise_af56616dc11de23d6d515b0fa5d42e1eb}{}\index{v8\+::\+Promise@{v8\+::\+Promise}!Chain@{Chain}}
+\index{Chain@{Chain}!v8\+::\+Promise@{v8\+::\+Promise}}
+\subsubsection[{Chain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Promise}$>$ v8\+::\+Promise\+::\+Chain (
 \begin{DoxyParamCaption}
 \item[{{\bf Handle}$<$ {\bf Function} $>$}]{handler}
 \end{DoxyParamCaption}
-)}}\label{classv8_1_1Promise_af56616dc11de23d6d515b0fa5d42e1eb}
-Register a resolution/rejection handler with a promise. The handler is given the respective resolution/rejection value as an argument. If the promise is already resolved/rejected, the handler is invoked at the end of turn. 
+)}\label{classv8_1_1Promise_af56616dc11de23d6d515b0fa5d42e1eb}
+Register a resolution/rejection handler with a promise. The handler is given the respective resolution/rejection value as an argument. If the promise is already resolved/rejected, the handler is invoked at the end of turn. \hypertarget{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}{}\index{v8\+::\+Promise@{v8\+::\+Promise}!Has\+Handler@{Has\+Handler}}
+\index{Has\+Handler@{Has\+Handler}!v8\+::\+Promise@{v8\+::\+Promise}}
+\subsubsection[{Has\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Promise\+::\+Has\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}
+Returns true if the promise has at least one derived promise, and therefore resolve/reject handlers (including default handler). 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\-h\end{DoxyCompactItemize}
+v8/include/v8.\+h\end{DoxyCompactItemize}

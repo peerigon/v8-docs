@@ -1,0 +1,33 @@
+\hypertarget{classv8_1_1ScriptCompiler_1_1ExternalSourceStream}{}\section{v8\+:\+:Script\+Compiler\+:\+:External\+Source\+Stream Class Reference}
+\label{classv8_1_1ScriptCompiler_1_1ExternalSourceStream}\index{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream@{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual size\+\_\+t \hyperlink{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_ac3a0221b5725f0b612a6342d8e83d899}{Get\+More\+Data} (const uint8\+\_\+t $\ast$$\ast$src)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+For streaming incomplete script data to \hyperlink{classv8_1_1V8}{V8}. The embedder should implement a subclass of this class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_ac3a0221b5725f0b612a6342d8e83d899}{}\index{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream@{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream}!Get\+More\+Data@{Get\+More\+Data}}
+\index{Get\+More\+Data@{Get\+More\+Data}!v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream@{v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream}}
+\subsubsection[{Get\+More\+Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t v8\+::\+Script\+Compiler\+::\+External\+Source\+Stream\+::\+Get\+More\+Data (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$$\ast$}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1ScriptCompiler_1_1ExternalSourceStream_ac3a0221b5725f0b612a6342d8e83d899}
+\hyperlink{classv8_1_1V8}{V8} calls this to request the next chunk of data from the embedder. This function will be called on a background thread, so it\textquotesingle{}s O\+K to block and wait for the data, if the embedder doesn\textquotesingle{}t have data yet. Returns the length of the data returned. When the data ends, Get\+More\+Data should return 0. Caller takes ownership of the data.
+
+When streaming U\+T\+F-\/8 data, \hyperlink{classv8_1_1V8}{V8} handles multi-\/byte characters split between two data chunks, but doesn\textquotesingle{}t handle multi-\/byte characters split between more than two data chunks. The embedder can avoid this problem by always returning at least 2 bytes of data.
+
+If the embedder wants to cancel the streaming, they should make the next Get\+More\+Data call return 0. \hyperlink{classv8_1_1V8}{V8} will interpret it as end of data (and most probably, parsing will fail). The streaming task will return as soon as \hyperlink{classv8_1_1V8}{V8} has parsed the data it received so far. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

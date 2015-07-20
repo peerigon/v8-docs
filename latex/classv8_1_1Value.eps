@@ -191,9 +191,8 @@ boxfont setfont
 (v8::StringObject) cw
 (v8::SymbolObject) cw
 (v8::Boolean) cw
+(v8::Name) cw
 (v8::Number) cw
-(v8::String) cw
-(v8::Symbol) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -224,10 +223,10 @@ boundx scalefactor div boundy scalefactor div scale
  (v8::StringObject) 2.000000 1.000000 box
  (v8::SymbolObject) 2.000000 0.000000 box
  (v8::Boolean) 4.000000 11.000000 box
- (v8::Number) 4.000000 10.000000 box
+ (v8::Name) 4.000000 10.000000 box
 4.000000 10.000000 mark
- (v8::String) 4.000000 9.000000 box
- (v8::Symbol) 4.000000 8.000000 box
+ (v8::Number) 4.000000 9.000000 box
+4.000000 9.000000 mark
 
 % ----- relations -----
 
@@ -282,6 +281,4 @@ solid
 solid
 0 3.000000 9.500000 hedge
 solid
-0 3.000000 8.500000 hedge
-solid
-3.000000 12.000000 8.500000 vedge
+3.000000 12.000000 9.500000 vedge

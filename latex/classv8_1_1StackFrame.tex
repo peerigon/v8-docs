@@ -1,93 +1,92 @@
-\hypertarget{classv8_1_1StackFrame}{\section{v8\-:\-:Stack\-Frame Class Reference}
-\label{classv8_1_1StackFrame}\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}}
-}
+\hypertarget{classv8_1_1StackFrame}{}\section{v8\+:\+:Stack\+Frame Class Reference}
+\label{classv8_1_1StackFrame}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
 
 
-{\ttfamily \#include $<$v8.\-h$>$}
+{\ttfamily \#include $<$v8.\+h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{classv8_1_1StackFrame_a57886e590ac1a4c57ee6f6bf1009b5b1}{Get\-Line\-Number} () const 
+int \hyperlink{classv8_1_1StackFrame_a57886e590ac1a4c57ee6f6bf1009b5b1}{Get\+Line\+Number} () const 
 \item 
-int \hyperlink{classv8_1_1StackFrame_a44eccfb1bf17221ab6f69e977f3aa3a2}{Get\-Column} () const 
+int \hyperlink{classv8_1_1StackFrame_a44eccfb1bf17221ab6f69e977f3aa3a2}{Get\+Column} () const 
 \item 
-int \hyperlink{classv8_1_1StackFrame_ac449d55656f8b7638de3cf5f5530cb7a}{Get\-Script\-Id} () const 
+int \hyperlink{classv8_1_1StackFrame_ac449d55656f8b7638de3cf5f5530cb7a}{Get\+Script\+Id} () const 
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1StackFrame_ac9701a5687dd04bcf24fd02f62bbe1a8}{Get\-Script\-Name} () const 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1StackFrame_ac9701a5687dd04bcf24fd02f62bbe1a8}{Get\+Script\+Name} () const 
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1StackFrame_ac9f436f4cb245d871fe7efce03edc0cc}{Get\-Script\-Name\-Or\-Source\-U\-R\-L} () const 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1StackFrame_ac9f436f4cb245d871fe7efce03edc0cc}{Get\+Script\+Name\+Or\+Source\+U\+R\+L} () const 
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1StackFrame_ac13cdea4b4253d82485e673de6264073}{Get\-Function\-Name} () const 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1StackFrame_ac13cdea4b4253d82485e673de6264073}{Get\+Function\+Name} () const 
 \item 
-bool \hyperlink{classv8_1_1StackFrame_ae45f4d6ff9398a00a0b6534c160ec0c7}{Is\-Eval} () const 
+bool \hyperlink{classv8_1_1StackFrame_ae45f4d6ff9398a00a0b6534c160ec0c7}{Is\+Eval} () const 
 \item 
-bool \hyperlink{classv8_1_1StackFrame_ade01313f4a3f6b88691d9d544737f65c}{Is\-Constructor} () const 
+bool \hyperlink{classv8_1_1StackFrame_ade01313f4a3f6b88691d9d544737f65c}{Is\+Constructor} () const 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A single Java\-Script stack frame. 
+A single Java\+Script stack frame. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1StackFrame_a44eccfb1bf17221ab6f69e977f3aa3a2}{\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}!Get\-Column@{Get\-Column}}
-\index{Get\-Column@{Get\-Column}!v8::StackFrame@{v8\-::\-Stack\-Frame}}
-\subsubsection[{Get\-Column}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Stack\-Frame\-::\-Get\-Column (
+\hypertarget{classv8_1_1StackFrame_a44eccfb1bf17221ab6f69e977f3aa3a2}{}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Column@{Get\+Column}}
+\index{Get\+Column@{Get\+Column}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
+\subsubsection[{Get\+Column}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Stack\+Frame\+::\+Get\+Column (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1StackFrame_a44eccfb1bf17221ab6f69e977f3aa3a2}
-Returns the 1-\/based column offset on the line for the associated function call. This method will return Message\-::k\-No\-Column\-Info if it is unable to retrieve the column number, or if k\-Column\-Offset was not passed as an option when capturing the \hyperlink{classv8_1_1StackTrace}{Stack\-Trace}. \hypertarget{classv8_1_1StackFrame_ac13cdea4b4253d82485e673de6264073}{\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}!Get\-Function\-Name@{Get\-Function\-Name}}
-\index{Get\-Function\-Name@{Get\-Function\-Name}!v8::StackFrame@{v8\-::\-Stack\-Frame}}
-\subsubsection[{Get\-Function\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\-::\-Stack\-Frame\-::\-Get\-Function\-Name (
+) const}\label{classv8_1_1StackFrame_a44eccfb1bf17221ab6f69e977f3aa3a2}
+Returns the 1-\/based column offset on the line for the associated function call. This method will return Message\+::k\+No\+Column\+Info if it is unable to retrieve the column number, or if k\+Column\+Offset was not passed as an option when capturing the \hyperlink{classv8_1_1StackTrace}{Stack\+Trace}. \hypertarget{classv8_1_1StackFrame_ac13cdea4b4253d82485e673de6264073}{}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Function\+Name@{Get\+Function\+Name}}
+\index{Get\+Function\+Name@{Get\+Function\+Name}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
+\subsubsection[{Get\+Function\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Stack\+Frame\+::\+Get\+Function\+Name (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1StackFrame_ac13cdea4b4253d82485e673de6264073}
-Returns the name of the function associated with this stack frame. \hypertarget{classv8_1_1StackFrame_a57886e590ac1a4c57ee6f6bf1009b5b1}{\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}!Get\-Line\-Number@{Get\-Line\-Number}}
-\index{Get\-Line\-Number@{Get\-Line\-Number}!v8::StackFrame@{v8\-::\-Stack\-Frame}}
-\subsubsection[{Get\-Line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Stack\-Frame\-::\-Get\-Line\-Number (
+) const}\label{classv8_1_1StackFrame_ac13cdea4b4253d82485e673de6264073}
+Returns the name of the function associated with this stack frame. \hypertarget{classv8_1_1StackFrame_a57886e590ac1a4c57ee6f6bf1009b5b1}{}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Line\+Number@{Get\+Line\+Number}}
+\index{Get\+Line\+Number@{Get\+Line\+Number}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
+\subsubsection[{Get\+Line\+Number}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Stack\+Frame\+::\+Get\+Line\+Number (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1StackFrame_a57886e590ac1a4c57ee6f6bf1009b5b1}
-Returns the number, 1-\/based, of the line for the associate function call. This method will return Message\-::k\-No\-Line\-Number\-Info if it is unable to retrieve the line number, or if k\-Line\-Number was not passed as an option when capturing the \hyperlink{classv8_1_1StackTrace}{Stack\-Trace}. \hypertarget{classv8_1_1StackFrame_ac449d55656f8b7638de3cf5f5530cb7a}{\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}!Get\-Script\-Id@{Get\-Script\-Id}}
-\index{Get\-Script\-Id@{Get\-Script\-Id}!v8::StackFrame@{v8\-::\-Stack\-Frame}}
-\subsubsection[{Get\-Script\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int v8\-::\-Stack\-Frame\-::\-Get\-Script\-Id (
+) const}\label{classv8_1_1StackFrame_a57886e590ac1a4c57ee6f6bf1009b5b1}
+Returns the number, 1-\/based, of the line for the associate function call. This method will return Message\+::k\+No\+Line\+Number\+Info if it is unable to retrieve the line number, or if k\+Line\+Number was not passed as an option when capturing the \hyperlink{classv8_1_1StackTrace}{Stack\+Trace}. \hypertarget{classv8_1_1StackFrame_ac449d55656f8b7638de3cf5f5530cb7a}{}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Script\+Id@{Get\+Script\+Id}}
+\index{Get\+Script\+Id@{Get\+Script\+Id}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
+\subsubsection[{Get\+Script\+Id}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Stack\+Frame\+::\+Get\+Script\+Id (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1StackFrame_ac449d55656f8b7638de3cf5f5530cb7a}
-Returns the id of the script for the function for this \hyperlink{classv8_1_1StackFrame}{Stack\-Frame}. This method will return Message\-::k\-No\-Script\-Id\-Info if it is unable to retrieve the script id, or if k\-Script\-Id was not passed as an option when capturing the \hyperlink{classv8_1_1StackTrace}{Stack\-Trace}. \hypertarget{classv8_1_1StackFrame_ac9701a5687dd04bcf24fd02f62bbe1a8}{\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}!Get\-Script\-Name@{Get\-Script\-Name}}
-\index{Get\-Script\-Name@{Get\-Script\-Name}!v8::StackFrame@{v8\-::\-Stack\-Frame}}
-\subsubsection[{Get\-Script\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\-::\-Stack\-Frame\-::\-Get\-Script\-Name (
+) const}\label{classv8_1_1StackFrame_ac449d55656f8b7638de3cf5f5530cb7a}
+Returns the id of the script for the function for this \hyperlink{classv8_1_1StackFrame}{Stack\+Frame}. This method will return Message\+::k\+No\+Script\+Id\+Info if it is unable to retrieve the script id, or if k\+Script\+Id was not passed as an option when capturing the \hyperlink{classv8_1_1StackTrace}{Stack\+Trace}. \hypertarget{classv8_1_1StackFrame_ac9701a5687dd04bcf24fd02f62bbe1a8}{}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Script\+Name@{Get\+Script\+Name}}
+\index{Get\+Script\+Name@{Get\+Script\+Name}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
+\subsubsection[{Get\+Script\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Stack\+Frame\+::\+Get\+Script\+Name (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1StackFrame_ac9701a5687dd04bcf24fd02f62bbe1a8}
-Returns the name of the resource that contains the script for the function for this \hyperlink{classv8_1_1StackFrame}{Stack\-Frame}. \hypertarget{classv8_1_1StackFrame_ac9f436f4cb245d871fe7efce03edc0cc}{\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}!Get\-Script\-Name\-Or\-Source\-U\-R\-L@{Get\-Script\-Name\-Or\-Source\-U\-R\-L}}
-\index{Get\-Script\-Name\-Or\-Source\-U\-R\-L@{Get\-Script\-Name\-Or\-Source\-U\-R\-L}!v8::StackFrame@{v8\-::\-Stack\-Frame}}
-\subsubsection[{Get\-Script\-Name\-Or\-Source\-U\-R\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\-::\-Stack\-Frame\-::\-Get\-Script\-Name\-Or\-Source\-U\-R\-L (
+) const}\label{classv8_1_1StackFrame_ac9701a5687dd04bcf24fd02f62bbe1a8}
+Returns the name of the resource that contains the script for the function for this \hyperlink{classv8_1_1StackFrame}{Stack\+Frame}. \hypertarget{classv8_1_1StackFrame_ac9f436f4cb245d871fe7efce03edc0cc}{}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Get\+Script\+Name\+Or\+Source\+U\+R\+L@{Get\+Script\+Name\+Or\+Source\+U\+R\+L}}
+\index{Get\+Script\+Name\+Or\+Source\+U\+R\+L@{Get\+Script\+Name\+Or\+Source\+U\+R\+L}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
+\subsubsection[{Get\+Script\+Name\+Or\+Source\+U\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Stack\+Frame\+::\+Get\+Script\+Name\+Or\+Source\+U\+R\+L (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1StackFrame_ac9f436f4cb245d871fe7efce03edc0cc}
-Returns the name of the resource that contains the script for the function for this \hyperlink{classv8_1_1StackFrame}{Stack\-Frame} or source\-U\-R\-L value if the script name is undefined and its source ends with //\# source\-U\-R\-L=... string or deprecated //@ source\-U\-R\-L=... string. \hypertarget{classv8_1_1StackFrame_ade01313f4a3f6b88691d9d544737f65c}{\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}!Is\-Constructor@{Is\-Constructor}}
-\index{Is\-Constructor@{Is\-Constructor}!v8::StackFrame@{v8\-::\-Stack\-Frame}}
-\subsubsection[{Is\-Constructor}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Stack\-Frame\-::\-Is\-Constructor (
+) const}\label{classv8_1_1StackFrame_ac9f436f4cb245d871fe7efce03edc0cc}
+Returns the name of the resource that contains the script for the function for this \hyperlink{classv8_1_1StackFrame}{Stack\+Frame} or source\+U\+R\+L value if the script name is undefined and its source ends with //\# source\+U\+R\+L=... string or deprecated //@ source\+U\+R\+L=... string. \hypertarget{classv8_1_1StackFrame_ade01313f4a3f6b88691d9d544737f65c}{}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Is\+Constructor@{Is\+Constructor}}
+\index{Is\+Constructor@{Is\+Constructor}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
+\subsubsection[{Is\+Constructor}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Stack\+Frame\+::\+Is\+Constructor (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1StackFrame_ade01313f4a3f6b88691d9d544737f65c}
-Returns whether or not the associated function is called as a constructor via \char`\"{}new\char`\"{}. \hypertarget{classv8_1_1StackFrame_ae45f4d6ff9398a00a0b6534c160ec0c7}{\index{v8\-::\-Stack\-Frame@{v8\-::\-Stack\-Frame}!Is\-Eval@{Is\-Eval}}
-\index{Is\-Eval@{Is\-Eval}!v8::StackFrame@{v8\-::\-Stack\-Frame}}
-\subsubsection[{Is\-Eval}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\-::\-Stack\-Frame\-::\-Is\-Eval (
+) const}\label{classv8_1_1StackFrame_ade01313f4a3f6b88691d9d544737f65c}
+Returns whether or not the associated function is called as a constructor via \char`\"{}new\char`\"{}. \hypertarget{classv8_1_1StackFrame_ae45f4d6ff9398a00a0b6534c160ec0c7}{}\index{v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}!Is\+Eval@{Is\+Eval}}
+\index{Is\+Eval@{Is\+Eval}!v8\+::\+Stack\+Frame@{v8\+::\+Stack\+Frame}}
+\subsubsection[{Is\+Eval}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Stack\+Frame\+::\+Is\+Eval (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classv8_1_1StackFrame_ae45f4d6ff9398a00a0b6534c160ec0c7}
+) const}\label{classv8_1_1StackFrame_ae45f4d6ff9398a00a0b6534c160ec0c7}
 Returns whether or not the associated function is compiled via a call to eval(). 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\-h\end{DoxyCompactItemize}
+v8/include/v8.\+h\end{DoxyCompactItemize}

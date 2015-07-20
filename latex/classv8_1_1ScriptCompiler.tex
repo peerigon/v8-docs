@@ -1,30 +1,46 @@
-\hypertarget{classv8_1_1ScriptCompiler}{\section{v8\-:\-:Script\-Compiler Class Reference}
-\label{classv8_1_1ScriptCompiler}\index{v8\-::\-Script\-Compiler@{v8\-::\-Script\-Compiler}}
-}
+\hypertarget{classv8_1_1ScriptCompiler}{}\section{v8\+:\+:Script\+Compiler Class Reference}
+\label{classv8_1_1ScriptCompiler}\index{v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}}
 
 
-{\ttfamily \#include $<$v8.\-h$>$}
+{\ttfamily \#include $<$v8.\+h$>$}
 
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structv8_1_1ScriptCompiler_1_1CachedData}{Cached\-Data}
+struct \hyperlink{structv8_1_1ScriptCompiler_1_1CachedData}{Cached\+Data}
+\item 
+class \hyperlink{classv8_1_1ScriptCompiler_1_1ExternalSourceStream}{External\+Source\+Stream}
+\item 
+class \hyperlink{classv8_1_1ScriptCompiler_1_1ScriptStreamingTask}{Script\+Streaming\+Task}
 \item 
 class \hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source}
+\item 
+class \hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source}
 \end{DoxyCompactItemize}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum {\bfseries Compile\-Options} \{ {\bfseries k\-No\-Compile\-Options}, 
-{\bfseries k\-Produce\-Data\-To\-Cache} =  1 $<$$<$ 0
- \}
+\hypertarget{classv8_1_1ScriptCompiler_aa6db7774ab5d8793cd88db6b35a71818}{}enum {\bfseries Compile\+Options} \{ \\*
+{\bfseries k\+No\+Compile\+Options} = 0, 
+{\bfseries k\+Produce\+Parser\+Cache}, 
+{\bfseries k\+Consume\+Parser\+Cache}, 
+{\bfseries k\+Produce\+Code\+Cache}, 
+\\*
+{\bfseries k\+Consume\+Code\+Cache}, 
+{\bfseries k\+Produce\+Data\+To\+Cache}
+ \}\label{classv8_1_1ScriptCompiler_aa6db7774ab5d8793cd88db6b35a71818}
+
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1UnboundScript}{Unbound\-Script} $>$ \hyperlink{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}{Compile\-Unbound} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source} $\ast$source, Compile\-Options options=k\-No\-Compile\-Options)
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1UnboundScript}{Unbound\+Script} $>$ \hyperlink{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}{Compile\+Unbound} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source} $\ast$source, Compile\+Options options=k\+No\+Compile\+Options)
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Script}{Script} $>$ \hyperlink{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}{Compile} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source} $\ast$source, Compile\-Options options=k\-No\-Compile\-Options)
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Script}{Script} $>$ \hyperlink{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}{Compile} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source} $\ast$source, Compile\+Options options=k\+No\+Compile\+Options)
+\item 
+static \hyperlink{classv8_1_1ScriptCompiler_1_1ScriptStreamingTask}{Script\+Streaming\+Task} $\ast$ \hyperlink{classv8_1_1ScriptCompiler_a406bb44ef02d644d94bccd3f7b04f2d4}{Start\+Streaming\+Script} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source} $\ast$source, Compile\+Options options=k\+No\+Compile\+Options)
+\item 
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Script}{Script} $>$ \hyperlink{classv8_1_1ScriptCompiler_a45b17bbe1da31c32e3783b91bdde9fcb}{Compile} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source} $\ast$source, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ full\+\_\+source\+\_\+string, const \hyperlink{classv8_1_1ScriptOrigin}{Script\+Origin} \&origin)
 \end{DoxyCompactItemize}
 
 
@@ -32,37 +48,51 @@ static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Script}{Scri
 For compiling scripts. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}{\index{v8\-::\-Script\-Compiler@{v8\-::\-Script\-Compiler}!Compile@{Compile}}
-\index{Compile@{Compile}!v8::ScriptCompiler@{v8\-::\-Script\-Compiler}}
-\subsubsection[{Compile}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Script}$>$ v8\-::\-Script\-Compiler\-::\-Compile (
+\hypertarget{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}{}\index{v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}!Compile@{Compile}}
+\index{Compile@{Compile}!v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}}
+\subsubsection[{Compile}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Script}$>$ v8\+::\+Script\+Compiler\+::\+Compile (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
 \item[{{\bf Source} $\ast$}]{source, }
-\item[{Compile\-Options}]{options = {\ttfamily kNoCompileOptions}}
+\item[{Compile\+Options}]{options = {\ttfamily kNoCompileOptions}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ScriptCompiler_a4cef8b34c2744f6508a9ce53182c19bf}
 Compiles the specified script (bound to current context).
 
 
 \begin{DoxyParams}{Parameters}
 {\em source} & \hyperlink{classv8_1_1Script}{Script} source code. \\
 \hline
-{\em pre\-\_\-data} & Pre-\/parsing data, as obtained by Script\-Data\-::\-Pre\-Compile() using pre\-\_\-data speeds compilation if it's done multiple times. Owned by caller, no references are kept when this function returns. \\
+{\em pre\+\_\+data} & Pre-\/parsing data, as obtained by Script\+Data\+::\+Pre\+Compile() using pre\+\_\+data speeds compilation if it\textquotesingle{}s done multiple times. Owned by caller, no references are kept when this function returns. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Compiled script object, bound to the context that was active when this function was called. When run it will always use this context. 
 \end{DoxyReturn}
-\hypertarget{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}{\index{v8\-::\-Script\-Compiler@{v8\-::\-Script\-Compiler}!Compile\-Unbound@{Compile\-Unbound}}
-\index{Compile\-Unbound@{Compile\-Unbound}!v8::ScriptCompiler@{v8\-::\-Script\-Compiler}}
-\subsubsection[{Compile\-Unbound}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Unbound\-Script}$>$ v8\-::\-Script\-Compiler\-::\-Compile\-Unbound (
+\hypertarget{classv8_1_1ScriptCompiler_a45b17bbe1da31c32e3783b91bdde9fcb}{}\index{v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}!Compile@{Compile}}
+\index{Compile@{Compile}!v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}}
+\subsubsection[{Compile}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Script}$>$ v8\+::\+Script\+Compiler\+::\+Compile (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Streamed\+Source} $\ast$}]{source, }
+\item[{{\bf Handle}$<$ {\bf String} $>$}]{full\+\_\+source\+\_\+string, }
+\item[{const {\bf Script\+Origin} \&}]{origin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ScriptCompiler_a45b17bbe1da31c32e3783b91bdde9fcb}
+Compiles a streamed script (bound to current context).
+
+This can only be called after the streaming has finished (\hyperlink{classv8_1_1ScriptCompiler_1_1ScriptStreamingTask}{Script\+Streaming\+Task} has been run). \hyperlink{classv8_1_1V8}{V8} doesn\textquotesingle{}t construct the source string during streaming, so the embedder needs to pass the full source here. \hypertarget{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}{}\index{v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}!Compile\+Unbound@{Compile\+Unbound}}
+\index{Compile\+Unbound@{Compile\+Unbound}!v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}}
+\subsubsection[{Compile\+Unbound}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Unbound\+Script}$>$ v8\+::\+Script\+Compiler\+::\+Compile\+Unbound (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
 \item[{{\bf Source} $\ast$}]{source, }
-\item[{Compile\-Options}]{options = {\ttfamily kNoCompileOptions}}
+\item[{Compile\+Options}]{options = {\ttfamily kNoCompileOptions}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}
-Compiles the specified script (context-\/independent).
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ScriptCompiler_a5f590f94e2705d12392c17b7fa097e1d}
+Compiles the specified script (context-\/independent). Cached data as part of the source object can be optionally produced to be consumed later to speed up compilation of identical source scripts.
+
+Note that when producing cached data, the source must point to N\+U\+L\+L for cached data. When consuming cached data, the cached data must have been produced by the same version of \hyperlink{classv8_1_1V8}{V8}.
 
 
 \begin{DoxyParams}{Parameters}
@@ -72,8 +102,19 @@ Compiles the specified script (context-\/independent).
 \begin{DoxyReturn}{Returns}
 Compiled script object (context independent; for running it must be bound to a context). 
 \end{DoxyReturn}
+\hypertarget{classv8_1_1ScriptCompiler_a406bb44ef02d644d94bccd3f7b04f2d4}{}\index{v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}!Start\+Streaming\+Script@{Start\+Streaming\+Script}}
+\index{Start\+Streaming\+Script@{Start\+Streaming\+Script}!v8\+::\+Script\+Compiler@{v8\+::\+Script\+Compiler}}
+\subsubsection[{Start\+Streaming\+Script}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Script\+Streaming\+Task}$\ast$ v8\+::\+Script\+Compiler\+::\+Start\+Streaming\+Script (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Streamed\+Source} $\ast$}]{source, }
+\item[{Compile\+Options}]{options = {\ttfamily kNoCompileOptions}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ScriptCompiler_a406bb44ef02d644d94bccd3f7b04f2d4}
+Returns a task which streams script data into \hyperlink{classv8_1_1V8}{V8}, or N\+U\+L\+L if the script cannot be streamed. The user is responsible for running the task on a background thread and deleting it. When ran, the task starts parsing the script, and it will request data from the \hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source} as needed. When Script\+Streaming\+Task\+::\+Run exits, all data has been streamed and the script can be compiled (see Compile below).
 
+This A\+P\+I allows to start the streaming with as little data as possible, and the remaining data (for example, the \hyperlink{classv8_1_1ScriptOrigin}{Script\+Origin}) is passed to Compile. 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\-h\end{DoxyCompactItemize}
+v8/include/v8.\+h\end{DoxyCompactItemize}

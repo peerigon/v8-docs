@@ -1,51 +1,50 @@
-\hypertarget{classv8_1_1ArrayBuffer_1_1Allocator}{\section{v8\-:\-:Array\-Buffer\-:\-:Allocator Class Reference}
-\label{classv8_1_1ArrayBuffer_1_1Allocator}\index{v8\-::\-Array\-Buffer\-::\-Allocator@{v8\-::\-Array\-Buffer\-::\-Allocator}}
-}
+\hypertarget{classv8_1_1ArrayBuffer_1_1Allocator}{}\section{v8\+:\+:Array\+Buffer\+:\+:Allocator Class Reference}
+\label{classv8_1_1ArrayBuffer_1_1Allocator}\index{v8\+::\+Array\+Buffer\+::\+Allocator@{v8\+::\+Array\+Buffer\+::\+Allocator}}
 
 
-{\ttfamily \#include $<$v8.\-h$>$}
+{\ttfamily \#include $<$v8.\+h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void $\ast$ \hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a106b0d80120ed04fe9b9675e96f0340b}{Allocate} (size\-\_\-t length)=0
+virtual void $\ast$ \hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a106b0d80120ed04fe9b9675e96f0340b}{Allocate} (size\+\_\+t length)=0
 \item 
-virtual void $\ast$ \hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a92b2d5c0a826d3c435e12f3ee178f37a}{Allocate\-Uninitialized} (size\-\_\-t length)=0
+virtual void $\ast$ \hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a92b2d5c0a826d3c435e12f3ee178f37a}{Allocate\+Uninitialized} (size\+\_\+t length)=0
 \item 
-virtual void \hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a419f59d2a103a5a8863809d7977c9cd8}{Free} (void $\ast$data, size\-\_\-t length)=0
+virtual void \hyperlink{classv8_1_1ArrayBuffer_1_1Allocator_a419f59d2a103a5a8863809d7977c9cd8}{Free} (void $\ast$data, size\+\_\+t length)=0
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator}{Allocator} that \hyperlink{classv8_1_1V8}{V8} uses to allocate $|$\-Array\-Buffer$|$'s memory. The allocator is a global \hyperlink{classv8_1_1V8}{V8} setting. It should be set with \hyperlink{classv8_1_1V8_abc40950a39f8cb6946dc8a1ad41eea84}{V8\-::\-Set\-Array\-Buffer\-Allocator} prior to creation of a first \hyperlink{classv8_1_1ArrayBuffer}{Array\-Buffer}.
+\hyperlink{classv8_1_1ArrayBuffer_1_1Allocator}{Allocator} that \hyperlink{classv8_1_1V8}{V8} uses to allocate $\vert$\+Array\+Buffer$\vert$\textquotesingle{}s memory. The allocator is a global \hyperlink{classv8_1_1V8}{V8} setting. It should be set with \hyperlink{classv8_1_1V8_abc40950a39f8cb6946dc8a1ad41eea84}{V8\+::\+Set\+Array\+Buffer\+Allocator} prior to creation of a first \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}.
 
-This A\-P\-I is experimental and may change significantly. 
+This A\+P\+I is experimental and may change significantly. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1ArrayBuffer_1_1Allocator_a106b0d80120ed04fe9b9675e96f0340b}{\index{v8\-::\-Array\-Buffer\-::\-Allocator@{v8\-::\-Array\-Buffer\-::\-Allocator}!Allocate@{Allocate}}
-\index{Allocate@{Allocate}!v8::ArrayBuffer::Allocator@{v8\-::\-Array\-Buffer\-::\-Allocator}}
-\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ v8\-::\-Array\-Buffer\-::\-Allocator\-::\-Allocate (
+\hypertarget{classv8_1_1ArrayBuffer_1_1Allocator_a106b0d80120ed04fe9b9675e96f0340b}{}\index{v8\+::\+Array\+Buffer\+::\+Allocator@{v8\+::\+Array\+Buffer\+::\+Allocator}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!v8\+::\+Array\+Buffer\+::\+Allocator@{v8\+::\+Array\+Buffer\+::\+Allocator}}
+\subsubsection[{Allocate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ v8\+::\+Array\+Buffer\+::\+Allocator\+::\+Allocate (
 \begin{DoxyParamCaption}
-\item[{size\-\_\-t}]{length}
+\item[{size\+\_\+t}]{length}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1ArrayBuffer_1_1Allocator_a106b0d80120ed04fe9b9675e96f0340b}
-Allocate $|$length$|$ bytes. Return N\-U\-L\-L if allocation is not successful. Memory should be initialized to zeroes. \hypertarget{classv8_1_1ArrayBuffer_1_1Allocator_a92b2d5c0a826d3c435e12f3ee178f37a}{\index{v8\-::\-Array\-Buffer\-::\-Allocator@{v8\-::\-Array\-Buffer\-::\-Allocator}!Allocate\-Uninitialized@{Allocate\-Uninitialized}}
-\index{Allocate\-Uninitialized@{Allocate\-Uninitialized}!v8::ArrayBuffer::Allocator@{v8\-::\-Array\-Buffer\-::\-Allocator}}
-\subsubsection[{Allocate\-Uninitialized}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ v8\-::\-Array\-Buffer\-::\-Allocator\-::\-Allocate\-Uninitialized (
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1ArrayBuffer_1_1Allocator_a106b0d80120ed04fe9b9675e96f0340b}
+Allocate $\vert$length$\vert$ bytes. Return N\+U\+L\+L if allocation is not successful. Memory should be initialized to zeroes. \hypertarget{classv8_1_1ArrayBuffer_1_1Allocator_a92b2d5c0a826d3c435e12f3ee178f37a}{}\index{v8\+::\+Array\+Buffer\+::\+Allocator@{v8\+::\+Array\+Buffer\+::\+Allocator}!Allocate\+Uninitialized@{Allocate\+Uninitialized}}
+\index{Allocate\+Uninitialized@{Allocate\+Uninitialized}!v8\+::\+Array\+Buffer\+::\+Allocator@{v8\+::\+Array\+Buffer\+::\+Allocator}}
+\subsubsection[{Allocate\+Uninitialized}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ v8\+::\+Array\+Buffer\+::\+Allocator\+::\+Allocate\+Uninitialized (
 \begin{DoxyParamCaption}
-\item[{size\-\_\-t}]{length}
+\item[{size\+\_\+t}]{length}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1ArrayBuffer_1_1Allocator_a92b2d5c0a826d3c435e12f3ee178f37a}
-Allocate $|$length$|$ bytes. Return N\-U\-L\-L if allocation is not successful. Memory does not have to be initialized. \hypertarget{classv8_1_1ArrayBuffer_1_1Allocator_a419f59d2a103a5a8863809d7977c9cd8}{\index{v8\-::\-Array\-Buffer\-::\-Allocator@{v8\-::\-Array\-Buffer\-::\-Allocator}!Free@{Free}}
-\index{Free@{Free}!v8::ArrayBuffer::Allocator@{v8\-::\-Array\-Buffer\-::\-Allocator}}
-\subsubsection[{Free}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\-::\-Array\-Buffer\-::\-Allocator\-::\-Free (
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1ArrayBuffer_1_1Allocator_a92b2d5c0a826d3c435e12f3ee178f37a}
+Allocate $\vert$length$\vert$ bytes. Return N\+U\+L\+L if allocation is not successful. Memory does not have to be initialized. \hypertarget{classv8_1_1ArrayBuffer_1_1Allocator_a419f59d2a103a5a8863809d7977c9cd8}{}\index{v8\+::\+Array\+Buffer\+::\+Allocator@{v8\+::\+Array\+Buffer\+::\+Allocator}!Free@{Free}}
+\index{Free@{Free}!v8\+::\+Array\+Buffer\+::\+Allocator@{v8\+::\+Array\+Buffer\+::\+Allocator}}
+\subsubsection[{Free}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Array\+Buffer\+::\+Allocator\+::\+Free (
 \begin{DoxyParamCaption}
 \item[{void $\ast$}]{data, }
-\item[{size\-\_\-t}]{length}
+\item[{size\+\_\+t}]{length}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classv8_1_1ArrayBuffer_1_1Allocator_a419f59d2a103a5a8863809d7977c9cd8}
-Free the memory block of size $|$length$|$, pointed to by $|$data$|$. That memory is guaranteed to be previously allocated by $|$\-Allocate$|$. 
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1ArrayBuffer_1_1Allocator_a419f59d2a103a5a8863809d7977c9cd8}
+Free the memory block of size $\vert$length$\vert$, pointed to by $\vert$data$\vert$. That memory is guaranteed to be previously allocated by $\vert$\+Allocate$\vert$. 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-v8/include/v8.\-h\end{DoxyCompactItemize}
+v8/include/v8.\+h\end{DoxyCompactItemize}
