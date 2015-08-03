@@ -117,9 +117,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a745bc83ba29626b64151a1a3e9759e8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a745bc83ba29626b64151a1a3e9759e8a"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugEventListener</b> (<a class="el" href="classv8_1_1Debug.html#ab53894746a21222796062f0e81ea28d8">EventCallback</a> that, <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;())</td></tr>
-<tr class="separator:a745bc83ba29626b64151a1a3e9759e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d24e9b52877ec40236bd0ceea85e8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2d24e9b52877ec40236bd0ceea85e8b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugEventListener</b> (<a class="el" href="classv8_1_1Debug.html#ab53894746a21222796062f0e81ea28d8">EventCallback</a> that, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;())</td></tr>
+<tr class="separator:ac2d24e9b52877ec40236bd0ceea85e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c730ea558b1fc86cb728980c91a4c7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c730ea558b1fc86cb728980c91a4c7c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugBreak</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate)</td></tr>
 <tr class="separator:a0c730ea558b1fc86cb728980c91a4c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,25 +129,30 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelDebugBre
 <tr class="memitem:aa564431664efa61d6d72c9cbd91b4ea2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa564431664efa61d6d72c9cbd91b4ea2"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckDebugBreak</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate)</td></tr>
 <tr class="separator:aa564431664efa61d6d72c9cbd91b4ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44528a1005a8256037a0f45c93afd0db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44528a1005a8256037a0f45c93afd0db"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugBreakForCommand</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate, <a class="el" href="classv8_1_1Debug_1_1ClientData.html">ClientData</a> *data)</td></tr>
-<tr class="separator:a44528a1005a8256037a0f45c93afd0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab26a90abc5c21c752f6923a1986f0bb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab26a90abc5c21c752f6923a1986f0bb7"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMessageHandler</b> (<a class="el" href="classv8_1_1Debug.html#a526826b857bd3e3efa184e12bcebc694">MessageHandler</a> handler)</td></tr>
 <tr class="separator:ab26a90abc5c21c752f6923a1986f0bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba2426f25ee7cd31659426287777bb00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba2426f25ee7cd31659426287777bb00"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendCommand</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate, const uint16_t *command, int length, <a class="el" href="classv8_1_1Debug_1_1ClientData.html">ClientData</a> *client_data=NULL)</td></tr>
 <tr class="separator:aba2426f25ee7cd31659426287777bb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a3e0cf585cfd201d8ab1bc395d0593"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Debug.html#a49a3e0cf585cfd201d8ab1bc395d0593">Call</a> (<a class="el" href="classv8_1_1Handle.html">v8::Handle</a>&lt; <a class="el" href="classv8_1_1Function.html">v8::Function</a> &gt; fun, <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;())</td></tr>
-<tr class="separator:a49a3e0cf585cfd201d8ab1bc395d0593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d07c7d5c9ee2eaaa9af310bcbf58f5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Debug.html#aa7d07c7d5c9ee2eaaa9af310bcbf58f5">GetMirror</a> (<a class="el" href="classv8_1_1Handle.html">v8::Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; obj)</td></tr>
-<tr class="separator:aa7d07c7d5c9ee2eaaa9af310bcbf58f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a4a039d33769fae6d94fd2d14e5550"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Debug.html#a82a4a039d33769fae6d94fd2d14e5550">V8_DEPRECATE_SOON</a> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; Call(<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Function.html">v8::Function</a> &gt; fun, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;()))</td></tr>
+<tr class="separator:a82a4a039d33769fae6d94fd2d14e5550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e28ec40dc429e7fa1dfbe1e514ba3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32e28ec40dc429e7fa1dfbe1e514ba3d"></a>
+static <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Call</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Function.html">v8::Function</a> &gt; fun, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;())</td></tr>
+<tr class="separator:a32e28ec40dc429e7fa1dfbe1e514ba3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc285363a72ad36a56f50428a94c6ce4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Debug.html#afc285363a72ad36a56f50428a94c6ce4">V8_DEPRECATE_SOON</a> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; GetMirror(<a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; obj))</td></tr>
+<tr class="separator:afc285363a72ad36a56f50428a94c6ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f5ae3f4418c576da4633c6fb27b23d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5f5ae3f4418c576da4633c6fb27b23d"></a>
+static <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMirror</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context, <a class="el" href="classv8_1_1Local.html">v8::Local</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt; obj)</td></tr>
+<tr class="separator:ab5f5ae3f4418c576da4633c6fb27b23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a888e06766caee0380c6aa010b00e1a54"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Debug.html#a888e06766caee0380c6aa010b00e1a54">ProcessDebugMessages</a> ()</td></tr>
 <tr class="separator:a888e06766caee0380c6aa010b00e1a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2343a321b0db41324b7e8a7402f57cf0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Debug.html#a2343a321b0db41324b7e8a7402f57cf0">GetDebugContext</a> ()</td></tr>
 <tr class="separator:a2343a321b0db41324b7e8a7402f57cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab635f979d369bed13187e2594d825517"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Debug.html#ab635f979d369bed13187e2594d825517">SetLiveEditEnabled</a> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate, bool enable)</td></tr>
 <tr class="separator:ab635f979d369bed13187e2594d825517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ef14b11ffdd57287f25b39dc728e07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Debug.html#a10ef14b11ffdd57287f25b39dc728e07">GetInternalProperties</a> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; value)</td></tr>
+<tr class="separator:a10ef14b11ffdd57287f25b39dc728e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a91cd8aa9743e3478bc63fe73abcd557c"></a>
@@ -204,50 +209,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendCommand</b
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a49a3e0cf585cfd201d8ab1bc395d0593"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classv8_1_1Local.html">Local</a>&lt;<a class="el" href="classv8_1_1Value.html">Value</a>&gt; v8::Debug::Call </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">v8::Handle</a>&lt; <a class="el" href="classv8_1_1Function.html">v8::Function</a> &gt;&#160;</td>
-          <td class="paramname"><em>fun</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
-          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt;&#160;<a class="el" href="classv8_1_1Value.html">Value</a>&#160;&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Run a JavaScript function in the debugger. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fun</td><td>the function to call </td></tr>
-    <tr><td class="paramname">data</td><td>passed as second argument to the function With this call the debugger is entered and the function specified is called with the execution state as the first argument. This makes it possible to get access to information otherwise not available during normal JavaScript execution e.g. details on stack frames. Receiver of the function call will be the debugger context global object, however this is a subject to change. The following example shows a JavaScript function which when passed to <a class="el" href="classv8_1_1Debug.html#a49a3e0cf585cfd201d8ab1bc395d0593">v8::Debug::Call</a> will return the current line of JavaScript execution.</td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="fragment"><div class="line"><span class="keyword">function</span> frame_source_line(exec_state) {</div>
-<div class="line">  <span class="keywordflow">return</span> exec_state.frame(0).sourceLine();</div>
-<div class="line">}</div>
-</div><!-- fragment --> 
-</div>
-</div>
 <a class="anchor" id="a2343a321b0db41324b7e8a7402f57cf0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -268,11 +229,11 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendCommand</b
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Debugger is running in its own context which is entered while debugger messages are being dispatched. This is an explicit getter for this debugger context. Note that the content of the debugger context is subject to change. </p>
+<p>Debugger is running in its own context which is entered while debugger messages are being dispatched. This is an explicit getter for this debugger context. Note that the content of the debugger context is subject to change. The <a class="el" href="classv8_1_1Context.html">Context</a> exists only when the debugger is active, i.e. at least one DebugEventListener or MessageHandler is set. </p>
 
 </div>
 </div>
-<a class="anchor" id="aa7d07c7d5c9ee2eaaa9af310bcbf58f5"></a>
+<a class="anchor" id="a10ef14b11ffdd57287f25b39dc728e07"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -280,11 +241,21 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendCommand</b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classv8_1_1Local.html">Local</a>&lt;<a class="el" href="classv8_1_1Value.html">Value</a>&gt; v8::Debug::GetMirror </td>
+          <td class="memname">static <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt;<a class="el" href="classv8_1_1Array.html">Array</a>&gt; v8::Debug::GetInternalProperties </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">v8::Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">v8::Value</a> &gt;&#160;</td>
-          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Isolate.html">Isolate</a> *&#160;</td>
+          <td class="paramname"><em>isolate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -293,7 +264,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendCommand</b
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns a mirror object for the given object. </p>
+<p>Returns array of internal properties specific to the value type. Result has the following format: [&lt;name&gt;, </p>
+<p>,...,&lt;name&gt;, </p>
+<p>]. Result array will be allocated in the current context. </p>
 
 </div>
 </div>
@@ -367,13 +340,92 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendCommand</b
 
 </div>
 </div>
+<a class="anchor" id="a82a4a039d33769fae6d94fd2d14e5550"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static v8::Debug::V8_DEPRECATE_SOON </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Use maybe version&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; &#160;</td>
+          <td class="paramname"><em>Call</em>v8::Local&lt; v8::Function &gt; fun, Local&lt; Value &gt; data=Local&lt; Value &gt;()&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Run a JavaScript function in the debugger. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fun</td><td>the function to call </td></tr>
+    <tr><td class="paramname">data</td><td>passed as second argument to the function With this call the debugger is entered and the function specified is called with the execution state as the first argument. This makes it possible to get access to information otherwise not available during normal JavaScript execution e.g. details on stack frames. Receiver of the function call will be the debugger context global object, however this is a subject to change. The following example shows a JavaScript function which when passed to v8::Debug::Call will return the current line of JavaScript execution.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="keyword">function</span> frame_source_line(exec_state) {</div>
+<div class="line">  <span class="keywordflow">return</span> exec_state.frame(0).sourceLine();</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="afc285363a72ad36a56f50428a94c6ce4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static v8::Debug::V8_DEPRECATE_SOON </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Use maybe version&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; &#160;</td>
+          <td class="paramname"><em>GetMirror</em>v8::Local&lt; v8::Value &gt; obj&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a mirror object for the given object. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>v8/include/<a class="el" href="v8-debug_8h_source.html">v8-debug.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:44 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:02:59 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

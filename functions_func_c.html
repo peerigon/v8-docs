@@ -122,14 +122,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
-<li>Call()
-: <a class="el" href="classv8_1_1Debug.html#a49a3e0cf585cfd201d8ab1bc395d0593">v8::Debug</a>
+<li>CachedDataVersionTag()
+: <a class="el" href="classv8_1_1ScriptCompiler.html#aea78877b0dccde1e587ee1ddeda1c155">v8::ScriptCompiler</a>
 </li>
-<li>CallAsConstructor()
-: <a class="el" href="classv8_1_1Object.html#afeb999e9225dad0ca8605ed3015b268b">v8::Object</a>
+<li>CallDelayedOnForegroundThread()
+: <a class="el" href="classv8_1_1Platform.html#a72bff12d95fbf2118279b0e8f53f8a4b">v8::Platform</a>
 </li>
-<li>CallAsFunction()
-: <a class="el" href="classv8_1_1Object.html#ac8dea845a715de7ad43fcb073dc8c3d9">v8::Object</a>
+<li>CallIdleOnForegroundThread()
+: <a class="el" href="classv8_1_1Platform.html#ae495999016432391f04d323452084b12">v8::Platform</a>
 </li>
 <li>CallOnBackgroundThread()
 : <a class="el" href="classv8_1_1Platform.html#aa715e6839c1954b4e23b9d2df00bd3ea">v8::Platform</a>
@@ -139,7 +139,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>CancelTerminateExecution()
 : <a class="el" href="classv8_1_1Isolate.html#a75cbe037e7657a7c7bd65e2edf0164d5">v8::Isolate</a>
-, <a class="el" href="classv8_1_1V8.html#af73cb6766b9c008d0ba6c6ca991d8328">v8::V8</a>
 </li>
 <li>CanContinue()
 : <a class="el" href="classv8_1_1TryCatch.html#a2ec467d4653d26c064d749cab98791cb">v8::TryCatch</a>
@@ -147,16 +146,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>CanMakeExternal()
 : <a class="el" href="classv8_1_1String.html#a0fe076838af046506ffebbfadcde812a">v8::String</a>
 </li>
-<li>Chain()
-: <a class="el" href="classv8_1_1Promise.html#af56616dc11de23d6d515b0fa5d42e1eb">v8::Promise</a>
-</li>
 <li>Clear()
-: <a class="el" href="classv8_1_1Handle.html#a8d20b7afe6afd613b2c026c6bc863d68">v8::Handle&lt; T &gt;</a>
-, <a class="el" href="classv8_1_1PersistentValueMap.html#acb73f2a873f69adfd15a262ecd90b037">v8::PersistentValueMap&lt; K, V, Traits &gt;</a>
+: <a class="el" href="classv8_1_1Local.html#a6fcf63af6bdd697ddd7c3acd16c69899">v8::Local&lt; T &gt;</a>
+, <a class="el" href="classv8_1_1PersistentValueMapBase.html#a1bf074e7a7c24713c9a3d40ddce89e74">v8::PersistentValueMapBase&lt; K, V, Traits &gt;</a>
 , <a class="el" href="classv8_1_1PersistentValueVector.html#ad07f449c2004b4f3d91e58cabde99a53">v8::PersistentValueVector&lt; V, Traits &gt;</a>
-</li>
-<li>ClearInterrupt()
-: <a class="el" href="classv8_1_1Isolate.html#a00790d743cec68bbaa8ca7dbf6257f05">v8::Isolate</a>
 </li>
 <li>ClearObjectIds()
 : <a class="el" href="classv8_1_1HeapProfiler.html#a8a90c630543ed1875cbf9166239ff8d3">v8::HeapProfiler</a>
@@ -164,33 +157,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Clone()
 : <a class="el" href="classv8_1_1Object.html#a5018c9d085aa71f65530cf1e073a04ad">v8::Object</a>
 </li>
-<li>CloneElementAt()
-: <a class="el" href="classv8_1_1Array.html#a7335096a5349ce75b38d5b24af4bd125">v8::Array</a>
-</li>
-<li>Compile()
-: <a class="el" href="classv8_1_1Script.html#a78500f4a95d75ffd0253f72a6db750b0">v8::Script</a>
-, <a class="el" href="classv8_1_1ScriptCompiler.html#a4cef8b34c2744f6508a9ce53182c19bf">v8::ScriptCompiler</a>
-</li>
-<li>CompileUnbound()
-: <a class="el" href="classv8_1_1ScriptCompiler.html#a5f590f94e2705d12392c17b7fa097e1d">v8::ScriptCompiler</a>
-</li>
 <li>Concat()
-: <a class="el" href="classv8_1_1String.html#a3d0b9c9208cf5054adb048e360fb73ff">v8::String</a>
+: <a class="el" href="classv8_1_1String.html#ae72b61a78cef5d2916a87d9032c7fd34">v8::String</a>
 </li>
 <li>ConfigureDefaults()
-: <a class="el" href="classv8_1_1ResourceConstraints.html#a6e5d38fd99d89d4fc10e325507d08d52">v8::ResourceConstraints</a>
+: <a class="el" href="classv8_1_1ResourceConstraints.html#aeeaaee4017e8d5f8f0439af2af2ed3a5">v8::ResourceConstraints</a>
 </li>
 <li>Contains()
-: <a class="el" href="classv8_1_1PersistentValueMap.html#a35a111acbb12de4caf88ed80830aef99">v8::PersistentValueMap&lt; K, V, Traits &gt;</a>
+: <a class="el" href="classv8_1_1PersistentValueMapBase.html#a8c68e5f99c4042541c6d32232c97282a">v8::PersistentValueMapBase&lt; K, V, Traits &gt;</a>
 </li>
 <li>ContainsOnlyOneByte()
 : <a class="el" href="classv8_1_1String.html#a4ae1fe1175bd5b96bfa53f5f5ee835e9">v8::String</a>
 </li>
 <li>ContextDisposedNotification()
-: <a class="el" href="classv8_1_1Isolate.html#a08d71a6a9979e6105d3c730be56e7702">v8::Isolate</a>
+: <a class="el" href="classv8_1_1Isolate.html#a4b5216bbb1792211422aee575d02f442">v8::Isolate</a>
+</li>
+<li>CopyContents()
+: <a class="el" href="classv8_1_1ArrayBufferView.html#aa728e762ed43194f3a5e05e792fff64e">v8::ArrayBufferView</a>
 </li>
 <li>CreateMessage()
-: <a class="el" href="classv8_1_1Exception.html#a76c1cba6f34bee4026b1de79aaa2de5b">v8::Exception</a>
+: <a class="el" href="classv8_1_1Exception.html#a366e09958653d62729e796a9b4d74f59">v8::Exception</a>
+</li>
+<li>CreateSnapshotDataBlob()
+: <a class="el" href="classv8_1_1V8.html#a0afd98f054412cf57318c0657e9a393f">v8::V8</a>
 </li>
 <li>CreationContext()
 : <a class="el" href="classv8_1_1Object.html#af6966283a7d7e20779961eed434db04d">v8::Object</a>
@@ -202,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:51 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:07 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

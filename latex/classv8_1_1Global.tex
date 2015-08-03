@@ -1,0 +1,101 @@
+\hypertarget{classv8_1_1Global}{}\section{v8\+:\+:Global$<$ T $>$ Class Template Reference}
+\label{classv8_1_1Global}\index{v8\+::\+Global$<$ T $>$@{v8\+::\+Global$<$ T $>$}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Global$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classv8_1_1Global}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1Global_a295826e79781fe585904e652884db72f}{}typedef void {\bfseries Move\+Only\+Type\+For\+C\+P\+P03}\label{classv8_1_1Global_a295826e79781fe585904e652884db72f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Global_ab1efdf25ff6305e67f3266a6fe90527e}{Global} ()
+\item 
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Global_a8434bb6729eb4cd0cd85ad81bd8344ad}{Global} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Local}{Local}$<$ S $>$ that)
+\item 
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Global_a6243ecb28bb97d066065796fa28f7415}{Global} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}$<$ S $>$ \&that)
+\item 
+V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Global_ab8f3c754a58146e6db67012cd74a49cb}{Global} (\hyperlink{classv8_1_1Global}{Global} \&\&other)
+\item 
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Global}{Global} \& \hyperlink{classv8_1_1Global_a9d3d7d8f10ad23e413f2027cc15ab209}{operator=} (\hyperlink{classv8_1_1Global}{Global}$<$ S $>$ \&\&rhs)
+\item 
+\hyperlink{classv8_1_1Global}{Global} \hyperlink{classv8_1_1Global_a914903149cc752468d4a3a11b6089c7e}{Pass} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1Global_a53f604d3d6f2dc0647df33c9979f116a}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Return\+Value}\label{classv8_1_1Global_a53f604d3d6f2dc0647df33c9979f116a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class v8\+::\+Global$<$ T $>$}
+
+A \hyperlink{classv8_1_1PersistentBase}{Persistent\+Base} which has move semantics.
+
+Note\+: \hyperlink{classv8_1_1Persistent}{Persistent} class hierarchy is subject to future changes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classv8_1_1Global_ab1efdf25ff6305e67f3266a6fe90527e}{}\index{v8\+::\+Global@{v8\+::\+Global}!Global@{Global}}
+\index{Global@{Global}!v8\+::\+Global@{v8\+::\+Global}}
+\subsubsection[{Global}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Global}$<$ T $>$\+::{\bf Global} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Global_ab1efdf25ff6305e67f3266a6fe90527e}
+A \hyperlink{classv8_1_1Global}{Global} with no storage cell. \hypertarget{classv8_1_1Global_a8434bb6729eb4cd0cd85ad81bd8344ad}{}\index{v8\+::\+Global@{v8\+::\+Global}!Global@{Global}}
+\index{Global@{Global}!v8\+::\+Global@{v8\+::\+Global}}
+\subsubsection[{Global}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Global}$<$ T $>$\+::{\bf Global} (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Local}$<$ S $>$}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Global_a8434bb6729eb4cd0cd85ad81bd8344ad}
+Construct a \hyperlink{classv8_1_1Global}{Global} from a \hyperlink{classv8_1_1Local}{Local}. When the \hyperlink{classv8_1_1Local}{Local} is non-\/empty, a new storage cell is created pointing to the same object, and no flags are set. \hypertarget{classv8_1_1Global_a6243ecb28bb97d066065796fa28f7415}{}\index{v8\+::\+Global@{v8\+::\+Global}!Global@{Global}}
+\index{Global@{Global}!v8\+::\+Global@{v8\+::\+Global}}
+\subsubsection[{Global}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Global}$<$ T $>$\+::{\bf Global} (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{const {\bf Persistent\+Base}$<$ S $>$ \&}]{that}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Global_a6243ecb28bb97d066065796fa28f7415}
+Construct a \hyperlink{classv8_1_1Global}{Global} from a \hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}. When the \hyperlink{classv8_1_1Persistent}{Persistent} is non-\/empty, a new storage cell is created pointing to the same object, and no flags are set. \hypertarget{classv8_1_1Global_ab8f3c754a58146e6db67012cd74a49cb}{}\index{v8\+::\+Global@{v8\+::\+Global}!Global@{Global}}
+\index{Global@{Global}!v8\+::\+Global@{v8\+::\+Global}}
+\subsubsection[{Global}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Global}$<$ T $>$\+::{\bf Global} (
+\begin{DoxyParamCaption}
+\item[{{\bf Global}$<$ T $>$ \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Global_ab8f3c754a58146e6db67012cd74a49cb}
+Move constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classv8_1_1Global_a9d3d7d8f10ad23e413f2027cc15ab209}{}\index{v8\+::\+Global@{v8\+::\+Global}!operator=@{operator=}}
+\index{operator=@{operator=}!v8\+::\+Global@{v8\+::\+Global}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf Global}\& {\bf v8\+::\+Global}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Global}$<$ S $>$ \&\&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Global_a9d3d7d8f10ad23e413f2027cc15ab209}
+Move via assignment. \hypertarget{classv8_1_1Global_a914903149cc752468d4a3a11b6089c7e}{}\index{v8\+::\+Global@{v8\+::\+Global}!Pass@{Pass}}
+\index{Pass@{Pass}!v8\+::\+Global@{v8\+::\+Global}}
+\subsubsection[{Pass}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Global} {\bf v8\+::\+Global}$<$ T $>$\+::Pass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Global_a914903149cc752468d4a3a11b6089c7e}
+Pass allows returning uniques from functions, etc. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

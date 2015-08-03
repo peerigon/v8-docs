@@ -111,22 +111,19 @@ Inheritance diagram for v8::Template:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad464514215a3a6b331c890019124dcbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#ad464514215a3a6b331c890019124dcbb">Set</a> (<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value, PropertyAttribute attributes=None)</td></tr>
-<tr class="separator:ad464514215a3a6b331c890019124dcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d31ee3f0dc22160bd0964c8aeaeb70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92d31ee3f0dc22160bd0964c8aeaeb70"></a>
-V8_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate, const char *name, <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value)</td></tr>
-<tr class="separator:a92d31ee3f0dc22160bd0964c8aeaeb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623b9f0cdd87dc861516f276cc9a7cfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#a623b9f0cdd87dc861516f276cc9a7cfa">Set</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value, PropertyAttribute attributes=None)</td></tr>
+<tr class="separator:a623b9f0cdd87dc861516f276cc9a7cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2fc88ac8df0d12b44d4c16ff0128cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc2fc88ac8df0d12b44d4c16ff0128cc"></a>
+V8_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate, const char *name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt; value)</td></tr>
+<tr class="separator:adc2fc88ac8df0d12b44d4c16ff0128cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c702a91581d6cf8cfb72c24ba8b8d17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c702a91581d6cf8cfb72c24ba8b8d17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAccessorProperty</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt; getter=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt; setter=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1FunctionTemplate.html">FunctionTemplate</a> &gt;(), PropertyAttribute attribute=None, <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT)</td></tr>
 <tr class="separator:a5c702a91581d6cf8cfb72c24ba8b8d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae186b9e472ed7604cc9693c7b9540909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#ae186b9e472ed7604cc9693c7b9540909">SetNativeDataProperty</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt; name, <a class="el" href="namespacev8.html#a722613c87061708a4f1aa050d095f868">AccessorGetterCallback</a> getter, AccessorSetterCallback setter=0, <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), PropertyAttribute attribute=None, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT)</td></tr>
-<tr class="separator:ae186b9e472ed7604cc9693c7b9540909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4204e1de1646c5102549afd67f36d16b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4204e1de1646c5102549afd67f36d16b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNativeDataProperty</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, AccessorNameGetterCallback getter, AccessorNameSetterCallback setter=0, <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), PropertyAttribute attribute=None, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT)</td></tr>
-<tr class="separator:a4204e1de1646c5102549afd67f36d16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa830a5e0071ecdc34f9cc9718b9aa760"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa830a5e0071ecdc34f9cc9718b9aa760"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeclaredAccessor</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1DeclaredAccessorDescriptor.html">DeclaredAccessorDescriptor</a> &gt; descriptor, PropertyAttribute attribute=None, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT)</td></tr>
-<tr class="separator:aa830a5e0071ecdc34f9cc9718b9aa760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23966bef9b32df6ced859a39b4a1f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Template.html#ae23966bef9b32df6ced859a39b4a1f19">SetNativeDataProperty</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt; name, <a class="el" href="namespacev8.html#a722613c87061708a4f1aa050d095f868">AccessorGetterCallback</a> getter, AccessorSetterCallback setter=0, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), PropertyAttribute attribute=None, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT)</td></tr>
+<tr class="separator:ae23966bef9b32df6ced859a39b4a1f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aebe244ed9f88d7653bfbecb4e62026"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9aebe244ed9f88d7653bfbecb4e62026"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNativeDataProperty</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt; name, AccessorNameGetterCallback getter, AccessorNameSetterCallback setter=0, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), PropertyAttribute attribute=None, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt; signature=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1AccessorSignature.html">AccessorSignature</a> &gt;(), <a class="el" href="namespacev8.html#a31d8355cb043d7d2dda3f4a52760b64e">AccessControl</a> settings=DEFAULT)</td></tr>
+<tr class="separator:a9aebe244ed9f88d7653bfbecb4e62026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -140,20 +137,20 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The superclass of object and function templates. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad464514215a3a6b331c890019124dcbb"></a>
+<a class="anchor" id="a623b9f0cdd87dc861516f276cc9a7cfa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void v8::Template::Set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Name.html">Name</a> &gt;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Data.html">Data</a> &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -173,7 +170,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 
 </div>
 </div>
-<a class="anchor" id="ae186b9e472ed7604cc9693c7b9540909"></a>
+<a class="anchor" id="ae23966bef9b32df6ced859a39b4a1f19"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -198,8 +195,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
-          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt;&#160;<a class="el" href="classv8_1_1Value.html">Value</a>&#160;&gt;()</code>, </td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Local.html">Local</a>&lt;&#160;<a class="el" href="classv8_1_1Value.html">Value</a>&#160;&gt;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -235,7 +232,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
     <tr><td class="paramname">data</td><td>A piece of data that will be passed to the getter and setter callbacks whenever they are invoked. </td></tr>
     <tr><td class="paramname">settings</td><td>Access control settings for the accessor. This is a bit field consisting of one of more of DEFAULT = 0, ALL_CAN_READ = 1, or ALL_CAN_WRITE = 2. The default is to not allow cross-context access. ALL_CAN_READ means that all cross-context reads are allowed. ALL_CAN_WRITE means that all cross-context writes are allowed. The combination ALL_CAN_READ | ALL_CAN_WRITE can be used to allow all cross-context access. </td></tr>
     <tr><td class="paramname">attribute</td><td>The attributes of the property for which an accessor is added. </td></tr>
-    <tr><td class="paramname">signature</td><td>The signature describes valid receivers for the accessor and is used to perform implicit instance checks against them. If the receiver is incompatible (i.e. is not an instance of the constructor as defined by <a class="el" href="classv8_1_1FunctionTemplate.html#aa883e4ab6643498662f7873506098c98">FunctionTemplate::HasInstance()</a>), an implicit TypeError is thrown and no callback is invoked. </td></tr>
+    <tr><td class="paramname">signature</td><td>The signature describes valid receivers for the accessor and is used to perform implicit instance checks against them. If the receiver is incompatible (i.e. is not an instance of the constructor as defined by <a class="el" href="classv8_1_1FunctionTemplate.html#a90d838f3456d300bd19d2a2cb98645bd">FunctionTemplate::HasInstance()</a>), an implicit TypeError is thrown and no callback is invoked. </td></tr>
   </table>
   </dd>
 </dl>
@@ -248,7 +245,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionTemplate</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:50 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:06 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classv8_1_1ResourceConstraints_a6e5d38fd99d89d4fc10e325507d08d52}{Configure\+Defaults} (uint64\+\_\+t physical\+\_\+memory, uint64\+\_\+t virtual\+\_\+memory\+\_\+limit, uint32\+\_\+t number\+\_\+of\+\_\+processors)
+void \hyperlink{classv8_1_1ResourceConstraints_aeeaaee4017e8d5f8f0439af2af2ed3a5}{Configure\+Defaults} (uint64\+\_\+t physical\+\_\+memory, uint64\+\_\+t virtual\+\_\+memory\+\_\+limit)
 \item 
 \hypertarget{classv8_1_1ResourceConstraints_aeeecbbdb2c7880bf74d5d7fb9bbc52b3}{}int {\bfseries max\+\_\+semi\+\_\+space\+\_\+size} () const \label{classv8_1_1ResourceConstraints_aeeecbbdb2c7880bf74d5d7fb9bbc52b3}
 
@@ -33,12 +33,6 @@ void \hyperlink{classv8_1_1ResourceConstraints_a6e5d38fd99d89d4fc10e325507d08d52
 \hypertarget{classv8_1_1ResourceConstraints_a26ed3e89985a4afe34e84509fb093cf1}{}void {\bfseries set\+\_\+stack\+\_\+limit} (uint32\+\_\+t $\ast$value)\label{classv8_1_1ResourceConstraints_a26ed3e89985a4afe34e84509fb093cf1}
 
 \item 
-\hypertarget{classv8_1_1ResourceConstraints_a27a36f0bacb800468d3574f738d12436}{}int {\bfseries max\+\_\+available\+\_\+threads} () const \label{classv8_1_1ResourceConstraints_a27a36f0bacb800468d3574f738d12436}
-
-\item 
-\hypertarget{classv8_1_1ResourceConstraints_a1bec2735c94ff50bfbd54bd70f004b72}{}void {\bfseries set\+\_\+max\+\_\+available\+\_\+threads} (int value)\label{classv8_1_1ResourceConstraints_a1bec2735c94ff50bfbd54bd70f004b72}
-
-\item 
 \hypertarget{classv8_1_1ResourceConstraints_a8dd511917ad17bf2185d574b0c7e4186}{}size\+\_\+t {\bfseries code\+\_\+range\+\_\+size} () const \label{classv8_1_1ResourceConstraints_a8dd511917ad17bf2185d574b0c7e4186}
 
 \item 
@@ -53,15 +47,14 @@ A set of constraints that specifies the limits of the runtime\textquotesingle{}s
 If you are using threads then you should hold the V8\+::\+Locker lock while setting the stack limit and you must set a non-\/default stack limit separately for each thread. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1ResourceConstraints_a6e5d38fd99d89d4fc10e325507d08d52}{}\index{v8\+::\+Resource\+Constraints@{v8\+::\+Resource\+Constraints}!Configure\+Defaults@{Configure\+Defaults}}
+\hypertarget{classv8_1_1ResourceConstraints_aeeaaee4017e8d5f8f0439af2af2ed3a5}{}\index{v8\+::\+Resource\+Constraints@{v8\+::\+Resource\+Constraints}!Configure\+Defaults@{Configure\+Defaults}}
 \index{Configure\+Defaults@{Configure\+Defaults}!v8\+::\+Resource\+Constraints@{v8\+::\+Resource\+Constraints}}
 \subsubsection[{Configure\+Defaults}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Resource\+Constraints\+::\+Configure\+Defaults (
 \begin{DoxyParamCaption}
 \item[{uint64\+\_\+t}]{physical\+\_\+memory, }
-\item[{uint64\+\_\+t}]{virtual\+\_\+memory\+\_\+limit, }
-\item[{uint32\+\_\+t}]{number\+\_\+of\+\_\+processors}
+\item[{uint64\+\_\+t}]{virtual\+\_\+memory\+\_\+limit}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1ResourceConstraints_a6e5d38fd99d89d4fc10e325507d08d52}
+)}\label{classv8_1_1ResourceConstraints_aeeaaee4017e8d5f8f0439af2af2ed3a5}
 Configures the constraints with reasonable default values based on the capabilities of the current device the V\+M is running on.
 
 
@@ -69,8 +62,6 @@ Configures the constraints with reasonable default values based on the capabilit
 {\em physical\+\_\+memory} & The total amount of physical memory on the current device, in bytes. \\
 \hline
 {\em virtual\+\_\+memory\+\_\+limit} & The amount of virtual memory on the current device, in bytes, or zero, if there is no limit. \\
-\hline
-{\em number\+\_\+of\+\_\+processors} & The number of C\+P\+Us available on the current device. \\
 \hline
 \end{DoxyParams}
 

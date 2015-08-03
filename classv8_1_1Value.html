@@ -103,25 +103,28 @@ Inheritance diagram for v8::Value:</div>
  <div class="center">
   <img src="classv8_1_1Value.png" usemap="#v8::Value_map" alt=""/>
   <map id="v8::Value_map" name="v8::Value_map">
-<area href="classv8_1_1Data.html" alt="v8::Data" shape="rect" coords="143,0,276,24"/>
-<area href="classv8_1_1External.html" alt="v8::External" shape="rect" coords="0,112,133,136"/>
-<area href="classv8_1_1Object.html" alt="v8::Object" shape="rect" coords="143,112,276,136"/>
-<area href="classv8_1_1Primitive.html" alt="v8::Primitive" shape="rect" coords="429,112,562,136"/>
-<area href="classv8_1_1Array.html" alt="v8::Array" shape="rect" coords="286,168,419,192"/>
-<area href="classv8_1_1ArrayBuffer.html" alt="v8::ArrayBuffer" shape="rect" coords="286,224,419,248"/>
-<area href="classv8_1_1ArrayBufferView.html" alt="v8::ArrayBufferView" shape="rect" coords="286,280,419,304"/>
-<area href="classv8_1_1BooleanObject.html" alt="v8::BooleanObject" shape="rect" coords="286,336,419,360"/>
-<area href="classv8_1_1Date.html" alt="v8::Date" shape="rect" coords="286,392,419,416"/>
-<area href="classv8_1_1Function.html" alt="v8::Function" shape="rect" coords="286,448,419,472"/>
-<area href="classv8_1_1NumberObject.html" alt="v8::NumberObject" shape="rect" coords="286,504,419,528"/>
-<area href="classv8_1_1Promise.html" alt="v8::Promise" shape="rect" coords="286,560,419,584"/>
-<area href="classv8_1_1Promise_1_1Resolver.html" alt="v8::Promise::Resolver" shape="rect" coords="286,616,419,640"/>
-<area href="classv8_1_1RegExp.html" alt="v8::RegExp" shape="rect" coords="286,672,419,696"/>
-<area href="classv8_1_1StringObject.html" alt="v8::StringObject" shape="rect" coords="286,728,419,752"/>
-<area href="classv8_1_1SymbolObject.html" alt="v8::SymbolObject" shape="rect" coords="286,784,419,808"/>
-<area href="classv8_1_1Boolean.html" alt="v8::Boolean" shape="rect" coords="572,168,705,192"/>
-<area href="classv8_1_1Name.html" alt="v8::Name" shape="rect" coords="572,224,705,248"/>
-<area href="classv8_1_1Number.html" alt="v8::Number" shape="rect" coords="572,280,705,304"/>
+<area href="classv8_1_1Data.html" alt="v8::Data" shape="rect" coords="151,0,292,24"/>
+<area href="classv8_1_1External.html" alt="v8::External" shape="rect" coords="0,112,141,136"/>
+<area href="classv8_1_1Object.html" alt="v8::Object" shape="rect" coords="151,112,292,136"/>
+<area href="classv8_1_1Primitive.html" alt="v8::Primitive" shape="rect" coords="453,112,594,136"/>
+<area href="classv8_1_1Array.html" alt="v8::Array" shape="rect" coords="302,168,443,192"/>
+<area href="classv8_1_1ArrayBuffer.html" alt="v8::ArrayBuffer" shape="rect" coords="302,224,443,248"/>
+<area href="classv8_1_1ArrayBufferView.html" alt="v8::ArrayBufferView" shape="rect" coords="302,280,443,304"/>
+<area href="classv8_1_1BooleanObject.html" alt="v8::BooleanObject" shape="rect" coords="302,336,443,360"/>
+<area href="classv8_1_1Date.html" alt="v8::Date" shape="rect" coords="302,392,443,416"/>
+<area href="classv8_1_1Function.html" alt="v8::Function" shape="rect" coords="302,448,443,472"/>
+<area href="classv8_1_1Map.html" alt="v8::Map" shape="rect" coords="302,504,443,528"/>
+<area href="classv8_1_1NumberObject.html" alt="v8::NumberObject" shape="rect" coords="302,560,443,584"/>
+<area href="classv8_1_1Promise.html" alt="v8::Promise" shape="rect" coords="302,616,443,640"/>
+<area href="classv8_1_1Promise_1_1Resolver.html" alt="v8::Promise::Resolver" shape="rect" coords="302,672,443,696"/>
+<area href="classv8_1_1RegExp.html" alt="v8::RegExp" shape="rect" coords="302,728,443,752"/>
+<area href="classv8_1_1Set.html" alt="v8::Set" shape="rect" coords="302,784,443,808"/>
+<area href="classv8_1_1SharedArrayBuffer.html" alt="v8::SharedArrayBuffer" shape="rect" coords="302,840,443,864"/>
+<area href="classv8_1_1StringObject.html" alt="v8::StringObject" shape="rect" coords="302,896,443,920"/>
+<area href="classv8_1_1SymbolObject.html" alt="v8::SymbolObject" shape="rect" coords="302,952,443,976"/>
+<area href="classv8_1_1Boolean.html" alt="v8::Boolean" shape="rect" coords="604,168,745,192"/>
+<area href="classv8_1_1Name.html" alt="v8::Name" shape="rect" coords="604,224,745,248"/>
+<area href="classv8_1_1Number.html" alt="v8::Number" shape="rect" coords="604,280,745,304"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -215,81 +218,130 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4effc7ca1a221dd8c1e23c0f28145ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a293f140b81b0219d1497e937ed948b1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Value.html#a293f140b81b0219d1497e937ed948b1e">IsFloat64Array</a> () const </td></tr>
 <tr class="separator:a293f140b81b0219d1497e937ed948b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab071bf567d89c8ce1489b1b7d93abc36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Value.html#ab071bf567d89c8ce1489b1b7d93abc36">IsFloat32x4</a> () const </td></tr>
+<tr class="separator:ab071bf567d89c8ce1489b1b7d93abc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd20ab51e79658acc405c12dad2260ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Value.html#afd20ab51e79658acc405c12dad2260ab">IsDataView</a> () const </td></tr>
 <tr class="separator:afd20ab51e79658acc405c12dad2260ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa4f442454e92eda328204ec70ce11a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1aa4f442454e92eda328204ec70ce11a"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToBoolean</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const </td></tr>
-<tr class="separator:a1aa4f442454e92eda328204ec70ce11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a611ba21fc6426d42ab473f0ac3f98e90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a611ba21fc6426d42ab473f0ac3f98e90"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Number.html">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToNumber</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const </td></tr>
-<tr class="separator:a611ba21fc6426d42ab473f0ac3f98e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a607e56c1506456b049e72ea298b9e216"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a607e56c1506456b049e72ea298b9e216"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const </td></tr>
-<tr class="separator:a607e56c1506456b049e72ea298b9e216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9521719309db0d304442502063be6b13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9521719309db0d304442502063be6b13"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToDetailString</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const </td></tr>
-<tr class="separator:a9521719309db0d304442502063be6b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b1c435e0df65b266e20621373587db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19b1c435e0df65b266e20621373587db"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToObject</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const </td></tr>
-<tr class="separator:a19b1c435e0df65b266e20621373587db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22fc038abad5e5a5b4f8a9bcfa7481cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22fc038abad5e5a5b4f8a9bcfa7481cf"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToInteger</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const </td></tr>
-<tr class="separator:a22fc038abad5e5a5b4f8a9bcfa7481cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c6203f7f47b1fbeca529db9a8c68cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45c6203f7f47b1fbeca529db9a8c68cc"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToUint32</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const </td></tr>
-<tr class="separator:a45c6203f7f47b1fbeca529db9a8c68cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65af97e0d25844092f1f6727513cd556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65af97e0d25844092f1f6727513cd556"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Int32.html">Int32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToInt32</b> (<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const </td></tr>
-<tr class="separator:a65af97e0d25844092f1f6727513cd556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f389debcb9cc0448a32ee0928da652"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49f389debcb9cc0448a32ee0928da652"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToBoolean</b> () const </td></tr>
-<tr class="separator:a49f389debcb9cc0448a32ee0928da652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff8128d3595ba8dbac3b6c8258af2f29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff8128d3595ba8dbac3b6c8258af2f29"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Number.html">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToNumber</b> () const </td></tr>
-<tr class="separator:aff8128d3595ba8dbac3b6c8258af2f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c045fc8a91df72c62d56e25928d92c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c045fc8a91df72c62d56e25928d92c5"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> () const </td></tr>
-<tr class="separator:a9c045fc8a91df72c62d56e25928d92c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360e1a76dca30cf587319a68a5f7bda0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a360e1a76dca30cf587319a68a5f7bda0"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToDetailString</b> () const </td></tr>
-<tr class="separator:a360e1a76dca30cf587319a68a5f7bda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1561a3e015cca1ae4a0603b487f8702"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1561a3e015cca1ae4a0603b487f8702"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToObject</b> () const </td></tr>
-<tr class="separator:ab1561a3e015cca1ae4a0603b487f8702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e95afdee2580fbfb928a91dae74356"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41e95afdee2580fbfb928a91dae74356"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToInteger</b> () const </td></tr>
-<tr class="separator:a41e95afdee2580fbfb928a91dae74356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1563bf6252598e536c4152c970ae32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c1563bf6252598e536c4152c970ae32"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToUint32</b> () const </td></tr>
-<tr class="separator:a0c1563bf6252598e536c4152c970ae32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c0654c664469944b62f77295991a912"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c0654c664469944b62f77295991a912"></a>
-<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Int32.html">Int32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToInt32</b> () const </td></tr>
-<tr class="separator:a9c0654c664469944b62f77295991a912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae810be0ae81a87f677592d0176daac48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Value.html#ae810be0ae81a87f677592d0176daac48">ToArrayIndex</a> () const </td></tr>
-<tr class="separator:ae810be0ae81a87f677592d0176daac48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a392d60e0ab58b5b13c0ac1e5b4b9f04b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a392d60e0ab58b5b13c0ac1e5b4b9f04b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>BooleanValue</b> () const </td></tr>
-<tr class="separator:a392d60e0ab58b5b13c0ac1e5b4b9f04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4634d525bae654cdc50c398bfaee11aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4634d525bae654cdc50c398bfaee11aa"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>NumberValue</b> () const </td></tr>
-<tr class="separator:a4634d525bae654cdc50c398bfaee11aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac61c74a94dea10f48a64f5906b6dd43d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac61c74a94dea10f48a64f5906b6dd43d"></a>
-int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>IntegerValue</b> () const </td></tr>
-<tr class="separator:ac61c74a94dea10f48a64f5906b6dd43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af25557359e6bb79436ed60df18703d66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af25557359e6bb79436ed60df18703d66"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Uint32Value</b> () const </td></tr>
-<tr class="separator:af25557359e6bb79436ed60df18703d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24daae9d99d02ff2e24b60287dcd4d95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24daae9d99d02ff2e24b60287dcd4d95"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Int32Value</b> () const </td></tr>
-<tr class="separator:a24daae9d99d02ff2e24b60287dcd4d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc2a7a92a120675bbd4c992163a20869"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Value.html#adc2a7a92a120675bbd4c992163a20869">Equals</a> (<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; that) const </td></tr>
-<tr class="separator:adc2a7a92a120675bbd4c992163a20869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb564818715b818957adc97716a076ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb564818715b818957adc97716a076ba"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>StrictEquals</b> (<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; that) const </td></tr>
-<tr class="separator:abb564818715b818957adc97716a076ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e49ca617f5d1773a81bae18a8062084"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e49ca617f5d1773a81bae18a8062084"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SameValue</b> (<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; that) const </td></tr>
-<tr class="separator:a7e49ca617f5d1773a81bae18a8062084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ce26f174a4c1823dec56eb946d3134"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Value.html#aa4ce26f174a4c1823dec56eb946d3134">IsSharedArrayBuffer</a> () const </td></tr>
+<tr class="separator:aa4ce26f174a4c1823dec56eb946d3134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a62da1dd52184cc4c1fd735c538f8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40a62da1dd52184cc4c1fd735c538f8b"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToBoolean</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a40a62da1dd52184cc4c1fd735c538f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa8386aa436c2b83c9af6a65b8a2cad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fa8386aa436c2b83c9af6a65b8a2cad"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Number.html">Number</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToNumber</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a9fa8386aa436c2b83c9af6a65b8a2cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62315204812aa88ac5577587c49e02ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62315204812aa88ac5577587c49e02ab"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a62315204812aa88ac5577587c49e02ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6599247811f27464db5dc4777e35e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb6599247811f27464db5dc4777e35e6"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToDetailString</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:aeb6599247811f27464db5dc4777e35e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4823df6b6920f74f64f30d5341fc879a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4823df6b6920f74f64f30d5341fc879a"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToObject</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a4823df6b6920f74f64f30d5341fc879a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183cd0a8d99f2bbbaa4405b21ef752d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a183cd0a8d99f2bbbaa4405b21ef752d6"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToInteger</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a183cd0a8d99f2bbbaa4405b21ef752d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea85bd616b0cf6335cd580937b56e1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ea85bd616b0cf6335cd580937b56e1c"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToUint32</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a3ea85bd616b0cf6335cd580937b56e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710ab9ca1f72a69bee3223e03d01e414"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a710ab9ca1f72a69bee3223e03d01e414"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Int32.html">Int32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToInt32</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a710ab9ca1f72a69bee3223e03d01e414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b9978f3fedccb48817ce87c5a454ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3b9978f3fedccb48817ce87c5a454ed"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt; ToBoolean(<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const)</td></tr>
+<tr class="separator:ad3b9978f3fedccb48817ce87c5a454ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855a0b74584b9c322c04891783f37e9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a855a0b74584b9c322c04891783f37e9c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Number.html">Number</a> &gt; ToNumber(<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const)</td></tr>
+<tr class="separator:a855a0b74584b9c322c04891783f37e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a898f773c591e760fcb98e99cccff3e5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a898f773c591e760fcb98e99cccff3e5c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt; ToString(<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const)</td></tr>
+<tr class="separator:a898f773c591e760fcb98e99cccff3e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7966967b1b55bf39487b4485aa821fb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7966967b1b55bf39487b4485aa821fb2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt; ToDetailString(<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const)</td></tr>
+<tr class="separator:a7966967b1b55bf39487b4485aa821fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c98939a72d6c48b01c8279cfe218d34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c98939a72d6c48b01c8279cfe218d34"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Object.html">Object</a> &gt; ToObject(<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const)</td></tr>
+<tr class="separator:a4c98939a72d6c48b01c8279cfe218d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae926c4392edf0ad4a5383ab0d8af4b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae926c4392edf0ad4a5383ab0d8af4b1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; ToInteger(<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const)</td></tr>
+<tr class="separator:aae926c4392edf0ad4a5383ab0d8af4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf28af92f41657ef0fc4bdc015a124f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bf28af92f41657ef0fc4bdc015a124f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt; ToUint32(<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const)</td></tr>
+<tr class="separator:a7bf28af92f41657ef0fc4bdc015a124f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf72660ee84f81fe2fed85e39e6a3c86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf72660ee84f81fe2fed85e39e6a3c86"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Int32.html">Int32</a> &gt; ToInt32(<a class="el" href="classv8_1_1Isolate.html">Isolate</a> *isolate) const)</td></tr>
+<tr class="separator:abf72660ee84f81fe2fed85e39e6a3c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9960d9a42b62b83d70ade47d88fa52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c9960d9a42b62b83d70ade47d88fa52"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt; ToBoolean() const)</td></tr>
+<tr class="separator:a4c9960d9a42b62b83d70ade47d88fa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3569dca21e27c889a4f4e343292e5ffc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3569dca21e27c889a4f4e343292e5ffc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Number.html">Number</a> &gt; ToNumber() const)</td></tr>
+<tr class="separator:a3569dca21e27c889a4f4e343292e5ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1fe1c6d7ba6cccef24fc3fe528d75a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d1fe1c6d7ba6cccef24fc3fe528d75a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt; ToString() const)</td></tr>
+<tr class="separator:a4d1fe1c6d7ba6cccef24fc3fe528d75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a9f3532d549640ad69037214d51305"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8a9f3532d549640ad69037214d51305"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt; ToDetailString() const)</td></tr>
+<tr class="separator:af8a9f3532d549640ad69037214d51305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594821f24e204aa6a7b1f003a79089a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a594821f24e204aa6a7b1f003a79089a5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Object.html">Object</a> &gt; ToObject() const)</td></tr>
+<tr class="separator:a594821f24e204aa6a7b1f003a79089a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6d45da85632495545435e44ed2eeab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf6d45da85632495545435e44ed2eeab"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; ToInteger() const)</td></tr>
+<tr class="separator:aaf6d45da85632495545435e44ed2eeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a06e5e80b70f38389d8add992e4b2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1a06e5e80b70f38389d8add992e4b2a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt; ToUint32() const)</td></tr>
+<tr class="separator:ab1a06e5e80b70f38389d8add992e4b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105c830761d2a094edc64d99a4c06f55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a105c830761d2a094edc64d99a4c06f55"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Int32.html">Int32</a> &gt; ToInt32() const)</td></tr>
+<tr class="separator:a105c830761d2a094edc64d99a4c06f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ae008760161c7ae7fd54a9db9cffcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Value.html#a48ae008760161c7ae7fd54a9db9cffcf">V8_DEPRECATE_SOON</a> (&quot;Use maybe version&quot;, Local&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt; ToArrayIndex() const)</td></tr>
+<tr class="separator:a48ae008760161c7ae7fd54a9db9cffcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac68de66288d00b3b612c20e5059515"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abac68de66288d00b3b612c20e5059515"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1MaybeLocal.html">MaybeLocal</a>&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToArrayIndex</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:abac68de66288d00b3b612c20e5059515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e855a09c4b60ec2c4674731d0d365c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6e855a09c4b60ec2c4674731d0d365c"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1Maybe.html">Maybe</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BooleanValue</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:ae6e855a09c4b60ec2c4674731d0d365c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dcd02e3d5ee791e0c42c7f2ebfedbaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dcd02e3d5ee791e0c42c7f2ebfedbaf"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1Maybe.html">Maybe</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>NumberValue</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a3dcd02e3d5ee791e0c42c7f2ebfedbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2163c66da18cfc69b21139496cbed80a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2163c66da18cfc69b21139496cbed80a"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1Maybe.html">Maybe</a>&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>IntegerValue</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a2163c66da18cfc69b21139496cbed80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b845757d060f581f25df433362b216"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99b845757d060f581f25df433362b216"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1Maybe.html">Maybe</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Uint32Value</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a99b845757d060f581f25df433362b216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60321e60ce602a225f0acc096af75ee8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60321e60ce602a225f0acc096af75ee8"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1Maybe.html">Maybe</a>&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Int32Value</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context) const </td></tr>
+<tr class="separator:a60321e60ce602a225f0acc096af75ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3530eeb271134bbb0b6206d736f00b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff3530eeb271134bbb0b6206d736f00b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, bool BooleanValue() const)</td></tr>
+<tr class="separator:aff3530eeb271134bbb0b6206d736f00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1835968f05581123c96add5b03c41c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d1835968f05581123c96add5b03c41c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, double NumberValue() const)</td></tr>
+<tr class="separator:a2d1835968f05581123c96add5b03c41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b08feca02c1c902c094b23ca245fce5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b08feca02c1c902c094b23ca245fce5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, int64_t IntegerValue() const)</td></tr>
+<tr class="separator:a0b08feca02c1c902c094b23ca245fce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ef6d2af84b297bb1a6d825915c7f0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67ef6d2af84b297bb1a6d825915c7f0f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, uint32_t Uint32Value() const)</td></tr>
+<tr class="separator:a67ef6d2af84b297bb1a6d825915c7f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac091f8bdb5fc293ec803f16b9780a3b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac091f8bdb5fc293ec803f16b9780a3b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;Use maybe version&quot;, int32_t Int32Value() const)</td></tr>
+<tr class="separator:ac091f8bdb5fc293ec803f16b9780a3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3528a485935d1b19a0e007cd5a06799"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Value.html#ae3528a485935d1b19a0e007cd5a06799">V8_DEPRECATE_SOON</a> (&quot;Use maybe version&quot;, bool Equals(<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; that) const)</td></tr>
+<tr class="separator:ae3528a485935d1b19a0e007cd5a06799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98db94739e250aec626fc443bac7947"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad98db94739e250aec626fc443bac7947"></a>
+V8_WARN_UNUSED_RESULT <a class="el" href="classv8_1_1Maybe.html">Maybe</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Equals</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Context.html">Context</a> &gt; context, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; that) const </td></tr>
+<tr class="separator:ad98db94739e250aec626fc443bac7947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5742f470be23852222b577ff1f8ad4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5742f470be23852222b577ff1f8ad4a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>StrictEquals</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; that) const </td></tr>
+<tr class="separator:ae5742f470be23852222b577ff1f8ad4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64798867e84e66d5fa79003dad9d44b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab64798867e84e66d5fa79003dad9d44b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SameValue</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; that) const </td></tr>
+<tr class="separator:ab64798867e84e66d5fa79003dad9d44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2142bb3ec6527633c4f9133e80cdc19"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac2142bb3ec6527633c4f9133e80cdc19"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:ac2142bb3ec6527633c4f9133e80cdc19"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classv8_1_1Value.html">Value</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Cast</b> (T *value)</td></tr>
@@ -305,23 +357,6 @@ template&lt;class T &gt; </td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The superclass of all JavaScript values and objects. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="adc2a7a92a120675bbd4c992163a20869"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool v8::Value::Equals </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
-          <td class="paramname"><em>that</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>JS == </p>
-
-</div>
-</div>
 <a class="anchor" id="ad06a4b1f7215d852c367df390491ac84"></a>
 <div class="memitem">
 <div class="memproto">
@@ -498,6 +533,22 @@ template&lt;class T &gt; </td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab071bf567d89c8ce1489b1b7d93abc36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool v8::Value::IsFloat32x4 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true if this value is a SIMD Float32x4. This is an experimental feature. </p>
+
+</div>
+</div>
 <a class="anchor" id="a293f140b81b0219d1497e937ed948b1e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -638,7 +689,7 @@ template&lt;class T &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if this value is a Map. This is an experimental feature. </p>
+<p>Returns true if this value is a <a class="el" href="classv8_1_1Map.html">Map</a>. </p>
 
 </div>
 </div>
@@ -654,7 +705,7 @@ template&lt;class T &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if this value is a Map Iterator. This is an experimental feature. </p>
+<p>Returns true if this value is a <a class="el" href="classv8_1_1Map.html">Map</a> Iterator. </p>
 
 </div>
 </div>
@@ -798,7 +849,7 @@ template&lt;class T &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if this value is a Set. This is an experimental feature. </p>
+<p>Returns true if this value is a <a class="el" href="classv8_1_1Set.html">Set</a>. </p>
 
 </div>
 </div>
@@ -814,7 +865,23 @@ template&lt;class T &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if this value is a Set Iterator. This is an experimental feature. </p>
+<p>Returns true if this value is a <a class="el" href="classv8_1_1Set.html">Set</a> Iterator. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa4ce26f174a4c1823dec56eb946d3134"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool v8::Value::IsSharedArrayBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true if this value is a <a class="el" href="classv8_1_1SharedArrayBuffer.html">SharedArrayBuffer</a>. This is an experimental feature. </p>
 
 </div>
 </div>
@@ -1022,7 +1089,7 @@ template&lt;class T &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if this value is a WeakMap. This is an experimental feature. </p>
+<p>Returns true if this value is a WeakMap. </p>
 
 </div>
 </div>
@@ -1038,23 +1105,61 @@ template&lt;class T &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if this value is a WeakSet. This is an experimental feature. </p>
+<p>Returns true if this value is a WeakSet. </p>
 
 </div>
 </div>
-<a class="anchor" id="ae810be0ae81a87f677592d0176daac48"></a>
+<a class="anchor" id="a48ae008760161c7ae7fd54a9db9cffcf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classv8_1_1Local.html">Local</a>&lt;<a class="el" href="classv8_1_1Uint32.html">Uint32</a>&gt; v8::Value::ToArrayIndex </td>
+          <td class="memname">v8::Value::V8_DEPRECATE_SOON </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">&quot;Use maybe version&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Uint32.html">Uint32</a> &gt; ToArrayIndex()&#160;</td>
+          <td class="paramname"><em>const</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Attempts to convert a string to an array index. Returns an empty handle if the conversion fails. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3528a485935d1b19a0e007cd5a06799"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">v8::Value::V8_DEPRECATE_SOON </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Use maybe version&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool Equals(<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; that)&#160;</td>
+          <td class="paramname"><em>const</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>JS == </p>
 
 </div>
 </div>
@@ -1064,7 +1169,7 @@ template&lt;class T &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:51 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:07 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

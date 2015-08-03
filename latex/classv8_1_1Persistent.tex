@@ -15,7 +15,7 @@ Inheritance diagram for v8\+:\+:Persistent$<$ T, M $>$\+:\begin{figure}[H]
 \item 
 V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Persistent_a5ce14612215393683d814056015a102d}{Persistent} ()
 \item 
-{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Persistent_a37ec0a2c08eea4b397272a1a0fe0138c}{Persistent} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Handle}{Handle}$<$ S $>$ that)
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Persistent_aabe9a42d7971bd31173bca34186d9ac2}{Persistent} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Local}{Local}$<$ S $>$ that)
 \item 
 {\footnotesize template$<$class S , class M2 $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Persistent_aaf9eb7c4e6d0ef2c81a2c08238653578}{Persistent} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1Persistent}{Persistent}$<$ S, M2 $>$ \&that)
 \item 
@@ -53,9 +53,6 @@ V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Persistent_a7d4d2bebfe3919e447e
 \hypertarget{classv8_1_1Persistent_abc0f7da619e9e72510dc07ed7b5ff6d8}{}class {\bfseries Utils}\label{classv8_1_1Persistent_abc0f7da619e9e72510dc07ed7b5ff6d8}
 
 \item 
-\hypertarget{classv8_1_1Persistent_a67ca1a2d91273eaf85fb3d23ba8ce984}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Handle}\label{classv8_1_1Persistent_a67ca1a2d91273eaf85fb3d23ba8ce984}
-
-\item 
 \hypertarget{classv8_1_1Persistent_afb872edb4aac7ba55f0da004113aa2b0}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Local}\label{classv8_1_1Persistent_afb872edb4aac7ba55f0da004113aa2b0}
 
 \item 
@@ -84,15 +81,15 @@ Note\+: \hyperlink{classv8_1_1Persistent}{Persistent} class hierarchy is subject
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Persistent_a5ce14612215393683d814056015a102d}
-A \hyperlink{classv8_1_1Persistent}{Persistent} with no storage cell. \hypertarget{classv8_1_1Persistent_a37ec0a2c08eea4b397272a1a0fe0138c}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Persistent@{Persistent}}
+A \hyperlink{classv8_1_1Persistent}{Persistent} with no storage cell. \hypertarget{classv8_1_1Persistent_aabe9a42d7971bd31173bca34186d9ac2}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Persistent@{Persistent}}
 \index{Persistent@{Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
 \subsubsection[{Persistent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ template$<$class S $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Persistent}$<$ T, M $>$\+::{\bf Persistent} (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
-\item[{{\bf Handle}$<$ S $>$}]{that}
+\item[{{\bf Local}$<$ S $>$}]{that}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Persistent_a37ec0a2c08eea4b397272a1a0fe0138c}
-Construct a \hyperlink{classv8_1_1Persistent}{Persistent} from a \hyperlink{classv8_1_1Handle}{Handle}. When the \hyperlink{classv8_1_1Handle}{Handle} is non-\/empty, a new storage cell is created pointing to the same object, and no flags are set. \hypertarget{classv8_1_1Persistent_aaf9eb7c4e6d0ef2c81a2c08238653578}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Persistent@{Persistent}}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classv8_1_1Persistent_aabe9a42d7971bd31173bca34186d9ac2}
+Construct a \hyperlink{classv8_1_1Persistent}{Persistent} from a \hyperlink{classv8_1_1Local}{Local}. When the \hyperlink{classv8_1_1Local}{Local} is non-\/empty, a new storage cell is created pointing to the same object, and no flags are set. \hypertarget{classv8_1_1Persistent_aaf9eb7c4e6d0ef2c81a2c08238653578}{}\index{v8\+::\+Persistent@{v8\+::\+Persistent}!Persistent@{Persistent}}
 \index{Persistent@{Persistent}!v8\+::\+Persistent@{v8\+::\+Persistent}}
 \subsubsection[{Persistent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, class M$>$ template$<$class S , class M2 $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Persistent}$<$ T, M $>$\+::{\bf Persistent} (
 \begin{DoxyParamCaption}

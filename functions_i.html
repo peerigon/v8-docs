@@ -123,14 +123,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
-<li>IdleNotification()
-: <a class="el" href="classv8_1_1Isolate.html#aea16cbb2e351de9a3ae7be2b7cb48297">v8::Isolate</a>
+<li>IdleNotificationDeadline()
+: <a class="el" href="classv8_1_1Isolate.html#aba794ed25d4fa8780b3a07c66a5e5d4a">v8::Isolate</a>
+</li>
+<li>IdleTasksEnabled()
+: <a class="el" href="classv8_1_1Platform.html#ad229642bf16a066d2e8d866dc128141e">v8::Platform</a>
 </li>
 <li>InContext()
 : <a class="el" href="classv8_1_1Isolate.html#afb6bbd31a87d0999dbbe5402447690a9">v8::Isolate</a>
 </li>
+<li>IndexedPropertyHandlerConfiguration()
+: <a class="el" href="structv8_1_1IndexedPropertyHandlerConfiguration.html#a1e474ac223c5b502e6eab8b0336f9fe7">v8::IndexedPropertyHandlerConfiguration</a>
+</li>
 <li>Inherit()
-: <a class="el" href="classv8_1_1FunctionTemplate.html#a18f343e7e5749ed886d6e76a1424216e">v8::FunctionTemplate</a>
+: <a class="el" href="classv8_1_1FunctionTemplate.html#abc11c462facf11bafd541892815c5425">v8::FunctionTemplate</a>
 </li>
 <li>Initialize()
 : <a class="el" href="classv8_1_1V8.html#a40daec93ce44bdd922567fc121be9db8">v8::V8</a>
@@ -189,10 +195,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>IsDead()
 : <a class="el" href="classv8_1_1Isolate.html#a603a9bc7860d7936bce2dd45829869c3">v8::Isolate</a>
-, <a class="el" href="classv8_1_1V8.html#ae5af79b24fc62e987e08c43ee148424d">v8::V8</a>
 </li>
 <li>IsEmpty()
-: <a class="el" href="classv8_1_1Handle.html#a9e58ac49e3f1a029c2c6e217a61c8419">v8::Handle&lt; T &gt;</a>
+: <a class="el" href="classv8_1_1Local.html#ae89b4a4ded13da43d30d9f1a1add8844">v8::Local&lt; T &gt;</a>
 , <a class="el" href="classv8_1_1PersistentValueVector.html#a9ad869bc3f60fc227fecf202b36b650a">v8::PersistentValueVector&lt; V, Traits &gt;</a>
 </li>
 <li>IsEquivalent()
@@ -206,10 +211,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>IsExecutionTerminating()
 : <a class="el" href="classv8_1_1Isolate.html#aee57283198c192e83afe5e7d12d42e85">v8::Isolate</a>
-, <a class="el" href="classv8_1_1V8.html#ac9336f620bc684ff6e3c68ee6f549d18">v8::V8</a>
 </li>
 <li>IsExternal()
 : <a class="el" href="classv8_1_1ArrayBuffer.html#a50dd263917559439525048c623425c6f">v8::ArrayBuffer</a>
+, <a class="el" href="classv8_1_1SharedArrayBuffer.html#a37e7ba1ed5a1422af9928697ea6a960b">v8::SharedArrayBuffer</a>
 , <a class="el" href="classv8_1_1String.html#abbf623aabba9446cd57af14018877398">v8::String</a>
 , <a class="el" href="classv8_1_1Value.html#a7ac61a325c18af8dcb6d7d5bf47d2503">v8::Value</a>
 </li>
@@ -221,6 +226,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>IsFloat32Array()
 : <a class="el" href="classv8_1_1Value.html#a4effc7ca1a221dd8c1e23c0f28145ef0">v8::Value</a>
+</li>
+<li>IsFloat32x4()
+: <a class="el" href="classv8_1_1Value.html#ab071bf567d89c8ce1489b1b7d93abc36">v8::Value</a>
 </li>
 <li>IsFloat64Array()
 : <a class="el" href="classv8_1_1Value.html#a293f140b81b0219d1497e937ed948b1e">v8::Value</a>
@@ -294,6 +302,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>IsSetIterator()
 : <a class="el" href="classv8_1_1Value.html#addbae0104e07b990ee1af0bd7927824b">v8::Value</a>
 </li>
+<li>IsSharedArrayBuffer()
+: <a class="el" href="classv8_1_1Value.html#aa4ce26f174a4c1823dec56eb946d3134">v8::Value</a>
+</li>
 <li>IsSharedCrossOrigin()
 : <a class="el" href="classv8_1_1Message.html#a03228f50c40c45da52f424bdd64598d1">v8::Message</a>
 </li>
@@ -335,7 +346,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>IsWeak()
 : <a class="el" href="classv8_1_1PersistentBase.html#a714b7794149df483837a2c6b09d52396">v8::PersistentBase&lt; T &gt;</a>
-, <a class="el" href="classv8_1_1PersistentValueMap.html#a26bb44c09b5356e1b174badf4b2f08e1">v8::PersistentValueMap&lt; K, V, Traits &gt;</a>
+, <a class="el" href="classv8_1_1PersistentValueMapBase.html#a9f824b13dd30605589508db2740dd678">v8::PersistentValueMapBase&lt; K, V, Traits &gt;</a>
 </li>
 <li>IsWeakMap()
 : <a class="el" href="classv8_1_1Value.html#aab0297b39ed8e2a71b5dca7950228a36">v8::Value</a>
@@ -347,7 +358,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:51 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:07 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

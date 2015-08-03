@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['object',['Object',['../classv8_1_1Object.html',1,'v8']]],
-  ['objectnameresolver',['ObjectNameResolver',['../classv8_1_1HeapProfiler_1_1ObjectNameResolver.html',1,'v8::HeapProfiler']]],
-  ['objectoperationdescriptor',['ObjectOperationDescriptor',['../classv8_1_1ObjectOperationDescriptor.html',1,'v8']]],
-  ['objecttemplate',['ObjectTemplate',['../classv8_1_1ObjectTemplate.html',1,'v8']]],
-  ['outputstream',['OutputStream',['../classv8_1_1OutputStream.html',1,'v8']]]
+  ['name',['Name',['../classv8_1_1Name.html',1,'v8']]],
+  ['name_5ft',['name_t',['../structv8_1_1JitCodeEvent_1_1name__t.html',1,'v8::JitCodeEvent']]],
+  ['namedpropertyhandlerconfiguration',['NamedPropertyHandlerConfiguration',['../structv8_1_1NamedPropertyHandlerConfiguration.html',1,'v8']]],
+  ['nativeweakmap',['NativeWeakMap',['../classv8_1_1NativeWeakMap.html',1,'v8']]],
+  ['noncopyablepersistenttraits',['NonCopyablePersistentTraits',['../classv8_1_1NonCopyablePersistentTraits.html',1,'v8']]],
+  ['number',['Number',['../classv8_1_1Number.html',1,'v8']]],
+  ['numberobject',['NumberObject',['../classv8_1_1NumberObject.html',1,'v8']]]
 ];

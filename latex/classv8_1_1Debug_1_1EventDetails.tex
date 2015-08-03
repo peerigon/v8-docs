@@ -9,14 +9,14 @@
 \item 
 virtual Debug\+Event \hyperlink{classv8_1_1Debug_1_1EventDetails_ac871568e8cfd43bbf2cdac62add34ed0}{Get\+Event} () const =0
 \item 
-virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Debug_1_1EventDetails_abf0997988e1e3f0780c0d3f19b4e3b8a}{Get\+Execution\+State} () const =0
+virtual \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Debug_1_1EventDetails_a201fabdd6d81f711c1b8805c94f09d3e}{Get\+Execution\+State} () const =0
 \item 
-\hypertarget{classv8_1_1Debug_1_1EventDetails_af8003f761cd535a07be5448a43d94c9f}{}virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ {\bfseries Get\+Event\+Data} () const =0\label{classv8_1_1Debug_1_1EventDetails_af8003f761cd535a07be5448a43d94c9f}
+\hypertarget{classv8_1_1Debug_1_1EventDetails_a073451ff2ea6fc4c2acf46a6738aac69}{}virtual \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ {\bfseries Get\+Event\+Data} () const =0\label{classv8_1_1Debug_1_1EventDetails_a073451ff2ea6fc4c2acf46a6738aac69}
 
 \item 
-virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_1_1EventDetails_a2c98fc8b2848105c37fc60a04b35dfa5}{Get\+Event\+Context} () const =0
+virtual \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_1_1EventDetails_aaa7573eeab71d8c4e914daeccddff77f}{Get\+Event\+Context} () const =0
 \item 
-virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Debug_1_1EventDetails_a3c1eff8397db7c91e9c687f48d400665}{Get\+Callback\+Data} () const =0
+virtual \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Debug_1_1EventDetails_aedd8014bb1bd644e227774d07ed9784d}{Get\+Callback\+Data} () const =0
 \item 
 virtual \hyperlink{classv8_1_1Debug_1_1ClientData}{Client\+Data} $\ast$ \hyperlink{classv8_1_1Debug_1_1EventDetails_ae663e7607d27c3252049eea077a83e08}{Get\+Client\+Data} () const =0
 \end{DoxyCompactItemize}
@@ -26,13 +26,13 @@ virtual \hyperlink{classv8_1_1Debug_1_1ClientData}{Client\+Data} $\ast$ \hyperli
 An event details object passed to the debug event listener. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1Debug_1_1EventDetails_a3c1eff8397db7c91e9c687f48d400665}{}\index{v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}!Get\+Callback\+Data@{Get\+Callback\+Data}}
+\hypertarget{classv8_1_1Debug_1_1EventDetails_aedd8014bb1bd644e227774d07ed9784d}{}\index{v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}!Get\+Callback\+Data@{Get\+Callback\+Data}}
 \index{Get\+Callback\+Data@{Get\+Callback\+Data}!v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}}
-\subsubsection[{Get\+Callback\+Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf Value}$>$ v8\+::\+Debug\+::\+Event\+Details\+::\+Get\+Callback\+Data (
+\subsubsection[{Get\+Callback\+Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Local}$<${\bf Value}$>$ v8\+::\+Debug\+::\+Event\+Details\+::\+Get\+Callback\+Data (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1EventDetails_a3c1eff8397db7c91e9c687f48d400665}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1EventDetails_aedd8014bb1bd644e227774d07ed9784d}
 Client data passed with the corresponding callback when it was registered. \hypertarget{classv8_1_1Debug_1_1EventDetails_ae663e7607d27c3252049eea077a83e08}{}\index{v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}!Get\+Client\+Data@{Get\+Client\+Data}}
 \index{Get\+Client\+Data@{Get\+Client\+Data}!v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}}
 \subsubsection[{Get\+Client\+Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Client\+Data}$\ast$ v8\+::\+Debug\+::\+Event\+Details\+::\+Get\+Client\+Data (
@@ -47,20 +47,20 @@ Client data passed to Debug\+Break\+For\+Command function. The debugger takes ow
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1EventDetails_ac871568e8cfd43bbf2cdac62add34ed0}
-Event type. \hypertarget{classv8_1_1Debug_1_1EventDetails_a2c98fc8b2848105c37fc60a04b35dfa5}{}\index{v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}!Get\+Event\+Context@{Get\+Event\+Context}}
+Event type. \hypertarget{classv8_1_1Debug_1_1EventDetails_aaa7573eeab71d8c4e914daeccddff77f}{}\index{v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}!Get\+Event\+Context@{Get\+Event\+Context}}
 \index{Get\+Event\+Context@{Get\+Event\+Context}!v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}}
-\subsubsection[{Get\+Event\+Context}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf Context}$>$ v8\+::\+Debug\+::\+Event\+Details\+::\+Get\+Event\+Context (
+\subsubsection[{Get\+Event\+Context}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Local}$<${\bf Context}$>$ v8\+::\+Debug\+::\+Event\+Details\+::\+Get\+Event\+Context (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1EventDetails_a2c98fc8b2848105c37fc60a04b35dfa5}
-Get the context active when the debug event happened. Note this is not the current active context as the Java\+Script part of the debugger is running in its own context which is entered at this point. \hypertarget{classv8_1_1Debug_1_1EventDetails_abf0997988e1e3f0780c0d3f19b4e3b8a}{}\index{v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}!Get\+Execution\+State@{Get\+Execution\+State}}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1EventDetails_aaa7573eeab71d8c4e914daeccddff77f}
+Get the context active when the debug event happened. Note this is not the current active context as the Java\+Script part of the debugger is running in its own context which is entered at this point. \hypertarget{classv8_1_1Debug_1_1EventDetails_a201fabdd6d81f711c1b8805c94f09d3e}{}\index{v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}!Get\+Execution\+State@{Get\+Execution\+State}}
 \index{Get\+Execution\+State@{Get\+Execution\+State}!v8\+::\+Debug\+::\+Event\+Details@{v8\+::\+Debug\+::\+Event\+Details}}
-\subsubsection[{Get\+Execution\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf Object}$>$ v8\+::\+Debug\+::\+Event\+Details\+::\+Get\+Execution\+State (
+\subsubsection[{Get\+Execution\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Local}$<${\bf Object}$>$ v8\+::\+Debug\+::\+Event\+Details\+::\+Get\+Execution\+State (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1EventDetails_abf0997988e1e3f0780c0d3f19b4e3b8a}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1EventDetails_a201fabdd6d81f711c1b8805c94f09d3e}
 Access to execution state and event data of the debug event. Don\textquotesingle{}t store these cross callbacks as their content becomes invalid. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

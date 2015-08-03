@@ -1,0 +1,36 @@
+\hypertarget{classv8_1_1MaybeLocal}{}\section{v8\+:\+:Maybe\+Local$<$ T $>$ Class Template Reference}
+\label{classv8_1_1MaybeLocal}\index{v8\+::\+Maybe\+Local$<$ T $>$@{v8\+::\+Maybe\+Local$<$ T $>$}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classv8_1_1MaybeLocal_ab488843c2faf4375517616d3c66886e5}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E {\bfseries Maybe\+Local} (\hyperlink{classv8_1_1Local}{Local}$<$ S $>$ that)\label{classv8_1_1MaybeLocal_ab488843c2faf4375517616d3c66886e5}
+
+\item 
+\hypertarget{classv8_1_1MaybeLocal_a6d1f2acdc91800c481977d86ae04aa53}{}V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries Is\+Empty} () const \label{classv8_1_1MaybeLocal_a6d1f2acdc91800c481977d86ae04aa53}
+
+\item 
+\hypertarget{classv8_1_1MaybeLocal_af3e66ed0bbc8845081fba2488c507c6a}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+L\+T V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries To\+Local} (\hyperlink{classv8_1_1Local}{Local}$<$ S $>$ $\ast$out) const \label{classv8_1_1MaybeLocal_af3e66ed0bbc8845081fba2488c507c6a}
+
+\item 
+\hypertarget{classv8_1_1MaybeLocal_a9b2c9d50fca5897e3a03fd4c25d12415}{}V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Local}{Local}$<$ T $>$ {\bfseries To\+Local\+Checked} ()\label{classv8_1_1MaybeLocal_a9b2c9d50fca5897e3a03fd4c25d12415}
+
+\item 
+\hypertarget{classv8_1_1MaybeLocal_afe1aea162c64385160cc1c83df859eaf}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Local}{Local}$<$ S $>$ {\bfseries From\+Maybe} (\hyperlink{classv8_1_1Local}{Local}$<$ S $>$ default\+\_\+value) const \label{classv8_1_1MaybeLocal_afe1aea162c64385160cc1c83df859eaf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class v8\+::\+Maybe\+Local$<$ T $>$}
+
+A Maybe\+Local$<$$>$ is a wrapper around Local$<$$>$ that enforces a check whether the Local$<$$>$ is empty before it can be used.
+
+If an A\+P\+I method returns a Maybe\+Local$<$$>$, the A\+P\+I method can potentially fail either because an exception is thrown, or because an exception is pending, e.\+g. because a previous A\+P\+I call threw an exception that hasn\textquotesingle{}t been caught yet, or because a Terminate\+Execution exception was thrown. In that case, an empty \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local} is returned. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

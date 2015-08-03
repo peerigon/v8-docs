@@ -21,7 +21,7 @@ typedef void($\ast$ \hyperlink{classv8_1_1Debug_a91cd8aa9743e3478bc63fe73abcd557
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classv8_1_1Debug_a745bc83ba29626b64151a1a3e9759e8a}{}static bool {\bfseries Set\+Debug\+Event\+Listener} (\hyperlink{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}{Event\+Callback} that, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())\label{classv8_1_1Debug_a745bc83ba29626b64151a1a3e9759e8a}
+\hypertarget{classv8_1_1Debug_ac2d24e9b52877ec40236bd0ceea85e8b}{}static bool {\bfseries Set\+Debug\+Event\+Listener} (\hyperlink{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}{Event\+Callback} that, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())\label{classv8_1_1Debug_ac2d24e9b52877ec40236bd0ceea85e8b}
 
 \item 
 \hypertarget{classv8_1_1Debug_a0c730ea558b1fc86cb728980c91a4c7c}{}static void {\bfseries Debug\+Break} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{classv8_1_1Debug_a0c730ea558b1fc86cb728980c91a4c7c}
@@ -33,24 +33,29 @@ typedef void($\ast$ \hyperlink{classv8_1_1Debug_a91cd8aa9743e3478bc63fe73abcd557
 \hypertarget{classv8_1_1Debug_aa564431664efa61d6d72c9cbd91b4ea2}{}static bool {\bfseries Check\+Debug\+Break} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{classv8_1_1Debug_aa564431664efa61d6d72c9cbd91b4ea2}
 
 \item 
-\hypertarget{classv8_1_1Debug_a44528a1005a8256037a0f45c93afd0db}{}static void {\bfseries Debug\+Break\+For\+Command} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Debug_1_1ClientData}{Client\+Data} $\ast$data)\label{classv8_1_1Debug_a44528a1005a8256037a0f45c93afd0db}
-
-\item 
 \hypertarget{classv8_1_1Debug_ab26a90abc5c21c752f6923a1986f0bb7}{}static void {\bfseries Set\+Message\+Handler} (\hyperlink{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc694}{Message\+Handler} handler)\label{classv8_1_1Debug_ab26a90abc5c21c752f6923a1986f0bb7}
 
 \item 
 \hypertarget{classv8_1_1Debug_aba2426f25ee7cd31659426287777bb00}{}static void {\bfseries Send\+Command} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const uint16\+\_\+t $\ast$command, int length, \hyperlink{classv8_1_1Debug_1_1ClientData}{Client\+Data} $\ast$client\+\_\+data=N\+U\+L\+L)\label{classv8_1_1Debug_aba2426f25ee7cd31659426287777bb00}
 
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Debug_a49a3e0cf585cfd201d8ab1bc395d0593}{Call} (\hyperlink{classv8_1_1Handle}{v8\+::\+Handle}$<$ \hyperlink{classv8_1_1Function}{v8\+::\+Function} $>$ fun, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())
+static \hyperlink{classv8_1_1Debug_a82a4a039d33769fae6d94fd2d14e5550}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Call(\hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Function}{v8\+::\+Function} $>$ fun, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$()))
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Debug_aa7d07c7d5c9ee2eaaa9af310bcbf58f5}{Get\+Mirror} (\hyperlink{classv8_1_1Handle}{v8\+::\+Handle}$<$ \hyperlink{classv8_1_1Value}{v8\+::\+Value} $>$ obj)
+\hypertarget{classv8_1_1Debug_a32e28ec40dc429e7fa1dfbe1e514ba3d}{}static \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Call} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Function}{v8\+::\+Function} $>$ fun, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())\label{classv8_1_1Debug_a32e28ec40dc429e7fa1dfbe1e514ba3d}
+
+\item 
+static \hyperlink{classv8_1_1Debug_afc285363a72ad36a56f50428a94c6ce4}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Get\+Mirror(\hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Value}{v8\+::\+Value} $>$ obj))
+\item 
+\hypertarget{classv8_1_1Debug_ab5f5ae3f4418c576da4633c6fb27b23d}{}static \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Get\+Mirror} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Value}{v8\+::\+Value} $>$ obj)\label{classv8_1_1Debug_ab5f5ae3f4418c576da4633c6fb27b23d}
+
 \item 
 static void \hyperlink{classv8_1_1Debug_a888e06766caee0380c6aa010b00e1a54}{Process\+Debug\+Messages} ()
 \item 
 static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_a2343a321b0db41324b7e8a7402f57cf0}{Get\+Debug\+Context} ()
 \item 
 static void \hyperlink{classv8_1_1Debug_ab635f979d369bed13187e2594d825517}{Set\+Live\+Edit\+Enabled} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, bool enable)
+\item 
+static \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Array}{Array} $>$ \hyperlink{classv8_1_1Debug_a10ef14b11ffdd57287f25b39dc728e07}{Get\+Internal\+Properties} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)
 \end{DoxyCompactItemize}
 
 
@@ -81,42 +86,26 @@ A Event\+Callback2 does not take possession of the event data, and must not rely
 A Message\+Handler2 does not take possession of the message data, and must not rely on the data persisting after the handler returns. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1Debug_a49a3e0cf585cfd201d8ab1bc395d0593}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Call@{Call}}
-\index{Call@{Call}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Call}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Value}$>$ v8\+::\+Debug\+::\+Call (
-\begin{DoxyParamCaption}
-\item[{{\bf v8\+::\+Handle}$<$ {\bf v8\+::\+Function} $>$}]{fun, }
-\item[{{\bf Handle}$<$ {\bf Value} $>$}]{data = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_a49a3e0cf585cfd201d8ab1bc395d0593}
-Run a Java\+Script function in the debugger. 
-\begin{DoxyParams}{Parameters}
-{\em fun} & the function to call \\
-\hline
-{\em data} & passed as second argument to the function With this call the debugger is entered and the function specified is called with the execution state as the first argument. This makes it possible to get access to information otherwise not available during normal Java\+Script execution e.\+g. details on stack frames. Receiver of the function call will be the debugger context global object, however this is a subject to change. The following example shows a Java\+Script function which when passed to \hyperlink{classv8_1_1Debug_a49a3e0cf585cfd201d8ab1bc395d0593}{v8\+::\+Debug\+::\+Call} will return the current line of Java\+Script execution.\\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyCode}
-\textcolor{keyword}{function} frame\_source\_line(exec\_state) \{
-  \textcolor{keywordflow}{return} exec\_state.frame(0).sourceLine();
-\}
-\end{DoxyCode}
- \hypertarget{classv8_1_1Debug_a2343a321b0db41324b7e8a7402f57cf0}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Get\+Debug\+Context@{Get\+Debug\+Context}}
+\hypertarget{classv8_1_1Debug_a2343a321b0db41324b7e8a7402f57cf0}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Get\+Debug\+Context@{Get\+Debug\+Context}}
 \index{Get\+Debug\+Context@{Get\+Debug\+Context}!v8\+::\+Debug@{v8\+::\+Debug}}
 \subsubsection[{Get\+Debug\+Context}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Context}$>$ v8\+::\+Debug\+::\+Get\+Debug\+Context (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_a2343a321b0db41324b7e8a7402f57cf0}
-Debugger is running in its own context which is entered while debugger messages are being dispatched. This is an explicit getter for this debugger context. Note that the content of the debugger context is subject to change. \hypertarget{classv8_1_1Debug_aa7d07c7d5c9ee2eaaa9af310bcbf58f5}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Get\+Mirror@{Get\+Mirror}}
-\index{Get\+Mirror@{Get\+Mirror}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Get\+Mirror}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Value}$>$ v8\+::\+Debug\+::\+Get\+Mirror (
+Debugger is running in its own context which is entered while debugger messages are being dispatched. This is an explicit getter for this debugger context. Note that the content of the debugger context is subject to change. The \hyperlink{classv8_1_1Context}{Context} exists only when the debugger is active, i.\+e. at least one Debug\+Event\+Listener or Message\+Handler is set. \hypertarget{classv8_1_1Debug_a10ef14b11ffdd57287f25b39dc728e07}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Get\+Internal\+Properties@{Get\+Internal\+Properties}}
+\index{Get\+Internal\+Properties@{Get\+Internal\+Properties}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{Get\+Internal\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Maybe\+Local}$<${\bf Array}$>$ v8\+::\+Debug\+::\+Get\+Internal\+Properties (
 \begin{DoxyParamCaption}
-\item[{{\bf v8\+::\+Handle}$<$ {\bf v8\+::\+Value} $>$}]{obj}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Local}$<$ {\bf Value} $>$}]{value}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_aa7d07c7d5c9ee2eaaa9af310bcbf58f5}
-Returns a mirror object for the given object. \hypertarget{classv8_1_1Debug_a888e06766caee0380c6aa010b00e1a54}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Process\+Debug\+Messages@{Process\+Debug\+Messages}}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_a10ef14b11ffdd57287f25b39dc728e07}
+Returns array of internal properties specific to the value type. Result has the following format\+: \mbox{[}$<$name$>$, 
+
+,...,$<$name$>$, 
+
+\mbox{]}. Result array will be allocated in the current context. \hypertarget{classv8_1_1Debug_a888e06766caee0380c6aa010b00e1a54}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Process\+Debug\+Messages@{Process\+Debug\+Messages}}
 \index{Process\+Debug\+Messages@{Process\+Debug\+Messages}!v8\+::\+Debug@{v8\+::\+Debug}}
 \subsubsection[{Process\+Debug\+Messages}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Debug\+::\+Process\+Debug\+Messages (
 \begin{DoxyParamCaption}
@@ -148,7 +137,36 @@ Technically this method in many senses is equivalent to executing empty script\+
 \item[{bool}]{enable}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_ab635f979d369bed13187e2594d825517}
-Enable/disable Live\+Edit functionality for the given \hyperlink{classv8_1_1Isolate}{Isolate} (default \hyperlink{classv8_1_1Isolate}{Isolate} if not provided). \hyperlink{classv8_1_1V8}{V8} will abort if Live\+Edit is unexpectedly used. Live\+Edit is enabled by default. 
+Enable/disable Live\+Edit functionality for the given \hyperlink{classv8_1_1Isolate}{Isolate} (default \hyperlink{classv8_1_1Isolate}{Isolate} if not provided). \hyperlink{classv8_1_1V8}{V8} will abort if Live\+Edit is unexpectedly used. Live\+Edit is enabled by default. \hypertarget{classv8_1_1Debug_a82a4a039d33769fae6d94fd2d14e5550}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Debug\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use maybe version\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Value} $>$ }]{Callv8\+::\+Local$<$ v8\+::\+Function $>$ fun, Local$<$ Value $>$ data=\+Local$<$ Value $>$()}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_a82a4a039d33769fae6d94fd2d14e5550}
+Run a Java\+Script function in the debugger. 
+\begin{DoxyParams}{Parameters}
+{\em fun} & the function to call \\
+\hline
+{\em data} & passed as second argument to the function With this call the debugger is entered and the function specified is called with the execution state as the first argument. This makes it possible to get access to information otherwise not available during normal Java\+Script execution e.\+g. details on stack frames. Receiver of the function call will be the debugger context global object, however this is a subject to change. The following example shows a Java\+Script function which when passed to v8\+::\+Debug\+::\+Call will return the current line of Java\+Script execution.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\textcolor{keyword}{function} frame\_source\_line(exec\_state) \{
+  \textcolor{keywordflow}{return} exec\_state.frame(0).sourceLine();
+\}
+\end{DoxyCode}
+ \hypertarget{classv8_1_1Debug_afc285363a72ad36a56f50428a94c6ce4}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Debug\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use maybe version\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Value} $>$ }]{Get\+Mirrorv8\+::\+Local$<$ v8\+::\+Value $>$ obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_afc285363a72ad36a56f50428a94c6ce4}
+Returns a mirror object for the given object. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

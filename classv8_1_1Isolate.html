@@ -120,9 +120,19 @@ Public Types</h2></td></tr>
 <b>kMinorGarbageCollection</b>
  }</td></tr>
 <tr class="separator:a5ae00cc99d8aca148c6f5f9698c432c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed6909379c3f2820cb3084710b73385d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#aed6909379c3f2820cb3084710b73385d">UseCounterFeature</a> { <b>kUseAsm</b> = 0, 
+<tr class="memitem:aed6909379c3f2820cb3084710b73385d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#aed6909379c3f2820cb3084710b73385d">UseCounterFeature</a> { <br />
+&#160;&#160;<b>kUseAsm</b> = 0, 
 <b>kBreakIterator</b> = 1, 
-<b>kUseCounterFeatureCount</b>
+<b>kLegacyConst</b> = 2, 
+<b>kMarkDequeOverflow</b> = 3, 
+<br />
+&#160;&#160;<b>kStoreBufferOverflow</b> = 4, 
+<b>kSlotsBufferOverflow</b> = 5, 
+<b>kObjectObserve</b> = 6, 
+<b>kForcedGC</b> = 7, 
+<br />
+&#160;&#160;<b>kUseCounterFeatureCount</b>
+<br />
  }</td></tr>
 <tr class="separator:aed6909379c3f2820cb3084710b73385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7537ead98ee88eec2976348ba992935c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7537ead98ee88eec2976348ba992935c"></a>
@@ -149,6 +159,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed85b3c82bf69a60ecebc2558ab95083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add32e78544edaf8946ed9b328167e5e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#add32e78544edaf8946ed9b328167e5e4">GetHeapStatistics</a> (<a class="el" href="classv8_1_1HeapStatistics.html">HeapStatistics</a> *heap_statistics)</td></tr>
 <tr class="separator:add32e78544edaf8946ed9b328167e5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad948acf0892e677a95fbc743b63ca5fa"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#ad948acf0892e677a95fbc743b63ca5fa">NumberOfHeapSpaces</a> ()</td></tr>
+<tr class="separator:ad948acf0892e677a95fbc743b63ca5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ab96294ee07064cbba01e969b62cbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a28ab96294ee07064cbba01e969b62cbc">GetHeapSpaceStatistics</a> (<a class="el" href="classv8_1_1HeapSpaceStatistics.html">HeapSpaceStatistics</a> *space_statistics, size_t index)</td></tr>
+<tr class="separator:a28ab96294ee07064cbba01e969b62cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170044cddf655345682cb3c9b4bd1788"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a170044cddf655345682cb3c9b4bd1788">NumberOfTrackedHeapObjectTypes</a> ()</td></tr>
+<tr class="separator:a170044cddf655345682cb3c9b4bd1788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677681d4c3abfc1bc2e8b50c23623e24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a677681d4c3abfc1bc2e8b50c23623e24">GetHeapObjectStatisticsAtLastGC</a> (<a class="el" href="classv8_1_1HeapObjectStatistics.html">HeapObjectStatistics</a> *object_statistics, size_t type_index)</td></tr>
+<tr class="separator:a677681d4c3abfc1bc2e8b50c23623e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b173b48a477267ccd6c7d17c492b82e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a8b173b48a477267ccd6c7d17c492b82e">GetStackSample</a> (const <a class="el" href="structv8_1_1RegisterState.html">RegisterState</a> &amp;state, void **frames, size_t frames_limit, <a class="el" href="structv8_1_1SampleInfo.html">SampleInfo</a> *sample_info)</td></tr>
 <tr class="separator:a8b173b48a477267ccd6c7d17c492b82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeda5fa60961a3d9d476c46200e30711"><td class="memItemLeft" align="right" valign="top">V8_INLINE int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#aaeda5fa60961a3d9d476c46200e30711">AdjustAmountOfExternalAllocatedMemory</a> (int64_t change_in_bytes)</td></tr>
@@ -192,8 +210,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a75cbe037e7657a7c7bd65e2edf0164d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971b6094ecc6c7f55eb6f58a71a8afd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a971b6094ecc6c7f55eb6f58a71a8afd3">RequestInterrupt</a> (InterruptCallback callback, void *data)</td></tr>
 <tr class="separator:a971b6094ecc6c7f55eb6f58a71a8afd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00790d743cec68bbaa8ca7dbf6257f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a00790d743cec68bbaa8ca7dbf6257f05">ClearInterrupt</a> ()</td></tr>
-<tr class="separator:a00790d743cec68bbaa8ca7dbf6257f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59fe893ed7e9df52cef2d59b2d98ab23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a59fe893ed7e9df52cef2d59b2d98ab23">RequestGarbageCollectionForTesting</a> (<a class="el" href="classv8_1_1Isolate.html#a5ae00cc99d8aca148c6f5f9698c432c9">GarbageCollectionType</a> type)</td></tr>
 <tr class="separator:a59fe893ed7e9df52cef2d59b2d98ab23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28bf18f2f6ed468ec97f59df682e73c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a28bf18f2f6ed468ec97f59df682e73c1">SetEventLogger</a> (LogEventCallback that)</td></tr>
@@ -206,8 +222,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a702f0ba4e5dee8a98aeb92239d58784e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3cbe2a1632eb863912640dcfc98b6c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#ac3cbe2a1632eb863912640dcfc98b6c8">RunMicrotasks</a> ()</td></tr>
 <tr class="separator:ac3cbe2a1632eb863912640dcfc98b6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380d35e0a8dfc8394638fce8ce4c04d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a380d35e0a8dfc8394638fce8ce4c04d4">EnqueueMicrotask</a> (<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Function.html">Function</a> &gt; microtask)</td></tr>
-<tr class="separator:a380d35e0a8dfc8394638fce8ce4c04d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a222a1a662d08479d5a1880c6793c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a79a222a1a662d08479d5a1880c6793c5">EnqueueMicrotask</a> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Function.html">Function</a> &gt; microtask)</td></tr>
+<tr class="separator:a79a222a1a662d08479d5a1880c6793c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d6c7dfdfc6c1bc857841de7e9967c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#ad4d6c7dfdfc6c1bc857841de7e9967c3">EnqueueMicrotask</a> (MicrotaskCallback microtask, void *data=NULL)</td></tr>
 <tr class="separator:ad4d6c7dfdfc6c1bc857841de7e9967c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c046eb1d5ab19ef11c18c2f6e775df1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a6c046eb1d5ab19ef11c18c2f6e775df1">SetAutorunMicrotasks</a> (bool autorun)</td></tr>
@@ -223,12 +239,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5c813518efe1cfaccd0262ad6ed2f82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5c813518efe1cfaccd0262ad6ed2f82"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAddHistogramSampleFunction</b> (AddHistogramSampleCallback)</td></tr>
 <tr class="separator:ae5c813518efe1cfaccd0262ad6ed2f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea16cbb2e351de9a3ae7be2b7cb48297"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#aea16cbb2e351de9a3ae7be2b7cb48297">IdleNotification</a> (int idle_time_in_ms)</td></tr>
-<tr class="separator:aea16cbb2e351de9a3ae7be2b7cb48297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba794ed25d4fa8780b3a07c66a5e5d4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#aba794ed25d4fa8780b3a07c66a5e5d4a">IdleNotificationDeadline</a> (double deadline_in_seconds)</td></tr>
+<tr class="separator:aba794ed25d4fa8780b3a07c66a5e5d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d3a8248979ec6ca42746dd0692215c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97d3a8248979ec6ca42746dd0692215c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>V8_DEPRECATE_SOON</b> (&quot;use <a class="el" href="classv8_1_1Isolate.html#aba794ed25d4fa8780b3a07c66a5e5d4a">IdleNotificationDeadline</a>()&quot;, bool IdleNotification(int idle_time_in_ms))</td></tr>
+<tr class="separator:a97d3a8248979ec6ca42746dd0692215c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf446f4877e4707a93d2c406fffd9fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#aaf446f4877e4707a93d2c406fffd9fd6">LowMemoryNotification</a> ()</td></tr>
 <tr class="separator:aaf446f4877e4707a93d2c406fffd9fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08d71a6a9979e6105d3c730be56e7702"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a08d71a6a9979e6105d3c730be56e7702">ContextDisposedNotification</a> ()</td></tr>
-<tr class="separator:a08d71a6a9979e6105d3c730be56e7702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5216bbb1792211422aee575d02f442"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a4b5216bbb1792211422aee575d02f442">ContextDisposedNotification</a> (bool dependant_context=true)</td></tr>
+<tr class="separator:a4b5216bbb1792211422aee575d02f442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d976355bf47eb2dd09cd5d1279a40d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a71d976355bf47eb2dd09cd5d1279a40d">SetJitCodeEventHandler</a> (<a class="el" href="namespacev8.html#a06f34fa4fa4cfc8518366808d1d461c1">JitCodeEventOptions</a> options, <a class="el" href="namespacev8.html#a39243bc91e63d64d111452fdb98c4733">JitCodeEventHandler</a> event_handler)</td></tr>
 <tr class="separator:a71d976355bf47eb2dd09cd5d1279a40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addbbe14af7efb92999ac3944bc9ffed5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#addbbe14af7efb92999ac3944bc9ffed5">SetStackLimit</a> (uintptr_t stack_limit)</td></tr>
@@ -241,8 +260,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAddHistogramSample
 <tr class="separator:ad91199faf0a599c69539af01f5df44e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a603a9bc7860d7936bce2dd45829869c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a603a9bc7860d7936bce2dd45829869c3">IsDead</a> ()</td></tr>
 <tr class="separator:a603a9bc7860d7936bce2dd45829869c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae160d90f70a522dca66b8929762598a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#ae160d90f70a522dca66b8929762598a2">AddMessageListener</a> (MessageCallback that, <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;())</td></tr>
-<tr class="separator:ae160d90f70a522dca66b8929762598a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aaf99c9ce853fdece7a3b8fc4df49d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a1aaf99c9ce853fdece7a3b8fc4df49d5">AddMessageListener</a> (MessageCallback that, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; data=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;())</td></tr>
+<tr class="separator:a1aaf99c9ce853fdece7a3b8fc4df49d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0319e55b26ba3ac51d867b37b917a21f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a0319e55b26ba3ac51d867b37b917a21f">RemoveMessageListeners</a> (MessageCallback that)</td></tr>
 <tr class="separator:a0319e55b26ba3ac51d867b37b917a21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ef29fc049d82e0c33994632b4f6ba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#ab9ef29fc049d82e0c33994632b4f6ba6">SetFailedAccessCheckCallbackFunction</a> (FailedAccessCheckCallback)</td></tr>
@@ -262,8 +281,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAddHistogramSample
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeafd7b0add8589d1ab5a992b21a0e826"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classv8_1_1Isolate.html">Isolate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#aeafd7b0add8589d1ab5a992b21a0e826">New</a> (const <a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">CreateParams</a> &amp;params=<a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">CreateParams</a>())</td></tr>
-<tr class="separator:aeafd7b0add8589d1ab5a992b21a0e826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6accf94a5a897fcc1220ab2c049e502"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classv8_1_1Isolate.html">Isolate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#ab6accf94a5a897fcc1220ab2c049e502">New</a> (const <a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">CreateParams</a> &amp;params)</td></tr>
+<tr class="separator:ab6accf94a5a897fcc1220ab2c049e502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa79441b5da4438221d0f38790c4de2ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classv8_1_1Isolate.html">Isolate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#aa79441b5da4438221d0f38790c4de2ed">GetCurrent</a> ()</td></tr>
 <tr class="separator:aa79441b5da4438221d0f38790c4de2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7060092fd45588f4085753b3da1b2c82"><td class="memItemLeft" align="right" valign="top">static V8_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1Isolate.html#a7060092fd45588f4085753b3da1b2c82">GetNumberOfDataSlots</a> ()</td></tr>
@@ -271,10 +290,10 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a401e5cd2db49a67497042617f01fdbc2"><td class="memTemplParams" colspan="2"><a class="anchor" id="a401e5cd2db49a67497042617f01fdbc2"></a>
+<tr class="memitem:a08e2b8f164392d71811ce6cc134f33e3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a08e2b8f164392d71811ce6cc134f33e3"></a>
 template&lt;class K , class V , class Traits &gt; </td></tr>
-<tr class="memitem:a401e5cd2db49a67497042617f01fdbc2"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>PersistentValueMap</b></td></tr>
-<tr class="separator:a401e5cd2db49a67497042617f01fdbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e2b8f164392d71811ce6cc134f33e3"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>PersistentValueMapBase</b></td></tr>
+<tr class="separator:a08e2b8f164392d71811ce6cc134f33e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classv8_1_1Isolate.html">Isolate</a> represents an isolated instance of the <a class="el" href="classv8_1_1V8.html">V8</a> engine. <a class="el" href="classv8_1_1V8.html">V8</a> isolates have completely separate states. Objects from one isolate must not be used in other isolates. The embedder can create multiple isolates and use them in parallel in multiple threads. An isolate can be entered by at most one thread at any given time. The Locker/Unlocker API must be used to synchronize. </p>
@@ -301,7 +320,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Features reported via the SetUseCounterCallback callback. Do not chang assigned numbers of existing items; add new features to the end of this list. </p>
+<p>Features reported via the SetUseCounterCallback callback. Do not change assigned numbers of existing items; add new features to the end of this list. </p>
 
 </div>
 </div>
@@ -410,7 +429,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae160d90f70a522dca66b8929762598a2"></a>
+<a class="anchor" id="a1aaf99c9ce853fdece7a3b8fc4df49d5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -423,8 +442,8 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
-          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt;&#160;<a class="el" href="classv8_1_1Value.html">Value</a>&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em> = <code><a class="el" href="classv8_1_1Local.html">Local</a>&lt;&#160;<a class="el" href="classv8_1_1Value.html">Value</a>&#160;&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -481,35 +500,21 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a00790d743cec68bbaa8ca7dbf6257f05"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void v8::Isolate::ClearInterrupt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Clear interrupt request created by |RequestInterrupt|. Can be called from another thread without acquiring a |Locker|. </p>
-
-</div>
-</div>
-<a class="anchor" id="a08d71a6a9979e6105d3c730be56e7702"></a>
+<a class="anchor" id="a4b5216bbb1792211422aee575d02f442"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int v8::Isolate::ContextDisposedNotification </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dependant_context</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Optional notification that a context has been disposed. <a class="el" href="classv8_1_1V8.html">V8</a> uses these notifications to guide the GC heuristic. Returns the number of context disposals - including this one - since the last time <a class="el" href="classv8_1_1V8.html">V8</a> had a chance to clean up. </p>
+<p>Optional notification that a context has been disposed. <a class="el" href="classv8_1_1V8.html">V8</a> uses these notifications to guide the GC heuristic. Returns the number of context disposals - including this one - since the last time <a class="el" href="classv8_1_1V8.html">V8</a> had a chance to clean up.</p>
+<p>The optional parameter |dependant_context| specifies whether the disposed context was depending on state from other contexts or not. </p>
 
 </div>
 </div>
@@ -529,14 +534,14 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a380d35e0a8dfc8394638fce8ce4c04d4"></a>
+<a class="anchor" id="a79a222a1a662d08479d5a1880c6793c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void v8::Isolate::EnqueueMicrotask </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Function.html">Function</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Function.html">Function</a> &gt;&#160;</td>
           <td class="paramname"><em>microtask</em></td><td>)</td>
           <td></td>
         </tr>
@@ -689,7 +694,8 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the entered isolate for the current thread or NULL in case there is no current isolate. </p>
+<p>Returns the entered isolate for the current thread or NULL in case there is no current isolate.</p>
+<p>This method must not be invoked before <a class="el" href="classv8_1_1V8.html#a40daec93ce44bdd922567fc121be9db8">V8::Initialize()</a> was invoked. </p>
 
 </div>
 </div>
@@ -742,6 +748,41 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a677681d4c3abfc1bc2e8b50c23623e24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool v8::Isolate::GetHeapObjectStatisticsAtLastGC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1HeapObjectStatistics.html">HeapObjectStatistics</a> *&#160;</td>
+          <td class="paramname"><em>object_statistics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>type_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get statistics about objects in the heap.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object_statistics</td><td>The <a class="el" href="classv8_1_1HeapObjectStatistics.html">HeapObjectStatistics</a> object to fill in statistics of objects of given type, which were live in the previous GC. </td></tr>
+    <tr><td class="paramname">type_index</td><td>The index of the type of object to fill details about, which ranges from 0 to <a class="el" href="classv8_1_1Isolate.html#a170044cddf655345682cb3c9b4bd1788">NumberOfTrackedHeapObjectTypes()</a> - 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a9c48259615e8370f6f0efd27cd7f99a6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -755,6 +796,41 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns heap profiler for this isolate. Will return NULL until the isolate is initialized. </p>
+
+</div>
+</div>
+<a class="anchor" id="a28ab96294ee07064cbba01e969b62cbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool v8::Isolate::GetHeapSpaceStatistics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classv8_1_1HeapSpaceStatistics.html">HeapSpaceStatistics</a> *&#160;</td>
+          <td class="paramname"><em>space_statistics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the memory usage of a space in the heap.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">space_statistics</td><td>The <a class="el" href="classv8_1_1HeapSpaceStatistics.html">HeapSpaceStatistics</a> object to fill in statistics. </td></tr>
+    <tr><td class="paramname">index</td><td>The index of the space to get statistics from, which ranges from 0 to <a class="el" href="classv8_1_1Isolate.html#ad948acf0892e677a95fbc743b63ca5fa">NumberOfHeapSpaces()</a> - 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success. </dd></dl>
 
 </div>
 </div>
@@ -847,21 +923,21 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea16cbb2e351de9a3ae7be2b7cb48297"></a>
+<a class="anchor" id="aba794ed25d4fa8780b3a07c66a5e5d4a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool v8::Isolate::IdleNotification </td>
+          <td class="memname">bool v8::Isolate::IdleNotificationDeadline </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idle_time_in_ms</em></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deadline_in_seconds</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Optional notification that the embedder is idle. <a class="el" href="classv8_1_1V8.html">V8</a> uses the notification to reduce memory footprint. This call can be used repeatedly if the embedder remains idle. Returns true if the embedder should stop calling IdleNotification until real work has been done. This indicates that <a class="el" href="classv8_1_1V8.html">V8</a> has done as much cleanup as it will be able to do.</p>
-<p>The idle_time_in_ms argument specifies the time <a class="el" href="classv8_1_1V8.html">V8</a> has to do reduce the memory footprint. There is no guarantee that the actual work will be done within the time limit. </p>
+<p>Optional notification that the embedder is idle. <a class="el" href="classv8_1_1V8.html">V8</a> uses the notification to perform garbage collection. This call can be used repeatedly if the embedder remains idle. Returns true if the embedder should stop calling IdleNotificationDeadline until real work has been done. This indicates that <a class="el" href="classv8_1_1V8.html">V8</a> has done as much cleanup as it will be able to do.</p>
+<p>The deadline_in_seconds argument specifies the deadline <a class="el" href="classv8_1_1V8.html">V8</a> has to finish garbage collection work. deadline_in_seconds is compared with MonotonicallyIncreasingTime() and should be based on the same timebase as that function. There is no guarantee that the actual work will be done within the time limit. </p>
 
 </div>
 </div>
@@ -930,7 +1006,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeafd7b0add8589d1ab5a992b21a0e826"></a>
+<a class="anchor" id="ab6accf94a5a897fcc1220ab2c049e502"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -941,7 +1017,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
           <td class="memname">static <a class="el" href="classv8_1_1Isolate.html">Isolate</a>* v8::Isolate::New </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">CreateParams</a> &amp;&#160;</td>
-          <td class="paramname"><em>params</em> = <code><a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">CreateParams</a>()</code></td><td>)</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -954,6 +1030,38 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
 <p>Creates a new isolate. Does not change the currently entered isolate.</p>
 <p>When an isolate is no longer used its resources should be freed by calling <a class="el" href="classv8_1_1Isolate.html#a1a5a5762e4221aff8c6b10f9e3cec0af">Dispose()</a>. Using the delete operator is not allowed.</p>
 <p><a class="el" href="classv8_1_1V8.html#a40daec93ce44bdd922567fc121be9db8">V8::Initialize()</a> must have run prior to this. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad948acf0892e677a95fbc743b63ca5fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t v8::Isolate::NumberOfHeapSpaces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of spaces in the heap. </p>
+
+</div>
+</div>
+<a class="anchor" id="a170044cddf655345682cb3c9b4bd1788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t v8::Isolate::NumberOfTrackedHeapObjectTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of types of objects tracked in the heap at GC. </p>
 
 </div>
 </div>
@@ -1056,7 +1164,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
       </table>
 </div><div class="memdoc">
 <p>Request garbage collection in this <a class="el" href="classv8_1_1Isolate.html">Isolate</a>. It is only valid to call this function if &ndash;expose_gc was specified.</p>
-<p>This should only be used for testing purposes and not to enforce a garbage collection schedule. It has strong negative impact on the garbage collection performance. Use <a class="el" href="classv8_1_1Isolate.html#aea16cbb2e351de9a3ae7be2b7cb48297">IdleNotification()</a> or <a class="el" href="classv8_1_1Isolate.html#aaf446f4877e4707a93d2c406fffd9fd6">LowMemoryNotification()</a> instead to influence the garbage collection schedule. </p>
+<p>This should only be used for testing purposes and not to enforce a garbage collection schedule. It has strong negative impact on the garbage collection performance. Use <a class="el" href="classv8_1_1Isolate.html#aba794ed25d4fa8780b3a07c66a5e5d4a">IdleNotificationDeadline()</a> or <a class="el" href="classv8_1_1Isolate.html#aaf446f4877e4707a93d2c406fffd9fd6">LowMemoryNotification()</a> instead to influence the garbage collection schedule. </p>
 
 </div>
 </div>
@@ -1083,7 +1191,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Request <a class="el" href="classv8_1_1V8.html">V8</a> to interrupt long running JavaScript code and invoke the given |callback| passing the given |data| to it. After |callback| returns control will be returned to the JavaScript code. At any given moment <a class="el" href="classv8_1_1V8.html">V8</a> can remember only a single callback for the very last interrupt request. Can be called from another thread without acquiring a |Locker|. Registered |callback| must not reenter interrupted <a class="el" href="classv8_1_1Isolate.html">Isolate</a>. </p>
+<p>Request <a class="el" href="classv8_1_1V8.html">V8</a> to interrupt long running JavaScript code and invoke the given |callback| passing the given |data| to it. After |callback| returns control will be returned to the JavaScript code. There may be a number of interrupt requests in flight. Can be called from another thread without acquiring a |Locker|. Registered |callback| must not reenter interrupted <a class="el" href="classv8_1_1Isolate.html">Isolate</a>. </p>
 
 </div>
 </div>
@@ -1116,7 +1224,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the callback to invoke to check if code generation from strings should be allowed. </p>
+<p><a class="el" href="classv8_1_1Set.html">Set</a> the callback to invoke to check if code generation from strings should be allowed. </p>
 
 </div>
 </div>
@@ -1244,7 +1352,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the callback to invoke for logging event. </p>
+<p><a class="el" href="classv8_1_1Set.html">Set</a> the callback to invoke for logging event. </p>
 
 </div>
 </div>
@@ -1278,7 +1386,7 @@ template&lt;class K , class V , class Traits &gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the callback to invoke in case of fatal errors. </p>
+<p><a class="el" href="classv8_1_1Set.html">Set</a> the callback to invoke in case of fatal errors. </p>
 
 </div>
 </div>
@@ -1367,7 +1475,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set callback to notify about promise reject with no handler, or revocation of such a previous notification once the handler is added. </p>
+<p><a class="el" href="classv8_1_1Set.html">Set</a> callback to notify about promise reject with no handler, or revocation of such a previous notification once the handler is added. </p>
 
 </div>
 </div>
@@ -1577,7 +1685,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:46 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:02 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -12,7 +12,7 @@ class \hyperlink{classv8_1_1HeapProfiler_1_1ObjectNameResolver}{Object\+Name\+Re
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info} $\ast$($\ast$ \hyperlink{classv8_1_1HeapProfiler_a696d8d6590879eeb5a4ad2814eafb599}{Wrapper\+Info\+Callback}) (uint16\+\_\+t class\+\_\+id, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ wrapper)
+typedef \hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info} $\ast$($\ast$ \hyperlink{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}{Wrapper\+Info\+Callback}) (uint16\+\_\+t class\+\_\+id, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ wrapper)
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -21,23 +21,23 @@ int \hyperlink{classv8_1_1HeapProfiler_a24830775a0ab938eb0a29ed8f3dfd265}{Get\+S
 \item 
 const \hyperlink{classv8_1_1HeapSnapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1HeapProfiler_af9093f6ca6e5558315f354c7ccb55484}{Get\+Heap\+Snapshot} (int index)
 \item 
-Snapshot\+Object\+Id \hyperlink{classv8_1_1HeapProfiler_a03157eb3b1d28e602832026f95c6e3fb}{Get\+Object\+Id} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)
+Snapshot\+Object\+Id \hyperlink{classv8_1_1HeapProfiler_ab926a1f1ed95b731d4ef3133e67eef19}{Get\+Object\+Id} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)
 \item 
-\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1HeapProfiler_ab2fdc8f223c13436cc2136b99cb92a17}{Find\+Object\+By\+Id} (Snapshot\+Object\+Id id)
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1HeapProfiler_ace729f9b7dbb2ca8b2fd67551bf5aae8}{Find\+Object\+By\+Id} (Snapshot\+Object\+Id id)
 \item 
 void \hyperlink{classv8_1_1HeapProfiler_a8a90c630543ed1875cbf9166239ff8d3}{Clear\+Object\+Ids} ()
 \item 
-const \hyperlink{classv8_1_1HeapSnapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1HeapProfiler_acaff4d33babbca49a7308c89e2d910cc}{Take\+Heap\+Snapshot} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ title, \hyperlink{classv8_1_1ActivityControl}{Activity\+Control} $\ast$control=N\+U\+L\+L, \hyperlink{classv8_1_1HeapProfiler_1_1ObjectNameResolver}{Object\+Name\+Resolver} $\ast$global\+\_\+object\+\_\+name\+\_\+resolver=N\+U\+L\+L)
+const \hyperlink{classv8_1_1HeapSnapshot}{Heap\+Snapshot} $\ast$ \hyperlink{classv8_1_1HeapProfiler_a4af9159585ab024175d8eff551804ea8}{Take\+Heap\+Snapshot} (\hyperlink{classv8_1_1ActivityControl}{Activity\+Control} $\ast$control=N\+U\+L\+L, \hyperlink{classv8_1_1HeapProfiler_1_1ObjectNameResolver}{Object\+Name\+Resolver} $\ast$global\+\_\+object\+\_\+name\+\_\+resolver=N\+U\+L\+L)
 \item 
 void \hyperlink{classv8_1_1HeapProfiler_a02917db133b7efd468c9c73075a15171}{Start\+Tracking\+Heap\+Objects} (bool track\+\_\+allocations=false)
 \item 
-Snapshot\+Object\+Id \hyperlink{classv8_1_1HeapProfiler_a87a69789d8dc75faa97011150ad17c8e}{Get\+Heap\+Stats} (\hyperlink{classv8_1_1OutputStream}{Output\+Stream} $\ast$stream)
+Snapshot\+Object\+Id \hyperlink{classv8_1_1HeapProfiler_a756d71126e0effc7543fb33e856dd738}{Get\+Heap\+Stats} (\hyperlink{classv8_1_1OutputStream}{Output\+Stream} $\ast$stream, int64\+\_\+t $\ast$timestamp\+\_\+us=N\+U\+L\+L)
 \item 
 void \hyperlink{classv8_1_1HeapProfiler_ae448d9474ae34781133d4a4547b08cb1}{Stop\+Tracking\+Heap\+Objects} ()
 \item 
 void \hyperlink{classv8_1_1HeapProfiler_a6a75bcc6d8350858597b6a6ce5e349a2}{Delete\+All\+Heap\+Snapshots} ()
 \item 
-void \hyperlink{classv8_1_1HeapProfiler_a7744cf111ad9c6b0b409841f8ed8bcdd}{Set\+Wrapper\+Class\+Info\+Provider} (uint16\+\_\+t class\+\_\+id, \hyperlink{classv8_1_1HeapProfiler_a696d8d6590879eeb5a4ad2814eafb599}{Wrapper\+Info\+Callback} callback)
+void \hyperlink{classv8_1_1HeapProfiler_a7744cf111ad9c6b0b409841f8ed8bcdd}{Set\+Wrapper\+Class\+Info\+Provider} (uint16\+\_\+t class\+\_\+id, \hyperlink{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}{Wrapper\+Info\+Callback} callback)
 \item 
 size\+\_\+t \hyperlink{classv8_1_1HeapProfiler_a76435e93466db7519fb31417ea39b13e}{Get\+Profiler\+Memory\+Size} ()
 \item 
@@ -56,9 +56,9 @@ static const uint16\+\_\+t \hyperlink{classv8_1_1HeapProfiler_a272c9af3ea5cd90a2
 Interface for controlling heap profiling. Instance of the profiler can be retrieved using \hyperlink{classv8_1_1Isolate_a9c48259615e8370f6f0efd27cd7f99a6}{v8\+::\+Isolate\+::\+Get\+Heap\+Profiler}. 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classv8_1_1HeapProfiler_a696d8d6590879eeb5a4ad2814eafb599}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Wrapper\+Info\+Callback@{Wrapper\+Info\+Callback}}
+\hypertarget{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Wrapper\+Info\+Callback@{Wrapper\+Info\+Callback}}
 \index{Wrapper\+Info\+Callback@{Wrapper\+Info\+Callback}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
-\subsubsection[{Wrapper\+Info\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Retained\+Object\+Info}$\ast$($\ast$ v8\+::\+Heap\+Profiler\+::\+Wrapper\+Info\+Callback) (uint16\+\_\+t class\+\_\+id, {\bf Handle}$<$ {\bf Value} $>$ wrapper)}\label{classv8_1_1HeapProfiler_a696d8d6590879eeb5a4ad2814eafb599}
+\subsubsection[{Wrapper\+Info\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Retained\+Object\+Info}$\ast$($\ast$ v8\+::\+Heap\+Profiler\+::\+Wrapper\+Info\+Callback) (uint16\+\_\+t class\+\_\+id, {\bf Local}$<$ {\bf Value} $>$ wrapper)}\label{classv8_1_1HeapProfiler_a677025dd201fd832e0464e5ab0b0d0d4}
 Callback function invoked for obtaining \hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info} for the given Java\+Script wrapper object. It is prohibited to enter \hyperlink{classv8_1_1V8}{V8} while the callback is running\+: only getters on the handle and Get\+Pointer\+From\+Internal\+Field on the objects are allowed. 
 
 \subsection{Member Function Documentation}
@@ -76,13 +76,13 @@ Clears internal map from Snapshot\+Object\+Id to heap object. The new objects wi
 {}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1HeapProfiler_a6a75bcc6d8350858597b6a6ce5e349a2}
-Deletes all snapshots taken. All previously returned pointers to snapshots and their contents become invalid after this call. \hypertarget{classv8_1_1HeapProfiler_ab2fdc8f223c13436cc2136b99cb92a17}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Find\+Object\+By\+Id@{Find\+Object\+By\+Id}}
+Deletes all snapshots taken. All previously returned pointers to snapshots and their contents become invalid after this call. \hypertarget{classv8_1_1HeapProfiler_ace729f9b7dbb2ca8b2fd67551bf5aae8}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Find\+Object\+By\+Id@{Find\+Object\+By\+Id}}
 \index{Find\+Object\+By\+Id@{Find\+Object\+By\+Id}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
-\subsubsection[{Find\+Object\+By\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf Value}$>$ v8\+::\+Heap\+Profiler\+::\+Find\+Object\+By\+Id (
+\subsubsection[{Find\+Object\+By\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Value}$>$ v8\+::\+Heap\+Profiler\+::\+Find\+Object\+By\+Id (
 \begin{DoxyParamCaption}
 \item[{Snapshot\+Object\+Id}]{id}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1HeapProfiler_ab2fdc8f223c13436cc2136b99cb92a17}
+)}\label{classv8_1_1HeapProfiler_ace729f9b7dbb2ca8b2fd67551bf5aae8}
 Returns heap object with given Snapshot\+Object\+Id if the object is alive, otherwise empty handle is returned. \hypertarget{classv8_1_1HeapProfiler_af9093f6ca6e5558315f354c7ccb55484}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Heap\+Snapshot@{Get\+Heap\+Snapshot}}
 \index{Get\+Heap\+Snapshot@{Get\+Heap\+Snapshot}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection[{Get\+Heap\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Heap\+Snapshot}$\ast$ v8\+::\+Heap\+Profiler\+::\+Get\+Heap\+Snapshot (
@@ -90,22 +90,23 @@ Returns heap object with given Snapshot\+Object\+Id if the object is alive, othe
 \item[{int}]{index}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1HeapProfiler_af9093f6ca6e5558315f354c7ccb55484}
-Returns a snapshot by index. \hypertarget{classv8_1_1HeapProfiler_a87a69789d8dc75faa97011150ad17c8e}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Heap\+Stats@{Get\+Heap\+Stats}}
+Returns a snapshot by index. \hypertarget{classv8_1_1HeapProfiler_a756d71126e0effc7543fb33e856dd738}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Heap\+Stats@{Get\+Heap\+Stats}}
 \index{Get\+Heap\+Stats@{Get\+Heap\+Stats}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection[{Get\+Heap\+Stats}]{\setlength{\rightskip}{0pt plus 5cm}Snapshot\+Object\+Id v8\+::\+Heap\+Profiler\+::\+Get\+Heap\+Stats (
 \begin{DoxyParamCaption}
-\item[{{\bf Output\+Stream} $\ast$}]{stream}
+\item[{{\bf Output\+Stream} $\ast$}]{stream, }
+\item[{int64\+\_\+t $\ast$}]{timestamp\+\_\+us = {\ttfamily NULL}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1HeapProfiler_a87a69789d8dc75faa97011150ad17c8e}
-Adds a new time interval entry to the aggregated statistics array. The time interval entry contains information on the current heap objects population size. The method also updates aggregated statistics and reports updates for all previous time intervals via the \hyperlink{classv8_1_1OutputStream}{Output\+Stream} object. Updates on each time interval are provided as a stream of the \hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update} structure instances. The return value of the function is the last seen heap object Id.
+)}\label{classv8_1_1HeapProfiler_a756d71126e0effc7543fb33e856dd738}
+Adds a new time interval entry to the aggregated statistics array. The time interval entry contains information on the current heap objects population size. The method also updates aggregated statistics and reports updates for all previous time intervals via the \hyperlink{classv8_1_1OutputStream}{Output\+Stream} object. Updates on each time interval are provided as a stream of the \hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update} structure instances. If $\vert$timestamp\+\_\+us$\vert$ is supplied, timestamp of the new entry will be written into it. The return value of the function is the last seen heap object Id.
 
-Start\+Tracking\+Heap\+Objects must be called before the first call to this method. \hypertarget{classv8_1_1HeapProfiler_a03157eb3b1d28e602832026f95c6e3fb}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Object\+Id@{Get\+Object\+Id}}
+Start\+Tracking\+Heap\+Objects must be called before the first call to this method. \hypertarget{classv8_1_1HeapProfiler_ab926a1f1ed95b731d4ef3133e67eef19}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Object\+Id@{Get\+Object\+Id}}
 \index{Get\+Object\+Id@{Get\+Object\+Id}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection[{Get\+Object\+Id}]{\setlength{\rightskip}{0pt plus 5cm}Snapshot\+Object\+Id v8\+::\+Heap\+Profiler\+::\+Get\+Object\+Id (
 \begin{DoxyParamCaption}
-\item[{{\bf Handle}$<$ {\bf Value} $>$}]{value}
+\item[{{\bf Local}$<$ {\bf Value} $>$}]{value}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1HeapProfiler_a03157eb3b1d28e602832026f95c6e3fb}
+)}\label{classv8_1_1HeapProfiler_ab926a1f1ed95b731d4ef3133e67eef19}
 Returns Snapshot\+Object\+Id for a heap object referenced by $\vert$value$\vert$ if it has been seen by the heap profiler, k\+Unknown\+Object\+Id otherwise. \hypertarget{classv8_1_1HeapProfiler_a76435e93466db7519fb31417ea39b13e}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Get\+Profiler\+Memory\+Size@{Get\+Profiler\+Memory\+Size}}
 \index{Get\+Profiler\+Memory\+Size@{Get\+Profiler\+Memory\+Size}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection[{Get\+Profiler\+Memory\+Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Heap\+Profiler\+::\+Get\+Profiler\+Memory\+Size (
@@ -152,16 +153,15 @@ $\vert$track\+\_\+allocations$\vert$ parameter controls whether stack trace of e
 {}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1HeapProfiler_ae448d9474ae34781133d4a4547b08cb1}
-Stops tracking of heap objects population statistics, cleans up all collected data. Start\+Heap\+Objects\+Tracking must be called again prior to calling Push\+Heap\+Objects\+Stats next time. \hypertarget{classv8_1_1HeapProfiler_acaff4d33babbca49a7308c89e2d910cc}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Take\+Heap\+Snapshot@{Take\+Heap\+Snapshot}}
+Stops tracking of heap objects population statistics, cleans up all collected data. Start\+Heap\+Objects\+Tracking must be called again prior to calling Get\+Heap\+Stats next time. \hypertarget{classv8_1_1HeapProfiler_a4af9159585ab024175d8eff551804ea8}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!Take\+Heap\+Snapshot@{Take\+Heap\+Snapshot}}
 \index{Take\+Heap\+Snapshot@{Take\+Heap\+Snapshot}!v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}}
 \subsubsection[{Take\+Heap\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Heap\+Snapshot}$\ast$ v8\+::\+Heap\+Profiler\+::\+Take\+Heap\+Snapshot (
 \begin{DoxyParamCaption}
-\item[{{\bf Handle}$<$ {\bf String} $>$}]{title, }
 \item[{{\bf Activity\+Control} $\ast$}]{control = {\ttfamily NULL}, }
 \item[{{\bf Object\+Name\+Resolver} $\ast$}]{global\+\_\+object\+\_\+name\+\_\+resolver = {\ttfamily NULL}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1HeapProfiler_acaff4d33babbca49a7308c89e2d910cc}
-Takes a heap snapshot and returns it. Title may be an empty string. 
+)}\label{classv8_1_1HeapProfiler_a4af9159585ab024175d8eff551804ea8}
+Takes a heap snapshot and returns it. 
 
 \subsection{Field Documentation}
 \hypertarget{classv8_1_1HeapProfiler_a272c9af3ea5cd90a2737af3d22a7eb78}{}\index{v8\+::\+Heap\+Profiler@{v8\+::\+Heap\+Profiler}!k\+Persistent\+Handle\+No\+Class\+Id@{k\+Persistent\+Handle\+No\+Class\+Id}}

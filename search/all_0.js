@@ -6,10 +6,10 @@ var searchData=
   ['accesstype',['AccessType',['../namespacev8.html#add8bef6469c5b94706584124e610046c',1,'v8']]],
   ['activitycontrol',['ActivityControl',['../classv8_1_1ActivityControl.html',1,'v8']]],
   ['addcallcompletedcallback',['AddCallCompletedCallback',['../classv8_1_1Isolate.html#a89656ac26d523c31fbfdbb12fb32f078',1,'v8::Isolate']]],
-  ['addgcepiloguecallback',['AddGCEpilogueCallback',['../classv8_1_1Isolate.html#add9cac1ffd6cb1b7ed6b0956cebae129',1,'v8::Isolate::AddGCEpilogueCallback()'],['../classv8_1_1V8.html#a37aadf3536c772eb5bbf67fa7822679a',1,'v8::V8::AddGCEpilogueCallback()']]],
-  ['addgcprologuecallback',['AddGCPrologueCallback',['../classv8_1_1Isolate.html#ac5614f2eae055c949927bc8daddf90c3',1,'v8::Isolate::AddGCPrologueCallback()'],['../classv8_1_1V8.html#a49c016f17c67f700387f801b2b29b5ab',1,'v8::V8::AddGCPrologueCallback()']]],
-  ['addmemoryallocationcallback',['AddMemoryAllocationCallback',['../classv8_1_1Isolate.html#acff413b8633aa13f1308697c0ce8c5fa',1,'v8::Isolate::AddMemoryAllocationCallback()'],['../classv8_1_1V8.html#ad2d640d45bc1a675c5605bb9c5958b29',1,'v8::V8::AddMemoryAllocationCallback()']]],
-  ['addmessagelistener',['AddMessageListener',['../classv8_1_1Isolate.html#ae160d90f70a522dca66b8929762598a2',1,'v8::Isolate::AddMessageListener()'],['../classv8_1_1V8.html#a4e8ca19596400bd4df6a345f66daf937',1,'v8::V8::AddMessageListener()']]],
+  ['addgcepiloguecallback',['AddGCEpilogueCallback',['../classv8_1_1Isolate.html#add9cac1ffd6cb1b7ed6b0956cebae129',1,'v8::Isolate']]],
+  ['addgcprologuecallback',['AddGCPrologueCallback',['../classv8_1_1Isolate.html#ac5614f2eae055c949927bc8daddf90c3',1,'v8::Isolate']]],
+  ['addmemoryallocationcallback',['AddMemoryAllocationCallback',['../classv8_1_1Isolate.html#acff413b8633aa13f1308697c0ce8c5fa',1,'v8::Isolate']]],
+  ['addmessagelistener',['AddMessageListener',['../classv8_1_1Isolate.html#a1aaf99c9ce853fdece7a3b8fc4df49d5',1,'v8::Isolate']]],
   ['adjustamountofexternalallocatedmemory',['AdjustAmountOfExternalAllocatedMemory',['../classv8_1_1Isolate.html#aaeda5fa60961a3d9d476c46200e30711',1,'v8::Isolate']]],
   ['alignofhelper',['AlignOfHelper',['../classv8_1_1AlignOfHelper.html',1,'v8']]],
   ['allocate',['Allocate',['../classv8_1_1ArrayBuffer_1_1Allocator.html#a106b0d80120ed04fe9b9675e96f0340b',1,'v8::ArrayBuffer::Allocator']]],
@@ -18,9 +18,10 @@ var searchData=
   ['allowcodegenerationfromstrings',['AllowCodeGenerationFromStrings',['../classv8_1_1Context.html#a794ccc42113566f5d363f89c8b0d3c2c',1,'v8::Context']]],
   ['allowcodegenerationfromstringscallback',['AllowCodeGenerationFromStringsCallback',['../namespacev8.html#a521d909ec201742a1cb35d50a8e2a3c2',1,'v8']]],
   ['allowjavascriptexecutionscope',['AllowJavascriptExecutionScope',['../classv8_1_1Isolate_1_1AllowJavascriptExecutionScope.html',1,'v8::Isolate']]],
-  ['append',['Append',['../classv8_1_1PersistentValueVector.html#a02376c6d16be29084db46f65473477fb',1,'v8::PersistentValueVector::Append(Local&lt; V &gt; value)'],['../classv8_1_1PersistentValueVector.html#aff8a1aca35be80ac9744c5100ae2dae0',1,'v8::PersistentValueVector::Append(UniquePersistent&lt; V &gt; persistent)']]],
+  ['append',['Append',['../classv8_1_1PersistentValueVector.html#a02376c6d16be29084db46f65473477fb',1,'v8::PersistentValueVector::Append(Local&lt; V &gt; value)'],['../classv8_1_1PersistentValueVector.html#ad076923fd0046196670e87e996582546',1,'v8::PersistentValueVector::Append(Global&lt; V &gt; persistent)']]],
   ['array',['Array',['../classv8_1_1Array.html',1,'v8']]],
+  ['array_5fbuffer_5fallocator',['array_buffer_allocator',['../structv8_1_1Isolate_1_1CreateParams.html#a7c663f70b64290392eeaf164f57585f9',1,'v8::Isolate::CreateParams']]],
   ['arraybuffer',['ArrayBuffer',['../classv8_1_1ArrayBuffer.html',1,'v8']]],
   ['arraybufferview',['ArrayBufferView',['../classv8_1_1ArrayBufferView.html',1,'v8']]],
-  ['asarray',['AsArray',['../classv8_1_1StackTrace.html#abd36f712b3ab986b572aa259b06bf5bd',1,'v8::StackTrace']]]
+  ['asarray',['AsArray',['../classv8_1_1StackTrace.html#abd36f712b3ab986b572aa259b06bf5bd',1,'v8::StackTrace::AsArray()'],['../classv8_1_1Map.html#ac96dc797cda4ad65bcc3352f8fd74d18',1,'v8::Map::AsArray()'],['../classv8_1_1Set.html#a842e7012acb15f502f9a87d0c7c0b78d',1,'v8::Set::AsArray()']]]
 ];

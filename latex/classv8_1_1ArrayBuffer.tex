@@ -29,13 +29,15 @@ bool \hyperlink{classv8_1_1ArrayBuffer_aed177cd83c3368837f740fa2929b3c8d}{Is\+Ne
 void \hyperlink{classv8_1_1ArrayBuffer_a3420f7d38a8fe20e8f40fb82e6acb325}{Neuter} ()
 \item 
 \hyperlink{classv8_1_1ArrayBuffer_1_1Contents}{Contents} \hyperlink{classv8_1_1ArrayBuffer_a8b90b72486cfacb4fbec157f4803f889}{Externalize} ()
+\item 
+\hyperlink{classv8_1_1ArrayBuffer_1_1Contents}{Contents} \hyperlink{classv8_1_1ArrayBuffer_ae44291df12ca35de9b519e7372aa640a}{Get\+Contents} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} $>$ \hyperlink{classv8_1_1ArrayBuffer_ad752e03d7cc7fe863656ad6183785ab7}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, size\+\_\+t byte\+\_\+length)
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} $>$ \hyperlink{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, void $\ast$data, size\+\_\+t byte\+\_\+length)
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} $>$ \hyperlink{classv8_1_1ArrayBuffer_acc65e714766b0d0d791b0d43ec52d0bb}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, void $\ast$data, size\+\_\+t byte\+\_\+length, Array\+Buffer\+Creation\+Mode mode=Array\+Buffer\+Creation\+Mode\+::k\+Externalized)
 \item 
 \hypertarget{classv8_1_1ArrayBuffer_a4b0a703ae34217507a8ebc9cabf7336a}{}static V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)\label{classv8_1_1ArrayBuffer_a4b0a703ae34217507a8ebc9cabf7336a}
 
@@ -68,14 +70,25 @@ An instance of the built-\/in \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} 
 )}\label{classv8_1_1ArrayBuffer_a8b90b72486cfacb4fbec157f4803f889}
 Make this \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} external. The pointer to underlying memory block and byte length are returned as $\vert$\+Contents$\vert$ structure. After \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} had been etxrenalized, it does no longer owns the memory block. The caller should take steps to free memory when it is no longer needed.
 
-The memory block is guaranteed to be allocated with $\vert$\+Allocator\+::\+Allocate$\vert$ that has been set with \hyperlink{classv8_1_1V8_abc40950a39f8cb6946dc8a1ad41eea84}{V8\+::\+Set\+Array\+Buffer\+Allocator}. \hypertarget{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Is\+External@{Is\+External}}
+The memory block is guaranteed to be allocated with $\vert$\+Allocator\+::\+Allocate$\vert$ that has been set via \hyperlink{structv8_1_1Isolate_1_1CreateParams}{Isolate\+::\+Create\+Params}. \hypertarget{classv8_1_1ArrayBuffer_ae44291df12ca35de9b519e7372aa640a}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Get\+Contents@{Get\+Contents}}
+\index{Get\+Contents@{Get\+Contents}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
+\subsubsection[{Get\+Contents}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contents} v8\+::\+Array\+Buffer\+::\+Get\+Contents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1ArrayBuffer_ae44291df12ca35de9b519e7372aa640a}
+Get a pointer to the \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}\textquotesingle{}s underlying memory block without externalizing it. If the \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} is not externalized, this pointer will become invalid as soon as the \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} became garbage collected.
+
+The embedder should make sure to hold a strong reference to the \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} while accessing this pointer.
+
+The memory block is guaranteed to be allocated with $\vert$\+Allocator\+::\+Allocate$\vert$. \hypertarget{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Is\+External@{Is\+External}}
 \index{Is\+External@{Is\+External}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
 \subsubsection[{Is\+External}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Array\+Buffer\+::\+Is\+External (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 ) const}\label{classv8_1_1ArrayBuffer_a50dd263917559439525048c623425c6f}
-Returns true if \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} is extrenalized, that is, does not own its memory block. \hypertarget{classv8_1_1ArrayBuffer_aed177cd83c3368837f740fa2929b3c8d}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Is\+Neuterable@{Is\+Neuterable}}
+Returns true if \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} is externalized, that is, does not own its memory block. \hypertarget{classv8_1_1ArrayBuffer_aed177cd83c3368837f740fa2929b3c8d}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!Is\+Neuterable@{Is\+Neuterable}}
 \index{Is\+Neuterable@{Is\+Neuterable}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
 \subsubsection[{Is\+Neuterable}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Array\+Buffer\+::\+Is\+Neuterable (
 \begin{DoxyParamCaption}
@@ -97,16 +110,17 @@ Neuters this \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} and all its views
 \item[{size\+\_\+t}]{byte\+\_\+length}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ArrayBuffer_ad752e03d7cc7fe863656ad6183785ab7}
-Create a new \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}. Allocate $\vert$byte\+\_\+length$\vert$ bytes. Allocated memory will be owned by a created \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} and will be deallocated when it is garbage-\/collected, unless the object is externalized. \hypertarget{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!New@{New}}
+Create a new \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}. Allocate $\vert$byte\+\_\+length$\vert$ bytes. Allocated memory will be owned by a created \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} and will be deallocated when it is garbage-\/collected, unless the object is externalized. \hypertarget{classv8_1_1ArrayBuffer_acc65e714766b0d0d791b0d43ec52d0bb}{}\index{v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}!New@{New}}
 \index{New@{New}!v8\+::\+Array\+Buffer@{v8\+::\+Array\+Buffer}}
 \subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array\+Buffer}$>$ v8\+::\+Array\+Buffer\+::\+New (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
 \item[{void $\ast$}]{data, }
-\item[{size\+\_\+t}]{byte\+\_\+length}
+\item[{size\+\_\+t}]{byte\+\_\+length, }
+\item[{Array\+Buffer\+Creation\+Mode}]{mode = {\ttfamily ArrayBufferCreationMode\+:\+:kExternalized}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ArrayBuffer_ad3e0120ae80077d607d5645c4f647932}
-Create a new \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} over an existing memory block. The created array buffer is immediately in externalized state. The memory block will not be reclaimed when a created \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} is garbage-\/collected. 
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1ArrayBuffer_acc65e714766b0d0d791b0d43ec52d0bb}
+Create a new \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} over an existing memory block. The created array buffer is by default immediately in externalized state. The memory block will not be reclaimed when a created \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} is garbage-\/collected. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

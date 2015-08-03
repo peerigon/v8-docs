@@ -116,7 +116,8 @@ Public Types</h2></td></tr>
 <b>kConsString</b> = 10, 
 <b>kSlicedString</b> = 11, 
 <br />
-&#160;&#160;<b>kSymbol</b> = 12
+&#160;&#160;<b>kSymbol</b> = 12, 
+<b>kSimdValue</b> = 13
 <br />
  }</td></tr>
 <tr class="separator:ab674a58103a51abc56f99edc6a1479ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,12 +126,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e07fc855bded52229e62b855fa08c5d"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapGraphNode.html#a5e07fc855bded52229e62b855fa08c5d">GetType</a> () const </td></tr>
 <tr class="separator:a5e07fc855bded52229e62b855fa08c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f24ee6c07a57814e18bd317cb5576a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapGraphNode.html#af5f24ee6c07a57814e18bd317cb5576a">GetName</a> () const </td></tr>
-<tr class="separator:af5f24ee6c07a57814e18bd317cb5576a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd02d17040ae74f40d60d921795aacdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapGraphNode.html#afd02d17040ae74f40d60d921795aacdb">GetName</a> () const </td></tr>
+<tr class="separator:afd02d17040ae74f40d60d921795aacdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0faf2a07888af9ca938b3ac089500b4c"><td class="memItemLeft" align="right" valign="top">SnapshotObjectId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapGraphNode.html#a0faf2a07888af9ca938b3ac089500b4c">GetId</a> () const </td></tr>
 <tr class="separator:a0faf2a07888af9ca938b3ac089500b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c5bd1eebaa351d90db71311168729a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapGraphNode.html#af0c5bd1eebaa351d90db71311168729a">V8_DEPRECATED</a> (&quot;Use <a class="el" href="classv8_1_1HeapGraphNode.html#a5f6f1e87efce0b297c3ffad0b50f34d5">GetShallowSize</a> instead&quot;, int GetSelfSize() const)</td></tr>
-<tr class="separator:af0c5bd1eebaa351d90db71311168729a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f6f1e87efce0b297c3ffad0b50f34d5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapGraphNode.html#a5f6f1e87efce0b297c3ffad0b50f34d5">GetShallowSize</a> () const </td></tr>
 <tr class="separator:a5f6f1e87efce0b297c3ffad0b50f34d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a49abe006755dd5536d15ae42f552d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapGraphNode.html#a0a49abe006755dd5536d15ae42f552d4">GetChildrenCount</a> () const </td></tr>
@@ -190,12 +189,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af5f24ee6c07a57814e18bd317cb5576a"></a>
+<a class="anchor" id="afd02d17040ae74f40d60d921795aacdb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt;<a class="el" href="classv8_1_1String.html">String</a>&gt; v8::HeapGraphNode::GetName </td>
+          <td class="memname"><a class="el" href="classv8_1_1Local.html">Local</a>&lt;<a class="el" href="classv8_1_1String.html">String</a>&gt; v8::HeapGraphNode::GetName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -238,40 +237,13 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af0c5bd1eebaa351d90db71311168729a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">v8::HeapGraphNode::V8_DEPRECATED </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Use <a class="el" href="classv8_1_1HeapGraphNode.html#a5f6f1e87efce0b297c3ffad0b50f34d5">GetShallowSize</a> instead&quot;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int GetSelfSize()&#160;</td>
-          <td class="paramname"><em>const</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns node's own size, in bytes. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>v8/include/<a class="el" href="v8-profiler_8h_source.html">v8-profiler.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:45 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:01 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1Isolate.html#a5ae00cc99d8aca148c6f5f9698c432c9">v8::Isolate</a>
 </li>
 <li>Get()
-: <a class="el" href="classv8_1_1PersistentValueMap.html#a1a09e4ab271a5a68e3a8d01691bd79cb">v8::PersistentValueMap&lt; K, V, Traits &gt;</a>
+: <a class="el" href="classv8_1_1PersistentValueMapBase.html#a16b8f906ea42036c2f37d44813bf2a72">v8::PersistentValueMapBase&lt; K, V, Traits &gt;</a>
 , <a class="el" href="classv8_1_1PersistentValueVector.html#a7b47cacf60ddfa3e2a7f57d788f18b84">v8::PersistentValueVector&lt; V, Traits &gt;</a>
 </li>
 <li>GetAlignedPointerFromEmbedderData()
@@ -143,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1Function.html#a937dc089e1ef728eec4a628072250e4d">v8::Function</a>
 </li>
 <li>GetCallbackData()
-: <a class="el" href="classv8_1_1Debug_1_1EventDetails.html#a3c1eff8397db7c91e9c687f48d400665">v8::Debug::EventDetails</a>
+: <a class="el" href="classv8_1_1Debug_1_1EventDetails.html#aedd8014bb1bd644e227774d07ed9784d">v8::Debug::EventDetails</a>
 </li>
 <li>GetCallingContext()
 : <a class="el" href="classv8_1_1Isolate.html#a2fba719b7a022ece0b0bfe55f52b3138">v8::Isolate</a>
@@ -175,11 +175,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetColumnNumber()
 : <a class="el" href="classv8_1_1CpuProfileNode.html#a43cf237ea6f254a61a6e2a81d554aa1a">v8::CpuProfileNode</a>
 </li>
-<li>GetCompressedStartupDataAlgorithm()
-: <a class="el" href="classv8_1_1V8.html#a6d1b72d0cecdc64d0a0b8e784025b625">v8::V8</a>
-</li>
 <li>GetConstructorName()
 : <a class="el" href="classv8_1_1Object.html#a7bbe987794658f20a3ec1b68326305e6">v8::Object</a>
+</li>
+<li>GetContents()
+: <a class="el" href="classv8_1_1ArrayBuffer.html#ae44291df12ca35de9b519e7372aa640a">v8::ArrayBuffer</a>
+, <a class="el" href="classv8_1_1SharedArrayBuffer.html#af5a160b645c5c674450d9501697c2cf4">v8::SharedArrayBuffer</a>
 </li>
 <li>GetCpuProfiler()
 : <a class="el" href="classv8_1_1Isolate.html#a7eb415d9210d912aa57877ab6416fec8">v8::Isolate</a>
@@ -196,17 +197,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetDebugContext()
 : <a class="el" href="classv8_1_1Debug.html#a2343a321b0db41324b7e8a7402f57cf0">v8::Debug</a>
 </li>
+<li>GetDeoptInfos()
+: <a class="el" href="classv8_1_1CpuProfileNode.html#aaca90265c1dd6dc0ba39c3d0af24ae5c">v8::CpuProfileNode</a>
+</li>
 <li>GetDisplayName()
-: <a class="el" href="classv8_1_1Function.html#a02e860b1d4f1b58a0c437fec8ea9e290">v8::Function</a>
+: <a class="el" href="classv8_1_1Function.html#a71bbe599304109844270e6e03827b02b">v8::Function</a>
 </li>
 <li>GetElementCount()
 : <a class="el" href="classv8_1_1RetainedObjectInfo.html#ae6865597469bc7d28bd8ec71b4b890bd">v8::RetainedObjectInfo</a>
 </li>
 <li>GetEmbedderData()
 : <a class="el" href="classv8_1_1Context.html#a9cfafe0ac56f6aee17eb80a913489296">v8::Context</a>
-</li>
-<li>GetEndColumn()
-: <a class="el" href="classv8_1_1Message.html#aaf82cd7f7449add5f50d4253499cad05">v8::Message</a>
 </li>
 <li>GetEndPosition()
 : <a class="el" href="classv8_1_1Message.html#a50cbec87379e628b1647466926882037">v8::Message</a>
@@ -221,12 +222,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1Debug_1_1EventDetails.html#ac871568e8cfd43bbf2cdac62add34ed0">v8::Debug::EventDetails</a>
 </li>
 <li>GetEventContext()
-: <a class="el" href="classv8_1_1Debug_1_1EventDetails.html#a2c98fc8b2848105c37fc60a04b35dfa5">v8::Debug::EventDetails</a>
-, <a class="el" href="classv8_1_1Debug_1_1Message.html#a34ff90d879888746a7a0eacebd6aa088">v8::Debug::Message</a>
+: <a class="el" href="classv8_1_1Debug_1_1EventDetails.html#aaa7573eeab71d8c4e914daeccddff77f">v8::Debug::EventDetails</a>
+, <a class="el" href="classv8_1_1Debug_1_1Message.html#ab6632d15830b5c5f474a4da36405478d">v8::Debug::Message</a>
 </li>
 <li>GetExecutionState()
-: <a class="el" href="classv8_1_1Debug_1_1EventDetails.html#abf0997988e1e3f0780c0d3f19b4e3b8a">v8::Debug::EventDetails</a>
-, <a class="el" href="classv8_1_1Debug_1_1Message.html#aa54e11b06d304e8b8f34cc79ee49d869">v8::Debug::Message</a>
+: <a class="el" href="classv8_1_1Debug_1_1EventDetails.html#a201fabdd6d81f711c1b8805c94f09d3e">v8::Debug::EventDetails</a>
+, <a class="el" href="classv8_1_1Debug_1_1Message.html#a0e20677046473f0bdcdc8656cdff1651">v8::Debug::Message</a>
 </li>
 <li>GetExternalOneByteStringResource()
 : <a class="el" href="classv8_1_1String.html#ac8497aa76a576f965042812d5efa95b2">v8::String</a>
@@ -236,6 +237,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>GetExternalStringResourceBase()
 : <a class="el" href="classv8_1_1String.html#a471cf0e3ca135d839e59d25da66894e0">v8::String</a>
+</li>
+<li>GetExtrasExportsObject()
+: <a class="el" href="classv8_1_1Context.html#a2cd122a87260f80cc3e70656d5b17491">v8::Context</a>
 </li>
 <li>GetFlags()
 : <a class="el" href="classv8_1_1RegExp.html#ad5a5e77e6e626b3c7c69eef7ba2908cc">v8::RegExp</a>
@@ -249,11 +253,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetFromNode()
 : <a class="el" href="classv8_1_1HeapGraphEdge.html#acd43a5082f1862b7c0c0094fc75af631">v8::HeapGraphEdge</a>
 </li>
-<li>GetFunction()
-: <a class="el" href="classv8_1_1FunctionTemplate.html#a3b8e5e214b2ee34c36138961ebac696a">v8::FunctionTemplate</a>
-</li>
 <li>GetFunctionName()
-: <a class="el" href="classv8_1_1CpuProfileNode.html#affbc7842b66986012285602ab65aa5f8">v8::CpuProfileNode</a>
+: <a class="el" href="classv8_1_1CpuProfileNode.html#ab93a8d88fbb77a6136af4aeda92fd622">v8::CpuProfileNode</a>
 , <a class="el" href="classv8_1_1StackFrame.html#ac13cdea4b4253d82485e673de6264073">v8::StackFrame</a>
 </li>
 <li>GetGroupLabel()
@@ -262,17 +263,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetHash()
 : <a class="el" href="classv8_1_1RetainedObjectInfo.html#a6fdbfa242b95615e63f08433419c8066">v8::RetainedObjectInfo</a>
 </li>
+<li>GetHeapObjectStatisticsAtLastGC()
+: <a class="el" href="classv8_1_1Isolate.html#a677681d4c3abfc1bc2e8b50c23623e24">v8::Isolate</a>
+</li>
 <li>GetHeapProfiler()
 : <a class="el" href="classv8_1_1Isolate.html#a9c48259615e8370f6f0efd27cd7f99a6">v8::Isolate</a>
 </li>
 <li>GetHeapSnapshot()
 : <a class="el" href="classv8_1_1HeapProfiler.html#af9093f6ca6e5558315f354c7ccb55484">v8::HeapProfiler</a>
 </li>
+<li>GetHeapSpaceStatistics()
+: <a class="el" href="classv8_1_1Isolate.html#a28ab96294ee07064cbba01e969b62cbc">v8::Isolate</a>
+</li>
 <li>GetHeapStatistics()
 : <a class="el" href="classv8_1_1Isolate.html#add32e78544edaf8946ed9b328167e5e4">v8::Isolate</a>
 </li>
 <li>GetHeapStats()
-: <a class="el" href="classv8_1_1HeapProfiler.html#a87a69789d8dc75faa97011150ad17c8e">v8::HeapProfiler</a>
+: <a class="el" href="classv8_1_1HeapProfiler.html#a756d71126e0effc7543fb33e856dd738">v8::HeapProfiler</a>
 </li>
 <li>GetHitCount()
 : <a class="el" href="classv8_1_1CpuProfileNode.html#a8d297f185b0bbd9f6853f6ed193b656e">v8::CpuProfileNode</a>
@@ -284,27 +291,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1HeapGraphNode.html#a0faf2a07888af9ca938b3ac089500b4c">v8::HeapGraphNode</a>
 </li>
 <li>GetIdentityHash()
-: <a class="el" href="classv8_1_1Object.html#ac1ece41e81a499920ec3a2a3471653bc">v8::Object</a>
+: <a class="el" href="classv8_1_1Name.html#aef60fce47685fad12914304f6bc52bf2">v8::Name</a>
+, <a class="el" href="classv8_1_1Object.html#ac1ece41e81a499920ec3a2a3471653bc">v8::Object</a>
 </li>
 <li>GetInferredName()
-: <a class="el" href="classv8_1_1Function.html#a5bd3ad2f8144be5d9b383b1cd9b30df5">v8::Function</a>
+: <a class="el" href="classv8_1_1Function.html#a2665736fdec019bc7d12003ef880f78f">v8::Function</a>
 </li>
 <li>GetInternalField()
 : <a class="el" href="classv8_1_1Object.html#aa3324fdf652d8ac3b2f27faa0559231d">v8::Object</a>
 </li>
+<li>GetInternalProperties()
+: <a class="el" href="classv8_1_1Debug.html#a10ef14b11ffdd57287f25b39dc728e07">v8::Debug</a>
+</li>
 <li>GetIsolate()
 : <a class="el" href="classv8_1_1Context.html#af55552d8658ecb20eff7af2c83e8ede2">v8::Context</a>
-, <a class="el" href="classv8_1_1Object.html#ab991b53d50ab3ce53179e927e52b24f5">v8::Object</a>
 </li>
 <li>GetJSON()
-: <a class="el" href="classv8_1_1Debug_1_1Message.html#a41076f64f82c927cbb2fe5c8325557d5">v8::Debug::Message</a>
+: <a class="el" href="classv8_1_1Debug_1_1Message.html#ad1cc300c42a92890bfab4122fa657ea5">v8::Debug::Message</a>
 </li>
 <li>GetLabel()
 : <a class="el" href="classv8_1_1RetainedObjectInfo.html#ad19106fc7f0499fd45005077551d54c0">v8::RetainedObjectInfo</a>
 </li>
 <li>GetLineNumber()
 : <a class="el" href="classv8_1_1CpuProfileNode.html#a45ea035661c7152e4f3eb47f73787a75">v8::CpuProfileNode</a>
-, <a class="el" href="classv8_1_1Message.html#a67f97fd76b8f98ed65743b9615d64a79">v8::Message</a>
 , <a class="el" href="classv8_1_1StackFrame.html#a57886e590ac1a4c57ee6f6bf1009b5b1">v8::StackFrame</a>
 , <a class="el" href="classv8_1_1UnboundScript.html#a020ca8bbe6ea2313aeedc993ccac3741">v8::UnboundScript</a>
 </li>
@@ -314,16 +323,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetMaxSnapshotJSObjectId()
 : <a class="el" href="classv8_1_1HeapSnapshot.html#a4a0fc79b7ef74a3a5ea3450b2354d8ed">v8::HeapSnapshot</a>
 </li>
-<li>GetMirror()
-: <a class="el" href="classv8_1_1Debug.html#aa7d07c7d5c9ee2eaaa9af310bcbf58f5">v8::Debug</a>
-</li>
 <li>GetMoreData()
 : <a class="el" href="classv8_1_1ScriptCompiler_1_1ExternalSourceStream.html#ac3a0221b5725f0b612a6342d8e83d899">v8::ScriptCompiler::ExternalSourceStream</a>
 </li>
 <li>GetName()
-: <a class="el" href="classv8_1_1HeapGraphEdge.html#aa91362db6bfdbecfc48d3ba57d292705">v8::HeapGraphEdge</a>
-, <a class="el" href="classv8_1_1HeapGraphNode.html#af5f24ee6c07a57814e18bd317cb5576a">v8::HeapGraphNode</a>
-, <a class="el" href="classv8_1_1HeapProfiler_1_1ObjectNameResolver.html#ad0d7c5b2ac71e468b2e05f18a590d3ae">v8::HeapProfiler::ObjectNameResolver</a>
+: <a class="el" href="classv8_1_1HeapGraphEdge.html#a295702dc31ef38dadb54143f2a76e12e">v8::HeapGraphEdge</a>
+, <a class="el" href="classv8_1_1HeapGraphNode.html#afd02d17040ae74f40d60d921795aacdb">v8::HeapGraphNode</a>
+, <a class="el" href="classv8_1_1HeapProfiler_1_1ObjectNameResolver.html#aa9ac9e83806c7c746b652f435cf66622">v8::HeapProfiler::ObjectNameResolver</a>
 </li>
 <li>GetNode()
 : <a class="el" href="classv8_1_1HeapSnapshot.html#ae67eb5a68dd648516f9d3879137d5c51">v8::HeapSnapshot</a>
@@ -341,13 +347,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1Isolate.html#a7060092fd45588f4085753b3da1b2c82">v8::Isolate</a>
 </li>
 <li>GetObjectId()
-: <a class="el" href="classv8_1_1HeapProfiler.html#a03157eb3b1d28e602832026f95c6e3fb">v8::HeapProfiler</a>
-</li>
-<li>GetOwnPropertyDescriptor()
-: <a class="el" href="classv8_1_1Object.html#aece53e208f3a25b3d5d47cfc134db49a">v8::Object</a>
-</li>
-<li>GetOwnPropertyNames()
-: <a class="el" href="classv8_1_1Object.html#aeb48075bdfb7b2b49fe08361a6c4d2a8">v8::Object</a>
+: <a class="el" href="classv8_1_1HeapProfiler.html#ab926a1f1ed95b731d4ef3133e67eef19">v8::HeapProfiler</a>
 </li>
 <li>GetProfilerMemorySize()
 : <a class="el" href="classv8_1_1HeapProfiler.html#a76435e93466db7519fb31417ea39b13e">v8::HeapProfiler</a>
@@ -355,23 +355,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>GetPromise()
 : <a class="el" href="classv8_1_1Promise_1_1Resolver.html#a41fd1ffef546a62e363a639935fc8ae3">v8::Promise::Resolver</a>
 </li>
-<li>GetPropertyAttributes()
-: <a class="el" href="classv8_1_1Object.html#a45506d0a9192b023284b0211e9bf545b">v8::Object</a>
-</li>
-<li>GetPropertyNames()
-: <a class="el" href="classv8_1_1Object.html#a9f45786246c6e6027b32f685d900a41f">v8::Object</a>
-</li>
 <li>GetPrototype()
 : <a class="el" href="classv8_1_1Object.html#ae8d3fed7d6dbd667c29cabb3039fe7af">v8::Object</a>
 </li>
-<li>GetRealNamedProperty()
-: <a class="el" href="classv8_1_1Object.html#a0eeeb35c6dc002a8359ebc445a49e964">v8::Object</a>
-</li>
-<li>GetRealNamedPropertyInPrototypeChain()
-: <a class="el" href="classv8_1_1Object.html#a36273f157697ff5e8e776a1461755182">v8::Object</a>
-</li>
 <li>GetReference()
-: <a class="el" href="classv8_1_1PersistentValueMap.html#a541cef25add45efef0586a258eeed1e3">v8::PersistentValueMap&lt; K, V, Traits &gt;</a>
+: <a class="el" href="classv8_1_1PersistentValueMapBase.html#a52e74c69b94c7ce77a65af9f32d68af4">v8::PersistentValueMapBase&lt; K, V, Traits &gt;</a>
 </li>
 <li>GetRoot()
 : <a class="el" href="classv8_1_1HeapSnapshot.html#aafd7abe35ce29f9874de6687c65bf2af">v8::HeapSnapshot</a>
@@ -405,11 +393,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1Message.html#ae0fc442f44bd2b600c4d89a50cf3abd9">v8::Message</a>
 </li>
 <li>GetScriptResourceName()
-: <a class="el" href="classv8_1_1CpuProfileNode.html#a140dd536e7096701a36be0083c18c268">v8::CpuProfileNode</a>
-, <a class="el" href="classv8_1_1Message.html#ac5d31afb758897cd1653c5eb3327a4d6">v8::Message</a>
+: <a class="el" href="classv8_1_1CpuProfileNode.html#a1f27527b39f1ed83f47f4cfd58b02950">v8::CpuProfileNode</a>
+, <a class="el" href="classv8_1_1Message.html#a66200e721dc4aa00568099ba67e9143a">v8::Message</a>
 </li>
 <li>GetSecurityToken()
-: <a class="el" href="classv8_1_1Context.html#a8e71e658633518ca7718c0f6e938c6a9">v8::Context</a>
+: <a class="el" href="classv8_1_1Context.html#a59d7bc98684603ec4d9b1d1db2acaad8">v8::Context</a>
 </li>
 <li>GetShallowSize()
 : <a class="el" href="classv8_1_1HeapGraphNode.html#a5f6f1e87efce0b297c3ffad0b50f34d5">v8::HeapGraphNode</a>
@@ -424,20 +412,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1RegExp.html#a448213f2a92d964ed260b51429d5e590">v8::RegExp</a>
 </li>
 <li>GetSourceMappingURL()
-: <a class="el" href="classv8_1_1UnboundScript.html#a00862170298ab31131a1fe43b6440f81">v8::UnboundScript</a>
+: <a class="el" href="classv8_1_1UnboundScript.html#ae237f900eb0821e4121f45de4151c7e8">v8::UnboundScript</a>
 </li>
 <li>GetSourceURL()
-: <a class="el" href="classv8_1_1UnboundScript.html#a415e7ba0382e95b9488e6125884754e0">v8::UnboundScript</a>
+: <a class="el" href="classv8_1_1UnboundScript.html#a08744c609e72aaf2899a708efd53249f">v8::UnboundScript</a>
 </li>
 <li>GetStackSample()
 : <a class="el" href="classv8_1_1Isolate.html#a8b173b48a477267ccd6c7d17c492b82e">v8::Isolate</a>
 </li>
 <li>GetStackTrace()
-: <a class="el" href="classv8_1_1Exception.html#a44fabf8f7c82643cba83f4fb6a31e22a">v8::Exception</a>
-, <a class="el" href="classv8_1_1Message.html#adeffa297a5a28955dd16c084632aa645">v8::Message</a>
-</li>
-<li>GetStartColumn()
-: <a class="el" href="classv8_1_1Message.html#aab8007ba81d3f195280bce0693810cc2">v8::Message</a>
+: <a class="el" href="classv8_1_1Exception.html#a81d1fd3c8d729e9a8d830bc2830bfe77">v8::Exception</a>
+, <a class="el" href="classv8_1_1Message.html#a42738680a1f28c495010a76b73373445">v8::Message</a>
 </li>
 <li>GetStartPosition()
 : <a class="el" href="classv8_1_1Message.html#a31a550a1d3d09a2d72d0742be821956f">v8::Message</a>
@@ -449,8 +434,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1Testing.html#adc876063b1e07462b8d9544dd8efab36">v8::Testing</a>
 </li>
 <li>GetTitle()
-: <a class="el" href="classv8_1_1CpuProfile.html#afbb44d5cf0a8729c9074aba03207e5cc">v8::CpuProfile</a>
-, <a class="el" href="classv8_1_1HeapSnapshot.html#a54d5d9e0234c2ee361892ea598624a82">v8::HeapSnapshot</a>
+: <a class="el" href="classv8_1_1CpuProfile.html#a34cc58f44862c27ea781ce47ca79f74e">v8::CpuProfile</a>
 </li>
 <li>GetToNode()
 : <a class="el" href="classv8_1_1HeapGraphEdge.html#ad8fd8fa121a0e778a8b120a0c5fa227c">v8::HeapGraphEdge</a>
@@ -462,9 +446,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classv8_1_1HeapGraphEdge.html#a7f4923098074ee4c47d901f363728d08">v8::HeapGraphEdge</a>
 , <a class="el" href="classv8_1_1HeapGraphNode.html#a5e07fc855bded52229e62b855fa08c5d">v8::HeapGraphNode</a>
 </li>
-<li>GetUid()
-: <a class="el" href="classv8_1_1HeapSnapshot.html#a8096d1dc0b99fbffc0f0618be8472ca7">v8::HeapSnapshot</a>
-</li>
 <li>GetUnboundScript()
 : <a class="el" href="classv8_1_1Script.html#afac25cad452a61897c375c2b881e2070">v8::Script</a>
 </li>
@@ -473,12 +454,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>Global()
 : <a class="el" href="classv8_1_1Context.html#af5cd9f97ef6a3307c1c21f80f4b743eb">v8::Context</a>
+, <a class="el" href="classv8_1_1Global.html#a8434bb6729eb4cd0cd85ad81bd8344ad">v8::Global&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:51 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:07 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

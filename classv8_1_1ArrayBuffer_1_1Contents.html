@@ -115,7 +115,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayBuffer</b></td>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The contents of an |ArrayBuffer|. Externalization of |ArrayBuffer| returns an instance of this class, populated, with a pointer to data and byte length.</p>
-<p>The <a class="el" href="classv8_1_1Data.html">Data</a> pointer of <a class="el" href="classv8_1_1ArrayBuffer_1_1Contents.html">ArrayBuffer::Contents</a> is always allocated with <a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html#a106b0d80120ed04fe9b9675e96f0340b">Allocator::Allocate</a> that is set with <a class="el" href="classv8_1_1V8.html#abc40950a39f8cb6946dc8a1ad41eea84">V8::SetArrayBufferAllocator</a>.</p>
+<p>The <a class="el" href="classv8_1_1Data.html">Data</a> pointer of <a class="el" href="classv8_1_1ArrayBuffer_1_1Contents.html">ArrayBuffer::Contents</a> is always allocated with <a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html#a106b0d80120ed04fe9b9675e96f0340b">Allocator::Allocate</a> that is set via <a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">Isolate::CreateParams</a>.</p>
 <p>This API is experimental and may change significantly. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>v8/include/<a class="el" href="v8_8h_source.html">v8.h</a></li>
@@ -123,7 +123,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayBuffer</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:43 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:02:58 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

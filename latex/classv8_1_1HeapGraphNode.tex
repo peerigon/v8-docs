@@ -23,7 +23,8 @@
 {\bfseries k\+Cons\+String} = 10, 
 {\bfseries k\+Sliced\+String} = 11, 
 \\*
-{\bfseries k\+Symbol} = 12
+{\bfseries k\+Symbol} = 12, 
+{\bfseries k\+Simd\+Value} = 13
  \}\label{classv8_1_1HeapGraphNode_ab674a58103a51abc56f99edc6a1479ed}
 
 \end{DoxyCompactItemize}
@@ -32,11 +33,9 @@
 \item 
 Type \hyperlink{classv8_1_1HeapGraphNode_a5e07fc855bded52229e62b855fa08c5d}{Get\+Type} () const 
 \item 
-\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1HeapGraphNode_af5f24ee6c07a57814e18bd317cb5576a}{Get\+Name} () const 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1HeapGraphNode_afd02d17040ae74f40d60d921795aacdb}{Get\+Name} () const 
 \item 
 Snapshot\+Object\+Id \hyperlink{classv8_1_1HeapGraphNode_a0faf2a07888af9ca938b3ac089500b4c}{Get\+Id} () const 
-\item 
-\hyperlink{classv8_1_1HeapGraphNode_af0c5bd1eebaa351d90db71311168729a}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D} (\char`\"{}Use \hyperlink{classv8_1_1HeapGraphNode_a5f6f1e87efce0b297c3ffad0b50f34d5}{Get\+Shallow\+Size} instead\char`\"{}, int Get\+Self\+Size() const)
 \item 
 size\+\_\+t \hyperlink{classv8_1_1HeapGraphNode_a5f6f1e87efce0b297c3ffad0b50f34d5}{Get\+Shallow\+Size} () const 
 \item 
@@ -71,13 +70,13 @@ Returns child nodes count of the node. \hypertarget{classv8_1_1HeapGraphNode_a0f
 {}
 \end{DoxyParamCaption}
 ) const}\label{classv8_1_1HeapGraphNode_a0faf2a07888af9ca938b3ac089500b4c}
-Returns node id. For the same heap object, the id remains the same across all snapshots. \hypertarget{classv8_1_1HeapGraphNode_af5f24ee6c07a57814e18bd317cb5576a}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Name@{Get\+Name}}
+Returns node id. For the same heap object, the id remains the same across all snapshots. \hypertarget{classv8_1_1HeapGraphNode_afd02d17040ae74f40d60d921795aacdb}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Name@{Get\+Name}}
 \index{Get\+Name@{Get\+Name}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
-\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf String}$>$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Name (
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Heap\+Graph\+Node\+::\+Get\+Name (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1HeapGraphNode_af5f24ee6c07a57814e18bd317cb5576a}
+) const}\label{classv8_1_1HeapGraphNode_afd02d17040ae74f40d60d921795aacdb}
 Returns node name. Depending on node\textquotesingle{}s type this can be the name of the constructor (for objects), the name of the function (for closures), string value, or an empty string (for compiled code). \hypertarget{classv8_1_1HeapGraphNode_a5f6f1e87efce0b297c3ffad0b50f34d5}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!Get\+Shallow\+Size@{Get\+Shallow\+Size}}
 \index{Get\+Shallow\+Size@{Get\+Shallow\+Size}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
 \subsubsection[{Get\+Shallow\+Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Heap\+Graph\+Node\+::\+Get\+Shallow\+Size (
@@ -92,15 +91,7 @@ Returns node\textquotesingle{}s own size, in bytes. \hypertarget{classv8_1_1Heap
 {}
 \end{DoxyParamCaption}
 ) const}\label{classv8_1_1HeapGraphNode_a5e07fc855bded52229e62b855fa08c5d}
-Returns node type (see Heap\+Graph\+Node\+::\+Type). \hypertarget{classv8_1_1HeapGraphNode_af0c5bd1eebaa351d90db71311168729a}{}\index{v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}!v8\+::\+Heap\+Graph\+Node@{v8\+::\+Heap\+Graph\+Node}}
-\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Heap\+Graph\+Node\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use {\bf Get\+Shallow\+Size} instead\char`\"{}}]{, }
-\item[{int Get\+Self\+Size()}]{const}
-\end{DoxyParamCaption}
-)}\label{classv8_1_1HeapGraphNode_af0c5bd1eebaa351d90db71311168729a}
-Returns node\textquotesingle{}s own size, in bytes. 
+Returns node type (see Heap\+Graph\+Node\+::\+Type). 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

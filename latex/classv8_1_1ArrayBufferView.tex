@@ -18,6 +18,10 @@ Inheritance diagram for v8\+:\+:Array\+Buffer\+View\+:\begin{figure}[H]
 size\+\_\+t \hyperlink{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}{Byte\+Offset} ()
 \item 
 size\+\_\+t \hyperlink{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}{Byte\+Length} ()
+\item 
+size\+\_\+t \hyperlink{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}{Copy\+Contents} (void $\ast$dest, size\+\_\+t byte\+\_\+length)
+\item 
+bool \hyperlink{classv8_1_1ArrayBufferView_ab3a7de283cab4140632d190a1e3eef22}{Has\+Buffer} () const 
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -59,7 +63,24 @@ Size of a view in bytes. \hypertarget{classv8_1_1ArrayBufferView_a4739a31269f5eb
 {}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}
-Byte offset in $\vert$\+Buffer$\vert$. 
+Byte offset in $\vert$\+Buffer$\vert$. \hypertarget{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}{}\index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Copy\+Contents@{Copy\+Contents}}
+\index{Copy\+Contents@{Copy\+Contents}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
+\subsubsection[{Copy\+Contents}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Copy\+Contents (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{dest, }
+\item[{size\+\_\+t}]{byte\+\_\+length}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}
+Copy the contents of the \hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}\textquotesingle{}s buffer to an embedder defined memory without additional overhead that calling \hyperlink{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}{Array\+Buffer\+View\+::\+Buffer} might incur.
+
+Will write at most min($\vert$byte\+\_\+length$\vert$, Byte\+Length) bytes starting at Byte\+Offset of the underling buffer to the memory starting at $\vert$dest$\vert$. Returns the number of bytes actually written. \hypertarget{classv8_1_1ArrayBufferView_ab3a7de283cab4140632d190a1e3eef22}{}\index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Has\+Buffer@{Has\+Buffer}}
+\index{Has\+Buffer@{Has\+Buffer}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
+\subsubsection[{Has\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Array\+Buffer\+View\+::\+Has\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classv8_1_1ArrayBufferView_ab3a7de283cab4140632d190a1e3eef22}
+Returns true if \hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}\textquotesingle{}s backing \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} has already been allocated. 
 
 \subsection{Field Documentation}
 \hypertarget{classv8_1_1ArrayBufferView_a1cccb675b1a91e61411fee5918d451db}{}\index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!k\+Internal\+Field\+Count@{k\+Internal\+Field\+Count}}

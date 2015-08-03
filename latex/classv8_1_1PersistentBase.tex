@@ -15,34 +15,40 @@ Inheritance diagram for v8\+:\+:Persistent\+Base$<$ T $>$\+:\begin{figure}[H]
 \item 
 V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1PersistentBase_a174bb1e45b18fd4eeaee033622825bb8}{Reset} ()
 \item 
-{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1PersistentBase_a037c3a1b62263b2c2bb2096a6fba1c47}{Reset} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1Handle}{Handle}$<$ S $>$ \&other)
+{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1PersistentBase_a11164f0dfc9a16d79809236e7a9670aa}{Reset} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1Local}{Local}$<$ S $>$ \&other)
 \item 
 {\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1PersistentBase_af6b8f929b0cbaa83341df48ca3b03ef5}{Reset} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}$<$ S $>$ \&other)
 \item 
 \hypertarget{classv8_1_1PersistentBase_aa846b995b881b4863a21cf78ad7a8dea}{}V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries Is\+Empty} () const \label{classv8_1_1PersistentBase_aa846b995b881b4863a21cf78ad7a8dea}
 
 \item 
+\hypertarget{classv8_1_1PersistentBase_abb8a06471ea86de1731a3c94a879b00e}{}V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries Empty} ()\label{classv8_1_1PersistentBase_abb8a06471ea86de1731a3c94a879b00e}
+
+\item 
+\hypertarget{classv8_1_1PersistentBase_a46fddc38d4b77b73a5a1967542d3d557}{}V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Local}{Local}$<$ T $>$ {\bfseries Get} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate) const \label{classv8_1_1PersistentBase_a46fddc38d4b77b73a5a1967542d3d557}
+
+\item 
 \hypertarget{classv8_1_1PersistentBase_a6374a132dba19abcdece47cb2080aca7}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator==} (const \hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}$<$ S $>$ \&that) const \label{classv8_1_1PersistentBase_a6374a132dba19abcdece47cb2080aca7}
 
 \item 
-\hypertarget{classv8_1_1PersistentBase_addcfb82a71f7028207566de2904ead3c}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator==} (const \hyperlink{classv8_1_1Handle}{Handle}$<$ S $>$ \&that) const \label{classv8_1_1PersistentBase_addcfb82a71f7028207566de2904ead3c}
+\hypertarget{classv8_1_1PersistentBase_a5609a18c202901b6ab1b510fb3b0d1dc}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator==} (const \hyperlink{classv8_1_1Local}{Local}$<$ S $>$ \&that) const \label{classv8_1_1PersistentBase_a5609a18c202901b6ab1b510fb3b0d1dc}
 
 \item 
 \hypertarget{classv8_1_1PersistentBase_a5bfacec9ab828f9aa7abdb980481589a}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator!=} (const \hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}$<$ S $>$ \&that) const \label{classv8_1_1PersistentBase_a5bfacec9ab828f9aa7abdb980481589a}
 
 \item 
-\hypertarget{classv8_1_1PersistentBase_acc30195c1ee4e1f801cab267e6855fd3}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator!=} (const \hyperlink{classv8_1_1Handle}{Handle}$<$ S $>$ \&that) const \label{classv8_1_1PersistentBase_acc30195c1ee4e1f801cab267e6855fd3}
+\hypertarget{classv8_1_1PersistentBase_a467b78e40a53fb8324369d8a7a147800}{}{\footnotesize template$<$class S $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E bool {\bfseries operator!=} (const \hyperlink{classv8_1_1Local}{Local}$<$ S $>$ \&that) const \label{classv8_1_1PersistentBase_a467b78e40a53fb8324369d8a7a147800}
 
 \item 
-{\footnotesize template$<$typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1PersistentBase_a1fb3293eff7a66068de13d152f73f308}{Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ T, P $>$\+::Callback callback)
+{\footnotesize template$<$typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1PersistentBase_ac69eff0419916b3f58e60697f5c82fbe}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}use \hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info} version\char`\"{}, void Set\+Weak(P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ T, P $>$\+::Callback callback))
 \item 
-\hypertarget{classv8_1_1PersistentBase_a297e0c410e9496318187853e07bf8406}{}{\footnotesize template$<$typename S , typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ S, P $>$\+::Callback callback)\label{classv8_1_1PersistentBase_a297e0c410e9496318187853e07bf8406}
+\hypertarget{classv8_1_1PersistentBase_a70c654dfbfe1a346c43dc0f68928f6ad}{}{\footnotesize template$<$typename S , typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}use \hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info} version\char`\"{}, void Set\+Weak(P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ S, P $>$\+::Callback callback))\label{classv8_1_1PersistentBase_a70c654dfbfe1a346c43dc0f68928f6ad}
 
 \item 
-\hypertarget{classv8_1_1PersistentBase_ab30d2f1468123f44bc9945c4f1743dbf}{}{\footnotesize template$<$typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries Set\+Phantom} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ T, P $>$\+::Callback callback)\label{classv8_1_1PersistentBase_ab30d2f1468123f44bc9945c4f1743dbf}
+\hypertarget{classv8_1_1PersistentBase_a91ebb0af8cf7fe1a1762c6806940bf53}{}{\footnotesize template$<$typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}use Set\+Weak\char`\"{}, void Set\+Phantom(P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}$<$ P $>$\+::Callback callback, int internal\+\_\+field\+\_\+index1=-\/1, int internal\+\_\+field\+\_\+index2=-\/1))\label{classv8_1_1PersistentBase_a91ebb0af8cf7fe1a1762c6806940bf53}
 
 \item 
-\hypertarget{classv8_1_1PersistentBase_a70f75731cb947f2a7c5c33fb2aef5618}{}{\footnotesize template$<$typename S , typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries Set\+Phantom} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ S, P $>$\+::Callback callback)\label{classv8_1_1PersistentBase_a70f75731cb947f2a7c5c33fb2aef5618}
+\hypertarget{classv8_1_1PersistentBase_aebb8a2c97e219102f613ff3749c956f6}{}{\footnotesize template$<$typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bfseries Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}$<$ P $>$\+::Callback callback, Weak\+Callback\+Type type)\label{classv8_1_1PersistentBase_aebb8a2c97e219102f613ff3749c956f6}
 
 \item 
 \hypertarget{classv8_1_1PersistentBase_a444d27c00650e3663348024df08cb121}{}{\footnotesize template$<$typename P $>$ }\\V8\+\_\+\+I\+N\+L\+I\+N\+E P $\ast$ {\bfseries Clear\+Weak} ()\label{classv8_1_1PersistentBase_a444d27c00650e3663348024df08cb121}
@@ -66,22 +72,13 @@ V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1PersistentBase_ac4c979164b
 \item 
 V8\+\_\+\+I\+N\+L\+I\+N\+E uint16\+\_\+t \hyperlink{classv8_1_1PersistentBase_a01a46bf4e69ed9a837639702ee234643}{Wrapper\+Class\+Id} () const 
 \item 
-\hypertarget{classv8_1_1PersistentBase_a1d3ad48623c429889afb03b557c926e0}{}{\footnotesize template$<$class S $>$ }\\void {\bfseries Reset} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1Handle}{Handle}$<$ S $>$ \&other)\label{classv8_1_1PersistentBase_a1d3ad48623c429889afb03b557c926e0}
+\hypertarget{classv8_1_1PersistentBase_ab4b4d3fba3498486f1f10dc7d5be90fc}{}{\footnotesize template$<$class S $>$ }\\void {\bfseries Reset} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1Local}{Local}$<$ S $>$ \&other)\label{classv8_1_1PersistentBase_ab4b4d3fba3498486f1f10dc7d5be90fc}
 
 \item 
 \hypertarget{classv8_1_1PersistentBase_a67cbcedf77d176d3870fa4993e300b61}{}{\footnotesize template$<$class S $>$ }\\void {\bfseries Reset} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const \hyperlink{classv8_1_1PersistentBase}{Persistent\+Base}$<$ S $>$ \&other)\label{classv8_1_1PersistentBase_a67cbcedf77d176d3870fa4993e300b61}
 
 \item 
-\hypertarget{classv8_1_1PersistentBase_a26cacb456e6a02bb8214dfd8a31247c9}{}{\footnotesize template$<$typename S , typename P $>$ }\\void {\bfseries Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ S, P $>$\+::Callback callback)\label{classv8_1_1PersistentBase_a26cacb456e6a02bb8214dfd8a31247c9}
-
-\item 
 \hypertarget{classv8_1_1PersistentBase_aaf342ece1a4ba926ba62e8d6af7be777}{}{\footnotesize template$<$typename P $>$ }\\void {\bfseries Set\+Weak} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ T, P $>$\+::Callback callback)\label{classv8_1_1PersistentBase_aaf342ece1a4ba926ba62e8d6af7be777}
-
-\item 
-\hypertarget{classv8_1_1PersistentBase_a845d9e98a5ebe03e8966fba4b81614f0}{}{\footnotesize template$<$typename S , typename P $>$ }\\void {\bfseries Set\+Phantom} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ S, P $>$\+::Callback callback)\label{classv8_1_1PersistentBase_a845d9e98a5ebe03e8966fba4b81614f0}
-
-\item 
-\hypertarget{classv8_1_1PersistentBase_a1586acea8a2b8594dd728555223d882e}{}{\footnotesize template$<$typename P $>$ }\\void {\bfseries Set\+Phantom} (P $\ast$parameter, typename \hyperlink{classv8_1_1WeakCallbackData}{Weak\+Callback\+Data}$<$ T, P $>$\+::Callback callback)\label{classv8_1_1PersistentBase_a1586acea8a2b8594dd728555223d882e}
 
 \end{DoxyCompactItemize}
 \subsection*{Friends}
@@ -93,16 +90,13 @@ V8\+\_\+\+I\+N\+L\+I\+N\+E uint16\+\_\+t \hyperlink{classv8_1_1PersistentBase_a0
 \hypertarget{classv8_1_1PersistentBase_abc0f7da619e9e72510dc07ed7b5ff6d8}{}class {\bfseries Utils}\label{classv8_1_1PersistentBase_abc0f7da619e9e72510dc07ed7b5ff6d8}
 
 \item 
-\hypertarget{classv8_1_1PersistentBase_a67ca1a2d91273eaf85fb3d23ba8ce984}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Handle}\label{classv8_1_1PersistentBase_a67ca1a2d91273eaf85fb3d23ba8ce984}
-
-\item 
 \hypertarget{classv8_1_1PersistentBase_afb872edb4aac7ba55f0da004113aa2b0}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Local}\label{classv8_1_1PersistentBase_afb872edb4aac7ba55f0da004113aa2b0}
 
 \item 
 \hypertarget{classv8_1_1PersistentBase_ad845ec8872174be0a9ca9a3dd1898d30}{}{\footnotesize template$<$class F1 , class F2 $>$ }\\class {\bfseries Persistent}\label{classv8_1_1PersistentBase_ad845ec8872174be0a9ca9a3dd1898d30}
 
 \item 
-\hypertarget{classv8_1_1PersistentBase_aa15762bfc503091516cc63d53c9dbe12}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Unique\+Persistent}\label{classv8_1_1PersistentBase_aa15762bfc503091516cc63d53c9dbe12}
+\hypertarget{classv8_1_1PersistentBase_adc49d0fc7441cf7e3b5f039334e44243}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Global}\label{classv8_1_1PersistentBase_adc49d0fc7441cf7e3b5f039334e44243}
 
 \item 
 \hypertarget{classv8_1_1PersistentBase_abb172e0bb22fc5fed7a3a66f29d046ce}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Persistent\+Base}\label{classv8_1_1PersistentBase_abb172e0bb22fc5fed7a3a66f29d046ce}
@@ -111,7 +105,7 @@ V8\+\_\+\+I\+N\+L\+I\+N\+E uint16\+\_\+t \hyperlink{classv8_1_1PersistentBase_a0
 \hypertarget{classv8_1_1PersistentBase_a53f604d3d6f2dc0647df33c9979f116a}{}{\footnotesize template$<$class F $>$ }\\class {\bfseries Return\+Value}\label{classv8_1_1PersistentBase_a53f604d3d6f2dc0647df33c9979f116a}
 
 \item 
-\hypertarget{classv8_1_1PersistentBase_a401e5cd2db49a67497042617f01fdbc2}{}{\footnotesize template$<$class F1 , class F2 , class F3 $>$ }\\class {\bfseries Persistent\+Value\+Map}\label{classv8_1_1PersistentBase_a401e5cd2db49a67497042617f01fdbc2}
+\hypertarget{classv8_1_1PersistentBase_a08e2b8f164392d71811ce6cc134f33e3}{}{\footnotesize template$<$class F1 , class F2 , class F3 $>$ }\\class {\bfseries Persistent\+Value\+Map\+Base}\label{classv8_1_1PersistentBase_a08e2b8f164392d71811ce6cc134f33e3}
 
 \item 
 \hypertarget{classv8_1_1PersistentBase_a978bb1377559897d74d5fe883a54a315}{}{\footnotesize template$<$class F1 , class F2 $>$ }\\class {\bfseries Persistent\+Value\+Vector}\label{classv8_1_1PersistentBase_a978bb1377559897d74d5fe883a54a315}
@@ -165,14 +159,14 @@ Marks the reference to this object partially dependent. Partially dependent hand
 {}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1PersistentBase_a174bb1e45b18fd4eeaee033622825bb8}
-If non-\/empty, destroy the underlying storage cell Is\+Empty() will return true after this call. \hypertarget{classv8_1_1PersistentBase_a037c3a1b62263b2c2bb2096a6fba1c47}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Reset@{Reset}}
+If non-\/empty, destroy the underlying storage cell Is\+Empty() will return true after this call. \hypertarget{classv8_1_1PersistentBase_a11164f0dfc9a16d79809236e7a9670aa}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Reset@{Reset}}
 \index{Reset@{Reset}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bf v8\+::\+Persistent\+Base}$<$ T $>$\+::Reset (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
-\item[{const {\bf Handle}$<$ S $>$ \&}]{other}
+\item[{const {\bf Local}$<$ S $>$ \&}]{other}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1PersistentBase_a037c3a1b62263b2c2bb2096a6fba1c47}
+)}\label{classv8_1_1PersistentBase_a11164f0dfc9a16d79809236e7a9670aa}
 If non-\/empty, destroy the underlying storage cell and create a new one with the contents of other if other is non empty \hypertarget{classv8_1_1PersistentBase_af6b8f929b0cbaa83341df48ca3b03ef5}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Reset@{Reset}}
 \index{Reset@{Reset}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$class S $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bf v8\+::\+Persistent\+Base}$<$ T $>$\+::Reset (
@@ -181,22 +175,22 @@ If non-\/empty, destroy the underlying storage cell and create a new one with th
 \item[{const {\bf Persistent\+Base}$<$ S $>$ \&}]{other}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1PersistentBase_af6b8f929b0cbaa83341df48ca3b03ef5}
-If non-\/empty, destroy the underlying storage cell and create a new one with the contents of other if other is non empty \hypertarget{classv8_1_1PersistentBase_a1fb3293eff7a66068de13d152f73f308}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Set\+Weak@{Set\+Weak}}
-\index{Set\+Weak@{Set\+Weak}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
-\subsubsection[{Set\+Weak}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$typename P $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E void {\bf v8\+::\+Persistent\+Base}$<$ T $>$\+::Set\+Weak (
-\begin{DoxyParamCaption}
-\item[{P $\ast$}]{parameter, }
-\item[{typename {\bf Weak\+Callback\+Data}$<$ T, P $>$\+::Callback}]{callback}
-\end{DoxyParamCaption}
-)}\label{classv8_1_1PersistentBase_a1fb3293eff7a66068de13d152f73f308}
-Install a finalization callback on this object. N\+O\+T\+E\+: There is no guarantee as to {\itshape when} or even {\itshape if} the callback is invoked. The invocation is performed solely on a best effort basis. As always, G\+C-\/based finalization should {\itshape not} be relied upon for any critical form of resource management! \hypertarget{classv8_1_1PersistentBase_ac4c979164b3ed4dc92319e6f5a108d3d}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Set\+Wrapper\+Class\+Id@{Set\+Wrapper\+Class\+Id}}
+If non-\/empty, destroy the underlying storage cell and create a new one with the contents of other if other is non empty \hypertarget{classv8_1_1PersistentBase_ac4c979164b3ed4dc92319e6f5a108d3d}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Set\+Wrapper\+Class\+Id@{Set\+Wrapper\+Class\+Id}}
 \index{Set\+Wrapper\+Class\+Id@{Set\+Wrapper\+Class\+Id}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection[{Set\+Wrapper\+Class\+Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf v8\+::\+Persistent\+Base}$<$ T $>$\+::Set\+Wrapper\+Class\+Id (
 \begin{DoxyParamCaption}
 \item[{uint16\+\_\+t}]{class\+\_\+id}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1PersistentBase_ac4c979164b3ed4dc92319e6f5a108d3d}
-Assigns a wrapper class I\+D to the handle. See \hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info} interface description in \hyperlink{v8-profiler_8h_source}{v8-\/profiler.\+h} for details. \hypertarget{classv8_1_1PersistentBase_a01a46bf4e69ed9a837639702ee234643}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Wrapper\+Class\+Id@{Wrapper\+Class\+Id}}
+Assigns a wrapper class I\+D to the handle. See \hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info} interface description in \hyperlink{v8-profiler_8h_source}{v8-\/profiler.\+h} for details. \hypertarget{classv8_1_1PersistentBase_ac69eff0419916b3f58e60697f5c82fbe}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$typename P $>$ V8\+\_\+\+I\+N\+L\+I\+N\+E {\bf v8\+::\+Persistent\+Base}$<$ T $>$\+::V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}use {\bf Weak\+Callback\+Info} version\char`\"{}}]{, }
+\item[{void }]{Set\+WeakP $\ast$parameter, typename Weak\+Callback\+Data$<$ T, P $>$\+::\+Callback callback}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1PersistentBase_ac69eff0419916b3f58e60697f5c82fbe}
+Install a finalization callback on this object. N\+O\+T\+E\+: There is no guarantee as to {\itshape when} or even {\itshape if} the callback is invoked. The invocation is performed solely on a best effort basis. As always, G\+C-\/based finalization should {\itshape not} be relied upon for any critical form of resource management! \hypertarget{classv8_1_1PersistentBase_a01a46bf4e69ed9a837639702ee234643}{}\index{v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}!Wrapper\+Class\+Id@{Wrapper\+Class\+Id}}
 \index{Wrapper\+Class\+Id@{Wrapper\+Class\+Id}!v8\+::\+Persistent\+Base@{v8\+::\+Persistent\+Base}}
 \subsubsection[{Wrapper\+Class\+Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ uint16\+\_\+t {\bf v8\+::\+Persistent\+Base}$<$ T $>$\+::Wrapper\+Class\+Id (
 \begin{DoxyParamCaption}

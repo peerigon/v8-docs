@@ -11,15 +11,24 @@ Inheritance diagram for v8\+:\+:Promise\+:\+:Resolver\+:\begin{figure}[H]
 \item 
 \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ \hyperlink{classv8_1_1Promise_1_1Resolver_a41fd1ffef546a62e363a639935fc8ae3}{Get\+Promise} ()
 \item 
-void \hyperlink{classv8_1_1Promise_1_1Resolver_aa1f7f6883d57879a7956e84e63b2d935}{Resolve} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)
+\hyperlink{classv8_1_1Promise_1_1Resolver_aff632d8369ba1198d0ce9f0072d278e7}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, void Resolve(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value))
 \item 
-\hypertarget{classv8_1_1Promise_1_1Resolver_a12b1f6ef41dd7d759443631135502847}{}void {\bfseries Reject} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)\label{classv8_1_1Promise_1_1Resolver_a12b1f6ef41dd7d759443631135502847}
+\hypertarget{classv8_1_1Promise_1_1Resolver_ad76163f1f6fb4c83eecb27bbe933f817}{}\hyperlink{classv8_1_1Maybe}{Maybe}$<$ bool $>$ {\bfseries Resolve} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)\label{classv8_1_1Promise_1_1Resolver_ad76163f1f6fb4c83eecb27bbe933f817}
+
+\item 
+\hypertarget{classv8_1_1Promise_1_1Resolver_a56f20403d52528a8c06d8f3aa5fc1540}{}{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, void Reject(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value))\label{classv8_1_1Promise_1_1Resolver_a56f20403d52528a8c06d8f3aa5fc1540}
+
+\item 
+\hypertarget{classv8_1_1Promise_1_1Resolver_a548fa238787f87e793fd3eca143a3508}{}\hyperlink{classv8_1_1Maybe}{Maybe}$<$ bool $>$ {\bfseries Reject} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)\label{classv8_1_1Promise_1_1Resolver_a548fa238787f87e793fd3eca143a3508}
 
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver} $>$ \hyperlink{classv8_1_1Promise_1_1Resolver_a80b9e402b6b49f41d57d404ed9e00c9d}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+static \hyperlink{classv8_1_1Promise_1_1Resolver_a1aa04adcad6243802a3f9819fa840312}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver} $>$ New(\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate))
+\item 
+\hypertarget{classv8_1_1Promise_1_1Resolver_af2290c10e43fcde230ea7a79b9128b0e}{}static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+L\+T \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver} $>$ {\bfseries New} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context)\label{classv8_1_1Promise_1_1Resolver_af2290c10e43fcde230ea7a79b9128b0e}
+
 \item 
 \hypertarget{classv8_1_1Promise_1_1Resolver_ab2b541cb210158ed0c757c8b7dc46279}{}static V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)\label{classv8_1_1Promise_1_1Resolver_ab2b541cb210158ed0c757c8b7dc46279}
 
@@ -34,20 +43,22 @@ static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Promise_1_1R
 {}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1Promise_1_1Resolver_a41fd1ffef546a62e363a639935fc8ae3}
-Extract the associated promise. \hypertarget{classv8_1_1Promise_1_1Resolver_a80b9e402b6b49f41d57d404ed9e00c9d}{}\index{v8\+::\+Promise\+::\+Resolver@{v8\+::\+Promise\+::\+Resolver}!New@{New}}
-\index{New@{New}!v8\+::\+Promise\+::\+Resolver@{v8\+::\+Promise\+::\+Resolver}}
-\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Resolver}$>$ v8\+::\+Promise\+::\+Resolver\+::\+New (
+Extract the associated promise. \hypertarget{classv8_1_1Promise_1_1Resolver_a1aa04adcad6243802a3f9819fa840312}{}\index{v8\+::\+Promise\+::\+Resolver@{v8\+::\+Promise\+::\+Resolver}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Promise\+::\+Resolver@{v8\+::\+Promise\+::\+Resolver}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Promise\+::\+Resolver\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
 \begin{DoxyParamCaption}
-\item[{{\bf Isolate} $\ast$}]{isolate}
+\item[{\char`\"{}Use maybe version\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Resolver} $>$ }]{NewIsolate $\ast$isolate}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Promise_1_1Resolver_a80b9e402b6b49f41d57d404ed9e00c9d}
-Create a new resolver, along with an associated promise in pending state. \hypertarget{classv8_1_1Promise_1_1Resolver_aa1f7f6883d57879a7956e84e63b2d935}{}\index{v8\+::\+Promise\+::\+Resolver@{v8\+::\+Promise\+::\+Resolver}!Resolve@{Resolve}}
-\index{Resolve@{Resolve}!v8\+::\+Promise\+::\+Resolver@{v8\+::\+Promise\+::\+Resolver}}
-\subsubsection[{Resolve}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Promise\+::\+Resolver\+::\+Resolve (
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Promise_1_1Resolver_a1aa04adcad6243802a3f9819fa840312}
+Create a new resolver, along with an associated promise in pending state. \hypertarget{classv8_1_1Promise_1_1Resolver_aff632d8369ba1198d0ce9f0072d278e7}{}\index{v8\+::\+Promise\+::\+Resolver@{v8\+::\+Promise\+::\+Resolver}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Promise\+::\+Resolver@{v8\+::\+Promise\+::\+Resolver}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Promise\+::\+Resolver\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
 \begin{DoxyParamCaption}
-\item[{{\bf Handle}$<$ {\bf Value} $>$}]{value}
+\item[{\char`\"{}Use maybe version\char`\"{}}]{, }
+\item[{void }]{ResolveLocal$<$ Value $>$ value}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Promise_1_1Resolver_aa1f7f6883d57879a7956e84e63b2d935}
+)}\label{classv8_1_1Promise_1_1Resolver_aff632d8369ba1198d0ce9f0072d278e7}
 Resolve/reject the associated promise with a given value. Ignored if the promise is no longer pending. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

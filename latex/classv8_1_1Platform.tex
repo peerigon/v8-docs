@@ -18,6 +18,12 @@ virtual void \hyperlink{classv8_1_1Platform_aa715e6839c1954b4e23b9d2df00bd3ea}{C
 \item 
 virtual void \hyperlink{classv8_1_1Platform_a8fa13959f919d1d3ff170bceea939915}{Call\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Task}{Task} $\ast$task)=0
 \item 
+virtual void \hyperlink{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}{Call\+Delayed\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Task}{Task} $\ast$task, double delay\+\_\+in\+\_\+seconds)=0
+\item 
+virtual void \hyperlink{classv8_1_1Platform_ae495999016432391f04d323452084b12}{Call\+Idle\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1IdleTask}{Idle\+Task} $\ast$task)
+\item 
+virtual bool \hyperlink{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}{Idle\+Tasks\+Enabled} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\item 
 virtual double \hyperlink{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}{Monotonically\+Increasing\+Time} ()=0
 \end{DoxyCompactItemize}
 
@@ -34,7 +40,24 @@ The embedder has to provide an implementation of this interface before initializ
 This enum is used to indicate whether a task is potentially long running, or causes a long wait. The embedder might want to use this hint to decide whether to execute the task on a dedicated thread. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1Platform_aa715e6839c1954b4e23b9d2df00bd3ea}{}\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+On\+Background\+Thread@{Call\+On\+Background\+Thread}}
+\hypertarget{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}{}\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Delayed\+On\+Foreground\+Thread@{Call\+Delayed\+On\+Foreground\+Thread}}
+\index{Call\+Delayed\+On\+Foreground\+Thread@{Call\+Delayed\+On\+Foreground\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection[{Call\+Delayed\+On\+Foreground\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Platform\+::\+Call\+Delayed\+On\+Foreground\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Task} $\ast$}]{task, }
+\item[{double}]{delay\+\_\+in\+\_\+seconds}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ after the given number of seconds $\vert$delay\+\_\+in\+\_\+seconds$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1V8}{V8}. \hypertarget{classv8_1_1Platform_ae495999016432391f04d323452084b12}{}\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Idle\+On\+Foreground\+Thread@{Call\+Idle\+On\+Foreground\+Thread}}
+\index{Call\+Idle\+On\+Foreground\+Thread@{Call\+Idle\+On\+Foreground\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection[{Call\+Idle\+On\+Foreground\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Platform\+::\+Call\+Idle\+On\+Foreground\+Thread (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate, }
+\item[{{\bf Idle\+Task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classv8_1_1Platform_ae495999016432391f04d323452084b12}
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ when the embedder is idle. Requires that Supports\+Idle\+Tasks(isolate) is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1V8}{V8}. \hypertarget{classv8_1_1Platform_aa715e6839c1954b4e23b9d2df00bd3ea}{}\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+On\+Background\+Thread@{Call\+On\+Background\+Thread}}
 \index{Call\+On\+Background\+Thread@{Call\+On\+Background\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection[{Call\+On\+Background\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Platform\+::\+Call\+On\+Background\+Thread (
 \begin{DoxyParamCaption}
@@ -50,7 +73,14 @@ Schedules a task to be invoked on a background thread. $\vert$expected\+\_\+runt
 \item[{{\bf Task} $\ast$}]{task}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Platform_a8fa13959f919d1d3ff170bceea939915}
-Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1V8}{V8}. \hypertarget{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}{}\index{v8\+::\+Platform@{v8\+::\+Platform}!Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}}
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1V8}{V8}. \hypertarget{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}{}\index{v8\+::\+Platform@{v8\+::\+Platform}!Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}}
+\index{Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection[{Idle\+Tasks\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool v8\+::\+Platform\+::\+Idle\+Tasks\+Enabled (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}
+Returns true if idle tasks are enabled for the given $\vert$isolate$\vert$. \hypertarget{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}{}\index{v8\+::\+Platform@{v8\+::\+Platform}!Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}}
 \index{Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}!v8\+::\+Platform@{v8\+::\+Platform}}
 \subsubsection[{Monotonically\+Increasing\+Time}]{\setlength{\rightskip}{0pt plus 5cm}virtual double v8\+::\+Platform\+::\+Monotonically\+Increasing\+Time (
 \begin{DoxyParamCaption}

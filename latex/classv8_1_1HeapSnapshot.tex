@@ -14,10 +14,6 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-unsigned \hyperlink{classv8_1_1HeapSnapshot_a8096d1dc0b99fbffc0f0618be8472ca7}{Get\+Uid} () const 
-\item 
-\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1HeapSnapshot_a54d5d9e0234c2ee361892ea598624a82}{Get\+Title} () const 
-\item 
 const \hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node} $\ast$ \hyperlink{classv8_1_1HeapSnapshot_aafd7abe35ce29f9874de6687c65bf2af}{Get\+Root} () const 
 \item 
 const \hyperlink{classv8_1_1HeapGraphNode}{Heap\+Graph\+Node} $\ast$ \hyperlink{classv8_1_1HeapSnapshot_a023696f94fe538380922bf2c40c97b7b}{Get\+Node\+By\+Id} (Snapshot\+Object\+Id id) const 
@@ -30,7 +26,7 @@ Snapshot\+Object\+Id \hyperlink{classv8_1_1HeapSnapshot_a4a0fc79b7ef74a3a5ea3450
 \item 
 void \hyperlink{classv8_1_1HeapSnapshot_aeaa6073009e4041839dff7a860d2548a}{Delete} ()
 \item 
-void \hyperlink{classv8_1_1HeapSnapshot_acf7383deaa06fab1d948fd7e737ac7d3}{Serialize} (\hyperlink{classv8_1_1OutputStream}{Output\+Stream} $\ast$stream, Serialization\+Format format) const 
+void \hyperlink{classv8_1_1HeapSnapshot_a611023f17d9612477a964383470ec171}{Serialize} (\hyperlink{classv8_1_1OutputStream}{Output\+Stream} $\ast$stream, Serialization\+Format format=k\+J\+S\+O\+N) const 
 \end{DoxyCompactItemize}
 
 
@@ -80,28 +76,14 @@ Returns total nodes count in the snapshot. \hypertarget{classv8_1_1HeapSnapshot_
 {}
 \end{DoxyParamCaption}
 ) const}\label{classv8_1_1HeapSnapshot_aafd7abe35ce29f9874de6687c65bf2af}
-Returns the root node of the heap graph. \hypertarget{classv8_1_1HeapSnapshot_a54d5d9e0234c2ee361892ea598624a82}{}\index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Get\+Title@{Get\+Title}}
-\index{Get\+Title@{Get\+Title}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
-\subsubsection[{Get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle}$<${\bf String}$>$ v8\+::\+Heap\+Snapshot\+::\+Get\+Title (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\label{classv8_1_1HeapSnapshot_a54d5d9e0234c2ee361892ea598624a82}
-Returns heap snapshot title. \hypertarget{classv8_1_1HeapSnapshot_a8096d1dc0b99fbffc0f0618be8472ca7}{}\index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Get\+Uid@{Get\+Uid}}
-\index{Get\+Uid@{Get\+Uid}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
-\subsubsection[{Get\+Uid}]{\setlength{\rightskip}{0pt plus 5cm}unsigned v8\+::\+Heap\+Snapshot\+::\+Get\+Uid (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\label{classv8_1_1HeapSnapshot_a8096d1dc0b99fbffc0f0618be8472ca7}
-Returns heap snapshot U\+I\+D (assigned by the profiler.) \hypertarget{classv8_1_1HeapSnapshot_acf7383deaa06fab1d948fd7e737ac7d3}{}\index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Serialize@{Serialize}}
+Returns the root node of the heap graph. \hypertarget{classv8_1_1HeapSnapshot_a611023f17d9612477a964383470ec171}{}\index{v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}!Serialize@{Serialize}}
 \index{Serialize@{Serialize}!v8\+::\+Heap\+Snapshot@{v8\+::\+Heap\+Snapshot}}
 \subsubsection[{Serialize}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Heap\+Snapshot\+::\+Serialize (
 \begin{DoxyParamCaption}
 \item[{{\bf Output\+Stream} $\ast$}]{stream, }
-\item[{Serialization\+Format}]{format}
+\item[{Serialization\+Format}]{format = {\ttfamily kJSON}}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1HeapSnapshot_acf7383deaa06fab1d948fd7e737ac7d3}
+) const}\label{classv8_1_1HeapSnapshot_a611023f17d9612477a964383470ec171}
 Prepare a serialized representation of the snapshot. The result is written into the stream provided in chunks of specified size. The total length of the serialized snapshot is unknown in advance, it can be roughly equal to J\+S heap size (that means, it can be really big -\/ tens of megabytes).
 
 For the \hyperlink{classv8_1_1JSON}{J\+S\+O\+N} format, heap contents are represented as an object with the following structure\+:

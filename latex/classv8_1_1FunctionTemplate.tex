@@ -13,19 +13,24 @@ Inheritance diagram for v8\+:\+:Function\+Template\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ \hyperlink{classv8_1_1FunctionTemplate_a3b8e5e214b2ee34c36138961ebac696a}{Get\+Function} ()
+\hyperlink{classv8_1_1FunctionTemplate_a007fd05a3fa3c960bf7ddbc05c724d2b}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Function}{Function} $>$ Get\+Function())
 \item 
-void \hyperlink{classv8_1_1FunctionTemplate_a4805d729fbd1256b41ecaf157c740bd2}{Set\+Call\+Handler} (Function\+Callback callback, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())
+\hypertarget{classv8_1_1FunctionTemplate_a77aa424e4ed297452be0412930340262}{}V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+L\+T \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ {\bfseries Get\+Function} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context)\label{classv8_1_1FunctionTemplate_a77aa424e4ed297452be0412930340262}
+
+\item 
+void \hyperlink{classv8_1_1FunctionTemplate_a49babb7ea2d786a483a71514209455b6}{Set\+Call\+Handler} (Function\+Callback callback, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())
 \item 
 void \hyperlink{classv8_1_1FunctionTemplate_a5faf23b28ee3480b23ce054d0f389a75}{Set\+Length} (int length)
 \item 
 \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ObjectTemplate}{Object\+Template} $>$ \hyperlink{classv8_1_1FunctionTemplate_a00dd9725566908e8fd14064542f5a781}{Instance\+Template} ()
 \item 
-void \hyperlink{classv8_1_1FunctionTemplate_a18f343e7e5749ed886d6e76a1424216e}{Inherit} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} $>$ parent)
+void \hyperlink{classv8_1_1FunctionTemplate_abc11c462facf11bafd541892815c5425}{Inherit} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} $>$ parent)
 \item 
 \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ObjectTemplate}{Object\+Template} $>$ \hyperlink{classv8_1_1FunctionTemplate_aa2bcc2652b5f0fdbc666d943ccf72021}{Prototype\+Template} ()
 \item 
-void \hyperlink{classv8_1_1FunctionTemplate_a10ad6f0d3d1f67823e08fbca7c5dde41}{Set\+Class\+Name} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ name)
+void \hyperlink{classv8_1_1FunctionTemplate_a491e77dc7ceb5b0fe75880d11f2dbe9e}{Set\+Class\+Name} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ name)
+\item 
+void \hyperlink{classv8_1_1FunctionTemplate_a5ffdc68d8035b02ed7583950b76ef91f}{Set\+Accept\+Any\+Receiver} (bool value)
 \item 
 void \hyperlink{classv8_1_1FunctionTemplate_ade426e8a21d777ae6100e6c1aa7bfaee}{Set\+Hidden\+Prototype} (bool value)
 \item 
@@ -33,12 +38,12 @@ void \hyperlink{classv8_1_1FunctionTemplate_a91d2e0643e8c5a53ab1d75f7766c2422}{R
 \item 
 void \hyperlink{classv8_1_1FunctionTemplate_a4a184aca244174c7fe52d58871d3129e}{Remove\+Prototype} ()
 \item 
-bool \hyperlink{classv8_1_1FunctionTemplate_aa883e4ab6643498662f7873506098c98}{Has\+Instance} (\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ object)
+bool \hyperlink{classv8_1_1FunctionTemplate_a90d838f3456d300bd19d2a2cb98645bd}{Has\+Instance} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ object)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} $>$ \hyperlink{classv8_1_1FunctionTemplate_a67822fdf0ef2ac00e20e923e649f3f5f}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, Function\+Callback callback=0, \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Value}{Value} $>$(), \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Signature}{Signature} $>$ signature=\hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Signature}{Signature} $>$(), int length=0)
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} $>$ \hyperlink{classv8_1_1FunctionTemplate_a3c6a525ee4e0d72afa77be8e34861f83}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, Function\+Callback callback=0, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$(), \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Signature}{Signature} $>$ signature=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Signature}{Signature} $>$(), int length=0)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -54,6 +59,8 @@ static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1FunctionTemp
 \subsection{Detailed Description}
 A \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} is used to create functions at runtime. There can only be one function created from a \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} in a context. The lifetime of the created function is equal to the lifetime of the context. So in case the embedder needs to create temporary functions that can be collected using Scripts is preferred.
 
+Any modification of a \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} after first instantiation will trigger a crash.
+
 A \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} can have properties, these properties are added to the function object when it is created.
 
 A \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} has a corresponding instance template which is used to create object instances when the function is used as a constructor. Properties added to the instance template are added to each object instance.
@@ -65,20 +72,20 @@ The following example shows how to use a \hyperlink{classv8_1_1FunctionTemplate}
 
 \begin{DoxyCode}
 \hyperlink{classv8_1_1Local}{v8::Local<v8::FunctionTemplate>} t = 
-      \hyperlink{classv8_1_1FunctionTemplate_a67822fdf0ef2ac00e20e923e649f3f5f}{v8::FunctionTemplate::New}();
-t->\hyperlink{classv8_1_1Template_ad464514215a3a6b331c890019124dcbb}{Set}(\textcolor{stringliteral}{"func\_property"}, v8::Number::New(1));
+      \hyperlink{classv8_1_1FunctionTemplate_a3c6a525ee4e0d72afa77be8e34861f83}{v8::FunctionTemplate::New}();
+t->\hyperlink{classv8_1_1Template_a623b9f0cdd87dc861516f276cc9a7cfa}{Set}(\textcolor{stringliteral}{"func\_property"}, v8::Number::New(1));
 
 \hyperlink{classv8_1_1Local}{v8::Local<v8::Template>} proto\_t = t->\hyperlink{classv8_1_1FunctionTemplate_aa2bcc2652b5f0fdbc666d943ccf72021}{PrototypeTemplate}();
-proto\_t->\hyperlink{classv8_1_1Template_ad464514215a3a6b331c890019124dcbb}{Set}(\textcolor{stringliteral}{"proto\_method"}, \hyperlink{classv8_1_1FunctionTemplate_a67822fdf0ef2ac00e20e923e649f3f5f}{v8::FunctionTemplate::New}(InvokeCallback));
-proto\_t->\hyperlink{classv8_1_1Template_ad464514215a3a6b331c890019124dcbb}{Set}(\textcolor{stringliteral}{"proto\_const"}, v8::Number::New(2));
+proto\_t->\hyperlink{classv8_1_1Template_a623b9f0cdd87dc861516f276cc9a7cfa}{Set}(\textcolor{stringliteral}{"proto\_method"}, \hyperlink{classv8_1_1FunctionTemplate_a3c6a525ee4e0d72afa77be8e34861f83}{v8::FunctionTemplate::New}(InvokeCallback));
+proto\_t->\hyperlink{classv8_1_1Template_a623b9f0cdd87dc861516f276cc9a7cfa}{Set}(\textcolor{stringliteral}{"proto\_const"}, v8::Number::New(2));
 
 \hyperlink{classv8_1_1Local}{v8::Local<v8::ObjectTemplate>} instance\_t = t->
       \hyperlink{classv8_1_1FunctionTemplate_a00dd9725566908e8fd14064542f5a781}{InstanceTemplate}();
-instance\_t->\hyperlink{classv8_1_1ObjectTemplate_acf245fcdedc797068a1eb4c8d46a5269}{SetAccessor}(\textcolor{stringliteral}{"instance\_accessor"}, InstanceAccessorCallback);
-instance\_t->\hyperlink{classv8_1_1ObjectTemplate_ac7bcbb6e2936ab38490680f7e1bfb787}{SetNamedPropertyHandler}(PropertyHandlerCallback, ...);
-instance\_t->\hyperlink{classv8_1_1Template_ad464514215a3a6b331c890019124dcbb}{Set}(\textcolor{stringliteral}{"instance\_property"}, Number::New(3));
+instance\_t->\hyperlink{classv8_1_1ObjectTemplate_a7300126e15ff8246813e07f92d4fbe83}{SetAccessor}(\textcolor{stringliteral}{"instance\_accessor"}, InstanceAccessorCallback);
+instance\_t->\hyperlink{classv8_1_1ObjectTemplate_a66fa7b04c87676e20e35497ea09a0ad0}{SetNamedPropertyHandler}(PropertyHandlerCallback, ...);
+instance\_t->\hyperlink{classv8_1_1Template_a623b9f0cdd87dc861516f276cc9a7cfa}{Set}(\textcolor{stringliteral}{"instance\_property"}, Number::New(3));
 
-\hyperlink{classv8_1_1Local}{v8::Local<v8::Function>} \textcolor{keyword}{function} = t->\hyperlink{classv8_1_1FunctionTemplate_a3b8e5e214b2ee34c36138961ebac696a}{GetFunction}();
+\hyperlink{classv8_1_1Local}{v8::Local<v8::Function>} \textcolor{keyword}{function} = t->GetFunction();
 \hyperlink{classv8_1_1Local}{v8::Local<v8::Object>} instance = \textcolor{keyword}{function}->NewInstance();
 \end{DoxyCode}
 
@@ -99,13 +106,13 @@ instance.instance\_property == 3;
 \end{DoxyCode}
 
 
-A \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} can inherit from another one by calling the \hyperlink{classv8_1_1FunctionTemplate_a18f343e7e5749ed886d6e76a1424216e}{Function\+Template\+::\+Inherit} method. The following graph illustrates the semantics of inheritance\+:
+A \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} can inherit from another one by calling the \hyperlink{classv8_1_1FunctionTemplate_abc11c462facf11bafd541892815c5425}{Function\+Template\+::\+Inherit} method. The following graph illustrates the semantics of inheritance\+:
 
 
 \begin{DoxyCode}
 FunctionTemplate Parent  -> Parent() . prototype -> \{ \}
   ^                                                  ^
-  | \hyperlink{classv8_1_1FunctionTemplate_a18f343e7e5749ed886d6e76a1424216e}{Inherit}(Parent)                                  | .\_\_proto\_\_
+  | \hyperlink{classv8_1_1FunctionTemplate_abc11c462facf11bafd541892815c5425}{Inherit}(Parent)                                  | .\_\_proto\_\_
   |                                                  |
 FunctionTemplate Child   -> Child()  . prototype -> \{ \}
 \end{DoxyCode}
@@ -118,7 +125,7 @@ Let Parent be the \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} in
 
 \begin{DoxyCode}
 Local<FunctionTemplate> parent = t;
-Local<FunctionTemplate> child = \hyperlink{classv8_1_1FunctionTemplate_a67822fdf0ef2ac00e20e923e649f3f5f}{FunctionTemplate::New}();
+Local<FunctionTemplate> child = \hyperlink{classv8_1_1FunctionTemplate_a3c6a525ee4e0d72afa77be8e34861f83}{FunctionTemplate::New}();
 child->Inherit(parent);
 
 Local<Function> child\_function = child->GetFunction();
@@ -137,27 +144,20 @@ child\_instance.instance\_property == 3;
  
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1FunctionTemplate_a3b8e5e214b2ee34c36138961ebac696a}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Get\+Function@{Get\+Function}}
-\index{Get\+Function@{Get\+Function}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
-\subsubsection[{Get\+Function}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Function}$>$ v8\+::\+Function\+Template\+::\+Get\+Function (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{classv8_1_1FunctionTemplate_a3b8e5e214b2ee34c36138961ebac696a}
-Returns the unique function instance in the current execution context. \hypertarget{classv8_1_1FunctionTemplate_aa883e4ab6643498662f7873506098c98}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Has\+Instance@{Has\+Instance}}
+\hypertarget{classv8_1_1FunctionTemplate_a90d838f3456d300bd19d2a2cb98645bd}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Has\+Instance@{Has\+Instance}}
 \index{Has\+Instance@{Has\+Instance}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
 \subsubsection[{Has\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Function\+Template\+::\+Has\+Instance (
 \begin{DoxyParamCaption}
-\item[{{\bf Handle}$<$ {\bf Value} $>$}]{object}
+\item[{{\bf Local}$<$ {\bf Value} $>$}]{object}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1FunctionTemplate_aa883e4ab6643498662f7873506098c98}
-Returns true if the given object is an instance of this function template. \hypertarget{classv8_1_1FunctionTemplate_a18f343e7e5749ed886d6e76a1424216e}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Inherit@{Inherit}}
+)}\label{classv8_1_1FunctionTemplate_a90d838f3456d300bd19d2a2cb98645bd}
+Returns true if the given object is an instance of this function template. \hypertarget{classv8_1_1FunctionTemplate_abc11c462facf11bafd541892815c5425}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Inherit@{Inherit}}
 \index{Inherit@{Inherit}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
 \subsubsection[{Inherit}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Function\+Template\+::\+Inherit (
 \begin{DoxyParamCaption}
-\item[{{\bf Handle}$<$ {\bf Function\+Template} $>$}]{parent}
+\item[{{\bf Local}$<$ {\bf Function\+Template} $>$}]{parent}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1FunctionTemplate_a18f343e7e5749ed886d6e76a1424216e}
+)}\label{classv8_1_1FunctionTemplate_abc11c462facf11bafd541892815c5425}
 Causes the function template to inherit from a parent function template. \hypertarget{classv8_1_1FunctionTemplate_a00dd9725566908e8fd14064542f5a781}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Instance\+Template@{Instance\+Template}}
 \index{Instance\+Template@{Instance\+Template}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
 \subsubsection[{Instance\+Template}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Object\+Template}$>$ v8\+::\+Function\+Template\+::\+Instance\+Template (
@@ -165,17 +165,17 @@ Causes the function template to inherit from a parent function template. \hypert
 {}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1FunctionTemplate_a00dd9725566908e8fd14064542f5a781}
-Get the Instance\+Template. \hypertarget{classv8_1_1FunctionTemplate_a67822fdf0ef2ac00e20e923e649f3f5f}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!New@{New}}
+Get the Instance\+Template. \hypertarget{classv8_1_1FunctionTemplate_a3c6a525ee4e0d72afa77be8e34861f83}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!New@{New}}
 \index{New@{New}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
 \subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Function\+Template}$>$ v8\+::\+Function\+Template\+::\+New (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
 \item[{Function\+Callback}]{callback = {\ttfamily 0}, }
-\item[{{\bf Handle}$<$ {\bf Value} $>$}]{data = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}, }
-\item[{{\bf Handle}$<$ {\bf Signature} $>$}]{signature = {\ttfamily {\bf Handle}$<$~{\bf Signature}~$>$()}, }
+\item[{{\bf Local}$<$ {\bf Value} $>$}]{data = {\ttfamily {\bf Local}$<$~{\bf Value}~$>$()}, }
+\item[{{\bf Local}$<$ {\bf Signature} $>$}]{signature = {\ttfamily {\bf Local}$<$~{\bf Signature}~$>$()}, }
 \item[{int}]{length = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1FunctionTemplate_a67822fdf0ef2ac00e20e923e649f3f5f}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1FunctionTemplate_a3c6a525ee4e0d72afa77be8e34861f83}
 Creates a function template. \hypertarget{classv8_1_1FunctionTemplate_aa2bcc2652b5f0fdbc666d943ccf72021}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Prototype\+Template@{Prototype\+Template}}
 \index{Prototype\+Template@{Prototype\+Template}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
 \subsubsection[{Prototype\+Template}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Object\+Template}$>$ v8\+::\+Function\+Template\+::\+Prototype\+Template (
@@ -197,22 +197,29 @@ Sets the Read\+Only flag in the attributes of the \textquotesingle{}prototype\te
 {}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1FunctionTemplate_a4a184aca244174c7fe52d58871d3129e}
-Removes the prototype property from functions created from this \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}. \hypertarget{classv8_1_1FunctionTemplate_a4805d729fbd1256b41ecaf157c740bd2}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Set\+Call\+Handler@{Set\+Call\+Handler}}
+Removes the prototype property from functions created from this \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}. \hypertarget{classv8_1_1FunctionTemplate_a5ffdc68d8035b02ed7583950b76ef91f}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Set\+Accept\+Any\+Receiver@{Set\+Accept\+Any\+Receiver}}
+\index{Set\+Accept\+Any\+Receiver@{Set\+Accept\+Any\+Receiver}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
+\subsubsection[{Set\+Accept\+Any\+Receiver}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Function\+Template\+::\+Set\+Accept\+Any\+Receiver (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1FunctionTemplate_a5ffdc68d8035b02ed7583950b76ef91f}
+When set to true, no access check will be performed on the receiver of a function call. Currently defaults to true, but this is subject to change. \hypertarget{classv8_1_1FunctionTemplate_a49babb7ea2d786a483a71514209455b6}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Set\+Call\+Handler@{Set\+Call\+Handler}}
 \index{Set\+Call\+Handler@{Set\+Call\+Handler}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
 \subsubsection[{Set\+Call\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Function\+Template\+::\+Set\+Call\+Handler (
 \begin{DoxyParamCaption}
 \item[{Function\+Callback}]{callback, }
-\item[{{\bf Handle}$<$ {\bf Value} $>$}]{data = {\ttfamily {\bf Handle}$<$~{\bf Value}~$>$()}}
+\item[{{\bf Local}$<$ {\bf Value} $>$}]{data = {\ttfamily {\bf Local}$<$~{\bf Value}~$>$()}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1FunctionTemplate_a4805d729fbd1256b41ecaf157c740bd2}
-Set the call-\/handler callback for a \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}. This callback is called whenever the function created from this \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} is called. \hypertarget{classv8_1_1FunctionTemplate_a10ad6f0d3d1f67823e08fbca7c5dde41}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Set\+Class\+Name@{Set\+Class\+Name}}
+)}\label{classv8_1_1FunctionTemplate_a49babb7ea2d786a483a71514209455b6}
+\hyperlink{classv8_1_1Set}{Set} the call-\/handler callback for a \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}. This callback is called whenever the function created from this \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} is called. \hypertarget{classv8_1_1FunctionTemplate_a491e77dc7ceb5b0fe75880d11f2dbe9e}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Set\+Class\+Name@{Set\+Class\+Name}}
 \index{Set\+Class\+Name@{Set\+Class\+Name}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
 \subsubsection[{Set\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Function\+Template\+::\+Set\+Class\+Name (
 \begin{DoxyParamCaption}
-\item[{{\bf Handle}$<$ {\bf String} $>$}]{name}
+\item[{{\bf Local}$<$ {\bf String} $>$}]{name}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1FunctionTemplate_a10ad6f0d3d1f67823e08fbca7c5dde41}
-Set the class name of the \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}. This is used for printing objects created with the function created from the \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} as its constructor. \hypertarget{classv8_1_1FunctionTemplate_ade426e8a21d777ae6100e6c1aa7bfaee}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Set\+Hidden\+Prototype@{Set\+Hidden\+Prototype}}
+)}\label{classv8_1_1FunctionTemplate_a491e77dc7ceb5b0fe75880d11f2dbe9e}
+\hyperlink{classv8_1_1Set}{Set} the class name of the \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}. This is used for printing objects created with the function created from the \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} as its constructor. \hypertarget{classv8_1_1FunctionTemplate_ade426e8a21d777ae6100e6c1aa7bfaee}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!Set\+Hidden\+Prototype@{Set\+Hidden\+Prototype}}
 \index{Set\+Hidden\+Prototype@{Set\+Hidden\+Prototype}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
 \subsubsection[{Set\+Hidden\+Prototype}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Function\+Template\+::\+Set\+Hidden\+Prototype (
 \begin{DoxyParamCaption}
@@ -228,7 +235,15 @@ Call with a value of true to make the {\bfseries proto} accessor ignore instance
 \item[{int}]{length}
 \end{DoxyParamCaption}
 )}\label{classv8_1_1FunctionTemplate_a5faf23b28ee3480b23ce054d0f389a75}
-Set the predefined length property for the \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}. 
+\hyperlink{classv8_1_1Set}{Set} the predefined length property for the \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}. \hypertarget{classv8_1_1FunctionTemplate_a007fd05a3fa3c960bf7ddbc05c724d2b}{}\index{v8\+::\+Function\+Template@{v8\+::\+Function\+Template}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Function\+Template@{v8\+::\+Function\+Template}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Function\+Template\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use maybe version\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Function} $>$ }]{Get\+Function()}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1FunctionTemplate_a007fd05a3fa3c960bf7ddbc05c724d2b}
+Returns the unique function instance in the current execution context. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

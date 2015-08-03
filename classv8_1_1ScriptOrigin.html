@@ -99,34 +99,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:add31e4754a4b7173c2f7e6c3af306721"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add31e4754a4b7173c2f7e6c3af306721"></a>
-V8_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptOrigin</b> (<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; resource_name, <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; resource_line_offset=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;(), <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; resource_column_offset=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;(), <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt; resource_is_shared_cross_origin=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt;(), <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; script_id=<a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;())</td></tr>
-<tr class="separator:add31e4754a4b7173c2f7e6c3af306721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a289502d71720ca10e53b4a32d9226f58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a289502d71720ca10e53b4a32d9226f58"></a>
-V8_INLINE <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceName</b> () const </td></tr>
-<tr class="separator:a289502d71720ca10e53b4a32d9226f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0735178b8afef9169a3481cf6cd7c557"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0735178b8afef9169a3481cf6cd7c557"></a>
-V8_INLINE <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceLineOffset</b> () const </td></tr>
-<tr class="separator:a0735178b8afef9169a3481cf6cd7c557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d1b4cb1be2b6589151a029974cd1a60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d1b4cb1be2b6589151a029974cd1a60"></a>
-V8_INLINE <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceColumnOffset</b> () const </td></tr>
-<tr class="separator:a6d1b4cb1be2b6589151a029974cd1a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632d2d30405d42512af609861e486bf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a632d2d30405d42512af609861e486bf2"></a>
-V8_INLINE <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceIsSharedCrossOrigin</b> () const </td></tr>
-<tr class="separator:a632d2d30405d42512af609861e486bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc222706ba9cdd48f8efaf4be227c078"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc222706ba9cdd48f8efaf4be227c078"></a>
-V8_INLINE <a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptID</b> () const </td></tr>
-<tr class="separator:abc222706ba9cdd48f8efaf4be227c078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c14da5d4738bf3804bf291c4998afb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c14da5d4738bf3804bf291c4998afb6"></a>
+V8_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptOrigin</b> (<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; resource_name, <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; resource_line_offset=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; resource_column_offset=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt; resource_is_shared_cross_origin=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; script_id=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt; resource_is_embedder_debug_script=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt; source_map_url=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;(), <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt; resource_is_opaque=<a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Boolean.html">Boolean</a> &gt;())</td></tr>
+<tr class="separator:a1c14da5d4738bf3804bf291c4998afb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909cf21519598dc7564c66bfe00c3bda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a909cf21519598dc7564c66bfe00c3bda"></a>
+V8_INLINE <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceName</b> () const </td></tr>
+<tr class="separator:a909cf21519598dc7564c66bfe00c3bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1359d207f074c949a345a3daddc34c58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1359d207f074c949a345a3daddc34c58"></a>
+V8_INLINE <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceLineOffset</b> () const </td></tr>
+<tr class="separator:a1359d207f074c949a345a3daddc34c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c1ca158a1c2aa554c746b472bd30f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0c1ca158a1c2aa554c746b472bd30f0"></a>
+V8_INLINE <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceColumnOffset</b> () const </td></tr>
+<tr class="separator:ab0c1ca158a1c2aa554c746b472bd30f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73721102b23fb7e6f1c5aee833bbd5f"><td class="memItemLeft" align="right" valign="top">V8_INLINE <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1ScriptOrigin.html#ab73721102b23fb7e6f1c5aee833bbd5f">ScriptID</a> () const </td></tr>
+<tr class="separator:ab73721102b23fb7e6f1c5aee833bbd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c5225f4816b16dab7aa0370b5511ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72c5225f4816b16dab7aa0370b5511ee"></a>
+V8_INLINE <a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Value.html">Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SourceMapUrl</b> () const </td></tr>
+<tr class="separator:a72c5225f4816b16dab7aa0370b5511ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0eca1567b9ecd08a4c34957cf0a3dde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0eca1567b9ecd08a4c34957cf0a3dde"></a>
+V8_INLINE <a class="el" href="classv8_1_1ScriptOriginOptions.html">ScriptOriginOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Options</b> () const </td></tr>
+<tr class="separator:aa0eca1567b9ecd08a4c34957cf0a3dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The origin, within a file, of a script. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab73721102b23fb7e6f1c5aee833bbd5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classv8_1_1Local.html">Local</a>&lt; <a class="el" href="classv8_1_1Integer.html">Integer</a> &gt; v8::ScriptOrigin::ScriptID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true for embedder's debugger scripts </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>v8/include/<a class="el" href="v8_8h_source.html">v8.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:48 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:04 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -16,7 +16,10 @@ Inheritance diagram for v8\+:\+:Array\+:\begin{figure}[H]
 \hypertarget{classv8_1_1Array_a3c47dfd8d26e60ed4fcdc683034d6d9c}{}uint32\+\_\+t {\bfseries Length} () const \label{classv8_1_1Array_a3c47dfd8d26e60ed4fcdc683034d6d9c}
 
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Array_a7335096a5349ce75b38d5b24af4bd125}{Clone\+Element\+At} (uint32\+\_\+t index)
+\hyperlink{classv8_1_1Array_a3b1451b581932eef0d39c2c754adc1f9}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Object}{Object} $>$ Clone\+Element\+At(uint32\+\_\+t index))
+\item 
+\hypertarget{classv8_1_1Array_aceb6239f3ca3855174c58f19c49ebe6b}{}V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+L\+T \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ {\bfseries Clone\+Element\+At} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, uint32\+\_\+t index)\label{classv8_1_1Array_aceb6239f3ca3855174c58f19c49ebe6b}
+
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -32,14 +35,7 @@ static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Array}{Array
 An instance of the built-\/in array constructor (E\+C\+M\+A-\/262, 15.\+4.\+2). 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1Array_a7335096a5349ce75b38d5b24af4bd125}{}\index{v8\+::\+Array@{v8\+::\+Array}!Clone\+Element\+At@{Clone\+Element\+At}}
-\index{Clone\+Element\+At@{Clone\+Element\+At}!v8\+::\+Array@{v8\+::\+Array}}
-\subsubsection[{Clone\+Element\+At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Object}$>$ v8\+::\+Array\+::\+Clone\+Element\+At (
-\begin{DoxyParamCaption}
-\item[{uint32\+\_\+t}]{index}
-\end{DoxyParamCaption}
-)}\label{classv8_1_1Array_a7335096a5349ce75b38d5b24af4bd125}
-Clones an element at index $\vert$index$\vert$. Returns an empty handle if cloning fails (for any reason). \hypertarget{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}{}\index{v8\+::\+Array@{v8\+::\+Array}!New@{New}}
+\hypertarget{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}{}\index{v8\+::\+Array@{v8\+::\+Array}!New@{New}}
 \index{New@{New}!v8\+::\+Array@{v8\+::\+Array}}
 \subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array}$>$ v8\+::\+Array\+::\+New (
 \begin{DoxyParamCaption}
@@ -47,7 +43,15 @@ Clones an element at index $\vert$index$\vert$. Returns an empty handle if cloni
 \item[{int}]{length = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}
-Creates a Java\+Script array with the given length. If the length is negative the returned array will have length 0. 
+Creates a Java\+Script array with the given length. If the length is negative the returned array will have length 0. \hypertarget{classv8_1_1Array_a3b1451b581932eef0d39c2c754adc1f9}{}\index{v8\+::\+Array@{v8\+::\+Array}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Array@{v8\+::\+Array}}
+\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Array\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use maybe version\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Object} $>$ }]{Clone\+Element\+Atuint32\+\_\+t index}
+\end{DoxyParamCaption}
+)}\label{classv8_1_1Array_a3b1451b581932eef0d39c2c754adc1f9}
+Clones an element at index $\vert$index$\vert$. Returns an empty handle if cloning fails (for any reason). 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

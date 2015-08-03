@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['weakcallbackdata',['WeakCallbackData',['../classv8_1_1WeakCallbackData.html',1,'v8']]],
-  ['weakcallbackobject',['WeakCallbackObject',['../classv8_1_1WeakCallbackObject.html',1,'v8']]]
+  ['v8',['V8',['../classv8_1_1V8.html',1,'v8']]],
+  ['value',['Value',['../classv8_1_1Value.html',1,'v8']]],
+  ['value',['Value',['../classv8_1_1String_1_1Value.html',1,'v8::String']]]
 ];

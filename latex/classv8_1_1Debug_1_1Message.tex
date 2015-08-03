@@ -17,14 +17,14 @@ virtual bool \hyperlink{classv8_1_1Debug_1_1Message_a36ade83a9c960ce581b1a4051f7
 \item 
 virtual bool \hyperlink{classv8_1_1Debug_1_1Message_af8d236b6a334423732a38cbf8cfd7aef}{Will\+Start\+Running} () const =0
 \item 
-virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Debug_1_1Message_aa54e11b06d304e8b8f34cc79ee49d869}{Get\+Execution\+State} () const =0
+virtual \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Debug_1_1Message_a0e20677046473f0bdcdc8656cdff1651}{Get\+Execution\+State} () const =0
 \item 
-\hypertarget{classv8_1_1Debug_1_1Message_aa18f6c01d91d176d4e3d0a018890e59a}{}virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ {\bfseries Get\+Event\+Data} () const =0\label{classv8_1_1Debug_1_1Message_aa18f6c01d91d176d4e3d0a018890e59a}
+\hypertarget{classv8_1_1Debug_1_1Message_a4c06f55aec5aba3eb10f2b284545ea13}{}virtual \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ {\bfseries Get\+Event\+Data} () const =0\label{classv8_1_1Debug_1_1Message_a4c06f55aec5aba3eb10f2b284545ea13}
 
 \item 
-virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1Debug_1_1Message_a41076f64f82c927cbb2fe5c8325557d5}{Get\+J\+S\+O\+N} () const =0
+virtual \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1Debug_1_1Message_ad1cc300c42a92890bfab4122fa657ea5}{Get\+J\+S\+O\+N} () const =0
 \item 
-virtual \hyperlink{classv8_1_1Handle}{Handle}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_1_1Message_a34ff90d879888746a7a0eacebd6aa088}{Get\+Event\+Context} () const =0
+virtual \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_1_1Message_ab6632d15830b5c5f474a4da36405478d}{Get\+Event\+Context} () const =0
 \item 
 virtual \hyperlink{classv8_1_1Debug_1_1ClientData}{Client\+Data} $\ast$ \hyperlink{classv8_1_1Debug_1_1Message_ab81bb81d233f5f37e6626a7bcac22142}{Get\+Client\+Data} () const =0
 \item 
@@ -44,27 +44,27 @@ A message object passed to the debug message handler.
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1Message_ab81bb81d233f5f37e6626a7bcac22142}
-Client data passed with the corresponding request if any. This is the client\+\_\+data data value passed into Debug\+::\+Send\+Command along with the request that led to the message or N\+U\+L\+L if the message is an event. The debugger takes ownership of the data and will delete it even if there is no message handler. \hypertarget{classv8_1_1Debug_1_1Message_a34ff90d879888746a7a0eacebd6aa088}{}\index{v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}!Get\+Event\+Context@{Get\+Event\+Context}}
+Client data passed with the corresponding request if any. This is the client\+\_\+data data value passed into Debug\+::\+Send\+Command along with the request that led to the message or N\+U\+L\+L if the message is an event. The debugger takes ownership of the data and will delete it even if there is no message handler. \hypertarget{classv8_1_1Debug_1_1Message_ab6632d15830b5c5f474a4da36405478d}{}\index{v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}!Get\+Event\+Context@{Get\+Event\+Context}}
 \index{Get\+Event\+Context@{Get\+Event\+Context}!v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}}
-\subsubsection[{Get\+Event\+Context}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf Context}$>$ v8\+::\+Debug\+::\+Message\+::\+Get\+Event\+Context (
+\subsubsection[{Get\+Event\+Context}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Local}$<${\bf Context}$>$ v8\+::\+Debug\+::\+Message\+::\+Get\+Event\+Context (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1Message_a34ff90d879888746a7a0eacebd6aa088}
-Get the context active when the debug event happened. Note this is not the current active context as the Java\+Script part of the debugger is running in its own context which is entered at this point. \hypertarget{classv8_1_1Debug_1_1Message_aa54e11b06d304e8b8f34cc79ee49d869}{}\index{v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}!Get\+Execution\+State@{Get\+Execution\+State}}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1Message_ab6632d15830b5c5f474a4da36405478d}
+Get the context active when the debug event happened. Note this is not the current active context as the Java\+Script part of the debugger is running in its own context which is entered at this point. \hypertarget{classv8_1_1Debug_1_1Message_a0e20677046473f0bdcdc8656cdff1651}{}\index{v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}!Get\+Execution\+State@{Get\+Execution\+State}}
 \index{Get\+Execution\+State@{Get\+Execution\+State}!v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}}
-\subsubsection[{Get\+Execution\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf Object}$>$ v8\+::\+Debug\+::\+Message\+::\+Get\+Execution\+State (
+\subsubsection[{Get\+Execution\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Local}$<${\bf Object}$>$ v8\+::\+Debug\+::\+Message\+::\+Get\+Execution\+State (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1Message_aa54e11b06d304e8b8f34cc79ee49d869}
-Access to execution state and event data. Don\textquotesingle{}t store these cross callbacks as their content becomes invalid. These objects are from the debugger event that started the debug message loop. \hypertarget{classv8_1_1Debug_1_1Message_a41076f64f82c927cbb2fe5c8325557d5}{}\index{v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}!Get\+J\+S\+O\+N@{Get\+J\+S\+O\+N}}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1Message_a0e20677046473f0bdcdc8656cdff1651}
+Access to execution state and event data. Don\textquotesingle{}t store these cross callbacks as their content becomes invalid. These objects are from the debugger event that started the debug message loop. \hypertarget{classv8_1_1Debug_1_1Message_ad1cc300c42a92890bfab4122fa657ea5}{}\index{v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}!Get\+J\+S\+O\+N@{Get\+J\+S\+O\+N}}
 \index{Get\+J\+S\+O\+N@{Get\+J\+S\+O\+N}!v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}}
-\subsubsection[{Get\+J\+S\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Handle}$<${\bf String}$>$ v8\+::\+Debug\+::\+Message\+::\+Get\+J\+S\+O\+N (
+\subsubsection[{Get\+J\+S\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Local}$<${\bf String}$>$ v8\+::\+Debug\+::\+Message\+::\+Get\+J\+S\+O\+N (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1Message_a41076f64f82c927cbb2fe5c8325557d5}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1Debug_1_1Message_ad1cc300c42a92890bfab4122fa657ea5}
 Get the debugger protocol \hyperlink{classv8_1_1JSON}{J\+S\+O\+N}. \hypertarget{classv8_1_1Debug_1_1Message_a36ade83a9c960ce581b1a4051f763785}{}\index{v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}!Is\+Event@{Is\+Event}}
 \index{Is\+Event@{Is\+Event}!v8\+::\+Debug\+::\+Message@{v8\+::\+Debug\+::\+Message}}
 \subsubsection[{Is\+Event}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool v8\+::\+Debug\+::\+Message\+::\+Is\+Event (

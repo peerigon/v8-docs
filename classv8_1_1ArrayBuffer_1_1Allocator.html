@@ -107,7 +107,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a419f59d2a103a5a8863809d7977c9cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html">Allocator</a> that <a class="el" href="classv8_1_1V8.html">V8</a> uses to allocate |ArrayBuffer|'s memory. The allocator is a global <a class="el" href="classv8_1_1V8.html">V8</a> setting. It should be set with <a class="el" href="classv8_1_1V8.html#abc40950a39f8cb6946dc8a1ad41eea84">V8::SetArrayBufferAllocator</a> prior to creation of a first <a class="el" href="classv8_1_1ArrayBuffer.html">ArrayBuffer</a>.</p>
+<div class="textblock"><p><a class="el" href="classv8_1_1ArrayBuffer_1_1Allocator.html">Allocator</a> that <a class="el" href="classv8_1_1V8.html">V8</a> uses to allocate |ArrayBuffer|'s memory. The allocator is a global <a class="el" href="classv8_1_1V8.html">V8</a> setting. It has to be set via <a class="el" href="structv8_1_1Isolate_1_1CreateParams.html">Isolate::CreateParams</a>.</p>
 <p>This API is experimental and may change significantly. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a106b0d80120ed04fe9b9675e96f0340b"></a>
@@ -201,7 +201,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:43 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:02:58 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

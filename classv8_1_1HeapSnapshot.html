@@ -106,10 +106,6 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8096d1dc0b99fbffc0f0618be8472ca7"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapSnapshot.html#a8096d1dc0b99fbffc0f0618be8472ca7">GetUid</a> () const </td></tr>
-<tr class="separator:a8096d1dc0b99fbffc0f0618be8472ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54d5d9e0234c2ee361892ea598624a82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt; <a class="el" href="classv8_1_1String.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapSnapshot.html#a54d5d9e0234c2ee361892ea598624a82">GetTitle</a> () const </td></tr>
-<tr class="separator:a54d5d9e0234c2ee361892ea598624a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd7abe35ce29f9874de6687c65bf2af"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classv8_1_1HeapGraphNode.html">HeapGraphNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapSnapshot.html#aafd7abe35ce29f9874de6687c65bf2af">GetRoot</a> () const </td></tr>
 <tr class="separator:aafd7abe35ce29f9874de6687c65bf2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023696f94fe538380922bf2c40c97b7b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classv8_1_1HeapGraphNode.html">HeapGraphNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapSnapshot.html#a023696f94fe538380922bf2c40c97b7b">GetNodeById</a> (SnapshotObjectId id) const </td></tr>
@@ -122,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4a0fc79b7ef74a3a5ea3450b2354d8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaa6073009e4041839dff7a860d2548a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapSnapshot.html#aeaa6073009e4041839dff7a860d2548a">Delete</a> ()</td></tr>
 <tr class="separator:aeaa6073009e4041839dff7a860d2548a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7383deaa06fab1d948fd7e737ac7d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapSnapshot.html#acf7383deaa06fab1d948fd7e737ac7d3">Serialize</a> (<a class="el" href="classv8_1_1OutputStream.html">OutputStream</a> *stream, SerializationFormat format) const </td></tr>
-<tr class="separator:acf7383deaa06fab1d948fd7e737ac7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611023f17d9612477a964383470ec171"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classv8_1_1HeapSnapshot.html#a611023f17d9612477a964383470ec171">Serialize</a> (<a class="el" href="classv8_1_1OutputStream.html">OutputStream</a> *stream, SerializationFormat format=kJSON) const </td></tr>
+<tr class="separator:a611023f17d9612477a964383470ec171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>HeapSnapshots record the state of the JS heap at some moment. </p>
@@ -226,39 +222,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a54d5d9e0234c2ee361892ea598624a82"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classv8_1_1Handle.html">Handle</a>&lt;<a class="el" href="classv8_1_1String.html">String</a>&gt; v8::HeapSnapshot::GetTitle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns heap snapshot title. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8096d1dc0b99fbffc0f0618be8472ca7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned v8::HeapSnapshot::GetUid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns heap snapshot UID (assigned by the profiler.) </p>
-
-</div>
-</div>
-<a class="anchor" id="acf7383deaa06fab1d948fd7e737ac7d3"></a>
+<a class="anchor" id="a611023f17d9612477a964383470ec171"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -272,7 +236,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">SerializationFormat&#160;</td>
-          <td class="paramname"><em>format</em>&#160;</td>
+          <td class="paramname"><em>format</em> = <code>kJSON</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -294,7 +258,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 20 2015 10:49:45 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 3 2015 16:03:01 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
