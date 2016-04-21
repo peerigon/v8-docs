@@ -1,5 +1,8 @@
+[Go to v8 docs](http://peerigon.github.io/v8-docs/)
+===============
+
 About
-=====
+-----
 
 This project is intended to be an up-to-date reference for developers using the [Google v8](http://code.google.com/p/v8/)
 api. The reference is automatically created by [doxygen](http://www.stack.nl/~dimitri/doxygen/).
