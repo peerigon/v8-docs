@@ -1,0 +1,60 @@
+\hypertarget{structv8_1_1AllocationProfile_1_1Node}{}\section{v8\+:\+:Allocation\+Profile\+:\+:Node Struct Reference}
+\label{structv8_1_1AllocationProfile_1_1Node}\index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{structv8_1_1AllocationProfile_1_1Node_af9f2c323d6a11e836c02e8ac88adc5a8}{name}
+\item 
+\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{structv8_1_1AllocationProfile_1_1Node_acd6567ac06a0bae713390559128e9c62}{script\+\_\+name}
+\item 
+int \hyperlink{structv8_1_1AllocationProfile_1_1Node_a4a746de878d9ad42b32fda4c365b98fb}{script\+\_\+id}
+\item 
+int \hyperlink{structv8_1_1AllocationProfile_1_1Node_a6caceefbf826a0425adc74331cc7a910}{start\+\_\+position}
+\item 
+int \hyperlink{structv8_1_1AllocationProfile_1_1Node_ac9773c92a3af3a9a9420337599e68bd9}{line\+\_\+number}
+\item 
+int \hyperlink{structv8_1_1AllocationProfile_1_1Node_a7cf86acc298428c858673fc1f9dbe305}{column\+\_\+number}
+\item 
+std\+::vector$<$ \hyperlink{structv8_1_1AllocationProfile_1_1Node}{Node} $\ast$ $>$ \hyperlink{structv8_1_1AllocationProfile_1_1Node_a176673c0440cb1baaf7713e14da84db0}{children}
+\item 
+std\+::vector$<$ \hyperlink{structv8_1_1AllocationProfile_1_1Allocation}{Allocation} $>$ \hyperlink{structv8_1_1AllocationProfile_1_1Node_a6ee0934b35ba77fb5d8b53f02d5a3068}{allocations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a node in the call-\/graph. 
+
+\subsection{Field Documentation}
+\index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!allocations@{allocations}}
+\index{allocations@{allocations}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection[{\texorpdfstring{allocations}{allocations}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Allocation}$>$ v8\+::\+Allocation\+Profile\+::\+Node\+::allocations}\hypertarget{structv8_1_1AllocationProfile_1_1Node_a6ee0934b35ba77fb5d8b53f02d5a3068}{}\label{structv8_1_1AllocationProfile_1_1Node_a6ee0934b35ba77fb5d8b53f02d5a3068}
+List of self allocations done by this node in the call-\/graph. \index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!children@{children}}
+\index{children@{children}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection[{\texorpdfstring{children}{children}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Node}$\ast$$>$ v8\+::\+Allocation\+Profile\+::\+Node\+::children}\hypertarget{structv8_1_1AllocationProfile_1_1Node_a176673c0440cb1baaf7713e14da84db0}{}\label{structv8_1_1AllocationProfile_1_1Node_a176673c0440cb1baaf7713e14da84db0}
+List of callees called from this node for which we have sampled allocations. The lifetime of the children is scoped to the containing \hyperlink{classv8_1_1AllocationProfile}{Allocation\+Profile}. \index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!column\+\_\+number@{column\+\_\+number}}
+\index{column\+\_\+number@{column\+\_\+number}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection[{\texorpdfstring{column\+\_\+number}{column_number}}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Allocation\+Profile\+::\+Node\+::column\+\_\+number}\hypertarget{structv8_1_1AllocationProfile_1_1Node_a7cf86acc298428c858673fc1f9dbe305}{}\label{structv8_1_1AllocationProfile_1_1Node_a7cf86acc298428c858673fc1f9dbe305}
+1-\/indexed column number where the function starts. May be k\+No\+Column\+Number\+Info if no line number information is available. \index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!line\+\_\+number@{line\+\_\+number}}
+\index{line\+\_\+number@{line\+\_\+number}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection[{\texorpdfstring{line\+\_\+number}{line_number}}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Allocation\+Profile\+::\+Node\+::line\+\_\+number}\hypertarget{structv8_1_1AllocationProfile_1_1Node_ac9773c92a3af3a9a9420337599e68bd9}{}\label{structv8_1_1AllocationProfile_1_1Node_ac9773c92a3af3a9a9420337599e68bd9}
+1-\/indexed line number where the function starts. May be k\+No\+Line\+Number\+Info if no line number information is available. \index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!name@{name}}
+\index{name@{name}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Allocation\+Profile\+::\+Node\+::name}\hypertarget{structv8_1_1AllocationProfile_1_1Node_af9f2c323d6a11e836c02e8ac88adc5a8}{}\label{structv8_1_1AllocationProfile_1_1Node_af9f2c323d6a11e836c02e8ac88adc5a8}
+\hyperlink{classv8_1_1Name}{Name} of the function. May be empty for anonymous functions or if the script corresponding to this function has been unloaded. \index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!script\+\_\+id@{script\+\_\+id}}
+\index{script\+\_\+id@{script\+\_\+id}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection[{\texorpdfstring{script\+\_\+id}{script_id}}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Allocation\+Profile\+::\+Node\+::script\+\_\+id}\hypertarget{structv8_1_1AllocationProfile_1_1Node_a4a746de878d9ad42b32fda4c365b98fb}{}\label{structv8_1_1AllocationProfile_1_1Node_a4a746de878d9ad42b32fda4c365b98fb}
+id of the script where the function is located. May be equal to v8\+::\+Unbound\+Script\+::k\+No\+Script\+Id in cases where the script doesn\textquotesingle{}t exist. \index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!script\+\_\+name@{script\+\_\+name}}
+\index{script\+\_\+name@{script\+\_\+name}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection[{\texorpdfstring{script\+\_\+name}{script_name}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Allocation\+Profile\+::\+Node\+::script\+\_\+name}\hypertarget{structv8_1_1AllocationProfile_1_1Node_acd6567ac06a0bae713390559128e9c62}{}\label{structv8_1_1AllocationProfile_1_1Node_acd6567ac06a0bae713390559128e9c62}
+\hyperlink{classv8_1_1Name}{Name} of the script containing the function. May be empty if the script name is not available, or if the script has been unloaded. \index{v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}!start\+\_\+position@{start\+\_\+position}}
+\index{start\+\_\+position@{start\+\_\+position}!v8\+::\+Allocation\+Profile\+::\+Node@{v8\+::\+Allocation\+Profile\+::\+Node}}
+\subsubsection[{\texorpdfstring{start\+\_\+position}{start_position}}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Allocation\+Profile\+::\+Node\+::start\+\_\+position}\hypertarget{structv8_1_1AllocationProfile_1_1Node_a6caceefbf826a0425adc74331cc7a910}{}\label{structv8_1_1AllocationProfile_1_1Node_a6caceefbf826a0425adc74331cc7a910}
+Start position of the function in the script. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

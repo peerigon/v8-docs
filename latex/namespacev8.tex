@@ -9,6 +9,8 @@ class \hyperlink{classv8_1_1ActivityControl}{Activity\+Control}
 \item 
 class \hyperlink{classv8_1_1AlignOfHelper}{Align\+Of\+Helper}
 \item 
+class \hyperlink{classv8_1_1AllocationProfile}{Allocation\+Profile}
+\item 
 class \hyperlink{classv8_1_1Array}{Array}
 \item 
 class \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}
@@ -46,6 +48,8 @@ class \hyperlink{classv8_1_1DefaultGlobalMapTraits}{Default\+Global\+Map\+Traits
 class \hyperlink{classv8_1_1DefaultPersistentValueMapTraits}{Default\+Persistent\+Value\+Map\+Traits}
 \item 
 class \hyperlink{classv8_1_1DefaultPersistentValueVectorTraits}{Default\+Persistent\+Value\+Vector\+Traits}
+\item 
+class \hyperlink{classv8_1_1EmbedderHeapTracer}{Embedder\+Heap\+Tracer}
 \item 
 class \hyperlink{classv8_1_1EscapableHandleScope}{Escapable\+Handle\+Scope}
 \item 
@@ -113,7 +117,7 @@ class \hyperlink{classv8_1_1Isolate}{Isolate}
 \item 
 struct \hyperlink{structv8_1_1JitCodeEvent}{Jit\+Code\+Event}
 \item 
-class \hyperlink{classv8_1_1JSON}{J\+S\+O\+N}
+class \hyperlink{classv8_1_1JSON}{J\+S\+ON}
 \item 
 class \hyperlink{classv8_1_1Local}{Local}
 \item 
@@ -126,6 +130,8 @@ class \hyperlink{classv8_1_1Maybe}{Maybe}
 class \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}
 \item 
 class \hyperlink{classv8_1_1Message}{Message}
+\item 
+class \hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope}
 \item 
 class \hyperlink{classv8_1_1Name}{Name}
 \item 
@@ -161,11 +167,15 @@ class \hyperlink{classv8_1_1Platform}{Platform}
 \item 
 class \hyperlink{classv8_1_1Primitive}{Primitive}
 \item 
+class \hyperlink{classv8_1_1Private}{Private}
+\item 
 class \hyperlink{classv8_1_1Promise}{Promise}
 \item 
 class \hyperlink{classv8_1_1PromiseRejectMessage}{Promise\+Reject\+Message}
 \item 
 class \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}
+\item 
+class \hyperlink{classv8_1_1Proxy}{Proxy}
 \item 
 class \hyperlink{classv8_1_1RegExp}{Reg\+Exp}
 \item 
@@ -225,8 +235,6 @@ class \hyperlink{classv8_1_1TryCatch}{Try\+Catch}
 \item 
 class \hyperlink{classv8_1_1TypedArray}{Typed\+Array}
 \item 
-class \hyperlink{classv8_1_1TypeSwitch}{Type\+Switch}
-\item 
 class \hyperlink{classv8_1_1Uint16Array}{Uint16\+Array}
 \item 
 class \hyperlink{classv8_1_1Uint32}{Uint32}
@@ -256,33 +264,33 @@ class \hyperlink{classv8_1_1WeakCallbackObject}{Weak\+Callback\+Object}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{namespacev8_acc05be0fdcf26b26fbb410e75a048e63}{}typedef uint32\+\_\+t {\bfseries Snapshot\+Object\+Id}\label{namespacev8_acc05be0fdcf26b26fbb410e75a048e63}
+typedef uint32\+\_\+t {\bfseries Snapshot\+Object\+Id}\hypertarget{namespacev8_acc05be0fdcf26b26fbb410e75a048e63}{}\label{namespacev8_acc05be0fdcf26b26fbb410e75a048e63}
 
 \item 
-\hypertarget{namespacev8_af40bc0395e06dd22c3bb1328deb94869}{}typedef uintptr\+\_\+t {\bfseries Persistent\+Container\+Value}\label{namespacev8_af40bc0395e06dd22c3bb1328deb94869}
+typedef uintptr\+\_\+t {\bfseries Persistent\+Container\+Value}\hypertarget{namespacev8_af40bc0395e06dd22c3bb1328deb94869}{}\label{namespacev8_af40bc0395e06dd22c3bb1328deb94869}
 
 \item 
-\hypertarget{namespacev8_a9b42f6a6adfdc70e92717a20a2e99ba3}{}{\footnotesize template$<$class T $>$ }\\using {\bfseries Handle} = \hyperlink{classv8_1_1Local}{Local}$<$ T $>$\label{namespacev8_a9b42f6a6adfdc70e92717a20a2e99ba3}
+{\footnotesize template$<$class T $>$ }\\using {\bfseries Handle} = \hyperlink{classv8_1_1Local}{Local}$<$ T $>$\hypertarget{namespacev8_a9b42f6a6adfdc70e92717a20a2e99ba3}{}\label{namespacev8_a9b42f6a6adfdc70e92717a20a2e99ba3}
 
 \item 
-\hypertarget{namespacev8_a4ffe352640c281efa614ae5cfb539de5}{}{\footnotesize template$<$class T $>$ }\\using {\bfseries Phantom\+Callback\+Data} = \hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}$<$ T $>$\label{namespacev8_a4ffe352640c281efa614ae5cfb539de5}
+{\footnotesize template$<$class T $>$ }\\using {\bfseries Phantom\+Callback\+Data} = \hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}$<$ T $>$\hypertarget{namespacev8_a4ffe352640c281efa614ae5cfb539de5}{}\label{namespacev8_a4ffe352640c281efa614ae5cfb539de5}
 
 \item 
-\hypertarget{namespacev8_a700d7673ecc33741d51e3d22907e8e3f}{}{\footnotesize template$<$class T $>$ }\\using {\bfseries Unique\+Persistent} = \hyperlink{classv8_1_1Global}{Global}$<$ T $>$\label{namespacev8_a700d7673ecc33741d51e3d22907e8e3f}
+{\footnotesize template$<$class T $>$ }\\using {\bfseries Unique\+Persistent} = \hyperlink{classv8_1_1Global}{Global}$<$ T $>$\hypertarget{namespacev8_a700d7673ecc33741d51e3d22907e8e3f}{}\label{namespacev8_a700d7673ecc33741d51e3d22907e8e3f}
 
 \item 
 typedef void($\ast$ \hyperlink{namespacev8_a722613c87061708a4f1aa050d095f868}{Accessor\+Getter\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ property, const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \&info)
 \item 
-\hypertarget{namespacev8_a933dad4c36666875af1843bb98df8379}{}typedef void($\ast$ {\bfseries Accessor\+Name\+Getter\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Name}{Name} $>$ property, const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \&info)\label{namespacev8_a933dad4c36666875af1843bb98df8379}
+typedef void($\ast$ {\bfseries Accessor\+Name\+Getter\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Name}{Name} $>$ property, const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \&info)\hypertarget{namespacev8_a933dad4c36666875af1843bb98df8379}{}\label{namespacev8_a933dad4c36666875af1843bb98df8379}
 
 \item 
-\hypertarget{namespacev8_a926da9728efe528d193a6d36f004777e}{}typedef void($\ast$ {\bfseries Accessor\+Setter\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ property, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value, const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ void $>$ \&info)\label{namespacev8_a926da9728efe528d193a6d36f004777e}
+typedef void($\ast$ {\bfseries Accessor\+Setter\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ property, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value, const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ void $>$ \&info)\hypertarget{namespacev8_a926da9728efe528d193a6d36f004777e}{}\label{namespacev8_a926da9728efe528d193a6d36f004777e}
 
 \item 
-\hypertarget{namespacev8_a476b359c9fc5ad874bcc2a1a21075556}{}typedef void($\ast$ {\bfseries Accessor\+Name\+Setter\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Name}{Name} $>$ property, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value, const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ void $>$ \&info)\label{namespacev8_a476b359c9fc5ad874bcc2a1a21075556}
+typedef void($\ast$ {\bfseries Accessor\+Name\+Setter\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Name}{Name} $>$ property, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value, const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ void $>$ \&info)\hypertarget{namespacev8_a476b359c9fc5ad874bcc2a1a21075556}{}\label{namespacev8_a476b359c9fc5ad874bcc2a1a21075556}
 
 \item 
-\hypertarget{namespacev8_a9eb0624666bb117aea1fb9c9424dcc1b}{}typedef void($\ast$ {\bfseries Function\+Callback}) (const \hyperlink{classv8_1_1FunctionCallbackInfo}{Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \&info)\label{namespacev8_a9eb0624666bb117aea1fb9c9424dcc1b}
+typedef void($\ast$ {\bfseries Function\+Callback}) (const \hyperlink{classv8_1_1FunctionCallbackInfo}{Function\+Callback\+Info}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \&info)\hypertarget{namespacev8_a9eb0624666bb117aea1fb9c9424dcc1b}{}\label{namespacev8_a9eb0624666bb117aea1fb9c9424dcc1b}
 
 \item 
 typedef void($\ast$ \hyperlink{namespacev8_a50cae386a68bf9ff23d02aa1161face4}{Named\+Property\+Getter\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ property, const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \&info)
@@ -315,52 +323,63 @@ typedef void($\ast$ \hyperlink{namespacev8_a53863728de14cde48dd6543207b2f2da}{In
 \item 
 typedef void($\ast$ \hyperlink{namespacev8_adbb0a6d5537371953f9ba807d4f6275e}{Indexed\+Property\+Enumerator\+Callback}) (const \hyperlink{classv8_1_1PropertyCallbackInfo}{Property\+Callback\+Info}$<$ \hyperlink{classv8_1_1Array}{Array} $>$ \&info)
 \item 
+typedef bool($\ast$ \hyperlink{namespacev8_a1024fb358d107c1494163217830688e6}{Access\+Check\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ accessing\+\_\+context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ accessed\+\_\+object, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data)
+\item 
+typedef bool($\ast$ {\bfseries Deprecated\+Access\+Check\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ accessing\+\_\+context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ accessed\+\_\+object)\hypertarget{namespacev8_a26a50b38ae59fa451377ad1c32d2e6e6}{}\label{namespacev8_a26a50b38ae59fa451377ad1c32d2e6e6}
+
+\item 
 typedef bool($\ast$ \hyperlink{namespacev8_ab5cafda0c556bba990c660ce9c904e0d}{Named\+Security\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ host, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ key, \hyperlink{namespacev8_add8bef6469c5b94706584124e610046c}{Access\+Type} type, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data)
 \item 
 typedef bool($\ast$ \hyperlink{namespacev8_aebbcc7837753e51112d944ad96520da1}{Indexed\+Security\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ host, uint32\+\_\+t index, \hyperlink{namespacev8_add8bef6469c5b94706584124e610046c}{Access\+Type} type, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data)
 \item 
-\hypertarget{namespacev8_abc93f69508701f18dc5cc0ce165616aa}{}typedef void($\ast$ {\bfseries Fatal\+Error\+Callback}) (const char $\ast$location, const char $\ast$message)\label{namespacev8_abc93f69508701f18dc5cc0ce165616aa}
+typedef void($\ast$ {\bfseries Fatal\+Error\+Callback}) (const char $\ast$location, const char $\ast$message)\hypertarget{namespacev8_abc93f69508701f18dc5cc0ce165616aa}{}\label{namespacev8_abc93f69508701f18dc5cc0ce165616aa}
 
 \item 
-\hypertarget{namespacev8_a871380126ff63a699e78cb83d8d613a6}{}typedef void($\ast$ {\bfseries Message\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Message}{Message} $>$ message, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ error)\label{namespacev8_a871380126ff63a699e78cb83d8d613a6}
+typedef void($\ast$ {\bfseries Message\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Message}{Message} $>$ message, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ error)\hypertarget{namespacev8_a871380126ff63a699e78cb83d8d613a6}{}\label{namespacev8_a871380126ff63a699e78cb83d8d613a6}
 
 \item 
-\hypertarget{namespacev8_a1516c6948fdca41f79410b7ff91aeaf0}{}typedef void($\ast$ {\bfseries Log\+Event\+Callback}) (const char $\ast$name, int event)\label{namespacev8_a1516c6948fdca41f79410b7ff91aeaf0}
+typedef void($\ast$ {\bfseries Log\+Event\+Callback}) (const char $\ast$name, int event)\hypertarget{namespacev8_a1516c6948fdca41f79410b7ff91aeaf0}{}\label{namespacev8_a1516c6948fdca41f79410b7ff91aeaf0}
 
 \item 
-\hypertarget{namespacev8_a5efca05a9f1f278a4eec832ce419104f}{}typedef int $\ast$($\ast$ {\bfseries Counter\+Lookup\+Callback}) (const char $\ast$name)\label{namespacev8_a5efca05a9f1f278a4eec832ce419104f}
+typedef int $\ast$($\ast$ {\bfseries Counter\+Lookup\+Callback}) (const char $\ast$name)\hypertarget{namespacev8_a5efca05a9f1f278a4eec832ce419104f}{}\label{namespacev8_a5efca05a9f1f278a4eec832ce419104f}
 
 \item 
-\hypertarget{namespacev8_aafbf15734701792a14c02dbca7535b75}{}typedef void $\ast$($\ast$ {\bfseries Create\+Histogram\+Callback}) (const char $\ast$name, int min, int max, size\+\_\+t buckets)\label{namespacev8_aafbf15734701792a14c02dbca7535b75}
+typedef void $\ast$($\ast$ {\bfseries Create\+Histogram\+Callback}) (const char $\ast$name, int min, int max, size\+\_\+t buckets)\hypertarget{namespacev8_aafbf15734701792a14c02dbca7535b75}{}\label{namespacev8_aafbf15734701792a14c02dbca7535b75}
 
 \item 
-\hypertarget{namespacev8_a5a7c6bb8050ad84f0a453056ec325d1c}{}typedef void($\ast$ {\bfseries Add\+Histogram\+Sample\+Callback}) (void $\ast$histogram, int sample)\label{namespacev8_a5a7c6bb8050ad84f0a453056ec325d1c}
+typedef void($\ast$ {\bfseries Add\+Histogram\+Sample\+Callback}) (void $\ast$histogram, int sample)\hypertarget{namespacev8_a5a7c6bb8050ad84f0a453056ec325d1c}{}\label{namespacev8_a5a7c6bb8050ad84f0a453056ec325d1c}
 
 \item 
-\hypertarget{namespacev8_a2402a6535cafc5f721192b300502fb0a}{}typedef void($\ast$ {\bfseries Memory\+Allocation\+Callback}) (Object\+Space space, Allocation\+Action action, int size)\label{namespacev8_a2402a6535cafc5f721192b300502fb0a}
+typedef void($\ast$ {\bfseries Memory\+Allocation\+Callback}) (Object\+Space space, Allocation\+Action action, int size)\hypertarget{namespacev8_a2402a6535cafc5f721192b300502fb0a}{}\label{namespacev8_a2402a6535cafc5f721192b300502fb0a}
 
 \item 
-\hypertarget{namespacev8_a8d88696ff21bd777d488605cb7714573}{}typedef void($\ast$ {\bfseries Call\+Completed\+Callback}) ()\label{namespacev8_a8d88696ff21bd777d488605cb7714573}
+typedef void($\ast$ {\bfseries Before\+Call\+Entered\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$)\hypertarget{namespacev8_abe10f58d37b0736a292a6c7f180fb40c}{}\label{namespacev8_abe10f58d37b0736a292a6c7f180fb40c}
 
 \item 
-\hypertarget{namespacev8_a3367f6ae375d6d4b4b3f992953c135ba}{}typedef void($\ast$ {\bfseries Promise\+Reject\+Callback}) (\hyperlink{classv8_1_1PromiseRejectMessage}{Promise\+Reject\+Message} message)\label{namespacev8_a3367f6ae375d6d4b4b3f992953c135ba}
+typedef void($\ast$ {\bfseries Call\+Completed\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$)\hypertarget{namespacev8_a5003dc8cb6a81f522a9c6b05b98d9e34}{}\label{namespacev8_a5003dc8cb6a81f522a9c6b05b98d9e34}
 
 \item 
-\hypertarget{namespacev8_a64445c32058729cdc44d56ff13458bed}{}typedef void($\ast$ {\bfseries Microtask\+Callback}) (void $\ast$data)\label{namespacev8_a64445c32058729cdc44d56ff13458bed}
+typedef void($\ast$ {\bfseries Deprecated\+Call\+Completed\+Callback}) ()\hypertarget{namespacev8_a878e6b3a304e7bcbc155a16fef8400f1}{}\label{namespacev8_a878e6b3a304e7bcbc155a16fef8400f1}
 
 \item 
-\hypertarget{namespacev8_a1352a0d6e487b7092ea79e2d3d4ecd12}{}typedef void($\ast$ {\bfseries Failed\+Access\+Check\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ target, \hyperlink{namespacev8_add8bef6469c5b94706584124e610046c}{Access\+Type} type, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data)\label{namespacev8_a1352a0d6e487b7092ea79e2d3d4ecd12}
+typedef void($\ast$ {\bfseries Promise\+Reject\+Callback}) (\hyperlink{classv8_1_1PromiseRejectMessage}{Promise\+Reject\+Message} message)\hypertarget{namespacev8_a3367f6ae375d6d4b4b3f992953c135ba}{}\label{namespacev8_a3367f6ae375d6d4b4b3f992953c135ba}
+
+\item 
+typedef void($\ast$ {\bfseries Microtasks\+Completed\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$)\hypertarget{namespacev8_af193f756612950a896e140052cf17a42}{}\label{namespacev8_af193f756612950a896e140052cf17a42}
+
+\item 
+typedef void($\ast$ {\bfseries Microtask\+Callback}) (void $\ast$data)\hypertarget{namespacev8_a64445c32058729cdc44d56ff13458bed}{}\label{namespacev8_a64445c32058729cdc44d56ff13458bed}
+
+\item 
+typedef void($\ast$ {\bfseries Failed\+Access\+Check\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ target, \hyperlink{namespacev8_add8bef6469c5b94706584124e610046c}{Access\+Type} type, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data)\hypertarget{namespacev8_a1352a0d6e487b7092ea79e2d3d4ecd12}{}\label{namespacev8_a1352a0d6e487b7092ea79e2d3d4ecd12}
 
 \item 
 typedef bool($\ast$ \hyperlink{namespacev8_a521d909ec201742a1cb35d50a8e2a3c2}{Allow\+Code\+Generation\+From\+Strings\+Callback}) (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context)
 \item 
-\hypertarget{namespacev8_a09e509ff7a94ad074420980c5f5762af}{}typedef void($\ast$ {\bfseries G\+C\+Prologue\+Callback}) (\hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} type, G\+C\+Callback\+Flags flags)\label{namespacev8_a09e509ff7a94ad074420980c5f5762af}
+typedef void($\ast$ {\bfseries G\+C\+Callback}) (\hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} type, \hyperlink{namespacev8_a247c37a849f4d6c293b9b16e94e1944b}{G\+C\+Callback\+Flags} flags)\hypertarget{namespacev8_aa789d9f0935eb32c27ec05e0f818a6c4}{}\label{namespacev8_aa789d9f0935eb32c27ec05e0f818a6c4}
 
 \item 
-\hypertarget{namespacev8_a4a818ae1aee0cb378a4c2037dfc4a4c2}{}typedef void($\ast$ {\bfseries G\+C\+Epilogue\+Callback}) (\hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} type, G\+C\+Callback\+Flags flags)\label{namespacev8_a4a818ae1aee0cb378a4c2037dfc4a4c2}
-
-\item 
-\hypertarget{namespacev8_af07fcf2ef61237b7ba67242700b6a875}{}typedef void($\ast$ {\bfseries Interrupt\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, void $\ast$data)\label{namespacev8_af07fcf2ef61237b7ba67242700b6a875}
+typedef void($\ast$ {\bfseries Interrupt\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, void $\ast$data)\hypertarget{namespacev8_af07fcf2ef61237b7ba67242700b6a875}{}\label{namespacev8_af07fcf2ef61237b7ba67242700b6a875}
 
 \item 
 typedef void($\ast$ \hyperlink{namespacev8_aaf07fb6bb13f295da3c6568938b7dec5}{Function\+Entry\+Hook}) (uintptr\+\_\+t function, uintptr\+\_\+t return\+\_\+addr\+\_\+location)
@@ -374,7 +393,7 @@ typedef uintptr\+\_\+t($\ast$ \hyperlink{namespacev8_a8ce54c75241be41ff6a25e9944
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{namespacev8_a4157e857c3767e2b82686a53ae3da853}{}enum {\bfseries Debug\+Event} \{ \\*
+enum {\bfseries Debug\+Event} \{ \\*
 {\bfseries Break} = 1, 
 {\bfseries Exception} = 2, 
 {\bfseries New\+Function} = 3, 
@@ -382,74 +401,81 @@ typedef uintptr\+\_\+t($\ast$ \hyperlink{namespacev8_a8ce54c75241be41ff6a25e9944
 \\*
 {\bfseries After\+Compile} = 5, 
 {\bfseries Compile\+Error} = 6, 
-{\bfseries Promise\+Event} = 7, 
-{\bfseries Async\+Task\+Event} = 8
- \}\label{namespacev8_a4157e857c3767e2b82686a53ae3da853}
+{\bfseries Async\+Task\+Event} = 7
+ \}\hypertarget{namespacev8_a4157e857c3767e2b82686a53ae3da853}{}\label{namespacev8_a4157e857c3767e2b82686a53ae3da853}
 
 \item 
-\hypertarget{namespacev8_ad2a33b8f8a1701a800a691dd025f7dde}{}enum {\bfseries Persistent\+Container\+Callback\+Type} \{ {\bfseries k\+Not\+Weak}, 
+enum {\bfseries Persistent\+Container\+Callback\+Type} \{ {\bfseries k\+Not\+Weak}, 
 {\bfseries k\+Weak\+With\+Parameter}, 
 {\bfseries k\+Weak\+With\+Internal\+Fields}, 
 {\bfseries k\+Weak} = k\+Weak\+With\+Parameter
- \}\label{namespacev8_ad2a33b8f8a1701a800a691dd025f7dde}
+ \}\hypertarget{namespacev8_ad2a33b8f8a1701a800a691dd025f7dde}{}\label{namespacev8_ad2a33b8f8a1701a800a691dd025f7dde}
 
 \item 
-\hypertarget{namespacev8_a68b2b90003e18980bc0b438c95be1005}{}enum {\bfseries Weak\+Callback\+Type} \{ {\bfseries k\+Parameter}, 
-{\bfseries k\+Internal\+Fields}
- \}\label{namespacev8_a68b2b90003e18980bc0b438c95be1005}
+enum {\bfseries Weak\+Callback\+Type} \{ {\bfseries k\+Parameter}, 
+{\bfseries k\+Internal\+Fields}, 
+{\bfseries k\+Finalizer}
+ \}\hypertarget{namespacev8_a68b2b90003e18980bc0b438c95be1005}{}\label{namespacev8_a68b2b90003e18980bc0b438c95be1005}
 
 \item 
-\hypertarget{namespacev8_adb1bd0f9ef7cc084b6a94a5e1b420f69}{}enum {\bfseries State\+Tag} \{ \\*
-{\bfseries J\+S}, 
-{\bfseries G\+C}, 
-{\bfseries C\+O\+M\+P\+I\+L\+E\+R}, 
-{\bfseries O\+T\+H\+E\+R}, 
+enum {\bfseries State\+Tag} \{ \\*
+{\bfseries JS}, 
+{\bfseries GC}, 
+{\bfseries C\+O\+M\+P\+I\+L\+ER}, 
+{\bfseries O\+T\+H\+ER}, 
 \\*
-{\bfseries E\+X\+T\+E\+R\+N\+A\+L}, 
-{\bfseries I\+D\+L\+E}
- \}\label{namespacev8_adb1bd0f9ef7cc084b6a94a5e1b420f69}
+{\bfseries E\+X\+T\+E\+R\+N\+AL}, 
+{\bfseries I\+D\+LE}
+ \}\hypertarget{namespacev8_adb1bd0f9ef7cc084b6a94a5e1b420f69}{}\label{namespacev8_adb1bd0f9ef7cc084b6a94a5e1b420f69}
 
 \item 
-\hypertarget{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{}enum {\bfseries New\+String\+Type} \{ {\bfseries k\+Normal}, 
+enum {\bfseries New\+String\+Type} \{ {\bfseries k\+Normal}, 
 {\bfseries k\+Internalized}
- \}\label{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}
+ \}\hypertarget{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}{}\label{namespacev8_ac9163ab12fb3b2a95907a3a0367c6095}
 
 \item 
-\hypertarget{namespacev8_a05f25f935e108a1ea2d150e274602b87}{}enum {\bfseries Property\+Attribute} \{ {\bfseries None} = 0, 
+enum {\bfseries Property\+Attribute} \{ {\bfseries None} = 0, 
 {\bfseries Read\+Only} = 1 $<$$<$ 0, 
 {\bfseries Dont\+Enum} = 1 $<$$<$ 1, 
 {\bfseries Dont\+Delete} = 1 $<$$<$ 2
- \}\label{namespacev8_a05f25f935e108a1ea2d150e274602b87}
+ \}\hypertarget{namespacev8_a05f25f935e108a1ea2d150e274602b87}{}\label{namespacev8_a05f25f935e108a1ea2d150e274602b87}
 
 \item 
-enum \hyperlink{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}{Access\+Control} \{ {\bfseries D\+E\+F\+A\+U\+L\+T} = 0, 
-{\bfseries A\+L\+L\+\_\+\+C\+A\+N\+\_\+\+R\+E\+A\+D} = 1, 
-{\bfseries A\+L\+L\+\_\+\+C\+A\+N\+\_\+\+W\+R\+I\+T\+E} = 1 $<$$<$ 1, 
-{\bfseries P\+R\+O\+H\+I\+B\+I\+T\+S\+\_\+\+O\+V\+E\+R\+W\+R\+I\+T\+I\+N\+G} = 1 $<$$<$ 2
+enum \hyperlink{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}{Access\+Control} \{ {\bfseries D\+E\+F\+A\+U\+LT} = 0, 
+{\bfseries A\+L\+L\+\_\+\+C\+A\+N\+\_\+\+R\+E\+AD} = 1, 
+{\bfseries A\+L\+L\+\_\+\+C\+A\+N\+\_\+\+W\+R\+I\+TE} = 1 $<$$<$ 1, 
+{\bfseries P\+R\+O\+H\+I\+B\+I\+T\+S\+\_\+\+O\+V\+E\+R\+W\+R\+I\+T\+I\+NG} = 1 $<$$<$ 2
  \}
 \item 
-\hypertarget{namespacev8_aead63bf88a59e18b3768de9ac8d4b98d}{}enum {\bfseries Array\+Buffer\+Creation\+Mode} \{ {\bfseries k\+Internalized}, 
+enum \hyperlink{namespacev8_a02642d03ff1eecc2fd358626499c2e30}{Integrity\+Level} \{ {\bfseries k\+Frozen}, 
+{\bfseries k\+Sealed}
+ \}
+\item 
+enum {\bfseries Array\+Buffer\+Creation\+Mode} \{ {\bfseries k\+Internalized}, 
 {\bfseries k\+Externalized}
- \}\label{namespacev8_aead63bf88a59e18b3768de9ac8d4b98d}
+ \}\hypertarget{namespacev8_aead63bf88a59e18b3768de9ac8d4b98d}{}\label{namespacev8_aead63bf88a59e18b3768de9ac8d4b98d}
+
+\item 
+enum {\bfseries Intrinsic} \hypertarget{namespacev8_a67f8ea6a2abeace49b9658da6a3267ab}{}\label{namespacev8_a67f8ea6a2abeace49b9658da6a3267ab}
 
 \item 
 enum \hyperlink{namespacev8_add8bef6469c5b94706584124e610046c}{Access\+Type} \{ \\*
-{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+G\+E\+T}, 
-{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+S\+E\+T}, 
-{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+H\+A\+S}, 
-{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+D\+E\+L\+E\+T\+E}, 
+{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+G\+ET}, 
+{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+S\+ET}, 
+{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+H\+AS}, 
+{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+D\+E\+L\+E\+TE}, 
 \\*
-{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+K\+E\+Y\+S}
+{\bfseries A\+C\+C\+E\+S\+S\+\_\+\+K\+E\+YS}
  \}
 \item 
-\hypertarget{namespacev8_af4789f0aeb8680e353901a35810cac1a}{}enum {\bfseries Property\+Handler\+Flags} \{ {\bfseries k\+None} = 0, 
+enum {\bfseries Property\+Handler\+Flags} \{ {\bfseries k\+None} = 0, 
 {\bfseries k\+All\+Can\+Read} = 1, 
 {\bfseries k\+Non\+Masking} = 1 $<$$<$ 1, 
 {\bfseries k\+Only\+Intercept\+Strings} = 1 $<$$<$ 2
- \}\label{namespacev8_af4789f0aeb8680e353901a35810cac1a}
+ \}\hypertarget{namespacev8_af4789f0aeb8680e353901a35810cac1a}{}\label{namespacev8_af4789f0aeb8680e353901a35810cac1a}
 
 \item 
-\hypertarget{namespacev8_ae7bc5b0bd1100e94d78de255daa8ebc3}{}enum {\bfseries Object\+Space} \{ \\*
+enum {\bfseries Object\+Space} \{ \\*
 {\bfseries k\+Object\+Space\+New\+Space} = 1 $<$$<$ 0, 
 {\bfseries k\+Object\+Space\+Old\+Space} = 1 $<$$<$ 1, 
 {\bfseries k\+Object\+Space\+Code\+Space} = 1 $<$$<$ 2, 
@@ -457,58 +483,74 @@ enum \hyperlink{namespacev8_add8bef6469c5b94706584124e610046c}{Access\+Type} \{ 
 \\*
 {\bfseries k\+Object\+Space\+Lo\+Space} = 1 $<$$<$ 4, 
 {\bfseries k\+Object\+Space\+All}
- \}\label{namespacev8_ae7bc5b0bd1100e94d78de255daa8ebc3}
+ \}\hypertarget{namespacev8_ae7bc5b0bd1100e94d78de255daa8ebc3}{}\label{namespacev8_ae7bc5b0bd1100e94d78de255daa8ebc3}
 
 \item 
-\hypertarget{namespacev8_ae2b70dd2abba164d9ad9ffc9f757eca9}{}enum {\bfseries Allocation\+Action} \{ {\bfseries k\+Allocation\+Action\+Allocate} = 1 $<$$<$ 0, 
+enum {\bfseries Allocation\+Action} \{ {\bfseries k\+Allocation\+Action\+Allocate} = 1 $<$$<$ 0, 
 {\bfseries k\+Allocation\+Action\+Free} = 1 $<$$<$ 1, 
 {\bfseries k\+Allocation\+Action\+All} = k\+Allocation\+Action\+Allocate $\vert$ k\+Allocation\+Action\+Free
- \}\label{namespacev8_ae2b70dd2abba164d9ad9ffc9f757eca9}
+ \}\hypertarget{namespacev8_ae2b70dd2abba164d9ad9ffc9f757eca9}{}\label{namespacev8_ae2b70dd2abba164d9ad9ffc9f757eca9}
 
 \item 
-\hypertarget{namespacev8_a307b3674d4966684f8170a4fbd932eaf}{}enum {\bfseries Promise\+Reject\+Event} \{ {\bfseries k\+Promise\+Reject\+With\+No\+Handler} = 0, 
+enum {\bfseries Promise\+Reject\+Event} \{ {\bfseries k\+Promise\+Reject\+With\+No\+Handler} = 0, 
 {\bfseries k\+Promise\+Handler\+Added\+After\+Reject} = 1
- \}\label{namespacev8_a307b3674d4966684f8170a4fbd932eaf}
+ \}\hypertarget{namespacev8_a307b3674d4966684f8170a4fbd932eaf}{}\label{namespacev8_a307b3674d4966684f8170a4fbd932eaf}
 
 \item 
-enum \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} \{ {\bfseries k\+G\+C\+Type\+Scavenge} = 1 $<$$<$ 0, 
-{\bfseries k\+G\+C\+Type\+Mark\+Sweep\+Compact} = 1 $<$$<$ 1, 
-{\bfseries k\+G\+C\+Type\+All} = k\+G\+C\+Type\+Scavenge $\vert$ k\+G\+C\+Type\+Mark\+Sweep\+Compact
+enum \hyperlink{namespacev8_a2f183b102b3d1b7a30a805e8c53c04da}{Microtasks\+Policy} \{ {\bfseries k\+Explicit}, 
+{\bfseries k\+Scoped}, 
+{\bfseries k\+Auto}
  \}
 \item 
-\hypertarget{namespacev8_a247c37a849f4d6c293b9b16e94e1944b}{}enum {\bfseries G\+C\+Callback\+Flags} \{ {\bfseries k\+No\+G\+C\+Callback\+Flags} = 0, 
-{\bfseries k\+G\+C\+Callback\+Flag\+Compacted} = 1 $<$$<$ 0, 
+enum \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} \{ \\*
+{\bfseries k\+G\+C\+Type\+Scavenge} = 1 $<$$<$ 0, 
+{\bfseries k\+G\+C\+Type\+Mark\+Sweep\+Compact} = 1 $<$$<$ 1, 
+{\bfseries k\+G\+C\+Type\+Incremental\+Marking} = 1 $<$$<$ 2, 
+{\bfseries k\+G\+C\+Type\+Process\+Weak\+Callbacks} = 1 $<$$<$ 3, 
+\\*
+{\bfseries k\+G\+C\+Type\+All}
+ \}
+\item 
+enum \hyperlink{namespacev8_a247c37a849f4d6c293b9b16e94e1944b}{G\+C\+Callback\+Flags} \{ \\*
+{\bfseries k\+No\+G\+C\+Callback\+Flags} = 0, 
 {\bfseries k\+G\+C\+Callback\+Flag\+Construct\+Retained\+Object\+Infos} = 1 $<$$<$ 1, 
-{\bfseries k\+G\+C\+Callback\+Flag\+Forced} = 1 $<$$<$ 2
- \}\label{namespacev8_a247c37a849f4d6c293b9b16e94e1944b}
-
+{\bfseries k\+G\+C\+Callback\+Flag\+Forced} = 1 $<$$<$ 2, 
+{\bfseries k\+G\+C\+Callback\+Flag\+Synchronous\+Phantom\+Callback\+Processing} = 1 $<$$<$ 3, 
+\\*
+{\bfseries k\+G\+C\+Callback\+Flag\+Collect\+All\+Available\+Garbage} = 1 $<$$<$ 4
+ \}
 \item 
 enum \hyperlink{namespacev8_a06f34fa4fa4cfc8518366808d1d461c1}{Jit\+Code\+Event\+Options} \{ {\bfseries k\+Jit\+Code\+Event\+Default} = 0, 
 {\bfseries k\+Jit\+Code\+Event\+Enum\+Existing} = 1
+ \}
+\item 
+enum \hyperlink{namespacev8_ae0e9a25bf51e518585f555806e7dc7b9}{Memory\+Pressure\+Level} \{ {\bfseries k\+None}, 
+{\bfseries k\+Moderate}, 
+{\bfseries k\+Critical}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{namespacev8_a50b91e1100a42cc12e7295b22d44d9d0}{}void V8\+\_\+\+E\+X\+P\+O\+R\+T {\bfseries Register\+Extension} (\hyperlink{classv8_1_1Extension}{Extension} $\ast$extension)\label{namespacev8_a50b91e1100a42cc12e7295b22d44d9d0}
+void V8\+\_\+\+E\+X\+P\+O\+RT {\bfseries Register\+Extension} (\hyperlink{classv8_1_1Extension}{Extension} $\ast$extension)\hypertarget{namespacev8_a50b91e1100a42cc12e7295b22d44d9d0}{}\label{namespacev8_a50b91e1100a42cc12e7295b22d44d9d0}
 
 \item 
-\hypertarget{namespacev8_a61ff26a76e48cb9d79d5c6984a241094}{}V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Primitive}{Primitive} $>$ {\bfseries Undefined} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{namespacev8_a61ff26a76e48cb9d79d5c6984a241094}
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Primitive}{Primitive} $>$ {\bfseries Undefined} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\hypertarget{namespacev8_a61ff26a76e48cb9d79d5c6984a241094}{}\label{namespacev8_a61ff26a76e48cb9d79d5c6984a241094}
 
 \item 
-\hypertarget{namespacev8_a29cd2965d567e8943c705c80ec52e410}{}V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Primitive}{Primitive} $>$ {\bfseries Null} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{namespacev8_a29cd2965d567e8943c705c80ec52e410}
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Primitive}{Primitive} $>$ {\bfseries Null} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\hypertarget{namespacev8_a29cd2965d567e8943c705c80ec52e410}{}\label{namespacev8_a29cd2965d567e8943c705c80ec52e410}
 
 \item 
-\hypertarget{namespacev8_ac3785e63e7e1823430447032c4be7233}{}V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Boolean}{Boolean} $>$ {\bfseries True} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{namespacev8_ac3785e63e7e1823430447032c4be7233}
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Boolean}{Boolean} $>$ {\bfseries True} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\hypertarget{namespacev8_ac3785e63e7e1823430447032c4be7233}{}\label{namespacev8_ac3785e63e7e1823430447032c4be7233}
 
 \item 
-\hypertarget{namespacev8_aa1ad232eac398fa555cadf6b70582314}{}V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Boolean}{Boolean} $>$ {\bfseries False} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{namespacev8_aa1ad232eac398fa555cadf6b70582314}
+V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Boolean}{Boolean} $>$ {\bfseries False} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\hypertarget{namespacev8_aa1ad232eac398fa555cadf6b70582314}{}\label{namespacev8_aa1ad232eac398fa555cadf6b70582314}
 
 \item 
-\hypertarget{namespacev8_ac44d2f17c448576d57576035c8032c46}{}{\footnotesize template$<$class T $>$ }\\\hyperlink{classv8_1_1Maybe}{Maybe}$<$ T $>$ {\bfseries Nothing} ()\label{namespacev8_ac44d2f17c448576d57576035c8032c46}
+{\footnotesize template$<$class T $>$ }\\\hyperlink{classv8_1_1Maybe}{Maybe}$<$ T $>$ {\bfseries Nothing} ()\hypertarget{namespacev8_ac44d2f17c448576d57576035c8032c46}{}\label{namespacev8_ac44d2f17c448576d57576035c8032c46}
 
 \item 
-\hypertarget{namespacev8_a41f0e280eadfba6ac9afd833fdd540cf}{}{\footnotesize template$<$class T $>$ }\\\hyperlink{classv8_1_1Maybe}{Maybe}$<$ T $>$ {\bfseries Just} (const T \&t)\label{namespacev8_a41f0e280eadfba6ac9afd833fdd540cf}
+{\footnotesize template$<$class T $>$ }\\\hyperlink{classv8_1_1Maybe}{Maybe}$<$ T $>$ {\bfseries Just} (const T \&t)\hypertarget{namespacev8_a41f0e280eadfba6ac9afd833fdd540cf}{}\label{namespacev8_a41f0e280eadfba6ac9afd833fdd540cf}
 
 \end{DoxyCompactItemize}
 
@@ -516,29 +558,34 @@ enum \hyperlink{namespacev8_a06f34fa4fa4cfc8518366808d1d461c1}{Jit\+Code\+Event\
 \subsection{Detailed Description}
 Debugger support for the \hyperlink{classv8_1_1V8}{V8} Java\+Script engine.
 
+This header contains a set of experimental \hyperlink{classv8_1_1V8}{V8} A\+P\+Is. We hope these will become a part of standard \hyperlink{classv8_1_1V8}{V8}, but they may also be removed if we deem the experiment to not be successul.
+
 Profiler support for the \hyperlink{classv8_1_1V8}{V8} Java\+Script engine.
 
 \hyperlink{classv8_1_1Testing}{Testing} support for the \hyperlink{classv8_1_1V8}{V8} Java\+Script engine.
 
 Support for \hyperlink{classv8_1_1Persistent}{Persistent} containers.
 
-C++11 embedders can use S\+T\+L containers with \hyperlink{classv8_1_1Global}{Global} values, but pre-\/\+C++11 does not support the required move semantic and hence may want these container classes.
+C++11 embedders can use S\+TL containers with \hyperlink{classv8_1_1Global}{Global} values, but pre-\/\+C++11 does not support the required move semantic and hence may want these container classes.
 
 The \hyperlink{namespacev8}{v8} Java\+Script engine. 
 
 \subsection{Typedef Documentation}
-\hypertarget{namespacev8_a722613c87061708a4f1aa050d095f868}{}\index{v8@{v8}!Accessor\+Getter\+Callback@{Accessor\+Getter\+Callback}}
+\index{v8@{v8}!Access\+Check\+Callback@{Access\+Check\+Callback}}
+\index{Access\+Check\+Callback@{Access\+Check\+Callback}!v8@{v8}}
+\subsubsection[{\texorpdfstring{Access\+Check\+Callback}{AccessCheckCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Access\+Check\+Callback) ({\bf Local}$<$ {\bf Context} $>$ accessing\+\_\+context, {\bf Local}$<$ {\bf Object} $>$ accessed\+\_\+object, {\bf Local}$<$ {\bf Value} $>$ data)}\hypertarget{namespacev8_a1024fb358d107c1494163217830688e6}{}\label{namespacev8_a1024fb358d107c1494163217830688e6}
+Returns true if the given context should be allowed to access the given object. \index{v8@{v8}!Accessor\+Getter\+Callback@{Accessor\+Getter\+Callback}}
 \index{Accessor\+Getter\+Callback@{Accessor\+Getter\+Callback}!v8@{v8}}
-\subsubsection[{Accessor\+Getter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Accessor\+Getter\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\label{namespacev8_a722613c87061708a4f1aa050d095f868}
-Accessor\mbox{[}Getter$\vert$\+Setter\mbox{]} are used as callback functions when setting$\vert$getting a particular property. See \hyperlink{classv8_1_1Object}{Object} and \hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}\textquotesingle{}s method Set\+Accessor. \hypertarget{namespacev8_a521d909ec201742a1cb35d50a8e2a3c2}{}\index{v8@{v8}!Allow\+Code\+Generation\+From\+Strings\+Callback@{Allow\+Code\+Generation\+From\+Strings\+Callback}}
+\subsubsection[{\texorpdfstring{Accessor\+Getter\+Callback}{AccessorGetterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Accessor\+Getter\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\hypertarget{namespacev8_a722613c87061708a4f1aa050d095f868}{}\label{namespacev8_a722613c87061708a4f1aa050d095f868}
+Accessor\mbox{[}Getter$\vert$\+Setter\mbox{]} are used as callback functions when setting$\vert$getting a particular property. See \hyperlink{classv8_1_1Object}{Object} and \hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}\textquotesingle{}s method Set\+Accessor. \index{v8@{v8}!Allow\+Code\+Generation\+From\+Strings\+Callback@{Allow\+Code\+Generation\+From\+Strings\+Callback}}
 \index{Allow\+Code\+Generation\+From\+Strings\+Callback@{Allow\+Code\+Generation\+From\+Strings\+Callback}!v8@{v8}}
-\subsubsection[{Allow\+Code\+Generation\+From\+Strings\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Allow\+Code\+Generation\+From\+Strings\+Callback) ({\bf Local}$<$ {\bf Context} $>$ context)}\label{namespacev8_a521d909ec201742a1cb35d50a8e2a3c2}
-Callback to check if code generation from strings is allowed. See \hyperlink{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{Context\+::\+Allow\+Code\+Generation\+From\+Strings}. \hypertarget{namespacev8_ab699f4bbbb56350e6e915682e420fcdc}{}\index{v8@{v8}!Entropy\+Source@{Entropy\+Source}}
+\subsubsection[{\texorpdfstring{Allow\+Code\+Generation\+From\+Strings\+Callback}{AllowCodeGenerationFromStringsCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Allow\+Code\+Generation\+From\+Strings\+Callback) ({\bf Local}$<$ {\bf Context} $>$ context)}\hypertarget{namespacev8_a521d909ec201742a1cb35d50a8e2a3c2}{}\label{namespacev8_a521d909ec201742a1cb35d50a8e2a3c2}
+Callback to check if code generation from strings is allowed. See \hyperlink{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{Context\+::\+Allow\+Code\+Generation\+From\+Strings}. \index{v8@{v8}!Entropy\+Source@{Entropy\+Source}}
 \index{Entropy\+Source@{Entropy\+Source}!v8@{v8}}
-\subsubsection[{Entropy\+Source}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Entropy\+Source) (unsigned char $\ast$buffer, size\+\_\+t length)}\label{namespacev8_ab699f4bbbb56350e6e915682e420fcdc}
-Entropy\+Source is used as a callback function when \hyperlink{namespacev8}{v8} needs a source of entropy. \hypertarget{namespacev8_aaf07fb6bb13f295da3c6568938b7dec5}{}\index{v8@{v8}!Function\+Entry\+Hook@{Function\+Entry\+Hook}}
+\subsubsection[{\texorpdfstring{Entropy\+Source}{EntropySource}}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Entropy\+Source) (unsigned char $\ast$buffer, size\+\_\+t length)}\hypertarget{namespacev8_ab699f4bbbb56350e6e915682e420fcdc}{}\label{namespacev8_ab699f4bbbb56350e6e915682e420fcdc}
+Entropy\+Source is used as a callback function when \hyperlink{namespacev8}{v8} needs a source of entropy. \index{v8@{v8}!Function\+Entry\+Hook@{Function\+Entry\+Hook}}
 \index{Function\+Entry\+Hook@{Function\+Entry\+Hook}!v8@{v8}}
-\subsubsection[{Function\+Entry\+Hook}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Function\+Entry\+Hook) (uintptr\+\_\+t function, uintptr\+\_\+t return\+\_\+addr\+\_\+location)}\label{namespacev8_aaf07fb6bb13f295da3c6568938b7dec5}
+\subsubsection[{\texorpdfstring{Function\+Entry\+Hook}{FunctionEntryHook}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Function\+Entry\+Hook) (uintptr\+\_\+t function, uintptr\+\_\+t return\+\_\+addr\+\_\+location)}\hypertarget{namespacev8_aaf07fb6bb13f295da3c6568938b7dec5}{}\label{namespacev8_aaf07fb6bb13f295da3c6568938b7dec5}
 Function\+Entry\+Hook is the type of the profile entry hook called at entry to any generated function when function-\/level profiling is enabled.
 
 
@@ -551,42 +598,42 @@ Function\+Entry\+Hook is the type of the profile entry hook called at entry to a
 \begin{DoxyNote}{Note}
 the entry hook must not cause garbage collection. 
 \end{DoxyNote}
-\hypertarget{namespacev8_ad2aecc0406ea4bc02d5a4f84a433b273}{}\index{v8@{v8}!Generic\+Named\+Property\+Deleter\+Callback@{Generic\+Named\+Property\+Deleter\+Callback}}
+\index{v8@{v8}!Generic\+Named\+Property\+Deleter\+Callback@{Generic\+Named\+Property\+Deleter\+Callback}}
 \index{Generic\+Named\+Property\+Deleter\+Callback@{Generic\+Named\+Property\+Deleter\+Callback}!v8@{v8}}
-\subsubsection[{Generic\+Named\+Property\+Deleter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Deleter\+Callback) ({\bf Local}$<$ {\bf Name} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Boolean} $>$ \&info)}\label{namespacev8_ad2aecc0406ea4bc02d5a4f84a433b273}
-Returns a non-\/empty handle if the deleter intercepts the request. The return value is true if the property could be deleted and false otherwise. \hypertarget{namespacev8_a20826eb7e52e84fa4f632534e8eddd04}{}\index{v8@{v8}!Generic\+Named\+Property\+Enumerator\+Callback@{Generic\+Named\+Property\+Enumerator\+Callback}}
+\subsubsection[{\texorpdfstring{Generic\+Named\+Property\+Deleter\+Callback}{GenericNamedPropertyDeleterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Deleter\+Callback) ({\bf Local}$<$ {\bf Name} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Boolean} $>$ \&info)}\hypertarget{namespacev8_ad2aecc0406ea4bc02d5a4f84a433b273}{}\label{namespacev8_ad2aecc0406ea4bc02d5a4f84a433b273}
+Returns a non-\/empty handle if the deleter intercepts the request. The return value is true if the property could be deleted and false otherwise. \index{v8@{v8}!Generic\+Named\+Property\+Enumerator\+Callback@{Generic\+Named\+Property\+Enumerator\+Callback}}
 \index{Generic\+Named\+Property\+Enumerator\+Callback@{Generic\+Named\+Property\+Enumerator\+Callback}!v8@{v8}}
-\subsubsection[{Generic\+Named\+Property\+Enumerator\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Enumerator\+Callback) (const {\bf Property\+Callback\+Info}$<$ {\bf Array} $>$ \&info)}\label{namespacev8_a20826eb7e52e84fa4f632534e8eddd04}
-Returns an array containing the names of the properties the named property getter intercepts. \hypertarget{namespacev8_a24b1801fa53a7c5a71366d8044927563}{}\index{v8@{v8}!Generic\+Named\+Property\+Getter\+Callback@{Generic\+Named\+Property\+Getter\+Callback}}
+\subsubsection[{\texorpdfstring{Generic\+Named\+Property\+Enumerator\+Callback}{GenericNamedPropertyEnumeratorCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Enumerator\+Callback) (const {\bf Property\+Callback\+Info}$<$ {\bf Array} $>$ \&info)}\hypertarget{namespacev8_a20826eb7e52e84fa4f632534e8eddd04}{}\label{namespacev8_a20826eb7e52e84fa4f632534e8eddd04}
+Returns an array containing the names of the properties the named property getter intercepts. \index{v8@{v8}!Generic\+Named\+Property\+Getter\+Callback@{Generic\+Named\+Property\+Getter\+Callback}}
 \index{Generic\+Named\+Property\+Getter\+Callback@{Generic\+Named\+Property\+Getter\+Callback}!v8@{v8}}
-\subsubsection[{Generic\+Named\+Property\+Getter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Getter\+Callback) ({\bf Local}$<$ {\bf Name} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\label{namespacev8_a24b1801fa53a7c5a71366d8044927563}
-Generic\+Named\+Property\mbox{[}Getter$\vert$\+Setter\mbox{]} are used as interceptors on object. See \hyperlink{classv8_1_1ObjectTemplate_a66fa7b04c87676e20e35497ea09a0ad0}{Object\+Template\+::\+Set\+Named\+Property\+Handler}. \hypertarget{namespacev8_add9f7ab11e4a9a2b9ad2c4536b0e1a64}{}\index{v8@{v8}!Generic\+Named\+Property\+Query\+Callback@{Generic\+Named\+Property\+Query\+Callback}}
+\subsubsection[{\texorpdfstring{Generic\+Named\+Property\+Getter\+Callback}{GenericNamedPropertyGetterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Getter\+Callback) ({\bf Local}$<$ {\bf Name} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\hypertarget{namespacev8_a24b1801fa53a7c5a71366d8044927563}{}\label{namespacev8_a24b1801fa53a7c5a71366d8044927563}
+Generic\+Named\+Property\mbox{[}Getter$\vert$\+Setter\mbox{]} are used as interceptors on object. See \hyperlink{classv8_1_1ObjectTemplate_a66fa7b04c87676e20e35497ea09a0ad0}{Object\+Template\+::\+Set\+Named\+Property\+Handler}. \index{v8@{v8}!Generic\+Named\+Property\+Query\+Callback@{Generic\+Named\+Property\+Query\+Callback}}
 \index{Generic\+Named\+Property\+Query\+Callback@{Generic\+Named\+Property\+Query\+Callback}!v8@{v8}}
-\subsubsection[{Generic\+Named\+Property\+Query\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Query\+Callback) ({\bf Local}$<$ {\bf Name} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Integer} $>$ \&info)}\label{namespacev8_add9f7ab11e4a9a2b9ad2c4536b0e1a64}
-Returns a non-\/empty handle if the interceptor intercepts the request. The result is an integer encoding property attributes (like v8\+::\+None, v8\+::\+Dont\+Enum, etc.) \hypertarget{namespacev8_af74716c6e95a269c6cd4314662fd0a7e}{}\index{v8@{v8}!Generic\+Named\+Property\+Setter\+Callback@{Generic\+Named\+Property\+Setter\+Callback}}
+\subsubsection[{\texorpdfstring{Generic\+Named\+Property\+Query\+Callback}{GenericNamedPropertyQueryCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Query\+Callback) ({\bf Local}$<$ {\bf Name} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Integer} $>$ \&info)}\hypertarget{namespacev8_add9f7ab11e4a9a2b9ad2c4536b0e1a64}{}\label{namespacev8_add9f7ab11e4a9a2b9ad2c4536b0e1a64}
+Returns a non-\/empty handle if the interceptor intercepts the request. The result is an integer encoding property attributes (like v8\+::\+None, v8\+::\+Dont\+Enum, etc.) \index{v8@{v8}!Generic\+Named\+Property\+Setter\+Callback@{Generic\+Named\+Property\+Setter\+Callback}}
 \index{Generic\+Named\+Property\+Setter\+Callback@{Generic\+Named\+Property\+Setter\+Callback}!v8@{v8}}
-\subsubsection[{Generic\+Named\+Property\+Setter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Setter\+Callback) ({\bf Local}$<$ {\bf Name} $>$ property, {\bf Local}$<$ {\bf Value} $>$ value, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\label{namespacev8_af74716c6e95a269c6cd4314662fd0a7e}
-Returns the value if the setter intercepts the request. Otherwise, returns an empty handle. \hypertarget{namespacev8_a53863728de14cde48dd6543207b2f2da}{}\index{v8@{v8}!Indexed\+Property\+Deleter\+Callback@{Indexed\+Property\+Deleter\+Callback}}
+\subsubsection[{\texorpdfstring{Generic\+Named\+Property\+Setter\+Callback}{GenericNamedPropertySetterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Generic\+Named\+Property\+Setter\+Callback) ({\bf Local}$<$ {\bf Name} $>$ property, {\bf Local}$<$ {\bf Value} $>$ value, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\hypertarget{namespacev8_af74716c6e95a269c6cd4314662fd0a7e}{}\label{namespacev8_af74716c6e95a269c6cd4314662fd0a7e}
+Returns the value if the setter intercepts the request. Otherwise, returns an empty handle. \index{v8@{v8}!Indexed\+Property\+Deleter\+Callback@{Indexed\+Property\+Deleter\+Callback}}
 \index{Indexed\+Property\+Deleter\+Callback@{Indexed\+Property\+Deleter\+Callback}!v8@{v8}}
-\subsubsection[{Indexed\+Property\+Deleter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Deleter\+Callback) (uint32\+\_\+t index, const {\bf Property\+Callback\+Info}$<$ {\bf Boolean} $>$ \&info)}\label{namespacev8_a53863728de14cde48dd6543207b2f2da}
-Returns a non-\/empty handle if the deleter intercepts the request. The return value is true if the property could be deleted and false otherwise. \hypertarget{namespacev8_adbb0a6d5537371953f9ba807d4f6275e}{}\index{v8@{v8}!Indexed\+Property\+Enumerator\+Callback@{Indexed\+Property\+Enumerator\+Callback}}
+\subsubsection[{\texorpdfstring{Indexed\+Property\+Deleter\+Callback}{IndexedPropertyDeleterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Deleter\+Callback) (uint32\+\_\+t index, const {\bf Property\+Callback\+Info}$<$ {\bf Boolean} $>$ \&info)}\hypertarget{namespacev8_a53863728de14cde48dd6543207b2f2da}{}\label{namespacev8_a53863728de14cde48dd6543207b2f2da}
+Returns a non-\/empty handle if the deleter intercepts the request. The return value is true if the property could be deleted and false otherwise. \index{v8@{v8}!Indexed\+Property\+Enumerator\+Callback@{Indexed\+Property\+Enumerator\+Callback}}
 \index{Indexed\+Property\+Enumerator\+Callback@{Indexed\+Property\+Enumerator\+Callback}!v8@{v8}}
-\subsubsection[{Indexed\+Property\+Enumerator\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Enumerator\+Callback) (const {\bf Property\+Callback\+Info}$<$ {\bf Array} $>$ \&info)}\label{namespacev8_adbb0a6d5537371953f9ba807d4f6275e}
-Returns an array containing the indices of the properties the indexed property getter intercepts. \hypertarget{namespacev8_a48e7816ba64447bf32a25d194588daaf}{}\index{v8@{v8}!Indexed\+Property\+Getter\+Callback@{Indexed\+Property\+Getter\+Callback}}
+\subsubsection[{\texorpdfstring{Indexed\+Property\+Enumerator\+Callback}{IndexedPropertyEnumeratorCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Enumerator\+Callback) (const {\bf Property\+Callback\+Info}$<$ {\bf Array} $>$ \&info)}\hypertarget{namespacev8_adbb0a6d5537371953f9ba807d4f6275e}{}\label{namespacev8_adbb0a6d5537371953f9ba807d4f6275e}
+Returns an array containing the indices of the properties the indexed property getter intercepts. \index{v8@{v8}!Indexed\+Property\+Getter\+Callback@{Indexed\+Property\+Getter\+Callback}}
 \index{Indexed\+Property\+Getter\+Callback@{Indexed\+Property\+Getter\+Callback}!v8@{v8}}
-\subsubsection[{Indexed\+Property\+Getter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Getter\+Callback) (uint32\+\_\+t index, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\label{namespacev8_a48e7816ba64447bf32a25d194588daaf}
-Returns the value of the property if the getter intercepts the request. Otherwise, returns an empty handle. \hypertarget{namespacev8_a980b62c33eb664783e61e25c3b27f9ee}{}\index{v8@{v8}!Indexed\+Property\+Query\+Callback@{Indexed\+Property\+Query\+Callback}}
+\subsubsection[{\texorpdfstring{Indexed\+Property\+Getter\+Callback}{IndexedPropertyGetterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Getter\+Callback) (uint32\+\_\+t index, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\hypertarget{namespacev8_a48e7816ba64447bf32a25d194588daaf}{}\label{namespacev8_a48e7816ba64447bf32a25d194588daaf}
+Returns the value of the property if the getter intercepts the request. Otherwise, returns an empty handle. \index{v8@{v8}!Indexed\+Property\+Query\+Callback@{Indexed\+Property\+Query\+Callback}}
 \index{Indexed\+Property\+Query\+Callback@{Indexed\+Property\+Query\+Callback}!v8@{v8}}
-\subsubsection[{Indexed\+Property\+Query\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Query\+Callback) (uint32\+\_\+t index, const {\bf Property\+Callback\+Info}$<$ {\bf Integer} $>$ \&info)}\label{namespacev8_a980b62c33eb664783e61e25c3b27f9ee}
-Returns a non-\/empty handle if the interceptor intercepts the request. The result is an integer encoding property attributes. \hypertarget{namespacev8_a4ac7cc6185ebc8b6a199f9fa8e6bf5c3}{}\index{v8@{v8}!Indexed\+Property\+Setter\+Callback@{Indexed\+Property\+Setter\+Callback}}
+\subsubsection[{\texorpdfstring{Indexed\+Property\+Query\+Callback}{IndexedPropertyQueryCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Query\+Callback) (uint32\+\_\+t index, const {\bf Property\+Callback\+Info}$<$ {\bf Integer} $>$ \&info)}\hypertarget{namespacev8_a980b62c33eb664783e61e25c3b27f9ee}{}\label{namespacev8_a980b62c33eb664783e61e25c3b27f9ee}
+Returns a non-\/empty handle if the interceptor intercepts the request. The result is an integer encoding property attributes. \index{v8@{v8}!Indexed\+Property\+Setter\+Callback@{Indexed\+Property\+Setter\+Callback}}
 \index{Indexed\+Property\+Setter\+Callback@{Indexed\+Property\+Setter\+Callback}!v8@{v8}}
-\subsubsection[{Indexed\+Property\+Setter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Setter\+Callback) (uint32\+\_\+t index, {\bf Local}$<$ {\bf Value} $>$ value, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\label{namespacev8_a4ac7cc6185ebc8b6a199f9fa8e6bf5c3}
-Returns the value if the setter intercepts the request. Otherwise, returns an empty handle. \hypertarget{namespacev8_aebbcc7837753e51112d944ad96520da1}{}\index{v8@{v8}!Indexed\+Security\+Callback@{Indexed\+Security\+Callback}}
+\subsubsection[{\texorpdfstring{Indexed\+Property\+Setter\+Callback}{IndexedPropertySetterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Indexed\+Property\+Setter\+Callback) (uint32\+\_\+t index, {\bf Local}$<$ {\bf Value} $>$ value, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\hypertarget{namespacev8_a4ac7cc6185ebc8b6a199f9fa8e6bf5c3}{}\label{namespacev8_a4ac7cc6185ebc8b6a199f9fa8e6bf5c3}
+Returns the value if the setter intercepts the request. Otherwise, returns an empty handle. \index{v8@{v8}!Indexed\+Security\+Callback@{Indexed\+Security\+Callback}}
 \index{Indexed\+Security\+Callback@{Indexed\+Security\+Callback}!v8@{v8}}
-\subsubsection[{Indexed\+Security\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Indexed\+Security\+Callback) ({\bf Local}$<$ {\bf Object} $>$ host, uint32\+\_\+t index, {\bf Access\+Type} type, {\bf Local}$<$ {\bf Value} $>$ data)}\label{namespacev8_aebbcc7837753e51112d944ad96520da1}
-Returns true if cross-\/context access should be allowed to the indexed property with the given index on the host object. \hypertarget{namespacev8_a39243bc91e63d64d111452fdb98c4733}{}\index{v8@{v8}!Jit\+Code\+Event\+Handler@{Jit\+Code\+Event\+Handler}}
+\subsubsection[{\texorpdfstring{Indexed\+Security\+Callback}{IndexedSecurityCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Indexed\+Security\+Callback) ({\bf Local}$<$ {\bf Object} $>$ host, uint32\+\_\+t index, {\bf Access\+Type} type, {\bf Local}$<$ {\bf Value} $>$ data)}\hypertarget{namespacev8_aebbcc7837753e51112d944ad96520da1}{}\label{namespacev8_aebbcc7837753e51112d944ad96520da1}
+Returns true if cross-\/context access should be allowed to the indexed property with the given index on the host object. \index{v8@{v8}!Jit\+Code\+Event\+Handler@{Jit\+Code\+Event\+Handler}}
 \index{Jit\+Code\+Event\+Handler@{Jit\+Code\+Event\+Handler}!v8@{v8}}
-\subsubsection[{Jit\+Code\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Jit\+Code\+Event\+Handler) (const {\bf Jit\+Code\+Event} $\ast$event)}\label{namespacev8_a39243bc91e63d64d111452fdb98c4733}
+\subsubsection[{\texorpdfstring{Jit\+Code\+Event\+Handler}{JitCodeEventHandler}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Jit\+Code\+Event\+Handler) (const {\bf Jit\+Code\+Event} $\ast$event)}\hypertarget{namespacev8_a39243bc91e63d64d111452fdb98c4733}{}\label{namespacev8_a39243bc91e63d64d111452fdb98c4733}
 Callback function passed to Set\+Jit\+Code\+Event\+Handler.
 
 
@@ -594,27 +641,27 @@ Callback function passed to Set\+Jit\+Code\+Event\+Handler.
 {\em event} & code add, move or removal event. \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacev8_aaba861076c5b111912cfa0791d348437}{}\index{v8@{v8}!Named\+Property\+Deleter\+Callback@{Named\+Property\+Deleter\+Callback}}
+\index{v8@{v8}!Named\+Property\+Deleter\+Callback@{Named\+Property\+Deleter\+Callback}}
 \index{Named\+Property\+Deleter\+Callback@{Named\+Property\+Deleter\+Callback}!v8@{v8}}
-\subsubsection[{Named\+Property\+Deleter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Deleter\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Boolean} $>$ \&info)}\label{namespacev8_aaba861076c5b111912cfa0791d348437}
-Returns a non-\/empty handle if the deleter intercepts the request. The return value is true if the property could be deleted and false otherwise. \hypertarget{namespacev8_a5f6f16818a9cddacadbfe6d90ca3a6b1}{}\index{v8@{v8}!Named\+Property\+Enumerator\+Callback@{Named\+Property\+Enumerator\+Callback}}
+\subsubsection[{\texorpdfstring{Named\+Property\+Deleter\+Callback}{NamedPropertyDeleterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Deleter\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Boolean} $>$ \&info)}\hypertarget{namespacev8_aaba861076c5b111912cfa0791d348437}{}\label{namespacev8_aaba861076c5b111912cfa0791d348437}
+Returns a non-\/empty handle if the deleter intercepts the request. The return value is true if the property could be deleted and false otherwise. \index{v8@{v8}!Named\+Property\+Enumerator\+Callback@{Named\+Property\+Enumerator\+Callback}}
 \index{Named\+Property\+Enumerator\+Callback@{Named\+Property\+Enumerator\+Callback}!v8@{v8}}
-\subsubsection[{Named\+Property\+Enumerator\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Enumerator\+Callback) (const {\bf Property\+Callback\+Info}$<$ {\bf Array} $>$ \&info)}\label{namespacev8_a5f6f16818a9cddacadbfe6d90ca3a6b1}
-Returns an array containing the names of the properties the named property getter intercepts. \hypertarget{namespacev8_a50cae386a68bf9ff23d02aa1161face4}{}\index{v8@{v8}!Named\+Property\+Getter\+Callback@{Named\+Property\+Getter\+Callback}}
+\subsubsection[{\texorpdfstring{Named\+Property\+Enumerator\+Callback}{NamedPropertyEnumeratorCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Enumerator\+Callback) (const {\bf Property\+Callback\+Info}$<$ {\bf Array} $>$ \&info)}\hypertarget{namespacev8_a5f6f16818a9cddacadbfe6d90ca3a6b1}{}\label{namespacev8_a5f6f16818a9cddacadbfe6d90ca3a6b1}
+Returns an array containing the names of the properties the named property getter intercepts. \index{v8@{v8}!Named\+Property\+Getter\+Callback@{Named\+Property\+Getter\+Callback}}
 \index{Named\+Property\+Getter\+Callback@{Named\+Property\+Getter\+Callback}!v8@{v8}}
-\subsubsection[{Named\+Property\+Getter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Getter\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\label{namespacev8_a50cae386a68bf9ff23d02aa1161face4}
-Named\+Property\mbox{[}Getter$\vert$\+Setter\mbox{]} are used as interceptors on object. See \hyperlink{classv8_1_1ObjectTemplate_a66fa7b04c87676e20e35497ea09a0ad0}{Object\+Template\+::\+Set\+Named\+Property\+Handler}. \hypertarget{namespacev8_ac135beae5f0c8b290255accb438f990e}{}\index{v8@{v8}!Named\+Property\+Query\+Callback@{Named\+Property\+Query\+Callback}}
+\subsubsection[{\texorpdfstring{Named\+Property\+Getter\+Callback}{NamedPropertyGetterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Getter\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\hypertarget{namespacev8_a50cae386a68bf9ff23d02aa1161face4}{}\label{namespacev8_a50cae386a68bf9ff23d02aa1161face4}
+Named\+Property\mbox{[}Getter$\vert$\+Setter\mbox{]} are used as interceptors on object. See \hyperlink{classv8_1_1ObjectTemplate_a66fa7b04c87676e20e35497ea09a0ad0}{Object\+Template\+::\+Set\+Named\+Property\+Handler}. \index{v8@{v8}!Named\+Property\+Query\+Callback@{Named\+Property\+Query\+Callback}}
 \index{Named\+Property\+Query\+Callback@{Named\+Property\+Query\+Callback}!v8@{v8}}
-\subsubsection[{Named\+Property\+Query\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Query\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Integer} $>$ \&info)}\label{namespacev8_ac135beae5f0c8b290255accb438f990e}
-Returns a non-\/empty handle if the interceptor intercepts the request. The result is an integer encoding property attributes (like v8\+::\+None, v8\+::\+Dont\+Enum, etc.) \hypertarget{namespacev8_a9587769513971dc7cb301b740d9e66b6}{}\index{v8@{v8}!Named\+Property\+Setter\+Callback@{Named\+Property\+Setter\+Callback}}
+\subsubsection[{\texorpdfstring{Named\+Property\+Query\+Callback}{NamedPropertyQueryCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Query\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, const {\bf Property\+Callback\+Info}$<$ {\bf Integer} $>$ \&info)}\hypertarget{namespacev8_ac135beae5f0c8b290255accb438f990e}{}\label{namespacev8_ac135beae5f0c8b290255accb438f990e}
+Returns a non-\/empty handle if the interceptor intercepts the request. The result is an integer encoding property attributes (like v8\+::\+None, v8\+::\+Dont\+Enum, etc.) \index{v8@{v8}!Named\+Property\+Setter\+Callback@{Named\+Property\+Setter\+Callback}}
 \index{Named\+Property\+Setter\+Callback@{Named\+Property\+Setter\+Callback}!v8@{v8}}
-\subsubsection[{Named\+Property\+Setter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Setter\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, {\bf Local}$<$ {\bf Value} $>$ value, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\label{namespacev8_a9587769513971dc7cb301b740d9e66b6}
-Returns the value if the setter intercepts the request. Otherwise, returns an empty handle. \hypertarget{namespacev8_ab5cafda0c556bba990c660ce9c904e0d}{}\index{v8@{v8}!Named\+Security\+Callback@{Named\+Security\+Callback}}
+\subsubsection[{\texorpdfstring{Named\+Property\+Setter\+Callback}{NamedPropertySetterCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Named\+Property\+Setter\+Callback) ({\bf Local}$<$ {\bf String} $>$ property, {\bf Local}$<$ {\bf Value} $>$ value, const {\bf Property\+Callback\+Info}$<$ {\bf Value} $>$ \&info)}\hypertarget{namespacev8_a9587769513971dc7cb301b740d9e66b6}{}\label{namespacev8_a9587769513971dc7cb301b740d9e66b6}
+Returns the value if the setter intercepts the request. Otherwise, returns an empty handle. \index{v8@{v8}!Named\+Security\+Callback@{Named\+Security\+Callback}}
 \index{Named\+Security\+Callback@{Named\+Security\+Callback}!v8@{v8}}
-\subsubsection[{Named\+Security\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Named\+Security\+Callback) ({\bf Local}$<$ {\bf Object} $>$ host, {\bf Local}$<$ {\bf Value} $>$ key, {\bf Access\+Type} type, {\bf Local}$<$ {\bf Value} $>$ data)}\label{namespacev8_ab5cafda0c556bba990c660ce9c904e0d}
-Returns true if cross-\/context access should be allowed to the named property with the given key on the host object. \hypertarget{namespacev8_a8ce54c75241be41ff6a25e9944eefd2a}{}\index{v8@{v8}!Return\+Address\+Location\+Resolver@{Return\+Address\+Location\+Resolver}}
+\subsubsection[{\texorpdfstring{Named\+Security\+Callback}{NamedSecurityCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Named\+Security\+Callback) ({\bf Local}$<$ {\bf Object} $>$ host, {\bf Local}$<$ {\bf Value} $>$ key, {\bf Access\+Type} type, {\bf Local}$<$ {\bf Value} $>$ data)}\hypertarget{namespacev8_ab5cafda0c556bba990c660ce9c904e0d}{}\label{namespacev8_ab5cafda0c556bba990c660ce9c904e0d}
+Returns true if cross-\/context access should be allowed to the named property with the given key on the host object. \index{v8@{v8}!Return\+Address\+Location\+Resolver@{Return\+Address\+Location\+Resolver}}
 \index{Return\+Address\+Location\+Resolver@{Return\+Address\+Location\+Resolver}!v8@{v8}}
-\subsubsection[{Return\+Address\+Location\+Resolver}]{\setlength{\rightskip}{0pt plus 5cm}typedef uintptr\+\_\+t($\ast$ v8\+::\+Return\+Address\+Location\+Resolver) (uintptr\+\_\+t return\+\_\+addr\+\_\+location)}\label{namespacev8_a8ce54c75241be41ff6a25e9944eefd2a}
+\subsubsection[{\texorpdfstring{Return\+Address\+Location\+Resolver}{ReturnAddressLocationResolver}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uintptr\+\_\+t($\ast$ v8\+::\+Return\+Address\+Location\+Resolver) (uintptr\+\_\+t return\+\_\+addr\+\_\+location)}\hypertarget{namespacev8_a8ce54c75241be41ff6a25e9944eefd2a}{}\label{namespacev8_a8ce54c75241be41ff6a25e9944eefd2a}
 Return\+Address\+Location\+Resolver is used as a callback function when \hyperlink{namespacev8}{v8} is resolving the location of a return address on the stack. Profilers that change the return address on the stack can use this to resolve the stack location to whereever the profiler stashed the original return address.
 
 
@@ -631,20 +678,43 @@ the resolver function must not cause garbage collection.
 
 
 \subsection{Enumeration Type Documentation}
-\hypertarget{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}{}\index{v8@{v8}!Access\+Control@{Access\+Control}}
+\index{v8@{v8}!Access\+Control@{Access\+Control}}
 \index{Access\+Control@{Access\+Control}!v8@{v8}}
-\subsubsection[{Access\+Control}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Access\+Control}}\label{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}
+\subsubsection[{\texorpdfstring{Access\+Control}{AccessControl}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Access\+Control}}\hypertarget{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}{}\label{namespacev8_a31d8355cb043d7d2dda3f4a52760b64e}
 Access control specifications.
 
 Some accessors should be accessible across contexts. These accessors have an explicit access control parameter which specifies the kind of cross-\/context access that should be allowed.
 
-T\+O\+D\+O(dcarney)\+: Remove P\+R\+O\+H\+I\+B\+I\+T\+S\+\_\+\+O\+V\+E\+R\+W\+R\+I\+T\+I\+N\+G as it is now unused. \hypertarget{namespacev8_add8bef6469c5b94706584124e610046c}{}\index{v8@{v8}!Access\+Type@{Access\+Type}}
+T\+O\+D\+O(dcarney)\+: Remove P\+R\+O\+H\+I\+B\+I\+T\+S\+\_\+\+O\+V\+E\+R\+W\+R\+I\+T\+I\+NG as it is now unused. \index{v8@{v8}!Access\+Type@{Access\+Type}}
 \index{Access\+Type@{Access\+Type}!v8@{v8}}
-\subsubsection[{Access\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Access\+Type}}\label{namespacev8_add8bef6469c5b94706584124e610046c}
-Access type specification. \hypertarget{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{}\index{v8@{v8}!G\+C\+Type@{G\+C\+Type}}
+\subsubsection[{\texorpdfstring{Access\+Type}{AccessType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Access\+Type}}\hypertarget{namespacev8_add8bef6469c5b94706584124e610046c}{}\label{namespacev8_add8bef6469c5b94706584124e610046c}
+Access type specification. \index{v8@{v8}!G\+C\+Callback\+Flags@{G\+C\+Callback\+Flags}}
+\index{G\+C\+Callback\+Flags@{G\+C\+Callback\+Flags}!v8@{v8}}
+\subsubsection[{\texorpdfstring{G\+C\+Callback\+Flags}{GCCallbackFlags}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+G\+C\+Callback\+Flags}}\hypertarget{namespacev8_a247c37a849f4d6c293b9b16e94e1944b}{}\label{namespacev8_a247c37a849f4d6c293b9b16e94e1944b}
+G\+C\+Callback\+Flags is used to notify additional information about the GC callback.
+\begin{DoxyItemize}
+\item k\+G\+C\+Callback\+Flag\+Construct\+Retained\+Object\+Infos\+: The GC callback is for constructing retained object infos.
+\item k\+G\+C\+Callback\+Flag\+Forced\+: The GC callback is for a forced GC for testing.
+\item k\+G\+C\+Callback\+Flag\+Synchronous\+Phantom\+Callback\+Processing\+: The GC callback is called synchronously without getting posted to an idle task.
+\item k\+G\+C\+Callback\+Flag\+Collect\+All\+Available\+Garbage\+: The GC callback is called in a phase where \hyperlink{classv8_1_1V8}{V8} is trying to collect all available garbage (e.\+g., handling a low memory notification). 
+\end{DoxyItemize}\index{v8@{v8}!G\+C\+Type@{G\+C\+Type}}
 \index{G\+C\+Type@{G\+C\+Type}!v8@{v8}}
-\subsubsection[{G\+C\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+G\+C\+Type}}\label{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}
-Applications can register callback functions which will be called before and after a garbage collection. Allocations are not allowed in the callback functions, you therefore cannot manipulate objects (set or delete properties for example) since it is possible such operations will result in the allocation of objects. \hypertarget{namespacev8_a06f34fa4fa4cfc8518366808d1d461c1}{}\index{v8@{v8}!Jit\+Code\+Event\+Options@{Jit\+Code\+Event\+Options}}
+\subsubsection[{\texorpdfstring{G\+C\+Type}{GCType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+G\+C\+Type}}\hypertarget{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{}\label{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}
+Applications can register callback functions which will be called before and after certain garbage collection operations. Allocations are not allowed in the callback functions, you therefore cannot manipulate objects (set or delete properties for example) since it is possible such operations will result in the allocation of objects. \index{v8@{v8}!Integrity\+Level@{Integrity\+Level}}
+\index{Integrity\+Level@{Integrity\+Level}!v8@{v8}}
+\subsubsection[{\texorpdfstring{Integrity\+Level}{IntegrityLevel}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Integrity\+Level}\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacev8_a02642d03ff1eecc2fd358626499c2e30}{}\label{namespacev8_a02642d03ff1eecc2fd358626499c2e30}
+Integrity level for objects. \index{v8@{v8}!Jit\+Code\+Event\+Options@{Jit\+Code\+Event\+Options}}
 \index{Jit\+Code\+Event\+Options@{Jit\+Code\+Event\+Options}!v8@{v8}}
-\subsubsection[{Jit\+Code\+Event\+Options}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Jit\+Code\+Event\+Options}}\label{namespacev8_a06f34fa4fa4cfc8518366808d1d461c1}
-Option flags passed to the Set\+Jit\+Code\+Event\+Handler function. 
+\subsubsection[{\texorpdfstring{Jit\+Code\+Event\+Options}{JitCodeEventOptions}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Jit\+Code\+Event\+Options}}\hypertarget{namespacev8_a06f34fa4fa4cfc8518366808d1d461c1}{}\label{namespacev8_a06f34fa4fa4cfc8518366808d1d461c1}
+Option flags passed to the Set\+Jit\+Code\+Event\+Handler function. \index{v8@{v8}!Memory\+Pressure\+Level@{Memory\+Pressure\+Level}}
+\index{Memory\+Pressure\+Level@{Memory\+Pressure\+Level}!v8@{v8}}
+\subsubsection[{\texorpdfstring{Memory\+Pressure\+Level}{MemoryPressureLevel}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Memory\+Pressure\+Level}\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacev8_ae0e9a25bf51e518585f555806e7dc7b9}{}\label{namespacev8_ae0e9a25bf51e518585f555806e7dc7b9}
+Memory pressure level for the Memory\+Pressure\+Notification. k\+None hints \hyperlink{classv8_1_1V8}{V8} that there is no memory pressure. k\+Moderate hints \hyperlink{classv8_1_1V8}{V8} to speed up incremental garbage collection at the cost of of higher latency due to garbage collection pauses. k\+Critical hints \hyperlink{classv8_1_1V8}{V8} to free memory as soon as possible. Garbage collection pauses at this level will be large. \index{v8@{v8}!Microtasks\+Policy@{Microtasks\+Policy}}
+\index{Microtasks\+Policy@{Microtasks\+Policy}!v8@{v8}}
+\subsubsection[{\texorpdfstring{Microtasks\+Policy}{MicrotasksPolicy}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Microtasks\+Policy}\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacev8_a2f183b102b3d1b7a30a805e8c53c04da}{}\label{namespacev8_a2f183b102b3d1b7a30a805e8c53c04da}
+Policy for running microtasks\+:
+\begin{DoxyItemize}
+\item explicit\+: microtasks are invoked with \hyperlink{classv8_1_1Isolate_ac3cbe2a1632eb863912640dcfc98b6c8}{Isolate\+::\+Run\+Microtasks()} method;
+\item scoped\+: microtasks invocation is controlled by \hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope} objects;
+\item auto\+: microtasks are invoked when the script call depth decrements to zero. 
+\end{DoxyItemize}

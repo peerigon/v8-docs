@@ -13,10 +13,14 @@ Inheritance diagram for v8\+:\+:Reg\+Exp\+:\begin{figure}[H]
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} \{ {\bfseries k\+None} = 0, 
+enum \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} \{ \\*
+{\bfseries k\+None} = 0, 
 {\bfseries k\+Global} = 1, 
 {\bfseries k\+Ignore\+Case} = 2, 
-{\bfseries k\+Multiline} = 4
+{\bfseries k\+Multiline} = 4, 
+\\*
+{\bfseries k\+Sticky} = 8, 
+{\bfseries k\+Unicode} = 16
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
@@ -29,12 +33,12 @@ enum \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} \{ {
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1RegExp_aa11f71f7311db7da1ea3d6384aa31df1}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1RegExp}{Reg\+Exp} $>$ New(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ pattern, \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} flags))
+static \hyperlink{classv8_1_1RegExp_a9793a5a1e31b5ea0563d96d8c74c01ff}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1RegExp}{Reg\+Exp} $>$ New(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ pattern,                                                                                                                                                                           \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} flags))
 \item 
-\hypertarget{classv8_1_1RegExp_a805f632fe98d58160773a4ba1e424b15}{}static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+L\+T \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1RegExp}{Reg\+Exp} $>$ {\bfseries New} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ pattern, \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} flags)\label{classv8_1_1RegExp_a805f632fe98d58160773a4ba1e424b15}
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1RegExp}{Reg\+Exp} $>$ {\bfseries New} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ pattern, \hyperlink{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{Flags} flags)\hypertarget{classv8_1_1RegExp_a805f632fe98d58160773a4ba1e424b15}{}\label{classv8_1_1RegExp_a805f632fe98d58160773a4ba1e424b15}
 
 \item 
-\hypertarget{classv8_1_1RegExp_ac06d8f61c0ebb2e7292e6aeff7108f26}{}static V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1RegExp}{Reg\+Exp} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{v8\+::\+Value} $\ast$obj)\label{classv8_1_1RegExp_ac06d8f61c0ebb2e7292e6aeff7108f26}
+static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1RegExp}{Reg\+Exp} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{v8\+::\+Value} $\ast$obj)\hypertarget{classv8_1_1RegExp_ac06d8f61c0ebb2e7292e6aeff7108f26}{}\label{classv8_1_1RegExp_ac06d8f61c0ebb2e7292e6aeff7108f26}
 
 \end{DoxyCompactItemize}
 
@@ -43,34 +47,34 @@ static \hyperlink{classv8_1_1RegExp_aa11f71f7311db7da1ea3d6384aa31df1}{V8\+\_\+\
 An instance of the built-\/in \hyperlink{classv8_1_1RegExp}{Reg\+Exp} constructor (E\+C\+M\+A-\/262, 15.\+10). 
 
 \subsection{Member Enumeration Documentation}
-\hypertarget{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{}\index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!Flags@{Flags}}
+\index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!Flags@{Flags}}
 \index{Flags@{Flags}!v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}}
-\subsubsection[{Flags}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Reg\+Exp\+::\+Flags}}\label{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}
+\subsubsection[{\texorpdfstring{Flags}{Flags}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Reg\+Exp\+::\+Flags}}\hypertarget{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}{}\label{classv8_1_1RegExp_aa4718a5c1f18472aff3bf51ed694fc5a}
 Regular expression flag bits. They can be or\textquotesingle{}ed to enable a set of flags. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1RegExp_ad5a5e77e6e626b3c7c69eef7ba2908cc}{}\index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!Get\+Flags@{Get\+Flags}}
+\index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!Get\+Flags@{Get\+Flags}}
 \index{Get\+Flags@{Get\+Flags}!v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}}
-\subsubsection[{Get\+Flags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Flags} v8\+::\+Reg\+Exp\+::\+Get\+Flags (
+\subsubsection[{\texorpdfstring{Get\+Flags() const }{GetFlags() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Flags} v8\+::\+Reg\+Exp\+::\+Get\+Flags (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1RegExp_ad5a5e77e6e626b3c7c69eef7ba2908cc}
-Returns the flags bit field. \hypertarget{classv8_1_1RegExp_a448213f2a92d964ed260b51429d5e590}{}\index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!Get\+Source@{Get\+Source}}
+) const}\hypertarget{classv8_1_1RegExp_ad5a5e77e6e626b3c7c69eef7ba2908cc}{}\label{classv8_1_1RegExp_ad5a5e77e6e626b3c7c69eef7ba2908cc}
+Returns the flags bit field. \index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!Get\+Source@{Get\+Source}}
 \index{Get\+Source@{Get\+Source}!v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}}
-\subsubsection[{Get\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Reg\+Exp\+::\+Get\+Source (
+\subsubsection[{\texorpdfstring{Get\+Source() const }{GetSource() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Reg\+Exp\+::\+Get\+Source (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1RegExp_a448213f2a92d964ed260b51429d5e590}
-Returns the value of the source property\+: a string representing the regular expression. \hypertarget{classv8_1_1RegExp_aa11f71f7311db7da1ea3d6384aa31df1}{}\index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}}
-\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Reg\+Exp\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+) const}\hypertarget{classv8_1_1RegExp_a448213f2a92d964ed260b51429d5e590}{}\label{classv8_1_1RegExp_a448213f2a92d964ed260b51429d5e590}
+Returns the value of the source property\+: a string representing the regular expression. \index{v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}!v8\+::\+Reg\+Exp@{v8\+::\+Reg\+Exp}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N(""Use maybe version"", Local$<$ Reg\+Exp $>$ New(\+Local$<$ String $>$ pattern,                                                                                                                                                                           Flags flags))}{V8_DEPRECATE_SOON("Use maybe version", Local< RegExp > New(Local< String > pattern,                                                                                                                                                                           Flags flags))}}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Reg\+Exp\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON (
 \begin{DoxyParamCaption}
 \item[{\char`\"{}Use maybe version\char`\"{}}]{, }
-\item[{{\bf Local}$<$ {\bf Reg\+Exp} $>$ }]{NewLocal$<$ String $>$ pattern, Flags flags}
+\item[{{\bf Local}$<$ {\bf Reg\+Exp} $>$ }]{NewLocal$<$ String $>$ pattern,                                                                                                                                                                                                                                                                                                                                                   Flags flags}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1RegExp_aa11f71f7311db7da1ea3d6384aa31df1}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1RegExp_a9793a5a1e31b5ea0563d96d8c74c01ff}{}\label{classv8_1_1RegExp_a9793a5a1e31b5ea0563d96d8c74c01ff}
 Creates a regular expression from the given pattern string and the flags bit field. May throw a Java\+Script exception as described in E\+C\+M\+A-\/262, 15.\+10.\+4.\+1.
 
 For example, Reg\+Exp\+::\+New(v8\+::\+String\+::\+New(\char`\"{}foo\char`\"{}), static\+\_\+cast$<$\+Reg\+Exp\+::\+Flags$>$(k\+Global $\vert$ k\+Multiline)) is equivalent to evaluating \char`\"{}/foo/gm\char`\"{}. 

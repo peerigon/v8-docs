@@ -13,12 +13,12 @@ Inheritance diagram for v8\+:\+:Array\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classv8_1_1Array_a3c47dfd8d26e60ed4fcdc683034d6d9c}{}uint32\+\_\+t {\bfseries Length} () const \label{classv8_1_1Array_a3c47dfd8d26e60ed4fcdc683034d6d9c}
+uint32\+\_\+t {\bfseries Length} () const \hypertarget{classv8_1_1Array_a3c47dfd8d26e60ed4fcdc683034d6d9c}{}\label{classv8_1_1Array_a3c47dfd8d26e60ed4fcdc683034d6d9c}
 
 \item 
-\hyperlink{classv8_1_1Array_a3b1451b581932eef0d39c2c754adc1f9}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Object}{Object} $>$ Clone\+Element\+At(uint32\+\_\+t index))
+\hyperlink{classv8_1_1Array_ae4d15fb9781bcd653e5eecffd4d0ffac}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Cloning is not supported.\char`\"{}, Local$<$ \hyperlink{classv8_1_1Object}{Object} $>$ Clone\+Element\+At(uint32\+\_\+t index))
 \item 
-\hypertarget{classv8_1_1Array_aceb6239f3ca3855174c58f19c49ebe6b}{}V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+L\+T \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ {\bfseries Clone\+Element\+At} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, uint32\+\_\+t index)\label{classv8_1_1Array_aceb6239f3ca3855174c58f19c49ebe6b}
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Cloning is not supported.\char`\"{}, Maybe\+Local$<$ \hyperlink{classv8_1_1Object}{Object} $>$ Clone\+Element\+At(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context,                                                                                                                                                                                               uint32\+\_\+t index))\hypertarget{classv8_1_1Array_ae30e4a34fc94cd4b52cd21d508b6e3b7}{}\label{classv8_1_1Array_ae30e4a34fc94cd4b52cd21d508b6e3b7}
 
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
@@ -26,7 +26,7 @@ Inheritance diagram for v8\+:\+:Array\+:\begin{figure}[H]
 \item 
 static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Array}{Array} $>$ \hyperlink{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, int length=0)
 \item 
-\hypertarget{classv8_1_1Array_ae56792766f8513395c3ebe8c29afde4b}{}static V8\+\_\+\+I\+N\+L\+I\+N\+E \hyperlink{classv8_1_1Array}{Array} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)\label{classv8_1_1Array_ae56792766f8513395c3ebe8c29afde4b}
+static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1Array}{Array} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)\hypertarget{classv8_1_1Array_ae56792766f8513395c3ebe8c29afde4b}{}\label{classv8_1_1Array_ae56792766f8513395c3ebe8c29afde4b}
 
 \end{DoxyCompactItemize}
 
@@ -35,22 +35,22 @@ static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Array}{Array
 An instance of the built-\/in array constructor (E\+C\+M\+A-\/262, 15.\+4.\+2). 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}{}\index{v8\+::\+Array@{v8\+::\+Array}!New@{New}}
+\index{v8\+::\+Array@{v8\+::\+Array}!New@{New}}
 \index{New@{New}!v8\+::\+Array@{v8\+::\+Array}}
-\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array}$>$ v8\+::\+Array\+::\+New (
+\subsubsection[{\texorpdfstring{New(\+Isolate $\ast$isolate, int length=0)}{New(Isolate *isolate, int length=0)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Array}$>$ v8\+::\+Array\+::\+New (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
 \item[{int}]{length = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}
-Creates a Java\+Script array with the given length. If the length is negative the returned array will have length 0. \hypertarget{classv8_1_1Array_a3b1451b581932eef0d39c2c754adc1f9}{}\index{v8\+::\+Array@{v8\+::\+Array}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Array@{v8\+::\+Array}}
-\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Array\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}{}\label{classv8_1_1Array_a892f18fe6a25dfc0bc7b435759a30226}
+Creates a Java\+Script array with the given length. If the length is negative the returned array will have length 0. \index{v8\+::\+Array@{v8\+::\+Array}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Array@{v8\+::\+Array}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Cloning is not supported."", Local$<$ Object $>$ Clone\+Element\+At(uint32\+\_\+t index))}{V8_DEPRECATED("Cloning is not supported.", Local< Object > CloneElementAt(uint32_t index))}}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Array\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
 \begin{DoxyParamCaption}
-\item[{\char`\"{}Use maybe version\char`\"{}}]{, }
+\item[{\char`\"{}Cloning is not supported.\char`\"{}}]{, }
 \item[{{\bf Local}$<$ {\bf Object} $>$ }]{Clone\+Element\+Atuint32\+\_\+t index}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Array_a3b1451b581932eef0d39c2c754adc1f9}
+)}\hypertarget{classv8_1_1Array_ae4d15fb9781bcd653e5eecffd4d0ffac}{}\label{classv8_1_1Array_ae4d15fb9781bcd653e5eecffd4d0ffac}
 Clones an element at index $\vert$index$\vert$. Returns an empty handle if cloning fails (for any reason). 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

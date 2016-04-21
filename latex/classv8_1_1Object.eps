@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 1208.053691
+%%BoundingBox: 0 0 500 1275.167785
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.413889 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 0.392105 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 18 def
+/rows 19 def
 /cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -186,6 +186,7 @@ boxfont setfont
 (v8::NumberObject) cw
 (v8::Promise) cw
 (v8::Promise::Resolver) cw
+(v8::Proxy) cw
 (v8::RegExp) cw
 (v8::Set) cw
 (v8::SharedArrayBuffer) cw
@@ -202,20 +203,21 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (v8::Object) 0.000000 15.000000 box
- (v8::Value) 0.000000 16.000000 box
- (v8::Data) 0.000000 17.000000 box
- (v8::Array) 1.000000 14.000000 box
- (v8::ArrayBuffer) 1.000000 13.000000 box
- (v8::ArrayBufferView) 1.000000 12.000000 box
-1.000000 12.000000 mark
- (v8::BooleanObject) 1.000000 11.000000 box
- (v8::Date) 1.000000 10.000000 box
- (v8::Function) 1.000000 9.000000 box
- (v8::Map) 1.000000 8.000000 box
- (v8::NumberObject) 1.000000 7.000000 box
- (v8::Promise) 1.000000 6.000000 box
- (v8::Promise::Resolver) 1.000000 5.000000 box
+ (v8::Object) 0.000000 16.000000 box
+ (v8::Value) 0.000000 17.000000 box
+ (v8::Data) 0.000000 18.000000 box
+ (v8::Array) 1.000000 15.000000 box
+ (v8::ArrayBuffer) 1.000000 14.000000 box
+ (v8::ArrayBufferView) 1.000000 13.000000 box
+1.000000 13.000000 mark
+ (v8::BooleanObject) 1.000000 12.000000 box
+ (v8::Date) 1.000000 11.000000 box
+ (v8::Function) 1.000000 10.000000 box
+ (v8::Map) 1.000000 9.000000 box
+ (v8::NumberObject) 1.000000 8.000000 box
+ (v8::Promise) 1.000000 7.000000 box
+ (v8::Promise::Resolver) 1.000000 6.000000 box
+ (v8::Proxy) 1.000000 5.000000 box
  (v8::RegExp) 1.000000 4.000000 box
  (v8::Set) 1.000000 3.000000 box
  (v8::SharedArrayBuffer) 1.000000 2.000000 box
@@ -225,15 +227,17 @@ boundx scalefactor div boundy scalefactor div scale
 % ----- relations -----
 
 solid
-0 0.000000 15.000000 out
-solid
-1 0.000000 16.000000 in
-solid
 0 0.000000 16.000000 out
 solid
 1 0.000000 17.000000 in
 solid
-1 0.000000 14.250000 out
+0 0.000000 17.000000 out
+solid
+1 0.000000 18.000000 in
+solid
+1 0.000000 15.250000 out
+solid
+0 0.000000 15.500000 hedge
 solid
 0 0.000000 14.500000 hedge
 solid
@@ -265,4 +269,4 @@ solid
 solid
 0 0.000000 0.500000 hedge
 solid
-0.000000 15.000000 0.500000 vedge
+0.000000 16.000000 0.500000 vedge

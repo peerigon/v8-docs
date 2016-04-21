@@ -15,9 +15,9 @@ Inheritance diagram for v8\+:\+:String\+:\+:External\+String\+Resource\+:\begin{
 \item 
 virtual \hyperlink{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}{$\sim$\+External\+String\+Resource} ()
 \item 
-virtual const uint16\+\_\+t $\ast$ \hyperlink{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}{data} () const =0
+virtual const uint16\+\_\+t $\ast$ \hyperlink{classv8_1_1String_1_1ExternalStringResource_a53ca87d049fc8bfea5944adde4e7b159}{data} () const  =0
 \item 
-virtual size\+\_\+t \hyperlink{classv8_1_1String_1_1ExternalStringResource_ab5ca300fea077d7c7774ec49d32e4da1}{length} () const =0
+virtual size\+\_\+t \hyperlink{classv8_1_1String_1_1ExternalStringResource_af6c1b3f63e2e3112da788928aac96fab}{length} () const  =0
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -26,30 +26,30 @@ virtual size\+\_\+t \hyperlink{classv8_1_1String_1_1ExternalStringResource_ab5ca
 An \hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource} is a wrapper around a two-\/byte string buffer that resides outside \hyperlink{classv8_1_1V8}{V8}\textquotesingle{}s heap. Implement an \hyperlink{classv8_1_1String_1_1ExternalStringResource}{External\+String\+Resource} to manage the life cycle of the underlying buffer. Note that the string data must be immutable. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}{}\index{v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}!````~External\+String\+Resource@{$\sim$\+External\+String\+Resource}}
+\index{v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}!````~External\+String\+Resource@{$\sim$\+External\+String\+Resource}}
 \index{````~External\+String\+Resource@{$\sim$\+External\+String\+Resource}!v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}}
-\subsubsection[{$\sim$\+External\+String\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}virtual v8\+::\+String\+::\+External\+String\+Resource\+::$\sim$\+External\+String\+Resource (
+\subsubsection[{\texorpdfstring{$\sim$\+External\+String\+Resource()}{~ExternalStringResource()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual v8\+::\+String\+::\+External\+String\+Resource\+::$\sim$\+External\+String\+Resource (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}{}\label{classv8_1_1String_1_1ExternalStringResource_a6b7ef9e33a47059092e1447b10c35416}
 Override the destructor to manage the life cycle of the underlying buffer. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}{}\index{v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}!data@{data}}
+\index{v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}!data@{data}}
 \index{data@{data}!v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}}
-\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}virtual const uint16\+\_\+t$\ast$ v8\+::\+String\+::\+External\+String\+Resource\+::data (
+\subsubsection[{\texorpdfstring{data() const  =0}{data() const  =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const uint16\+\_\+t$\ast$ v8\+::\+String\+::\+External\+String\+Resource\+::data (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1String_1_1ExternalStringResource_a987309199b848511adb708e221e0fb0a}
-The string data from the underlying buffer. \hypertarget{classv8_1_1String_1_1ExternalStringResource_ab5ca300fea077d7c7774ec49d32e4da1}{}\index{v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}!length@{length}}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1String_1_1ExternalStringResource_a53ca87d049fc8bfea5944adde4e7b159}{}\label{classv8_1_1String_1_1ExternalStringResource_a53ca87d049fc8bfea5944adde4e7b159}
+The string data from the underlying buffer. \index{v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}!length@{length}}
 \index{length@{length}!v8\+::\+String\+::\+External\+String\+Resource@{v8\+::\+String\+::\+External\+String\+Resource}}
-\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t v8\+::\+String\+::\+External\+String\+Resource\+::length (
+\subsubsection[{\texorpdfstring{length() const  =0}{length() const  =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t v8\+::\+String\+::\+External\+String\+Resource\+::length (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classv8_1_1String_1_1ExternalStringResource_ab5ca300fea077d7c7774ec49d32e4da1}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1String_1_1ExternalStringResource_af6c1b3f63e2e3112da788928aac96fab}{}\label{classv8_1_1String_1_1ExternalStringResource_af6c1b3f63e2e3112da788928aac96fab}
 The length of the string. That is, the number of two-\/byte characters. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

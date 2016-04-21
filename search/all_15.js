@@ -1,10 +1,10 @@
 var searchData=
 [
+  ['warmupsnapshotdatablob',['WarmUpSnapshotDataBlob',['../classv8_1_1V8.html#adb8616cb7056b7e054f6694deae8dc2a',1,'v8::V8']]],
   ['weakcallbackdata',['WeakCallbackData',['../classv8_1_1WeakCallbackData.html',1,'v8']]],
   ['weakcallbackinfo',['WeakCallbackInfo',['../classv8_1_1WeakCallbackInfo.html',1,'v8']]],
   ['weakcallbackobject',['WeakCallbackObject',['../classv8_1_1WeakCallbackObject.html',1,'v8']]],
-  ['willautorunmicrotasks',['WillAutorunMicrotasks',['../classv8_1_1Isolate.html#ae70ee311ab3271f9fbb043749d5be8c0',1,'v8::Isolate']]],
-  ['willstartrunning',['WillStartRunning',['../classv8_1_1Debug_1_1Message.html#af8d236b6a334423732a38cbf8cfd7aef',1,'v8::Debug::Message']]],
+  ['willstartrunning',['WillStartRunning',['../classv8_1_1Debug_1_1Message.html#ae6197bbed731299fd7d49d072c5ea53a',1,'v8::Debug::Message']]],
   ['wrapperclassid',['WrapperClassId',['../classv8_1_1PersistentBase.html#a01a46bf4e69ed9a837639702ee234643',1,'v8::PersistentBase']]],
   ['wrapperinfocallback',['WrapperInfoCallback',['../classv8_1_1HeapProfiler.html#a677025dd201fd832e0464e5ab0b0d0d4',1,'v8::HeapProfiler']]],
   ['writeasciichunk',['WriteAsciiChunk',['../classv8_1_1OutputStream.html#a42adc62ebe43d00159f80328538f217f',1,'v8::OutputStream']]],

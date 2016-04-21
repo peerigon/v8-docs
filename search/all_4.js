@@ -1,6 +1,7 @@
 var searchData=
 [
   ['embedderdatafields',['EmbedderDataFields',['../classv8_1_1Context.html#a8e8a8c567e2d193f25f1ec211db0b5f9',1,'v8::Context']]],
+  ['embedderheaptracer',['EmbedderHeapTracer',['../classv8_1_1EmbedderHeapTracer.html',1,'v8']]],
   ['empty',['Empty',['../classv8_1_1String.html#aa393d47baa54467fe57001065e49194b',1,'v8::String']]],
   ['endofstream',['EndOfStream',['../classv8_1_1OutputStream.html#a6c5c308367fc5776bcbedff0e94d6049',1,'v8::OutputStream']]],
   ['enqueuemicrotask',['EnqueueMicrotask',['../classv8_1_1Isolate.html#a79a222a1a662d08479d5a1880c6793c5',1,'v8::Isolate::EnqueueMicrotask(Local&lt; Function &gt; microtask)'],['../classv8_1_1Isolate.html#ad4d6c7dfdfc6c1bc857841de7e9967c3',1,'v8::Isolate::EnqueueMicrotask(MicrotaskCallback microtask, void *data=NULL)']]],
@@ -9,6 +10,7 @@ var searchData=
   ['entry_5fhook',['entry_hook',['../structv8_1_1Isolate_1_1CreateParams.html#aa7aa18bbe2d86713e5b074a93b38dc60',1,'v8::Isolate::CreateParams']]],
   ['escapablehandlescope',['EscapableHandleScope',['../classv8_1_1EscapableHandleScope.html',1,'v8']]],
   ['escape',['Escape',['../classv8_1_1EscapableHandleScope.html#afdf0d3850978f65d1a827f78b3a2b6fd',1,'v8::EscapableHandleScope']]],
+  ['estimatedsize',['EstimatedSize',['../classv8_1_1Context.html#abfec90cb6cb1cac58b4e3487515721a2',1,'v8::Context']]],
   ['eternal',['Eternal',['../classv8_1_1Eternal.html',1,'v8']]],
   ['eventcallback',['EventCallback',['../classv8_1_1Debug.html#ab53894746a21222796062f0e81ea28d8',1,'v8::Debug']]],
   ['eventdetails',['EventDetails',['../classv8_1_1Debug_1_1EventDetails.html',1,'v8::Debug']]],

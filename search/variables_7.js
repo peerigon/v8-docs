@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['snapshot_5fblob',['snapshot_blob',['../structv8_1_1Isolate_1_1CreateParams.html#a25d38476e4dec79ae96c59292eee4a64',1,'v8::Isolate::CreateParams']]]
+  ['name',['name',['../structv8_1_1AllocationProfile_1_1Node.html#af9f2c323d6a11e836c02e8ac88adc5a8',1,'v8::AllocationProfile::Node']]]
 ];

@@ -1,0 +1,45 @@
+\hypertarget{classv8_1_1AllocationProfile}{}\section{v8\+:\+:Allocation\+Profile Class Reference}
+\label{classv8_1_1AllocationProfile}\index{v8\+::\+Allocation\+Profile@{v8\+::\+Allocation\+Profile}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structv8_1_1AllocationProfile_1_1Allocation}{Allocation}
+\item 
+struct \hyperlink{structv8_1_1AllocationProfile_1_1Node}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{structv8_1_1AllocationProfile_1_1Node}{Node} $\ast$ \hyperlink{classv8_1_1AllocationProfile_afea045dae30df5477088e2f0b7edb6c4}{Get\+Root\+Node} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries k\+No\+Line\+Number\+Info} = Message\+::k\+No\+Line\+Number\+Info\hypertarget{classv8_1_1AllocationProfile_a26fdfe9e4846d26c83d0ad8c2ed2d783}{}\label{classv8_1_1AllocationProfile_a26fdfe9e4846d26c83d0ad8c2ed2d783}
+
+\item 
+static const int {\bfseries k\+No\+Column\+Number\+Info} = Message\+::k\+No\+Column\+Info\hypertarget{classv8_1_1AllocationProfile_a9cfa103f73e82629694eee3734826eb7}{}\label{classv8_1_1AllocationProfile_a9cfa103f73e82629694eee3734826eb7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classv8_1_1AllocationProfile}{Allocation\+Profile} is a sampled profile of allocations done by the program. This is structured as a call-\/graph. 
+
+\subsection{Member Function Documentation}
+\index{v8\+::\+Allocation\+Profile@{v8\+::\+Allocation\+Profile}!Get\+Root\+Node@{Get\+Root\+Node}}
+\index{Get\+Root\+Node@{Get\+Root\+Node}!v8\+::\+Allocation\+Profile@{v8\+::\+Allocation\+Profile}}
+\subsubsection[{\texorpdfstring{Get\+Root\+Node()=0}{GetRootNode()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Node}$\ast$ v8\+::\+Allocation\+Profile\+::\+Get\+Root\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1AllocationProfile_afea045dae30df5477088e2f0b7edb6c4}{}\label{classv8_1_1AllocationProfile_afea045dae30df5477088e2f0b7edb6c4}
+Returns the root node of the call-\/graph. The root node corresponds to an empty JS call-\/stack. The lifetime of the returned Node$\ast$ is scoped to the containing \hyperlink{classv8_1_1AllocationProfile}{Allocation\+Profile}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

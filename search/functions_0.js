@@ -1,10 +1,12 @@
 var searchData=
 [
+  ['addbeforecallenteredcallback',['AddBeforeCallEnteredCallback',['../classv8_1_1Isolate.html#a1affdbf27486aa4c6a1ecae9997de98e',1,'v8::Isolate']]],
   ['addcallcompletedcallback',['AddCallCompletedCallback',['../classv8_1_1Isolate.html#a89656ac26d523c31fbfdbb12fb32f078',1,'v8::Isolate']]],
-  ['addgcepiloguecallback',['AddGCEpilogueCallback',['../classv8_1_1Isolate.html#add9cac1ffd6cb1b7ed6b0956cebae129',1,'v8::Isolate']]],
-  ['addgcprologuecallback',['AddGCPrologueCallback',['../classv8_1_1Isolate.html#ac5614f2eae055c949927bc8daddf90c3',1,'v8::Isolate']]],
-  ['addmemoryallocationcallback',['AddMemoryAllocationCallback',['../classv8_1_1Isolate.html#acff413b8633aa13f1308697c0ce8c5fa',1,'v8::Isolate']]],
+  ['addgcepiloguecallback',['AddGCEpilogueCallback',['../classv8_1_1Isolate.html#abe7ab165a962dd4a944d9bc489f5d2cf',1,'v8::Isolate']]],
+  ['addgcprologuecallback',['AddGCPrologueCallback',['../classv8_1_1Isolate.html#a7acdd74d063c4cbdb373f59253b7b64c',1,'v8::Isolate']]],
   ['addmessagelistener',['AddMessageListener',['../classv8_1_1Isolate.html#a1aaf99c9ce853fdece7a3b8fc4df49d5',1,'v8::Isolate']]],
+  ['addmicrotaskscompletedcallback',['AddMicrotasksCompletedCallback',['../classv8_1_1Isolate.html#ae9c09d4763df6c3f06c686eebcce2834',1,'v8::Isolate']]],
+  ['addtraceevent',['AddTraceEvent',['../classv8_1_1Platform.html#ab4ef5713fb5bec0f2fe0981745342364',1,'v8::Platform']]],
   ['adjustamountofexternalallocatedmemory',['AdjustAmountOfExternalAllocatedMemory',['../classv8_1_1Isolate.html#aaeda5fa60961a3d9d476c46200e30711',1,'v8::Isolate']]],
   ['allocate',['Allocate',['../classv8_1_1ArrayBuffer_1_1Allocator.html#a106b0d80120ed04fe9b9675e96f0340b',1,'v8::ArrayBuffer::Allocator']]],
   ['allocateuninitialized',['AllocateUninitialized',['../classv8_1_1ArrayBuffer_1_1Allocator.html#a92b2d5c0a826d3c435e12f3ee178f37a',1,'v8::ArrayBuffer::Allocator']]],

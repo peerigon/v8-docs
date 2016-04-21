@@ -18,54 +18,74 @@ typedef void($\ast$ \hyperlink{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc69
 \item 
 typedef void($\ast$ \hyperlink{classv8_1_1Debug_a91cd8aa9743e3478bc63fe73abcd557c}{Debug\+Message\+Dispatch\+Handler}) ()
 \end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use version with an \hyperlink{classv8_1_1Isolate}{Isolate}\char`\"{}, static bool Set\+Debug\+Event\+Listener(                                                                       \hyperlink{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}{Event\+Callback} that, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$()))\hypertarget{classv8_1_1Debug_a136072a1c36660385a4dd5e242588eff}{}\label{classv8_1_1Debug_a136072a1c36660385a4dd5e242588eff}
+
+\item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use version with an \hyperlink{classv8_1_1Isolate}{Isolate}\char`\"{}, static void Set\+Message\+Handler(\hyperlink{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc694}{Message\+Handler} handler))\hypertarget{classv8_1_1Debug_a47ea3e258dfe3539890b4a29859481e4}{}\label{classv8_1_1Debug_a47ea3e258dfe3539890b4a29859481e4}
+
+\item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use version with an \hyperlink{classv8_1_1Isolate}{Isolate}\char`\"{}, static void \hyperlink{classv8_1_1Debug_af005b911101260e0458847d149d5610e}{Process\+Debug\+Messages}())\hypertarget{classv8_1_1Debug_a5682cd506adcc344fe99b8c9b21bbac8}{}\label{classv8_1_1Debug_a5682cd506adcc344fe99b8c9b21bbac8}
+
+\item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use version with an \hyperlink{classv8_1_1Isolate}{Isolate}\char`\"{}, static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_abcf6727d68c5f8c35eef75a72e6a0da8}{Get\+Debug\+Context}())\hypertarget{classv8_1_1Debug_afe8bf40a79b8769cedfb7aafef74e77f}{}\label{classv8_1_1Debug_afe8bf40a79b8769cedfb7aafef74e77f}
+
+\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classv8_1_1Debug_ac2d24e9b52877ec40236bd0ceea85e8b}{}static bool {\bfseries Set\+Debug\+Event\+Listener} (\hyperlink{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}{Event\+Callback} that, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())\label{classv8_1_1Debug_ac2d24e9b52877ec40236bd0ceea85e8b}
+static bool {\bfseries Set\+Debug\+Event\+Listener} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}{Event\+Callback} that, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())\hypertarget{classv8_1_1Debug_a7f5138bd280a4c3fa9058a2d559687dd}{}\label{classv8_1_1Debug_a7f5138bd280a4c3fa9058a2d559687dd}
 
 \item 
-\hypertarget{classv8_1_1Debug_a0c730ea558b1fc86cb728980c91a4c7c}{}static void {\bfseries Debug\+Break} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{classv8_1_1Debug_a0c730ea558b1fc86cb728980c91a4c7c}
+static void {\bfseries Debug\+Break} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1Debug_a0c730ea558b1fc86cb728980c91a4c7c}{}\label{classv8_1_1Debug_a0c730ea558b1fc86cb728980c91a4c7c}
 
 \item 
-\hypertarget{classv8_1_1Debug_a976a373dc06c146cdbe8d6f2fd7f57b5}{}static void {\bfseries Cancel\+Debug\+Break} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{classv8_1_1Debug_a976a373dc06c146cdbe8d6f2fd7f57b5}
+static void {\bfseries Cancel\+Debug\+Break} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1Debug_a976a373dc06c146cdbe8d6f2fd7f57b5}{}\label{classv8_1_1Debug_a976a373dc06c146cdbe8d6f2fd7f57b5}
 
 \item 
-\hypertarget{classv8_1_1Debug_aa564431664efa61d6d72c9cbd91b4ea2}{}static bool {\bfseries Check\+Debug\+Break} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\label{classv8_1_1Debug_aa564431664efa61d6d72c9cbd91b4ea2}
+static bool {\bfseries Check\+Debug\+Break} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1Debug_aa564431664efa61d6d72c9cbd91b4ea2}{}\label{classv8_1_1Debug_aa564431664efa61d6d72c9cbd91b4ea2}
 
 \item 
-\hypertarget{classv8_1_1Debug_ab26a90abc5c21c752f6923a1986f0bb7}{}static void {\bfseries Set\+Message\+Handler} (\hyperlink{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc694}{Message\+Handler} handler)\label{classv8_1_1Debug_ab26a90abc5c21c752f6923a1986f0bb7}
+static void {\bfseries Set\+Message\+Handler} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc694}{Message\+Handler} handler)\hypertarget{classv8_1_1Debug_ae49147c056122437bacc3d26cc349125}{}\label{classv8_1_1Debug_ae49147c056122437bacc3d26cc349125}
 
 \item 
-\hypertarget{classv8_1_1Debug_aba2426f25ee7cd31659426287777bb00}{}static void {\bfseries Send\+Command} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const uint16\+\_\+t $\ast$command, int length, \hyperlink{classv8_1_1Debug_1_1ClientData}{Client\+Data} $\ast$client\+\_\+data=N\+U\+L\+L)\label{classv8_1_1Debug_aba2426f25ee7cd31659426287777bb00}
+static void {\bfseries Send\+Command} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, const uint16\+\_\+t $\ast$command, int length, \hyperlink{classv8_1_1Debug_1_1ClientData}{Client\+Data} $\ast$client\+\_\+data=N\+U\+LL)\hypertarget{classv8_1_1Debug_aba2426f25ee7cd31659426287777bb00}{}\label{classv8_1_1Debug_aba2426f25ee7cd31659426287777bb00}
 
 \item 
-static \hyperlink{classv8_1_1Debug_a82a4a039d33769fae6d94fd2d14e5550}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Call(\hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Function}{v8\+::\+Function} $>$ fun, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$()))
+static \hyperlink{classv8_1_1Debug_a5c53fc48b3fca71b6397cfecd1c82a9d}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Call(\hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Function}{v8\+::\+Function} $>$ fun,                                                                                                                                                           \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$()))
 \item 
-\hypertarget{classv8_1_1Debug_a32e28ec40dc429e7fa1dfbe1e514ba3d}{}static \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Call} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Function}{v8\+::\+Function} $>$ fun, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())\label{classv8_1_1Debug_a32e28ec40dc429e7fa1dfbe1e514ba3d}
+static \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Call} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Function}{v8\+::\+Function} $>$ fun, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())\hypertarget{classv8_1_1Debug_a32e28ec40dc429e7fa1dfbe1e514ba3d}{}\label{classv8_1_1Debug_a32e28ec40dc429e7fa1dfbe1e514ba3d}
 
 \item 
-static \hyperlink{classv8_1_1Debug_afc285363a72ad36a56f50428a94c6ce4}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Get\+Mirror(\hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Value}{v8\+::\+Value} $>$ obj))
+static \hyperlink{classv8_1_1Debug_aeda86872fb9c66df641e6d16c8db7182}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Get\+Mirror(\hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Value}{v8\+::\+Value} $>$ obj))
 \item 
-\hypertarget{classv8_1_1Debug_ab5f5ae3f4418c576da4633c6fb27b23d}{}static \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Get\+Mirror} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Value}{v8\+::\+Value} $>$ obj)\label{classv8_1_1Debug_ab5f5ae3f4418c576da4633c6fb27b23d}
+static \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Get\+Mirror} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{v8\+::\+Local}$<$ \hyperlink{classv8_1_1Value}{v8\+::\+Value} $>$ obj)\hypertarget{classv8_1_1Debug_ab5f5ae3f4418c576da4633c6fb27b23d}{}\label{classv8_1_1Debug_ab5f5ae3f4418c576da4633c6fb27b23d}
 
 \item 
-static void \hyperlink{classv8_1_1Debug_a888e06766caee0380c6aa010b00e1a54}{Process\+Debug\+Messages} ()
+static void \hyperlink{classv8_1_1Debug_af005b911101260e0458847d149d5610e}{Process\+Debug\+Messages} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_a2343a321b0db41324b7e8a7402f57cf0}{Get\+Debug\+Context} ()
+static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Debug_abcf6727d68c5f8c35eef75a72e6a0da8}{Get\+Debug\+Context} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
 \item 
 static void \hyperlink{classv8_1_1Debug_ab635f979d369bed13187e2594d825517}{Set\+Live\+Edit\+Enabled} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, bool enable)
 \item 
 static \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Array}{Array} $>$ \hyperlink{classv8_1_1Debug_a10ef14b11ffdd57287f25b39dc728e07}{Get\+Internal\+Properties} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)
+\item 
+static bool \hyperlink{classv8_1_1Debug_a79ce7b9e4e09be64ca1c3494ec6130ab}{Is\+Tail\+Call\+Elimination\+Enabled} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+\item 
+static void {\bfseries Set\+Tail\+Call\+Elimination\+Enabled} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, bool enabled)\hypertarget{classv8_1_1Debug_a06662e09d22d6eaed81f20824066cea5}{}\label{classv8_1_1Debug_a06662e09d22d6eaed81f20824066cea5}
+
 \end{DoxyCompactItemize}
 
 
 \subsection{Member Typedef Documentation}
-\hypertarget{classv8_1_1Debug_a91cd8aa9743e3478bc63fe73abcd557c}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Debug\+Message\+Dispatch\+Handler@{Debug\+Message\+Dispatch\+Handler}}
+\index{v8\+::\+Debug@{v8\+::\+Debug}!Debug\+Message\+Dispatch\+Handler@{Debug\+Message\+Dispatch\+Handler}}
 \index{Debug\+Message\+Dispatch\+Handler@{Debug\+Message\+Dispatch\+Handler}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Debug\+Message\+Dispatch\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Debug\+Message\+Dispatch\+Handler) ()}\label{classv8_1_1Debug_a91cd8aa9743e3478bc63fe73abcd557c}
-Callback function for the host to ensure debug messages are processed. \hypertarget{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Event\+Callback@{Event\+Callback}}
+\subsubsection[{\texorpdfstring{Debug\+Message\+Dispatch\+Handler}{DebugMessageDispatchHandler}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Debug\+Message\+Dispatch\+Handler) ()}\hypertarget{classv8_1_1Debug_a91cd8aa9743e3478bc63fe73abcd557c}{}\label{classv8_1_1Debug_a91cd8aa9743e3478bc63fe73abcd557c}
+Callback function for the host to ensure debug messages are processed. \index{v8\+::\+Debug@{v8\+::\+Debug}!Event\+Callback@{Event\+Callback}}
 \index{Event\+Callback@{Event\+Callback}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Event\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Event\+Callback) (const {\bf Event\+Details} \&event\+\_\+details)}\label{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}
+\subsubsection[{\texorpdfstring{Event\+Callback}{EventCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Event\+Callback) (const {\bf Event\+Details} \&event\+\_\+details)}\hypertarget{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}{}\label{classv8_1_1Debug_ab53894746a21222796062f0e81ea28d8}
 \hyperlink{classv8_1_1Debug}{Debug} event callback function.
 
 
@@ -73,9 +93,9 @@ Callback function for the host to ensure debug messages are processed. \hypertar
 {\em event\+\_\+details} & object providing information about the debug event\\
 \hline
 \end{DoxyParams}
-A Event\+Callback2 does not take possession of the event data, and must not rely on the data persisting after the handler returns. \hypertarget{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc694}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Message\+Handler@{Message\+Handler}}
+A Event\+Callback2 does not take possession of the event data, and must not rely on the data persisting after the handler returns. \index{v8\+::\+Debug@{v8\+::\+Debug}!Message\+Handler@{Message\+Handler}}
 \index{Message\+Handler@{Message\+Handler}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Message\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Message\+Handler) (const {\bf Message} \&message)}\label{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc694}
+\subsubsection[{\texorpdfstring{Message\+Handler}{MessageHandler}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ v8\+::\+Debug\+::\+Message\+Handler) (const {\bf Message} \&message)}\hypertarget{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc694}{}\label{classv8_1_1Debug_a526826b857bd3e3efa184e12bcebc694}
 \hyperlink{classv8_1_1Debug}{Debug} message callback function.
 
 
@@ -86,32 +106,39 @@ A Event\+Callback2 does not take possession of the event data, and must not rely
 A Message\+Handler2 does not take possession of the message data, and must not rely on the data persisting after the handler returns. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1Debug_a2343a321b0db41324b7e8a7402f57cf0}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Get\+Debug\+Context@{Get\+Debug\+Context}}
+\index{v8\+::\+Debug@{v8\+::\+Debug}!Get\+Debug\+Context@{Get\+Debug\+Context}}
 \index{Get\+Debug\+Context@{Get\+Debug\+Context}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Get\+Debug\+Context}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Context}$>$ v8\+::\+Debug\+::\+Get\+Debug\+Context (
+\subsubsection[{\texorpdfstring{Get\+Debug\+Context(\+Isolate $\ast$isolate)}{GetDebugContext(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Context}$>$ v8\+::\+Debug\+::\+Get\+Debug\+Context (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf Isolate} $\ast$}]{isolate}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_a2343a321b0db41324b7e8a7402f57cf0}
-Debugger is running in its own context which is entered while debugger messages are being dispatched. This is an explicit getter for this debugger context. Note that the content of the debugger context is subject to change. The \hyperlink{classv8_1_1Context}{Context} exists only when the debugger is active, i.\+e. at least one Debug\+Event\+Listener or Message\+Handler is set. \hypertarget{classv8_1_1Debug_a10ef14b11ffdd57287f25b39dc728e07}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Get\+Internal\+Properties@{Get\+Internal\+Properties}}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Debug_abcf6727d68c5f8c35eef75a72e6a0da8}{}\label{classv8_1_1Debug_abcf6727d68c5f8c35eef75a72e6a0da8}
+Debugger is running in its own context which is entered while debugger messages are being dispatched. This is an explicit getter for this debugger context. Note that the content of the debugger context is subject to change. The \hyperlink{classv8_1_1Context}{Context} exists only when the debugger is active, i.\+e. at least one Debug\+Event\+Listener or Message\+Handler is set. \index{v8\+::\+Debug@{v8\+::\+Debug}!Get\+Internal\+Properties@{Get\+Internal\+Properties}}
 \index{Get\+Internal\+Properties@{Get\+Internal\+Properties}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Get\+Internal\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Maybe\+Local}$<${\bf Array}$>$ v8\+::\+Debug\+::\+Get\+Internal\+Properties (
+\subsubsection[{\texorpdfstring{Get\+Internal\+Properties(\+Isolate $\ast$isolate, Local$<$ Value $>$ value)}{GetInternalProperties(Isolate *isolate, Local< Value > value)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Maybe\+Local}$<${\bf Array}$>$ v8\+::\+Debug\+::\+Get\+Internal\+Properties (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
 \item[{{\bf Local}$<$ {\bf Value} $>$}]{value}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_a10ef14b11ffdd57287f25b39dc728e07}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Debug_a10ef14b11ffdd57287f25b39dc728e07}{}\label{classv8_1_1Debug_a10ef14b11ffdd57287f25b39dc728e07}
 Returns array of internal properties specific to the value type. Result has the following format\+: \mbox{[}$<$name$>$, 
 
 ,...,$<$name$>$, 
 
-\mbox{]}. Result array will be allocated in the current context. \hypertarget{classv8_1_1Debug_a888e06766caee0380c6aa010b00e1a54}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Process\+Debug\+Messages@{Process\+Debug\+Messages}}
-\index{Process\+Debug\+Messages@{Process\+Debug\+Messages}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Process\+Debug\+Messages}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Debug\+::\+Process\+Debug\+Messages (
+\mbox{]}. Result array will be allocated in the current context. \index{v8\+::\+Debug@{v8\+::\+Debug}!Is\+Tail\+Call\+Elimination\+Enabled@{Is\+Tail\+Call\+Elimination\+Enabled}}
+\index{Is\+Tail\+Call\+Elimination\+Enabled@{Is\+Tail\+Call\+Elimination\+Enabled}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{\texorpdfstring{Is\+Tail\+Call\+Elimination\+Enabled(\+Isolate $\ast$isolate)}{IsTailCallEliminationEnabled(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\+::\+Debug\+::\+Is\+Tail\+Call\+Elimination\+Enabled (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf Isolate} $\ast$}]{isolate}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_a888e06766caee0380c6aa010b00e1a54}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Debug_a79ce7b9e4e09be64ca1c3494ec6130ab}{}\label{classv8_1_1Debug_a79ce7b9e4e09be64ca1c3494ec6130ab}
+Defines if the E\+S2015 tail call elimination feature is enabled or not. The change of this flag triggers deoptimization of all functions that contain calls at tail position. \index{v8\+::\+Debug@{v8\+::\+Debug}!Process\+Debug\+Messages@{Process\+Debug\+Messages}}
+\index{Process\+Debug\+Messages@{Process\+Debug\+Messages}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{\texorpdfstring{Process\+Debug\+Messages(\+Isolate $\ast$isolate)}{ProcessDebugMessages(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Debug\+::\+Process\+Debug\+Messages (
+\begin{DoxyParamCaption}
+\item[{{\bf Isolate} $\ast$}]{isolate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Debug_af005b911101260e0458847d149d5610e}{}\label{classv8_1_1Debug_af005b911101260e0458847d149d5610e}
 Makes \hyperlink{classv8_1_1V8}{V8} process all pending debug messages.
 
 From \hyperlink{classv8_1_1V8}{V8} point of view all debug messages come asynchronously (e.\+g. from remote debugger) but they all must be handled synchronously\+: \hyperlink{classv8_1_1V8}{V8} cannot do 2 things at one time so normal script execution must be interrupted for a while.
@@ -129,22 +156,22 @@ Technically this method in many senses is equivalent to executing empty script\+
 \item It should be invoked with the same precautions and from the same context as \hyperlink{classv8_1_1V8}{V8} script would be invoked from, because\+: a. with \char`\"{}evaluate\char`\"{} command it can do whatever normal script can do, including all native calls; b. no other thread should call \hyperlink{classv8_1_1V8}{V8} while this method is running (\hyperlink{classv8_1_1Locker}{v8\+::\+Locker} may be used here).
 \end{DoxyEnumerate}
 
-\char`\"{}\+Evaluate\char`\"{} debug command behavior currently is not specified in scope of this method. \hypertarget{classv8_1_1Debug_ab635f979d369bed13187e2594d825517}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!Set\+Live\+Edit\+Enabled@{Set\+Live\+Edit\+Enabled}}
+\char`\"{}\+Evaluate\char`\"{} debug command behavior currently is not specified in scope of this method. \index{v8\+::\+Debug@{v8\+::\+Debug}!Set\+Live\+Edit\+Enabled@{Set\+Live\+Edit\+Enabled}}
 \index{Set\+Live\+Edit\+Enabled@{Set\+Live\+Edit\+Enabled}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{Set\+Live\+Edit\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Debug\+::\+Set\+Live\+Edit\+Enabled (
+\subsubsection[{\texorpdfstring{Set\+Live\+Edit\+Enabled(\+Isolate $\ast$isolate, bool enable)}{SetLiveEditEnabled(Isolate *isolate, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Debug\+::\+Set\+Live\+Edit\+Enabled (
 \begin{DoxyParamCaption}
 \item[{{\bf Isolate} $\ast$}]{isolate, }
 \item[{bool}]{enable}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_ab635f979d369bed13187e2594d825517}
-Enable/disable Live\+Edit functionality for the given \hyperlink{classv8_1_1Isolate}{Isolate} (default \hyperlink{classv8_1_1Isolate}{Isolate} if not provided). \hyperlink{classv8_1_1V8}{V8} will abort if Live\+Edit is unexpectedly used. Live\+Edit is enabled by default. \hypertarget{classv8_1_1Debug_a82a4a039d33769fae6d94fd2d14e5550}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Debug\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Debug_ab635f979d369bed13187e2594d825517}{}\label{classv8_1_1Debug_ab635f979d369bed13187e2594d825517}
+Enable/disable Live\+Edit functionality for the given \hyperlink{classv8_1_1Isolate}{Isolate} (default \hyperlink{classv8_1_1Isolate}{Isolate} if not provided). \hyperlink{classv8_1_1V8}{V8} will abort if Live\+Edit is unexpectedly used. Live\+Edit is enabled by default. \index{v8\+::\+Debug@{v8\+::\+Debug}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use maybe version"", Local$<$ Value $>$ Call(v8\+::\+Local$<$ v8\+::\+Function $>$ fun,                                                                                                                                                           Local$<$ Value $>$ data=\+Local$<$ Value $>$()))}{V8_DEPRECATED("Use maybe version", Local< Value > Call(v8::Local< v8::Function > fun,                                                                                                                                                           Local< Value > data=Local< Value >()))}}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Debug\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
 \begin{DoxyParamCaption}
 \item[{\char`\"{}Use maybe version\char`\"{}}]{, }
-\item[{{\bf Local}$<$ {\bf Value} $>$ }]{Callv8\+::\+Local$<$ v8\+::\+Function $>$ fun, Local$<$ Value $>$ data=\+Local$<$ Value $>$()}
+\item[{{\bf Local}$<$ {\bf Value} $>$ }]{Callv8\+::\+Local$<$ v8\+::\+Function $>$ fun,                                                                                                                                                                                                                                                                                                                   Local$<$ Value $>$ data=\+Local$<$ Value $>$()}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_a82a4a039d33769fae6d94fd2d14e5550}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Debug_a5c53fc48b3fca71b6397cfecd1c82a9d}{}\label{classv8_1_1Debug_a5c53fc48b3fca71b6397cfecd1c82a9d}
 Run a Java\+Script function in the debugger. 
 \begin{DoxyParams}{Parameters}
 {\em fun} & the function to call \\
@@ -158,14 +185,14 @@ Run a Java\+Script function in the debugger.
   \textcolor{keywordflow}{return} exec\_state.frame(0).sourceLine();
 \}
 \end{DoxyCode}
- \hypertarget{classv8_1_1Debug_afc285363a72ad36a56f50428a94c6ce4}{}\index{v8\+::\+Debug@{v8\+::\+Debug}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+Debug@{v8\+::\+Debug}}
-\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Debug\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+ \index{v8\+::\+Debug@{v8\+::\+Debug}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Debug@{v8\+::\+Debug}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use maybe version"", Local$<$ Value $>$ Get\+Mirror(v8\+::\+Local$<$ v8\+::\+Value $>$ obj))}{V8_DEPRECATED("Use maybe version", Local< Value > GetMirror(v8::Local< v8::Value > obj))}}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+Debug\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
 \begin{DoxyParamCaption}
 \item[{\char`\"{}Use maybe version\char`\"{}}]{, }
 \item[{{\bf Local}$<$ {\bf Value} $>$ }]{Get\+Mirrorv8\+::\+Local$<$ v8\+::\+Value $>$ obj}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Debug_afc285363a72ad36a56f50428a94c6ce4}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Debug_aeda86872fb9c66df641e6d16c8db7182}{}\label{classv8_1_1Debug_aeda86872fb9c66df641e6d16c8db7182}
 Returns a mirror object for the given object. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

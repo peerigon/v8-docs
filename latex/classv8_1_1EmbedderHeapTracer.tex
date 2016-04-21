@@ -1,0 +1,49 @@
+\hypertarget{classv8_1_1EmbedderHeapTracer}{}\section{v8\+:\+:Embedder\+Heap\+Tracer Class Reference}
+\label{classv8_1_1EmbedderHeapTracer}\index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}{Trace\+Prologue} ()=0
+\item 
+virtual void \hyperlink{classv8_1_1EmbedderHeapTracer_a94aa3bb3651e969f0f0726ee1c79cc3c}{Trace\+Wrappers\+From} (const std\+::vector$<$ std\+::pair$<$ void $\ast$, void $\ast$ $>$ $>$ \&internal\+\_\+fields)=0
+\item 
+virtual void \hyperlink{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}{Trace\+Epilogue} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for tracing through the embedder heap. During the \hyperlink{namespacev8}{v8} garbage collection, \hyperlink{namespacev8}{v8} collects hidden fields of all potential wrappers, and at the end of its marking phase iterates the collection and asks the embedder to trace through its heap and call \hyperlink{classv8_1_1PersistentBase_a14c051e0080bbe7fbe02be35865b9923}{Persistent\+Base\+::\+Register\+External\+Reference} on each js object reachable from any of the given wrappers.
+
+Before the first call to the Trace\+Wrappers\+From function Trace\+Prologue will be called. When the garbage collection cycle is finished, Trace\+Epilogue will be called. 
+
+\subsection{Member Function Documentation}
+\index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Trace\+Epilogue@{Trace\+Epilogue}}
+\index{Trace\+Epilogue@{Trace\+Epilogue}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+\subsubsection[{\texorpdfstring{Trace\+Epilogue()=0}{TraceEpilogue()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Trace\+Epilogue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}{}\label{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}
+\hyperlink{classv8_1_1V8}{V8} will call this method at the end of the gc cycle. Allocation is {\itshape not} allowed in the Trace\+Epilogue. \index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Trace\+Prologue@{Trace\+Prologue}}
+\index{Trace\+Prologue@{Trace\+Prologue}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+\subsubsection[{\texorpdfstring{Trace\+Prologue()=0}{TracePrologue()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Trace\+Prologue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}{}\label{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}
+\hyperlink{classv8_1_1V8}{V8} will call this method at the beginning of the gc cycle. \index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Trace\+Wrappers\+From@{Trace\+Wrappers\+From}}
+\index{Trace\+Wrappers\+From@{Trace\+Wrappers\+From}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+\subsubsection[{\texorpdfstring{Trace\+Wrappers\+From(const std\+::vector$<$ std\+::pair$<$ void $\ast$, void $\ast$ $>$ $>$ \&internal\+\_\+fields)=0}{TraceWrappersFrom(const std::vector< std::pair< void *, void * > > &internal_fields)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Trace\+Wrappers\+From (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::pair$<$ void $\ast$, void $\ast$ $>$ $>$ \&}]{internal\+\_\+fields}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1EmbedderHeapTracer_a94aa3bb3651e969f0f0726ee1c79cc3c}{}\label{classv8_1_1EmbedderHeapTracer_a94aa3bb3651e969f0f0726ee1c79cc3c}
+\hyperlink{classv8_1_1V8}{V8} will call this method with internal fields of a potential wrappers. Embedder is expected to trace its heap (synchronously) and call \hyperlink{classv8_1_1PersistentBase_a14c051e0080bbe7fbe02be35865b9923}{Persistent\+Base\+::\+Register\+External\+Reference()} on all wrappers reachable from any of the given wrappers. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

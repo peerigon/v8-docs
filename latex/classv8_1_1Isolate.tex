@@ -33,22 +33,56 @@ enum \hyperlink{classv8_1_1Isolate_aed6909379c3f2820cb3084710b73385d}{Use\+Count
 {\bfseries k\+Store\+Buffer\+Overflow} = 4, 
 {\bfseries k\+Slots\+Buffer\+Overflow} = 5, 
 {\bfseries k\+Object\+Observe} = 6, 
-{\bfseries k\+Forced\+G\+C} = 7, 
+{\bfseries k\+Forced\+GC} = 7, 
+\\*
+{\bfseries k\+Sloppy\+Mode} = 8, 
+{\bfseries k\+Strict\+Mode} = 9, 
+{\bfseries k\+Strong\+Mode} = 10, 
+{\bfseries k\+Reg\+Exp\+Prototype\+Sticky\+Getter} = 11, 
+\\*
+{\bfseries k\+Reg\+Exp\+Prototype\+To\+String} = 12, 
+{\bfseries k\+Reg\+Exp\+Prototype\+Unicode\+Getter} = 13, 
+{\bfseries k\+Intl\+V8\+Parse} = 14, 
+{\bfseries k\+Intl\+Pattern} = 15, 
+\\*
+{\bfseries k\+Intl\+Resolved} = 16, 
+{\bfseries k\+Promise\+Chain} = 17, 
+{\bfseries k\+Promise\+Accept} = 18, 
+{\bfseries k\+Promise\+Defer} = 19, 
+\\*
+{\bfseries k\+Html\+Comment\+In\+External\+Script} = 20, 
+{\bfseries k\+Html\+Comment} = 21, 
+{\bfseries k\+Sloppy\+Mode\+Block\+Scoped\+Function\+Redefinition} = 22, 
+{\bfseries k\+For\+In\+Initializer} = 23, 
+\\*
+{\bfseries k\+Array\+Protector\+Dirtied} = 24, 
+{\bfseries k\+Array\+Species\+Modified} = 25, 
+{\bfseries k\+Array\+Prototype\+Constructor\+Modified} = 26, 
+{\bfseries k\+Array\+Instance\+Proto\+Modified} = 27, 
+\\*
+{\bfseries k\+Array\+Instance\+Constructor\+Modified} = 28, 
+{\bfseries k\+Legacy\+Function\+Declaration} = 29, 
+{\bfseries k\+Reg\+Exp\+Prototype\+Source\+Getter} = 30, 
+{\bfseries k\+Reg\+Exp\+Prototype\+Old\+Flag\+Getter} = 31, 
 \\*
 {\bfseries k\+Use\+Counter\+Feature\+Count}
  \}
 \item 
-\hypertarget{classv8_1_1Isolate_a7537ead98ee88eec2976348ba992935c}{}typedef void($\ast$ {\bfseries Use\+Counter\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Isolate_aed6909379c3f2820cb3084710b73385d}{Use\+Counter\+Feature} feature)\label{classv8_1_1Isolate_a7537ead98ee88eec2976348ba992935c}
+typedef void($\ast$ {\bfseries Use\+Counter\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Isolate_aed6909379c3f2820cb3084710b73385d}{Use\+Counter\+Feature} feature)\hypertarget{classv8_1_1Isolate_a7537ead98ee88eec2976348ba992935c}{}\label{classv8_1_1Isolate_a7537ead98ee88eec2976348ba992935c}
 
 \item 
-\hypertarget{classv8_1_1Isolate_ab14f02c51e012f839e6cc184ede4814a}{}typedef void($\ast$ {\bfseries G\+C\+Prologue\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} type, G\+C\+Callback\+Flags flags)\label{classv8_1_1Isolate_ab14f02c51e012f839e6cc184ede4814a}
-
+typedef bool($\ast$ \hyperlink{classv8_1_1Isolate_aeb1d49e500d9521b42743a6a740271e2}{Abort\+On\+Uncaught\+Exception\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$)
 \item 
-\hypertarget{classv8_1_1Isolate_a3e7351067af07d2a56c57d855fada4bb}{}typedef void($\ast$ {\bfseries G\+C\+Epilogue\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} type, G\+C\+Callback\+Flags flags)\label{classv8_1_1Isolate_a3e7351067af07d2a56c57d855fada4bb}
+typedef void($\ast$ {\bfseries G\+C\+Callback}) (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} type, \hyperlink{namespacev8_a247c37a849f4d6c293b9b16e94e1944b}{G\+C\+Callback\+Flags} flags)\hypertarget{classv8_1_1Isolate_aba82364e6057ee6df3fb896a7e972750}{}\label{classv8_1_1Isolate_aba82364e6057ee6df3fb896a7e972750}
 
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+void {\bfseries Set\+Abort\+On\+Uncaught\+Exception\+Callback} (\hyperlink{classv8_1_1Isolate_aeb1d49e500d9521b42743a6a740271e2}{Abort\+On\+Uncaught\+Exception\+Callback} callback)\hypertarget{classv8_1_1Isolate_afb7aad57eec61464b5a7c3816bae60be}{}\label{classv8_1_1Isolate_afb7aad57eec61464b5a7c3816bae60be}
+
+\item 
+void \hyperlink{classv8_1_1Isolate_ae1b8d5696ba55dd3412989811c44c373}{Memory\+Pressure\+Notification} (\hyperlink{namespacev8_ae0e9a25bf51e518585f555806e7dc7b9}{Memory\+Pressure\+Level} level)
 \item 
 void \hyperlink{classv8_1_1Isolate_aec80bb49b6b7647ff75e8f2cc9484ea3}{Enter} ()
 \item 
@@ -56,9 +90,11 @@ void \hyperlink{classv8_1_1Isolate_a64a8503cafd00d1d2cadfbb0c2345054}{Exit} ()
 \item 
 void \hyperlink{classv8_1_1Isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}{Dispose} ()
 \item 
-V8\+\_\+\+I\+N\+L\+I\+N\+E void \hyperlink{classv8_1_1Isolate_a2ae968a7ff8a397f1ac09d32990883f6}{Set\+Data} (uint32\+\_\+t slot, void $\ast$data)
+void \hyperlink{classv8_1_1Isolate_ac62ff53be40f5ecd74fc9e72451da115}{Discard\+Thread\+Specific\+Metadata} ()
 \item 
-V8\+\_\+\+I\+N\+L\+I\+N\+E void $\ast$ \hyperlink{classv8_1_1Isolate_aed85b3c82bf69a60ecebc2558ab95083}{Get\+Data} (uint32\+\_\+t slot)
+V8\+\_\+\+I\+N\+L\+I\+NE void \hyperlink{classv8_1_1Isolate_a2ae968a7ff8a397f1ac09d32990883f6}{Set\+Data} (uint32\+\_\+t slot, void $\ast$data)
+\item 
+V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ \hyperlink{classv8_1_1Isolate_aed85b3c82bf69a60ecebc2558ab95083}{Get\+Data} (uint32\+\_\+t slot)
 \item 
 void \hyperlink{classv8_1_1Isolate_add32e78544edaf8946ed9b328167e5e4}{Get\+Heap\+Statistics} (\hyperlink{classv8_1_1HeapStatistics}{Heap\+Statistics} $\ast$heap\+\_\+statistics)
 \item 
@@ -68,11 +104,11 @@ bool \hyperlink{classv8_1_1Isolate_a28ab96294ee07064cbba01e969b62cbc}{Get\+Heap\
 \item 
 size\+\_\+t \hyperlink{classv8_1_1Isolate_a170044cddf655345682cb3c9b4bd1788}{Number\+Of\+Tracked\+Heap\+Object\+Types} ()
 \item 
-bool \hyperlink{classv8_1_1Isolate_a677681d4c3abfc1bc2e8b50c23623e24}{Get\+Heap\+Object\+Statistics\+At\+Last\+G\+C} (\hyperlink{classv8_1_1HeapObjectStatistics}{Heap\+Object\+Statistics} $\ast$object\+\_\+statistics, size\+\_\+t type\+\_\+index)
+bool \hyperlink{classv8_1_1Isolate_a677681d4c3abfc1bc2e8b50c23623e24}{Get\+Heap\+Object\+Statistics\+At\+Last\+GC} (\hyperlink{classv8_1_1HeapObjectStatistics}{Heap\+Object\+Statistics} $\ast$object\+\_\+statistics, size\+\_\+t type\+\_\+index)
 \item 
 void \hyperlink{classv8_1_1Isolate_a8b173b48a477267ccd6c7d17c492b82e}{Get\+Stack\+Sample} (const \hyperlink{structv8_1_1RegisterState}{Register\+State} \&state, void $\ast$$\ast$frames, size\+\_\+t frames\+\_\+limit, \hyperlink{structv8_1_1SampleInfo}{Sample\+Info} $\ast$sample\+\_\+info)
 \item 
-V8\+\_\+\+I\+N\+L\+I\+N\+E int64\+\_\+t \hyperlink{classv8_1_1Isolate_aaeda5fa60961a3d9d476c46200e30711}{Adjust\+Amount\+Of\+External\+Allocated\+Memory} (int64\+\_\+t change\+\_\+in\+\_\+bytes)
+V8\+\_\+\+I\+N\+L\+I\+NE int64\+\_\+t \hyperlink{classv8_1_1Isolate_aaeda5fa60961a3d9d476c46200e30711}{Adjust\+Amount\+Of\+External\+Allocated\+Memory} (int64\+\_\+t change\+\_\+in\+\_\+bytes)
 \item 
 \hyperlink{classv8_1_1HeapProfiler}{Heap\+Profiler} $\ast$ \hyperlink{classv8_1_1Isolate_a9c48259615e8370f6f0efd27cd7f99a6}{Get\+Heap\+Profiler} ()
 \item 
@@ -82,7 +118,7 @@ bool \hyperlink{classv8_1_1Isolate_afb6bbd31a87d0999dbbe5402447690a9}{In\+Contex
 \item 
 \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Isolate_afa1b6cde5a7a7cfde87eaabc4ab34062}{Get\+Current\+Context} ()
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Isolate_a2fba719b7a022ece0b0bfe55f52b3138}{Get\+Calling\+Context} ()
+\hyperlink{classv8_1_1Isolate_adf1b08359e4162ee05caab23377dbc9d}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Calling context concept is not compatible with tail calls, and will be \char`\"{}\char`\"{}removed.\char`\"{}, Local$<$ \hyperlink{classv8_1_1Context}{Context} $>$ Get\+Calling\+Context())
 \item 
 \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Isolate_aff9eb2f5d199f8fcf59d9699194cd2e3}{Get\+Entered\+Context} ()
 \item 
@@ -94,13 +130,15 @@ bool \hyperlink{classv8_1_1Isolate_afb6bbd31a87d0999dbbe5402447690a9}{In\+Contex
 \item 
 {\footnotesize template$<$typename T , typename S $>$ }\\void \hyperlink{classv8_1_1Isolate_a055fc73d18747b96c51f00599cdd3ec1}{Set\+Reference} (const \hyperlink{classv8_1_1Persistent}{Persistent}$<$ T $>$ \&parent, const \hyperlink{classv8_1_1Persistent}{Persistent}$<$ S $>$ \&child)
 \item 
-void \hyperlink{classv8_1_1Isolate_ac5614f2eae055c949927bc8daddf90c3}{Add\+G\+C\+Prologue\+Callback} (G\+C\+Prologue\+Callback callback, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All)
+void \hyperlink{classv8_1_1Isolate_a7acdd74d063c4cbdb373f59253b7b64c}{Add\+G\+C\+Prologue\+Callback} (G\+C\+Callback callback, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All)
 \item 
-void \hyperlink{classv8_1_1Isolate_a7902b8b58f3c85bac9b7dd1086fa81ce}{Remove\+G\+C\+Prologue\+Callback} (G\+C\+Prologue\+Callback callback)
+void \hyperlink{classv8_1_1Isolate_a7c424950b2bc9589fc676a9b38b27d63}{Remove\+G\+C\+Prologue\+Callback} (G\+C\+Callback callback)
 \item 
-void \hyperlink{classv8_1_1Isolate_add9cac1ffd6cb1b7ed6b0956cebae129}{Add\+G\+C\+Epilogue\+Callback} (G\+C\+Epilogue\+Callback callback, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All)
+void \hyperlink{classv8_1_1Isolate_a33569984c556a90ae380f96aa7a82fad}{Set\+Embedder\+Heap\+Tracer} (\hyperlink{classv8_1_1EmbedderHeapTracer}{Embedder\+Heap\+Tracer} $\ast$tracer)
 \item 
-void \hyperlink{classv8_1_1Isolate_a277144482f5fefd58d822c22a173b01a}{Remove\+G\+C\+Epilogue\+Callback} (G\+C\+Epilogue\+Callback callback)
+void \hyperlink{classv8_1_1Isolate_abe7ab165a962dd4a944d9bc489f5d2cf}{Add\+G\+C\+Epilogue\+Callback} (G\+C\+Callback callback, \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All)
+\item 
+void \hyperlink{classv8_1_1Isolate_a059d51bc45cdd5f4821233170863a9ff}{Remove\+G\+C\+Epilogue\+Callback} (G\+C\+Callback callback)
 \item 
 void \hyperlink{classv8_1_1Isolate_ad212b2e0b66ff5d586cd79cfa0b555fb}{Terminate\+Execution} ()
 \item 
@@ -114,9 +152,19 @@ void \hyperlink{classv8_1_1Isolate_a59fe893ed7e9df52cef2d59b2d98ab23}{Request\+G
 \item 
 void \hyperlink{classv8_1_1Isolate_a28bf18f2f6ed468ec97f59df682e73c1}{Set\+Event\+Logger} (Log\+Event\+Callback that)
 \item 
+void \hyperlink{classv8_1_1Isolate_a1affdbf27486aa4c6a1ecae9997de98e}{Add\+Before\+Call\+Entered\+Callback} (Before\+Call\+Entered\+Callback callback)
+\item 
+void \hyperlink{classv8_1_1Isolate_a92be6cf5ce1e7360843794cc1528369f}{Remove\+Before\+Call\+Entered\+Callback} (Before\+Call\+Entered\+Callback callback)
+\item 
 void \hyperlink{classv8_1_1Isolate_a89656ac26d523c31fbfdbb12fb32f078}{Add\+Call\+Completed\+Callback} (Call\+Completed\+Callback callback)
 \item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use callback with parameter\char`\"{}, void \hyperlink{classv8_1_1Isolate_a89656ac26d523c31fbfdbb12fb32f078}{Add\+Call\+Completed\+Callback}(Deprecated\+Call\+Completed\+Callback callback))\hypertarget{classv8_1_1Isolate_ab025ed92093822d1ed87c7669c207b4e}{}\label{classv8_1_1Isolate_ab025ed92093822d1ed87c7669c207b4e}
+
+\item 
 void \hyperlink{classv8_1_1Isolate_a46f0a5d35f8b29030922bdb433c0dc4f}{Remove\+Call\+Completed\+Callback} (Call\+Completed\+Callback callback)
+\item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use callback with parameter\char`\"{}, void \hyperlink{classv8_1_1Isolate_a46f0a5d35f8b29030922bdb433c0dc4f}{Remove\+Call\+Completed\+Callback}(                               Deprecated\+Call\+Completed\+Callback callback))\hypertarget{classv8_1_1Isolate_a4ba659f54c46de49b75c4ca41e55535c}{}\label{classv8_1_1Isolate_a4ba659f54c46de49b75c4ca41e55535c}
+
 \item 
 void \hyperlink{classv8_1_1Isolate_a702f0ba4e5dee8a98aeb92239d58784e}{Set\+Promise\+Reject\+Callback} (Promise\+Reject\+Callback callback)
 \item 
@@ -124,11 +172,21 @@ void \hyperlink{classv8_1_1Isolate_ac3cbe2a1632eb863912640dcfc98b6c8}{Run\+Micro
 \item 
 void \hyperlink{classv8_1_1Isolate_a79a222a1a662d08479d5a1880c6793c5}{Enqueue\+Microtask} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ microtask)
 \item 
-void \hyperlink{classv8_1_1Isolate_ad4d6c7dfdfc6c1bc857841de7e9967c3}{Enqueue\+Microtask} (Microtask\+Callback microtask, void $\ast$data=N\+U\+L\+L)
+void \hyperlink{classv8_1_1Isolate_ad4d6c7dfdfc6c1bc857841de7e9967c3}{Enqueue\+Microtask} (Microtask\+Callback microtask, void $\ast$data=N\+U\+LL)
 \item 
-void \hyperlink{classv8_1_1Isolate_a6c046eb1d5ab19ef11c18c2f6e775df1}{Set\+Autorun\+Microtasks} (bool autorun)
+void \hyperlink{classv8_1_1Isolate_a6bc2069413d88ad90e4c8bee0b9e4037}{Set\+Microtasks\+Policy} (\hyperlink{namespacev8_a2f183b102b3d1b7a30a805e8c53c04da}{Microtasks\+Policy} policy)
 \item 
-bool \hyperlink{classv8_1_1Isolate_ae70ee311ab3271f9fbb043749d5be8c0}{Will\+Autorun\+Microtasks} () const 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use \hyperlink{classv8_1_1Isolate_a6bc2069413d88ad90e4c8bee0b9e4037}{Set\+Microtasks\+Policy}\char`\"{}, void Set\+Autorun\+Microtasks(bool autorun))\hypertarget{classv8_1_1Isolate_a46bdd3b0109fd0a981462a83b1fe366a}{}\label{classv8_1_1Isolate_a46bdd3b0109fd0a981462a83b1fe366a}
+
+\item 
+\hyperlink{namespacev8_a2f183b102b3d1b7a30a805e8c53c04da}{Microtasks\+Policy} \hyperlink{classv8_1_1Isolate_a65ccc10f75f9497b6baf9535cf3f30db}{Get\+Microtasks\+Policy} () const 
+\item 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use \hyperlink{classv8_1_1Isolate_a65ccc10f75f9497b6baf9535cf3f30db}{Get\+Microtasks\+Policy}\char`\"{}, bool Will\+Autorun\+Microtasks() const)\hypertarget{classv8_1_1Isolate_a5123e1c47b45af3cdf51d6f635fef1f0}{}\label{classv8_1_1Isolate_a5123e1c47b45af3cdf51d6f635fef1f0}
+
+\item 
+void \hyperlink{classv8_1_1Isolate_ae9c09d4763df6c3f06c686eebcce2834}{Add\+Microtasks\+Completed\+Callback} (Microtasks\+Completed\+Callback callback)
+\item 
+void \hyperlink{classv8_1_1Isolate_a0fdc58db0d44c5a8f427d809e1c0b604}{Remove\+Microtasks\+Completed\+Callback} (Microtasks\+Completed\+Callback callback)
 \item 
 void \hyperlink{classv8_1_1Isolate_ad608b24b2c1b49a97ed4f04500976166}{Set\+Use\+Counter\+Callback} (Use\+Counter\+Callback callback)
 \item 
@@ -136,17 +194,21 @@ void \hyperlink{classv8_1_1Isolate_ab59a904591d417ebb3889b5fa507447b}{Set\+Count
 \item 
 void \hyperlink{classv8_1_1Isolate_afd624c7e429a061c1cd9e5959ce6ebf0}{Set\+Create\+Histogram\+Function} (Create\+Histogram\+Callback)
 \item 
-\hypertarget{classv8_1_1Isolate_ae5c813518efe1cfaccd0262ad6ed2f82}{}void {\bfseries Set\+Add\+Histogram\+Sample\+Function} (Add\+Histogram\+Sample\+Callback)\label{classv8_1_1Isolate_ae5c813518efe1cfaccd0262ad6ed2f82}
+void {\bfseries Set\+Add\+Histogram\+Sample\+Function} (Add\+Histogram\+Sample\+Callback)\hypertarget{classv8_1_1Isolate_ae5c813518efe1cfaccd0262ad6ed2f82}{}\label{classv8_1_1Isolate_ae5c813518efe1cfaccd0262ad6ed2f82}
 
 \item 
 bool \hyperlink{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}{Idle\+Notification\+Deadline} (double deadline\+\_\+in\+\_\+seconds)
 \item 
-\hypertarget{classv8_1_1Isolate_a97d3a8248979ec6ca42746dd0692215c}{}{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}use \hyperlink{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}{Idle\+Notification\+Deadline}()\char`\"{}, bool Idle\+Notification(int idle\+\_\+time\+\_\+in\+\_\+ms))\label{classv8_1_1Isolate_a97d3a8248979ec6ca42746dd0692215c}
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use \hyperlink{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}{Idle\+Notification\+Deadline}()\char`\"{}, bool Idle\+Notification(int idle\+\_\+time\+\_\+in\+\_\+ms))\hypertarget{classv8_1_1Isolate_a2f204e8d3ff66d940ddc58da5a202003}{}\label{classv8_1_1Isolate_a2f204e8d3ff66d940ddc58da5a202003}
 
 \item 
 void \hyperlink{classv8_1_1Isolate_aaf446f4877e4707a93d2c406fffd9fd6}{Low\+Memory\+Notification} ()
 \item 
 int \hyperlink{classv8_1_1Isolate_a4b5216bbb1792211422aee575d02f442}{Context\+Disposed\+Notification} (bool dependant\+\_\+context=true)
+\item 
+void \hyperlink{classv8_1_1Isolate_afaa09b3cb3a20f53bdcdce4b154d928f}{Isolate\+In\+Foreground\+Notification} ()
+\item 
+void \hyperlink{classv8_1_1Isolate_a15c1ba9cdb3526a6439e7fddb292ee93}{Isolate\+In\+Background\+Notification} ()
 \item 
 void \hyperlink{classv8_1_1Isolate_a71d976355bf47eb2dd09cd5d1279a40d}{Set\+Jit\+Code\+Event\+Handler} (\hyperlink{namespacev8_a06f34fa4fa4cfc8518366808d1d461c1}{Jit\+Code\+Event\+Options} options, \hyperlink{namespacev8_a39243bc91e63d64d111452fdb98c4733}{Jit\+Code\+Event\+Handler} event\+\_\+handler)
 \item 
@@ -168,15 +230,17 @@ void \hyperlink{classv8_1_1Isolate_ab9ef29fc049d82e0c33994632b4f6ba6}{Set\+Faile
 \item 
 void \hyperlink{classv8_1_1Isolate_a0ea70b9953abf15184a20eba6aab389f}{Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions} (bool capture, int frame\+\_\+limit=10, \hyperlink{classv8_1_1StackTrace_a9704e4a37949eb8eb8ccddbddf161492}{Stack\+Trace\+::\+Stack\+Trace\+Options} options=Stack\+Trace\+::k\+Overview)
 \item 
-void \hyperlink{classv8_1_1Isolate_acff413b8633aa13f1308697c0ce8c5fa}{Add\+Memory\+Allocation\+Callback} (Memory\+Allocation\+Callback callback, Object\+Space space, Allocation\+Action action)
+void \hyperlink{classv8_1_1Isolate_a92b19c574b44f9d093d5d4dedc4515c9}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use a combination of \hyperlink{classv8_1_1Isolate_a971b6094ecc6c7f55eb6f58a71a8afd3}{Request\+Interrupt} and G\+C\+Callback instead\char`\"{}, Add\+Memory\+Allocation\+Callback(Memory\+Allocation\+Callback callback,                                                                                                                               Object\+Space space, Allocation\+Action action))
 \item 
-void \hyperlink{classv8_1_1Isolate_a99349e062c11085eeb63a0d825226487}{Remove\+Memory\+Allocation\+Callback} (Memory\+Allocation\+Callback callback)
+void \hyperlink{classv8_1_1Isolate_a5be9f95acfcd2acc552f0a3eb6b41887}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use a combination of \hyperlink{classv8_1_1Isolate_a971b6094ecc6c7f55eb6f58a71a8afd3}{Request\+Interrupt} and G\+C\+Callback instead\char`\"{}, Remove\+Memory\+Allocation\+Callback(Memory\+Allocation\+Callback callback))
 \item 
 void \hyperlink{classv8_1_1Isolate_a44d513b6426299de4c16e069958a723b}{Visit\+External\+Resources} (\hyperlink{classv8_1_1ExternalResourceVisitor}{External\+Resource\+Visitor} $\ast$visitor)
 \item 
 void \hyperlink{classv8_1_1Isolate_a8c60c4e0f61250a422ba2336dcd50a75}{Visit\+Handles\+With\+Class\+Ids} (\hyperlink{classv8_1_1PersistentHandleVisitor}{Persistent\+Handle\+Visitor} $\ast$visitor)
 \item 
 void \hyperlink{classv8_1_1Isolate_ac5a3ecbb7ef90476150a20904c522744}{Visit\+Handles\+For\+Partial\+Dependence} (\hyperlink{classv8_1_1PersistentHandleVisitor}{Persistent\+Handle\+Visitor} $\ast$visitor)
+\item 
+void \hyperlink{classv8_1_1Isolate_a4f821750a43d17e51778b281ce2c1fcd}{Visit\+Weak\+Handles} (\hyperlink{classv8_1_1PersistentHandleVisitor}{Persistent\+Handle\+Visitor} $\ast$visitor)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -185,80 +249,99 @@ static \hyperlink{classv8_1_1Isolate}{Isolate} $\ast$ \hyperlink{classv8_1_1Isol
 \item 
 static \hyperlink{classv8_1_1Isolate}{Isolate} $\ast$ \hyperlink{classv8_1_1Isolate_aa79441b5da4438221d0f38790c4de2ed}{Get\+Current} ()
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+N\+E uint32\+\_\+t \hyperlink{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}{Get\+Number\+Of\+Data\+Slots} ()
+static V8\+\_\+\+I\+N\+L\+I\+NE uint32\+\_\+t \hyperlink{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}{Get\+Number\+Of\+Data\+Slots} ()
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classv8_1_1Isolate_a08e2b8f164392d71811ce6cc134f33e3}{}{\footnotesize template$<$class K , class V , class Traits $>$ }\\class {\bfseries Persistent\+Value\+Map\+Base}\label{classv8_1_1Isolate_a08e2b8f164392d71811ce6cc134f33e3}
+{\footnotesize template$<$class K , class V , class Traits $>$ }\\class {\bfseries Persistent\+Value\+Map\+Base}\hypertarget{classv8_1_1Isolate_a08e2b8f164392d71811ce6cc134f33e3}{}\label{classv8_1_1Isolate_a08e2b8f164392d71811ce6cc134f33e3}
 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{classv8_1_1Isolate}{Isolate} represents an isolated instance of the \hyperlink{classv8_1_1V8}{V8} engine. \hyperlink{classv8_1_1V8}{V8} isolates have completely separate states. Objects from one isolate must not be used in other isolates. The embedder can create multiple isolates and use them in parallel in multiple threads. An isolate can be entered by at most one thread at any given time. The Locker/\+Unlocker A\+P\+I must be used to synchronize. 
+\hyperlink{classv8_1_1Isolate}{Isolate} represents an isolated instance of the \hyperlink{classv8_1_1V8}{V8} engine. \hyperlink{classv8_1_1V8}{V8} isolates have completely separate states. Objects from one isolate must not be used in other isolates. The embedder can create multiple isolates and use them in parallel in multiple threads. An isolate can be entered by at most one thread at any given time. The Locker/\+Unlocker A\+PI must be used to synchronize. 
+
+\subsection{Member Typedef Documentation}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Abort\+On\+Uncaught\+Exception\+Callback@{Abort\+On\+Uncaught\+Exception\+Callback}}
+\index{Abort\+On\+Uncaught\+Exception\+Callback@{Abort\+On\+Uncaught\+Exception\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Abort\+On\+Uncaught\+Exception\+Callback}{AbortOnUncaughtExceptionCallback}}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ v8\+::\+Isolate\+::\+Abort\+On\+Uncaught\+Exception\+Callback) ({\bf Isolate} $\ast$)}\hypertarget{classv8_1_1Isolate_aeb1d49e500d9521b42743a6a740271e2}{}\label{classv8_1_1Isolate_aeb1d49e500d9521b42743a6a740271e2}
+Custom callback used by embedders to help \hyperlink{classv8_1_1V8}{V8} determine if it should abort when it throws and no internal handler is predicted to catch the exception. If --abort-\/on-\/uncaught-\/exception is used on the command line, then \hyperlink{classv8_1_1V8}{V8} will abort if either\+:
+\begin{DoxyItemize}
+\item no custom callback is set.
+\item the custom callback set returns true. Otherwise, the custom callback will not be called and \hyperlink{classv8_1_1V8}{V8} will not abort. 
+\end{DoxyItemize}
 
 \subsection{Member Enumeration Documentation}
-\hypertarget{classv8_1_1Isolate_a5ae00cc99d8aca148c6f5f9698c432c9}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Garbage\+Collection\+Type@{Garbage\+Collection\+Type}}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Garbage\+Collection\+Type@{Garbage\+Collection\+Type}}
 \index{Garbage\+Collection\+Type@{Garbage\+Collection\+Type}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Garbage\+Collection\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Isolate\+::\+Garbage\+Collection\+Type}}\label{classv8_1_1Isolate_a5ae00cc99d8aca148c6f5f9698c432c9}
-Types of garbage collections that can be requested via Request\+Garbage\+Collection\+For\+Testing. \hypertarget{classv8_1_1Isolate_aed6909379c3f2820cb3084710b73385d}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Use\+Counter\+Feature@{Use\+Counter\+Feature}}
+\subsubsection[{\texorpdfstring{Garbage\+Collection\+Type}{GarbageCollectionType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Isolate\+::\+Garbage\+Collection\+Type}}\hypertarget{classv8_1_1Isolate_a5ae00cc99d8aca148c6f5f9698c432c9}{}\label{classv8_1_1Isolate_a5ae00cc99d8aca148c6f5f9698c432c9}
+Types of garbage collections that can be requested via Request\+Garbage\+Collection\+For\+Testing. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Use\+Counter\+Feature@{Use\+Counter\+Feature}}
 \index{Use\+Counter\+Feature@{Use\+Counter\+Feature}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Use\+Counter\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Isolate\+::\+Use\+Counter\+Feature}}\label{classv8_1_1Isolate_aed6909379c3f2820cb3084710b73385d}
+\subsubsection[{\texorpdfstring{Use\+Counter\+Feature}{UseCounterFeature}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Isolate\+::\+Use\+Counter\+Feature}}\hypertarget{classv8_1_1Isolate_aed6909379c3f2820cb3084710b73385d}{}\label{classv8_1_1Isolate_aed6909379c3f2820cb3084710b73385d}
 Features reported via the Set\+Use\+Counter\+Callback callback. Do not change assigned numbers of existing items; add new features to the end of this list. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1Isolate_a89656ac26d523c31fbfdbb12fb32f078}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+Call\+Completed\+Callback@{Add\+Call\+Completed\+Callback}}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+Before\+Call\+Entered\+Callback@{Add\+Before\+Call\+Entered\+Callback}}
+\index{Add\+Before\+Call\+Entered\+Callback@{Add\+Before\+Call\+Entered\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Add\+Before\+Call\+Entered\+Callback(\+Before\+Call\+Entered\+Callback callback)}{AddBeforeCallEnteredCallback(BeforeCallEnteredCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+Before\+Call\+Entered\+Callback (
+\begin{DoxyParamCaption}
+\item[{Before\+Call\+Entered\+Callback}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_a1affdbf27486aa4c6a1ecae9997de98e}{}\label{classv8_1_1Isolate_a1affdbf27486aa4c6a1ecae9997de98e}
+Adds a callback to notify the host application right before a script is about to run. If a script re-\/enters the runtime during executing, the Before\+Call\+Entered\+Callback is invoked for each re-\/entrance. Executing scripts inside the callback will re-\/trigger the callback. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+Call\+Completed\+Callback@{Add\+Call\+Completed\+Callback}}
 \index{Add\+Call\+Completed\+Callback@{Add\+Call\+Completed\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Add\+Call\+Completed\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+Call\+Completed\+Callback (
+\subsubsection[{\texorpdfstring{Add\+Call\+Completed\+Callback(\+Call\+Completed\+Callback callback)}{AddCallCompletedCallback(CallCompletedCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+Call\+Completed\+Callback (
 \begin{DoxyParamCaption}
 \item[{Call\+Completed\+Callback}]{callback}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a89656ac26d523c31fbfdbb12fb32f078}
-Adds a callback to notify the host application when a script finished running. If a script re-\/enters the runtime during executing, the Call\+Completed\+Callback is only invoked when the outer-\/most script execution ends. Executing scripts inside the callback do not trigger further callbacks. \hypertarget{classv8_1_1Isolate_add9cac1ffd6cb1b7ed6b0956cebae129}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+G\+C\+Epilogue\+Callback@{Add\+G\+C\+Epilogue\+Callback}}
+)}\hypertarget{classv8_1_1Isolate_a89656ac26d523c31fbfdbb12fb32f078}{}\label{classv8_1_1Isolate_a89656ac26d523c31fbfdbb12fb32f078}
+Adds a callback to notify the host application when a script finished running. If a script re-\/enters the runtime during executing, the Call\+Completed\+Callback is only invoked when the outer-\/most script execution ends. Executing scripts inside the callback do not trigger further callbacks. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+G\+C\+Epilogue\+Callback@{Add\+G\+C\+Epilogue\+Callback}}
 \index{Add\+G\+C\+Epilogue\+Callback@{Add\+G\+C\+Epilogue\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Add\+G\+C\+Epilogue\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+G\+C\+Epilogue\+Callback (
+\subsubsection[{\texorpdfstring{Add\+G\+C\+Epilogue\+Callback(\+G\+C\+Callback callback, G\+C\+Type gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All)}{AddGCEpilogueCallback(GCCallback callback, GCType gc_type_filter=kGCTypeAll)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+G\+C\+Epilogue\+Callback (
 \begin{DoxyParamCaption}
-\item[{G\+C\+Epilogue\+Callback}]{callback, }
+\item[{G\+C\+Callback}]{callback, }
 \item[{{\bf G\+C\+Type}}]{gc\+\_\+type\+\_\+filter = {\ttfamily kGCTypeAll}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_add9cac1ffd6cb1b7ed6b0956cebae129}
-Enables the host application to receive a notification after a garbage collection. Allocations are allowed in the callback function, but the callback is not re-\/entrant\+: if the allocation inside it will trigger the garbage collection, the callback won\textquotesingle{}t be called again. It is possible to specify the G\+C\+Type filter for your callback. But it is not possible to register the same callback function two times with different G\+C\+Type filters. \hypertarget{classv8_1_1Isolate_ac5614f2eae055c949927bc8daddf90c3}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+G\+C\+Prologue\+Callback@{Add\+G\+C\+Prologue\+Callback}}
+)}\hypertarget{classv8_1_1Isolate_abe7ab165a962dd4a944d9bc489f5d2cf}{}\label{classv8_1_1Isolate_abe7ab165a962dd4a944d9bc489f5d2cf}
+Enables the host application to receive a notification after a garbage collection. Allocations are allowed in the callback function, but the callback is not re-\/entrant\+: if the allocation inside it will trigger the garbage collection, the callback won\textquotesingle{}t be called again. It is possible to specify the G\+C\+Type filter for your callback. But it is not possible to register the same callback function two times with different G\+C\+Type filters. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+G\+C\+Prologue\+Callback@{Add\+G\+C\+Prologue\+Callback}}
 \index{Add\+G\+C\+Prologue\+Callback@{Add\+G\+C\+Prologue\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Add\+G\+C\+Prologue\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+G\+C\+Prologue\+Callback (
+\subsubsection[{\texorpdfstring{Add\+G\+C\+Prologue\+Callback(\+G\+C\+Callback callback, G\+C\+Type gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All)}{AddGCPrologueCallback(GCCallback callback, GCType gc_type_filter=kGCTypeAll)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+G\+C\+Prologue\+Callback (
 \begin{DoxyParamCaption}
-\item[{G\+C\+Prologue\+Callback}]{callback, }
+\item[{G\+C\+Callback}]{callback, }
 \item[{{\bf G\+C\+Type}}]{gc\+\_\+type\+\_\+filter = {\ttfamily kGCTypeAll}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ac5614f2eae055c949927bc8daddf90c3}
-Enables the host application to receive a notification before a garbage collection. Allocations are allowed in the callback function, but the callback is not re-\/entrant\+: if the allocation inside it will trigger the garbage collection, the callback won\textquotesingle{}t be called again. It is possible to specify the G\+C\+Type filter for your callback. But it is not possible to register the same callback function two times with different G\+C\+Type filters. \hypertarget{classv8_1_1Isolate_acff413b8633aa13f1308697c0ce8c5fa}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+Memory\+Allocation\+Callback@{Add\+Memory\+Allocation\+Callback}}
-\index{Add\+Memory\+Allocation\+Callback@{Add\+Memory\+Allocation\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Add\+Memory\+Allocation\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+Memory\+Allocation\+Callback (
-\begin{DoxyParamCaption}
-\item[{Memory\+Allocation\+Callback}]{callback, }
-\item[{Object\+Space}]{space, }
-\item[{Allocation\+Action}]{action}
-\end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_acff413b8633aa13f1308697c0ce8c5fa}
-Enables the host application to provide a mechanism to be notified and perform custom logging when \hyperlink{classv8_1_1V8}{V8} Allocates Executable Memory. \hypertarget{classv8_1_1Isolate_a1aaf99c9ce853fdece7a3b8fc4df49d5}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+Message\+Listener@{Add\+Message\+Listener}}
+)}\hypertarget{classv8_1_1Isolate_a7acdd74d063c4cbdb373f59253b7b64c}{}\label{classv8_1_1Isolate_a7acdd74d063c4cbdb373f59253b7b64c}
+Enables the host application to receive a notification before a garbage collection. Allocations are allowed in the callback function, but the callback is not re-\/entrant\+: if the allocation inside it will trigger the garbage collection, the callback won\textquotesingle{}t be called again. It is possible to specify the G\+C\+Type filter for your callback. But it is not possible to register the same callback function two times with different G\+C\+Type filters. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+Message\+Listener@{Add\+Message\+Listener}}
 \index{Add\+Message\+Listener@{Add\+Message\+Listener}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Add\+Message\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Add\+Message\+Listener (
+\subsubsection[{\texorpdfstring{Add\+Message\+Listener(\+Message\+Callback that, Local$<$ Value $>$ data=\+Local$<$ Value $>$())}{AddMessageListener(MessageCallback that, Local< Value > data=Local< Value >())}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Add\+Message\+Listener (
 \begin{DoxyParamCaption}
 \item[{Message\+Callback}]{that, }
 \item[{{\bf Local}$<$ {\bf Value} $>$}]{data = {\ttfamily {\bf Local}$<$~{\bf Value}~$>$()}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a1aaf99c9ce853fdece7a3b8fc4df49d5}
+)}\hypertarget{classv8_1_1Isolate_a1aaf99c9ce853fdece7a3b8fc4df49d5}{}\label{classv8_1_1Isolate_a1aaf99c9ce853fdece7a3b8fc4df49d5}
 Adds a message listener.
 
 The same message listener can be added more than once and in that case it will be called more than once for each message.
 
-If data is specified, it will be passed to the callback when it is called. Otherwise, the exception object will be passed to the callback instead. \hypertarget{classv8_1_1Isolate_aaeda5fa60961a3d9d476c46200e30711}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Adjust\+Amount\+Of\+External\+Allocated\+Memory@{Adjust\+Amount\+Of\+External\+Allocated\+Memory}}
+If data is specified, it will be passed to the callback when it is called. Otherwise, the exception object will be passed to the callback instead. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Add\+Microtasks\+Completed\+Callback@{Add\+Microtasks\+Completed\+Callback}}
+\index{Add\+Microtasks\+Completed\+Callback@{Add\+Microtasks\+Completed\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Add\+Microtasks\+Completed\+Callback(\+Microtasks\+Completed\+Callback callback)}{AddMicrotasksCompletedCallback(MicrotasksCompletedCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Add\+Microtasks\+Completed\+Callback (
+\begin{DoxyParamCaption}
+\item[{Microtasks\+Completed\+Callback}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_ae9c09d4763df6c3f06c686eebcce2834}{}\label{classv8_1_1Isolate_ae9c09d4763df6c3f06c686eebcce2834}
+Experimental\+: adds a callback to notify the host application after microtasks were run. The callback is triggered by explicit Run\+Microtasks call or automatic microtasks execution (see Set\+Autorun\+Microtasks).
+
+Callback will trigger even if microtasks were attempted to run, but the microtasks queue was empty and no single microtask was actually executed.
+
+Executing scriptsinside the callback will not re-\/trigger microtasks and the callback. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Adjust\+Amount\+Of\+External\+Allocated\+Memory@{Adjust\+Amount\+Of\+External\+Allocated\+Memory}}
 \index{Adjust\+Amount\+Of\+External\+Allocated\+Memory@{Adjust\+Amount\+Of\+External\+Allocated\+Memory}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Adjust\+Amount\+Of\+External\+Allocated\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t v8\+::\+Isolate\+::\+Adjust\+Amount\+Of\+External\+Allocated\+Memory (
+\subsubsection[{\texorpdfstring{Adjust\+Amount\+Of\+External\+Allocated\+Memory(int64\+\_\+t change\+\_\+in\+\_\+bytes)}{AdjustAmountOfExternalAllocatedMemory(int64_t change_in_bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t v8\+::\+Isolate\+::\+Adjust\+Amount\+Of\+External\+Allocated\+Memory (
 \begin{DoxyParamCaption}
 \item[{int64\+\_\+t}]{change\+\_\+in\+\_\+bytes}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_aaeda5fa60961a3d9d476c46200e30711}
+)}\hypertarget{classv8_1_1Isolate_aaeda5fa60961a3d9d476c46200e30711}{}\label{classv8_1_1Isolate_aaeda5fa60961a3d9d476c46200e30711}
 Adjusts the amount of registered external memory. Used to give \hyperlink{classv8_1_1V8}{V8} an indication of the amount of externally allocated memory that is kept alive by Java\+Script objects. \hyperlink{classv8_1_1V8}{V8} uses this to decide when to perform global garbage collections. Registering externally allocated memory will trigger global garbage collections more often than it would otherwise in an attempt to garbage collect the Java\+Script objects that keep the externally allocated memory alive.
 
 
@@ -269,137 +352,137 @@ Adjusts the amount of registered external memory. Used to give \hyperlink{classv
 \begin{DoxyReturn}{Returns}
 the adjusted value. 
 \end{DoxyReturn}
-\hypertarget{classv8_1_1Isolate_a75cbe037e7657a7c7bd65e2edf0164d5}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Cancel\+Terminate\+Execution@{Cancel\+Terminate\+Execution}}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Cancel\+Terminate\+Execution@{Cancel\+Terminate\+Execution}}
 \index{Cancel\+Terminate\+Execution@{Cancel\+Terminate\+Execution}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Cancel\+Terminate\+Execution}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Cancel\+Terminate\+Execution (
+\subsubsection[{\texorpdfstring{Cancel\+Terminate\+Execution()}{CancelTerminateExecution()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Cancel\+Terminate\+Execution (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a75cbe037e7657a7c7bd65e2edf0164d5}
+)}\hypertarget{classv8_1_1Isolate_a75cbe037e7657a7c7bd65e2edf0164d5}{}\label{classv8_1_1Isolate_a75cbe037e7657a7c7bd65e2edf0164d5}
 Resume execution capability in the given isolate, whose execution was previously forcefully terminated using \hyperlink{classv8_1_1Isolate_ad212b2e0b66ff5d586cd79cfa0b555fb}{Terminate\+Execution()}.
 
 When execution is forcefully terminated using \hyperlink{classv8_1_1Isolate_ad212b2e0b66ff5d586cd79cfa0b555fb}{Terminate\+Execution()}, the isolate can not resume execution until all Java\+Script frames have propagated the uncatchable exception which is generated. This method allows the program embedding the engine to handle the termination event and resume execution capability, even if Java\+Script frames remain on the stack.
 
-This method can be used by any thread even if that thread has not acquired the \hyperlink{classv8_1_1V8}{V8} lock with a \hyperlink{classv8_1_1Locker}{Locker} object. \hypertarget{classv8_1_1Isolate_a4b5216bbb1792211422aee575d02f442}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Context\+Disposed\+Notification@{Context\+Disposed\+Notification}}
+This method can be used by any thread even if that thread has not acquired the \hyperlink{classv8_1_1V8}{V8} lock with a \hyperlink{classv8_1_1Locker}{Locker} object. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Context\+Disposed\+Notification@{Context\+Disposed\+Notification}}
 \index{Context\+Disposed\+Notification@{Context\+Disposed\+Notification}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Context\+Disposed\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Isolate\+::\+Context\+Disposed\+Notification (
+\subsubsection[{\texorpdfstring{Context\+Disposed\+Notification(bool dependant\+\_\+context=true)}{ContextDisposedNotification(bool dependant_context=true)}}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Isolate\+::\+Context\+Disposed\+Notification (
 \begin{DoxyParamCaption}
 \item[{bool}]{dependant\+\_\+context = {\ttfamily true}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a4b5216bbb1792211422aee575d02f442}
-Optional notification that a context has been disposed. \hyperlink{classv8_1_1V8}{V8} uses these notifications to guide the G\+C heuristic. Returns the number of context disposals -\/ including this one -\/ since the last time \hyperlink{classv8_1_1V8}{V8} had a chance to clean up.
+)}\hypertarget{classv8_1_1Isolate_a4b5216bbb1792211422aee575d02f442}{}\label{classv8_1_1Isolate_a4b5216bbb1792211422aee575d02f442}
+Optional notification that a context has been disposed. \hyperlink{classv8_1_1V8}{V8} uses these notifications to guide the GC heuristic. Returns the number of context disposals -\/ including this one -\/ since the last time \hyperlink{classv8_1_1V8}{V8} had a chance to clean up.
 
-The optional parameter $\vert$dependant\+\_\+context$\vert$ specifies whether the disposed context was depending on state from other contexts or not. \hypertarget{classv8_1_1Isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Dispose@{Dispose}}
-\index{Dispose@{Dispose}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Dispose (
+The optional parameter $\vert$dependant\+\_\+context$\vert$ specifies whether the disposed context was depending on state from other contexts or not. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Discard\+Thread\+Specific\+Metadata@{Discard\+Thread\+Specific\+Metadata}}
+\index{Discard\+Thread\+Specific\+Metadata@{Discard\+Thread\+Specific\+Metadata}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Discard\+Thread\+Specific\+Metadata()}{DiscardThreadSpecificMetadata()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Discard\+Thread\+Specific\+Metadata (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}
-Disposes the isolate. The isolate must not be entered by any thread to be disposable. \hypertarget{classv8_1_1Isolate_a79a222a1a662d08479d5a1880c6793c5}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Enqueue\+Microtask@{Enqueue\+Microtask}}
+)}\hypertarget{classv8_1_1Isolate_ac62ff53be40f5ecd74fc9e72451da115}{}\label{classv8_1_1Isolate_ac62ff53be40f5ecd74fc9e72451da115}
+Discards all \hyperlink{classv8_1_1V8}{V8} thread-\/specific data for the \hyperlink{classv8_1_1Isolate}{Isolate}. Should be used if a thread is terminating and it has used an \hyperlink{classv8_1_1Isolate}{Isolate} that will outlive the thread -- all thread-\/specific data for an \hyperlink{classv8_1_1Isolate}{Isolate} is discarded when an \hyperlink{classv8_1_1Isolate}{Isolate} is disposed so this call is pointless if an \hyperlink{classv8_1_1Isolate}{Isolate} is about to be Disposed. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Dispose()}{Dispose()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}{}\label{classv8_1_1Isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}
+Disposes the isolate. The isolate must not be entered by any thread to be disposable. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Enqueue\+Microtask@{Enqueue\+Microtask}}
 \index{Enqueue\+Microtask@{Enqueue\+Microtask}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Enqueue\+Microtask}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Enqueue\+Microtask (
+\subsubsection[{\texorpdfstring{Enqueue\+Microtask(\+Local$<$ Function $>$ microtask)}{EnqueueMicrotask(Local< Function > microtask)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Enqueue\+Microtask (
 \begin{DoxyParamCaption}
 \item[{{\bf Local}$<$ {\bf Function} $>$}]{microtask}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a79a222a1a662d08479d5a1880c6793c5}
-Experimental\+: Enqueues the callback to the Microtask Work Queue \hypertarget{classv8_1_1Isolate_ad4d6c7dfdfc6c1bc857841de7e9967c3}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Enqueue\+Microtask@{Enqueue\+Microtask}}
+)}\hypertarget{classv8_1_1Isolate_a79a222a1a662d08479d5a1880c6793c5}{}\label{classv8_1_1Isolate_a79a222a1a662d08479d5a1880c6793c5}
+Experimental\+: Enqueues the callback to the Microtask Work Queue \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Enqueue\+Microtask@{Enqueue\+Microtask}}
 \index{Enqueue\+Microtask@{Enqueue\+Microtask}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Enqueue\+Microtask}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Enqueue\+Microtask (
+\subsubsection[{\texorpdfstring{Enqueue\+Microtask(\+Microtask\+Callback microtask, void $\ast$data=\+N\+U\+L\+L)}{EnqueueMicrotask(MicrotaskCallback microtask, void *data=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Enqueue\+Microtask (
 \begin{DoxyParamCaption}
 \item[{Microtask\+Callback}]{microtask, }
 \item[{void $\ast$}]{data = {\ttfamily NULL}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ad4d6c7dfdfc6c1bc857841de7e9967c3}
-Experimental\+: Enqueues the callback to the Microtask Work Queue \hypertarget{classv8_1_1Isolate_aec80bb49b6b7647ff75e8f2cc9484ea3}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Enter@{Enter}}
+)}\hypertarget{classv8_1_1Isolate_ad4d6c7dfdfc6c1bc857841de7e9967c3}{}\label{classv8_1_1Isolate_ad4d6c7dfdfc6c1bc857841de7e9967c3}
+Experimental\+: Enqueues the callback to the Microtask Work Queue \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Enter@{Enter}}
 \index{Enter@{Enter}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Enter}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Enter (
+\subsubsection[{\texorpdfstring{Enter()}{Enter()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Enter (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_aec80bb49b6b7647ff75e8f2cc9484ea3}
-Methods below this point require holding a lock (using \hyperlink{classv8_1_1Locker}{Locker}) in a multi-\/threaded environment. Sets this isolate as the entered one for the current thread. Saves the previously entered one (if any), so that it can be restored when exiting. Re-\/entering an isolate is allowed. \hypertarget{classv8_1_1Isolate_a64a8503cafd00d1d2cadfbb0c2345054}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Exit@{Exit}}
+)}\hypertarget{classv8_1_1Isolate_aec80bb49b6b7647ff75e8f2cc9484ea3}{}\label{classv8_1_1Isolate_aec80bb49b6b7647ff75e8f2cc9484ea3}
+Methods below this point require holding a lock (using \hyperlink{classv8_1_1Locker}{Locker}) in a multi-\/threaded environment. Sets this isolate as the entered one for the current thread. Saves the previously entered one (if any), so that it can be restored when exiting. Re-\/entering an isolate is allowed. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Exit@{Exit}}
 \index{Exit@{Exit}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Exit}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Exit (
+\subsubsection[{\texorpdfstring{Exit()}{Exit()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Exit (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a64a8503cafd00d1d2cadfbb0c2345054}
+)}\hypertarget{classv8_1_1Isolate_a64a8503cafd00d1d2cadfbb0c2345054}{}\label{classv8_1_1Isolate_a64a8503cafd00d1d2cadfbb0c2345054}
 Exits this isolate by restoring the previously entered one in the current thread. The isolate may still stay the same, if it was entered more than once.
 
-Requires\+: this == \hyperlink{classv8_1_1Isolate_aa79441b5da4438221d0f38790c4de2ed}{Isolate\+::\+Get\+Current()}. \hypertarget{classv8_1_1Isolate_a2fba719b7a022ece0b0bfe55f52b3138}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Calling\+Context@{Get\+Calling\+Context}}
-\index{Get\+Calling\+Context@{Get\+Calling\+Context}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Calling\+Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Context}$>$ v8\+::\+Isolate\+::\+Get\+Calling\+Context (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a2fba719b7a022ece0b0bfe55f52b3138}
-Returns the context of the calling Java\+Script code. That is the context of the top-\/most Java\+Script frame. If there are no Java\+Script frames an empty handle is returned. \hypertarget{classv8_1_1Isolate_a46c7fb2282970530c32740d7e5999b22}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Code\+Range@{Get\+Code\+Range}}
+Requires\+: this == \hyperlink{classv8_1_1Isolate_aa79441b5da4438221d0f38790c4de2ed}{Isolate\+::\+Get\+Current()}. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Code\+Range@{Get\+Code\+Range}}
 \index{Get\+Code\+Range@{Get\+Code\+Range}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Code\+Range}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Get\+Code\+Range (
+\subsubsection[{\texorpdfstring{Get\+Code\+Range(void $\ast$$\ast$start, size\+\_\+t $\ast$length\+\_\+in\+\_\+bytes)}{GetCodeRange(void **start, size_t *length_in_bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Get\+Code\+Range (
 \begin{DoxyParamCaption}
 \item[{void $\ast$$\ast$}]{start, }
 \item[{size\+\_\+t $\ast$}]{length\+\_\+in\+\_\+bytes}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a46c7fb2282970530c32740d7e5999b22}
+)}\hypertarget{classv8_1_1Isolate_a46c7fb2282970530c32740d7e5999b22}{}\label{classv8_1_1Isolate_a46c7fb2282970530c32740d7e5999b22}
 Returns a memory range that can potentially contain jitted code.
 
-On Win64, embedders are advised to install function table callbacks for these ranges, as default S\+E\+H won\textquotesingle{}t be able to unwind through jitted code.
+On Win64, embedders are advised to install function table callbacks for these ranges, as default S\+EH won\textquotesingle{}t be able to unwind through jitted code.
 
 The first page of the code range is reserved for the embedder and is committed, writable, and executable.
 
 Might be empty on other platforms.
 
-\href{https://code.google.com/p/v8/issues/detail?id=3598}{\tt https\+://code.\+google.\+com/p/v8/issues/detail?id=3598} \hypertarget{classv8_1_1Isolate_a7eb415d9210d912aa57877ab6416fec8}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Cpu\+Profiler@{Get\+Cpu\+Profiler}}
+\href{https://code.google.com/p/v8/issues/detail?id=3598}{\tt https\+://code.\+google.\+com/p/v8/issues/detail?id=3598} \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Cpu\+Profiler@{Get\+Cpu\+Profiler}}
 \index{Get\+Cpu\+Profiler@{Get\+Cpu\+Profiler}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Cpu\+Profiler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cpu\+Profiler}$\ast$ v8\+::\+Isolate\+::\+Get\+Cpu\+Profiler (
+\subsubsection[{\texorpdfstring{Get\+Cpu\+Profiler()}{GetCpuProfiler()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cpu\+Profiler}$\ast$ v8\+::\+Isolate\+::\+Get\+Cpu\+Profiler (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a7eb415d9210d912aa57877ab6416fec8}
-Returns C\+P\+U profiler for this isolate. Will return N\+U\+L\+L unless the isolate is initialized. It is the embedder\textquotesingle{}s responsibility to stop all C\+P\+U profiling activities if it has started any. \hypertarget{classv8_1_1Isolate_aa79441b5da4438221d0f38790c4de2ed}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Current@{Get\+Current}}
+)}\hypertarget{classv8_1_1Isolate_a7eb415d9210d912aa57877ab6416fec8}{}\label{classv8_1_1Isolate_a7eb415d9210d912aa57877ab6416fec8}
+Returns C\+PU profiler for this isolate. Will return N\+U\+LL unless the isolate is initialized. It is the embedder\textquotesingle{}s responsibility to stop all C\+PU profiling activities if it has started any. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Current@{Get\+Current}}
 \index{Get\+Current@{Get\+Current}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Current}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Isolate}$\ast$ v8\+::\+Isolate\+::\+Get\+Current (
+\subsubsection[{\texorpdfstring{Get\+Current()}{GetCurrent()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Isolate}$\ast$ v8\+::\+Isolate\+::\+Get\+Current (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Isolate_aa79441b5da4438221d0f38790c4de2ed}
-Returns the entered isolate for the current thread or N\+U\+L\+L in case there is no current isolate.
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Isolate_aa79441b5da4438221d0f38790c4de2ed}{}\label{classv8_1_1Isolate_aa79441b5da4438221d0f38790c4de2ed}
+Returns the entered isolate for the current thread or N\+U\+LL in case there is no current isolate.
 
-This method must not be invoked before \hyperlink{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{V8\+::\+Initialize()} was invoked. \hypertarget{classv8_1_1Isolate_afa1b6cde5a7a7cfde87eaabc4ab34062}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Current\+Context@{Get\+Current\+Context}}
+This method must not be invoked before \hyperlink{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{V8\+::\+Initialize()} was invoked. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Current\+Context@{Get\+Current\+Context}}
 \index{Get\+Current\+Context@{Get\+Current\+Context}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Current\+Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Context}$>$ v8\+::\+Isolate\+::\+Get\+Current\+Context (
+\subsubsection[{\texorpdfstring{Get\+Current\+Context()}{GetCurrentContext()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Context}$>$ v8\+::\+Isolate\+::\+Get\+Current\+Context (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_afa1b6cde5a7a7cfde87eaabc4ab34062}
-Returns the context that is on the top of the stack. \hypertarget{classv8_1_1Isolate_aed85b3c82bf69a60ecebc2558ab95083}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Data@{Get\+Data}}
+)}\hypertarget{classv8_1_1Isolate_afa1b6cde5a7a7cfde87eaabc4ab34062}{}\label{classv8_1_1Isolate_afa1b6cde5a7a7cfde87eaabc4ab34062}
+Returns the context of the currently running Java\+Script, or the context on the top of the stack if no Java\+Script is running. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Data@{Get\+Data}}
 \index{Get\+Data@{Get\+Data}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ v8\+::\+Isolate\+::\+Get\+Data (
+\subsubsection[{\texorpdfstring{Get\+Data(uint32\+\_\+t slot)}{GetData(uint32_t slot)}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ v8\+::\+Isolate\+::\+Get\+Data (
 \begin{DoxyParamCaption}
 \item[{uint32\+\_\+t}]{slot}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_aed85b3c82bf69a60ecebc2558ab95083}
-Retrieve embedder-\/specific data from the isolate. Returns N\+U\+L\+L if Set\+Data has never been called for the given $\vert$slot$\vert$. \hypertarget{classv8_1_1Isolate_aff9eb2f5d199f8fcf59d9699194cd2e3}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Entered\+Context@{Get\+Entered\+Context}}
+)}\hypertarget{classv8_1_1Isolate_aed85b3c82bf69a60ecebc2558ab95083}{}\label{classv8_1_1Isolate_aed85b3c82bf69a60ecebc2558ab95083}
+Retrieve embedder-\/specific data from the isolate. Returns N\+U\+LL if Set\+Data has never been called for the given $\vert$slot$\vert$. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Entered\+Context@{Get\+Entered\+Context}}
 \index{Get\+Entered\+Context@{Get\+Entered\+Context}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Entered\+Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Context}$>$ v8\+::\+Isolate\+::\+Get\+Entered\+Context (
+\subsubsection[{\texorpdfstring{Get\+Entered\+Context()}{GetEnteredContext()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Context}$>$ v8\+::\+Isolate\+::\+Get\+Entered\+Context (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_aff9eb2f5d199f8fcf59d9699194cd2e3}
-Returns the last entered context. \hypertarget{classv8_1_1Isolate_a677681d4c3abfc1bc2e8b50c23623e24}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Heap\+Object\+Statistics\+At\+Last\+G\+C@{Get\+Heap\+Object\+Statistics\+At\+Last\+G\+C}}
-\index{Get\+Heap\+Object\+Statistics\+At\+Last\+G\+C@{Get\+Heap\+Object\+Statistics\+At\+Last\+G\+C}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Heap\+Object\+Statistics\+At\+Last\+G\+C}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Get\+Heap\+Object\+Statistics\+At\+Last\+G\+C (
+)}\hypertarget{classv8_1_1Isolate_aff9eb2f5d199f8fcf59d9699194cd2e3}{}\label{classv8_1_1Isolate_aff9eb2f5d199f8fcf59d9699194cd2e3}
+Returns the last context entered through \hyperlink{classv8_1_1V8}{V8}\textquotesingle{}s C++ A\+PI. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Heap\+Object\+Statistics\+At\+Last\+GC@{Get\+Heap\+Object\+Statistics\+At\+Last\+GC}}
+\index{Get\+Heap\+Object\+Statistics\+At\+Last\+GC@{Get\+Heap\+Object\+Statistics\+At\+Last\+GC}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Get\+Heap\+Object\+Statistics\+At\+Last\+G\+C(\+Heap\+Object\+Statistics $\ast$object\+\_\+statistics, size\+\_\+t type\+\_\+index)}{GetHeapObjectStatisticsAtLastGC(HeapObjectStatistics *object_statistics, size_t type_index)}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Get\+Heap\+Object\+Statistics\+At\+Last\+GC (
 \begin{DoxyParamCaption}
 \item[{{\bf Heap\+Object\+Statistics} $\ast$}]{object\+\_\+statistics, }
 \item[{size\+\_\+t}]{type\+\_\+index}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a677681d4c3abfc1bc2e8b50c23623e24}
+)}\hypertarget{classv8_1_1Isolate_a677681d4c3abfc1bc2e8b50c23623e24}{}\label{classv8_1_1Isolate_a677681d4c3abfc1bc2e8b50c23623e24}
 Get statistics about objects in the heap.
 
 
 \begin{DoxyParams}{Parameters}
-{\em object\+\_\+statistics} & The \hyperlink{classv8_1_1HeapObjectStatistics}{Heap\+Object\+Statistics} object to fill in statistics of objects of given type, which were live in the previous G\+C. \\
+{\em object\+\_\+statistics} & The \hyperlink{classv8_1_1HeapObjectStatistics}{Heap\+Object\+Statistics} object to fill in statistics of objects of given type, which were live in the previous GC. \\
 \hline
 {\em type\+\_\+index} & The index of the type of object to fill details about, which ranges from 0 to \hyperlink{classv8_1_1Isolate_a170044cddf655345682cb3c9b4bd1788}{Number\+Of\+Tracked\+Heap\+Object\+Types()} -\/ 1. \\
 \hline
@@ -407,21 +490,21 @@ Get statistics about objects in the heap.
 \begin{DoxyReturn}{Returns}
 true on success. 
 \end{DoxyReturn}
-\hypertarget{classv8_1_1Isolate_a9c48259615e8370f6f0efd27cd7f99a6}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Heap\+Profiler@{Get\+Heap\+Profiler}}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Heap\+Profiler@{Get\+Heap\+Profiler}}
 \index{Get\+Heap\+Profiler@{Get\+Heap\+Profiler}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Heap\+Profiler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Heap\+Profiler}$\ast$ v8\+::\+Isolate\+::\+Get\+Heap\+Profiler (
+\subsubsection[{\texorpdfstring{Get\+Heap\+Profiler()}{GetHeapProfiler()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Heap\+Profiler}$\ast$ v8\+::\+Isolate\+::\+Get\+Heap\+Profiler (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a9c48259615e8370f6f0efd27cd7f99a6}
-Returns heap profiler for this isolate. Will return N\+U\+L\+L until the isolate is initialized. \hypertarget{classv8_1_1Isolate_a28ab96294ee07064cbba01e969b62cbc}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Heap\+Space\+Statistics@{Get\+Heap\+Space\+Statistics}}
+)}\hypertarget{classv8_1_1Isolate_a9c48259615e8370f6f0efd27cd7f99a6}{}\label{classv8_1_1Isolate_a9c48259615e8370f6f0efd27cd7f99a6}
+Returns heap profiler for this isolate. Will return N\+U\+LL until the isolate is initialized. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Heap\+Space\+Statistics@{Get\+Heap\+Space\+Statistics}}
 \index{Get\+Heap\+Space\+Statistics@{Get\+Heap\+Space\+Statistics}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Heap\+Space\+Statistics}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Get\+Heap\+Space\+Statistics (
+\subsubsection[{\texorpdfstring{Get\+Heap\+Space\+Statistics(\+Heap\+Space\+Statistics $\ast$space\+\_\+statistics, size\+\_\+t index)}{GetHeapSpaceStatistics(HeapSpaceStatistics *space_statistics, size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Get\+Heap\+Space\+Statistics (
 \begin{DoxyParamCaption}
 \item[{{\bf Heap\+Space\+Statistics} $\ast$}]{space\+\_\+statistics, }
 \item[{size\+\_\+t}]{index}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a28ab96294ee07064cbba01e969b62cbc}
+)}\hypertarget{classv8_1_1Isolate_a28ab96294ee07064cbba01e969b62cbc}{}\label{classv8_1_1Isolate_a28ab96294ee07064cbba01e969b62cbc}
 Get the memory usage of a space in the heap.
 
 
@@ -434,30 +517,37 @@ Get the memory usage of a space in the heap.
 \begin{DoxyReturn}{Returns}
 true on success. 
 \end{DoxyReturn}
-\hypertarget{classv8_1_1Isolate_add32e78544edaf8946ed9b328167e5e4}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Heap\+Statistics@{Get\+Heap\+Statistics}}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Heap\+Statistics@{Get\+Heap\+Statistics}}
 \index{Get\+Heap\+Statistics@{Get\+Heap\+Statistics}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Heap\+Statistics}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Get\+Heap\+Statistics (
+\subsubsection[{\texorpdfstring{Get\+Heap\+Statistics(\+Heap\+Statistics $\ast$heap\+\_\+statistics)}{GetHeapStatistics(HeapStatistics *heap_statistics)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Get\+Heap\+Statistics (
 \begin{DoxyParamCaption}
 \item[{{\bf Heap\+Statistics} $\ast$}]{heap\+\_\+statistics}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_add32e78544edaf8946ed9b328167e5e4}
-Get statistics about the heap memory usage. \hypertarget{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Number\+Of\+Data\+Slots@{Get\+Number\+Of\+Data\+Slots}}
-\index{Get\+Number\+Of\+Data\+Slots@{Get\+Number\+Of\+Data\+Slots}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Number\+Of\+Data\+Slots}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t v8\+::\+Isolate\+::\+Get\+Number\+Of\+Data\+Slots (
+)}\hypertarget{classv8_1_1Isolate_add32e78544edaf8946ed9b328167e5e4}{}\label{classv8_1_1Isolate_add32e78544edaf8946ed9b328167e5e4}
+Get statistics about the heap memory usage. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Microtasks\+Policy@{Get\+Microtasks\+Policy}}
+\index{Get\+Microtasks\+Policy@{Get\+Microtasks\+Policy}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Get\+Microtasks\+Policy() const }{GetMicrotasksPolicy() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Microtasks\+Policy} v8\+::\+Isolate\+::\+Get\+Microtasks\+Policy (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}
-Returns the maximum number of available embedder data slots. Valid slots are in the range of 0 -\/ \hyperlink{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}{Get\+Number\+Of\+Data\+Slots()} -\/ 1. \hypertarget{classv8_1_1Isolate_a8b173b48a477267ccd6c7d17c492b82e}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Stack\+Sample@{Get\+Stack\+Sample}}
+) const}\hypertarget{classv8_1_1Isolate_a65ccc10f75f9497b6baf9535cf3f30db}{}\label{classv8_1_1Isolate_a65ccc10f75f9497b6baf9535cf3f30db}
+Experimental\+: Returns the policy controlling how Microtasks are invoked. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Number\+Of\+Data\+Slots@{Get\+Number\+Of\+Data\+Slots}}
+\index{Get\+Number\+Of\+Data\+Slots@{Get\+Number\+Of\+Data\+Slots}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Get\+Number\+Of\+Data\+Slots()}{GetNumberOfDataSlots()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t v8\+::\+Isolate\+::\+Get\+Number\+Of\+Data\+Slots (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}{}\label{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}
+Returns the maximum number of available embedder data slots. Valid slots are in the range of 0 -\/ \hyperlink{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}{Get\+Number\+Of\+Data\+Slots()} -\/ 1. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Get\+Stack\+Sample@{Get\+Stack\+Sample}}
 \index{Get\+Stack\+Sample@{Get\+Stack\+Sample}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Get\+Stack\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Get\+Stack\+Sample (
+\subsubsection[{\texorpdfstring{Get\+Stack\+Sample(const Register\+State \&state, void $\ast$$\ast$frames, size\+\_\+t frames\+\_\+limit, Sample\+Info $\ast$sample\+\_\+info)}{GetStackSample(const RegisterState &state, void **frames, size_t frames_limit, SampleInfo *sample_info)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Get\+Stack\+Sample (
 \begin{DoxyParamCaption}
 \item[{const {\bf Register\+State} \&}]{state, }
 \item[{void $\ast$$\ast$}]{frames, }
 \item[{size\+\_\+t}]{frames\+\_\+limit, }
 \item[{{\bf Sample\+Info} $\ast$}]{sample\+\_\+info}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a8b173b48a477267ccd6c7d17c492b82e}
+)}\hypertarget{classv8_1_1Isolate_a8b173b48a477267ccd6c7d17c492b82e}{}\label{classv8_1_1Isolate_a8b173b48a477267ccd6c7d17c492b82e}
 Get a call stack sample from the isolate. 
 \begin{DoxyParams}{Parameters}
 {\em state} & Execution state. \\
@@ -466,216 +556,244 @@ Get a call stack sample from the isolate.
 \hline
 {\em frames\+\_\+limit} & Maximum number of frames to capture. The buffer must be large enough to hold the number of frames. \\
 \hline
-{\em sample\+\_\+info} & The sample info is filled up by the function provides number of actual captured stack frames and the current V\+M state. \\
+{\em sample\+\_\+info} & The sample info is filled up by the function provides number of actual captured stack frames and the current VM state. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-Get\+Stack\+Sample should only be called when the J\+S thread is paused or interrupted. Otherwise the behavior is undefined. 
+Get\+Stack\+Sample should only be called when the JS thread is paused or interrupted. Otherwise the behavior is undefined. 
 \end{DoxyNote}
-\hypertarget{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Idle\+Notification\+Deadline@{Idle\+Notification\+Deadline}}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Idle\+Notification\+Deadline@{Idle\+Notification\+Deadline}}
 \index{Idle\+Notification\+Deadline@{Idle\+Notification\+Deadline}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Idle\+Notification\+Deadline}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Idle\+Notification\+Deadline (
+\subsubsection[{\texorpdfstring{Idle\+Notification\+Deadline(double deadline\+\_\+in\+\_\+seconds)}{IdleNotificationDeadline(double deadline_in_seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Idle\+Notification\+Deadline (
 \begin{DoxyParamCaption}
 \item[{double}]{deadline\+\_\+in\+\_\+seconds}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}
+)}\hypertarget{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}{}\label{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}
 Optional notification that the embedder is idle. \hyperlink{classv8_1_1V8}{V8} uses the notification to perform garbage collection. This call can be used repeatedly if the embedder remains idle. Returns true if the embedder should stop calling Idle\+Notification\+Deadline until real work has been done. This indicates that \hyperlink{classv8_1_1V8}{V8} has done as much cleanup as it will be able to do.
 
-The deadline\+\_\+in\+\_\+seconds argument specifies the deadline \hyperlink{classv8_1_1V8}{V8} has to finish garbage collection work. deadline\+\_\+in\+\_\+seconds is compared with Monotonically\+Increasing\+Time() and should be based on the same timebase as that function. There is no guarantee that the actual work will be done within the time limit. \hypertarget{classv8_1_1Isolate_afb6bbd31a87d0999dbbe5402447690a9}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!In\+Context@{In\+Context}}
+The deadline\+\_\+in\+\_\+seconds argument specifies the deadline \hyperlink{classv8_1_1V8}{V8} has to finish garbage collection work. deadline\+\_\+in\+\_\+seconds is compared with Monotonically\+Increasing\+Time() and should be based on the same timebase as that function. There is no guarantee that the actual work will be done within the time limit. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!In\+Context@{In\+Context}}
 \index{In\+Context@{In\+Context}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{In\+Context}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+In\+Context (
+\subsubsection[{\texorpdfstring{In\+Context()}{InContext()}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+In\+Context (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_afb6bbd31a87d0999dbbe5402447690a9}
-Returns true if this isolate has a current context. \hypertarget{classv8_1_1Isolate_a603a9bc7860d7936bce2dd45829869c3}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Is\+Dead@{Is\+Dead}}
+)}\hypertarget{classv8_1_1Isolate_afb6bbd31a87d0999dbbe5402447690a9}{}\label{classv8_1_1Isolate_afb6bbd31a87d0999dbbe5402447690a9}
+Returns true if this isolate has a current context. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Is\+Dead@{Is\+Dead}}
 \index{Is\+Dead@{Is\+Dead}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Is\+Dead}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Is\+Dead (
+\subsubsection[{\texorpdfstring{Is\+Dead()}{IsDead()}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Is\+Dead (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a603a9bc7860d7936bce2dd45829869c3}
-Check if \hyperlink{classv8_1_1V8}{V8} is dead and therefore unusable. This is the case after fatal errors such as out-\/of-\/memory situations. \hypertarget{classv8_1_1Isolate_aee57283198c192e83afe5e7d12d42e85}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Is\+Execution\+Terminating@{Is\+Execution\+Terminating}}
+)}\hypertarget{classv8_1_1Isolate_a603a9bc7860d7936bce2dd45829869c3}{}\label{classv8_1_1Isolate_a603a9bc7860d7936bce2dd45829869c3}
+Check if \hyperlink{classv8_1_1V8}{V8} is dead and therefore unusable. This is the case after fatal errors such as out-\/of-\/memory situations. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Is\+Execution\+Terminating@{Is\+Execution\+Terminating}}
 \index{Is\+Execution\+Terminating@{Is\+Execution\+Terminating}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Is\+Execution\+Terminating}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Is\+Execution\+Terminating (
+\subsubsection[{\texorpdfstring{Is\+Execution\+Terminating()}{IsExecutionTerminating()}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Is\+Execution\+Terminating (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_aee57283198c192e83afe5e7d12d42e85}
+)}\hypertarget{classv8_1_1Isolate_aee57283198c192e83afe5e7d12d42e85}{}\label{classv8_1_1Isolate_aee57283198c192e83afe5e7d12d42e85}
 Is \hyperlink{classv8_1_1V8}{V8} terminating Java\+Script execution.
 
-Returns true if Java\+Script execution is currently terminating because of a call to Terminate\+Execution. In that case there are still Java\+Script frames on the stack and the termination exception is still active. \hypertarget{classv8_1_1Isolate_aaf446f4877e4707a93d2c406fffd9fd6}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Low\+Memory\+Notification@{Low\+Memory\+Notification}}
-\index{Low\+Memory\+Notification@{Low\+Memory\+Notification}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Low\+Memory\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Low\+Memory\+Notification (
+Returns true if Java\+Script execution is currently terminating because of a call to Terminate\+Execution. In that case there are still Java\+Script frames on the stack and the termination exception is still active. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Isolate\+In\+Background\+Notification@{Isolate\+In\+Background\+Notification}}
+\index{Isolate\+In\+Background\+Notification@{Isolate\+In\+Background\+Notification}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Isolate\+In\+Background\+Notification()}{IsolateInBackgroundNotification()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Isolate\+In\+Background\+Notification (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_aaf446f4877e4707a93d2c406fffd9fd6}
-Optional notification that the system is running low on memory. \hyperlink{classv8_1_1V8}{V8} uses these notifications to attempt to free memory. \hypertarget{classv8_1_1Isolate_ab6accf94a5a897fcc1220ab2c049e502}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!New@{New}}
+)}\hypertarget{classv8_1_1Isolate_a15c1ba9cdb3526a6439e7fddb292ee93}{}\label{classv8_1_1Isolate_a15c1ba9cdb3526a6439e7fddb292ee93}
+Optional notification that the isolate switched to the background. \hyperlink{classv8_1_1V8}{V8} uses these notifications to guide heuristics. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Isolate\+In\+Foreground\+Notification@{Isolate\+In\+Foreground\+Notification}}
+\index{Isolate\+In\+Foreground\+Notification@{Isolate\+In\+Foreground\+Notification}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Isolate\+In\+Foreground\+Notification()}{IsolateInForegroundNotification()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Isolate\+In\+Foreground\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_afaa09b3cb3a20f53bdcdce4b154d928f}{}\label{classv8_1_1Isolate_afaa09b3cb3a20f53bdcdce4b154d928f}
+Optional notification that the isolate switched to the foreground. \hyperlink{classv8_1_1V8}{V8} uses these notifications to guide heuristics. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Low\+Memory\+Notification@{Low\+Memory\+Notification}}
+\index{Low\+Memory\+Notification@{Low\+Memory\+Notification}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Low\+Memory\+Notification()}{LowMemoryNotification()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Low\+Memory\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_aaf446f4877e4707a93d2c406fffd9fd6}{}\label{classv8_1_1Isolate_aaf446f4877e4707a93d2c406fffd9fd6}
+Optional notification that the system is running low on memory. \hyperlink{classv8_1_1V8}{V8} uses these notifications to attempt to free memory. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Memory\+Pressure\+Notification@{Memory\+Pressure\+Notification}}
+\index{Memory\+Pressure\+Notification@{Memory\+Pressure\+Notification}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Memory\+Pressure\+Notification(\+Memory\+Pressure\+Level level)}{MemoryPressureNotification(MemoryPressureLevel level)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Memory\+Pressure\+Notification (
+\begin{DoxyParamCaption}
+\item[{{\bf Memory\+Pressure\+Level}}]{level}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_ae1b8d5696ba55dd3412989811c44c373}{}\label{classv8_1_1Isolate_ae1b8d5696ba55dd3412989811c44c373}
+Optional notification that the system is running low on memory. \hyperlink{classv8_1_1V8}{V8} uses these notifications to guide heuristics. It is allowed to call this function from another thread while the isolate is executing long running Java\+Script code. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!New@{New}}
 \index{New@{New}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Isolate}$\ast$ v8\+::\+Isolate\+::\+New (
+\subsubsection[{\texorpdfstring{New(const Create\+Params \&params)}{New(const CreateParams &params)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Isolate}$\ast$ v8\+::\+Isolate\+::\+New (
 \begin{DoxyParamCaption}
 \item[{const {\bf Create\+Params} \&}]{params}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1Isolate_ab6accf94a5a897fcc1220ab2c049e502}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Isolate_ab6accf94a5a897fcc1220ab2c049e502}{}\label{classv8_1_1Isolate_ab6accf94a5a897fcc1220ab2c049e502}
 Creates a new isolate. Does not change the currently entered isolate.
 
 When an isolate is no longer used its resources should be freed by calling \hyperlink{classv8_1_1Isolate_a1a5a5762e4221aff8c6b10f9e3cec0af}{Dispose()}. Using the delete operator is not allowed.
 
-\hyperlink{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{V8\+::\+Initialize()} must have run prior to this. \hypertarget{classv8_1_1Isolate_ad948acf0892e677a95fbc743b63ca5fa}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Number\+Of\+Heap\+Spaces@{Number\+Of\+Heap\+Spaces}}
+\hyperlink{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{V8\+::\+Initialize()} must have run prior to this. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Number\+Of\+Heap\+Spaces@{Number\+Of\+Heap\+Spaces}}
 \index{Number\+Of\+Heap\+Spaces@{Number\+Of\+Heap\+Spaces}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Number\+Of\+Heap\+Spaces}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Isolate\+::\+Number\+Of\+Heap\+Spaces (
+\subsubsection[{\texorpdfstring{Number\+Of\+Heap\+Spaces()}{NumberOfHeapSpaces()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Isolate\+::\+Number\+Of\+Heap\+Spaces (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ad948acf0892e677a95fbc743b63ca5fa}
-Returns the number of spaces in the heap. \hypertarget{classv8_1_1Isolate_a170044cddf655345682cb3c9b4bd1788}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Number\+Of\+Tracked\+Heap\+Object\+Types@{Number\+Of\+Tracked\+Heap\+Object\+Types}}
+)}\hypertarget{classv8_1_1Isolate_ad948acf0892e677a95fbc743b63ca5fa}{}\label{classv8_1_1Isolate_ad948acf0892e677a95fbc743b63ca5fa}
+Returns the number of spaces in the heap. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Number\+Of\+Tracked\+Heap\+Object\+Types@{Number\+Of\+Tracked\+Heap\+Object\+Types}}
 \index{Number\+Of\+Tracked\+Heap\+Object\+Types@{Number\+Of\+Tracked\+Heap\+Object\+Types}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Number\+Of\+Tracked\+Heap\+Object\+Types}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Isolate\+::\+Number\+Of\+Tracked\+Heap\+Object\+Types (
+\subsubsection[{\texorpdfstring{Number\+Of\+Tracked\+Heap\+Object\+Types()}{NumberOfTrackedHeapObjectTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Isolate\+::\+Number\+Of\+Tracked\+Heap\+Object\+Types (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a170044cddf655345682cb3c9b4bd1788}
-Returns the number of types of objects tracked in the heap at G\+C. \hypertarget{classv8_1_1Isolate_a46f0a5d35f8b29030922bdb433c0dc4f}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+Call\+Completed\+Callback@{Remove\+Call\+Completed\+Callback}}
+)}\hypertarget{classv8_1_1Isolate_a170044cddf655345682cb3c9b4bd1788}{}\label{classv8_1_1Isolate_a170044cddf655345682cb3c9b4bd1788}
+Returns the number of types of objects tracked in the heap at GC. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+Before\+Call\+Entered\+Callback@{Remove\+Before\+Call\+Entered\+Callback}}
+\index{Remove\+Before\+Call\+Entered\+Callback@{Remove\+Before\+Call\+Entered\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Remove\+Before\+Call\+Entered\+Callback(\+Before\+Call\+Entered\+Callback callback)}{RemoveBeforeCallEnteredCallback(BeforeCallEnteredCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+Before\+Call\+Entered\+Callback (
+\begin{DoxyParamCaption}
+\item[{Before\+Call\+Entered\+Callback}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_a92be6cf5ce1e7360843794cc1528369f}{}\label{classv8_1_1Isolate_a92be6cf5ce1e7360843794cc1528369f}
+Removes callback that was installed by Add\+Before\+Call\+Entered\+Callback. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+Call\+Completed\+Callback@{Remove\+Call\+Completed\+Callback}}
 \index{Remove\+Call\+Completed\+Callback@{Remove\+Call\+Completed\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Remove\+Call\+Completed\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+Call\+Completed\+Callback (
+\subsubsection[{\texorpdfstring{Remove\+Call\+Completed\+Callback(\+Call\+Completed\+Callback callback)}{RemoveCallCompletedCallback(CallCompletedCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+Call\+Completed\+Callback (
 \begin{DoxyParamCaption}
 \item[{Call\+Completed\+Callback}]{callback}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a46f0a5d35f8b29030922bdb433c0dc4f}
-Removes callback that was installed by Add\+Call\+Completed\+Callback. \hypertarget{classv8_1_1Isolate_a277144482f5fefd58d822c22a173b01a}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+G\+C\+Epilogue\+Callback@{Remove\+G\+C\+Epilogue\+Callback}}
+)}\hypertarget{classv8_1_1Isolate_a46f0a5d35f8b29030922bdb433c0dc4f}{}\label{classv8_1_1Isolate_a46f0a5d35f8b29030922bdb433c0dc4f}
+Removes callback that was installed by Add\+Call\+Completed\+Callback. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+G\+C\+Epilogue\+Callback@{Remove\+G\+C\+Epilogue\+Callback}}
 \index{Remove\+G\+C\+Epilogue\+Callback@{Remove\+G\+C\+Epilogue\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Remove\+G\+C\+Epilogue\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+G\+C\+Epilogue\+Callback (
+\subsubsection[{\texorpdfstring{Remove\+G\+C\+Epilogue\+Callback(\+G\+C\+Callback callback)}{RemoveGCEpilogueCallback(GCCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+G\+C\+Epilogue\+Callback (
 \begin{DoxyParamCaption}
-\item[{G\+C\+Epilogue\+Callback}]{callback}
+\item[{G\+C\+Callback}]{callback}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a277144482f5fefd58d822c22a173b01a}
-This function removes callback which was installed by Add\+G\+C\+Epilogue\+Callback function. \hypertarget{classv8_1_1Isolate_a7902b8b58f3c85bac9b7dd1086fa81ce}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+G\+C\+Prologue\+Callback@{Remove\+G\+C\+Prologue\+Callback}}
+)}\hypertarget{classv8_1_1Isolate_a059d51bc45cdd5f4821233170863a9ff}{}\label{classv8_1_1Isolate_a059d51bc45cdd5f4821233170863a9ff}
+This function removes callback which was installed by Add\+G\+C\+Epilogue\+Callback function. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+G\+C\+Prologue\+Callback@{Remove\+G\+C\+Prologue\+Callback}}
 \index{Remove\+G\+C\+Prologue\+Callback@{Remove\+G\+C\+Prologue\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Remove\+G\+C\+Prologue\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+G\+C\+Prologue\+Callback (
+\subsubsection[{\texorpdfstring{Remove\+G\+C\+Prologue\+Callback(\+G\+C\+Callback callback)}{RemoveGCPrologueCallback(GCCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+G\+C\+Prologue\+Callback (
 \begin{DoxyParamCaption}
-\item[{G\+C\+Prologue\+Callback}]{callback}
+\item[{G\+C\+Callback}]{callback}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a7902b8b58f3c85bac9b7dd1086fa81ce}
-This function removes callback which was installed by Add\+G\+C\+Prologue\+Callback function. \hypertarget{classv8_1_1Isolate_a99349e062c11085eeb63a0d825226487}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+Memory\+Allocation\+Callback@{Remove\+Memory\+Allocation\+Callback}}
-\index{Remove\+Memory\+Allocation\+Callback@{Remove\+Memory\+Allocation\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Remove\+Memory\+Allocation\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+Memory\+Allocation\+Callback (
-\begin{DoxyParamCaption}
-\item[{Memory\+Allocation\+Callback}]{callback}
-\end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a99349e062c11085eeb63a0d825226487}
-Removes callback that was installed by Add\+Memory\+Allocation\+Callback. \hypertarget{classv8_1_1Isolate_a0319e55b26ba3ac51d867b37b917a21f}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+Message\+Listeners@{Remove\+Message\+Listeners}}
+)}\hypertarget{classv8_1_1Isolate_a7c424950b2bc9589fc676a9b38b27d63}{}\label{classv8_1_1Isolate_a7c424950b2bc9589fc676a9b38b27d63}
+This function removes callback which was installed by Add\+G\+C\+Prologue\+Callback function. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+Message\+Listeners@{Remove\+Message\+Listeners}}
 \index{Remove\+Message\+Listeners@{Remove\+Message\+Listeners}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Remove\+Message\+Listeners}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+Message\+Listeners (
+\subsubsection[{\texorpdfstring{Remove\+Message\+Listeners(\+Message\+Callback that)}{RemoveMessageListeners(MessageCallback that)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+Message\+Listeners (
 \begin{DoxyParamCaption}
 \item[{Message\+Callback}]{that}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a0319e55b26ba3ac51d867b37b917a21f}
-Remove all message listeners from the specified callback function. \hypertarget{classv8_1_1Isolate_a59fe893ed7e9df52cef2d59b2d98ab23}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Request\+Garbage\+Collection\+For\+Testing@{Request\+Garbage\+Collection\+For\+Testing}}
+)}\hypertarget{classv8_1_1Isolate_a0319e55b26ba3ac51d867b37b917a21f}{}\label{classv8_1_1Isolate_a0319e55b26ba3ac51d867b37b917a21f}
+Remove all message listeners from the specified callback function. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Remove\+Microtasks\+Completed\+Callback@{Remove\+Microtasks\+Completed\+Callback}}
+\index{Remove\+Microtasks\+Completed\+Callback@{Remove\+Microtasks\+Completed\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Remove\+Microtasks\+Completed\+Callback(\+Microtasks\+Completed\+Callback callback)}{RemoveMicrotasksCompletedCallback(MicrotasksCompletedCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Remove\+Microtasks\+Completed\+Callback (
+\begin{DoxyParamCaption}
+\item[{Microtasks\+Completed\+Callback}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_a0fdc58db0d44c5a8f427d809e1c0b604}{}\label{classv8_1_1Isolate_a0fdc58db0d44c5a8f427d809e1c0b604}
+Removes callback that was installed by Add\+Microtasks\+Completed\+Callback. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Request\+Garbage\+Collection\+For\+Testing@{Request\+Garbage\+Collection\+For\+Testing}}
 \index{Request\+Garbage\+Collection\+For\+Testing@{Request\+Garbage\+Collection\+For\+Testing}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Request\+Garbage\+Collection\+For\+Testing}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Request\+Garbage\+Collection\+For\+Testing (
+\subsubsection[{\texorpdfstring{Request\+Garbage\+Collection\+For\+Testing(\+Garbage\+Collection\+Type type)}{RequestGarbageCollectionForTesting(GarbageCollectionType type)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Request\+Garbage\+Collection\+For\+Testing (
 \begin{DoxyParamCaption}
 \item[{{\bf Garbage\+Collection\+Type}}]{type}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a59fe893ed7e9df52cef2d59b2d98ab23}
+)}\hypertarget{classv8_1_1Isolate_a59fe893ed7e9df52cef2d59b2d98ab23}{}\label{classv8_1_1Isolate_a59fe893ed7e9df52cef2d59b2d98ab23}
 Request garbage collection in this \hyperlink{classv8_1_1Isolate}{Isolate}. It is only valid to call this function if --expose\+\_\+gc was specified.
 
-This should only be used for testing purposes and not to enforce a garbage collection schedule. It has strong negative impact on the garbage collection performance. Use \hyperlink{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}{Idle\+Notification\+Deadline()} or \hyperlink{classv8_1_1Isolate_aaf446f4877e4707a93d2c406fffd9fd6}{Low\+Memory\+Notification()} instead to influence the garbage collection schedule. \hypertarget{classv8_1_1Isolate_a971b6094ecc6c7f55eb6f58a71a8afd3}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Request\+Interrupt@{Request\+Interrupt}}
+This should only be used for testing purposes and not to enforce a garbage collection schedule. It has strong negative impact on the garbage collection performance. Use \hyperlink{classv8_1_1Isolate_aba794ed25d4fa8780b3a07c66a5e5d4a}{Idle\+Notification\+Deadline()} or \hyperlink{classv8_1_1Isolate_aaf446f4877e4707a93d2c406fffd9fd6}{Low\+Memory\+Notification()} instead to influence the garbage collection schedule. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Request\+Interrupt@{Request\+Interrupt}}
 \index{Request\+Interrupt@{Request\+Interrupt}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Request\+Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Request\+Interrupt (
+\subsubsection[{\texorpdfstring{Request\+Interrupt(\+Interrupt\+Callback callback, void $\ast$data)}{RequestInterrupt(InterruptCallback callback, void *data)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Request\+Interrupt (
 \begin{DoxyParamCaption}
 \item[{Interrupt\+Callback}]{callback, }
 \item[{void $\ast$}]{data}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a971b6094ecc6c7f55eb6f58a71a8afd3}
-Request \hyperlink{classv8_1_1V8}{V8} to interrupt long running Java\+Script code and invoke the given $\vert$callback$\vert$ passing the given $\vert$data$\vert$ to it. After $\vert$callback$\vert$ returns control will be returned to the Java\+Script code. There may be a number of interrupt requests in flight. Can be called from another thread without acquiring a $\vert$\+Locker$\vert$. Registered $\vert$callback$\vert$ must not reenter interrupted \hyperlink{classv8_1_1Isolate}{Isolate}. \hypertarget{classv8_1_1Isolate_ac3cbe2a1632eb863912640dcfc98b6c8}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Run\+Microtasks@{Run\+Microtasks}}
+)}\hypertarget{classv8_1_1Isolate_a971b6094ecc6c7f55eb6f58a71a8afd3}{}\label{classv8_1_1Isolate_a971b6094ecc6c7f55eb6f58a71a8afd3}
+Request \hyperlink{classv8_1_1V8}{V8} to interrupt long running Java\+Script code and invoke the given $\vert$callback$\vert$ passing the given $\vert$data$\vert$ to it. After $\vert$callback$\vert$ returns control will be returned to the Java\+Script code. There may be a number of interrupt requests in flight. Can be called from another thread without acquiring a $\vert$\+Locker$\vert$. Registered $\vert$callback$\vert$ must not reenter interrupted \hyperlink{classv8_1_1Isolate}{Isolate}. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Run\+Microtasks@{Run\+Microtasks}}
 \index{Run\+Microtasks@{Run\+Microtasks}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Run\+Microtasks}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Run\+Microtasks (
+\subsubsection[{\texorpdfstring{Run\+Microtasks()}{RunMicrotasks()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Run\+Microtasks (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ac3cbe2a1632eb863912640dcfc98b6c8}
-Experimental\+: Runs the Microtask Work Queue until empty Any exceptions thrown by microtask callbacks are swallowed. \hypertarget{classv8_1_1Isolate_ad91199faf0a599c69539af01f5df44e9}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Allow\+Code\+Generation\+From\+Strings\+Callback@{Set\+Allow\+Code\+Generation\+From\+Strings\+Callback}}
+)}\hypertarget{classv8_1_1Isolate_ac3cbe2a1632eb863912640dcfc98b6c8}{}\label{classv8_1_1Isolate_ac3cbe2a1632eb863912640dcfc98b6c8}
+Experimental\+: Runs the Microtask Work Queue until empty Any exceptions thrown by microtask callbacks are swallowed. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Allow\+Code\+Generation\+From\+Strings\+Callback@{Set\+Allow\+Code\+Generation\+From\+Strings\+Callback}}
 \index{Set\+Allow\+Code\+Generation\+From\+Strings\+Callback@{Set\+Allow\+Code\+Generation\+From\+Strings\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Allow\+Code\+Generation\+From\+Strings\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Allow\+Code\+Generation\+From\+Strings\+Callback (
+\subsubsection[{\texorpdfstring{Set\+Allow\+Code\+Generation\+From\+Strings\+Callback(\+Allow\+Code\+Generation\+From\+Strings\+Callback callback)}{SetAllowCodeGenerationFromStringsCallback(AllowCodeGenerationFromStringsCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Allow\+Code\+Generation\+From\+Strings\+Callback (
 \begin{DoxyParamCaption}
 \item[{{\bf Allow\+Code\+Generation\+From\+Strings\+Callback}}]{callback}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ad91199faf0a599c69539af01f5df44e9}
-\hyperlink{classv8_1_1Set}{Set} the callback to invoke to check if code generation from strings should be allowed. \hypertarget{classv8_1_1Isolate_a6c046eb1d5ab19ef11c18c2f6e775df1}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Autorun\+Microtasks@{Set\+Autorun\+Microtasks}}
-\index{Set\+Autorun\+Microtasks@{Set\+Autorun\+Microtasks}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Autorun\+Microtasks}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Autorun\+Microtasks (
-\begin{DoxyParamCaption}
-\item[{bool}]{autorun}
-\end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a6c046eb1d5ab19ef11c18c2f6e775df1}
-Experimental\+: Controls whether the Microtask Work Queue is automatically run when the script call depth decrements to zero. \hypertarget{classv8_1_1Isolate_a0ea70b9953abf15184a20eba6aab389f}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions@{Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions}}
+)}\hypertarget{classv8_1_1Isolate_ad91199faf0a599c69539af01f5df44e9}{}\label{classv8_1_1Isolate_ad91199faf0a599c69539af01f5df44e9}
+\hyperlink{classv8_1_1Set}{Set} the callback to invoke to check if code generation from strings should be allowed. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions@{Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions}}
 \index{Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions@{Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions (
+\subsubsection[{\texorpdfstring{Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions(bool capture, int frame\+\_\+limit=10, Stack\+Trace\+::\+Stack\+Trace\+Options options=\+Stack\+Trace\+::k\+Overview)}{SetCaptureStackTraceForUncaughtExceptions(bool capture, int frame_limit=10, StackTrace::StackTraceOptions options=StackTrace::kOverview)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions (
 \begin{DoxyParamCaption}
 \item[{bool}]{capture, }
 \item[{int}]{frame\+\_\+limit = {\ttfamily 10}, }
 \item[{{\bf Stack\+Trace\+::\+Stack\+Trace\+Options}}]{options = {\ttfamily StackTrace\+:\+:kOverview}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a0ea70b9953abf15184a20eba6aab389f}
-Tells \hyperlink{classv8_1_1V8}{V8} to capture current stack trace when uncaught exception occurs and report it to the message listeners. The option is off by default. \hypertarget{classv8_1_1Isolate_ab59a904591d417ebb3889b5fa507447b}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Counter\+Function@{Set\+Counter\+Function}}
+)}\hypertarget{classv8_1_1Isolate_a0ea70b9953abf15184a20eba6aab389f}{}\label{classv8_1_1Isolate_a0ea70b9953abf15184a20eba6aab389f}
+Tells \hyperlink{classv8_1_1V8}{V8} to capture current stack trace when uncaught exception occurs and report it to the message listeners. The option is off by default. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Counter\+Function@{Set\+Counter\+Function}}
 \index{Set\+Counter\+Function@{Set\+Counter\+Function}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Counter\+Function}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Counter\+Function (
+\subsubsection[{\texorpdfstring{Set\+Counter\+Function(\+Counter\+Lookup\+Callback)}{SetCounterFunction(CounterLookupCallback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Counter\+Function (
 \begin{DoxyParamCaption}
 \item[{Counter\+Lookup\+Callback}]{}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ab59a904591d417ebb3889b5fa507447b}
-Enables the host application to provide a mechanism for recording statistics counters. \hypertarget{classv8_1_1Isolate_afd624c7e429a061c1cd9e5959ce6ebf0}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Create\+Histogram\+Function@{Set\+Create\+Histogram\+Function}}
+)}\hypertarget{classv8_1_1Isolate_ab59a904591d417ebb3889b5fa507447b}{}\label{classv8_1_1Isolate_ab59a904591d417ebb3889b5fa507447b}
+Enables the host application to provide a mechanism for recording statistics counters. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Create\+Histogram\+Function@{Set\+Create\+Histogram\+Function}}
 \index{Set\+Create\+Histogram\+Function@{Set\+Create\+Histogram\+Function}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Create\+Histogram\+Function}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Create\+Histogram\+Function (
+\subsubsection[{\texorpdfstring{Set\+Create\+Histogram\+Function(\+Create\+Histogram\+Callback)}{SetCreateHistogramFunction(CreateHistogramCallback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Create\+Histogram\+Function (
 \begin{DoxyParamCaption}
 \item[{Create\+Histogram\+Callback}]{}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_afd624c7e429a061c1cd9e5959ce6ebf0}
-Enables the host application to provide a mechanism for recording histograms. The Create\+Histogram function returns a histogram which will later be passed to the Add\+Histogram\+Sample function. \hypertarget{classv8_1_1Isolate_a2ae968a7ff8a397f1ac09d32990883f6}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Data@{Set\+Data}}
+)}\hypertarget{classv8_1_1Isolate_afd624c7e429a061c1cd9e5959ce6ebf0}{}\label{classv8_1_1Isolate_afd624c7e429a061c1cd9e5959ce6ebf0}
+Enables the host application to provide a mechanism for recording histograms. The Create\+Histogram function returns a histogram which will later be passed to the Add\+Histogram\+Sample function. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Data@{Set\+Data}}
 \index{Set\+Data@{Set\+Data}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Data (
+\subsubsection[{\texorpdfstring{Set\+Data(uint32\+\_\+t slot, void $\ast$data)}{SetData(uint32_t slot, void *data)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Data (
 \begin{DoxyParamCaption}
 \item[{uint32\+\_\+t}]{slot, }
 \item[{void $\ast$}]{data}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a2ae968a7ff8a397f1ac09d32990883f6}
-Associate embedder-\/specific data with the isolate. $\vert$slot$\vert$ has to be between 0 and \hyperlink{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}{Get\+Number\+Of\+Data\+Slots()} -\/ 1. \hypertarget{classv8_1_1Isolate_a28bf18f2f6ed468ec97f59df682e73c1}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Event\+Logger@{Set\+Event\+Logger}}
+)}\hypertarget{classv8_1_1Isolate_a2ae968a7ff8a397f1ac09d32990883f6}{}\label{classv8_1_1Isolate_a2ae968a7ff8a397f1ac09d32990883f6}
+Associate embedder-\/specific data with the isolate. $\vert$slot$\vert$ has to be between 0 and \hyperlink{classv8_1_1Isolate_a7060092fd45588f4085753b3da1b2c82}{Get\+Number\+Of\+Data\+Slots()} -\/ 1. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Embedder\+Heap\+Tracer@{Set\+Embedder\+Heap\+Tracer}}
+\index{Set\+Embedder\+Heap\+Tracer@{Set\+Embedder\+Heap\+Tracer}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Set\+Embedder\+Heap\+Tracer(\+Embedder\+Heap\+Tracer $\ast$tracer)}{SetEmbedderHeapTracer(EmbedderHeapTracer *tracer)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Embedder\+Heap\+Tracer (
+\begin{DoxyParamCaption}
+\item[{{\bf Embedder\+Heap\+Tracer} $\ast$}]{tracer}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_a33569984c556a90ae380f96aa7a82fad}{}\label{classv8_1_1Isolate_a33569984c556a90ae380f96aa7a82fad}
+Sets the embedder heap tracer for the isolate. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Event\+Logger@{Set\+Event\+Logger}}
 \index{Set\+Event\+Logger@{Set\+Event\+Logger}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Event\+Logger}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Event\+Logger (
+\subsubsection[{\texorpdfstring{Set\+Event\+Logger(\+Log\+Event\+Callback that)}{SetEventLogger(LogEventCallback that)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Event\+Logger (
 \begin{DoxyParamCaption}
 \item[{Log\+Event\+Callback}]{that}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a28bf18f2f6ed468ec97f59df682e73c1}
-\hyperlink{classv8_1_1Set}{Set} the callback to invoke for logging event. \hypertarget{classv8_1_1Isolate_ab9ef29fc049d82e0c33994632b4f6ba6}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Failed\+Access\+Check\+Callback\+Function@{Set\+Failed\+Access\+Check\+Callback\+Function}}
+)}\hypertarget{classv8_1_1Isolate_a28bf18f2f6ed468ec97f59df682e73c1}{}\label{classv8_1_1Isolate_a28bf18f2f6ed468ec97f59df682e73c1}
+\hyperlink{classv8_1_1Set}{Set} the callback to invoke for logging event. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Failed\+Access\+Check\+Callback\+Function@{Set\+Failed\+Access\+Check\+Callback\+Function}}
 \index{Set\+Failed\+Access\+Check\+Callback\+Function@{Set\+Failed\+Access\+Check\+Callback\+Function}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Failed\+Access\+Check\+Callback\+Function}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Failed\+Access\+Check\+Callback\+Function (
+\subsubsection[{\texorpdfstring{Set\+Failed\+Access\+Check\+Callback\+Function(\+Failed\+Access\+Check\+Callback)}{SetFailedAccessCheckCallbackFunction(FailedAccessCheckCallback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Failed\+Access\+Check\+Callback\+Function (
 \begin{DoxyParamCaption}
 \item[{Failed\+Access\+Check\+Callback}]{}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ab9ef29fc049d82e0c33994632b4f6ba6}
-Callback function for reporting failed access checks. \hypertarget{classv8_1_1Isolate_a131f1e2e6a80618ac3c8c266a041851d}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Fatal\+Error\+Handler@{Set\+Fatal\+Error\+Handler}}
+)}\hypertarget{classv8_1_1Isolate_ab9ef29fc049d82e0c33994632b4f6ba6}{}\label{classv8_1_1Isolate_ab9ef29fc049d82e0c33994632b4f6ba6}
+Callback function for reporting failed access checks. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Fatal\+Error\+Handler@{Set\+Fatal\+Error\+Handler}}
 \index{Set\+Fatal\+Error\+Handler@{Set\+Fatal\+Error\+Handler}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Fatal\+Error\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Fatal\+Error\+Handler (
+\subsubsection[{\texorpdfstring{Set\+Fatal\+Error\+Handler(\+Fatal\+Error\+Callback that)}{SetFatalErrorHandler(FatalErrorCallback that)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Fatal\+Error\+Handler (
 \begin{DoxyParamCaption}
 \item[{Fatal\+Error\+Callback}]{that}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a131f1e2e6a80618ac3c8c266a041851d}
-\hyperlink{classv8_1_1Set}{Set} the callback to invoke in case of fatal errors. \hypertarget{classv8_1_1Isolate_a71d976355bf47eb2dd09cd5d1279a40d}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Jit\+Code\+Event\+Handler@{Set\+Jit\+Code\+Event\+Handler}}
+)}\hypertarget{classv8_1_1Isolate_a131f1e2e6a80618ac3c8c266a041851d}{}\label{classv8_1_1Isolate_a131f1e2e6a80618ac3c8c266a041851d}
+\hyperlink{classv8_1_1Set}{Set} the callback to invoke in case of fatal errors. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Jit\+Code\+Event\+Handler@{Set\+Jit\+Code\+Event\+Handler}}
 \index{Set\+Jit\+Code\+Event\+Handler@{Set\+Jit\+Code\+Event\+Handler}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Jit\+Code\+Event\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Jit\+Code\+Event\+Handler (
+\subsubsection[{\texorpdfstring{Set\+Jit\+Code\+Event\+Handler(\+Jit\+Code\+Event\+Options options, Jit\+Code\+Event\+Handler event\+\_\+handler)}{SetJitCodeEventHandler(JitCodeEventOptions options, JitCodeEventHandler event_handler)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Jit\+Code\+Event\+Handler (
 \begin{DoxyParamCaption}
 \item[{{\bf Jit\+Code\+Event\+Options}}]{options, }
 \item[{{\bf Jit\+Code\+Event\+Handler}}]{event\+\_\+handler}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a71d976355bf47eb2dd09cd5d1279a40d}
+)}\hypertarget{classv8_1_1Isolate_a71d976355bf47eb2dd09cd5d1279a40d}{}\label{classv8_1_1Isolate_a71d976355bf47eb2dd09cd5d1279a40d}
 Allows the host application to provide the address of a function that is notified each time code is added, moved or removed.
 
 
 \begin{DoxyParams}{Parameters}
-{\em options} & options for the J\+I\+T code event handler. \\
+{\em options} & options for the J\+IT code event handler. \\
 \hline
-{\em event\+\_\+handler} & the J\+I\+T code event handler, which will be invoked each time code is added, moved or removed. \\
+{\em event\+\_\+handler} & the J\+IT code event handler, which will be invoked each time code is added, moved or removed. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
@@ -689,44 +807,51 @@ the set of events declared in Jit\+Code\+Event\+::\+Event\+Type is expected to g
 
 Use \hyperlink{structv8_1_1Isolate_1_1CreateParams}{Isolate\+::\+Create\+Params} to get events for code executed during \hyperlink{classv8_1_1Isolate}{Isolate} setup. 
 \end{DoxyNote}
-\hypertarget{classv8_1_1Isolate_ae4418cb238686a321aa406e90c72fab5}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Object\+Group\+Id@{Set\+Object\+Group\+Id}}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Microtasks\+Policy@{Set\+Microtasks\+Policy}}
+\index{Set\+Microtasks\+Policy@{Set\+Microtasks\+Policy}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Set\+Microtasks\+Policy(\+Microtasks\+Policy policy)}{SetMicrotasksPolicy(MicrotasksPolicy policy)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Microtasks\+Policy (
+\begin{DoxyParamCaption}
+\item[{{\bf Microtasks\+Policy}}]{policy}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_a6bc2069413d88ad90e4c8bee0b9e4037}{}\label{classv8_1_1Isolate_a6bc2069413d88ad90e4c8bee0b9e4037}
+Experimental\+: Controls how Microtasks are invoked. See Microtasks\+Policy for details. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Object\+Group\+Id@{Set\+Object\+Group\+Id}}
 \index{Set\+Object\+Group\+Id@{Set\+Object\+Group\+Id}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Object\+Group\+Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void v8\+::\+Isolate\+::\+Set\+Object\+Group\+Id (
+\subsubsection[{\texorpdfstring{Set\+Object\+Group\+Id(const Persistent$<$ T $>$ \&object, Unique\+Id id)}{SetObjectGroupId(const Persistent< T > &object, UniqueId id)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void v8\+::\+Isolate\+::\+Set\+Object\+Group\+Id (
 \begin{DoxyParamCaption}
 \item[{const {\bf Persistent}$<$ T $>$ \&}]{object, }
 \item[{{\bf Unique\+Id}}]{id}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ae4418cb238686a321aa406e90c72fab5}
-Allows the host application to group objects together. If one object in the group is alive, all objects in the group are alive. After each garbage collection, object groups are removed. It is intended to be used in the before-\/garbage-\/collection callback function, for instance to simulate D\+O\+M tree connections among J\+S wrapper objects. \hyperlink{classv8_1_1Object}{Object} groups for all dependent handles need to be provided for k\+G\+C\+Type\+Mark\+Sweep\+Compact collections, for all other garbage collection types it is sufficient to provide object groups for partially dependent handles only. \hypertarget{classv8_1_1Isolate_a702f0ba4e5dee8a98aeb92239d58784e}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Promise\+Reject\+Callback@{Set\+Promise\+Reject\+Callback}}
+)}\hypertarget{classv8_1_1Isolate_ae4418cb238686a321aa406e90c72fab5}{}\label{classv8_1_1Isolate_ae4418cb238686a321aa406e90c72fab5}
+Allows the host application to group objects together. If one object in the group is alive, all objects in the group are alive. After each garbage collection, object groups are removed. It is intended to be used in the before-\/garbage-\/collection callback function, for instance to simulate D\+OM tree connections among JS wrapper objects. \hyperlink{classv8_1_1Object}{Object} groups for all dependent handles need to be provided for k\+G\+C\+Type\+Mark\+Sweep\+Compact collections, for all other garbage collection types it is sufficient to provide object groups for partially dependent handles only. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Promise\+Reject\+Callback@{Set\+Promise\+Reject\+Callback}}
 \index{Set\+Promise\+Reject\+Callback@{Set\+Promise\+Reject\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Promise\+Reject\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Promise\+Reject\+Callback (
+\subsubsection[{\texorpdfstring{Set\+Promise\+Reject\+Callback(\+Promise\+Reject\+Callback callback)}{SetPromiseRejectCallback(PromiseRejectCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Promise\+Reject\+Callback (
 \begin{DoxyParamCaption}
 \item[{Promise\+Reject\+Callback}]{callback}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a702f0ba4e5dee8a98aeb92239d58784e}
-\hyperlink{classv8_1_1Set}{Set} callback to notify about promise reject with no handler, or revocation of such a previous notification once the handler is added. \hypertarget{classv8_1_1Isolate_a055fc73d18747b96c51f00599cdd3ec1}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Reference@{Set\+Reference}}
+)}\hypertarget{classv8_1_1Isolate_a702f0ba4e5dee8a98aeb92239d58784e}{}\label{classv8_1_1Isolate_a702f0ba4e5dee8a98aeb92239d58784e}
+\hyperlink{classv8_1_1Set}{Set} callback to notify about promise reject with no handler, or revocation of such a previous notification once the handler is added. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Reference@{Set\+Reference}}
 \index{Set\+Reference@{Set\+Reference}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename S $>$ void v8\+::\+Isolate\+::\+Set\+Reference (
+\subsubsection[{\texorpdfstring{Set\+Reference(const Persistent$<$ T $>$ \&parent, const Persistent$<$ S $>$ \&child)}{SetReference(const Persistent< T > &parent, const Persistent< S > &child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename S $>$ void v8\+::\+Isolate\+::\+Set\+Reference (
 \begin{DoxyParamCaption}
 \item[{const {\bf Persistent}$<$ T $>$ \&}]{parent, }
 \item[{const {\bf Persistent}$<$ S $>$ \&}]{child}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a055fc73d18747b96c51f00599cdd3ec1}
-Allows the host application to declare implicit references from an object to another object. If the parent object is alive, the child object is alive too. After each garbage collection, all implicit references are removed. It is intended to be used in the before-\/garbage-\/collection callback function. \hypertarget{classv8_1_1Isolate_a0f8484db111e967d70ea7551b3593ce6}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Reference\+From\+Group@{Set\+Reference\+From\+Group}}
+)}\hypertarget{classv8_1_1Isolate_a055fc73d18747b96c51f00599cdd3ec1}{}\label{classv8_1_1Isolate_a055fc73d18747b96c51f00599cdd3ec1}
+Allows the host application to declare implicit references from an object to another object. If the parent object is alive, the child object is alive too. After each garbage collection, all implicit references are removed. It is intended to be used in the before-\/garbage-\/collection callback function. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Reference\+From\+Group@{Set\+Reference\+From\+Group}}
 \index{Set\+Reference\+From\+Group@{Set\+Reference\+From\+Group}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Reference\+From\+Group}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void v8\+::\+Isolate\+::\+Set\+Reference\+From\+Group (
+\subsubsection[{\texorpdfstring{Set\+Reference\+From\+Group(\+Unique\+Id id, const Persistent$<$ T $>$ \&child)}{SetReferenceFromGroup(UniqueId id, const Persistent< T > &child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void v8\+::\+Isolate\+::\+Set\+Reference\+From\+Group (
 \begin{DoxyParamCaption}
 \item[{{\bf Unique\+Id}}]{id, }
 \item[{const {\bf Persistent}$<$ T $>$ \&}]{child}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a0f8484db111e967d70ea7551b3593ce6}
-Allows the host application to declare implicit references from an object group to an object. If the objects of the object group are alive, the child object is alive too. After each garbage collection, all implicit references are removed. It is intended to be used in the before-\/garbage-\/collection callback function. \hypertarget{classv8_1_1Isolate_addbbe14af7efb92999ac3944bc9ffed5}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Stack\+Limit@{Set\+Stack\+Limit}}
+)}\hypertarget{classv8_1_1Isolate_a0f8484db111e967d70ea7551b3593ce6}{}\label{classv8_1_1Isolate_a0f8484db111e967d70ea7551b3593ce6}
+Allows the host application to declare implicit references from an object group to an object. If the objects of the object group are alive, the child object is alive too. After each garbage collection, all implicit references are removed. It is intended to be used in the before-\/garbage-\/collection callback function. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Stack\+Limit@{Set\+Stack\+Limit}}
 \index{Set\+Stack\+Limit@{Set\+Stack\+Limit}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Stack\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Stack\+Limit (
+\subsubsection[{\texorpdfstring{Set\+Stack\+Limit(uintptr\+\_\+t stack\+\_\+limit)}{SetStackLimit(uintptr_t stack_limit)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Stack\+Limit (
 \begin{DoxyParamCaption}
 \item[{uintptr\+\_\+t}]{stack\+\_\+limit}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_addbbe14af7efb92999ac3944bc9ffed5}
+)}\hypertarget{classv8_1_1Isolate_addbbe14af7efb92999ac3944bc9ffed5}{}\label{classv8_1_1Isolate_addbbe14af7efb92999ac3944bc9ffed5}
 Modifies the stack limit for this \hyperlink{classv8_1_1Isolate}{Isolate}.
 
 
@@ -737,58 +862,83 @@ Modifies the stack limit for this \hyperlink{classv8_1_1Isolate}{Isolate}.
 \begin{DoxyNote}{Note}
 If you are using threads then you should hold the V8\+::\+Locker lock while setting the stack limit and you must set a non-\/default stack limit separately for each thread. 
 \end{DoxyNote}
-\hypertarget{classv8_1_1Isolate_ad608b24b2c1b49a97ed4f04500976166}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Use\+Counter\+Callback@{Set\+Use\+Counter\+Callback}}
+\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Set\+Use\+Counter\+Callback@{Set\+Use\+Counter\+Callback}}
 \index{Set\+Use\+Counter\+Callback@{Set\+Use\+Counter\+Callback}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Set\+Use\+Counter\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Use\+Counter\+Callback (
+\subsubsection[{\texorpdfstring{Set\+Use\+Counter\+Callback(\+Use\+Counter\+Callback callback)}{SetUseCounterCallback(UseCounterCallback callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Set\+Use\+Counter\+Callback (
 \begin{DoxyParamCaption}
 \item[{Use\+Counter\+Callback}]{callback}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ad608b24b2c1b49a97ed4f04500976166}
-Sets a callback for counting the number of times a feature of \hyperlink{classv8_1_1V8}{V8} is used. \hypertarget{classv8_1_1Isolate_ad212b2e0b66ff5d586cd79cfa0b555fb}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Terminate\+Execution@{Terminate\+Execution}}
+)}\hypertarget{classv8_1_1Isolate_ad608b24b2c1b49a97ed4f04500976166}{}\label{classv8_1_1Isolate_ad608b24b2c1b49a97ed4f04500976166}
+Sets a callback for counting the number of times a feature of \hyperlink{classv8_1_1V8}{V8} is used. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Terminate\+Execution@{Terminate\+Execution}}
 \index{Terminate\+Execution@{Terminate\+Execution}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Terminate\+Execution}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Terminate\+Execution (
+\subsubsection[{\texorpdfstring{Terminate\+Execution()}{TerminateExecution()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Terminate\+Execution (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ad212b2e0b66ff5d586cd79cfa0b555fb}
+)}\hypertarget{classv8_1_1Isolate_ad212b2e0b66ff5d586cd79cfa0b555fb}{}\label{classv8_1_1Isolate_ad212b2e0b66ff5d586cd79cfa0b555fb}
 Forcefully terminate the current thread of Java\+Script execution in the given isolate.
 
-This method can be used by any thread even if that thread has not acquired the \hyperlink{classv8_1_1V8}{V8} lock with a \hyperlink{classv8_1_1Locker}{Locker} object. \hypertarget{classv8_1_1Isolate_aba648b3c00dc9f1ef2a22195d99e22e8}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Throw\+Exception@{Throw\+Exception}}
+This method can be used by any thread even if that thread has not acquired the \hyperlink{classv8_1_1V8}{V8} lock with a \hyperlink{classv8_1_1Locker}{Locker} object. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Throw\+Exception@{Throw\+Exception}}
 \index{Throw\+Exception@{Throw\+Exception}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Throw\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Value}$>$ v8\+::\+Isolate\+::\+Throw\+Exception (
+\subsubsection[{\texorpdfstring{Throw\+Exception(\+Local$<$ Value $>$ exception)}{ThrowException(Local< Value > exception)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Value}$>$ v8\+::\+Isolate\+::\+Throw\+Exception (
 \begin{DoxyParamCaption}
 \item[{{\bf Local}$<$ {\bf Value} $>$}]{exception}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_aba648b3c00dc9f1ef2a22195d99e22e8}
-Schedules an exception to be thrown when returning to Java\+Script. When an exception has been scheduled it is illegal to invoke any Java\+Script operation; the caller must return immediately and only after the exception has been handled does it become legal to invoke Java\+Script operations. \hypertarget{classv8_1_1Isolate_a44d513b6426299de4c16e069958a723b}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Visit\+External\+Resources@{Visit\+External\+Resources}}
+)}\hypertarget{classv8_1_1Isolate_aba648b3c00dc9f1ef2a22195d99e22e8}{}\label{classv8_1_1Isolate_aba648b3c00dc9f1ef2a22195d99e22e8}
+Schedules an exception to be thrown when returning to Java\+Script. When an exception has been scheduled it is illegal to invoke any Java\+Script operation; the caller must return immediately and only after the exception has been handled does it become legal to invoke Java\+Script operations. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N(""Calling context concept is not compatible with tail calls, and will be """"removed."", Local$<$ Context $>$ Get\+Calling\+Context())}{V8_DEPRECATE_SOON("Calling context concept is not compatible with tail calls, and will be ""removed.", Local< Context > GetCallingContext())}}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Isolate\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Calling context concept is not compatible with tail}]{calls, }
+\item[{and will be\char`\"{}\char`\"{}removed.\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Context} $>$ }]{Get\+Calling\+Context()}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_adf1b08359e4162ee05caab23377dbc9d}{}\label{classv8_1_1Isolate_adf1b08359e4162ee05caab23377dbc9d}
+Returns the context of the calling Java\+Script code. That is the context of the top-\/most Java\+Script frame. If there are no Java\+Script frames an empty handle is returned. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use a combination of Request\+Interrupt and G\+C\+Callback instead"", Add\+Memory\+Allocation\+Callback(\+Memory\+Allocation\+Callback callback,                                                                                                                               Object\+Space space, Allocation\+Action action))}{V8_DEPRECATED("Use a combination of RequestInterrupt and GCCallback instead", AddMemoryAllocationCallback(MemoryAllocationCallback callback,                                                                                                                               ObjectSpace space, AllocationAction action))}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use a combination of {\bf Request\+Interrupt} and G\+C\+Callback instead\char`\"{}}]{, }
+\item[{Add\+Memory\+Allocation\+Callback(Memory\+Allocation\+Callback callback,                                                                                                                                                                                                                                                           Object\+Space space, Allocation\+Action action)}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_a92b19c574b44f9d093d5d4dedc4515c9}{}\label{classv8_1_1Isolate_a92b19c574b44f9d093d5d4dedc4515c9}
+Enables the host application to provide a mechanism to be notified and perform custom logging when \hyperlink{classv8_1_1V8}{V8} Allocates Executable Memory. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use a combination of Request\+Interrupt and G\+C\+Callback instead"", Remove\+Memory\+Allocation\+Callback(\+Memory\+Allocation\+Callback callback))}{V8_DEPRECATED("Use a combination of RequestInterrupt and GCCallback instead", RemoveMemoryAllocationCallback(MemoryAllocationCallback callback))}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use a combination of {\bf Request\+Interrupt} and G\+C\+Callback instead\char`\"{}}]{, }
+\item[{Remove\+Memory\+Allocation\+Callback(Memory\+Allocation\+Callback callback)}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1Isolate_a5be9f95acfcd2acc552f0a3eb6b41887}{}\label{classv8_1_1Isolate_a5be9f95acfcd2acc552f0a3eb6b41887}
+Removes callback that was installed by Add\+Memory\+Allocation\+Callback. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Visit\+External\+Resources@{Visit\+External\+Resources}}
 \index{Visit\+External\+Resources@{Visit\+External\+Resources}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Visit\+External\+Resources}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Visit\+External\+Resources (
+\subsubsection[{\texorpdfstring{Visit\+External\+Resources(\+External\+Resource\+Visitor $\ast$visitor)}{VisitExternalResources(ExternalResourceVisitor *visitor)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Visit\+External\+Resources (
 \begin{DoxyParamCaption}
 \item[{{\bf External\+Resource\+Visitor} $\ast$}]{visitor}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a44d513b6426299de4c16e069958a723b}
-Iterates through all external resources referenced from current isolate heap. G\+C is not invoked prior to iterating, therefore there is no guarantee that visited objects are still alive. \hypertarget{classv8_1_1Isolate_ac5a3ecbb7ef90476150a20904c522744}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Visit\+Handles\+For\+Partial\+Dependence@{Visit\+Handles\+For\+Partial\+Dependence}}
+)}\hypertarget{classv8_1_1Isolate_a44d513b6426299de4c16e069958a723b}{}\label{classv8_1_1Isolate_a44d513b6426299de4c16e069958a723b}
+Iterates through all external resources referenced from current isolate heap. GC is not invoked prior to iterating, therefore there is no guarantee that visited objects are still alive. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Visit\+Handles\+For\+Partial\+Dependence@{Visit\+Handles\+For\+Partial\+Dependence}}
 \index{Visit\+Handles\+For\+Partial\+Dependence@{Visit\+Handles\+For\+Partial\+Dependence}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Visit\+Handles\+For\+Partial\+Dependence}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Visit\+Handles\+For\+Partial\+Dependence (
+\subsubsection[{\texorpdfstring{Visit\+Handles\+For\+Partial\+Dependence(\+Persistent\+Handle\+Visitor $\ast$visitor)}{VisitHandlesForPartialDependence(PersistentHandleVisitor *visitor)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Visit\+Handles\+For\+Partial\+Dependence (
 \begin{DoxyParamCaption}
 \item[{{\bf Persistent\+Handle\+Visitor} $\ast$}]{visitor}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_ac5a3ecbb7ef90476150a20904c522744}
-Iterates through all the persistent handles in the current isolate\textquotesingle{}s heap that have class\+\_\+ids and are candidates to be marked as partially dependent handles. This will visit handles to young objects created since the last garbage collection but is free to visit an arbitrary superset of these objects. \hypertarget{classv8_1_1Isolate_a8c60c4e0f61250a422ba2336dcd50a75}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Visit\+Handles\+With\+Class\+Ids@{Visit\+Handles\+With\+Class\+Ids}}
+)}\hypertarget{classv8_1_1Isolate_ac5a3ecbb7ef90476150a20904c522744}{}\label{classv8_1_1Isolate_ac5a3ecbb7ef90476150a20904c522744}
+Iterates through all the persistent handles in the current isolate\textquotesingle{}s heap that have class\+\_\+ids and are candidates to be marked as partially dependent handles. This will visit handles to young objects created since the last garbage collection but is free to visit an arbitrary superset of these objects. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Visit\+Handles\+With\+Class\+Ids@{Visit\+Handles\+With\+Class\+Ids}}
 \index{Visit\+Handles\+With\+Class\+Ids@{Visit\+Handles\+With\+Class\+Ids}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Visit\+Handles\+With\+Class\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Visit\+Handles\+With\+Class\+Ids (
+\subsubsection[{\texorpdfstring{Visit\+Handles\+With\+Class\+Ids(\+Persistent\+Handle\+Visitor $\ast$visitor)}{VisitHandlesWithClassIds(PersistentHandleVisitor *visitor)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Visit\+Handles\+With\+Class\+Ids (
 \begin{DoxyParamCaption}
 \item[{{\bf Persistent\+Handle\+Visitor} $\ast$}]{visitor}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1Isolate_a8c60c4e0f61250a422ba2336dcd50a75}
-Iterates through all the persistent handles in the current isolate\textquotesingle{}s heap that have class\+\_\+ids. \hypertarget{classv8_1_1Isolate_ae70ee311ab3271f9fbb043749d5be8c0}{}\index{v8\+::\+Isolate@{v8\+::\+Isolate}!Will\+Autorun\+Microtasks@{Will\+Autorun\+Microtasks}}
-\index{Will\+Autorun\+Microtasks@{Will\+Autorun\+Microtasks}!v8\+::\+Isolate@{v8\+::\+Isolate}}
-\subsubsection[{Will\+Autorun\+Microtasks}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Isolate\+::\+Will\+Autorun\+Microtasks (
+)}\hypertarget{classv8_1_1Isolate_a8c60c4e0f61250a422ba2336dcd50a75}{}\label{classv8_1_1Isolate_a8c60c4e0f61250a422ba2336dcd50a75}
+Iterates through all the persistent handles in the current isolate\textquotesingle{}s heap that have class\+\_\+ids. \index{v8\+::\+Isolate@{v8\+::\+Isolate}!Visit\+Weak\+Handles@{Visit\+Weak\+Handles}}
+\index{Visit\+Weak\+Handles@{Visit\+Weak\+Handles}!v8\+::\+Isolate@{v8\+::\+Isolate}}
+\subsubsection[{\texorpdfstring{Visit\+Weak\+Handles(\+Persistent\+Handle\+Visitor $\ast$visitor)}{VisitWeakHandles(PersistentHandleVisitor *visitor)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Isolate\+::\+Visit\+Weak\+Handles (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf Persistent\+Handle\+Visitor} $\ast$}]{visitor}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1Isolate_ae70ee311ab3271f9fbb043749d5be8c0}
-Experimental\+: Returns whether the Microtask Work Queue is automatically run when the script call depth decrements to zero. 
+)}\hypertarget{classv8_1_1Isolate_a4f821750a43d17e51778b281ce2c1fcd}{}\label{classv8_1_1Isolate_a4f821750a43d17e51778b281ce2c1fcd}
+Iterates through all the persistent handles in the current isolate\textquotesingle{}s heap that have class\+\_\+ids and are weak to be marked as inactive if there is no pending activity for the handle. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

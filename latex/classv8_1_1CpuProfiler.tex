@@ -13,46 +13,55 @@ void \hyperlink{classv8_1_1CpuProfiler_a7a9b75d3d7285d90344e1b8f14e97076}{Start\
 \item 
 \hyperlink{classv8_1_1CpuProfile}{Cpu\+Profile} $\ast$ \hyperlink{classv8_1_1CpuProfiler_a34acaa3b0e40cf2f92e9e6acb3fb5de7}{Stop\+Profiling} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ title)
 \item 
+void \hyperlink{classv8_1_1CpuProfiler_ac497150fc1bced99d37d0ac1e932defa}{Collect\+Sample} ()
+\item 
 void \hyperlink{classv8_1_1CpuProfiler_a68e6da6f9ff4a0d3bde505f378a9a7fa}{Set\+Idle} (bool is\+\_\+idle)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Interface for controlling C\+P\+U profiling. Instance of the profiler can be retrieved using \hyperlink{classv8_1_1Isolate_a7eb415d9210d912aa57877ab6416fec8}{v8\+::\+Isolate\+::\+Get\+Cpu\+Profiler}. 
+Interface for controlling C\+PU profiling. Instance of the profiler can be retrieved using \hyperlink{classv8_1_1Isolate_a7eb415d9210d912aa57877ab6416fec8}{v8\+::\+Isolate\+::\+Get\+Cpu\+Profiler}. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1CpuProfiler_a68e6da6f9ff4a0d3bde505f378a9a7fa}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Set\+Idle@{Set\+Idle}}
+\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Collect\+Sample@{Collect\+Sample}}
+\index{Collect\+Sample@{Collect\+Sample}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
+\subsubsection[{\texorpdfstring{Collect\+Sample()}{CollectSample()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profiler\+::\+Collect\+Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classv8_1_1CpuProfiler_ac497150fc1bced99d37d0ac1e932defa}{}\label{classv8_1_1CpuProfiler_ac497150fc1bced99d37d0ac1e932defa}
+Force collection of a sample. Must be called on the VM thread. Recording the forced sample does not contribute to the aggregated profile statistics. \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Set\+Idle@{Set\+Idle}}
 \index{Set\+Idle@{Set\+Idle}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
-\subsubsection[{Set\+Idle}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profiler\+::\+Set\+Idle (
+\subsubsection[{\texorpdfstring{Set\+Idle(bool is\+\_\+idle)}{SetIdle(bool is_idle)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profiler\+::\+Set\+Idle (
 \begin{DoxyParamCaption}
 \item[{bool}]{is\+\_\+idle}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1CpuProfiler_a68e6da6f9ff4a0d3bde505f378a9a7fa}
-Tells the profiler whether the embedder is idle. \hypertarget{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Set\+Sampling\+Interval@{Set\+Sampling\+Interval}}
+)}\hypertarget{classv8_1_1CpuProfiler_a68e6da6f9ff4a0d3bde505f378a9a7fa}{}\label{classv8_1_1CpuProfiler_a68e6da6f9ff4a0d3bde505f378a9a7fa}
+Tells the profiler whether the embedder is idle. \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Set\+Sampling\+Interval@{Set\+Sampling\+Interval}}
 \index{Set\+Sampling\+Interval@{Set\+Sampling\+Interval}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
-\subsubsection[{Set\+Sampling\+Interval}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profiler\+::\+Set\+Sampling\+Interval (
+\subsubsection[{\texorpdfstring{Set\+Sampling\+Interval(int us)}{SetSamplingInterval(int us)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profiler\+::\+Set\+Sampling\+Interval (
 \begin{DoxyParamCaption}
 \item[{int}]{us}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}
-Changes default C\+P\+U profiler sampling interval to the specified number of microseconds. Default interval is 1000us. This method must be called when there are no profiles being recorded. \hypertarget{classv8_1_1CpuProfiler_a7a9b75d3d7285d90344e1b8f14e97076}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Start\+Profiling@{Start\+Profiling}}
+)}\hypertarget{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}{}\label{classv8_1_1CpuProfiler_ac5b05c72fb899e20adfa7f8cc57f21fb}
+Changes default C\+PU profiler sampling interval to the specified number of microseconds. Default interval is 1000us. This method must be called when there are no profiles being recorded. \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Start\+Profiling@{Start\+Profiling}}
 \index{Start\+Profiling@{Start\+Profiling}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
-\subsubsection[{Start\+Profiling}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profiler\+::\+Start\+Profiling (
+\subsubsection[{\texorpdfstring{Start\+Profiling(\+Local$<$ String $>$ title, bool record\+\_\+samples=false)}{StartProfiling(Local< String > title, bool record_samples=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profiler\+::\+Start\+Profiling (
 \begin{DoxyParamCaption}
 \item[{{\bf Local}$<$ {\bf String} $>$}]{title, }
 \item[{bool}]{record\+\_\+samples = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1CpuProfiler_a7a9b75d3d7285d90344e1b8f14e97076}
-Starts collecting C\+P\+U profile. Title may be an empty string. It is allowed to have several profiles being collected at once. Attempts to start collecting several profiles with the same title are silently ignored. While collecting a profile, functions from all security contexts are included in it. The token-\/based filtering is only performed when querying for a profile.
+)}\hypertarget{classv8_1_1CpuProfiler_a7a9b75d3d7285d90344e1b8f14e97076}{}\label{classv8_1_1CpuProfiler_a7a9b75d3d7285d90344e1b8f14e97076}
+Starts collecting C\+PU profile. Title may be an empty string. It is allowed to have several profiles being collected at once. Attempts to start collecting several profiles with the same title are silently ignored. While collecting a profile, functions from all security contexts are included in it. The token-\/based filtering is only performed when querying for a profile.
 
-$\vert$record\+\_\+samples$\vert$ parameter controls whether individual samples should be recorded in addition to the aggregated tree. \hypertarget{classv8_1_1CpuProfiler_a34acaa3b0e40cf2f92e9e6acb3fb5de7}{}\index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Stop\+Profiling@{Stop\+Profiling}}
+$\vert$record\+\_\+samples$\vert$ parameter controls whether individual samples should be recorded in addition to the aggregated tree. \index{v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}!Stop\+Profiling@{Stop\+Profiling}}
 \index{Stop\+Profiling@{Stop\+Profiling}!v8\+::\+Cpu\+Profiler@{v8\+::\+Cpu\+Profiler}}
-\subsubsection[{Stop\+Profiling}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cpu\+Profile}$\ast$ v8\+::\+Cpu\+Profiler\+::\+Stop\+Profiling (
+\subsubsection[{\texorpdfstring{Stop\+Profiling(\+Local$<$ String $>$ title)}{StopProfiling(Local< String > title)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cpu\+Profile}$\ast$ v8\+::\+Cpu\+Profiler\+::\+Stop\+Profiling (
 \begin{DoxyParamCaption}
 \item[{{\bf Local}$<$ {\bf String} $>$}]{title}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1CpuProfiler_a34acaa3b0e40cf2f92e9e6acb3fb5de7}
-Stops collecting C\+P\+U profile with a given title and returns it. If the title given is empty, finishes the last profile started. 
+)}\hypertarget{classv8_1_1CpuProfiler_a34acaa3b0e40cf2f92e9e6acb3fb5de7}{}\label{classv8_1_1CpuProfiler_a34acaa3b0e40cf2f92e9e6acb3fb5de7}
+Stops collecting C\+PU profile with a given title and returns it. If the title given is empty, finishes the last profile started. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

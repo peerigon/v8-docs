@@ -6,5 +6,6 @@ var searchData=
   ['hasindexedlookupinterceptor',['HasIndexedLookupInterceptor',['../classv8_1_1Object.html#a278913bcd203434870ce5184a538a9af',1,'v8::Object']]],
   ['hasinstance',['HasInstance',['../classv8_1_1FunctionTemplate.html#a90d838f3456d300bd19d2a2cb98645bd',1,'v8::FunctionTemplate']]],
   ['hasnamedlookupinterceptor',['HasNamedLookupInterceptor',['../classv8_1_1Object.html#a1e96fcb9ee17101c0299ec68f2cf8610',1,'v8::Object']]],
+  ['hasprivate',['HasPrivate',['../classv8_1_1Object.html#aad699867935fd2142ec97afa6e39a7f0',1,'v8::Object']]],
   ['hasterminated',['HasTerminated',['../classv8_1_1TryCatch.html#a7e012477ac47db9480f85d55427987c7',1,'v8::TryCatch']]]
 ];

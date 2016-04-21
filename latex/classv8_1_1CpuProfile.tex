@@ -26,65 +26,65 @@ void \hyperlink{classv8_1_1CpuProfile_a70c93f0c14d07a7e1bad42ee95665ca0}{Delete}
 
 
 \subsection{Detailed Description}
-\hyperlink{classv8_1_1CpuProfile}{Cpu\+Profile} contains a C\+P\+U profile in a form of top-\/down call tree (from main() down to functions that do all the work). 
+\hyperlink{classv8_1_1CpuProfile}{Cpu\+Profile} contains a C\+PU profile in a form of top-\/down call tree (from main() down to functions that do all the work). 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1CpuProfile_a70c93f0c14d07a7e1bad42ee95665ca0}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Delete@{Delete}}
+\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Delete@{Delete}}
 \index{Delete@{Delete}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
-\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profile\+::\+Delete (
+\subsubsection[{\texorpdfstring{Delete()}{Delete()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Cpu\+Profile\+::\+Delete (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classv8_1_1CpuProfile_a70c93f0c14d07a7e1bad42ee95665ca0}
-Deletes the profile and removes it from \hyperlink{classv8_1_1CpuProfiler}{Cpu\+Profiler}\textquotesingle{}s list. All pointers to nodes previously returned become invalid. \hypertarget{classv8_1_1CpuProfile_a15170e2e9eeb972fddf949bd08dd09ff}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+End\+Time@{Get\+End\+Time}}
+)}\hypertarget{classv8_1_1CpuProfile_a70c93f0c14d07a7e1bad42ee95665ca0}{}\label{classv8_1_1CpuProfile_a70c93f0c14d07a7e1bad42ee95665ca0}
+Deletes the profile and removes it from \hyperlink{classv8_1_1CpuProfiler}{Cpu\+Profiler}\textquotesingle{}s list. All pointers to nodes previously returned become invalid. \index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+End\+Time@{Get\+End\+Time}}
 \index{Get\+End\+Time@{Get\+End\+Time}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
-\subsubsection[{Get\+End\+Time}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t v8\+::\+Cpu\+Profile\+::\+Get\+End\+Time (
+\subsubsection[{\texorpdfstring{Get\+End\+Time() const }{GetEndTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t v8\+::\+Cpu\+Profile\+::\+Get\+End\+Time (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1CpuProfile_a15170e2e9eeb972fddf949bd08dd09ff}
-Returns time when the profile recording was stopped (in microseconds) since some unspecified starting point. The point is equal to the starting point used by Get\+Start\+Time. \hypertarget{classv8_1_1CpuProfile_a59470cd1286e949dd069eea87777a074}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Sample@{Get\+Sample}}
+) const}\hypertarget{classv8_1_1CpuProfile_a15170e2e9eeb972fddf949bd08dd09ff}{}\label{classv8_1_1CpuProfile_a15170e2e9eeb972fddf949bd08dd09ff}
+Returns time when the profile recording was stopped (in microseconds) since some unspecified starting point. The point is equal to the starting point used by Get\+Start\+Time. \index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Sample@{Get\+Sample}}
 \index{Get\+Sample@{Get\+Sample}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
-\subsubsection[{Get\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cpu\+Profile\+Node}$\ast$ v8\+::\+Cpu\+Profile\+::\+Get\+Sample (
+\subsubsection[{\texorpdfstring{Get\+Sample(int index) const }{GetSample(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cpu\+Profile\+Node}$\ast$ v8\+::\+Cpu\+Profile\+::\+Get\+Sample (
 \begin{DoxyParamCaption}
 \item[{int}]{index}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1CpuProfile_a59470cd1286e949dd069eea87777a074}
-Returns profile node corresponding to the top frame the sample at the given index. \hypertarget{classv8_1_1CpuProfile_a2ca9d8e862dc2b06892196b5e5a14994}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Samples\+Count@{Get\+Samples\+Count}}
+) const}\hypertarget{classv8_1_1CpuProfile_a59470cd1286e949dd069eea87777a074}{}\label{classv8_1_1CpuProfile_a59470cd1286e949dd069eea87777a074}
+Returns profile node corresponding to the top frame the sample at the given index. \index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Samples\+Count@{Get\+Samples\+Count}}
 \index{Get\+Samples\+Count@{Get\+Samples\+Count}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
-\subsubsection[{Get\+Samples\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Cpu\+Profile\+::\+Get\+Samples\+Count (
+\subsubsection[{\texorpdfstring{Get\+Samples\+Count() const }{GetSamplesCount() const }}]{\setlength{\rightskip}{0pt plus 5cm}int v8\+::\+Cpu\+Profile\+::\+Get\+Samples\+Count (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1CpuProfile_a2ca9d8e862dc2b06892196b5e5a14994}
-Returns number of samples recorded. The samples are not recorded unless $\vert$record\+\_\+samples$\vert$ parameter of Cpu\+Profiler\+::\+Start\+Cpu\+Profiling is true. \hypertarget{classv8_1_1CpuProfile_a310b49cf2ac856821b5db5dd856580e7}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Sample\+Timestamp@{Get\+Sample\+Timestamp}}
+) const}\hypertarget{classv8_1_1CpuProfile_a2ca9d8e862dc2b06892196b5e5a14994}{}\label{classv8_1_1CpuProfile_a2ca9d8e862dc2b06892196b5e5a14994}
+Returns number of samples recorded. The samples are not recorded unless $\vert$record\+\_\+samples$\vert$ parameter of Cpu\+Profiler\+::\+Start\+Cpu\+Profiling is true. \index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Sample\+Timestamp@{Get\+Sample\+Timestamp}}
 \index{Get\+Sample\+Timestamp@{Get\+Sample\+Timestamp}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
-\subsubsection[{Get\+Sample\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t v8\+::\+Cpu\+Profile\+::\+Get\+Sample\+Timestamp (
+\subsubsection[{\texorpdfstring{Get\+Sample\+Timestamp(int index) const }{GetSampleTimestamp(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t v8\+::\+Cpu\+Profile\+::\+Get\+Sample\+Timestamp (
 \begin{DoxyParamCaption}
 \item[{int}]{index}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1CpuProfile_a310b49cf2ac856821b5db5dd856580e7}
-Returns the timestamp of the sample. The timestamp is the number of microseconds since some unspecified starting point. The point is equal to the starting point used by Get\+Start\+Time. \hypertarget{classv8_1_1CpuProfile_aac317de54bdfc4523b5ecea522c01ad1}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Start\+Time@{Get\+Start\+Time}}
+) const}\hypertarget{classv8_1_1CpuProfile_a310b49cf2ac856821b5db5dd856580e7}{}\label{classv8_1_1CpuProfile_a310b49cf2ac856821b5db5dd856580e7}
+Returns the timestamp of the sample. The timestamp is the number of microseconds since some unspecified starting point. The point is equal to the starting point used by Get\+Start\+Time. \index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Start\+Time@{Get\+Start\+Time}}
 \index{Get\+Start\+Time@{Get\+Start\+Time}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
-\subsubsection[{Get\+Start\+Time}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t v8\+::\+Cpu\+Profile\+::\+Get\+Start\+Time (
+\subsubsection[{\texorpdfstring{Get\+Start\+Time() const }{GetStartTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t v8\+::\+Cpu\+Profile\+::\+Get\+Start\+Time (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1CpuProfile_aac317de54bdfc4523b5ecea522c01ad1}
-Returns time when the profile recording was started (in microseconds) since some unspecified starting point. \hypertarget{classv8_1_1CpuProfile_a34cc58f44862c27ea781ce47ca79f74e}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Title@{Get\+Title}}
+) const}\hypertarget{classv8_1_1CpuProfile_aac317de54bdfc4523b5ecea522c01ad1}{}\label{classv8_1_1CpuProfile_aac317de54bdfc4523b5ecea522c01ad1}
+Returns time when the profile recording was started (in microseconds) since some unspecified starting point. \index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Title@{Get\+Title}}
 \index{Get\+Title@{Get\+Title}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
-\subsubsection[{Get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Cpu\+Profile\+::\+Get\+Title (
+\subsubsection[{\texorpdfstring{Get\+Title() const }{GetTitle() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf String}$>$ v8\+::\+Cpu\+Profile\+::\+Get\+Title (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1CpuProfile_a34cc58f44862c27ea781ce47ca79f74e}
-Returns C\+P\+U profile title. \hypertarget{classv8_1_1CpuProfile_aec978f073af6634b6495baa65209a31f}{}\index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Top\+Down\+Root@{Get\+Top\+Down\+Root}}
+) const}\hypertarget{classv8_1_1CpuProfile_a34cc58f44862c27ea781ce47ca79f74e}{}\label{classv8_1_1CpuProfile_a34cc58f44862c27ea781ce47ca79f74e}
+Returns C\+PU profile title. \index{v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}!Get\+Top\+Down\+Root@{Get\+Top\+Down\+Root}}
 \index{Get\+Top\+Down\+Root@{Get\+Top\+Down\+Root}!v8\+::\+Cpu\+Profile@{v8\+::\+Cpu\+Profile}}
-\subsubsection[{Get\+Top\+Down\+Root}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cpu\+Profile\+Node}$\ast$ v8\+::\+Cpu\+Profile\+::\+Get\+Top\+Down\+Root (
+\subsubsection[{\texorpdfstring{Get\+Top\+Down\+Root() const }{GetTopDownRoot() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cpu\+Profile\+Node}$\ast$ v8\+::\+Cpu\+Profile\+::\+Get\+Top\+Down\+Root (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}\label{classv8_1_1CpuProfile_aec978f073af6634b6495baa65209a31f}
+) const}\hypertarget{classv8_1_1CpuProfile_aec978f073af6634b6495baa65209a31f}{}\label{classv8_1_1CpuProfile_aec978f073af6634b6495baa65209a31f}
 Returns the root node of the top down call tree. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

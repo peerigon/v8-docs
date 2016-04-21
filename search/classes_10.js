@@ -1,8 +1,8 @@
 var searchData=
 [
   ['sampleinfo',['SampleInfo',['../structv8_1_1SampleInfo.html',1,'v8']]],
-  ['scope',['Scope',['../classv8_1_1Isolate_1_1Scope.html',1,'v8::Isolate']]],
   ['scope',['Scope',['../classv8_1_1Context_1_1Scope.html',1,'v8::Context']]],
+  ['scope',['Scope',['../classv8_1_1Isolate_1_1Scope.html',1,'v8::Isolate']]],
   ['script',['Script',['../classv8_1_1Script.html',1,'v8']]],
   ['scriptcompiler',['ScriptCompiler',['../classv8_1_1ScriptCompiler.html',1,'v8']]],
   ['scriptorigin',['ScriptOrigin',['../classv8_1_1ScriptOrigin.html',1,'v8']]],

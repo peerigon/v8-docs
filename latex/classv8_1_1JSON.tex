@@ -1,5 +1,5 @@
-\hypertarget{classv8_1_1JSON}{}\section{v8\+:\+:J\+S\+O\+N Class Reference}
-\label{classv8_1_1JSON}\index{v8\+::\+J\+S\+O\+N@{v8\+::\+J\+S\+O\+N}}
+\hypertarget{classv8_1_1JSON}{}\section{v8\+:\+:J\+S\+ON Class Reference}
+\label{classv8_1_1JSON}\index{v8\+::\+J\+S\+ON@{v8\+::\+J\+S\+ON}}
 
 
 {\ttfamily \#include $<$v8.\+h$>$}
@@ -7,25 +7,48 @@
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1JSON_a49d405ef7c6adbf476698d23380613fc}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Parse(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ json\+\_\+string))
+static \hyperlink{classv8_1_1JSON_a72c6005089e2f5589281c98f6649ab9e}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use the maybe version taking context\char`\"{}, Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Parse(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ json\+\_\+string))
 \item 
-\hypertarget{classv8_1_1JSON_ac459be02a86db2d1a7fb67ddd72023c0}{}static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+L\+T \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Parse} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ json\+\_\+string)\label{classv8_1_1JSON_ac459be02a86db2d1a7fb67ddd72023c0}
+static {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use the maybe version taking context\char`\"{}, Maybe\+Local$<$ \hyperlink{classv8_1_1Value}{Value} $>$ Parse(\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate,                                                                                                                                                                                                   \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ json\+\_\+string))\hypertarget{classv8_1_1JSON_ae0a83d882aa370f5941a01bbca8f9c65}{}\label{classv8_1_1JSON_ae0a83d882aa370f5941a01bbca8f9c65}
 
+\item 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Parse} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ json\+\_\+string)\hypertarget{classv8_1_1JSON_acd9320e365e9ac941c761c3e4b3e209d}{}\label{classv8_1_1JSON_acd9320e365e9ac941c761c3e4b3e209d}
+
+\item 
+static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ \hyperlink{classv8_1_1JSON_a6f34198f6ed17850c069c47a3a31fa28}{Stringify} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ json\+\_\+object)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A \hyperlink{classv8_1_1JSON}{J\+S\+O\+N} Parser. 
+A \hyperlink{classv8_1_1JSON}{J\+S\+ON} Parser and Stringifier. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classv8_1_1JSON_a49d405ef7c6adbf476698d23380613fc}{}\index{v8\+::\+J\+S\+O\+N@{v8\+::\+J\+S\+O\+N}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}!v8\+::\+J\+S\+O\+N@{v8\+::\+J\+S\+O\+N}}
-\subsubsection[{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+J\+S\+O\+N\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N (
+\index{v8\+::\+J\+S\+ON@{v8\+::\+J\+S\+ON}!Stringify@{Stringify}}
+\index{Stringify@{Stringify}!v8\+::\+J\+S\+ON@{v8\+::\+J\+S\+ON}}
+\subsubsection[{\texorpdfstring{Stringify(\+Local$<$ Context $>$ context, Local$<$ Object $>$ json\+\_\+object)}{Stringify(Local< Context > context, Local< Object > json_object)}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT {\bf Maybe\+Local}$<${\bf String}$>$ v8\+::\+J\+S\+O\+N\+::\+Stringify (
 \begin{DoxyParamCaption}
-\item[{\char`\"{}Use maybe version\char`\"{}}]{, }
+\item[{{\bf Local}$<$ {\bf Context} $>$}]{context, }
+\item[{{\bf Local}$<$ {\bf Object} $>$}]{json\+\_\+object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1JSON_a6f34198f6ed17850c069c47a3a31fa28}{}\label{classv8_1_1JSON_a6f34198f6ed17850c069c47a3a31fa28}
+Tries to stringify the J\+S\+O\+N-\/serializable object $\vert$json\+\_\+object$\vert$ and returns it as string if successful.
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+\_\+object} & The J\+S\+O\+N-\/serializable object to stringify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding string if successfully stringified. 
+\end{DoxyReturn}
+\index{v8\+::\+J\+S\+ON@{v8\+::\+J\+S\+ON}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+J\+S\+ON@{v8\+::\+J\+S\+ON}}
+\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use the maybe version taking context"", Local$<$ Value $>$ Parse(\+Local$<$ String $>$ json\+\_\+string))}{V8_DEPRECATED("Use the maybe version taking context", Local< Value > Parse(Local< String > json_string))}}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+J\+S\+O\+N\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Use the maybe version taking context\char`\"{}}]{, }
 \item[{{\bf Local}$<$ {\bf Value} $>$ }]{ParseLocal$<$ String $>$ json\+\_\+string}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\label{classv8_1_1JSON_a49d405ef7c6adbf476698d23380613fc}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1JSON_a72c6005089e2f5589281c98f6649ab9e}{}\label{classv8_1_1JSON_a72c6005089e2f5589281c98f6649ab9e}
 Tries to parse the string $\vert$json\+\_\+string$\vert$ and returns it as value if successful.
 
 
