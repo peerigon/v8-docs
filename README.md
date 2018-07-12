@@ -16,10 +16,15 @@ Contribute
 
 1. Fork the project
 2. `git clone https://github.com/<your username>/v8-docs.git`
-3. `git checkout gh-pages`
-4. `git submodule init`
-5. `git submodule foreach git pull`
-6. `doxygen`
+
+Then:
+
+```shell
+git checkout gh-pages
+git submodule init
+git submodule foreach git pull
+doxygen
+```
 
 [doxygen](http://www.stack.nl/~dimitri/doxygen/) automatically pulls the `Doxyfile` and generates the docs. If
 you don't have [doxygen](http://www.stack.nl/~dimitri/doxygen/): There are ready-to-use binaries for
