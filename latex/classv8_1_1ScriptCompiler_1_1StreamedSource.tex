@@ -7,28 +7,34 @@
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_a17b52f85ac22120e687b16357d662da2}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_a17b52f85ac22120e687b16357d662da2}} 
 enum {\bfseries Encoding} \{ {\bfseries O\+N\+E\+\_\+\+B\+Y\+TE}, 
 {\bfseries T\+W\+O\+\_\+\+B\+Y\+TE}, 
 {\bfseries U\+T\+F8}
- \}\hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_a17b52f85ac22120e687b16357d662da2}{}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_a17b52f85ac22120e687b16357d662da2}
-
+ \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Streamed\+Source} (\hyperlink{classv8_1_1ScriptCompiler_1_1ExternalSourceStream}{External\+Source\+Stream} $\ast$source\+\_\+stream, Encoding encoding)\hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_a4da404a49e48a12927c743797833d8aa}{}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_a4da404a49e48a12927c743797833d8aa}
-
+\mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_a4da404a49e48a12927c743797833d8aa}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_a4da404a49e48a12927c743797833d8aa}} 
+{\bfseries Streamed\+Source} (\mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1ExternalSourceStream}{External\+Source\+Stream}} $\ast$source\+\_\+stream, Encoding encoding)
 \item 
-const \hyperlink{structv8_1_1ScriptCompiler_1_1CachedData}{Cached\+Data} $\ast$ {\bfseries Get\+Cached\+Data} () const \hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_a845dc408f6e2f98e51d6525836982873}{}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_a845dc408f6e2f98e51d6525836982873}
-
+\mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_ae85255c03008c888bca870f48b113d82}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_ae85255c03008c888bca870f48b113d82}} 
+const \mbox{\hyperlink{structv8_1_1ScriptCompiler_1_1CachedData}{Cached\+Data}} $\ast$ {\bfseries Get\+Cached\+Data} () const
 \item 
-internal\+::\+Streamed\+Source $\ast$ {\bfseries impl} () const \hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_a60c3aa01ea04a6cd1aa1b7a5edb74c2b}{}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_a60c3aa01ea04a6cd1aa1b7a5edb74c2b}
-
+\mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_a45714bf012e619379d70707b535c8224}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_a45714bf012e619379d70707b535c8224}} 
+internal\+::\+Script\+Streaming\+Data $\ast$ {\bfseries impl} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_ac0024da49305c2d8de1a61348c1c8880}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_ac0024da49305c2d8de1a61348c1c8880}} 
+{\bfseries Streamed\+Source} (const \mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source}} \&)=delete
+\item 
+\mbox{\Hypertarget{classv8_1_1ScriptCompiler_1_1StreamedSource_ab2425dcd427fcdfaf6ac0d0cd295bcbb}\label{classv8_1_1ScriptCompiler_1_1StreamedSource_ab2425dcd427fcdfaf6ac0d0cd295bcbb}} 
+\mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source}} \& {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source}} \&)=delete
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source} code which can be streamed into \hyperlink{classv8_1_1V8}{V8} in pieces. It will be parsed while streaming. It can be compiled after the streaming is complete. \hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source} must be kept alive while the streaming task is ran (see \hyperlink{classv8_1_1ScriptCompiler_1_1ScriptStreamingTask}{Script\+Streaming\+Task} below). 
+\mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1Source}{Source}} code which can be streamed into \mbox{\hyperlink{classv8_1_1V8}{V8}} in pieces. It will be parsed while streaming. It can be compiled after the streaming is complete. \mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1StreamedSource}{Streamed\+Source}} must be kept alive while the streaming task is ran (see \mbox{\hyperlink{classv8_1_1ScriptCompiler_1_1ScriptStreamingTask}{Script\+Streaming\+Task}} below). 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

@@ -1,0 +1,80 @@
+\hypertarget{classv8_1_1BigInt}{}\section{v8\+:\+:Big\+Int Class Reference}
+\label{classv8_1_1BigInt}\index{v8\+::\+Big\+Int@{v8\+::\+Big\+Int}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+Inheritance diagram for v8\+:\+:Big\+Int\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1BigInt}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classv8_1_1BigInt_a32d8d340aef40da93cde35a9baf7e58d}{Uint64\+Value}} (bool $\ast$lossless=nullptr) const
+\item 
+int64\+\_\+t \mbox{\hyperlink{classv8_1_1BigInt_a6478543bf9a595571d76e60fd3f2af0e}{Int64\+Value}} (bool $\ast$lossless=nullptr) const
+\item 
+int \mbox{\hyperlink{classv8_1_1BigInt_a840783db8ae94178040c5a8a7bb52875}{Word\+Count}} () const
+\item 
+void \mbox{\hyperlink{classv8_1_1BigInt_adbc582fd6ae26b6afe9b5591b5fe06e7}{To\+Words\+Array}} (int $\ast$sign\+\_\+bit, int $\ast$word\+\_\+count, uint64\+\_\+t $\ast$words) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1BigInt_a2ae15b635778d6c84f7715c8fb75aab6}\label{classv8_1_1BigInt_a2ae15b635778d6c84f7715c8fb75aab6}} 
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, int64\+\_\+t value)
+\item 
+\mbox{\Hypertarget{classv8_1_1BigInt_afae6436f0bce457d6280a25377dca250}\label{classv8_1_1BigInt_afae6436f0bce457d6280a25377dca250}} 
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ {\bfseries New\+From\+Unsigned} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, uint64\+\_\+t value)
+\item 
+static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $>$ \mbox{\hyperlink{classv8_1_1BigInt_a2e315509efbc08fef90ef54d7e179e4d}{New\+From\+Words}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, int sign\+\_\+bit, int word\+\_\+count, const uint64\+\_\+t $\ast$words)
+\item 
+\mbox{\Hypertarget{classv8_1_1BigInt_ad6d5b03552c5f81589d641ef2fc055d8}\label{classv8_1_1BigInt_ad6d5b03552c5f81589d641ef2fc055d8}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $\ast$obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Java\+Script \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} value (\href{https://tc39.github.io/proposal-bigint}{\tt https\+://tc39.\+github.\+io/proposal-\/bigint}) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1BigInt_a6478543bf9a595571d76e60fd3f2af0e}\label{classv8_1_1BigInt_a6478543bf9a595571d76e60fd3f2af0e}} 
+\index{v8\+::\+Big\+Int@{v8\+::\+Big\+Int}!Int64\+Value@{Int64\+Value}}
+\index{Int64\+Value@{Int64\+Value}!v8\+::\+Big\+Int@{v8\+::\+Big\+Int}}
+\subsubsection{\texorpdfstring{Int64\+Value()}{Int64Value()}}
+{\footnotesize\ttfamily int64\+\_\+t v8\+::\+Big\+Int\+::\+Int64\+Value (\begin{DoxyParamCaption}\item[{bool $\ast$}]{lossless = {\ttfamily nullptr} }\end{DoxyParamCaption}) const}
+
+Returns the value of this \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} as a signed 64-\/bit integer. If {\ttfamily lossless} is provided, it will reflect whether this \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} was truncated or not. \mbox{\Hypertarget{classv8_1_1BigInt_a2e315509efbc08fef90ef54d7e179e4d}\label{classv8_1_1BigInt_a2e315509efbc08fef90ef54d7e179e4d}} 
+\index{v8\+::\+Big\+Int@{v8\+::\+Big\+Int}!New\+From\+Words@{New\+From\+Words}}
+\index{New\+From\+Words@{New\+From\+Words}!v8\+::\+Big\+Int@{v8\+::\+Big\+Int}}
+\subsubsection{\texorpdfstring{New\+From\+Words()}{NewFromWords()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}}$>$ v8\+::\+Big\+Int\+::\+New\+From\+Words (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context,  }\item[{int}]{sign\+\_\+bit,  }\item[{int}]{word\+\_\+count,  }\item[{const uint64\+\_\+t $\ast$}]{words }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} object using a specified sign bit and a specified list of digits/words. The resulting number is calculated as\+:
+
+(-\/1)$^\wedge$sign\+\_\+bit $\ast$ (words\mbox{[}0\mbox{]} $\ast$ (2$^\wedge$64)$^\wedge$0 + words\mbox{[}1\mbox{]} $\ast$ (2$^\wedge$64)$^\wedge$1 + ...) \mbox{\Hypertarget{classv8_1_1BigInt_adbc582fd6ae26b6afe9b5591b5fe06e7}\label{classv8_1_1BigInt_adbc582fd6ae26b6afe9b5591b5fe06e7}} 
+\index{v8\+::\+Big\+Int@{v8\+::\+Big\+Int}!To\+Words\+Array@{To\+Words\+Array}}
+\index{To\+Words\+Array@{To\+Words\+Array}!v8\+::\+Big\+Int@{v8\+::\+Big\+Int}}
+\subsubsection{\texorpdfstring{To\+Words\+Array()}{ToWordsArray()}}
+{\footnotesize\ttfamily void v8\+::\+Big\+Int\+::\+To\+Words\+Array (\begin{DoxyParamCaption}\item[{int $\ast$}]{sign\+\_\+bit,  }\item[{int $\ast$}]{word\+\_\+count,  }\item[{uint64\+\_\+t $\ast$}]{words }\end{DoxyParamCaption}) const}
+
+Writes the contents of this \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} to a specified memory location. {\ttfamily sign\+\_\+bit} must be provided and will be set to 1 if this \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} is negative. {\ttfamily $\ast$word\+\_\+count} has to be initialized to the length of the {\ttfamily words} array. Upon return, it will be set to the actual number of words that would be needed to store this \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} (i.\+e. the return value of {\ttfamily \mbox{\hyperlink{classv8_1_1BigInt_a840783db8ae94178040c5a8a7bb52875}{Word\+Count()}}}). \mbox{\Hypertarget{classv8_1_1BigInt_a32d8d340aef40da93cde35a9baf7e58d}\label{classv8_1_1BigInt_a32d8d340aef40da93cde35a9baf7e58d}} 
+\index{v8\+::\+Big\+Int@{v8\+::\+Big\+Int}!Uint64\+Value@{Uint64\+Value}}
+\index{Uint64\+Value@{Uint64\+Value}!v8\+::\+Big\+Int@{v8\+::\+Big\+Int}}
+\subsubsection{\texorpdfstring{Uint64\+Value()}{Uint64Value()}}
+{\footnotesize\ttfamily uint64\+\_\+t v8\+::\+Big\+Int\+::\+Uint64\+Value (\begin{DoxyParamCaption}\item[{bool $\ast$}]{lossless = {\ttfamily nullptr} }\end{DoxyParamCaption}) const}
+
+Returns the value of this \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} as an unsigned 64-\/bit integer. If {\ttfamily lossless} is provided, it will reflect whether the return value was truncated or wrapped around. In particular, it is set to {\ttfamily false} if this \mbox{\hyperlink{classv8_1_1BigInt}{Big\+Int}} is negative. \mbox{\Hypertarget{classv8_1_1BigInt_a840783db8ae94178040c5a8a7bb52875}\label{classv8_1_1BigInt_a840783db8ae94178040c5a8a7bb52875}} 
+\index{v8\+::\+Big\+Int@{v8\+::\+Big\+Int}!Word\+Count@{Word\+Count}}
+\index{Word\+Count@{Word\+Count}!v8\+::\+Big\+Int@{v8\+::\+Big\+Int}}
+\subsubsection{\texorpdfstring{Word\+Count()}{WordCount()}}
+{\footnotesize\ttfamily int v8\+::\+Big\+Int\+::\+Word\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of 64-\/bit words needed to store the result of \mbox{\hyperlink{classv8_1_1BigInt_adbc582fd6ae26b6afe9b5591b5fe06e7}{To\+Words\+Array()}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

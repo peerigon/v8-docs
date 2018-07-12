@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['stacktraceoptions',['StackTraceOptions',['../classv8_1_1StackTrace.html#a9704e4a37949eb8eb8ccddbddf161492',1,'v8::StackTrace']]]
+  ['keycollectionmode',['KeyCollectionMode',['../namespacev8.html#a0cee20f5c7f0d59d0835af8e537388dc',1,'v8']]],
+  ['keyconversionmode',['KeyConversionMode',['../namespacev8.html#aa65aeff871614520d8033dead4b34e38',1,'v8']]]
 ];

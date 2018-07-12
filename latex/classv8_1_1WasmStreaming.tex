@@ -1,0 +1,58 @@
+\hypertarget{classv8_1_1WasmStreaming}{}\section{v8\+:\+:Wasm\+Streaming Class Reference}
+\label{classv8_1_1WasmStreaming}\index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1WasmStreaming_a40fe20bbbe84a244ebd306da4b8ce256}\label{classv8_1_1WasmStreaming_a40fe20bbbe84a244ebd306da4b8ce256}} 
+{\bfseries Wasm\+Streaming} (std\+::unique\+\_\+ptr$<$ Wasm\+Streaming\+Impl $>$ impl)
+\item 
+void \mbox{\hyperlink{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}{On\+Bytes\+Received}} (const uint8\+\_\+t $\ast$bytes, size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classv8_1_1WasmStreaming_a2c40c85c34643af871577ea98d792de6}{Finish}} ()
+\item 
+void \mbox{\hyperlink{classv8_1_1WasmStreaming_aca7399d97368360079e3030b2fb4fc94}{Abort}} (\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ exception)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}} $>$ \mbox{\hyperlink{classv8_1_1WasmStreaming_a343acdb301ae8c21b49c177ac28f2b07}{Unpack}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classv8_1_1V8}{V8}} interface for Web\+Assembly streaming compilation. When streaming compilation is initiated, \mbox{\hyperlink{classv8_1_1V8}{V8}} passes a \{\mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}}\} object to the embedder such that the embedder can pass the input butes for streaming compilation to \mbox{\hyperlink{classv8_1_1V8}{V8}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1WasmStreaming_aca7399d97368360079e3030b2fb4fc94}\label{classv8_1_1WasmStreaming_aca7399d97368360079e3030b2fb4fc94}} 
+\index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!Abort@{Abort}}
+\index{Abort@{Abort}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
+\subsubsection{\texorpdfstring{Abort()}{Abort()}}
+{\footnotesize\ttfamily void v8\+::\+Wasm\+Streaming\+::\+Abort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{exception }\end{DoxyParamCaption})}
+
+Abort streaming compilation. If \{exception\} has a value, then the promise associated with streaming compilation is rejected with that value. If \{exception\} does not have value, the promise does not get rejected. \mbox{\Hypertarget{classv8_1_1WasmStreaming_a2c40c85c34643af871577ea98d792de6}\label{classv8_1_1WasmStreaming_a2c40c85c34643af871577ea98d792de6}} 
+\index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!Finish@{Finish}}
+\index{Finish@{Finish}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
+\subsubsection{\texorpdfstring{Finish()}{Finish()}}
+{\footnotesize\ttfamily void v8\+::\+Wasm\+Streaming\+::\+Finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\{Finish\} should be called after all received bytes where passed to \{On\+Bytes\+Received\} to tell \mbox{\hyperlink{classv8_1_1V8}{V8}} that there will be no more bytes. \{Finish\} does not have to be called after \{Abort\} has been called already. \mbox{\Hypertarget{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}\label{classv8_1_1WasmStreaming_ada886a06f191ac65897763bda60c2f54}} 
+\index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!On\+Bytes\+Received@{On\+Bytes\+Received}}
+\index{On\+Bytes\+Received@{On\+Bytes\+Received}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
+\subsubsection{\texorpdfstring{On\+Bytes\+Received()}{OnBytesReceived()}}
+{\footnotesize\ttfamily void v8\+::\+Wasm\+Streaming\+::\+On\+Bytes\+Received (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{bytes,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Pass a new chunck of bytes to Web\+Assembly streaming compilation. The buffer passed into \{On\+Bytes\+Received\} is owned by the caller. \mbox{\Hypertarget{classv8_1_1WasmStreaming_a343acdb301ae8c21b49c177ac28f2b07}\label{classv8_1_1WasmStreaming_a343acdb301ae8c21b49c177ac28f2b07}} 
+\index{v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}!Unpack@{Unpack}}
+\index{Unpack@{Unpack}!v8\+::\+Wasm\+Streaming@{v8\+::\+Wasm\+Streaming}}
+\subsubsection{\texorpdfstring{Unpack()}{Unpack()}}
+{\footnotesize\ttfamily static std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}}$>$ v8\+::\+Wasm\+Streaming\+::\+Unpack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Unpacks a \{\mbox{\hyperlink{classv8_1_1WasmStreaming}{Wasm\+Streaming}}\} object wrapped in a \{Managed\} for the embedder. Since the embedder is on the other side of the A\+PI, it cannot unpack the \{Managed\} itself. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

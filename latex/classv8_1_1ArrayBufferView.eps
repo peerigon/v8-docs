@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 622.222222
+%%BoundingBox: 0 0 500 711.111111
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.803571 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 0.703125 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 14 def
+/rows 16 def
 /cols 3 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -179,6 +179,8 @@ boxfont setfont
 (v8::Data) cw
 (v8::DataView) cw
 (v8::TypedArray) cw
+(v8::BigInt64Array) cw
+(v8::BigUint64Array) cw
 (v8::Float32Array) cw
 (v8::Float64Array) cw
 (v8::Int16Array) cw
@@ -199,12 +201,14 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (v8::ArrayBufferView) 0.500000 10.000000 box
- (v8::Object) 0.500000 11.000000 box
- (v8::Value) 0.500000 12.000000 box
- (v8::Data) 0.500000 13.000000 box
- (v8::DataView) 0.000000 9.000000 box
- (v8::TypedArray) 1.000000 9.000000 box
+ (v8::ArrayBufferView) 0.500000 12.000000 box
+ (v8::Object) 0.500000 13.000000 box
+ (v8::Value) 0.500000 14.000000 box
+ (v8::Data) 0.500000 15.000000 box
+ (v8::DataView) 0.000000 11.000000 box
+ (v8::TypedArray) 1.000000 11.000000 box
+ (v8::BigInt64Array) 2.000000 10.000000 box
+ (v8::BigUint64Array) 2.000000 9.000000 box
  (v8::Float32Array) 2.000000 8.000000 box
  (v8::Float64Array) 2.000000 7.000000 box
  (v8::Int16Array) 2.000000 6.000000 box
@@ -218,27 +222,31 @@ boundx scalefactor div boundy scalefactor div scale
 % ----- relations -----
 
 solid
-0 0.500000 10.000000 out
-solid
-1 0.500000 11.000000 in
-solid
-0 0.500000 11.000000 out
-solid
-1 0.500000 12.000000 in
-solid
 0 0.500000 12.000000 out
 solid
 1 0.500000 13.000000 in
 solid
-1 0.500000 9.250000 out
+0 0.500000 13.000000 out
 solid
-0.000000 1.000000 10.000000 conn
+1 0.500000 14.000000 in
 solid
-0 0.000000 9.750000 in
+0 0.500000 14.000000 out
 solid
-0 1.000000 9.750000 in
+1 0.500000 15.000000 in
 solid
-1 1.000000 8.250000 out
+1 0.500000 11.250000 out
+solid
+0.000000 1.000000 12.000000 conn
+solid
+0 0.000000 11.750000 in
+solid
+0 1.000000 11.750000 in
+solid
+1 1.000000 10.250000 out
+solid
+0 1.000000 10.500000 hedge
+solid
+0 1.000000 9.500000 hedge
 solid
 0 1.000000 8.500000 hedge
 solid
@@ -258,4 +266,4 @@ solid
 solid
 0 1.000000 0.500000 hedge
 solid
-1.000000 9.000000 0.500000 vedge
+1.000000 11.000000 0.500000 vedge

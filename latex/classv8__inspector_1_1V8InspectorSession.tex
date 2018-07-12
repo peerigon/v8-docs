@@ -1,0 +1,63 @@
+\hypertarget{classv8__inspector_1_1V8InspectorSession}{}\section{v8\+\_\+inspector\+:\+:V8\+Inspector\+Session Class Reference}
+\label{classv8__inspector_1_1V8InspectorSession}\index{v8\+\_\+inspector\+::\+V8\+Inspector\+Session@{v8\+\_\+inspector\+::\+V8\+Inspector\+Session}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1V8InspectorSession_1_1Inspectable}{Inspectable}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a2fb546beada5045879ba599a26799aed}\label{classv8__inspector_1_1V8InspectorSession_a2fb546beada5045879ba599a26799aed}} 
+virtual void {\bfseries add\+Inspected\+Object} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8InspectorSession_1_1Inspectable}{Inspectable}} $>$)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_ad5b10f6378078183655cd2b369e29aa9}\label{classv8__inspector_1_1V8InspectorSession_ad5b10f6378078183655cd2b369e29aa9}} 
+virtual void {\bfseries dispatch\+Protocol\+Message} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_aea07fa37b60124d62c553ff148e17227}\label{classv8__inspector_1_1V8InspectorSession_aea07fa37b60124d62c553ff148e17227}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StringBuffer}{String\+Buffer}} $>$ {\bfseries state\+J\+S\+ON} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a70e125227f0b485f70a72c69d70a736e}\label{classv8__inspector_1_1V8InspectorSession_a70e125227f0b485f70a72c69d70a736e}} 
+virtual std\+::vector$<$ std\+::unique\+\_\+ptr$<$ protocol\+::\+Schema\+::\+A\+P\+I\+::\+Domain $>$ $>$ {\bfseries supported\+Domains} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a34ccd93c49008617d83b083a66dd0717}\label{classv8__inspector_1_1V8InspectorSession_a34ccd93c49008617d83b083a66dd0717}} 
+virtual void {\bfseries schedule\+Pause\+On\+Next\+Statement} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&break\+Reason, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&break\+Details)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_ad2fc03b00f72ed1d126523611c2ee4f4}\label{classv8__inspector_1_1V8InspectorSession_ad2fc03b00f72ed1d126523611c2ee4f4}} 
+virtual void {\bfseries cancel\+Pause\+On\+Next\+Statement} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a1239ec98b9499e08271fb69564310c6f}\label{classv8__inspector_1_1V8InspectorSession_a1239ec98b9499e08271fb69564310c6f}} 
+virtual void {\bfseries break\+Program} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&break\+Reason, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&break\+Details)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_ae98e6ad6dd45492ce828737f7176b501}\label{classv8__inspector_1_1V8InspectorSession_ae98e6ad6dd45492ce828737f7176b501}} 
+virtual void {\bfseries set\+Skip\+All\+Pauses} (bool)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_ace573efed7184ee701f06cb2543d4e15}\label{classv8__inspector_1_1V8InspectorSession_ace573efed7184ee701f06cb2543d4e15}} 
+virtual void {\bfseries resume} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_aa419715baf430ebac1673160251715db}\label{classv8__inspector_1_1V8InspectorSession_aa419715baf430ebac1673160251715db}} 
+virtual void {\bfseries step\+Over} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_acaa137f90ce833744a2a16bda60490c5}\label{classv8__inspector_1_1V8InspectorSession_acaa137f90ce833744a2a16bda60490c5}} 
+virtual std\+::vector$<$ std\+::unique\+\_\+ptr$<$ protocol\+::\+Debugger\+::\+A\+P\+I\+::\+Search\+Match $>$ $>$ {\bfseries search\+In\+Text\+By\+Lines} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&text, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&query, bool case\+Sensitive, bool is\+Regex)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a7568a840a4c681cbca9ec7ad50aba0e6}\label{classv8__inspector_1_1V8InspectorSession_a7568a840a4c681cbca9ec7ad50aba0e6}} 
+virtual std\+::unique\+\_\+ptr$<$ protocol\+::\+Runtime\+::\+A\+P\+I\+::\+Remote\+Object $>$ {\bfseries wrap\+Object} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&group\+Name, bool generate\+Preview)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_adbe69bb66c76882db82482db3712b554}\label{classv8__inspector_1_1V8InspectorSession_adbe69bb66c76882db82482db3712b554}} 
+virtual bool {\bfseries unwrap\+Object} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StringBuffer}{String\+Buffer}} $>$ $\ast$error, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&object\+Id, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ $\ast$, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$ $\ast$, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1StringBuffer}{String\+Buffer}} $>$ $\ast$object\+Group)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a3a7e04f754c93086d7e61ad483bd38aa}\label{classv8__inspector_1_1V8InspectorSession_a3a7e04f754c93086d7e61ad483bd38aa}} 
+virtual void {\bfseries release\+Object\+Group} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&)=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8InspectorSession_a34718345c6d8f43eb07222af2fd8c232}\label{classv8__inspector_1_1V8InspectorSession_a34718345c6d8f43eb07222af2fd8c232}} 
+static bool {\bfseries can\+Dispatch\+Method} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&method)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/inspector.\+h\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['debugmessagedispatchhandler',['DebugMessageDispatchHandler',['../classv8_1_1Debug.html#a91cd8aa9743e3478bc63fe73abcd557c',1,'v8::Debug']]]
+  ['buildembeddergraphcallback',['BuildEmbedderGraphCallback',['../classv8_1_1HeapProfiler.html#a29c98afa5ce0ea543eef904201bc3e40',1,'v8::HeapProfiler']]]
 ];

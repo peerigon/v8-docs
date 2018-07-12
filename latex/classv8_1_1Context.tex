@@ -7,70 +7,81 @@
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classv8_1_1Context_1_1Scope}{Scope}
+class \mbox{\hyperlink{classv8_1_1Context_1_1BackupIncumbentScope}{Backup\+Incumbent\+Scope}}
+\item 
+class \mbox{\hyperlink{classv8_1_1Context_1_1Scope}{Scope}}
 \end{DoxyCompactItemize}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{classv8_1_1Context_a8e8a8c567e2d193f25f1ec211db0b5f9}{Embedder\+Data\+Fields} \{ {\bfseries k\+Debug\+Id\+Index} = 0
+enum \mbox{\hyperlink{classv8_1_1Context_a8e8a8c567e2d193f25f1ec211db0b5f9}{Embedder\+Data\+Fields}} \{ {\bfseries k\+Debug\+Id\+Index} = 0
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}{Global} ()
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ \mbox{\hyperlink{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}{Global}} ()
 \item 
-void \hyperlink{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}{Detach\+Global} ()
+void \mbox{\hyperlink{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}{Detach\+Global}} ()
 \item 
-void \hyperlink{classv8_1_1Context_a2351d9bdf4450d5f23734033289ba3ab}{Set\+Security\+Token} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ token)
+void \mbox{\hyperlink{classv8_1_1Context_a2351d9bdf4450d5f23734033289ba3ab}{Set\+Security\+Token}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ token)
 \item 
-void \hyperlink{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}{Use\+Default\+Security\+Token} ()
+void \mbox{\hyperlink{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}{Use\+Default\+Security\+Token}} ()
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Context_a59d7bc98684603ec4d9b1d1db2acaad8}{Get\+Security\+Token} ()
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Context_a59d7bc98684603ec4d9b1d1db2acaad8}{Get\+Security\+Token}} ()
 \item 
-void \hyperlink{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}{Enter} ()
+void \mbox{\hyperlink{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}{Enter}} ()
 \item 
-void \hyperlink{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}{Exit} ()
+void \mbox{\hyperlink{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}{Exit}} ()
 \item 
-\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate} $\ast$ \hyperlink{classv8_1_1Context_af55552d8658ecb20eff7af2c83e8ede2}{Get\+Isolate} ()
+\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ \mbox{\hyperlink{classv8_1_1Context_a7b107f60b41f3fe05a600bd2b48983be}{Get\+Isolate}} ()
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ \hyperlink{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}{Get\+Embedder\+Data} (int index)
+uint32\+\_\+t \mbox{\hyperlink{classv8_1_1Context_a98e55c792203d20571f813e2c8ef4d5a}{Get\+Number\+Of\+Embedder\+Data\+Fields}} ()
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \hyperlink{classv8_1_1Context_aa06026c0a9dc43874b437675b8fd0059}{Get\+Extras\+Binding\+Object} ()
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}{Get\+Embedder\+Data}} (int index)
 \item 
-void \hyperlink{classv8_1_1Context_a1f2f3da0b9c3d9b68a5384b757d607d2}{Set\+Embedder\+Data} (int index, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ value)
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ \mbox{\hyperlink{classv8_1_1Context_aa06026c0a9dc43874b437675b8fd0059}{Get\+Extras\+Binding\+Object}} ()
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ \hyperlink{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}{Get\+Aligned\+Pointer\+From\+Embedder\+Data} (int index)
+void \mbox{\hyperlink{classv8_1_1Context_a1f2f3da0b9c3d9b68a5384b757d607d2}{Set\+Embedder\+Data}} (int index, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ value)
 \item 
-void \hyperlink{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}{Set\+Aligned\+Pointer\+In\+Embedder\+Data} (int index, void $\ast$value)
+V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ \mbox{\hyperlink{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}{Get\+Aligned\+Pointer\+From\+Embedder\+Data}} (int index)
 \item 
-void \hyperlink{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{Allow\+Code\+Generation\+From\+Strings} (bool allow)
+void \mbox{\hyperlink{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}{Set\+Aligned\+Pointer\+In\+Embedder\+Data}} (int index, void $\ast$value)
 \item 
-bool \hyperlink{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}{Is\+Code\+Generation\+From\+Strings\+Allowed} ()
+void \mbox{\hyperlink{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{Allow\+Code\+Generation\+From\+Strings}} (bool allow)
 \item 
-void \hyperlink{classv8_1_1Context_a8c919ccddb6fbb65602f7fe2587e8a34}{Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ message)
+bool \mbox{\hyperlink{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}{Is\+Code\+Generation\+From\+Strings\+Allowed}} ()
 \item 
-size\+\_\+t \hyperlink{classv8_1_1Context_abfec90cb6cb1cac58b4e3487515721a2}{Estimated\+Size} ()
+void \mbox{\hyperlink{classv8_1_1Context_a8c919ccddb6fbb65602f7fe2587e8a34}{Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ message)
+\item 
+{\footnotesize template$<$class T $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ T $>$ \mbox{\hyperlink{classv8_1_1Context_a8bf1137318f67dfdc9444a72aa2cda4a}{Get\+Data\+From\+Snapshot\+Once}} (size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classv8_1_1Context_a04bb5d7aca2ef63a5a41257d75b8f276}\label{classv8_1_1Context_a04bb5d7aca2ef63a5a41257d75b8f276}} 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ T $>$ {\bfseries Get\+Data\+From\+Snapshot\+Once} (size\+\_\+t index)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ \hyperlink{classv8_1_1Context_aee22d1422b0804b5b6bc0646bfd29af8}{New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1ExtensionConfiguration}{Extension\+Configuration} $\ast$extensions=N\+U\+LL, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ObjectTemplate}{Object\+Template} $>$ global\+\_\+template=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ObjectTemplate}{Object\+Template} $>$(), \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ global\+\_\+object=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$())
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ \mbox{\hyperlink{classv8_1_1Context_adca49dc82992b2867edefebed0c4ac6b}{New}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1ExtensionConfiguration}{Extension\+Configuration}} $\ast$extensions=N\+U\+LL, \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}} $>$ global\+\_\+template=\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}} $>$(), \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ global\+\_\+object=\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$(), \mbox{\hyperlink{structv8_1_1DeserializeInternalFieldsCallback}{Deserialize\+Internal\+Fields\+Callback}} internal\+\_\+fields\+\_\+deserializer=\mbox{\hyperlink{structv8_1_1DeserializeInternalFieldsCallback}{Deserialize\+Internal\+Fields\+Callback}}())
+\item 
+static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ \mbox{\hyperlink{classv8_1_1Context_a49a8fb02c04b6ebf4e532755d50d2ff9}{From\+Snapshot}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, size\+\_\+t context\+\_\+snapshot\+\_\+index, \mbox{\hyperlink{structv8_1_1DeserializeInternalFieldsCallback}{Deserialize\+Internal\+Fields\+Callback}} embedder\+\_\+fields\+\_\+deserializer=\mbox{\hyperlink{structv8_1_1DeserializeInternalFieldsCallback}{Deserialize\+Internal\+Fields\+Callback}}(), \mbox{\hyperlink{classv8_1_1ExtensionConfiguration}{Extension\+Configuration}} $\ast$extensions=nullptr, \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ global\+\_\+object=\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$())
+\item 
+static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ \mbox{\hyperlink{classv8_1_1Context_a3227e740cb2e611c6706e0a65bc34d10}{New\+Remote\+Context}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}} $>$ global\+\_\+template, \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ global\+\_\+object=\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$())
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-class {\bfseries Value}\hypertarget{classv8_1_1Context_aeceedf6e1a7d48a588516ce2b1983d6f}{}\label{classv8_1_1Context_aeceedf6e1a7d48a588516ce2b1983d6f}
-
+\mbox{\Hypertarget{classv8_1_1Context_aeceedf6e1a7d48a588516ce2b1983d6f}\label{classv8_1_1Context_aeceedf6e1a7d48a588516ce2b1983d6f}} 
+class {\bfseries Value}
 \item 
-class {\bfseries Script}\hypertarget{classv8_1_1Context_ae98eaa96d1b24e087f3c3e372fb09dce}{}\label{classv8_1_1Context_ae98eaa96d1b24e087f3c3e372fb09dce}
-
+\mbox{\Hypertarget{classv8_1_1Context_ae98eaa96d1b24e087f3c3e372fb09dce}\label{classv8_1_1Context_ae98eaa96d1b24e087f3c3e372fb09dce}} 
+class {\bfseries Script}
 \item 
-class {\bfseries Object}\hypertarget{classv8_1_1Context_a0720b5f434e636e22a3ed34f847eec57}{}\label{classv8_1_1Context_a0720b5f434e636e22a3ed34f847eec57}
-
+\mbox{\Hypertarget{classv8_1_1Context_a0720b5f434e636e22a3ed34f847eec57}\label{classv8_1_1Context_a0720b5f434e636e22a3ed34f847eec57}} 
+class {\bfseries Object}
 \item 
-class {\bfseries Function}\hypertarget{classv8_1_1Context_ab7194606aa12931e96f8f5448d418ed0}{}\label{classv8_1_1Context_ab7194606aa12931e96f8f5448d418ed0}
-
+\mbox{\Hypertarget{classv8_1_1Context_ab7194606aa12931e96f8f5448d418ed0}\label{classv8_1_1Context_ab7194606aa12931e96f8f5448d418ed0}} 
+class {\bfseries Function}
 \end{DoxyCompactItemize}
 
 
@@ -78,112 +89,127 @@ class {\bfseries Function}\hypertarget{classv8_1_1Context_ab7194606aa12931e96f8f
 A sandboxed execution context with its own set of built-\/in objects and functions. 
 
 \subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classv8_1_1Context_a8e8a8c567e2d193f25f1ec211db0b5f9}\label{classv8_1_1Context_a8e8a8c567e2d193f25f1ec211db0b5f9}} 
 \index{v8\+::\+Context@{v8\+::\+Context}!Embedder\+Data\+Fields@{Embedder\+Data\+Fields}}
 \index{Embedder\+Data\+Fields@{Embedder\+Data\+Fields}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Embedder\+Data\+Fields}{EmbedderDataFields}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Context\+::\+Embedder\+Data\+Fields}}\hypertarget{classv8_1_1Context_a8e8a8c567e2d193f25f1ec211db0b5f9}{}\label{classv8_1_1Context_a8e8a8c567e2d193f25f1ec211db0b5f9}
-The field at k\+Debug\+Id\+Index is reserved for \hyperlink{classv8_1_1V8}{V8} debugger implementation. The value is propagated to the scripts compiled in given \hyperlink{classv8_1_1Context}{Context} and can be used for filtering scripts. 
+\subsubsection{\texorpdfstring{Embedder\+Data\+Fields}{EmbedderDataFields}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classv8_1_1Context_a8e8a8c567e2d193f25f1ec211db0b5f9}{v8\+::\+Context\+::\+Embedder\+Data\+Fields}}}
+
+The field at k\+Debug\+Id\+Index used to be reserved for the inspector. It now serves no purpose. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}\label{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}} 
 \index{v8\+::\+Context@{v8\+::\+Context}!Allow\+Code\+Generation\+From\+Strings@{Allow\+Code\+Generation\+From\+Strings}}
 \index{Allow\+Code\+Generation\+From\+Strings@{Allow\+Code\+Generation\+From\+Strings}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Allow\+Code\+Generation\+From\+Strings(bool allow)}{AllowCodeGenerationFromStrings(bool allow)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Allow\+Code\+Generation\+From\+Strings (
-\begin{DoxyParamCaption}
-\item[{bool}]{allow}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{}\label{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}
-Control whether code generation from strings is allowed. Calling this method with false will disable \textquotesingle{}eval\textquotesingle{} and the \textquotesingle{}\hyperlink{classv8_1_1Function}{Function}\textquotesingle{} constructor for code running in this context. If \textquotesingle{}eval\textquotesingle{} or the \textquotesingle{}\hyperlink{classv8_1_1Function}{Function}\textquotesingle{} constructor are used an exception will be thrown.
+\subsubsection{\texorpdfstring{Allow\+Code\+Generation\+From\+Strings()}{AllowCodeGenerationFromStrings()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Allow\+Code\+Generation\+From\+Strings (\begin{DoxyParamCaption}\item[{bool}]{allow }\end{DoxyParamCaption})}
 
-If code generation from strings is not allowed the V8\+::\+Allow\+Code\+Generation\+From\+Strings callback will be invoked if set before blocking the call to \textquotesingle{}eval\textquotesingle{} or the \textquotesingle{}\hyperlink{classv8_1_1Function}{Function}\textquotesingle{} constructor. If that callback returns true, the call will be allowed, otherwise an exception will be thrown. If no callback is set an exception will be thrown. \index{v8\+::\+Context@{v8\+::\+Context}!Detach\+Global@{Detach\+Global}}
+Control whether code generation from strings is allowed. Calling this method with false will disable \textquotesingle{}eval\textquotesingle{} and the \textquotesingle{}\mbox{\hyperlink{classv8_1_1Function}{Function}}\textquotesingle{} constructor for code running in this context. If \textquotesingle{}eval\textquotesingle{} or the \textquotesingle{}\mbox{\hyperlink{classv8_1_1Function}{Function}}\textquotesingle{} constructor are used an exception will be thrown.
+
+If code generation from strings is not allowed the V8\+::\+Allow\+Code\+Generation\+From\+Strings callback will be invoked if set before blocking the call to \textquotesingle{}eval\textquotesingle{} or the \textquotesingle{}\mbox{\hyperlink{classv8_1_1Function}{Function}}\textquotesingle{} constructor. If that callback returns true, the call will be allowed, otherwise an exception will be thrown. If no callback is set an exception will be thrown. \mbox{\Hypertarget{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}\label{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Detach\+Global@{Detach\+Global}}
 \index{Detach\+Global@{Detach\+Global}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Detach\+Global()}{DetachGlobal()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Detach\+Global (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}{}\label{classv8_1_1Context_a841c7dd92eb8c57df92a268a164dea97}
-Detaches the global object from its context before the global object can be reused to create a new context. \index{v8\+::\+Context@{v8\+::\+Context}!Enter@{Enter}}
+\subsubsection{\texorpdfstring{Detach\+Global()}{DetachGlobal()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Detach\+Global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Detaches the global object from its context before the global object can be reused to create a new context. \mbox{\Hypertarget{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}\label{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Enter@{Enter}}
 \index{Enter@{Enter}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Enter()}{Enter()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Enter (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}{}\label{classv8_1_1Context_a6995c49d9897eb49053f07874b825133}
-Enter this context. After entering a context, all code compiled and run is compiled and run in this context. If another context is already entered, this old context is saved so it can be restored when the new context is exited. \index{v8\+::\+Context@{v8\+::\+Context}!Estimated\+Size@{Estimated\+Size}}
-\index{Estimated\+Size@{Estimated\+Size}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Estimated\+Size()}{EstimatedSize()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Context\+::\+Estimated\+Size (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_abfec90cb6cb1cac58b4e3487515721a2}{}\label{classv8_1_1Context_abfec90cb6cb1cac58b4e3487515721a2}
-Estimate the memory in bytes retained by this context. \index{v8\+::\+Context@{v8\+::\+Context}!Exit@{Exit}}
+\subsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Enter this context. After entering a context, all code compiled and run is compiled and run in this context. If another context is already entered, this old context is saved so it can be restored when the new context is exited. \mbox{\Hypertarget{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}\label{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Exit@{Exit}}
 \index{Exit@{Exit}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Exit()}{Exit()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Exit (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}{}\label{classv8_1_1Context_a2db09d4fefb26023a40d88972a4c1599}
-Exit this context. Exiting the current context restores the context that was in place when entering the current context. \index{v8\+::\+Context@{v8\+::\+Context}!Get\+Aligned\+Pointer\+From\+Embedder\+Data@{Get\+Aligned\+Pointer\+From\+Embedder\+Data}}
+\subsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Exit this context. Exiting the current context restores the context that was in place when entering the current context. \mbox{\Hypertarget{classv8_1_1Context_a49a8fb02c04b6ebf4e532755d50d2ff9}\label{classv8_1_1Context_a49a8fb02c04b6ebf4e532755d50d2ff9}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!From\+Snapshot@{From\+Snapshot}}
+\index{From\+Snapshot@{From\+Snapshot}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection{\texorpdfstring{From\+Snapshot()}{FromSnapshot()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1Context}{Context}}$>$ v8\+::\+Context\+::\+From\+Snapshot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{size\+\_\+t}]{context\+\_\+snapshot\+\_\+index,  }\item[{\mbox{\hyperlink{structv8_1_1DeserializeInternalFieldsCallback}{Deserialize\+Internal\+Fields\+Callback}}}]{embedder\+\_\+fields\+\_\+deserializer = {\ttfamily \mbox{\hyperlink{structv8_1_1DeserializeInternalFieldsCallback}{Deserialize\+Internal\+Fields\+Callback}}()},  }\item[{\mbox{\hyperlink{classv8_1_1ExtensionConfiguration}{Extension\+Configuration}} $\ast$}]{extensions = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{global\+\_\+object = {\ttfamily \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$~\mbox{\hyperlink{classv8_1_1Value}{Value}}~$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new context from a (non-\/default) context snapshot. There is no way to provide a global object template since we do not create a new global object from template, but we can reuse a global object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em isolate} & See \mbox{\hyperlink{classv8_1_1Context_adca49dc82992b2867edefebed0c4ac6b}{v8\+::\+Context\+::\+New}}.\\
+\hline
+{\em context\+\_\+snapshot\+\_\+index} & The index of the context snapshot to deserialize from. Use \mbox{\hyperlink{classv8_1_1Context_adca49dc82992b2867edefebed0c4ac6b}{v8\+::\+Context\+::\+New}} for the default snapshot.\\
+\hline
+{\em embedder\+\_\+fields\+\_\+deserializer} & Optional callback to deserialize internal fields. It should match the Serialize\+Internal\+Field\+Callback used to serialize.\\
+\hline
+{\em extensions} & See \mbox{\hyperlink{classv8_1_1Context_adca49dc82992b2867edefebed0c4ac6b}{v8\+::\+Context\+::\+New}}.\\
+\hline
+{\em global\+\_\+object} & See \mbox{\hyperlink{classv8_1_1Context_adca49dc82992b2867edefebed0c4ac6b}{v8\+::\+Context\+::\+New}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}\label{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Aligned\+Pointer\+From\+Embedder\+Data@{Get\+Aligned\+Pointer\+From\+Embedder\+Data}}
 \index{Get\+Aligned\+Pointer\+From\+Embedder\+Data@{Get\+Aligned\+Pointer\+From\+Embedder\+Data}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Get\+Aligned\+Pointer\+From\+Embedder\+Data(int index)}{GetAlignedPointerFromEmbedderData(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ v8\+::\+Context\+::\+Get\+Aligned\+Pointer\+From\+Embedder\+Data (
-\begin{DoxyParamCaption}
-\item[{int}]{index}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}{}\label{classv8_1_1Context_aa3b5c1a1a5d145c6096840898013f559}
-Gets a 2-\/byte-\/aligned native pointer from the embedder data with the given index, which must have bees set by a previous call to Set\+Aligned\+Pointer\+In\+Embedder\+Data with the same index. Note that index 0 currently has a special meaning for Chrome\textquotesingle{}s debugger. \index{v8\+::\+Context@{v8\+::\+Context}!Get\+Embedder\+Data@{Get\+Embedder\+Data}}
+\subsubsection{\texorpdfstring{Get\+Aligned\+Pointer\+From\+Embedder\+Data()}{GetAlignedPointerFromEmbedderData()}}
+{\footnotesize\ttfamily void $\ast$ v8\+::\+Context\+::\+Get\+Aligned\+Pointer\+From\+Embedder\+Data (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Gets a 2-\/byte-\/aligned native pointer from the embedder data with the given index, which must have been set by a previous call to Set\+Aligned\+Pointer\+In\+Embedder\+Data with the same index. Note that index 0 currently has a special meaning for Chrome\textquotesingle{}s debugger. \mbox{\Hypertarget{classv8_1_1Context_a8bf1137318f67dfdc9444a72aa2cda4a}\label{classv8_1_1Context_a8bf1137318f67dfdc9444a72aa2cda4a}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Data\+From\+Snapshot\+Once@{Get\+Data\+From\+Snapshot\+Once}}
+\index{Get\+Data\+From\+Snapshot\+Once@{Get\+Data\+From\+Snapshot\+Once}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection{\texorpdfstring{Get\+Data\+From\+Snapshot\+Once()}{GetDataFromSnapshotOnce()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$T$>$ v8\+::\+Context\+::\+Get\+Data\+From\+Snapshot\+Once (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Return data that was previously attached to the context snapshot via \mbox{\hyperlink{classv8_1_1SnapshotCreator}{Snapshot\+Creator}}, and removes the reference to it. Repeated call with the same index returns an empty \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}. \mbox{\Hypertarget{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}\label{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Embedder\+Data@{Get\+Embedder\+Data}}
 \index{Get\+Embedder\+Data@{Get\+Embedder\+Data}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Get\+Embedder\+Data(int index)}{GetEmbedderData(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<$ {\bf Value} $>$ v8\+::\+Context\+::\+Get\+Embedder\+Data (
-\begin{DoxyParamCaption}
-\item[{int}]{index}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}{}\label{classv8_1_1Context_a9cfafe0ac56f6aee17eb80a913489296}
-Gets the embedder data with the given index, which must have been set by a previous call to Set\+Embedder\+Data with the same index. Note that index 0 currently has a special meaning for Chrome\textquotesingle{}s debugger. \index{v8\+::\+Context@{v8\+::\+Context}!Get\+Extras\+Binding\+Object@{Get\+Extras\+Binding\+Object}}
+\subsubsection{\texorpdfstring{Get\+Embedder\+Data()}{GetEmbedderData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ v8\+::\+Context\+::\+Get\+Embedder\+Data (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Gets the embedder data with the given index, which must have been set by a previous call to Set\+Embedder\+Data with the same index. \mbox{\Hypertarget{classv8_1_1Context_aa06026c0a9dc43874b437675b8fd0059}\label{classv8_1_1Context_aa06026c0a9dc43874b437675b8fd0059}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Extras\+Binding\+Object@{Get\+Extras\+Binding\+Object}}
 \index{Get\+Extras\+Binding\+Object@{Get\+Extras\+Binding\+Object}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Get\+Extras\+Binding\+Object()}{GetExtrasBindingObject()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Object}$>$ v8\+::\+Context\+::\+Get\+Extras\+Binding\+Object (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_aa06026c0a9dc43874b437675b8fd0059}{}\label{classv8_1_1Context_aa06026c0a9dc43874b437675b8fd0059}
-Gets the binding object used by \hyperlink{classv8_1_1V8}{V8} extras. Extra natives get a reference to this object and can use it to \char`\"{}export\char`\"{} functionality by adding properties. Extra natives can also \char`\"{}import\char`\"{} functionality by accessing properties added by the embedder using the \hyperlink{classv8_1_1V8}{V8} A\+PI. \index{v8\+::\+Context@{v8\+::\+Context}!Get\+Isolate@{Get\+Isolate}}
+\subsubsection{\texorpdfstring{Get\+Extras\+Binding\+Object()}{GetExtrasBindingObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Object}{Object}}$>$ v8\+::\+Context\+::\+Get\+Extras\+Binding\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the binding object used by \mbox{\hyperlink{classv8_1_1V8}{V8}} extras. Extra natives get a reference to this object and can use it to \char`\"{}export\char`\"{} functionality by adding properties. Extra natives can also \char`\"{}import\char`\"{} functionality by accessing properties added by the embedder using the \mbox{\hyperlink{classv8_1_1V8}{V8}} A\+PI. \mbox{\Hypertarget{classv8_1_1Context_a7b107f60b41f3fe05a600bd2b48983be}\label{classv8_1_1Context_a7b107f60b41f3fe05a600bd2b48983be}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Isolate@{Get\+Isolate}}
 \index{Get\+Isolate@{Get\+Isolate}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Get\+Isolate()}{GetIsolate()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf v8\+::\+Isolate}$\ast$ v8\+::\+Context\+::\+Get\+Isolate (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_af55552d8658ecb20eff7af2c83e8ede2}{}\label{classv8_1_1Context_af55552d8658ecb20eff7af2c83e8ede2}
-Returns an isolate associated with a current context. \index{v8\+::\+Context@{v8\+::\+Context}!Get\+Security\+Token@{Get\+Security\+Token}}
+\subsubsection{\texorpdfstring{Get\+Isolate()}{GetIsolate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}}$\ast$ v8\+::\+Context\+::\+Get\+Isolate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an isolate associated with a current context. \mbox{\Hypertarget{classv8_1_1Context_a98e55c792203d20571f813e2c8ef4d5a}\label{classv8_1_1Context_a98e55c792203d20571f813e2c8ef4d5a}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Number\+Of\+Embedder\+Data\+Fields@{Get\+Number\+Of\+Embedder\+Data\+Fields}}
+\index{Get\+Number\+Of\+Embedder\+Data\+Fields@{Get\+Number\+Of\+Embedder\+Data\+Fields}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+Embedder\+Data\+Fields()}{GetNumberOfEmbedderDataFields()}}
+{\footnotesize\ttfamily uint32\+\_\+t v8\+::\+Context\+::\+Get\+Number\+Of\+Embedder\+Data\+Fields (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the number of fields allocated for embedder data. \mbox{\Hypertarget{classv8_1_1Context_a59d7bc98684603ec4d9b1d1db2acaad8}\label{classv8_1_1Context_a59d7bc98684603ec4d9b1d1db2acaad8}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Get\+Security\+Token@{Get\+Security\+Token}}
 \index{Get\+Security\+Token@{Get\+Security\+Token}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Get\+Security\+Token()}{GetSecurityToken()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Value}$>$ v8\+::\+Context\+::\+Get\+Security\+Token (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a59d7bc98684603ec4d9b1d1db2acaad8}{}\label{classv8_1_1Context_a59d7bc98684603ec4d9b1d1db2acaad8}
-Returns the security token of this context. \index{v8\+::\+Context@{v8\+::\+Context}!Global@{Global}}
+\subsubsection{\texorpdfstring{Get\+Security\+Token()}{GetSecurityToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Context\+::\+Get\+Security\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the security token of this context. \mbox{\Hypertarget{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}\label{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Global@{Global}}
 \index{Global@{Global}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Global()}{Global()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Object}$>$ v8\+::\+Context\+::\+Global (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}{}\label{classv8_1_1Context_af5cd9f97ef6a3307c1c21f80f4b743eb}
+\subsubsection{\texorpdfstring{Global()}{Global()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Object}{Object}}$>$ v8\+::\+Context\+::\+Global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the global proxy object.
 
-\hyperlink{classv8_1_1Global}{Global} proxy object is a thin wrapper whose prototype points to actual context\textquotesingle{}s global object with the properties like \hyperlink{classv8_1_1Object}{Object}, etc. This is done that way for security reasons (for more details see \href{https://wiki.mozilla.org/Gecko:SplitWindow}{\tt https\+://wiki.\+mozilla.\+org/\+Gecko\+:\+Split\+Window}).
+\mbox{\hyperlink{classv8_1_1Global}{Global}} proxy object is a thin wrapper whose prototype points to actual context\textquotesingle{}s global object with the properties like \mbox{\hyperlink{classv8_1_1Object}{Object}}, etc. This is done that way for security reasons (for more details see \href{https://wiki.mozilla.org/Gecko:SplitWindow}{\tt https\+://wiki.\+mozilla.\+org/\+Gecko\+:\+Split\+Window}).
 
-Please note that changes to global proxy object prototype most probably would break VM---\hyperlink{namespacev8}{v8} expects only global object as a prototype of global proxy object. \index{v8\+::\+Context@{v8\+::\+Context}!Is\+Code\+Generation\+From\+Strings\+Allowed@{Is\+Code\+Generation\+From\+Strings\+Allowed}}
+Please note that changes to global proxy object prototype most probably would break VM---\mbox{\hyperlink{namespacev8}{v8}} expects only global object as a prototype of global proxy object. \mbox{\Hypertarget{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}\label{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Is\+Code\+Generation\+From\+Strings\+Allowed@{Is\+Code\+Generation\+From\+Strings\+Allowed}}
 \index{Is\+Code\+Generation\+From\+Strings\+Allowed@{Is\+Code\+Generation\+From\+Strings\+Allowed}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Is\+Code\+Generation\+From\+Strings\+Allowed()}{IsCodeGenerationFromStringsAllowed()}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Context\+::\+Is\+Code\+Generation\+From\+Strings\+Allowed (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}{}\label{classv8_1_1Context_aa7a960a232d232d1a2a904c2e6c18831}
-Returns true if code generation from strings is allowed for the context. For more details see \hyperlink{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{Allow\+Code\+Generation\+From\+Strings(bool)} documentation. \index{v8\+::\+Context@{v8\+::\+Context}!New@{New}}
+\subsubsection{\texorpdfstring{Is\+Code\+Generation\+From\+Strings\+Allowed()}{IsCodeGenerationFromStringsAllowed()}}
+{\footnotesize\ttfamily bool v8\+::\+Context\+::\+Is\+Code\+Generation\+From\+Strings\+Allowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if code generation from strings is allowed for the context. For more details see \mbox{\hyperlink{classv8_1_1Context_a794ccc42113566f5d363f89c8b0d3c2c}{Allow\+Code\+Generation\+From\+Strings(bool)}} documentation. \mbox{\Hypertarget{classv8_1_1Context_adca49dc82992b2867edefebed0c4ac6b}\label{classv8_1_1Context_adca49dc82992b2867edefebed0c4ac6b}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!New@{New}}
 \index{New@{New}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{New(\+Isolate $\ast$isolate, Extension\+Configuration $\ast$extensions=\+N\+U\+L\+L, Local$<$ Object\+Template $>$ global\+\_\+template=\+Local$<$ Object\+Template $>$(), Local$<$ Value $>$ global\+\_\+object=\+Local$<$ Value $>$())}{New(Isolate *isolate, ExtensionConfiguration *extensions=NULL, Local< ObjectTemplate > global_template=Local< ObjectTemplate >(), Local< Value > global_object=Local< Value >())}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Local}$<${\bf Context}$>$ v8\+::\+Context\+::\+New (
-\begin{DoxyParamCaption}
-\item[{{\bf Isolate} $\ast$}]{isolate, }
-\item[{{\bf Extension\+Configuration} $\ast$}]{extensions = {\ttfamily NULL}, }
-\item[{{\bf Local}$<$ {\bf Object\+Template} $>$}]{global\+\_\+template = {\ttfamily {\bf Local}$<$~{\bf Object\+Template}~$>$()}, }
-\item[{{\bf Local}$<$ {\bf Value} $>$}]{global\+\_\+object = {\ttfamily {\bf Local}$<$~{\bf Value}~$>$()}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1Context_aee22d1422b0804b5b6bc0646bfd29af8}{}\label{classv8_1_1Context_aee22d1422b0804b5b6bc0646bfd29af8}
+\subsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Context}{Context}}$>$ v8\+::\+Context\+::\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1ExtensionConfiguration}{Extension\+Configuration}} $\ast$}]{extensions = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}} $>$}]{global\+\_\+template = {\ttfamily \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$~\mbox{\hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}}~$>$()},  }\item[{\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{global\+\_\+object = {\ttfamily \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$~\mbox{\hyperlink{classv8_1_1Value}{Value}}~$>$()},  }\item[{\mbox{\hyperlink{structv8_1_1DeserializeInternalFieldsCallback}{Deserialize\+Internal\+Fields\+Callback}}}]{internal\+\_\+fields\+\_\+deserializer = {\ttfamily \mbox{\hyperlink{structv8_1_1DeserializeInternalFieldsCallback}{Deserialize\+Internal\+Fields\+Callback}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Creates a new context and returns a handle to the newly allocated context.
 
 
@@ -194,46 +220,53 @@ Creates a new context and returns a handle to the newly allocated context.
 \hline
 {\em global\+\_\+template} & An optional object template from which the global object for the newly created context will be created.\\
 \hline
-{\em global\+\_\+object} & An optional global object to be reused for the newly created context. This global object must have been created by a previous call to \hyperlink{classv8_1_1Context_aee22d1422b0804b5b6bc0646bfd29af8}{Context\+::\+New} with the same global template. The state of the global object will be completely reset and only object identify will remain. \\
+{\em global\+\_\+object} & An optional global object to be reused for the newly created context. This global object must have been created by a previous call to \mbox{\hyperlink{classv8_1_1Context_adca49dc82992b2867edefebed0c4ac6b}{Context\+::\+New}} with the same global template. The state of the global object will be completely reset and only object identify will remain. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classv8_1_1Context_a3227e740cb2e611c6706e0a65bc34d10}\label{classv8_1_1Context_a3227e740cb2e611c6706e0a65bc34d10}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!New\+Remote\+Context@{New\+Remote\+Context}}
+\index{New\+Remote\+Context@{New\+Remote\+Context}!v8\+::\+Context@{v8\+::\+Context}}
+\subsubsection{\texorpdfstring{New\+Remote\+Context()}{NewRemoteContext()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1Object}{Object}}$>$ v8\+::\+Context\+::\+New\+Remote\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ObjectTemplate}{Object\+Template}} $>$}]{global\+\_\+template,  }\item[{\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{global\+\_\+object = {\ttfamily \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$~\mbox{\hyperlink{classv8_1_1Value}{Value}}~$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an global object that isn\textquotesingle{}t backed by an actual context.
+
+The global template needs to have access checks with handlers installed. If an existing global object is passed in, the global object is detached from its context.
+
+Note that this is different from a detached context where all accesses to the global proxy will fail. Instead, the access check handlers are invoked.
+
+It is also not possible to detach an object returned by this method. Instead, the access check handlers need to return nothing to achieve the same effect.
+
+It is possible, however, to create a new context from the global object returned by this method. \mbox{\Hypertarget{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}\label{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}} 
 \index{v8\+::\+Context@{v8\+::\+Context}!Set\+Aligned\+Pointer\+In\+Embedder\+Data@{Set\+Aligned\+Pointer\+In\+Embedder\+Data}}
 \index{Set\+Aligned\+Pointer\+In\+Embedder\+Data@{Set\+Aligned\+Pointer\+In\+Embedder\+Data}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Set\+Aligned\+Pointer\+In\+Embedder\+Data(int index, void $\ast$value)}{SetAlignedPointerInEmbedderData(int index, void *value)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Set\+Aligned\+Pointer\+In\+Embedder\+Data (
-\begin{DoxyParamCaption}
-\item[{int}]{index, }
-\item[{void $\ast$}]{value}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}{}\label{classv8_1_1Context_a522063c88e4c2832f5ff4f3980815f58}
-Sets a 2-\/byte-\/aligned native pointer in the embedder data with the given index, growing the data as needed. Note that index 0 currently has a special meaning for Chrome\textquotesingle{}s debugger. \index{v8\+::\+Context@{v8\+::\+Context}!Set\+Embedder\+Data@{Set\+Embedder\+Data}}
+\subsubsection{\texorpdfstring{Set\+Aligned\+Pointer\+In\+Embedder\+Data()}{SetAlignedPointerInEmbedderData()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Set\+Aligned\+Pointer\+In\+Embedder\+Data (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{void $\ast$}]{value }\end{DoxyParamCaption})}
+
+Sets a 2-\/byte-\/aligned native pointer in the embedder data with the given index, growing the data as needed. Note that index 0 currently has a special meaning for Chrome\textquotesingle{}s debugger. \mbox{\Hypertarget{classv8_1_1Context_a1f2f3da0b9c3d9b68a5384b757d607d2}\label{classv8_1_1Context_a1f2f3da0b9c3d9b68a5384b757d607d2}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Set\+Embedder\+Data@{Set\+Embedder\+Data}}
 \index{Set\+Embedder\+Data@{Set\+Embedder\+Data}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Set\+Embedder\+Data(int index, Local$<$ Value $>$ value)}{SetEmbedderData(int index, Local< Value > value)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Set\+Embedder\+Data (
-\begin{DoxyParamCaption}
-\item[{int}]{index, }
-\item[{{\bf Local}$<$ {\bf Value} $>$}]{value}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a1f2f3da0b9c3d9b68a5384b757d607d2}{}\label{classv8_1_1Context_a1f2f3da0b9c3d9b68a5384b757d607d2}
-Sets the embedder data with the given index, growing the data as needed. Note that index 0 currently has a special meaning for Chrome\textquotesingle{}s debugger. \index{v8\+::\+Context@{v8\+::\+Context}!Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings@{Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings}}
+\subsubsection{\texorpdfstring{Set\+Embedder\+Data()}{SetEmbedderData()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Set\+Embedder\+Data (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{value }\end{DoxyParamCaption})}
+
+Sets the embedder data with the given index, growing the data as needed. Note that index 0 currently has a special meaning for Chrome\textquotesingle{}s debugger. \mbox{\Hypertarget{classv8_1_1Context_a8c919ccddb6fbb65602f7fe2587e8a34}\label{classv8_1_1Context_a8c919ccddb6fbb65602f7fe2587e8a34}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings@{Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings}}
 \index{Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings@{Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings(\+Local$<$ String $>$ message)}{SetErrorMessageForCodeGenerationFromStrings(Local< String > message)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings (
-\begin{DoxyParamCaption}
-\item[{{\bf Local}$<$ {\bf String} $>$}]{message}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a8c919ccddb6fbb65602f7fe2587e8a34}{}\label{classv8_1_1Context_a8c919ccddb6fbb65602f7fe2587e8a34}
-Sets the error description for the exception that is thrown when code generation from strings is not allowed and \textquotesingle{}eval\textquotesingle{} or the \textquotesingle{}\hyperlink{classv8_1_1Function}{Function}\textquotesingle{} constructor are called. \index{v8\+::\+Context@{v8\+::\+Context}!Set\+Security\+Token@{Set\+Security\+Token}}
+\subsubsection{\texorpdfstring{Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings()}{SetErrorMessageForCodeGenerationFromStrings()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Set\+Error\+Message\+For\+Code\+Generation\+From\+Strings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{message }\end{DoxyParamCaption})}
+
+Sets the error description for the exception that is thrown when code generation from strings is not allowed and \textquotesingle{}eval\textquotesingle{} or the \textquotesingle{}\mbox{\hyperlink{classv8_1_1Function}{Function}}\textquotesingle{} constructor are called. \mbox{\Hypertarget{classv8_1_1Context_a2351d9bdf4450d5f23734033289ba3ab}\label{classv8_1_1Context_a2351d9bdf4450d5f23734033289ba3ab}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Set\+Security\+Token@{Set\+Security\+Token}}
 \index{Set\+Security\+Token@{Set\+Security\+Token}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Set\+Security\+Token(\+Local$<$ Value $>$ token)}{SetSecurityToken(Local< Value > token)}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Set\+Security\+Token (
-\begin{DoxyParamCaption}
-\item[{{\bf Local}$<$ {\bf Value} $>$}]{token}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_a2351d9bdf4450d5f23734033289ba3ab}{}\label{classv8_1_1Context_a2351d9bdf4450d5f23734033289ba3ab}
-Sets the security token for the context. To access an object in another context, the security tokens must match. \index{v8\+::\+Context@{v8\+::\+Context}!Use\+Default\+Security\+Token@{Use\+Default\+Security\+Token}}
+\subsubsection{\texorpdfstring{Set\+Security\+Token()}{SetSecurityToken()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Set\+Security\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{token }\end{DoxyParamCaption})}
+
+Sets the security token for the context. To access an object in another context, the security tokens must match. \mbox{\Hypertarget{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}\label{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}} 
+\index{v8\+::\+Context@{v8\+::\+Context}!Use\+Default\+Security\+Token@{Use\+Default\+Security\+Token}}
 \index{Use\+Default\+Security\+Token@{Use\+Default\+Security\+Token}!v8\+::\+Context@{v8\+::\+Context}}
-\subsubsection[{\texorpdfstring{Use\+Default\+Security\+Token()}{UseDefaultSecurityToken()}}]{\setlength{\rightskip}{0pt plus 5cm}void v8\+::\+Context\+::\+Use\+Default\+Security\+Token (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}{}\label{classv8_1_1Context_aa9e1a14982b64fd51ab87600a287bad2}
+\subsubsection{\texorpdfstring{Use\+Default\+Security\+Token()}{UseDefaultSecurityToken()}}
+{\footnotesize\ttfamily void v8\+::\+Context\+::\+Use\+Default\+Security\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Restores the security token to the default value. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

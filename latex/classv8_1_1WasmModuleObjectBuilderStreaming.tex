@@ -1,0 +1,38 @@
+\hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming}{}\section{v8\+:\+:Wasm\+Module\+Object\+Builder\+Streaming Class Reference}
+\label{classv8_1_1WasmModuleObjectBuilderStreaming}\index{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming@{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_a38ecb92cde61095525a4b2728ba091aa}\label{classv8_1_1WasmModuleObjectBuilderStreaming_a38ecb92cde61095525a4b2728ba091aa}} 
+{\bfseries Wasm\+Module\+Object\+Builder\+Streaming} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+void \mbox{\hyperlink{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}{On\+Bytes\+Received}} (const uint8\+\_\+t $\ast$, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_a679a8781a81a4c926e82924d1a2f2446}\label{classv8_1_1WasmModuleObjectBuilderStreaming_a679a8781a81a4c926e82924d1a2f2446}} 
+void {\bfseries Finish} ()
+\item 
+void \mbox{\hyperlink{classv8_1_1WasmModuleObjectBuilderStreaming_ac8a2a6e122799d746ded69f80a295fb5}{Abort}} (\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ exception)
+\item 
+\mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_a1b5def1cfb9746d6e196a5a44ffe6308}\label{classv8_1_1WasmModuleObjectBuilderStreaming_a1b5def1cfb9746d6e196a5a44ffe6308}} 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ {\bfseries Get\+Promise} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_ac8a2a6e122799d746ded69f80a295fb5}\label{classv8_1_1WasmModuleObjectBuilderStreaming_ac8a2a6e122799d746ded69f80a295fb5}} 
+\index{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming@{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming}!Abort@{Abort}}
+\index{Abort@{Abort}!v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming@{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming}}
+\subsubsection{\texorpdfstring{Abort()}{Abort()}}
+{\footnotesize\ttfamily void v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming\+::\+Abort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{exception }\end{DoxyParamCaption})}
+
+Abort streaming compilation. If \{exception\} has a value, then the promise associated with streaming compilation is rejected with that value. If \{exception\} does not have value, the promise does not get rejected. \mbox{\Hypertarget{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}\label{classv8_1_1WasmModuleObjectBuilderStreaming_ac67b675b7241a18a3b773dab2f0fd458}} 
+\index{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming@{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming}!On\+Bytes\+Received@{On\+Bytes\+Received}}
+\index{On\+Bytes\+Received@{On\+Bytes\+Received}!v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming@{v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming}}
+\subsubsection{\texorpdfstring{On\+Bytes\+Received()}{OnBytesReceived()}}
+{\footnotesize\ttfamily void v8\+::\+Wasm\+Module\+Object\+Builder\+Streaming\+::\+On\+Bytes\+Received (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+The buffer passed into On\+Bytes\+Received is owned by the caller. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

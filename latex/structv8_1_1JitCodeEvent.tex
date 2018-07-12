@@ -7,55 +7,63 @@
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structv8_1_1JitCodeEvent_1_1line__info__t}{line\+\_\+info\+\_\+t}
+struct \mbox{\hyperlink{structv8_1_1JitCodeEvent_1_1line__info__t}{line\+\_\+info\+\_\+t}}
 \item 
-struct \hyperlink{structv8_1_1JitCodeEvent_1_1name__t}{name\+\_\+t}
+struct \mbox{\hyperlink{structv8_1_1JitCodeEvent_1_1name__t}{name\+\_\+t}}
 \end{DoxyCompactItemize}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum {\bfseries Event\+Type} \{ \\*
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_ac4f8e391762567a2710eb5552b5f11f7}\label{structv8_1_1JitCodeEvent_ac4f8e391762567a2710eb5552b5f11f7}} 
+enum {\bfseries Event\+Type} \{ \newline
 {\bfseries C\+O\+D\+E\+\_\+\+A\+D\+D\+ED}, 
 {\bfseries C\+O\+D\+E\+\_\+\+M\+O\+V\+ED}, 
 {\bfseries C\+O\+D\+E\+\_\+\+R\+E\+M\+O\+V\+ED}, 
 {\bfseries C\+O\+D\+E\+\_\+\+A\+D\+D\+\_\+\+L\+I\+N\+E\+\_\+\+P\+O\+S\+\_\+\+I\+N\+FO}, 
-\\*
+\newline
 {\bfseries C\+O\+D\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+L\+I\+N\+E\+\_\+\+I\+N\+F\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+NG}, 
 {\bfseries C\+O\+D\+E\+\_\+\+E\+N\+D\+\_\+\+L\+I\+N\+E\+\_\+\+I\+N\+F\+O\+\_\+\+R\+E\+C\+O\+R\+D\+I\+NG}
- \}\hypertarget{structv8_1_1JitCodeEvent_ac4f8e391762567a2710eb5552b5f11f7}{}\label{structv8_1_1JitCodeEvent_ac4f8e391762567a2710eb5552b5f11f7}
-
+ \}
 \item 
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_a02ca6a3e363d0d95142591fd454c8ba9}\label{structv8_1_1JitCodeEvent_a02ca6a3e363d0d95142591fd454c8ba9}} 
 enum {\bfseries Position\+Type} \{ {\bfseries P\+O\+S\+I\+T\+I\+ON}, 
 {\bfseries S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+P\+O\+S\+I\+T\+I\+ON}
- \}\hypertarget{structv8_1_1JitCodeEvent_a02ca6a3e363d0d95142591fd454c8ba9}{}\label{structv8_1_1JitCodeEvent_a02ca6a3e363d0d95142591fd454c8ba9}
-
+ \}
+\item 
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_a28835778c755f5f92afcf57d4e9a5075}\label{structv8_1_1JitCodeEvent_a28835778c755f5f92afcf57d4e9a5075}} 
+enum {\bfseries Code\+Type} \{ {\bfseries B\+Y\+T\+E\+\_\+\+C\+O\+DE}, 
+{\bfseries J\+I\+T\+\_\+\+C\+O\+DE}
+ \}
 \end{DoxyCompactItemize}
 \subsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-Event\+Type {\bfseries type}\hypertarget{structv8_1_1JitCodeEvent_ace1fbc4119ac3ef609d8e0f89cbc2c9f}{}\label{structv8_1_1JitCodeEvent_ace1fbc4119ac3ef609d8e0f89cbc2c9f}
-
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_ace1fbc4119ac3ef609d8e0f89cbc2c9f}\label{structv8_1_1JitCodeEvent_ace1fbc4119ac3ef609d8e0f89cbc2c9f}} 
+Event\+Type {\bfseries type}
 \item 
-void $\ast$ {\bfseries code\+\_\+start}\hypertarget{structv8_1_1JitCodeEvent_aeeac614e6c125bf08bf785b070090d0f}{}\label{structv8_1_1JitCodeEvent_aeeac614e6c125bf08bf785b070090d0f}
-
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_afe160860a394de2db6d4de56d8f89e99}\label{structv8_1_1JitCodeEvent_afe160860a394de2db6d4de56d8f89e99}} 
+Code\+Type {\bfseries code\+\_\+type}
 \item 
-size\+\_\+t {\bfseries code\+\_\+len}\hypertarget{structv8_1_1JitCodeEvent_ad56f78749d03f5db29ed417c2f3b4666}{}\label{structv8_1_1JitCodeEvent_ad56f78749d03f5db29ed417c2f3b4666}
-
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_aeeac614e6c125bf08bf785b070090d0f}\label{structv8_1_1JitCodeEvent_aeeac614e6c125bf08bf785b070090d0f}} 
+void $\ast$ {\bfseries code\+\_\+start}
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1UnboundScript}{Unbound\+Script} $>$ {\bfseries script}\hypertarget{structv8_1_1JitCodeEvent_a50ac4979f3d15900647b6b29dae3db76}{}\label{structv8_1_1JitCodeEvent_a50ac4979f3d15900647b6b29dae3db76}
-
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_ad56f78749d03f5db29ed417c2f3b4666}\label{structv8_1_1JitCodeEvent_ad56f78749d03f5db29ed417c2f3b4666}} 
+size\+\_\+t {\bfseries code\+\_\+len}
 \item 
-void $\ast$ {\bfseries user\+\_\+data}\hypertarget{structv8_1_1JitCodeEvent_a90597e06440ebd68fe582bd1361d6de6}{}\label{structv8_1_1JitCodeEvent_a90597e06440ebd68fe582bd1361d6de6}
-
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_a50ac4979f3d15900647b6b29dae3db76}\label{structv8_1_1JitCodeEvent_a50ac4979f3d15900647b6b29dae3db76}} 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1UnboundScript}{Unbound\+Script}} $>$ {\bfseries script}
 \item 
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_a90597e06440ebd68fe582bd1361d6de6}\label{structv8_1_1JitCodeEvent_a90597e06440ebd68fe582bd1361d6de6}} 
+void $\ast$ {\bfseries user\+\_\+data}
+\item 
+\mbox{\Hypertarget{structv8_1_1JitCodeEvent_ac9f1a97a0ec147b1bb78cb9498f1a0c3}\label{structv8_1_1JitCodeEvent_ac9f1a97a0ec147b1bb78cb9498f1a0c3}} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
 union \{\\
-\>struct \hyperlink{structv8_1_1JitCodeEvent_1_1name__t}{name\_t} {\bfseries name}\\
-\>struct \hyperlink{structv8_1_1JitCodeEvent_1_1line__info__t}{line\_info\_t} {\bfseries line\_info}\\
+\>struct \mbox{\hyperlink{structv8_1_1JitCodeEvent_1_1name__t}{name\_t}} {\bfseries name}\\
+\>struct \mbox{\hyperlink{structv8_1_1JitCodeEvent_1_1line__info__t}{line\_info\_t}} {\bfseries line\_info}\\
 \>void $\ast$ {\bfseries new\_code\_start}\\
-\}; \hypertarget{structv8_1_1JitCodeEvent_a4c66ebaa0d14b47a28601446150ae617}{}\label{structv8_1_1JitCodeEvent_a4c66ebaa0d14b47a28601446150ae617}
-\\
+\}; \\
 
 \end{tabbing}\end{DoxyCompactItemize}
 

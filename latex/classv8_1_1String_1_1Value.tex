@@ -7,22 +7,31 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Value} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{v8\+::\+Value} $>$ obj)\hypertarget{classv8_1_1String_1_1Value_a5b968a237946fb3313527797f04a7e0f}{}\label{classv8_1_1String_1_1Value_a5b968a237946fb3313527797f04a7e0f}
-
+\mbox{\Hypertarget{classv8_1_1String_1_1Value_a7492b1ad56f1056b4957c768e7341a1c}\label{classv8_1_1String_1_1Value_a7492b1ad56f1056b4957c768e7341a1c}} 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} version\char`\"{}, explicit \mbox{\hyperlink{classv8_1_1String_1_1Value}{Value}}(\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ obj))
 \item 
-uint16\+\_\+t $\ast$ {\bfseries operator$\ast$} ()\hypertarget{classv8_1_1String_1_1Value_ae4f44b1977968de2e9f2ff703437fde3}{}\label{classv8_1_1String_1_1Value_ae4f44b1977968de2e9f2ff703437fde3}
-
+\mbox{\Hypertarget{classv8_1_1String_1_1Value_a9254394df4e1c4a8d9749cc0a5b55601}\label{classv8_1_1String_1_1Value_a9254394df4e1c4a8d9749cc0a5b55601}} 
+{\bfseries Value} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ obj)
 \item 
-const uint16\+\_\+t $\ast$ {\bfseries operator$\ast$} () const \hypertarget{classv8_1_1String_1_1Value_a1cf21001f92284f290a6e550d567e757}{}\label{classv8_1_1String_1_1Value_a1cf21001f92284f290a6e550d567e757}
-
+\mbox{\Hypertarget{classv8_1_1String_1_1Value_ae4f44b1977968de2e9f2ff703437fde3}\label{classv8_1_1String_1_1Value_ae4f44b1977968de2e9f2ff703437fde3}} 
+uint16\+\_\+t $\ast$ {\bfseries operator$\ast$} ()
 \item 
-int {\bfseries length} () const \hypertarget{classv8_1_1String_1_1Value_a4b5014d7d4d0f60d39f37e421ae2eb91}{}\label{classv8_1_1String_1_1Value_a4b5014d7d4d0f60d39f37e421ae2eb91}
-
+\mbox{\Hypertarget{classv8_1_1String_1_1Value_a15e247c80ec874daee13e6fca1b24629}\label{classv8_1_1String_1_1Value_a15e247c80ec874daee13e6fca1b24629}} 
+const uint16\+\_\+t $\ast$ {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1String_1_1Value_aeb5be29097c4c23c2c63fe833145dfe4}\label{classv8_1_1String_1_1Value_aeb5be29097c4c23c2c63fe833145dfe4}} 
+int {\bfseries length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1String_1_1Value_ac7ef41f1e6890bb36bde462a11ea4de1}\label{classv8_1_1String_1_1Value_ac7ef41f1e6890bb36bde462a11ea4de1}} 
+{\bfseries Value} (const \mbox{\hyperlink{classv8_1_1String_1_1Value}{Value}} \&)=delete
+\item 
+\mbox{\Hypertarget{classv8_1_1String_1_1Value_adb46ab85e1def9411012c67cbefb3385}\label{classv8_1_1String_1_1Value_adb46ab85e1def9411012c67cbefb3385}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1String_1_1Value}{Value}} \&)=delete
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Converts an object to a two-\/byte string. If conversion to a string fails (eg. due to an exception in the to\+String() method of the object) then the length() method returns 0 and the $\ast$ operator returns N\+U\+LL. 
+Converts an object to a two-\/byte (U\+T\+F-\/16-\/encoded) string. If conversion to a string fails (eg. due to an exception in the to\+String() method of the object) then the length() method returns 0 and the $\ast$ operator returns N\+U\+LL. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

@@ -1,0 +1,52 @@
+\hypertarget{classv8_1_1TaskRunner}{}\section{v8\+:\+:Task\+Runner Class Reference}
+\label{classv8_1_1TaskRunner}\index{v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}}
+
+
+{\ttfamily \#include $<$v8-\/platform.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classv8_1_1TaskRunner_a755795cc77383daf067a17673569c685}{Post\+Task}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task)=0
+\item 
+virtual void \mbox{\hyperlink{classv8_1_1TaskRunner_a8ae45842086210292d966e2e326629a4}{Post\+Delayed\+Task}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task, double delay\+\_\+in\+\_\+seconds)=0
+\item 
+virtual void \mbox{\hyperlink{classv8_1_1TaskRunner_a0ebfb362d1cb3fa621f0f50b9ff0fb6f}{Post\+Idle\+Task}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1IdleTask}{Idle\+Task}} $>$ task)=0
+\item 
+virtual bool \mbox{\hyperlink{classv8_1_1TaskRunner_aa8a6077bed5735e2190918685faf20f5}{Idle\+Tasks\+Enabled}} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} allows scheduling of tasks. The \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} may still be used to post tasks after the isolate gets destructed, but these tasks may not get executed anymore. All tasks posted to a given \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} will be invoked in sequence. Tasks can be posted from any thread. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1TaskRunner_aa8a6077bed5735e2190918685faf20f5}\label{classv8_1_1TaskRunner_aa8a6077bed5735e2190918685faf20f5}} 
+\index{v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}!Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}}
+\index{Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}!v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}}
+\subsubsection{\texorpdfstring{Idle\+Tasks\+Enabled()}{IdleTasksEnabled()}}
+{\footnotesize\ttfamily virtual bool v8\+::\+Task\+Runner\+::\+Idle\+Tasks\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if idle tasks are enabled for this \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}}. \mbox{\Hypertarget{classv8_1_1TaskRunner_a8ae45842086210292d966e2e326629a4}\label{classv8_1_1TaskRunner_a8ae45842086210292d966e2e326629a4}} 
+\index{v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}!Post\+Delayed\+Task@{Post\+Delayed\+Task}}
+\index{Post\+Delayed\+Task@{Post\+Delayed\+Task}!v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}}
+\subsubsection{\texorpdfstring{Post\+Delayed\+Task()}{PostDelayedTask()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Task\+Runner\+::\+Post\+Delayed\+Task (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$}]{task,  }\item[{double}]{delay\+\_\+in\+\_\+seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Schedules a task to be invoked by this \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}}. The task is scheduled after the given number of seconds $\vert$delay\+\_\+in\+\_\+seconds$\vert$. The \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} implementation takes ownership of $\vert$task$\vert$. \mbox{\Hypertarget{classv8_1_1TaskRunner_a0ebfb362d1cb3fa621f0f50b9ff0fb6f}\label{classv8_1_1TaskRunner_a0ebfb362d1cb3fa621f0f50b9ff0fb6f}} 
+\index{v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}!Post\+Idle\+Task@{Post\+Idle\+Task}}
+\index{Post\+Idle\+Task@{Post\+Idle\+Task}!v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}}
+\subsubsection{\texorpdfstring{Post\+Idle\+Task()}{PostIdleTask()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Task\+Runner\+::\+Post\+Idle\+Task (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1IdleTask}{Idle\+Task}} $>$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Schedules an idle task to be invoked by this \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}}. The task is scheduled when the embedder is idle. Requires that Task\+Runner\+::\+Supports\+Idle\+Tasks(isolate) is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} implementation takes ownership of $\vert$task$\vert$. \mbox{\Hypertarget{classv8_1_1TaskRunner_a755795cc77383daf067a17673569c685}\label{classv8_1_1TaskRunner_a755795cc77383daf067a17673569c685}} 
+\index{v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}!Post\+Task@{Post\+Task}}
+\index{Post\+Task@{Post\+Task}!v8\+::\+Task\+Runner@{v8\+::\+Task\+Runner}}
+\subsubsection{\texorpdfstring{Post\+Task()}{PostTask()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Task\+Runner\+::\+Post\+Task (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Schedules a task to be invoked by this \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}}. The \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} implementation takes ownership of $\vert$task$\vert$. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/platform.\+h\end{DoxyCompactItemize}

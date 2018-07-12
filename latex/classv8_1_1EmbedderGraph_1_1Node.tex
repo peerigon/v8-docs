@@ -1,0 +1,46 @@
+\hypertarget{classv8_1_1EmbedderGraph_1_1Node}{}\section{v8\+:\+:Embedder\+Graph\+:\+:Node Class Reference}
+\label{classv8_1_1EmbedderGraph_1_1Node}\index{v8\+::\+Embedder\+Graph\+::\+Node@{v8\+::\+Embedder\+Graph\+::\+Node}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderGraph_1_1Node_af07ffa90f03e52bf53e58ab512c2e1fe}\label{classv8_1_1EmbedderGraph_1_1Node_af07ffa90f03e52bf53e58ab512c2e1fe}} 
+virtual const char $\ast$ {\bfseries Name} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderGraph_1_1Node_a47fa609f09f06eb6f9dac80e46fcbe10}\label{classv8_1_1EmbedderGraph_1_1Node_a47fa609f09f06eb6f9dac80e46fcbe10}} 
+virtual size\+\_\+t {\bfseries Size\+In\+Bytes} ()=0
+\item 
+virtual \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node_acfe58e3b4db90c2ebbfcee5f81415181}{Wrapper\+Node}} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderGraph_1_1Node_ad1ebb9298b7fcac73c55e693e028a501}\label{classv8_1_1EmbedderGraph_1_1Node_ad1ebb9298b7fcac73c55e693e028a501}} 
+virtual bool {\bfseries Is\+Root\+Node} ()
+\item 
+virtual bool \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node_a62a22058ec311d7e9b6ac8ec061967af}{Is\+Embedder\+Node}} ()
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node_a2c4c64b2c3eab48dcdc587aec8734ee8}{Name\+Prefix}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1EmbedderGraph_1_1Node_a62a22058ec311d7e9b6ac8ec061967af}\label{classv8_1_1EmbedderGraph_1_1Node_a62a22058ec311d7e9b6ac8ec061967af}} 
+\index{v8\+::\+Embedder\+Graph\+::\+Node@{v8\+::\+Embedder\+Graph\+::\+Node}!Is\+Embedder\+Node@{Is\+Embedder\+Node}}
+\index{Is\+Embedder\+Node@{Is\+Embedder\+Node}!v8\+::\+Embedder\+Graph\+::\+Node@{v8\+::\+Embedder\+Graph\+::\+Node}}
+\subsubsection{\texorpdfstring{Is\+Embedder\+Node()}{IsEmbedderNode()}}
+{\footnotesize\ttfamily virtual bool v8\+::\+Embedder\+Graph\+::\+Node\+::\+Is\+Embedder\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Must return true for non-\/\+V8 nodes. \mbox{\Hypertarget{classv8_1_1EmbedderGraph_1_1Node_a2c4c64b2c3eab48dcdc587aec8734ee8}\label{classv8_1_1EmbedderGraph_1_1Node_a2c4c64b2c3eab48dcdc587aec8734ee8}} 
+\index{v8\+::\+Embedder\+Graph\+::\+Node@{v8\+::\+Embedder\+Graph\+::\+Node}!Name\+Prefix@{Name\+Prefix}}
+\index{Name\+Prefix@{Name\+Prefix}!v8\+::\+Embedder\+Graph\+::\+Node@{v8\+::\+Embedder\+Graph\+::\+Node}}
+\subsubsection{\texorpdfstring{Name\+Prefix()}{NamePrefix()}}
+{\footnotesize\ttfamily virtual const char$\ast$ v8\+::\+Embedder\+Graph\+::\+Node\+::\+Name\+Prefix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Optional name prefix. It is used in Chrome for tagging detached nodes. \mbox{\Hypertarget{classv8_1_1EmbedderGraph_1_1Node_acfe58e3b4db90c2ebbfcee5f81415181}\label{classv8_1_1EmbedderGraph_1_1Node_acfe58e3b4db90c2ebbfcee5f81415181}} 
+\index{v8\+::\+Embedder\+Graph\+::\+Node@{v8\+::\+Embedder\+Graph\+::\+Node}!Wrapper\+Node@{Wrapper\+Node}}
+\index{Wrapper\+Node@{Wrapper\+Node}!v8\+::\+Embedder\+Graph\+::\+Node@{v8\+::\+Embedder\+Graph\+::\+Node}}
+\subsubsection{\texorpdfstring{Wrapper\+Node()}{WrapperNode()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}}$\ast$ v8\+::\+Embedder\+Graph\+::\+Node\+::\+Wrapper\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The corresponding \mbox{\hyperlink{classv8_1_1V8}{V8}} wrapper node if not null. During heap snapshot generation the embedder node and the \mbox{\hyperlink{classv8_1_1V8}{V8}} wrapper node will be merged into one node to simplify retaining paths. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

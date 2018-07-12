@@ -1,0 +1,38 @@
+\hypertarget{classv8_1_1ScriptOrModule}{}\section{v8\+:\+:Script\+Or\+Module Class Reference}
+\label{classv8_1_1ScriptOrModule}\index{v8\+::\+Script\+Or\+Module@{v8\+::\+Script\+Or\+Module}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1ScriptOrModule_a6e35d9dc6e0c22ed4d8c1de071b3b9d9}{Get\+Resource\+Name}} ()
+\item 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1PrimitiveArray}{Primitive\+Array}} $>$ \mbox{\hyperlink{classv8_1_1ScriptOrModule_a955fc0a8db835119363af6df91e2e08d}{Get\+Host\+Defined\+Options}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A container type that holds relevant metadata for module loading.
+
+This is passed back to the embedder as part of Host\+Import\+Module\+Dynamically\+Callback for module loading. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1ScriptOrModule_a955fc0a8db835119363af6df91e2e08d}\label{classv8_1_1ScriptOrModule_a955fc0a8db835119363af6df91e2e08d}} 
+\index{v8\+::\+Script\+Or\+Module@{v8\+::\+Script\+Or\+Module}!Get\+Host\+Defined\+Options@{Get\+Host\+Defined\+Options}}
+\index{Get\+Host\+Defined\+Options@{Get\+Host\+Defined\+Options}!v8\+::\+Script\+Or\+Module@{v8\+::\+Script\+Or\+Module}}
+\subsubsection{\texorpdfstring{Get\+Host\+Defined\+Options()}{GetHostDefinedOptions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1PrimitiveArray}{Primitive\+Array}}$>$ v8\+::\+Script\+Or\+Module\+::\+Get\+Host\+Defined\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The options that were passed by the embedder as Host\+Defined\+Options to the \mbox{\hyperlink{classv8_1_1ScriptOrigin}{Script\+Origin}}. \mbox{\Hypertarget{classv8_1_1ScriptOrModule_a6e35d9dc6e0c22ed4d8c1de071b3b9d9}\label{classv8_1_1ScriptOrModule_a6e35d9dc6e0c22ed4d8c1de071b3b9d9}} 
+\index{v8\+::\+Script\+Or\+Module@{v8\+::\+Script\+Or\+Module}!Get\+Resource\+Name@{Get\+Resource\+Name}}
+\index{Get\+Resource\+Name@{Get\+Resource\+Name}!v8\+::\+Script\+Or\+Module@{v8\+::\+Script\+Or\+Module}}
+\subsubsection{\texorpdfstring{Get\+Resource\+Name()}{GetResourceName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Script\+Or\+Module\+::\+Get\+Resource\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The name that was passed by the embedder as Resource\+Name to the \mbox{\hyperlink{classv8_1_1ScriptOrigin}{Script\+Origin}}. This can be either a \mbox{\hyperlink{classv8_1_1String}{v8\+::\+String}} or v8\+::\+Undefined. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

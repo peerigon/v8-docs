@@ -1,0 +1,108 @@
+\hypertarget{classv8_1_1ValueDeserializer}{}\section{v8\+:\+:Value\+Deserializer Class Reference}
+\label{classv8_1_1ValueDeserializer}\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate}{Delegate}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1ValueDeserializer_a8ffab323ccaa68672041bb8cb2171187}\label{classv8_1_1ValueDeserializer_a8ffab323ccaa68672041bb8cb2171187}} 
+{\bfseries Value\+Deserializer} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const uint8\+\_\+t $\ast$data, size\+\_\+t size)
+\item 
+\mbox{\Hypertarget{classv8_1_1ValueDeserializer_a122d1594dae10113a3a56a6f924d5c70}\label{classv8_1_1ValueDeserializer_a122d1594dae10113a3a56a6f924d5c70}} 
+{\bfseries Value\+Deserializer} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const uint8\+\_\+t $\ast$data, size\+\_\+t size, \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate}{Delegate}} $\ast$delegate)
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ bool $>$ \mbox{\hyperlink{classv8_1_1ValueDeserializer_a5b6c24dcdd0fa8b241cf45d058f1270c}{Read\+Header}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context)
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1ValueDeserializer_ad1697f04cf0fae2f80d5750d6fe9c4da}{Read\+Value}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context)
+\item 
+void \mbox{\hyperlink{classv8_1_1ValueDeserializer_a853acc2c7b30571d6719ddd92a48da3b}{Transfer\+Array\+Buffer}} (uint32\+\_\+t transfer\+\_\+id, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} $>$ array\+\_\+buffer)
+\item 
+void \mbox{\hyperlink{classv8_1_1ValueDeserializer_a3730fe24f81054d6f75a1b23f77a0e6c}{Transfer\+Shared\+Array\+Buffer}} (uint32\+\_\+t id, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$ shared\+\_\+array\+\_\+buffer)
+\item 
+void \mbox{\hyperlink{classv8_1_1ValueDeserializer_a076d92b67d68c64404f1065d0dcd85b6}{Set\+Supports\+Legacy\+Wire\+Format}} (bool supports\+\_\+legacy\+\_\+wire\+\_\+format)
+\item 
+void \mbox{\hyperlink{classv8_1_1ValueDeserializer_a2e393ea834f217238fc144f48fd5caf1}{Set\+Expect\+Inline\+Wasm}} (bool allow\+\_\+inline\+\_\+wasm)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classv8_1_1ValueDeserializer_aaf8a206c11e0663105e570dd4feb01f9}{Get\+Wire\+Format\+Version}} () const
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT bool \mbox{\hyperlink{classv8_1_1ValueDeserializer_a77133b51f7cbad0bdd5faf1f32457abb}{Read\+Uint32}} (uint32\+\_\+t $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1ValueDeserializer_a74f27c249055f24d35c5a794fa99276b}\label{classv8_1_1ValueDeserializer_a74f27c249055f24d35c5a794fa99276b}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT bool {\bfseries Read\+Uint64} (uint64\+\_\+t $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1ValueDeserializer_a968968e1a59d9394e866dd11052c61ba}\label{classv8_1_1ValueDeserializer_a968968e1a59d9394e866dd11052c61ba}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT bool {\bfseries Read\+Double} (double $\ast$value)
+\item 
+\mbox{\Hypertarget{classv8_1_1ValueDeserializer_af6b0a523960b72a272cfe571dbd7b7f1}\label{classv8_1_1ValueDeserializer_af6b0a523960b72a272cfe571dbd7b7f1}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT bool {\bfseries Read\+Raw\+Bytes} (size\+\_\+t length, const void $\ast$$\ast$data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Deserializes values from data written with \mbox{\hyperlink{classv8_1_1ValueSerializer}{Value\+Serializer}}, or a compatible implementation.
+
+W\+A\+R\+N\+I\+NG\+: This A\+PI is under development, and changes (including incompatible changes to the A\+PI or wire format) may occur without notice until this warning is removed. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1ValueDeserializer_aaf8a206c11e0663105e570dd4feb01f9}\label{classv8_1_1ValueDeserializer_aaf8a206c11e0663105e570dd4feb01f9}} 
+\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}!Get\+Wire\+Format\+Version@{Get\+Wire\+Format\+Version}}
+\index{Get\+Wire\+Format\+Version@{Get\+Wire\+Format\+Version}!v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+\subsubsection{\texorpdfstring{Get\+Wire\+Format\+Version()}{GetWireFormatVersion()}}
+{\footnotesize\ttfamily uint32\+\_\+t v8\+::\+Value\+Deserializer\+::\+Get\+Wire\+Format\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Reads the underlying wire format version. Likely mostly to be useful to legacy code reading old wire format versions. Must be called after Read\+Header. \mbox{\Hypertarget{classv8_1_1ValueDeserializer_a5b6c24dcdd0fa8b241cf45d058f1270c}\label{classv8_1_1ValueDeserializer_a5b6c24dcdd0fa8b241cf45d058f1270c}} 
+\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}!Read\+Header@{Read\+Header}}
+\index{Read\+Header@{Read\+Header}!v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+\subsubsection{\texorpdfstring{Read\+Header()}{ReadHeader()}}
+{\footnotesize\ttfamily V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$bool$>$ v8\+::\+Value\+Deserializer\+::\+Read\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context }\end{DoxyParamCaption})}
+
+Reads and validates a header (including the format version). May, for example, reject an invalid or unsupported wire format. \mbox{\Hypertarget{classv8_1_1ValueDeserializer_a77133b51f7cbad0bdd5faf1f32457abb}\label{classv8_1_1ValueDeserializer_a77133b51f7cbad0bdd5faf1f32457abb}} 
+\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}!Read\+Uint32@{Read\+Uint32}}
+\index{Read\+Uint32@{Read\+Uint32}!v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+\subsubsection{\texorpdfstring{Read\+Uint32()}{ReadUint32()}}
+{\footnotesize\ttfamily V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT bool v8\+::\+Value\+Deserializer\+::\+Read\+Uint32 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+Reads raw data in various common formats to the buffer. Note that integer types are read in base-\/128 varint format, not with a binary copy. For use during an override of \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate_a8b06c19cba7e80c3c5271b0a2ca88a8a}{Delegate\+::\+Read\+Host\+Object}}. \mbox{\Hypertarget{classv8_1_1ValueDeserializer_ad1697f04cf0fae2f80d5750d6fe9c4da}\label{classv8_1_1ValueDeserializer_ad1697f04cf0fae2f80d5750d6fe9c4da}} 
+\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}!Read\+Value@{Read\+Value}}
+\index{Read\+Value@{Read\+Value}!v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+\subsubsection{\texorpdfstring{Read\+Value()}{ReadValue()}}
+{\footnotesize\ttfamily V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Value\+Deserializer\+::\+Read\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context }\end{DoxyParamCaption})}
+
+Deserializes a Java\+Script value from the buffer. \mbox{\Hypertarget{classv8_1_1ValueDeserializer_a2e393ea834f217238fc144f48fd5caf1}\label{classv8_1_1ValueDeserializer_a2e393ea834f217238fc144f48fd5caf1}} 
+\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}!Set\+Expect\+Inline\+Wasm@{Set\+Expect\+Inline\+Wasm}}
+\index{Set\+Expect\+Inline\+Wasm@{Set\+Expect\+Inline\+Wasm}!v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+\subsubsection{\texorpdfstring{Set\+Expect\+Inline\+Wasm()}{SetExpectInlineWasm()}}
+{\footnotesize\ttfamily void v8\+::\+Value\+Deserializer\+::\+Set\+Expect\+Inline\+Wasm (\begin{DoxyParamCaption}\item[{bool}]{allow\+\_\+inline\+\_\+wasm }\end{DoxyParamCaption})}
+
+Expect inline wasm in the data stream (rather than in-\/memory transfer) \mbox{\Hypertarget{classv8_1_1ValueDeserializer_a076d92b67d68c64404f1065d0dcd85b6}\label{classv8_1_1ValueDeserializer_a076d92b67d68c64404f1065d0dcd85b6}} 
+\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}!Set\+Supports\+Legacy\+Wire\+Format@{Set\+Supports\+Legacy\+Wire\+Format}}
+\index{Set\+Supports\+Legacy\+Wire\+Format@{Set\+Supports\+Legacy\+Wire\+Format}!v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+\subsubsection{\texorpdfstring{Set\+Supports\+Legacy\+Wire\+Format()}{SetSupportsLegacyWireFormat()}}
+{\footnotesize\ttfamily void v8\+::\+Value\+Deserializer\+::\+Set\+Supports\+Legacy\+Wire\+Format (\begin{DoxyParamCaption}\item[{bool}]{supports\+\_\+legacy\+\_\+wire\+\_\+format }\end{DoxyParamCaption})}
+
+Must be called before Read\+Header to enable support for reading the legacy wire format (i.\+e., which predates this being shipped).
+
+Don\textquotesingle{}t use this unless you need to read data written by previous versions of blink\+::\+Script\+Value\+Serializer. \mbox{\Hypertarget{classv8_1_1ValueDeserializer_a853acc2c7b30571d6719ddd92a48da3b}\label{classv8_1_1ValueDeserializer_a853acc2c7b30571d6719ddd92a48da3b}} 
+\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}!Transfer\+Array\+Buffer@{Transfer\+Array\+Buffer}}
+\index{Transfer\+Array\+Buffer@{Transfer\+Array\+Buffer}!v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+\subsubsection{\texorpdfstring{Transfer\+Array\+Buffer()}{TransferArrayBuffer()}}
+{\footnotesize\ttfamily void v8\+::\+Value\+Deserializer\+::\+Transfer\+Array\+Buffer (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{transfer\+\_\+id,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} $>$}]{array\+\_\+buffer }\end{DoxyParamCaption})}
+
+Accepts the array buffer corresponding to the one passed previously to \mbox{\hyperlink{classv8_1_1ValueSerializer_a27007f2530a496275ccf7b8846f1d9c5}{Value\+Serializer\+::\+Transfer\+Array\+Buffer}}. \mbox{\Hypertarget{classv8_1_1ValueDeserializer_a3730fe24f81054d6f75a1b23f77a0e6c}\label{classv8_1_1ValueDeserializer_a3730fe24f81054d6f75a1b23f77a0e6c}} 
+\index{v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}!Transfer\+Shared\+Array\+Buffer@{Transfer\+Shared\+Array\+Buffer}}
+\index{Transfer\+Shared\+Array\+Buffer@{Transfer\+Shared\+Array\+Buffer}!v8\+::\+Value\+Deserializer@{v8\+::\+Value\+Deserializer}}
+\subsubsection{\texorpdfstring{Transfer\+Shared\+Array\+Buffer()}{TransferSharedArrayBuffer()}}
+{\footnotesize\ttfamily void v8\+::\+Value\+Deserializer\+::\+Transfer\+Shared\+Array\+Buffer (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{id,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$}]{shared\+\_\+array\+\_\+buffer }\end{DoxyParamCaption})}
+
+Similar to Transfer\+Array\+Buffer, but for \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}}. The id is not necessarily in the same namespace as unshared \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} objects. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

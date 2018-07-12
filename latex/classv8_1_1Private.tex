@@ -13,17 +13,17 @@ Inheritance diagram for v8\+:\+:Private\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ {\bfseries Name} () const \hypertarget{classv8_1_1Private_a346820b1e830262d7f4f31e5c5ac7304}{}\label{classv8_1_1Private_a346820b1e830262d7f4f31e5c5ac7304}
-
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Private_ab3bbd6a2dcf6aea73f65c95f0d216f12}{Name}} () const
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Private}{Private} $>$ {\bfseries New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ name=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$())\hypertarget{classv8_1_1Private_ae43aa9516121ed7a24cf5bba1654b653}{}\label{classv8_1_1Private_ae43aa9516121ed7a24cf5bba1654b653}
-
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Private}{Private}} $>$ \mbox{\hyperlink{classv8_1_1Private_ae43aa9516121ed7a24cf5bba1654b653}{New}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ name=\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$())
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Private}{Private} $>$ {\bfseries For\+Api} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1String}{String} $>$ name)\hypertarget{classv8_1_1Private_a0ab8628387166b8a8abc6e9b6f40ad55}{}\label{classv8_1_1Private_a0ab8628387166b8a8abc6e9b6f40ad55}
-
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Private}{Private}} $>$ \mbox{\hyperlink{classv8_1_1Private_a0ab8628387166b8a8abc6e9b6f40ad55}{For\+Api}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ name)
+\item 
+\mbox{\Hypertarget{classv8_1_1Private_a3df565232e66989a2c8a9e708a1e2d86}\label{classv8_1_1Private_a3df565232e66989a2c8a9e708a1e2d86}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Private}{Private}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Data}{Data}} $\ast$data)
 \end{DoxyCompactItemize}
 
 
@@ -31,6 +31,27 @@ static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Private}{Pri
 A private symbol
 
 This is an experimental feature. Use at your own risk. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1Private_a0ab8628387166b8a8abc6e9b6f40ad55}\label{classv8_1_1Private_a0ab8628387166b8a8abc6e9b6f40ad55}} 
+\index{v8\+::\+Private@{v8\+::\+Private}!For\+Api@{For\+Api}}
+\index{For\+Api@{For\+Api}!v8\+::\+Private@{v8\+::\+Private}}
+\subsubsection{\texorpdfstring{For\+Api()}{ForApi()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Private}{Private}}$>$ v8\+::\+Private\+::\+For\+Api (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieve a global private symbol. If a symbol with this name has not been retrieved in the same isolate before, it is created. Note that private symbols created this way are never collected, so they should only be used for statically fixed properties. Also, there is only one global name space for the names used as keys. To minimize the potential for clashes, use qualified names as keys, e.\+g., \char`\"{}\+Class\#property\char`\"{}. \mbox{\Hypertarget{classv8_1_1Private_ab3bbd6a2dcf6aea73f65c95f0d216f12}\label{classv8_1_1Private_ab3bbd6a2dcf6aea73f65c95f0d216f12}} 
+\index{v8\+::\+Private@{v8\+::\+Private}!Name@{Name}}
+\index{Name@{Name}!v8\+::\+Private@{v8\+::\+Private}}
+\subsubsection{\texorpdfstring{Name()}{Name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Private\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the print name string of the private symbol, or undefined if none. \mbox{\Hypertarget{classv8_1_1Private_ae43aa9516121ed7a24cf5bba1654b653}\label{classv8_1_1Private_ae43aa9516121ed7a24cf5bba1654b653}} 
+\index{v8\+::\+Private@{v8\+::\+Private}!New@{New}}
+\index{New@{New}!v8\+::\+Private@{v8\+::\+Private}}
+\subsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Private}{Private}}$>$ v8\+::\+Private\+::\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$}]{name = {\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$~\mbox{\hyperlink{classv8_1_1String}{String}}~$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a private symbol. If name is not empty, it will be the description. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

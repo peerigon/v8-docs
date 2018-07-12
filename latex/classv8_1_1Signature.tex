@@ -13,13 +13,18 @@ Inheritance diagram for v8\+:\+:Signature\+:\begin{figure}[H]
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Signature}{Signature} $>$ {\bfseries New} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} $>$ receiver=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1FunctionTemplate}{Function\+Template} $>$())\hypertarget{classv8_1_1Signature_a4e3d622674ec1f735e9981ec3309320f}{}\label{classv8_1_1Signature_a4e3d622674ec1f735e9981ec3309320f}
-
+\mbox{\Hypertarget{classv8_1_1Signature_a4e3d622674ec1f735e9981ec3309320f}\label{classv8_1_1Signature_a4e3d622674ec1f735e9981ec3309320f}} 
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Signature}{Signature}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}} $>$ receiver=\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}} $>$())
+\item 
+\mbox{\Hypertarget{classv8_1_1Signature_a9c7566555923187ca55c14af8048a9fc}\label{classv8_1_1Signature_a9c7566555923187ca55c14af8048a9fc}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Signature}{Signature}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Data}{Data}} $\ast$data)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A \hyperlink{classv8_1_1Signature}{Signature} specifies which receiver is valid for a function. 
+A \mbox{\hyperlink{classv8_1_1Signature}{Signature}} specifies which receiver is valid for a function.
+
+A receiver matches a given signature if the receiver (or any of its hidden prototypes) was created from the signature\textquotesingle{}s \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}}, or from a \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}} that inherits directly or indirectly from the signature\textquotesingle{}s \mbox{\hyperlink{classv8_1_1FunctionTemplate}{Function\+Template}}. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

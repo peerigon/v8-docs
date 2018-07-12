@@ -1,0 +1,168 @@
+\hypertarget{classv8_1_1SnapshotCreator}{}\section{v8\+:\+:Snapshot\+Creator Class Reference}
+\label{classv8_1_1SnapshotCreator}\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_a8b1f50812dc699d0dce347fd557b77c2}\label{classv8_1_1SnapshotCreator_a8b1f50812dc699d0dce347fd557b77c2}} 
+enum {\bfseries Function\+Code\+Handling} \{ {\bfseries k\+Clear}, 
+{\bfseries k\+Keep}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classv8_1_1SnapshotCreator_a561a072e2d0656946b8b976fa2769dea}{Snapshot\+Creator}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const intptr\+\_\+t $\ast$external\+\_\+references=nullptr, \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} $\ast$existing\+\_\+blob=nullptr)
+\item 
+\mbox{\hyperlink{classv8_1_1SnapshotCreator_acde479ff9349a5f61d3e1bd4bc78d833}{Snapshot\+Creator}} (const intptr\+\_\+t $\ast$external\+\_\+references=nullptr, \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} $\ast$existing\+\_\+blob=nullptr)
+\item 
+\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ \mbox{\hyperlink{classv8_1_1SnapshotCreator_a6f9acab93ba6bc6232cd1bfead27dec1}{Get\+Isolate}} ()
+\item 
+void \mbox{\hyperlink{classv8_1_1SnapshotCreator_aaeed7b1a205009c62d7e60deefe6e805}{Set\+Default\+Context}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{structv8_1_1SerializeInternalFieldsCallback}{Serialize\+Internal\+Fields\+Callback}} callback=\mbox{\hyperlink{structv8_1_1SerializeInternalFieldsCallback}{Serialize\+Internal\+Fields\+Callback}}())
+\item 
+size\+\_\+t \mbox{\hyperlink{classv8_1_1SnapshotCreator_aefaa477c494707e73b493047f4711a0a}{Add\+Context}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{structv8_1_1SerializeInternalFieldsCallback}{Serialize\+Internal\+Fields\+Callback}} callback=\mbox{\hyperlink{structv8_1_1SerializeInternalFieldsCallback}{Serialize\+Internal\+Fields\+Callback}}())
+\item 
+size\+\_\+t \mbox{\hyperlink{classv8_1_1SnapshotCreator_aba2fdfb11dd2016a80fa9b812c1e4287}{Add\+Template}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Template}{Template}} $>$ template\+\_\+obj)
+\item 
+{\footnotesize template$<$class T $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t \mbox{\hyperlink{classv8_1_1SnapshotCreator_a7388b4c160b8d1b6b7ff23833bafb339}{Add\+Data}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ object)
+\item 
+{\footnotesize template$<$class T $>$ }\\V8\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t \mbox{\hyperlink{classv8_1_1SnapshotCreator_a14522fba865a20f502805bc54104bee7}{Add\+Data}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ object)
+\item 
+\mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} \mbox{\hyperlink{classv8_1_1SnapshotCreator_a86b2023acdb88a9bd6eae2695f2b0a8a}{Create\+Blob}} (Function\+Code\+Handling function\+\_\+code\+\_\+handling)
+\item 
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_a2ecd3018fb28bae605b6dd26cc21ec44}\label{classv8_1_1SnapshotCreator_a2ecd3018fb28bae605b6dd26cc21ec44}} 
+{\bfseries Snapshot\+Creator} (const \mbox{\hyperlink{classv8_1_1SnapshotCreator}{Snapshot\+Creator}} \&)=delete
+\item 
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_ad764835d6388b3442b75016257b9a6df}\label{classv8_1_1SnapshotCreator_ad764835d6388b3442b75016257b9a6df}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1SnapshotCreator}{Snapshot\+Creator}} \&)=delete
+\item 
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_a0bc97ea7ead4892f2dfa64fef20454d9}\label{classv8_1_1SnapshotCreator_a0bc97ea7ead4892f2dfa64fef20454d9}} 
+{\footnotesize template$<$class T $>$ }\\size\+\_\+t {\bfseries Add\+Data} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ object)
+\item 
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_aa8f73b9c58c3851ddf43f3a1b53d4af8}\label{classv8_1_1SnapshotCreator_aa8f73b9c58c3851ddf43f3a1b53d4af8}} 
+{\footnotesize template$<$class T $>$ }\\size\+\_\+t {\bfseries Add\+Data} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$ object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class to create a snapshot data blob. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_a561a072e2d0656946b8b976fa2769dea}\label{classv8_1_1SnapshotCreator_a561a072e2d0656946b8b976fa2769dea}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Snapshot\+Creator@{Snapshot\+Creator}}
+\index{Snapshot\+Creator@{Snapshot\+Creator}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Snapshot\+Creator()}{SnapshotCreator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily v8\+::\+Snapshot\+Creator\+::\+Snapshot\+Creator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{const intptr\+\_\+t $\ast$}]{external\+\_\+references = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} $\ast$}]{existing\+\_\+blob = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Initialize and enter an isolate, and set it up for serialization. The isolate is either created from scratch or from an existing snapshot. The caller keeps ownership of the argument snapshot. 
+\begin{DoxyParams}{Parameters}
+{\em existing\+\_\+blob} & existing snapshot from which to create this one. \\
+\hline
+{\em external\+\_\+references} & a null-\/terminated array of external references that must be equivalent to Create\+Params\+::external\+\_\+references. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_acde479ff9349a5f61d3e1bd4bc78d833}\label{classv8_1_1SnapshotCreator_acde479ff9349a5f61d3e1bd4bc78d833}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Snapshot\+Creator@{Snapshot\+Creator}}
+\index{Snapshot\+Creator@{Snapshot\+Creator}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Snapshot\+Creator()}{SnapshotCreator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily v8\+::\+Snapshot\+Creator\+::\+Snapshot\+Creator (\begin{DoxyParamCaption}\item[{const intptr\+\_\+t $\ast$}]{external\+\_\+references = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} $\ast$}]{existing\+\_\+blob = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Create and enter an isolate, and set it up for serialization. The isolate is either created from scratch or from an existing snapshot. The caller keeps ownership of the argument snapshot. 
+\begin{DoxyParams}{Parameters}
+{\em existing\+\_\+blob} & existing snapshot from which to create this one. \\
+\hline
+{\em external\+\_\+references} & a null-\/terminated array of external references that must be equivalent to Create\+Params\+::external\+\_\+references. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_aefaa477c494707e73b493047f4711a0a}\label{classv8_1_1SnapshotCreator_aefaa477c494707e73b493047f4711a0a}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Add\+Context@{Add\+Context}}
+\index{Add\+Context@{Add\+Context}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Add\+Context()}{AddContext()}}
+{\footnotesize\ttfamily size\+\_\+t v8\+::\+Snapshot\+Creator\+::\+Add\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context,  }\item[{\mbox{\hyperlink{structv8_1_1SerializeInternalFieldsCallback}{Serialize\+Internal\+Fields\+Callback}}}]{callback = {\ttfamily \mbox{\hyperlink{structv8_1_1SerializeInternalFieldsCallback}{Serialize\+Internal\+Fields\+Callback}}()} }\end{DoxyParamCaption})}
+
+Add additional context to be included in the snapshot blob. The snapshot will include the global proxy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & optional callback to serialize internal fields.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the context in the snapshot blob. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_a7388b4c160b8d1b6b7ff23833bafb339}\label{classv8_1_1SnapshotCreator_a7388b4c160b8d1b6b7ff23833bafb339}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Add\+Data@{Add\+Data}}
+\index{Add\+Data@{Add\+Data}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Add\+Data()}{AddData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+V8\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t v8\+::\+Snapshot\+Creator\+::\+Add\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$}]{object }\end{DoxyParamCaption})}
+
+Attach arbitrary V8\+::\+Data to the context snapshot, which can be retrieved via Context\+::\+Get\+Data\+From\+Snapshot after deserialization. This data does not survive when a new snapshot is created from an existing snapshot. \begin{DoxyReturn}{Returns}
+the index for retrieval. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_a14522fba865a20f502805bc54104bee7}\label{classv8_1_1SnapshotCreator_a14522fba865a20f502805bc54104bee7}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Add\+Data@{Add\+Data}}
+\index{Add\+Data@{Add\+Data}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Add\+Data()}{AddData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+V8\+\_\+\+I\+N\+L\+I\+NE size\+\_\+t v8\+::\+Snapshot\+Creator\+::\+Add\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ T $>$}]{object }\end{DoxyParamCaption})}
+
+Attach arbitrary V8\+::\+Data to the isolate snapshot, which can be retrieved via Isolate\+::\+Get\+Data\+From\+Snapshot after deserialization. This data does not survive when a new snapshot is created from an existing snapshot. \begin{DoxyReturn}{Returns}
+the index for retrieval. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_aba2fdfb11dd2016a80fa9b812c1e4287}\label{classv8_1_1SnapshotCreator_aba2fdfb11dd2016a80fa9b812c1e4287}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Add\+Template@{Add\+Template}}
+\index{Add\+Template@{Add\+Template}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Add\+Template()}{AddTemplate()}}
+{\footnotesize\ttfamily size\+\_\+t v8\+::\+Snapshot\+Creator\+::\+Add\+Template (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Template}{Template}} $>$}]{template\+\_\+obj }\end{DoxyParamCaption})}
+
+Add a template to be included in the snapshot blob. \begin{DoxyReturn}{Returns}
+the index of the template in the snapshot blob. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_a86b2023acdb88a9bd6eae2695f2b0a8a}\label{classv8_1_1SnapshotCreator_a86b2023acdb88a9bd6eae2695f2b0a8a}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Create\+Blob@{Create\+Blob}}
+\index{Create\+Blob@{Create\+Blob}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Create\+Blob()}{CreateBlob()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} v8\+::\+Snapshot\+Creator\+::\+Create\+Blob (\begin{DoxyParamCaption}\item[{Function\+Code\+Handling}]{function\+\_\+code\+\_\+handling }\end{DoxyParamCaption})}
+
+Created a snapshot data blob. This must not be called from within a handle scope. 
+\begin{DoxyParams}{Parameters}
+{\em function\+\_\+code\+\_\+handling} & whether to include compiled function code in the snapshot. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{ nullptr, 0 \} on failure, and a startup snapshot on success. The caller acquires ownership of the data array in the return value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_a6f9acab93ba6bc6232cd1bfead27dec1}\label{classv8_1_1SnapshotCreator_a6f9acab93ba6bc6232cd1bfead27dec1}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Get\+Isolate@{Get\+Isolate}}
+\index{Get\+Isolate@{Get\+Isolate}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Get\+Isolate()}{GetIsolate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}}$\ast$ v8\+::\+Snapshot\+Creator\+::\+Get\+Isolate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the isolate prepared by the snapshot creator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classv8_1_1SnapshotCreator_aaeed7b1a205009c62d7e60deefe6e805}\label{classv8_1_1SnapshotCreator_aaeed7b1a205009c62d7e60deefe6e805}} 
+\index{v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}!Set\+Default\+Context@{Set\+Default\+Context}}
+\index{Set\+Default\+Context@{Set\+Default\+Context}!v8\+::\+Snapshot\+Creator@{v8\+::\+Snapshot\+Creator}}
+\subsubsection{\texorpdfstring{Set\+Default\+Context()}{SetDefaultContext()}}
+{\footnotesize\ttfamily void v8\+::\+Snapshot\+Creator\+::\+Set\+Default\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context,  }\item[{\mbox{\hyperlink{structv8_1_1SerializeInternalFieldsCallback}{Serialize\+Internal\+Fields\+Callback}}}]{callback = {\ttfamily \mbox{\hyperlink{structv8_1_1SerializeInternalFieldsCallback}{Serialize\+Internal\+Fields\+Callback}}()} }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classv8_1_1Set}{Set}} the default context to be included in the snapshot blob. The snapshot will not contain the global proxy, and we expect one or a global object template to create one, to be provided upon deserialization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & optional callback to serialize internal fields. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

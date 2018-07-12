@@ -1,0 +1,35 @@
+\hypertarget{structv8_1_1SerializeInternalFieldsCallback}{}\section{v8\+:\+:Serialize\+Internal\+Fields\+Callback Struct Reference}
+\label{structv8_1_1SerializeInternalFieldsCallback}\index{v8\+::\+Serialize\+Internal\+Fields\+Callback@{v8\+::\+Serialize\+Internal\+Fields\+Callback}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1SerializeInternalFieldsCallback_a65e0231420540feb0211553b1821d508}\label{structv8_1_1SerializeInternalFieldsCallback_a65e0231420540feb0211553b1821d508}} 
+typedef \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}}($\ast$ {\bfseries Callback\+Function}) (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ holder, int index, void $\ast$data)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1SerializeInternalFieldsCallback_aa3c8fa9fa7f7eb7f87dbd5a96425bf32}\label{structv8_1_1SerializeInternalFieldsCallback_aa3c8fa9fa7f7eb7f87dbd5a96425bf32}} 
+{\bfseries Serialize\+Internal\+Fields\+Callback} (Callback\+Function function=nullptr, void $\ast$data\+\_\+arg=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1SerializeInternalFieldsCallback_ab4511f3840db60378b1f000478dac521}\label{structv8_1_1SerializeInternalFieldsCallback_ab4511f3840db60378b1f000478dac521}} 
+Callback\+Function {\bfseries callback}
+\item 
+\mbox{\Hypertarget{structv8_1_1SerializeInternalFieldsCallback_a8f92d651c3cba2afd9b8504bb3f40130}\label{structv8_1_1SerializeInternalFieldsCallback_a8f92d651c3cba2afd9b8504bb3f40130}} 
+void $\ast$ {\bfseries data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback and supporting data used in \mbox{\hyperlink{classv8_1_1SnapshotCreator}{Snapshot\+Creator}} to implement embedder logic to serialize internal fields. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

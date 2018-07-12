@@ -7,58 +7,52 @@
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classv8_1_1OutputStream_a336c7605a0ce4fbe6f6fca3b03bc16de}\label{classv8_1_1OutputStream_a336c7605a0ce4fbe6f6fca3b03bc16de}} 
 enum {\bfseries Write\+Result} \{ {\bfseries k\+Continue} = 0, 
 {\bfseries k\+Abort} = 1
- \}\hypertarget{classv8_1_1OutputStream_a336c7605a0ce4fbe6f6fca3b03bc16de}{}\label{classv8_1_1OutputStream_a336c7605a0ce4fbe6f6fca3b03bc16de}
-
+ \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}{End\+Of\+Stream} ()=0
+virtual void \mbox{\hyperlink{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}{End\+Of\+Stream}} ()=0
 \item 
-virtual int \hyperlink{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}{Get\+Chunk\+Size} ()
+virtual int \mbox{\hyperlink{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}{Get\+Chunk\+Size}} ()
 \item 
-virtual Write\+Result \hyperlink{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}{Write\+Ascii\+Chunk} (char $\ast$data, int size)=0
+virtual Write\+Result \mbox{\hyperlink{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}{Write\+Ascii\+Chunk}} (char $\ast$data, int size)=0
 \item 
-virtual Write\+Result \hyperlink{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}{Write\+Heap\+Stats\+Chunk} (\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update} $\ast$data, int count)
+virtual Write\+Result \mbox{\hyperlink{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}{Write\+Heap\+Stats\+Chunk}} (\mbox{\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update}} $\ast$data, int count)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-An interface for exporting data from \hyperlink{classv8_1_1V8}{V8}, using \char`\"{}push\char`\"{} model. 
+An interface for exporting data from \mbox{\hyperlink{classv8_1_1V8}{V8}}, using \char`\"{}push\char`\"{} model. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}\label{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}} 
 \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!End\+Of\+Stream@{End\+Of\+Stream}}
 \index{End\+Of\+Stream@{End\+Of\+Stream}!v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}}
-\subsubsection[{\texorpdfstring{End\+Of\+Stream()=0}{EndOfStream()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Output\+Stream\+::\+End\+Of\+Stream (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}{}\label{classv8_1_1OutputStream_a6c5c308367fc5776bcbedff0e94d6049}
-Notify about the end of stream. \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Get\+Chunk\+Size@{Get\+Chunk\+Size}}
+\subsubsection{\texorpdfstring{End\+Of\+Stream()}{EndOfStream()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Output\+Stream\+::\+End\+Of\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Notify about the end of stream. \mbox{\Hypertarget{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}\label{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}} 
+\index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Get\+Chunk\+Size@{Get\+Chunk\+Size}}
 \index{Get\+Chunk\+Size@{Get\+Chunk\+Size}!v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}}
-\subsubsection[{\texorpdfstring{Get\+Chunk\+Size()}{GetChunkSize()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int v8\+::\+Output\+Stream\+::\+Get\+Chunk\+Size (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}{}\label{classv8_1_1OutputStream_a93bdaa790cbd66a7283fad2cca3f48f7}
-Get preferred output chunk size. Called only once. \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Write\+Ascii\+Chunk@{Write\+Ascii\+Chunk}}
+\subsubsection{\texorpdfstring{Get\+Chunk\+Size()}{GetChunkSize()}}
+{\footnotesize\ttfamily virtual int v8\+::\+Output\+Stream\+::\+Get\+Chunk\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get preferred output chunk size. Called only once. \mbox{\Hypertarget{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}\label{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}} 
+\index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Write\+Ascii\+Chunk@{Write\+Ascii\+Chunk}}
 \index{Write\+Ascii\+Chunk@{Write\+Ascii\+Chunk}!v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}}
-\subsubsection[{\texorpdfstring{Write\+Ascii\+Chunk(char $\ast$data, int size)=0}{WriteAsciiChunk(char *data, int size)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Ascii\+Chunk (
-\begin{DoxyParamCaption}
-\item[{char $\ast$}]{data, }
-\item[{int}]{size}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}{}\label{classv8_1_1OutputStream_a42adc62ebe43d00159f80328538f217f}
-Writes the next chunk of snapshot data into the stream. Writing can be stopped by returning k\+Abort as function result. End\+Of\+Stream will not be called in case writing was aborted. \index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Write\+Heap\+Stats\+Chunk@{Write\+Heap\+Stats\+Chunk}}
+\subsubsection{\texorpdfstring{Write\+Ascii\+Chunk()}{WriteAsciiChunk()}}
+{\footnotesize\ttfamily virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Ascii\+Chunk (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Writes the next chunk of snapshot data into the stream. Writing can be stopped by returning k\+Abort as function result. End\+Of\+Stream will not be called in case writing was aborted. \mbox{\Hypertarget{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}\label{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}} 
+\index{v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}!Write\+Heap\+Stats\+Chunk@{Write\+Heap\+Stats\+Chunk}}
 \index{Write\+Heap\+Stats\+Chunk@{Write\+Heap\+Stats\+Chunk}!v8\+::\+Output\+Stream@{v8\+::\+Output\+Stream}}
-\subsubsection[{\texorpdfstring{Write\+Heap\+Stats\+Chunk(\+Heap\+Stats\+Update $\ast$data, int count)}{WriteHeapStatsChunk(HeapStatsUpdate *data, int count)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Heap\+Stats\+Chunk (
-\begin{DoxyParamCaption}
-\item[{{\bf Heap\+Stats\+Update} $\ast$}]{data, }
-\item[{int}]{count}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}{}\label{classv8_1_1OutputStream_a104fd1a0b5ef685e1d4967aaacbb9e9d}
+\subsubsection{\texorpdfstring{Write\+Heap\+Stats\+Chunk()}{WriteHeapStatsChunk()}}
+{\footnotesize\ttfamily virtual Write\+Result v8\+::\+Output\+Stream\+::\+Write\+Heap\+Stats\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structv8_1_1HeapStatsUpdate}{Heap\+Stats\+Update}} $\ast$}]{data,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
 Writes the next chunk of heap stats data into the stream. Writing can be stopped by returning k\+Abort as function result. End\+Of\+Stream will not be called in case writing was aborted. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

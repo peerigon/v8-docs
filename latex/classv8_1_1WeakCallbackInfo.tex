@@ -3,35 +3,26 @@
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef void($\ast$ {\bfseries Callback}) (const \hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}$<$ T $>$ \&data)\hypertarget{classv8_1_1WeakCallbackInfo_a75f50fddcc9d5989e9cc04f8ab144d7d}{}\label{classv8_1_1WeakCallbackInfo_a75f50fddcc9d5989e9cc04f8ab144d7d}
-
+\mbox{\Hypertarget{classv8_1_1WeakCallbackInfo_a75f50fddcc9d5989e9cc04f8ab144d7d}\label{classv8_1_1WeakCallbackInfo_a75f50fddcc9d5989e9cc04f8ab144d7d}} 
+typedef void($\ast$ {\bfseries Callback}) (const \mbox{\hyperlink{classv8_1_1WeakCallbackInfo}{Weak\+Callback\+Info}}$<$ T $>$ \&data)
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Weak\+Callback\+Info} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, T $\ast$parameter, void $\ast$internal\+\_\+fields\mbox{[}k\+Internal\+Fields\+In\+Weak\+Callback\mbox{]}, Callback $\ast$callback)\hypertarget{classv8_1_1WeakCallbackInfo_a0863d1a5dba908ef4ac42298be4ee402}{}\label{classv8_1_1WeakCallbackInfo_a0863d1a5dba908ef4ac42298be4ee402}
-
+\mbox{\Hypertarget{classv8_1_1WeakCallbackInfo_aabf19115b690b9baf1da8f440dfb3aa6}\label{classv8_1_1WeakCallbackInfo_aabf19115b690b9baf1da8f440dfb3aa6}} 
+{\bfseries Weak\+Callback\+Info} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, T $\ast$parameter, void $\ast$embedder\+\_\+fields\mbox{[}k\+Embedder\+Fields\+In\+Weak\+Callback\mbox{]}, Callback $\ast$callback)
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1Isolate}{Isolate} $\ast$ {\bfseries Get\+Isolate} () const \hypertarget{classv8_1_1WeakCallbackInfo_a5f0fe68cc18853467d3713b1ec48da9a}{}\label{classv8_1_1WeakCallbackInfo_a5f0fe68cc18853467d3713b1ec48da9a}
-
+\mbox{\Hypertarget{classv8_1_1WeakCallbackInfo_a4cc354ee04d52d5ab880f1e9f85966c1}\label{classv8_1_1WeakCallbackInfo_a4cc354ee04d52d5ab880f1e9f85966c1}} 
+V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ {\bfseries Get\+Isolate} () const
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE T $\ast$ {\bfseries Get\+Parameter} () const \hypertarget{classv8_1_1WeakCallbackInfo_a515eb1547d96a9813e447e8acfb46a1a}{}\label{classv8_1_1WeakCallbackInfo_a515eb1547d96a9813e447e8acfb46a1a}
-
+\mbox{\Hypertarget{classv8_1_1WeakCallbackInfo_a7fcf0d86f88eb066967de3c0e4a77ed4}\label{classv8_1_1WeakCallbackInfo_a7fcf0d86f88eb066967de3c0e4a77ed4}} 
+V8\+\_\+\+I\+N\+L\+I\+NE T $\ast$ {\bfseries Get\+Parameter} () const
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ {\bfseries Get\+Internal\+Field} (int index) const \hypertarget{classv8_1_1WeakCallbackInfo_ac14e2ded95ad11763a5fdf601e69e004}{}\label{classv8_1_1WeakCallbackInfo_ac14e2ded95ad11763a5fdf601e69e004}
-
+\mbox{\Hypertarget{classv8_1_1WeakCallbackInfo_a00732c95f8c130fba45ee6bbb3d3d819}\label{classv8_1_1WeakCallbackInfo_a00732c95f8c130fba45ee6bbb3d3d819}} 
+V8\+\_\+\+I\+N\+L\+I\+NE void $\ast$ {\bfseries Get\+Internal\+Field} (int index) const
 \item 
-V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use indexed version\char`\"{}, void $\ast$Get\+Internal\+Field1() const)\hypertarget{classv8_1_1WeakCallbackInfo_a3e5c3c00672dc02931fea46129432e80}{}\label{classv8_1_1WeakCallbackInfo_a3e5c3c00672dc02931fea46129432e80}
-
-\item 
-V8\+\_\+\+I\+N\+L\+I\+NE {\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use indexed version\char`\"{}, void $\ast$Get\+Internal\+Field2() const)\hypertarget{classv8_1_1WeakCallbackInfo_a8eec746a3a9435af3ef0555c454f780b}{}\label{classv8_1_1WeakCallbackInfo_a8eec746a3a9435af3ef0555c454f780b}
-
-\item 
-{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Not realiable once Set\+Second\+Pass\+Callback() was used.\char`\"{}, bool Is\+First\+Pass() const)\hypertarget{classv8_1_1WeakCallbackInfo_a619bad43989c80ac8cbba4ecfa37d8d9}{}\label{classv8_1_1WeakCallbackInfo_a619bad43989c80ac8cbba4ecfa37d8d9}
-
-\item 
-void {\bfseries Set\+Second\+Pass\+Callback} (Callback callback) const \hypertarget{classv8_1_1WeakCallbackInfo_a17590c561d242f1250b4cd4020eb8cd7}{}\label{classv8_1_1WeakCallbackInfo_a17590c561d242f1250b4cd4020eb8cd7}
-
+\mbox{\Hypertarget{classv8_1_1WeakCallbackInfo_af0f671ce037ff91319683e8f01645865}\label{classv8_1_1WeakCallbackInfo_af0f671ce037ff91319683e8f01645865}} 
+void {\bfseries Set\+Second\+Pass\+Callback} (Callback callback) const
 \end{DoxyCompactItemize}
 
 

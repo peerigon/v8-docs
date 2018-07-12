@@ -13,79 +13,87 @@ Inheritance diagram for v8\+:\+:Array\+Buffer\+View\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} $>$ \hyperlink{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}{Buffer} ()
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} $>$ \mbox{\hyperlink{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}{Buffer}} ()
 \item 
-size\+\_\+t \hyperlink{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}{Byte\+Offset} ()
+size\+\_\+t \mbox{\hyperlink{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}{Byte\+Offset}} ()
 \item 
-size\+\_\+t \hyperlink{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}{Byte\+Length} ()
+size\+\_\+t \mbox{\hyperlink{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}{Byte\+Length}} ()
 \item 
-size\+\_\+t \hyperlink{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}{Copy\+Contents} (void $\ast$dest, size\+\_\+t byte\+\_\+length)
+size\+\_\+t \mbox{\hyperlink{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}{Copy\+Contents}} (void $\ast$dest, size\+\_\+t byte\+\_\+length)
 \item 
-bool \hyperlink{classv8_1_1ArrayBufferView_ab3a7de283cab4140632d190a1e3eef22}{Has\+Buffer} () const 
+bool \mbox{\hyperlink{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}{Has\+Buffer}} () const
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)\hypertarget{classv8_1_1ArrayBufferView_a84db315fe904ca1421c0e8e3f615cccb}{}\label{classv8_1_1ArrayBufferView_a84db315fe904ca1421c0e8e3f615cccb}
-
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_a84db315fe904ca1421c0e8e3f615cccb}\label{classv8_1_1ArrayBufferView_a84db315fe904ca1421c0e8e3f615cccb}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{Value}} $\ast$obj)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 static const int {\bfseries k\+Internal\+Field\+Count}
+\item 
+static const int {\bfseries k\+Embedder\+Field\+Count}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A base class for an instance of one of \char`\"{}views\char`\"{} over \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}, including Typed\+Arrays and \hyperlink{classv8_1_1DataView}{Data\+View} (E\+S6 draft 15.\+13).
-
-This A\+PI is experimental and may change significantly. 
+A base class for an instance of one of \char`\"{}views\char`\"{} over \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}}, including Typed\+Arrays and \mbox{\hyperlink{classv8_1_1DataView}{Data\+View}} (E\+S6 draft 15.\+13). 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}\label{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}} 
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Buffer@{Buffer}}
 \index{Buffer@{Buffer}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
-\subsubsection[{\texorpdfstring{Buffer()}{Buffer()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$<${\bf Array\+Buffer}$>$ v8\+::\+Array\+Buffer\+View\+::\+Buffer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}{}\label{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}
-Returns underlying \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}. \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Byte\+Length@{Byte\+Length}}
-\index{Byte\+Length@{Byte\+Length}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
-\subsubsection[{\texorpdfstring{Byte\+Length()}{ByteLength()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Byte\+Length (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}{}\label{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}
-Size of a view in bytes. \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Byte\+Offset@{Byte\+Offset}}
-\index{Byte\+Offset@{Byte\+Offset}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
-\subsubsection[{\texorpdfstring{Byte\+Offset()}{ByteOffset()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Byte\+Offset (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}{}\label{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}
-Byte offset in $\vert$\+Buffer$\vert$. \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Copy\+Contents@{Copy\+Contents}}
-\index{Copy\+Contents@{Copy\+Contents}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
-\subsubsection[{\texorpdfstring{Copy\+Contents(void $\ast$dest, size\+\_\+t byte\+\_\+length)}{CopyContents(void *dest, size_t byte_length)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Copy\+Contents (
-\begin{DoxyParamCaption}
-\item[{void $\ast$}]{dest, }
-\item[{size\+\_\+t}]{byte\+\_\+length}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}{}\label{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}
-Copy the contents of the \hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}\textquotesingle{}s buffer to an embedder defined memory without additional overhead that calling \hyperlink{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}{Array\+Buffer\+View\+::\+Buffer} might incur.
+\subsubsection{\texorpdfstring{Buffer()}{Buffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}}$>$ v8\+::\+Array\+Buffer\+View\+::\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Will write at most min($\vert$byte\+\_\+length$\vert$, Byte\+Length) bytes starting at Byte\+Offset of the underling buffer to the memory starting at $\vert$dest$\vert$. Returns the number of bytes actually written. \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Has\+Buffer@{Has\+Buffer}}
+Returns underlying \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}}. \mbox{\Hypertarget{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}\label{classv8_1_1ArrayBufferView_a9fc7563c97e0b639a6c0a3274995bb3c}} 
+\index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Byte\+Length@{Byte\+Length}}
+\index{Byte\+Length@{Byte\+Length}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
+\subsubsection{\texorpdfstring{Byte\+Length()}{ByteLength()}}
+{\footnotesize\ttfamily size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Byte\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Size of a view in bytes. \mbox{\Hypertarget{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}\label{classv8_1_1ArrayBufferView_a4739a31269f5ebc5b88a708b9429c688}} 
+\index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Byte\+Offset@{Byte\+Offset}}
+\index{Byte\+Offset@{Byte\+Offset}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
+\subsubsection{\texorpdfstring{Byte\+Offset()}{ByteOffset()}}
+{\footnotesize\ttfamily size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Byte\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Byte offset in $\vert$\+Buffer$\vert$. \mbox{\Hypertarget{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}\label{classv8_1_1ArrayBufferView_aa728e762ed43194f3a5e05e792fff64e}} 
+\index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Copy\+Contents@{Copy\+Contents}}
+\index{Copy\+Contents@{Copy\+Contents}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
+\subsubsection{\texorpdfstring{Copy\+Contents()}{CopyContents()}}
+{\footnotesize\ttfamily size\+\_\+t v8\+::\+Array\+Buffer\+View\+::\+Copy\+Contents (\begin{DoxyParamCaption}\item[{void $\ast$}]{dest,  }\item[{size\+\_\+t}]{byte\+\_\+length }\end{DoxyParamCaption})}
+
+Copy the contents of the \mbox{\hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}}\textquotesingle{}s buffer to an embedder defined memory without additional overhead that calling \mbox{\hyperlink{classv8_1_1ArrayBufferView_a2ceba3908fbf98ecc81702083127b046}{Array\+Buffer\+View\+::\+Buffer}} might incur.
+
+Will write at most min($\vert$byte\+\_\+length$\vert$, Byte\+Length) bytes starting at Byte\+Offset of the underlying buffer to the memory starting at $\vert$dest$\vert$. Returns the number of bytes actually written. \mbox{\Hypertarget{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}\label{classv8_1_1ArrayBufferView_ab1f5835c3dea53a625814a8c3ab2e0ae}} 
+\index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!Has\+Buffer@{Has\+Buffer}}
 \index{Has\+Buffer@{Has\+Buffer}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
-\subsubsection[{\texorpdfstring{Has\+Buffer() const }{HasBuffer() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Array\+Buffer\+View\+::\+Has\+Buffer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\hypertarget{classv8_1_1ArrayBufferView_ab3a7de283cab4140632d190a1e3eef22}{}\label{classv8_1_1ArrayBufferView_ab3a7de283cab4140632d190a1e3eef22}
-Returns true if \hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}\textquotesingle{}s backing \hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer} has already been allocated. 
+\subsubsection{\texorpdfstring{Has\+Buffer()}{HasBuffer()}}
+{\footnotesize\ttfamily bool v8\+::\+Array\+Buffer\+View\+::\+Has\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns true if \mbox{\hyperlink{classv8_1_1ArrayBufferView}{Array\+Buffer\+View}}\textquotesingle{}s backing \mbox{\hyperlink{classv8_1_1ArrayBuffer}{Array\+Buffer}} has already been allocated. 
 
 \subsection{Field Documentation}
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_a4c007c4f644125cee1b7605c9ea1bc6c}\label{classv8_1_1ArrayBufferView_a4c007c4f644125cee1b7605c9ea1bc6c}} 
+\index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!k\+Embedder\+Field\+Count@{k\+Embedder\+Field\+Count}}
+\index{k\+Embedder\+Field\+Count@{k\+Embedder\+Field\+Count}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
+\subsubsection{\texorpdfstring{k\+Embedder\+Field\+Count}{kEmbedderFieldCount}}
+{\footnotesize\ttfamily const int v8\+::\+Array\+Buffer\+View\+::k\+Embedder\+Field\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      V8\_ARRAY\_BUFFER\_VIEW\_INTERNAL\_FIELD\_COUNT
+\end{DoxyCode}
+\mbox{\Hypertarget{classv8_1_1ArrayBufferView_a1cccb675b1a91e61411fee5918d451db}\label{classv8_1_1ArrayBufferView_a1cccb675b1a91e61411fee5918d451db}} 
 \index{v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}!k\+Internal\+Field\+Count@{k\+Internal\+Field\+Count}}
 \index{k\+Internal\+Field\+Count@{k\+Internal\+Field\+Count}!v8\+::\+Array\+Buffer\+View@{v8\+::\+Array\+Buffer\+View}}
-\subsubsection[{\texorpdfstring{k\+Internal\+Field\+Count}{kInternalFieldCount}}]{\setlength{\rightskip}{0pt plus 5cm}const int v8\+::\+Array\+Buffer\+View\+::k\+Internal\+Field\+Count\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1ArrayBufferView_a1cccb675b1a91e61411fee5918d451db}{}\label{classv8_1_1ArrayBufferView_a1cccb675b1a91e61411fee5918d451db}
+\subsubsection{\texorpdfstring{k\+Internal\+Field\+Count}{kInternalFieldCount}}
+{\footnotesize\ttfamily const int v8\+::\+Array\+Buffer\+View\+::k\+Internal\+Field\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 =

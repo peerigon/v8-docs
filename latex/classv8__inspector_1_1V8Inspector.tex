@@ -1,0 +1,75 @@
+\hypertarget{classv8__inspector_1_1V8Inspector}{}\section{v8\+\_\+inspector\+:\+:V8\+Inspector Class Reference}
+\label{classv8__inspector_1_1V8Inspector}\index{v8\+\_\+inspector\+::\+V8\+Inspector@{v8\+\_\+inspector\+::\+V8\+Inspector}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8__inspector_1_1V8Inspector_1_1Channel}{Channel}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a2027babae023eb7745a699de30ef2040}\label{classv8__inspector_1_1V8Inspector_a2027babae023eb7745a699de30ef2040}} 
+virtual void {\bfseries context\+Created} (const \mbox{\hyperlink{classv8__inspector_1_1V8ContextInfo}{V8\+Context\+Info}} \&)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a519c21ce7d4693e27c0b2859f3c5901d}\label{classv8__inspector_1_1V8Inspector_a519c21ce7d4693e27c0b2859f3c5901d}} 
+virtual void {\bfseries context\+Destroyed} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_ab65e4ca3316c60644bfdefc52a769d99}\label{classv8__inspector_1_1V8Inspector_ab65e4ca3316c60644bfdefc52a769d99}} 
+virtual void {\bfseries reset\+Context\+Group} (int context\+Group\+Id)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a923d7681b39db723a43b279a7429d9ea}\label{classv8__inspector_1_1V8Inspector_a923d7681b39db723a43b279a7429d9ea}} 
+virtual void {\bfseries idle\+Started} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a679251f1e8f90799c45dde8a86c73a80}\label{classv8__inspector_1_1V8Inspector_a679251f1e8f90799c45dde8a86c73a80}} 
+virtual void {\bfseries idle\+Finished} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_ab9d050ddc357b771b932af978e52aff3}\label{classv8__inspector_1_1V8Inspector_ab9d050ddc357b771b932af978e52aff3}} 
+virtual void {\bfseries async\+Task\+Scheduled} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&task\+Name, void $\ast$task, bool recurring)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_ad443be8234a20744558250b92451fc9d}\label{classv8__inspector_1_1V8Inspector_ad443be8234a20744558250b92451fc9d}} 
+virtual void {\bfseries async\+Task\+Canceled} (void $\ast$task)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a18081a671c17b6c8cc9e827e834518fc}\label{classv8__inspector_1_1V8Inspector_a18081a671c17b6c8cc9e827e834518fc}} 
+virtual void {\bfseries async\+Task\+Started} (void $\ast$task)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_aa19d6664fb011102014395d54d16ed68}\label{classv8__inspector_1_1V8Inspector_aa19d6664fb011102014395d54d16ed68}} 
+virtual void {\bfseries async\+Task\+Finished} (void $\ast$task)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a2a92520981e6d348ae004c6c72098975}\label{classv8__inspector_1_1V8Inspector_a2a92520981e6d348ae004c6c72098975}} 
+virtual void {\bfseries all\+Async\+Tasks\+Canceled} ()=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_af9682cd0e499d0d5e628c619b5efc382}\label{classv8__inspector_1_1V8Inspector_af9682cd0e499d0d5e628c619b5efc382}} 
+virtual \mbox{\hyperlink{structv8__inspector_1_1V8StackTraceId}{V8\+Stack\+Trace\+Id}} {\bfseries store\+Current\+Stack\+Trace} (const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&description)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_afd1530d80ad0a5a8bb284fc5aeb32fef}\label{classv8__inspector_1_1V8Inspector_afd1530d80ad0a5a8bb284fc5aeb32fef}} 
+virtual void {\bfseries external\+Async\+Task\+Started} (const \mbox{\hyperlink{structv8__inspector_1_1V8StackTraceId}{V8\+Stack\+Trace\+Id}} \&parent)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a0968e8e70a8c9086b66e421e02db8a5e}\label{classv8__inspector_1_1V8Inspector_a0968e8e70a8c9086b66e421e02db8a5e}} 
+virtual void {\bfseries external\+Async\+Task\+Finished} (const \mbox{\hyperlink{structv8__inspector_1_1V8StackTraceId}{V8\+Stack\+Trace\+Id}} \&parent)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a71e69c7b3fbb5eb9c0b5272f6aab3a2d}\label{classv8__inspector_1_1V8Inspector_a71e69c7b3fbb5eb9c0b5272f6aab3a2d}} 
+virtual unsigned {\bfseries exception\+Thrown} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message, \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ exception, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&detailed\+Message, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&url, unsigned line\+Number, unsigned column\+Number, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $>$, int script\+Id)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a6853e6b53df0a0058b0e7ff2a3cc94ec}\label{classv8__inspector_1_1V8Inspector_a6853e6b53df0a0058b0e7ff2a3cc94ec}} 
+virtual void {\bfseries exception\+Revoked} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{v8\+::\+Context}} $>$, unsigned exception\+Id, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&message)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_ada36fa35ede4b3fda70b07fc855458e4}\label{classv8__inspector_1_1V8Inspector_ada36fa35ede4b3fda70b07fc855458e4}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8InspectorSession}{V8\+Inspector\+Session}} $>$ {\bfseries connect} (int context\+Group\+Id, \mbox{\hyperlink{classv8__inspector_1_1V8Inspector_1_1Channel}{Channel}} $\ast$, const \mbox{\hyperlink{classv8__inspector_1_1StringView}{String\+View}} \&state)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a4ac935e4871eef8ee5cb2e5ca41a2142}\label{classv8__inspector_1_1V8Inspector_a4ac935e4871eef8ee5cb2e5ca41a2142}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $>$ {\bfseries create\+Stack\+Trace} (\mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1StackTrace}{v8\+::\+Stack\+Trace}} $>$)=0
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_a22af900e1627ca8ef9382c0507645d70}\label{classv8__inspector_1_1V8Inspector_a22af900e1627ca8ef9382c0507645d70}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8StackTrace}{V8\+Stack\+Trace}} $>$ {\bfseries capture\+Stack\+Trace} (bool full\+Stack)=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8__inspector_1_1V8Inspector_ac7b64842334aadde7dabff1ac6d82cff}\label{classv8__inspector_1_1V8Inspector_ac7b64842334aadde7dabff1ac6d82cff}} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8__inspector_1_1V8Inspector}{V8\+Inspector}} $>$ {\bfseries create} (\mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} $\ast$, \mbox{\hyperlink{classv8__inspector_1_1V8InspectorClient}{V8\+Inspector\+Client}} $\ast$)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/inspector.\+h\end{DoxyCompactItemize}

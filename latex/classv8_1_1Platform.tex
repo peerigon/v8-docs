@@ -7,144 +7,162 @@
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{classv8_1_1Platform_ace7f666b2b5995bb0e898e12fa660718}{Expected\+Runtime} \{ {\bfseries k\+Short\+Running\+Task}, 
-{\bfseries k\+Long\+Running\+Task}
- \}
+\mbox{\Hypertarget{classv8_1_1Platform_aae7b558077a24b6ce9cacfe8e9320943}\label{classv8_1_1Platform_aae7b558077a24b6ce9cacfe8e9320943}} 
+typedef void($\ast$ {\bfseries Stack\+Trace\+Printer}) ()
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual size\+\_\+t \hyperlink{classv8_1_1Platform_a15886ccf5a6a085a2192b305709a527c}{Number\+Of\+Available\+Background\+Threads} ()
+virtual \mbox{\hyperlink{classv8_1_1PageAllocator}{Page\+Allocator}} $\ast$ \mbox{\hyperlink{classv8_1_1Platform_ab7c1886dd8131f7389b805bc98276702}{Get\+Page\+Allocator}} ()
 \item 
-virtual void \hyperlink{classv8_1_1Platform_aa715e6839c1954b4e23b9d2df00bd3ea}{Call\+On\+Background\+Thread} (\hyperlink{classv8_1_1Task}{Task} $\ast$task, \hyperlink{classv8_1_1Platform_ace7f666b2b5995bb0e898e12fa660718}{Expected\+Runtime} expected\+\_\+runtime)=0
+virtual void \mbox{\hyperlink{classv8_1_1Platform_a7ed41bddc1d1ebe51c55539198d0026e}{On\+Critical\+Memory\+Pressure}} ()
 \item 
-virtual void \hyperlink{classv8_1_1Platform_a8fa13959f919d1d3ff170bceea939915}{Call\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Task}{Task} $\ast$task)=0
+virtual bool \mbox{\hyperlink{classv8_1_1Platform_a0de4b8a7bb8865ce65beb5afbaabe4cc}{On\+Critical\+Memory\+Pressure}} (size\+\_\+t length)
 \item 
-virtual void \hyperlink{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}{Call\+Delayed\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1Task}{Task} $\ast$task, double delay\+\_\+in\+\_\+seconds)=0
+virtual int \mbox{\hyperlink{classv8_1_1Platform_a57cdd7eb4c482bfb806c378beeda716d}{Number\+Of\+Worker\+Threads}} ()=0
 \item 
-virtual void \hyperlink{classv8_1_1Platform_ae495999016432391f04d323452084b12}{Call\+Idle\+On\+Foreground\+Thread} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, \hyperlink{classv8_1_1IdleTask}{Idle\+Task} $\ast$task)
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1TaskRunner}{v8\+::\+Task\+Runner}} $>$ \mbox{\hyperlink{classv8_1_1Platform_af0d18c6bbefa133c5d11ec8a460d0278}{Get\+Foreground\+Task\+Runner}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)=0
 \item 
-virtual bool \hyperlink{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}{Idle\+Tasks\+Enabled} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+virtual void \mbox{\hyperlink{classv8_1_1Platform_a92dc9c2f54c9a0fea87e15df8d58d699}{Call\+On\+Worker\+Thread}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task)=0
 \item 
-virtual double \hyperlink{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}{Monotonically\+Increasing\+Time} ()=0
+virtual void \mbox{\hyperlink{classv8_1_1Platform_ada31b440048763bf8d9c296ca4cf2e1b}{Call\+Blocking\+Task\+On\+Worker\+Thread}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task)
 \item 
-virtual const uint8\+\_\+t $\ast$ \hyperlink{classv8_1_1Platform_a5b81982481986c80d3f613dde54494da}{Get\+Category\+Group\+Enabled} (const char $\ast$name)
+virtual void \mbox{\hyperlink{classv8_1_1Platform_a808b0e55ed3efca10ebca031bbd6ecc6}{Call\+Delayed\+On\+Worker\+Thread}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$ task, double delay\+\_\+in\+\_\+seconds)=0
 \item 
-virtual const char $\ast$ \hyperlink{classv8_1_1Platform_a02dde4138b387f1ae2b53190cdac2afc}{Get\+Category\+Group\+Name} (const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag)
+virtual void \mbox{\hyperlink{classv8_1_1Platform_a8fa13959f919d1d3ff170bceea939915}{Call\+On\+Foreground\+Thread}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Task}{Task}} $\ast$task)=0
 \item 
-virtual uint64\+\_\+t \hyperlink{classv8_1_1Platform_ab4ef5713fb5bec0f2fe0981745342364}{Add\+Trace\+Event} (char phase, const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, const char $\ast$scope, uint64\+\_\+t id, uint64\+\_\+t bind\+\_\+id, int32\+\_\+t num\+\_\+args, const char $\ast$$\ast$arg\+\_\+names, const uint8\+\_\+t $\ast$arg\+\_\+types, const uint64\+\_\+t $\ast$arg\+\_\+values, unsigned int flags)
+virtual void \mbox{\hyperlink{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}{Call\+Delayed\+On\+Foreground\+Thread}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1Task}{Task}} $\ast$task, double delay\+\_\+in\+\_\+seconds)=0
 \item 
-virtual void \hyperlink{classv8_1_1Platform_aa7ead571c0b19687635a930d9c67b73b}{Update\+Trace\+Event\+Duration} (const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, uint64\+\_\+t handle)
+virtual void \mbox{\hyperlink{classv8_1_1Platform_ae495999016432391f04d323452084b12}{Call\+Idle\+On\+Foreground\+Thread}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{classv8_1_1IdleTask}{Idle\+Task}} $\ast$task)
+\item 
+virtual bool \mbox{\hyperlink{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}{Idle\+Tasks\+Enabled}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+virtual double \mbox{\hyperlink{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}{Monotonically\+Increasing\+Time}} ()=0
+\item 
+virtual double \mbox{\hyperlink{classv8_1_1Platform_a8aa46c7f8e492351ebe1bc8168ec9c2f}{Current\+Clock\+Time\+Millis}} ()=0
+\item 
+virtual Stack\+Trace\+Printer \mbox{\hyperlink{classv8_1_1Platform_aadb2594e6ff9a6f6a0657412ff5a7206}{Get\+Stack\+Trace\+Printer}} ()
+\item 
+virtual \mbox{\hyperlink{classv8_1_1TracingController}{Tracing\+Controller}} $\ast$ \mbox{\hyperlink{classv8_1_1Platform_aa760c7bf8c46495eb650d2be72399747}{Get\+Tracing\+Controller}} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classv8_1_1Platform_a18ccdaf3a1a738bd4082dbbe749d026b}{System\+Clock\+Time\+Millis}} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{classv8_1_1V8}{V8} \hyperlink{classv8_1_1Platform}{Platform} abstraction layer.
+\mbox{\hyperlink{classv8_1_1V8}{V8}} \mbox{\hyperlink{classv8_1_1Platform}{Platform}} abstraction layer.
 
-The embedder has to provide an implementation of this interface before initializing the rest of \hyperlink{classv8_1_1V8}{V8}. 
-
-\subsection{Member Enumeration Documentation}
-\index{v8\+::\+Platform@{v8\+::\+Platform}!Expected\+Runtime@{Expected\+Runtime}}
-\index{Expected\+Runtime@{Expected\+Runtime}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Expected\+Runtime}{ExpectedRuntime}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf v8\+::\+Platform\+::\+Expected\+Runtime}}\hypertarget{classv8_1_1Platform_ace7f666b2b5995bb0e898e12fa660718}{}\label{classv8_1_1Platform_ace7f666b2b5995bb0e898e12fa660718}
-This enum is used to indicate whether a task is potentially long running, or causes a long wait. The embedder might want to use this hint to decide whether to execute the task on a dedicated thread. 
+The embedder has to provide an implementation of this interface before initializing the rest of \mbox{\hyperlink{classv8_1_1V8}{V8}}. 
 
 \subsection{Member Function Documentation}
-\index{v8\+::\+Platform@{v8\+::\+Platform}!Add\+Trace\+Event@{Add\+Trace\+Event}}
-\index{Add\+Trace\+Event@{Add\+Trace\+Event}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Add\+Trace\+Event(char phase, const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, const char $\ast$scope, uint64\+\_\+t id, uint64\+\_\+t bind\+\_\+id, int32\+\_\+t num\+\_\+args, const char $\ast$$\ast$arg\+\_\+names, const uint8\+\_\+t $\ast$arg\+\_\+types, const uint64\+\_\+t $\ast$arg\+\_\+values, unsigned int flags)}{AddTraceEvent(char phase, const uint8_t *category_enabled_flag, const char *name, const char *scope, uint64_t id, uint64_t bind_id, int32_t num_args, const char **arg_names, const uint8_t *arg_types, const uint64_t *arg_values, unsigned int flags)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint64\+\_\+t v8\+::\+Platform\+::\+Add\+Trace\+Event (
-\begin{DoxyParamCaption}
-\item[{char}]{phase, }
-\item[{const uint8\+\_\+t $\ast$}]{category\+\_\+enabled\+\_\+flag, }
-\item[{const char $\ast$}]{name, }
-\item[{const char $\ast$}]{scope, }
-\item[{uint64\+\_\+t}]{id, }
-\item[{uint64\+\_\+t}]{bind\+\_\+id, }
-\item[{int32\+\_\+t}]{num\+\_\+args, }
-\item[{const char $\ast$$\ast$}]{arg\+\_\+names, }
-\item[{const uint8\+\_\+t $\ast$}]{arg\+\_\+types, }
-\item[{const uint64\+\_\+t $\ast$}]{arg\+\_\+values, }
-\item[{unsigned int}]{flags}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1Platform_ab4ef5713fb5bec0f2fe0981745342364}{}\label{classv8_1_1Platform_ab4ef5713fb5bec0f2fe0981745342364}
-Adds a trace event to the platform tracing system. This function call is usually the result of a T\+R\+A\+C\+E\+\_\+$\ast$ macro from trace\+\_\+event\+\_\+common.\+h when tracing and the category of the particular trace are enabled. It is not advisable to call this function on its own; it is really only meant to be used by the trace macros. The returned handle can be used by Update\+Trace\+Event\+Duration to update the duration of C\+O\+M\+P\+L\+E\+TE events. \index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Delayed\+On\+Foreground\+Thread@{Call\+Delayed\+On\+Foreground\+Thread}}
+\mbox{\Hypertarget{classv8_1_1Platform_ada31b440048763bf8d9c296ca4cf2e1b}\label{classv8_1_1Platform_ada31b440048763bf8d9c296ca4cf2e1b}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Blocking\+Task\+On\+Worker\+Thread@{Call\+Blocking\+Task\+On\+Worker\+Thread}}
+\index{Call\+Blocking\+Task\+On\+Worker\+Thread@{Call\+Blocking\+Task\+On\+Worker\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Call\+Blocking\+Task\+On\+Worker\+Thread()}{CallBlockingTaskOnWorkerThread()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+Call\+Blocking\+Task\+On\+Worker\+Thread (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Schedules a task that blocks the main thread to be invoked with high-\/priority on a worker thread. \mbox{\Hypertarget{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}\label{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Delayed\+On\+Foreground\+Thread@{Call\+Delayed\+On\+Foreground\+Thread}}
 \index{Call\+Delayed\+On\+Foreground\+Thread@{Call\+Delayed\+On\+Foreground\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Call\+Delayed\+On\+Foreground\+Thread(\+Isolate $\ast$isolate, Task $\ast$task, double delay\+\_\+in\+\_\+seconds)=0}{CallDelayedOnForegroundThread(Isolate *isolate, Task *task, double delay_in_seconds)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Platform\+::\+Call\+Delayed\+On\+Foreground\+Thread (
-\begin{DoxyParamCaption}
-\item[{{\bf Isolate} $\ast$}]{isolate, }
-\item[{{\bf Task} $\ast$}]{task, }
-\item[{double}]{delay\+\_\+in\+\_\+seconds}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}{}\label{classv8_1_1Platform_a72bff12d95fbf2118279b0e8f53f8a4b}
-Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ after the given number of seconds $\vert$delay\+\_\+in\+\_\+seconds$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1V8}{V8}. \index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Idle\+On\+Foreground\+Thread@{Call\+Idle\+On\+Foreground\+Thread}}
+\subsubsection{\texorpdfstring{Call\+Delayed\+On\+Foreground\+Thread()}{CallDelayedOnForegroundThread()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+Call\+Delayed\+On\+Foreground\+Thread (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Task}{Task}} $\ast$}]{task,  }\item[{double}]{delay\+\_\+in\+\_\+seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ after the given number of seconds $\vert$delay\+\_\+in\+\_\+seconds$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \mbox{\hyperlink{classv8_1_1V8}{V8}}. \mbox{\Hypertarget{classv8_1_1Platform_a808b0e55ed3efca10ebca031bbd6ecc6}\label{classv8_1_1Platform_a808b0e55ed3efca10ebca031bbd6ecc6}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Delayed\+On\+Worker\+Thread@{Call\+Delayed\+On\+Worker\+Thread}}
+\index{Call\+Delayed\+On\+Worker\+Thread@{Call\+Delayed\+On\+Worker\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Call\+Delayed\+On\+Worker\+Thread()}{CallDelayedOnWorkerThread()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+Call\+Delayed\+On\+Worker\+Thread (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$}]{task,  }\item[{double}]{delay\+\_\+in\+\_\+seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Schedules a task to be invoked on a worker thread after $\vert$delay\+\_\+in\+\_\+seconds$\vert$ expires. \mbox{\Hypertarget{classv8_1_1Platform_ae495999016432391f04d323452084b12}\label{classv8_1_1Platform_ae495999016432391f04d323452084b12}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+Idle\+On\+Foreground\+Thread@{Call\+Idle\+On\+Foreground\+Thread}}
 \index{Call\+Idle\+On\+Foreground\+Thread@{Call\+Idle\+On\+Foreground\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Call\+Idle\+On\+Foreground\+Thread(\+Isolate $\ast$isolate, Idle\+Task $\ast$task)}{CallIdleOnForegroundThread(Isolate *isolate, IdleTask *task)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Platform\+::\+Call\+Idle\+On\+Foreground\+Thread (
-\begin{DoxyParamCaption}
-\item[{{\bf Isolate} $\ast$}]{isolate, }
-\item[{{\bf Idle\+Task} $\ast$}]{task}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1Platform_ae495999016432391f04d323452084b12}{}\label{classv8_1_1Platform_ae495999016432391f04d323452084b12}
-Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ when the embedder is idle. Requires that Supports\+Idle\+Tasks(isolate) is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1V8}{V8}. \index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+On\+Background\+Thread@{Call\+On\+Background\+Thread}}
-\index{Call\+On\+Background\+Thread@{Call\+On\+Background\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Call\+On\+Background\+Thread(\+Task $\ast$task, Expected\+Runtime expected\+\_\+runtime)=0}{CallOnBackgroundThread(Task *task, ExpectedRuntime expected_runtime)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Platform\+::\+Call\+On\+Background\+Thread (
-\begin{DoxyParamCaption}
-\item[{{\bf Task} $\ast$}]{task, }
-\item[{{\bf Expected\+Runtime}}]{expected\+\_\+runtime}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1Platform_aa715e6839c1954b4e23b9d2df00bd3ea}{}\label{classv8_1_1Platform_aa715e6839c1954b4e23b9d2df00bd3ea}
-Schedules a task to be invoked on a background thread. $\vert$expected\+\_\+runtime$\vert$ indicates that the task will run a long time. The \hyperlink{classv8_1_1Platform}{Platform} implementation takes ownership of $\vert$task$\vert$. There is no guarantee about order of execution of tasks wrt order of scheduling, nor is there a guarantee about the thread the task will be run on. \index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+On\+Foreground\+Thread@{Call\+On\+Foreground\+Thread}}
+\subsubsection{\texorpdfstring{Call\+Idle\+On\+Foreground\+Thread()}{CallIdleOnForegroundThread()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+Call\+Idle\+On\+Foreground\+Thread (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1IdleTask}{Idle\+Task}} $\ast$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$ when the embedder is idle. Requires that Supports\+Idle\+Tasks(isolate) is true. Idle tasks may be reordered relative to other task types and may be starved for an arbitrarily long time if no idle time is available. The definition of \char`\"{}foreground\char`\"{} is opaque to \mbox{\hyperlink{classv8_1_1V8}{V8}}. \mbox{\Hypertarget{classv8_1_1Platform_a8fa13959f919d1d3ff170bceea939915}\label{classv8_1_1Platform_a8fa13959f919d1d3ff170bceea939915}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+On\+Foreground\+Thread@{Call\+On\+Foreground\+Thread}}
 \index{Call\+On\+Foreground\+Thread@{Call\+On\+Foreground\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Call\+On\+Foreground\+Thread(\+Isolate $\ast$isolate, Task $\ast$task)=0}{CallOnForegroundThread(Isolate *isolate, Task *task)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Platform\+::\+Call\+On\+Foreground\+Thread (
-\begin{DoxyParamCaption}
-\item[{{\bf Isolate} $\ast$}]{isolate, }
-\item[{{\bf Task} $\ast$}]{task}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1Platform_a8fa13959f919d1d3ff170bceea939915}{}\label{classv8_1_1Platform_a8fa13959f919d1d3ff170bceea939915}
-Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \hyperlink{classv8_1_1V8}{V8}. \index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Category\+Group\+Enabled@{Get\+Category\+Group\+Enabled}}
-\index{Get\+Category\+Group\+Enabled@{Get\+Category\+Group\+Enabled}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Get\+Category\+Group\+Enabled(const char $\ast$name)}{GetCategoryGroupEnabled(const char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const uint8\+\_\+t$\ast$ v8\+::\+Platform\+::\+Get\+Category\+Group\+Enabled (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{name}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1Platform_a5b81982481986c80d3f613dde54494da}{}\label{classv8_1_1Platform_a5b81982481986c80d3f613dde54494da}
-Called by T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T$\ast$ macros, don\textquotesingle{}t call this directly. The name parameter is a category group for example\+: T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+N\+T0(\char`\"{}v8,parse\char`\"{}, \char`\"{}\+V8.\+Parse\char`\"{}) The pointer returned points to a value with zero or more of the bits defined in Category\+Group\+Enabled\+Flags. \index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Category\+Group\+Name@{Get\+Category\+Group\+Name}}
-\index{Get\+Category\+Group\+Name@{Get\+Category\+Group\+Name}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Get\+Category\+Group\+Name(const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag)}{GetCategoryGroupName(const uint8_t *category_enabled_flag)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ v8\+::\+Platform\+::\+Get\+Category\+Group\+Name (
-\begin{DoxyParamCaption}
-\item[{const uint8\+\_\+t $\ast$}]{category\+\_\+enabled\+\_\+flag}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1Platform_a02dde4138b387f1ae2b53190cdac2afc}{}\label{classv8_1_1Platform_a02dde4138b387f1ae2b53190cdac2afc}
-Gets the category group name of the given category\+\_\+enabled\+\_\+flag pointer. Usually used while serliazing T\+R\+A\+C\+E\+\_\+\+E\+V\+E\+N\+Ts. \index{v8\+::\+Platform@{v8\+::\+Platform}!Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}}
+\subsubsection{\texorpdfstring{Call\+On\+Foreground\+Thread()}{CallOnForegroundThread()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+Call\+On\+Foreground\+Thread (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{classv8_1_1Task}{Task}} $\ast$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Schedules a task to be invoked on a foreground thread wrt a specific $\vert$isolate$\vert$. Tasks posted for the same isolate should be execute in order of scheduling. The definition of \char`\"{}foreground\char`\"{} is opaque to \mbox{\hyperlink{classv8_1_1V8}{V8}}. \mbox{\Hypertarget{classv8_1_1Platform_a92dc9c2f54c9a0fea87e15df8d58d699}\label{classv8_1_1Platform_a92dc9c2f54c9a0fea87e15df8d58d699}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Call\+On\+Worker\+Thread@{Call\+On\+Worker\+Thread}}
+\index{Call\+On\+Worker\+Thread@{Call\+On\+Worker\+Thread}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Call\+On\+Worker\+Thread()}{CallOnWorkerThread()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+Call\+On\+Worker\+Thread (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1Task}{Task}} $>$}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Schedules a task to be invoked on a worker thread. \mbox{\Hypertarget{classv8_1_1Platform_a8aa46c7f8e492351ebe1bc8168ec9c2f}\label{classv8_1_1Platform_a8aa46c7f8e492351ebe1bc8168ec9c2f}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Current\+Clock\+Time\+Millis@{Current\+Clock\+Time\+Millis}}
+\index{Current\+Clock\+Time\+Millis@{Current\+Clock\+Time\+Millis}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Current\+Clock\+Time\+Millis()}{CurrentClockTimeMillis()}}
+{\footnotesize\ttfamily virtual double v8\+::\+Platform\+::\+Current\+Clock\+Time\+Millis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Current wall-\/clock time in milliseconds since epoch. This function is expected to return at least millisecond-\/precision values. \mbox{\Hypertarget{classv8_1_1Platform_af0d18c6bbefa133c5d11ec8a460d0278}\label{classv8_1_1Platform_af0d18c6bbefa133c5d11ec8a460d0278}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Foreground\+Task\+Runner@{Get\+Foreground\+Task\+Runner}}
+\index{Get\+Foreground\+Task\+Runner@{Get\+Foreground\+Task\+Runner}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Get\+Foreground\+Task\+Runner()}{GetForegroundTaskRunner()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classv8_1_1TaskRunner}{v8\+::\+Task\+Runner}}$>$ v8\+::\+Platform\+::\+Get\+Foreground\+Task\+Runner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a \mbox{\hyperlink{classv8_1_1TaskRunner}{Task\+Runner}} which can be used to post a task on the foreground. This function should only be called from a foreground thread. \mbox{\Hypertarget{classv8_1_1Platform_ab7c1886dd8131f7389b805bc98276702}\label{classv8_1_1Platform_ab7c1886dd8131f7389b805bc98276702}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Page\+Allocator@{Get\+Page\+Allocator}}
+\index{Get\+Page\+Allocator@{Get\+Page\+Allocator}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Get\+Page\+Allocator()}{GetPageAllocator()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1PageAllocator}{Page\+Allocator}}$\ast$ v8\+::\+Platform\+::\+Get\+Page\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Allows the embedder to manage memory page allocations. \mbox{\Hypertarget{classv8_1_1Platform_aadb2594e6ff9a6f6a0657412ff5a7206}\label{classv8_1_1Platform_aadb2594e6ff9a6f6a0657412ff5a7206}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Stack\+Trace\+Printer@{Get\+Stack\+Trace\+Printer}}
+\index{Get\+Stack\+Trace\+Printer@{Get\+Stack\+Trace\+Printer}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Get\+Stack\+Trace\+Printer()}{GetStackTracePrinter()}}
+{\footnotesize\ttfamily virtual Stack\+Trace\+Printer v8\+::\+Platform\+::\+Get\+Stack\+Trace\+Printer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns a function pointer that print a stack trace of the current stack on invocation. Disables printing of the stack trace if nullptr. \mbox{\Hypertarget{classv8_1_1Platform_aa760c7bf8c46495eb650d2be72399747}\label{classv8_1_1Platform_aa760c7bf8c46495eb650d2be72399747}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Get\+Tracing\+Controller@{Get\+Tracing\+Controller}}
+\index{Get\+Tracing\+Controller@{Get\+Tracing\+Controller}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Get\+Tracing\+Controller()}{GetTracingController()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1TracingController}{Tracing\+Controller}}$\ast$ v8\+::\+Platform\+::\+Get\+Tracing\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns an instance of a \mbox{\hyperlink{classv8_1_1TracingController}{v8\+::\+Tracing\+Controller}}. This must be non-\/nullptr. \mbox{\Hypertarget{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}\label{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}}
 \index{Idle\+Tasks\+Enabled@{Idle\+Tasks\+Enabled}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Idle\+Tasks\+Enabled(\+Isolate $\ast$isolate)}{IdleTasksEnabled(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool v8\+::\+Platform\+::\+Idle\+Tasks\+Enabled (
-\begin{DoxyParamCaption}
-\item[{{\bf Isolate} $\ast$}]{isolate}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}{}\label{classv8_1_1Platform_ad229642bf16a066d2e8d866dc128141e}
-Returns true if idle tasks are enabled for the given $\vert$isolate$\vert$. \index{v8\+::\+Platform@{v8\+::\+Platform}!Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}}
+\subsubsection{\texorpdfstring{Idle\+Tasks\+Enabled()}{IdleTasksEnabled()}}
+{\footnotesize\ttfamily virtual bool v8\+::\+Platform\+::\+Idle\+Tasks\+Enabled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns true if idle tasks are enabled for the given $\vert$isolate$\vert$. \mbox{\Hypertarget{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}\label{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}}
 \index{Monotonically\+Increasing\+Time@{Monotonically\+Increasing\+Time}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Monotonically\+Increasing\+Time()=0}{MonotonicallyIncreasingTime()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double v8\+::\+Platform\+::\+Monotonically\+Increasing\+Time (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}{}\label{classv8_1_1Platform_a6d4d7c2dcf6b0c7113099b97fa7f57b7}
-Monotonically increasing time in seconds from an arbitrary fixed point in the past. This function is expected to return at least millisecond-\/precision values. For this reason, it is recommended that the fixed point be no further in the past than the epoch. \index{v8\+::\+Platform@{v8\+::\+Platform}!Number\+Of\+Available\+Background\+Threads@{Number\+Of\+Available\+Background\+Threads}}
-\index{Number\+Of\+Available\+Background\+Threads@{Number\+Of\+Available\+Background\+Threads}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Number\+Of\+Available\+Background\+Threads()}{NumberOfAvailableBackgroundThreads()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t v8\+::\+Platform\+::\+Number\+Of\+Available\+Background\+Threads (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1Platform_a15886ccf5a6a085a2192b305709a527c}{}\label{classv8_1_1Platform_a15886ccf5a6a085a2192b305709a527c}
-Gets the number of threads that are used to execute background tasks. Is used to estimate the number of tasks a work package should be split into. A return value of 0 means that there are no background threads available. Note that a value of 0 won\textquotesingle{}t prohibit \hyperlink{classv8_1_1V8}{V8} from posting tasks using $\vert$\+Call\+On\+Background\+Thread$\vert$. \index{v8\+::\+Platform@{v8\+::\+Platform}!Update\+Trace\+Event\+Duration@{Update\+Trace\+Event\+Duration}}
-\index{Update\+Trace\+Event\+Duration@{Update\+Trace\+Event\+Duration}!v8\+::\+Platform@{v8\+::\+Platform}}
-\subsubsection[{\texorpdfstring{Update\+Trace\+Event\+Duration(const uint8\+\_\+t $\ast$category\+\_\+enabled\+\_\+flag, const char $\ast$name, uint64\+\_\+t handle)}{UpdateTraceEventDuration(const uint8_t *category_enabled_flag, const char *name, uint64_t handle)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Platform\+::\+Update\+Trace\+Event\+Duration (
-\begin{DoxyParamCaption}
-\item[{const uint8\+\_\+t $\ast$}]{category\+\_\+enabled\+\_\+flag, }
-\item[{const char $\ast$}]{name, }
-\item[{uint64\+\_\+t}]{handle}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1Platform_aa7ead571c0b19687635a930d9c67b73b}{}\label{classv8_1_1Platform_aa7ead571c0b19687635a930d9c67b73b}
-Sets the duration field of a C\+O\+M\+P\+L\+E\+TE trace event. It must be called with the handle returned from \hyperlink{classv8_1_1Platform_ab4ef5713fb5bec0f2fe0981745342364}{Add\+Trace\+Event()}. 
+\subsubsection{\texorpdfstring{Monotonically\+Increasing\+Time()}{MonotonicallyIncreasingTime()}}
+{\footnotesize\ttfamily virtual double v8\+::\+Platform\+::\+Monotonically\+Increasing\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Monotonically increasing time in seconds from an arbitrary fixed point in the past. This function is expected to return at least millisecond-\/precision values. For this reason, it is recommended that the fixed point be no further in the past than the epoch. \mbox{\Hypertarget{classv8_1_1Platform_a57cdd7eb4c482bfb806c378beeda716d}\label{classv8_1_1Platform_a57cdd7eb4c482bfb806c378beeda716d}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!Number\+Of\+Worker\+Threads@{Number\+Of\+Worker\+Threads}}
+\index{Number\+Of\+Worker\+Threads@{Number\+Of\+Worker\+Threads}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{Number\+Of\+Worker\+Threads()}{NumberOfWorkerThreads()}}
+{\footnotesize\ttfamily virtual int v8\+::\+Platform\+::\+Number\+Of\+Worker\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the number of worker threads used by Call(\+Blocking\+Task)On\+Worker\+Thread(). This can be used to estimate the number of tasks a work package should be split into. A return value of 0 means that there are no worker threads available. Note that a value of 0 won\textquotesingle{}t prohibit \mbox{\hyperlink{classv8_1_1V8}{V8}} from posting tasks using $\vert$\+Call\+On\+Worker\+Thread$\vert$. \mbox{\Hypertarget{classv8_1_1Platform_a7ed41bddc1d1ebe51c55539198d0026e}\label{classv8_1_1Platform_a7ed41bddc1d1ebe51c55539198d0026e}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!On\+Critical\+Memory\+Pressure@{On\+Critical\+Memory\+Pressure}}
+\index{On\+Critical\+Memory\+Pressure@{On\+Critical\+Memory\+Pressure}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{On\+Critical\+Memory\+Pressure()}{OnCriticalMemoryPressure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void v8\+::\+Platform\+::\+On\+Critical\+Memory\+Pressure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Enables the embedder to respond in cases where \mbox{\hyperlink{classv8_1_1V8}{V8}} can\textquotesingle{}t allocate large blocks of memory. \mbox{\hyperlink{classv8_1_1V8}{V8}} retries the failed allocation once after calling this method. On success, execution continues; otherwise \mbox{\hyperlink{classv8_1_1V8}{V8}} exits with a fatal error. Embedder overrides of this function must N\+OT call back into \mbox{\hyperlink{classv8_1_1V8}{V8}}. \mbox{\Hypertarget{classv8_1_1Platform_a0de4b8a7bb8865ce65beb5afbaabe4cc}\label{classv8_1_1Platform_a0de4b8a7bb8865ce65beb5afbaabe4cc}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!On\+Critical\+Memory\+Pressure@{On\+Critical\+Memory\+Pressure}}
+\index{On\+Critical\+Memory\+Pressure@{On\+Critical\+Memory\+Pressure}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{On\+Critical\+Memory\+Pressure()}{OnCriticalMemoryPressure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool v8\+::\+Platform\+::\+On\+Critical\+Memory\+Pressure (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Enables the embedder to respond in cases where \mbox{\hyperlink{classv8_1_1V8}{V8}} can\textquotesingle{}t allocate large memory regions. The $\vert$length$\vert$ parameter is the amount of memory needed. Returns true if memory is now available. Returns false if no memory could be made available. \mbox{\hyperlink{classv8_1_1V8}{V8}} will retry allocations until this method returns false.
+
+Embedder overrides of this function must N\+OT call back into \mbox{\hyperlink{classv8_1_1V8}{V8}}. \mbox{\Hypertarget{classv8_1_1Platform_a18ccdaf3a1a738bd4082dbbe749d026b}\label{classv8_1_1Platform_a18ccdaf3a1a738bd4082dbbe749d026b}} 
+\index{v8\+::\+Platform@{v8\+::\+Platform}!System\+Clock\+Time\+Millis@{System\+Clock\+Time\+Millis}}
+\index{System\+Clock\+Time\+Millis@{System\+Clock\+Time\+Millis}!v8\+::\+Platform@{v8\+::\+Platform}}
+\subsubsection{\texorpdfstring{System\+Clock\+Time\+Millis()}{SystemClockTimeMillis()}}
+{\footnotesize\ttfamily static double v8\+::\+Platform\+::\+System\+Clock\+Time\+Millis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Default implementation of current wall-\/clock time in milliseconds since epoch. Useful for implementing $\vert$\+Current\+Clock\+Time\+Millis$\vert$ if nothing special needed. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

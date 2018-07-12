@@ -1,0 +1,28 @@
+\hypertarget{classv8_1_1ConvertableToTraceFormat}{}\section{v8\+:\+:Convertable\+To\+Trace\+Format Class Reference}
+\label{classv8_1_1ConvertableToTraceFormat}\index{v8\+::\+Convertable\+To\+Trace\+Format@{v8\+::\+Convertable\+To\+Trace\+Format}}
+
+
+{\ttfamily \#include $<$v8-\/platform.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classv8_1_1ConvertableToTraceFormat_a11f3295df2906e09c1f266049d130013}{Append\+As\+Trace\+Format}} (std\+::string $\ast$out) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface represents complex arguments to trace events. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1ConvertableToTraceFormat_a11f3295df2906e09c1f266049d130013}\label{classv8_1_1ConvertableToTraceFormat_a11f3295df2906e09c1f266049d130013}} 
+\index{v8\+::\+Convertable\+To\+Trace\+Format@{v8\+::\+Convertable\+To\+Trace\+Format}!Append\+As\+Trace\+Format@{Append\+As\+Trace\+Format}}
+\index{Append\+As\+Trace\+Format@{Append\+As\+Trace\+Format}!v8\+::\+Convertable\+To\+Trace\+Format@{v8\+::\+Convertable\+To\+Trace\+Format}}
+\subsubsection{\texorpdfstring{Append\+As\+Trace\+Format()}{AppendAsTraceFormat()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Convertable\+To\+Trace\+Format\+::\+Append\+As\+Trace\+Format (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Append the class info to the provided $\vert$out$\vert$ string. The appended data must be a valid \mbox{\hyperlink{classv8_1_1JSON}{J\+S\+ON}} object. Strings must be properly quoted, and escaped. There is no processing applied to the content after it is appended. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/platform.\+h\end{DoxyCompactItemize}

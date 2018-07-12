@@ -7,19 +7,19 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}{Dispose} ()=0
+virtual void \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}{Dispose}} ()=0
 \item 
-virtual bool \hyperlink{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}{Is\+Equivalent} (\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info} $\ast$other)=0
+virtual bool \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}{Is\+Equivalent}} (\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} $\ast$other)=0
 \item 
-virtual intptr\+\_\+t \hyperlink{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}{Get\+Hash} ()=0
+virtual intptr\+\_\+t \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}{Get\+Hash}} ()=0
 \item 
-virtual const char $\ast$ \hyperlink{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}{Get\+Label} ()=0
+virtual const char $\ast$ \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}{Get\+Label}} ()=0
 \item 
-virtual const char $\ast$ \hyperlink{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}{Get\+Group\+Label} ()
+virtual const char $\ast$ \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}{Get\+Group\+Label}} ()
 \item 
-virtual intptr\+\_\+t \hyperlink{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}{Get\+Element\+Count} ()
+virtual intptr\+\_\+t \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}{Get\+Element\+Count}} ()
 \item 
-virtual intptr\+\_\+t \hyperlink{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}{Get\+Size\+In\+Bytes} ()
+virtual intptr\+\_\+t \mbox{\hyperlink{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}{Get\+Size\+In\+Bytes}} ()
 \end{DoxyCompactItemize}
 
 
@@ -28,11 +28,11 @@ Interface for providing information about embedder\textquotesingle{}s objects he
 
 
 \begin{DoxyEnumerate}
-\item When calling Add\+Object\+Group, an embedder may pass \hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info} instance describing the group. To collect this information while taking a heap snapshot, \hyperlink{classv8_1_1V8}{V8} calls GC prologue and epilogue callbacks.
-\item When a heap snapshot is collected, \hyperlink{classv8_1_1V8}{V8} additionally requests Retained\+Object\+Infos for persistent handles that were not previously reported via Add\+Object\+Group.
+\item When calling Add\+Object\+Group, an embedder may pass \mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} instance describing the group. To collect this information while taking a heap snapshot, \mbox{\hyperlink{classv8_1_1V8}{V8}} calls GC prologue and epilogue callbacks.
+\item When a heap snapshot is collected, \mbox{\hyperlink{classv8_1_1V8}{V8}} additionally requests Retained\+Object\+Infos for persistent handles that were not previously reported via Add\+Object\+Group.
 \end{DoxyEnumerate}
 
-Thus, if an embedder wants to provide information about native objects for heap snapshots, he can do it in a GC prologue handler, and / or by assigning wrapper class ids in the following way\+:
+Thus, if an embedder wants to provide information about native objects for heap snapshots, it can do it in a GC prologue handler, and / or by assigning wrapper class ids in the following way\+:
 
 
 \begin{DoxyEnumerate}
@@ -40,58 +40,51 @@ Thus, if an embedder wants to provide information about native objects for heap 
 \item Call Set\+Wrapper\+Class\+Id on certain persistent handles.
 \end{DoxyEnumerate}
 
-\hyperlink{classv8_1_1V8}{V8} takes ownership of \hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info} instances passed to it and keeps them alive only during snapshot collection. Afterwards, they are freed by calling the Dispose class function. 
+\mbox{\hyperlink{classv8_1_1V8}{V8}} takes ownership of \mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} instances passed to it and keeps them alive only during snapshot collection. Afterwards, they are freed by calling the Dispose class function. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}\label{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}} 
 \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Dispose@{Dispose}}
 \index{Dispose@{Dispose}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
-\subsubsection[{\texorpdfstring{Dispose()=0}{Dispose()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Retained\+Object\+Info\+::\+Dispose (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}{}\label{classv8_1_1RetainedObjectInfo_a5011203f7c5949049ba36b8059f03eca}
-Called by \hyperlink{classv8_1_1V8}{V8} when it no longer needs an instance. \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Element\+Count@{Get\+Element\+Count}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Retained\+Object\+Info\+::\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called by \mbox{\hyperlink{classv8_1_1V8}{V8}} when it no longer needs an instance. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}\label{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}} 
+\index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Element\+Count@{Get\+Element\+Count}}
 \index{Get\+Element\+Count@{Get\+Element\+Count}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
-\subsubsection[{\texorpdfstring{Get\+Element\+Count()}{GetElementCount()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Element\+Count (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}{}\label{classv8_1_1RetainedObjectInfo_ae6865597469bc7d28bd8ec71b4b890bd}
-Returns element count in case if a global handle retains a subgraph by holding one of its nodes. \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Group\+Label@{Get\+Group\+Label}}
+\subsubsection{\texorpdfstring{Get\+Element\+Count()}{GetElementCount()}}
+{\footnotesize\ttfamily virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Element\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns element count in case if a global handle retains a subgraph by holding one of its nodes. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}\label{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}} 
+\index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Group\+Label@{Get\+Group\+Label}}
 \index{Get\+Group\+Label@{Get\+Group\+Label}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
-\subsubsection[{\texorpdfstring{Get\+Group\+Label()}{GetGroupLabel()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Group\+Label (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}{}\label{classv8_1_1RetainedObjectInfo_adf835370c5516f2a89dd2d3f83dee10b}
-Returns human-\/readable group label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. \hyperlink{classv8_1_1V8}{V8} copies its contents during a call to Get\+Group\+Label. Heap snapshot generator will collect all the group names, create top level entries with these names and attach the objects to the corresponding top level group objects. There is a default implementation which is required because embedders don\textquotesingle{}t have their own implementation yet. \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Hash@{Get\+Hash}}
+\subsubsection{\texorpdfstring{Get\+Group\+Label()}{GetGroupLabel()}}
+{\footnotesize\ttfamily virtual const char$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Group\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns human-\/readable group label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. \mbox{\hyperlink{classv8_1_1V8}{V8}} copies its contents during a call to Get\+Group\+Label. Heap snapshot generator will collect all the group names, create top level entries with these names and attach the objects to the corresponding top level group objects. There is a default implementation which is required because embedders don\textquotesingle{}t have their own implementation yet. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}\label{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}} 
+\index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Hash@{Get\+Hash}}
 \index{Get\+Hash@{Get\+Hash}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
-\subsubsection[{\texorpdfstring{Get\+Hash()=0}{GetHash()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Hash (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}{}\label{classv8_1_1RetainedObjectInfo_a6fdbfa242b95615e63f08433419c8066}
-Returns hash value for the instance. Equivalent instances must have the same hash value. \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Label@{Get\+Label}}
+\subsubsection{\texorpdfstring{Get\+Hash()}{GetHash()}}
+{\footnotesize\ttfamily virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns hash value for the instance. Equivalent instances must have the same hash value. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}\label{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}} 
+\index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Label@{Get\+Label}}
 \index{Get\+Label@{Get\+Label}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
-\subsubsection[{\texorpdfstring{Get\+Label()=0}{GetLabel()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Label (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}{}\label{classv8_1_1RetainedObjectInfo_ad19106fc7f0499fd45005077551d54c0}
-Returns human-\/readable label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. \hyperlink{classv8_1_1V8}{V8} copies its contents during a call to Get\+Label. \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Size\+In\+Bytes@{Get\+Size\+In\+Bytes}}
+\subsubsection{\texorpdfstring{Get\+Label()}{GetLabel()}}
+{\footnotesize\ttfamily virtual const char$\ast$ v8\+::\+Retained\+Object\+Info\+::\+Get\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns human-\/readable label. It must be a null-\/terminated U\+T\+F-\/8 encoded string. \mbox{\hyperlink{classv8_1_1V8}{V8}} copies its contents during a call to Get\+Label. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}\label{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}} 
+\index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Get\+Size\+In\+Bytes@{Get\+Size\+In\+Bytes}}
 \index{Get\+Size\+In\+Bytes@{Get\+Size\+In\+Bytes}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
-\subsubsection[{\texorpdfstring{Get\+Size\+In\+Bytes()}{GetSizeInBytes()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Size\+In\+Bytes (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}{}\label{classv8_1_1RetainedObjectInfo_a1a899eed0b1f6e046edc3c7a7c08aa8c}
-Returns embedder\textquotesingle{}s object size in bytes. \index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Is\+Equivalent@{Is\+Equivalent}}
+\subsubsection{\texorpdfstring{Get\+Size\+In\+Bytes()}{GetSizeInBytes()}}
+{\footnotesize\ttfamily virtual intptr\+\_\+t v8\+::\+Retained\+Object\+Info\+::\+Get\+Size\+In\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns embedder\textquotesingle{}s object size in bytes. \mbox{\Hypertarget{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}\label{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}} 
+\index{v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}!Is\+Equivalent@{Is\+Equivalent}}
 \index{Is\+Equivalent@{Is\+Equivalent}!v8\+::\+Retained\+Object\+Info@{v8\+::\+Retained\+Object\+Info}}
-\subsubsection[{\texorpdfstring{Is\+Equivalent(\+Retained\+Object\+Info $\ast$other)=0}{IsEquivalent(RetainedObjectInfo *other)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool v8\+::\+Retained\+Object\+Info\+::\+Is\+Equivalent (
-\begin{DoxyParamCaption}
-\item[{{\bf Retained\+Object\+Info} $\ast$}]{other}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}{}\label{classv8_1_1RetainedObjectInfo_a286103bb076c85415919c86b1838c990}
+\subsubsection{\texorpdfstring{Is\+Equivalent()}{IsEquivalent()}}
+{\footnotesize\ttfamily virtual bool v8\+::\+Retained\+Object\+Info\+::\+Is\+Equivalent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1RetainedObjectInfo}{Retained\+Object\+Info}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 Returns whether two instances are equivalent. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

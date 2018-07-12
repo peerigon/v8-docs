@@ -1,0 +1,135 @@
+\hypertarget{classv8_1_1Module}{}\section{v8\+:\+:Module Class Reference}
+\label{classv8_1_1Module}\index{v8\+::\+Module@{v8\+::\+Module}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classv8_1_1Module_a9c2a22c9cb8e928d570c38648c648b7e}{Status}} \{ \newline
+{\bfseries k\+Uninstantiated}, 
+{\bfseries k\+Instantiating}, 
+{\bfseries k\+Instantiated}, 
+{\bfseries k\+Evaluating}, 
+\newline
+{\bfseries k\+Evaluated}, 
+{\bfseries k\+Errored}
+ \}
+\item 
+\mbox{\Hypertarget{classv8_1_1Module_a49b31b9f2408284c0ce3c622b5e29027}\label{classv8_1_1Module_a49b31b9f2408284c0ce3c622b5e29027}} 
+typedef \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Module}{Module}} $>$($\ast$ {\bfseries Resolve\+Callback}) (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ specifier, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Module}{Module}} $>$ referrer)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classv8_1_1Module_a9c2a22c9cb8e928d570c38648c648b7e}{Status}} \mbox{\hyperlink{classv8_1_1Module_a6d5b11f191fdb9dc1778ed88333ba2bb}{Get\+Status}} () const
+\item 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Module_a74ba40e96b4fd457693f11183ecc1dc4}{Get\+Exception}} () const
+\item 
+int \mbox{\hyperlink{classv8_1_1Module_a323acfb19889ba4e16b81f1c3d89c2b9}{Get\+Module\+Requests\+Length}} () const
+\item 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ \mbox{\hyperlink{classv8_1_1Module_a3fc072e8a67c08988740ad652ed928af}{Get\+Module\+Request}} (int i) const
+\item 
+\mbox{\hyperlink{classv8_1_1Location}{Location}} \mbox{\hyperlink{classv8_1_1Module_a95b5467ac9bcfc120470b6944c7da111}{Get\+Module\+Request\+Location}} (int i) const
+\item 
+int \mbox{\hyperlink{classv8_1_1Module_aa2966a54ccb783a91ab494407782e9e3}{Get\+Identity\+Hash}} () const
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$ bool $>$ \mbox{\hyperlink{classv8_1_1Module_a2d7d35ce8451c547294fe9964f72d9ca}{Instantiate\+Module}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, Resolve\+Callback callback)
+\item 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Module_a0785fa83cd3dde1dee086e1f9d31abdc}{Evaluate}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context)
+\item 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Module_a3fd11de1b44b850f3351b2765f32da68}{Get\+Module\+Namespace}} ()
+\item 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1UnboundModuleScript}{Unbound\+Module\+Script}} $>$ \mbox{\hyperlink{classv8_1_1Module_a47dc498d5645eef50ddceb874f5ed3a1}{Get\+Unbound\+Module\+Script}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A compiled Java\+Script module. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classv8_1_1Module_a9c2a22c9cb8e928d570c38648c648b7e}\label{classv8_1_1Module_a9c2a22c9cb8e928d570c38648c648b7e}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Status@{Status}}
+\index{Status@{Status}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classv8_1_1Module_a9c2a22c9cb8e928d570c38648c648b7e}{v8\+::\+Module\+::\+Status}}}
+
+The different states a module can be in.
+
+This corresponds to the states used in E\+C\+M\+A\+Script except that \char`\"{}evaluated\char`\"{} is split into k\+Evaluated and k\+Errored, indicating success and failure, respectively. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1Module_a0785fa83cd3dde1dee086e1f9d31abdc}\label{classv8_1_1Module_a0785fa83cd3dde1dee086e1f9d31abdc}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Module\+::\+Evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context }\end{DoxyParamCaption})}
+
+Evaluates the module and its dependencies.
+
+If status is k\+Instantiated, run the module\textquotesingle{}s code. On success, set status to k\+Evaluated and return the completion value; on failure, set status to k\+Errored and propagate the thrown exception (which is then also available via $\vert$\+Get\+Exception$\vert$). \mbox{\Hypertarget{classv8_1_1Module_a74ba40e96b4fd457693f11183ecc1dc4}\label{classv8_1_1Module_a74ba40e96b4fd457693f11183ecc1dc4}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Get\+Exception@{Get\+Exception}}
+\index{Get\+Exception@{Get\+Exception}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Get\+Exception()}{GetException()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Module\+::\+Get\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+For a module in k\+Errored status, this returns the corresponding exception. \mbox{\Hypertarget{classv8_1_1Module_aa2966a54ccb783a91ab494407782e9e3}\label{classv8_1_1Module_aa2966a54ccb783a91ab494407782e9e3}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Get\+Identity\+Hash@{Get\+Identity\+Hash}}
+\index{Get\+Identity\+Hash@{Get\+Identity\+Hash}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Get\+Identity\+Hash()}{GetIdentityHash()}}
+{\footnotesize\ttfamily int v8\+::\+Module\+::\+Get\+Identity\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the identity hash for this object. \mbox{\Hypertarget{classv8_1_1Module_a3fd11de1b44b850f3351b2765f32da68}\label{classv8_1_1Module_a3fd11de1b44b850f3351b2765f32da68}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Get\+Module\+Namespace@{Get\+Module\+Namespace}}
+\index{Get\+Module\+Namespace@{Get\+Module\+Namespace}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Get\+Module\+Namespace()}{GetModuleNamespace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Module\+::\+Get\+Module\+Namespace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the namespace object of this module.
+
+The module\textquotesingle{}s status must be at least k\+Instantiated. \mbox{\Hypertarget{classv8_1_1Module_a3fc072e8a67c08988740ad652ed928af}\label{classv8_1_1Module_a3fc072e8a67c08988740ad652ed928af}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Get\+Module\+Request@{Get\+Module\+Request}}
+\index{Get\+Module\+Request@{Get\+Module\+Request}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Get\+Module\+Request()}{GetModuleRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1String}{String}}$>$ v8\+::\+Module\+::\+Get\+Module\+Request (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+Returns the ith module specifier in this module. i must be $<$ \mbox{\hyperlink{classv8_1_1Module_a323acfb19889ba4e16b81f1c3d89c2b9}{Get\+Module\+Requests\+Length()}} and $>$= 0. \mbox{\Hypertarget{classv8_1_1Module_a95b5467ac9bcfc120470b6944c7da111}\label{classv8_1_1Module_a95b5467ac9bcfc120470b6944c7da111}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Get\+Module\+Request\+Location@{Get\+Module\+Request\+Location}}
+\index{Get\+Module\+Request\+Location@{Get\+Module\+Request\+Location}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Get\+Module\+Request\+Location()}{GetModuleRequestLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Location}{Location}} v8\+::\+Module\+::\+Get\+Module\+Request\+Location (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+Returns the source location (line number and column number) of the ith module specifier\textquotesingle{}s first occurrence in this module. \mbox{\Hypertarget{classv8_1_1Module_a323acfb19889ba4e16b81f1c3d89c2b9}\label{classv8_1_1Module_a323acfb19889ba4e16b81f1c3d89c2b9}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Get\+Module\+Requests\+Length@{Get\+Module\+Requests\+Length}}
+\index{Get\+Module\+Requests\+Length@{Get\+Module\+Requests\+Length}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Get\+Module\+Requests\+Length()}{GetModuleRequestsLength()}}
+{\footnotesize\ttfamily int v8\+::\+Module\+::\+Get\+Module\+Requests\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of modules requested by this module. \mbox{\Hypertarget{classv8_1_1Module_a6d5b11f191fdb9dc1778ed88333ba2bb}\label{classv8_1_1Module_a6d5b11f191fdb9dc1778ed88333ba2bb}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Get\+Status@{Get\+Status}}
+\index{Get\+Status@{Get\+Status}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Get\+Status()}{GetStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Module_a9c2a22c9cb8e928d570c38648c648b7e}{Status}} v8\+::\+Module\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the module\textquotesingle{}s current status. \mbox{\Hypertarget{classv8_1_1Module_a47dc498d5645eef50ddceb874f5ed3a1}\label{classv8_1_1Module_a47dc498d5645eef50ddceb874f5ed3a1}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Get\+Unbound\+Module\+Script@{Get\+Unbound\+Module\+Script}}
+\index{Get\+Unbound\+Module\+Script@{Get\+Unbound\+Module\+Script}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Get\+Unbound\+Module\+Script()}{GetUnboundModuleScript()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1UnboundModuleScript}{Unbound\+Module\+Script}}$>$ v8\+::\+Module\+::\+Get\+Unbound\+Module\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the corresponding context-\/unbound module script.
+
+The module must be unevaluated, i.\+e. its status must not be k\+Evaluating, k\+Evaluated or k\+Errored. \mbox{\Hypertarget{classv8_1_1Module_a2d7d35ce8451c547294fe9964f72d9ca}\label{classv8_1_1Module_a2d7d35ce8451c547294fe9964f72d9ca}} 
+\index{v8\+::\+Module@{v8\+::\+Module}!Instantiate\+Module@{Instantiate\+Module}}
+\index{Instantiate\+Module@{Instantiate\+Module}!v8\+::\+Module@{v8\+::\+Module}}
+\subsubsection{\texorpdfstring{Instantiate\+Module()}{InstantiateModule()}}
+{\footnotesize\ttfamily V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1Maybe}{Maybe}}$<$bool$>$ v8\+::\+Module\+::\+Instantiate\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context,  }\item[{Resolve\+Callback}]{callback }\end{DoxyParamCaption})}
+
+Instantiates the module and its dependencies.
+
+Returns an empty Maybe$<$bool$>$ if an exception occurred during instantiation. (In the case where the callback throws an exception, that exception is propagated.) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\hypertarget{classv8_1_1PrimitiveArray}{}\section{v8\+:\+:Primitive\+Array Class Reference}
+\label{classv8_1_1PrimitiveArray}\index{v8\+::\+Primitive\+Array@{v8\+::\+Primitive\+Array}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1PrimitiveArray_a7e51b026e03b0a4ab3c3bec4676dfd9e}\label{classv8_1_1PrimitiveArray_a7e51b026e03b0a4ab3c3bec4676dfd9e}} 
+int {\bfseries Length} () const
+\item 
+\mbox{\Hypertarget{classv8_1_1PrimitiveArray_a58b7323d46f3a1e4de589bdc76f59511}\label{classv8_1_1PrimitiveArray_a58b7323d46f3a1e4de589bdc76f59511}} 
+void {\bfseries Set} (int index, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Primitive}{Primitive}} $>$ item)
+\item 
+\mbox{\Hypertarget{classv8_1_1PrimitiveArray_a039d55a4b98b61944c291536345887d3}\label{classv8_1_1PrimitiveArray_a039d55a4b98b61944c291536345887d3}} 
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Primitive}{Primitive}} $>$ {\bfseries Get} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1PrimitiveArray_afdb183e117929fa286e0311c51ff8693}\label{classv8_1_1PrimitiveArray_afdb183e117929fa286e0311c51ff8693}} 
+static \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1PrimitiveArray}{Primitive\+Array}} $>$ {\bfseries New} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, int length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An array to hold \mbox{\hyperlink{classv8_1_1Primitive}{Primitive}} values. This is used by the embedder to pass host defined options to the Script\+Options during compilation.
+
+This is passed back to the embedder as part of Host\+Import\+Module\+Dynamically\+Callback for module loading. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

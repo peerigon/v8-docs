@@ -1,0 +1,49 @@
+\hypertarget{classv8_1_1EmbedderGraph}{}\section{v8\+:\+:Embedder\+Graph Class Reference}
+\label{classv8_1_1EmbedderGraph}\index{v8\+::\+Embedder\+Graph@{v8\+::\+Embedder\+Graph}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classv8_1_1EmbedderGraph_a6fdb5451611738dd44c70d195445d0ff}{V8\+Node}} (const \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&value)=0
+\item 
+virtual \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{classv8_1_1EmbedderGraph_a57afbce6126e5cd82b66f66b018a18e2}{Add\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $>$ node)=0
+\item 
+virtual void \mbox{\hyperlink{classv8_1_1EmbedderGraph_a1625dcd91021c6de5f039952c9d220d6}{Add\+Edge}} (\mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $\ast$from, \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $\ast$to)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An object graph consisting of embedder objects and \mbox{\hyperlink{classv8_1_1V8}{V8}} objects. Edges of the graph are strong references between the objects. The embedder can build this graph during heap snapshot generation to include the embedder objects in the heap snapshot. Usage\+: 1) Define derived class of \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Embedder\+Graph\+::\+Node}} for embedder objects. 2) \mbox{\hyperlink{classv8_1_1Set}{Set}} the build embedder graph callback on the heap profiler using Heap\+Profiler\+::\+Add\+Build\+Embedder\+Graph\+Callback. 3) In the callback use graph-\/$>$Add\+Edge(node1, node2) to add an edge from node1 to node2. 4) To represent references from/to \mbox{\hyperlink{classv8_1_1V8}{V8}} object, construct \mbox{\hyperlink{classv8_1_1V8}{V8}} nodes using graph-\/$>$V8\+Node(value). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1EmbedderGraph_a1625dcd91021c6de5f039952c9d220d6}\label{classv8_1_1EmbedderGraph_a1625dcd91021c6de5f039952c9d220d6}} 
+\index{v8\+::\+Embedder\+Graph@{v8\+::\+Embedder\+Graph}!Add\+Edge@{Add\+Edge}}
+\index{Add\+Edge@{Add\+Edge}!v8\+::\+Embedder\+Graph@{v8\+::\+Embedder\+Graph}}
+\subsubsection{\texorpdfstring{Add\+Edge()}{AddEdge()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Embedder\+Graph\+::\+Add\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $\ast$}]{from,  }\item[{\mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $\ast$}]{to }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds an edge that represents a strong reference from the given node $\vert$from$\vert$ to the given node $\vert$to$\vert$. The nodes must be added to the graph before calling this function. \mbox{\Hypertarget{classv8_1_1EmbedderGraph_a57afbce6126e5cd82b66f66b018a18e2}\label{classv8_1_1EmbedderGraph_a57afbce6126e5cd82b66f66b018a18e2}} 
+\index{v8\+::\+Embedder\+Graph@{v8\+::\+Embedder\+Graph}!Add\+Node@{Add\+Node}}
+\index{Add\+Node@{Add\+Node}!v8\+::\+Embedder\+Graph@{v8\+::\+Embedder\+Graph}}
+\subsubsection{\texorpdfstring{Add\+Node()}{AddNode()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}}$\ast$ v8\+::\+Embedder\+Graph\+::\+Add\+Node (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}} $>$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds the given node to the graph and takes ownership of the node. Returns a raw pointer to the node that is valid while the graph is alive. \mbox{\Hypertarget{classv8_1_1EmbedderGraph_a6fdb5451611738dd44c70d195445d0ff}\label{classv8_1_1EmbedderGraph_a6fdb5451611738dd44c70d195445d0ff}} 
+\index{v8\+::\+Embedder\+Graph@{v8\+::\+Embedder\+Graph}!V8\+Node@{V8\+Node}}
+\index{V8\+Node@{V8\+Node}!v8\+::\+Embedder\+Graph@{v8\+::\+Embedder\+Graph}}
+\subsubsection{\texorpdfstring{V8\+Node()}{V8Node()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1EmbedderGraph_1_1Node}{Node}}$\ast$ v8\+::\+Embedder\+Graph\+::\+V8\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classv8_1_1Local}{v8\+::\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{v8\+::\+Value}} $>$ \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a node corresponding to the given \mbox{\hyperlink{classv8_1_1V8}{V8}} value. Ownership is not transferred. The result pointer is valid while the graph is alive. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['fastaccessorbuilder',['FastAccessorBuilder',['../classv8_1_1experimental_1_1FastAccessorBuilder.html',1,'v8::experimental']]],
   ['float32array',['Float32Array',['../classv8_1_1Float32Array.html',1,'v8']]],
   ['float64array',['Float64Array',['../classv8_1_1Float64Array.html',1,'v8']]],
   ['function',['Function',['../classv8_1_1Function.html',1,'v8']]],

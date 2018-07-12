@@ -13,58 +13,82 @@ Inheritance diagram for v8\+:\+:Promise\+:\begin{figure}[H]
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver}
+class \mbox{\hyperlink{classv8_1_1Promise_1_1Resolver}{Resolver}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{Promise\+State}} \{ {\bfseries k\+Pending}, 
+{\bfseries k\+Fulfilled}, 
+{\bfseries k\+Rejected}
+ \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classv8_1_1Promise_a8378226f7b9e986184742dc5bb3cc78b}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use maybe version of Then\char`\"{}, Local$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ Chain(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler))
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ \mbox{\hyperlink{classv8_1_1Promise_ab5b9bc0140b750cbf569f3a0e6c92b42}{Catch}} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$ handler)
 \item 
-{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use Then\char`\"{}, V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ Chain(                                                                       \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler))\hypertarget{classv8_1_1Promise_a6a144ca5339ce1ccf856b4c142a9ff3e}{}\label{classv8_1_1Promise_a6a144ca5339ce1ccf856b4c142a9ff3e}
-
+\mbox{\Hypertarget{classv8_1_1Promise_af043d82818e1bbaf6c659e40bcf86c89}\label{classv8_1_1Promise_af043d82818e1bbaf6c659e40bcf86c89}} 
+V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $>$ {\bfseries Then} (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$ context, \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$ handler)
 \item 
-{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ Catch(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler))\hypertarget{classv8_1_1Promise_abac3f6124a1393b13500f2579bd28513}{}\label{classv8_1_1Promise_abac3f6124a1393b13500f2579bd28513}
-
+bool \mbox{\hyperlink{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}{Has\+Handler}} ()
 \item 
-V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ {\bfseries Catch} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler)\hypertarget{classv8_1_1Promise_ab5b9bc0140b750cbf569f3a0e6c92b42}{}\label{classv8_1_1Promise_ab5b9bc0140b750cbf569f3a0e6c92b42}
-
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ \mbox{\hyperlink{classv8_1_1Promise_a94aceab6e2ad55f37e6997b4dcac2f11}{Result}} ()
 \item 
-{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use maybe version\char`\"{}, Local$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ Then(\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler))\hypertarget{classv8_1_1Promise_a9bb6f0ee5815b09a9ad25b1f263a471c}{}\label{classv8_1_1Promise_a9bb6f0ee5815b09a9ad25b1f263a471c}
-
-\item 
-V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}$<$ \hyperlink{classv8_1_1Promise}{Promise} $>$ {\bfseries Then} (\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Context}{Context} $>$ context, \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Function}{Function} $>$ handler)\hypertarget{classv8_1_1Promise_af043d82818e1bbaf6c659e40bcf86c89}{}\label{classv8_1_1Promise_af043d82818e1bbaf6c659e40bcf86c89}
-
-\item 
-bool \hyperlink{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}{Has\+Handler} ()
+\mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{Promise\+State}} \mbox{\hyperlink{classv8_1_1Promise_abc011691f131e23939b167a4fe3f9391}{State}} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1Promise}{Promise} $\ast$ {\bfseries Cast} (\hyperlink{classv8_1_1Value}{Value} $\ast$obj)\hypertarget{classv8_1_1Promise_adfa3b953beb2678dd3b5d6ddb3f0746d}{}\label{classv8_1_1Promise_adfa3b953beb2678dd3b5d6ddb3f0746d}
-
+\mbox{\Hypertarget{classv8_1_1Promise_adfa3b953beb2678dd3b5d6ddb3f0746d}\label{classv8_1_1Promise_adfa3b953beb2678dd3b5d6ddb3f0746d}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1Promise}{Promise}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{Value}} $\ast$obj)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1Promise_ab4302ae258f4405f871e24ec4b0ce618}\label{classv8_1_1Promise_ab4302ae258f4405f871e24ec4b0ce618}} 
+static const int {\bfseries k\+Embedder\+Field\+Count} = V8\+\_\+\+P\+R\+O\+M\+I\+S\+E\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+O\+U\+NT
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-An instance of the built-\/in \hyperlink{classv8_1_1Promise}{Promise} constructor (E\+S6 draft). This A\+PI is experimental. Only works with --harmony flag. 
+An instance of the built-\/in \mbox{\hyperlink{classv8_1_1Promise}{Promise}} constructor (E\+S6 draft). 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}\label{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}} 
+\index{v8\+::\+Promise@{v8\+::\+Promise}!Promise\+State@{Promise\+State}}
+\index{Promise\+State@{Promise\+State}!v8\+::\+Promise@{v8\+::\+Promise}}
+\subsubsection{\texorpdfstring{Promise\+State}{PromiseState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{v8\+::\+Promise\+::\+Promise\+State}}}
+
+State of the promise. Each value corresponds to one of the possible values of the \mbox{[}\mbox{[}Promise\+State\mbox{]}\mbox{]} field. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1Promise_ab5b9bc0140b750cbf569f3a0e6c92b42}\label{classv8_1_1Promise_ab5b9bc0140b750cbf569f3a0e6c92b42}} 
+\index{v8\+::\+Promise@{v8\+::\+Promise}!Catch@{Catch}}
+\index{Catch@{Catch}!v8\+::\+Promise@{v8\+::\+Promise}}
+\subsubsection{\texorpdfstring{Catch()}{Catch()}}
+{\footnotesize\ttfamily V8\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1Promise}{Promise}}$>$ v8\+::\+Promise\+::\+Catch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Context}{Context}} $>$}]{context,  }\item[{\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Function}{Function}} $>$}]{handler }\end{DoxyParamCaption})}
+
+Register a resolution/rejection handler with a promise. The handler is given the respective resolution/rejection value as an argument. If the promise is already resolved/rejected, the handler is invoked at the end of turn. \mbox{\Hypertarget{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}\label{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}} 
 \index{v8\+::\+Promise@{v8\+::\+Promise}!Has\+Handler@{Has\+Handler}}
 \index{Has\+Handler@{Has\+Handler}!v8\+::\+Promise@{v8\+::\+Promise}}
-\subsubsection[{\texorpdfstring{Has\+Handler()}{HasHandler()}}]{\setlength{\rightskip}{0pt plus 5cm}bool v8\+::\+Promise\+::\+Has\+Handler (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}{}\label{classv8_1_1Promise_aeea8bdfdbe2291632d7f0d45394c1722}
-Returns true if the promise has at least one derived promise, and therefore resolve/reject handlers (including default handler). \index{v8\+::\+Promise@{v8\+::\+Promise}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+Promise@{v8\+::\+Promise}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use maybe version of Then"", Local$<$ Promise $>$ Chain(\+Local$<$ Function $>$ handler))}{V8_DEPRECATED("Use maybe version of Then", Local< Promise > Chain(Local< Function > handler))}}]{\setlength{\rightskip}{0pt plus 5cm}v8\+::\+Promise\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use maybe version of Then\char`\"{}}]{, }
-\item[{{\bf Local}$<$ {\bf Promise} $>$ }]{ChainLocal$<$ Function $>$ handler}
-\end{DoxyParamCaption}
-)}\hypertarget{classv8_1_1Promise_a8378226f7b9e986184742dc5bb3cc78b}{}\label{classv8_1_1Promise_a8378226f7b9e986184742dc5bb3cc78b}
-Register a resolution/rejection handler with a promise. The handler is given the respective resolution/rejection value as an argument. If the promise is already resolved/rejected, the handler is invoked at the end of turn. 
+\subsubsection{\texorpdfstring{Has\+Handler()}{HasHandler()}}
+{\footnotesize\ttfamily bool v8\+::\+Promise\+::\+Has\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the promise has at least one derived promise, and therefore resolve/reject handlers (including default handler). \mbox{\Hypertarget{classv8_1_1Promise_a94aceab6e2ad55f37e6997b4dcac2f11}\label{classv8_1_1Promise_a94aceab6e2ad55f37e6997b4dcac2f11}} 
+\index{v8\+::\+Promise@{v8\+::\+Promise}!Result@{Result}}
+\index{Result@{Result}!v8\+::\+Promise@{v8\+::\+Promise}}
+\subsubsection{\texorpdfstring{Result()}{Result()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Local}{Local}}$<$\mbox{\hyperlink{classv8_1_1Value}{Value}}$>$ v8\+::\+Promise\+::\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the content of the \mbox{[}\mbox{[}Promise\+Result\mbox{]}\mbox{]} field. The \mbox{\hyperlink{classv8_1_1Promise}{Promise}} must not be pending. \mbox{\Hypertarget{classv8_1_1Promise_abc011691f131e23939b167a4fe3f9391}\label{classv8_1_1Promise_abc011691f131e23939b167a4fe3f9391}} 
+\index{v8\+::\+Promise@{v8\+::\+Promise}!State@{State}}
+\index{State@{State}!v8\+::\+Promise@{v8\+::\+Promise}}
+\subsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1Promise_a0c357b9d99a634f98a5a203b0a322544}{Promise\+State}} v8\+::\+Promise\+::\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the value of the \mbox{[}\mbox{[}Promise\+State\mbox{]}\mbox{]} field. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

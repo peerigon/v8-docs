@@ -4,108 +4,83 @@
 
 {\ttfamily \#include $<$v8.\+h$>$}
 
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classv8_1_1V8_a18084f04050024b3e266277412737282}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}Use \mbox{\hyperlink{classv8_1_1SnapshotCreator}{Snapshot\+Creator}}\char`\"{}, static \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} Create\+Snapshot\+Data\+Blob(const char $\ast$embedded\+\_\+source=N\+U\+LL))
+\item 
+\mbox{\hyperlink{classv8_1_1V8_ac6020fb485b53eb8e5a6c1e3a8cbee63}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}Use \mbox{\hyperlink{classv8_1_1SnapshotCreator}{Snapshot\+Creator}}\char`\"{}, static \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} Warm\+Up\+Snapshot\+Data\+Blob(\mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} cold\+\_\+startup\+\_\+blob, const char $\ast$warmup\+\_\+source))
+\item 
+\mbox{\hyperlink{classv8_1_1V8_a4e1339bb218a43e6776dea1a20340115}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}} (\char`\"{}Use \mbox{\hyperlink{classv8_1_1V8_a3a21191d183bf7b1235d029e6fdf438f}{Enable\+Web\+Assembly\+Trap\+Handler}}\char`\"{}, static bool Register\+Default\+Signal\+Handler())
+\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_adcb67f2cb8f0d94495b7d25e82aa223a}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Set\+Fatal\+Error\+Handler(Fatal\+Error\+Callback that))
+static void \mbox{\hyperlink{classv8_1_1V8_ae6a0f605e072e9e27e3666559d5c351f}{Set\+Natives\+Data\+Blob}} (\mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} $\ast$startup\+\_\+blob)
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_acae9c7876f625ba81077856fda3d1325}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Set\+Allow\+Code\+Generation\+From\+Strings\+Callback(                                                                                                                           \hyperlink{namespacev8_a521d909ec201742a1cb35d50a8e2a3c2}{Allow\+Code\+Generation\+From\+Strings\+Callback} that))
+\mbox{\Hypertarget{classv8_1_1V8_a231b3cd8e5578497ee36210c0411f14c}\label{classv8_1_1V8_a231b3cd8e5578497ee36210c0411f14c}} 
+static void {\bfseries Set\+Snapshot\+Data\+Blob} (\mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} $\ast$startup\+\_\+blob)
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_aaf432a021a1ab586cd2d888c915d47f8}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, bool Is\+Dead())
+static void \mbox{\hyperlink{classv8_1_1V8_a5cbe8372ea21fcf6ae816e090e9a2d1f}{Set\+Dcheck\+Error\+Handler}} (Dcheck\+Error\+Callback that)
 \item 
-static void \hyperlink{classv8_1_1V8_ae6a0f605e072e9e27e3666559d5c351f}{Set\+Natives\+Data\+Blob} (\hyperlink{classv8_1_1StartupData}{Startup\+Data} $\ast$startup\+\_\+blob)
+static void \mbox{\hyperlink{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}{Set\+Flags\+From\+String}} (const char $\ast$str, int length)
 \item 
-static void {\bfseries Set\+Snapshot\+Data\+Blob} (\hyperlink{classv8_1_1StartupData}{Startup\+Data} $\ast$startup\+\_\+blob)\hypertarget{classv8_1_1V8_a231b3cd8e5578497ee36210c0411f14c}{}\label{classv8_1_1V8_a231b3cd8e5578497ee36210c0411f14c}
-
+static void \mbox{\hyperlink{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}{Set\+Flags\+From\+Command\+Line}} (int $\ast$argc, char $\ast$$\ast$argv, bool remove\+\_\+flags)
 \item 
-static \hyperlink{classv8_1_1StartupData}{Startup\+Data} \hyperlink{classv8_1_1V8_ac364f4d2598b97502138c9506f2aa287}{Create\+Snapshot\+Data\+Blob} (const char $\ast$embedded\+\_\+source=N\+U\+LL)
+static const char $\ast$ \mbox{\hyperlink{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}{Get\+Version}} ()
 \item 
-static \hyperlink{classv8_1_1StartupData}{Startup\+Data} \hyperlink{classv8_1_1V8_adb8616cb7056b7e054f6694deae8dc2a}{Warm\+Up\+Snapshot\+Data\+Blob} (\hyperlink{classv8_1_1StartupData}{Startup\+Data} cold\+\_\+startup\+\_\+blob, const char $\ast$warmup\+\_\+source)
+static bool \mbox{\hyperlink{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{Initialize}} ()
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_af1fd60572a6ce6d9effa9a32a6d1c766}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, bool Add\+Message\+Listener(Message\+Callback that,                                                                                                               \hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ data=\hyperlink{classv8_1_1Local}{Local}$<$ \hyperlink{classv8_1_1Value}{Value} $>$()))
+static void \mbox{\hyperlink{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}{Set\+Entropy\+Source}} (\mbox{\hyperlink{namespacev8_ab699f4bbbb56350e6e915682e420fcdc}{Entropy\+Source}} source)
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a5a6ecfbbf0629d96ad7d5603960f551b}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Remove\+Message\+Listeners(Message\+Callback that))
+static void \mbox{\hyperlink{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}{Set\+Return\+Address\+Location\+Resolver}} (\mbox{\hyperlink{namespacev8_a8ce54c75241be41ff6a25e9944eefd2a}{Return\+Address\+Location\+Resolver}} return\+\_\+address\+\_\+resolver)
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a2acc2b593786b0f12f0d3853c44fcd29}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions(                               bool capture, int frame\+\_\+limit=10,                               \hyperlink{classv8_1_1StackTrace_a9704e4a37949eb8eb8ccddbddf161492}{Stack\+Trace\+::\+Stack\+Trace\+Options} options=Stack\+Trace\+::k\+Overview))
+static bool \mbox{\hyperlink{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}{Dispose}} ()
 \item 
-static void \hyperlink{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}{Set\+Flags\+From\+String} (const char $\ast$str, int length)
+static bool \mbox{\hyperlink{classv8_1_1V8_a707f49bb9aef6d01294cd2f2f83939aa}{Initialize\+I\+CU}} (const char $\ast$icu\+\_\+data\+\_\+file=nullptr)
 \item 
-static void \hyperlink{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}{Set\+Flags\+From\+Command\+Line} (int $\ast$argc, char $\ast$$\ast$argv, bool remove\+\_\+flags)
+static bool \mbox{\hyperlink{classv8_1_1V8_a133e338f42ab109a51f75b929f7c1500}{Initialize\+I\+C\+U\+Default\+Location}} (const char $\ast$exec\+\_\+path, const char $\ast$icu\+\_\+data\+\_\+file=nullptr)
 \item 
-static const char $\ast$ \hyperlink{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}{Get\+Version} ()
+static void \mbox{\hyperlink{classv8_1_1V8_ad662ec37263887b7fd31c6b498e9466c}{Initialize\+External\+Startup\+Data}} (const char $\ast$directory\+\_\+path)
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a3a1536ab17b6416848404db9805b92ae}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Set\+Failed\+Access\+Check\+Callback\+Function(Failed\+Access\+Check\+Callback))
+\mbox{\Hypertarget{classv8_1_1V8_a21e8f87cde2efa4af9955ab05515b4d2}\label{classv8_1_1V8_a21e8f87cde2efa4af9955ab05515b4d2}} 
+static void {\bfseries Initialize\+External\+Startup\+Data} (const char $\ast$natives\+\_\+blob, const char $\ast$snapshot\+\_\+blob)
 \item 
-static \hyperlink{classv8_1_1V8_a3e9e0c8681a6bdf7938fc526ffa4f6b5}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Add\+G\+C\+Prologue\+Callback(G\+C\+Callback callback,                                                                                                                           \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All))
+static void \mbox{\hyperlink{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}{Initialize\+Platform}} (\mbox{\hyperlink{classv8_1_1Platform}{Platform}} $\ast$platform)
 \item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_af56a1bbe2a567b71c70391b9162dbdfc}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Remove\+G\+C\+Prologue\+Callback(G\+C\+Callback callback))
+static void \mbox{\hyperlink{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}{Shutdown\+Platform}} ()
 \item 
-static \hyperlink{classv8_1_1V8_a2226ad54c2d768cc1eea00d9a2bc207a}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Add\+G\+C\+Epilogue\+Callback(G\+C\+Callback callback,                                                                                                                           \hyperlink{namespacev8_ac109d6f27e0c0f9ef4e98bcf7a806cf2}{G\+C\+Type} gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All))
-\item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a92cbf3c479cf64c17a72a84a431213e6}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Remove\+G\+C\+Epilogue\+Callback(G\+C\+Callback callback))
-\item 
-static bool \hyperlink{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{Initialize} ()
-\item 
-static void \hyperlink{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}{Set\+Entropy\+Source} (\hyperlink{namespacev8_ab699f4bbbb56350e6e915682e420fcdc}{Entropy\+Source} source)
-\item 
-static void \hyperlink{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}{Set\+Return\+Address\+Location\+Resolver} (\hyperlink{namespacev8_a8ce54c75241be41ff6a25e9944eefd2a}{Return\+Address\+Location\+Resolver} return\+\_\+address\+\_\+resolver)
-\item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a8c6ad462ff967cb3afe8c97c85311e71}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Terminate\+Execution(\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate))
-\item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a5f7fe6a564362bb96289f8daf555ae21}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, bool Is\+Execution\+Terminating(\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate=N\+U\+LL))
-\item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a753d4225198ba18638d0b35d58fe8f8d}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Cancel\+Terminate\+Execution(\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate))
-\item 
-static bool \hyperlink{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}{Dispose} ()
-\item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a6f1eecbdac8c724d0d2b1c1932b9fd2f}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Visit\+External\+Resources(\hyperlink{classv8_1_1ExternalResourceVisitor}{External\+Resource\+Visitor} $\ast$visitor))
-\item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a8e480f3cbe5604c1ac70a27ee712240d}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Visit\+Handles\+With\+Class\+Ids(\hyperlink{classv8_1_1PersistentHandleVisitor}{Persistent\+Handle\+Visitor} $\ast$visitor))
-\item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_aea19300ca39260888118c12ac8af7550}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Visit\+Handles\+With\+Class\+Ids(\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate,                                                                                                                                       \hyperlink{classv8_1_1PersistentHandleVisitor}{Persistent\+Handle\+Visitor} $\ast$visitor))
-\item 
-static V8\+\_\+\+I\+N\+L\+I\+NE \hyperlink{classv8_1_1V8_a277e8dbb630b54617af213b822811254}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}Use isolate version\char`\"{}, void Visit\+Handles\+For\+Partial\+Dependence(\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate,                                                                                                                                                                       \hyperlink{classv8_1_1PersistentHandleVisitor}{Persistent\+Handle\+Visitor} $\ast$visitor))
-\item 
-static bool \hyperlink{classv8_1_1V8_a525b8e053a796b880fa809d0a4fc096a}{Initialize\+I\+CU} (const char $\ast$icu\+\_\+data\+\_\+file=N\+U\+LL)
-\item 
-static void \hyperlink{classv8_1_1V8_ad662ec37263887b7fd31c6b498e9466c}{Initialize\+External\+Startup\+Data} (const char $\ast$directory\+\_\+path)
-\item 
-static void {\bfseries Initialize\+External\+Startup\+Data} (const char $\ast$natives\+\_\+blob, const char $\ast$snapshot\+\_\+blob)\hypertarget{classv8_1_1V8_a21e8f87cde2efa4af9955ab05515b4d2}{}\label{classv8_1_1V8_a21e8f87cde2efa4af9955ab05515b4d2}
-
-\item 
-static void \hyperlink{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}{Initialize\+Platform} (\hyperlink{classv8_1_1Platform}{Platform} $\ast$platform)
-\item 
-static void \hyperlink{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}{Shutdown\+Platform} ()
+static bool \mbox{\hyperlink{classv8_1_1V8_a3a21191d183bf7b1235d029e6fdf438f}{Enable\+Web\+Assembly\+Trap\+Handler}} (bool use\+\_\+v8\+\_\+signal\+\_\+handler)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class K , class V , class T $>$ }\\class {\bfseries Persistent\+Value\+Map\+Base}\hypertarget{classv8_1_1V8_a08e2b8f164392d71811ce6cc134f33e3}{}\label{classv8_1_1V8_a08e2b8f164392d71811ce6cc134f33e3}
-
+\mbox{\Hypertarget{classv8_1_1V8_a08e2b8f164392d71811ce6cc134f33e3}\label{classv8_1_1V8_a08e2b8f164392d71811ce6cc134f33e3}} 
+{\footnotesize template$<$class K , class V , class T $>$ }\\class {\bfseries Persistent\+Value\+Map\+Base}
 \item 
-{\footnotesize template$<$class T $>$ }\\class {\bfseries Local}\hypertarget{classv8_1_1V8_afb872edb4aac7ba55f0da004113aa2b0}{}\label{classv8_1_1V8_afb872edb4aac7ba55f0da004113aa2b0}
-
+\mbox{\Hypertarget{classv8_1_1V8_afb872edb4aac7ba55f0da004113aa2b0}\label{classv8_1_1V8_afb872edb4aac7ba55f0da004113aa2b0}} 
+{\footnotesize template$<$class T $>$ }\\class {\bfseries Local}
 \item 
-{\footnotesize template$<$class T $>$ }\\class {\bfseries Maybe\+Local}\hypertarget{classv8_1_1V8_a8c1dab86fc095fca89075da411a82209}{}\label{classv8_1_1V8_a8c1dab86fc095fca89075da411a82209}
-
+\mbox{\Hypertarget{classv8_1_1V8_a8c1dab86fc095fca89075da411a82209}\label{classv8_1_1V8_a8c1dab86fc095fca89075da411a82209}} 
+{\footnotesize template$<$class T $>$ }\\class {\bfseries Maybe\+Local}
 \item 
-{\footnotesize template$<$class T $>$ }\\class {\bfseries Maybe}\hypertarget{classv8_1_1V8_ae606ba8c3656041ee7ec7532d02a3bdb}{}\label{classv8_1_1V8_ae606ba8c3656041ee7ec7532d02a3bdb}
-
+\mbox{\Hypertarget{classv8_1_1V8_ae606ba8c3656041ee7ec7532d02a3bdb}\label{classv8_1_1V8_ae606ba8c3656041ee7ec7532d02a3bdb}} 
+{\footnotesize template$<$class T $>$ }\\class {\bfseries Maybe}
 \item 
-{\footnotesize template$<$class T $>$ }\\class {\bfseries Weak\+Callback\+Info}\hypertarget{classv8_1_1V8_aeeef5ad4ce5906cf147f93645284ebdf}{}\label{classv8_1_1V8_aeeef5ad4ce5906cf147f93645284ebdf}
-
+\mbox{\Hypertarget{classv8_1_1V8_aeeef5ad4ce5906cf147f93645284ebdf}\label{classv8_1_1V8_aeeef5ad4ce5906cf147f93645284ebdf}} 
+{\footnotesize template$<$class T $>$ }\\class {\bfseries Weak\+Callback\+Info}
 \item 
-{\footnotesize template$<$class T $>$ }\\class {\bfseries Eternal}\hypertarget{classv8_1_1V8_adf5d8780aceb9310fb1246aae7ec348e}{}\label{classv8_1_1V8_adf5d8780aceb9310fb1246aae7ec348e}
-
+\mbox{\Hypertarget{classv8_1_1V8_adf5d8780aceb9310fb1246aae7ec348e}\label{classv8_1_1V8_adf5d8780aceb9310fb1246aae7ec348e}} 
+{\footnotesize template$<$class T $>$ }\\class {\bfseries Eternal}
 \item 
-{\footnotesize template$<$class T $>$ }\\class {\bfseries Persistent\+Base}\hypertarget{classv8_1_1V8_abb172e0bb22fc5fed7a3a66f29d046ce}{}\label{classv8_1_1V8_abb172e0bb22fc5fed7a3a66f29d046ce}
-
+\mbox{\Hypertarget{classv8_1_1V8_abb172e0bb22fc5fed7a3a66f29d046ce}\label{classv8_1_1V8_abb172e0bb22fc5fed7a3a66f29d046ce}} 
+{\footnotesize template$<$class T $>$ }\\class {\bfseries Persistent\+Base}
 \item 
-{\footnotesize template$<$class T , class M $>$ }\\class {\bfseries Persistent}\hypertarget{classv8_1_1V8_ad845ec8872174be0a9ca9a3dd1898d30}{}\label{classv8_1_1V8_ad845ec8872174be0a9ca9a3dd1898d30}
-
+\mbox{\Hypertarget{classv8_1_1V8_ad845ec8872174be0a9ca9a3dd1898d30}\label{classv8_1_1V8_ad845ec8872174be0a9ca9a3dd1898d30}} 
+{\footnotesize template$<$class T , class M $>$ }\\class {\bfseries Persistent}
 \item 
-class {\bfseries Context}\hypertarget{classv8_1_1V8_ac26c806e60ca4a0547680edb68f6e39b}{}\label{classv8_1_1V8_ac26c806e60ca4a0547680edb68f6e39b}
-
+\mbox{\Hypertarget{classv8_1_1V8_ac26c806e60ca4a0547680edb68f6e39b}\label{classv8_1_1V8_ac26c806e60ca4a0547680edb68f6e39b}} 
+class {\bfseries Context}
 \end{DoxyCompactItemize}
 
 
@@ -113,305 +88,145 @@ class {\bfseries Context}\hypertarget{classv8_1_1V8_ac26c806e60ca4a0547680edb68f
 Container class for static utility functions. 
 
 \subsection{Member Function Documentation}
-\index{v8\+::\+V8@{v8\+::\+V8}!Create\+Snapshot\+Data\+Blob@{Create\+Snapshot\+Data\+Blob}}
-\index{Create\+Snapshot\+Data\+Blob@{Create\+Snapshot\+Data\+Blob}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Create\+Snapshot\+Data\+Blob(const char $\ast$embedded\+\_\+source=\+N\+U\+L\+L)}{CreateSnapshotDataBlob(const char *embedded_source=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Startup\+Data} v8\+::\+V8\+::\+Create\+Snapshot\+Data\+Blob (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{embedded\+\_\+source = {\ttfamily NULL}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_ac364f4d2598b97502138c9506f2aa287}{}\label{classv8_1_1V8_ac364f4d2598b97502138c9506f2aa287}
-Bootstrap an isolate and a context from scratch to create a startup snapshot. Include the side-\/effects of running the optional script. Returns \{ N\+U\+LL, 0 \} on failure. The caller acquires ownership of the data array in the return value. \index{v8\+::\+V8@{v8\+::\+V8}!Dispose@{Dispose}}
+\mbox{\Hypertarget{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}\label{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Dispose@{Dispose}}
 \index{Dispose@{Dispose}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Dispose()}{Dispose()}}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\+::\+V8\+::\+Dispose (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}{}\label{classv8_1_1V8_a566450d632c0a63770682b9da3cae08d}
-Releases any resources used by \hyperlink{namespacev8}{v8} and stops any utility threads that may be running. Note that disposing \hyperlink{namespacev8}{v8} is permanent, it cannot be reinitialized.
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily static bool v8\+::\+V8\+::\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-It should generally not be necessary to dispose \hyperlink{namespacev8}{v8} before exiting a process, this should happen automatically. It is only necessary to use if the process needs the resources taken up by \hyperlink{namespacev8}{v8}. \index{v8\+::\+V8@{v8\+::\+V8}!Get\+Version@{Get\+Version}}
+Releases any resources used by \mbox{\hyperlink{namespacev8}{v8}} and stops any utility threads that may be running. Note that disposing \mbox{\hyperlink{namespacev8}{v8}} is permanent, it cannot be reinitialized.
+
+It should generally not be necessary to dispose \mbox{\hyperlink{namespacev8}{v8}} before exiting a process, this should happen automatically. It is only necessary to use if the process needs the resources taken up by \mbox{\hyperlink{namespacev8}{v8}}. \mbox{\Hypertarget{classv8_1_1V8_a3a21191d183bf7b1235d029e6fdf438f}\label{classv8_1_1V8_a3a21191d183bf7b1235d029e6fdf438f}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Enable\+Web\+Assembly\+Trap\+Handler@{Enable\+Web\+Assembly\+Trap\+Handler}}
+\index{Enable\+Web\+Assembly\+Trap\+Handler@{Enable\+Web\+Assembly\+Trap\+Handler}!v8\+::\+V8@{v8\+::\+V8}}
+\subsubsection{\texorpdfstring{Enable\+Web\+Assembly\+Trap\+Handler()}{EnableWebAssemblyTrapHandler()}}
+{\footnotesize\ttfamily static bool v8\+::\+V8\+::\+Enable\+Web\+Assembly\+Trap\+Handler (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+v8\+\_\+signal\+\_\+handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Activate trap-\/based bounds checking for Web\+Assembly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em use\+\_\+v8\+\_\+signal\+\_\+handler} & Whether \mbox{\hyperlink{classv8_1_1V8}{V8}} should install its own signal handler or rely on the embedder\textquotesingle{}s. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}\label{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Get\+Version@{Get\+Version}}
 \index{Get\+Version@{Get\+Version}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Get\+Version()}{GetVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ v8\+::\+V8\+::\+Get\+Version (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}{}\label{classv8_1_1V8_afcecc0e9e8b5fa17a06a93f7b5a7538d}
-Get the version string. \index{v8\+::\+V8@{v8\+::\+V8}!Initialize@{Initialize}}
+\subsubsection{\texorpdfstring{Get\+Version()}{GetVersion()}}
+{\footnotesize\ttfamily static const char$\ast$ v8\+::\+V8\+::\+Get\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the version string. \mbox{\Hypertarget{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}\label{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Initialize()}{Initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\+::\+V8\+::\+Initialize (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}{}\label{classv8_1_1V8_a40daec93ce44bdd922567fc121be9db8}
-Initializes \hyperlink{classv8_1_1V8}{V8}. This function needs to be called before the first \hyperlink{classv8_1_1Isolate}{Isolate} is created. It always returns true. \index{v8\+::\+V8@{v8\+::\+V8}!Initialize\+External\+Startup\+Data@{Initialize\+External\+Startup\+Data}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily static bool v8\+::\+V8\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initializes \mbox{\hyperlink{classv8_1_1V8}{V8}}. This function needs to be called before the first \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} is created. It always returns true. \mbox{\Hypertarget{classv8_1_1V8_ad662ec37263887b7fd31c6b498e9466c}\label{classv8_1_1V8_ad662ec37263887b7fd31c6b498e9466c}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Initialize\+External\+Startup\+Data@{Initialize\+External\+Startup\+Data}}
 \index{Initialize\+External\+Startup\+Data@{Initialize\+External\+Startup\+Data}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Initialize\+External\+Startup\+Data(const char $\ast$directory\+\_\+path)}{InitializeExternalStartupData(const char *directory_path)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+V8\+::\+Initialize\+External\+Startup\+Data (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{directory\+\_\+path}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_ad662ec37263887b7fd31c6b498e9466c}{}\label{classv8_1_1V8_ad662ec37263887b7fd31c6b498e9466c}
+\subsubsection{\texorpdfstring{Initialize\+External\+Startup\+Data()}{InitializeExternalStartupData()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Initialize\+External\+Startup\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{directory\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Initialize the external startup data. The embedder only needs to invoke this method when external startup data was enabled in a build.
 
-If \hyperlink{classv8_1_1V8}{V8} was compiled with the startup data in an external file, then \hyperlink{classv8_1_1V8}{V8} needs to be given those external files during startup. There are three ways to do this\+:
+If \mbox{\hyperlink{classv8_1_1V8}{V8}} was compiled with the startup data in an external file, then \mbox{\hyperlink{classv8_1_1V8}{V8}} needs to be given those external files during startup. There are three ways to do this\+:
 \begin{DoxyItemize}
-\item \hyperlink{classv8_1_1V8_ad662ec37263887b7fd31c6b498e9466c}{Initialize\+External\+Startup\+Data(const char$\ast$)} This will look in the given directory for files \char`\"{}natives\+\_\+blob.\+bin\char`\"{} and \char`\"{}snapshot\+\_\+blob.\+bin\char`\"{} -\/ which is what the default build calls them.
+\item \mbox{\hyperlink{classv8_1_1V8_ad662ec37263887b7fd31c6b498e9466c}{Initialize\+External\+Startup\+Data(const char$\ast$)}} This will look in the given directory for files \char`\"{}natives\+\_\+blob.\+bin\char`\"{} and \char`\"{}snapshot\+\_\+blob.\+bin\char`\"{} -\/ which is what the default build calls them.
 \item Initialize\+External\+Startup\+Data(const char$\ast$, const char$\ast$) As above, but will directly use the two given file names.
 \item Call Set\+Natives\+Data\+Blob, Set\+Natives\+Data\+Blob. This will read the blobs from the given data structures and will not perform any file IO. 
-\end{DoxyItemize}\index{v8\+::\+V8@{v8\+::\+V8}!Initialize\+I\+CU@{Initialize\+I\+CU}}
+\end{DoxyItemize}\mbox{\Hypertarget{classv8_1_1V8_a707f49bb9aef6d01294cd2f2f83939aa}\label{classv8_1_1V8_a707f49bb9aef6d01294cd2f2f83939aa}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Initialize\+I\+CU@{Initialize\+I\+CU}}
 \index{Initialize\+I\+CU@{Initialize\+I\+CU}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Initialize\+I\+C\+U(const char $\ast$icu\+\_\+data\+\_\+file=\+N\+U\+L\+L)}{InitializeICU(const char *icu_data_file=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}static bool v8\+::\+V8\+::\+Initialize\+I\+CU (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{icu\+\_\+data\+\_\+file = {\ttfamily NULL}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a525b8e053a796b880fa809d0a4fc096a}{}\label{classv8_1_1V8_a525b8e053a796b880fa809d0a4fc096a}
-Initialize the I\+CU library bundled with \hyperlink{classv8_1_1V8}{V8}. The embedder should only invoke this method when using the bundled I\+CU. Returns true on success.
+\subsubsection{\texorpdfstring{Initialize\+I\+C\+U()}{InitializeICU()}}
+{\footnotesize\ttfamily static bool v8\+::\+V8\+::\+Initialize\+I\+CU (\begin{DoxyParamCaption}\item[{const char $\ast$}]{icu\+\_\+data\+\_\+file = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-If \hyperlink{classv8_1_1V8}{V8} was compiled with the I\+CU data in an external file, the location of the data file has to be provided. \index{v8\+::\+V8@{v8\+::\+V8}!Initialize\+Platform@{Initialize\+Platform}}
+Initialize the I\+CU library bundled with \mbox{\hyperlink{classv8_1_1V8}{V8}}. The embedder should only invoke this method when using the bundled I\+CU. Returns true on success.
+
+If \mbox{\hyperlink{classv8_1_1V8}{V8}} was compiled with the I\+CU data in an external file, the location of the data file has to be provided. \mbox{\Hypertarget{classv8_1_1V8_a133e338f42ab109a51f75b929f7c1500}\label{classv8_1_1V8_a133e338f42ab109a51f75b929f7c1500}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Initialize\+I\+C\+U\+Default\+Location@{Initialize\+I\+C\+U\+Default\+Location}}
+\index{Initialize\+I\+C\+U\+Default\+Location@{Initialize\+I\+C\+U\+Default\+Location}!v8\+::\+V8@{v8\+::\+V8}}
+\subsubsection{\texorpdfstring{Initialize\+I\+C\+U\+Default\+Location()}{InitializeICUDefaultLocation()}}
+{\footnotesize\ttfamily static bool v8\+::\+V8\+::\+Initialize\+I\+C\+U\+Default\+Location (\begin{DoxyParamCaption}\item[{const char $\ast$}]{exec\+\_\+path,  }\item[{const char $\ast$}]{icu\+\_\+data\+\_\+file = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize the I\+CU library bundled with \mbox{\hyperlink{classv8_1_1V8}{V8}}. The embedder should only invoke this method when using the bundled I\+CU. If \mbox{\hyperlink{classv8_1_1V8}{V8}} was compiled with the I\+CU data in an external file and when the default location of that file should be used, a path to the executable must be provided. Returns true on success.
+
+The default is a file called icudtl.\+dat side-\/by-\/side with the executable.
+
+Optionally, the location of the data file can be provided to override the default. \mbox{\Hypertarget{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}\label{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Initialize\+Platform@{Initialize\+Platform}}
 \index{Initialize\+Platform@{Initialize\+Platform}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Initialize\+Platform(\+Platform $\ast$platform)}{InitializePlatform(Platform *platform)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+V8\+::\+Initialize\+Platform (
-\begin{DoxyParamCaption}
-\item[{{\bf Platform} $\ast$}]{platform}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}{}\label{classv8_1_1V8_a095eb8064458588a579c2b904e02dbbf}
-Sets the \hyperlink{classv8_1_1Platform}{v8\+::\+Platform} to use. This should be invoked before \hyperlink{classv8_1_1V8}{V8} is initialized. \index{v8\+::\+V8@{v8\+::\+V8}!Set\+Entropy\+Source@{Set\+Entropy\+Source}}
+\subsubsection{\texorpdfstring{Initialize\+Platform()}{InitializePlatform()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Initialize\+Platform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Platform}{Platform}} $\ast$}]{platform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the \mbox{\hyperlink{classv8_1_1Platform}{v8\+::\+Platform}} to use. This should be invoked before \mbox{\hyperlink{classv8_1_1V8}{V8}} is initialized. \mbox{\Hypertarget{classv8_1_1V8_a5cbe8372ea21fcf6ae816e090e9a2d1f}\label{classv8_1_1V8_a5cbe8372ea21fcf6ae816e090e9a2d1f}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Set\+Dcheck\+Error\+Handler@{Set\+Dcheck\+Error\+Handler}}
+\index{Set\+Dcheck\+Error\+Handler@{Set\+Dcheck\+Error\+Handler}!v8\+::\+V8@{v8\+::\+V8}}
+\subsubsection{\texorpdfstring{Set\+Dcheck\+Error\+Handler()}{SetDcheckErrorHandler()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Set\+Dcheck\+Error\+Handler (\begin{DoxyParamCaption}\item[{Dcheck\+Error\+Callback}]{that }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\hyperlink{classv8_1_1Set}{Set}} the callback to invoke in case of Dcheck failures. \mbox{\Hypertarget{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}\label{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Set\+Entropy\+Source@{Set\+Entropy\+Source}}
 \index{Set\+Entropy\+Source@{Set\+Entropy\+Source}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Set\+Entropy\+Source(\+Entropy\+Source source)}{SetEntropySource(EntropySource source)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+V8\+::\+Set\+Entropy\+Source (
-\begin{DoxyParamCaption}
-\item[{{\bf Entropy\+Source}}]{source}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}{}\label{classv8_1_1V8_a5331ce9c858af264f30de667c74c5a76}
-Allows the host application to provide a callback which can be used as a source of entropy for random number generators. \index{v8\+::\+V8@{v8\+::\+V8}!Set\+Flags\+From\+Command\+Line@{Set\+Flags\+From\+Command\+Line}}
+\subsubsection{\texorpdfstring{Set\+Entropy\+Source()}{SetEntropySource()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Set\+Entropy\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacev8_ab699f4bbbb56350e6e915682e420fcdc}{Entropy\+Source}}}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Allows the host application to provide a callback which can be used as a source of entropy for random number generators. \mbox{\Hypertarget{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}\label{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Set\+Flags\+From\+Command\+Line@{Set\+Flags\+From\+Command\+Line}}
 \index{Set\+Flags\+From\+Command\+Line@{Set\+Flags\+From\+Command\+Line}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Set\+Flags\+From\+Command\+Line(int $\ast$argc, char $\ast$$\ast$argv, bool remove\+\_\+flags)}{SetFlagsFromCommandLine(int *argc, char **argv, bool remove_flags)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+V8\+::\+Set\+Flags\+From\+Command\+Line (
-\begin{DoxyParamCaption}
-\item[{int $\ast$}]{argc, }
-\item[{char $\ast$$\ast$}]{argv, }
-\item[{bool}]{remove\+\_\+flags}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}{}\label{classv8_1_1V8_a63157ad9284ffad1c0ab62b21aadd08c}
-Sets \hyperlink{classv8_1_1V8}{V8} flags from the command line. \index{v8\+::\+V8@{v8\+::\+V8}!Set\+Flags\+From\+String@{Set\+Flags\+From\+String}}
+\subsubsection{\texorpdfstring{Set\+Flags\+From\+Command\+Line()}{SetFlagsFromCommandLine()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Set\+Flags\+From\+Command\+Line (\begin{DoxyParamCaption}\item[{int $\ast$}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{bool}]{remove\+\_\+flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets \mbox{\hyperlink{classv8_1_1V8}{V8}} flags from the command line. \mbox{\Hypertarget{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}\label{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Set\+Flags\+From\+String@{Set\+Flags\+From\+String}}
 \index{Set\+Flags\+From\+String@{Set\+Flags\+From\+String}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Set\+Flags\+From\+String(const char $\ast$str, int length)}{SetFlagsFromString(const char *str, int length)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+V8\+::\+Set\+Flags\+From\+String (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{str, }
-\item[{int}]{length}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}{}\label{classv8_1_1V8_ab263a85e6f97ea79d944bd20bb09a95f}
-Sets \hyperlink{classv8_1_1V8}{V8} flags from a string. \index{v8\+::\+V8@{v8\+::\+V8}!Set\+Natives\+Data\+Blob@{Set\+Natives\+Data\+Blob}}
+\subsubsection{\texorpdfstring{Set\+Flags\+From\+String()}{SetFlagsFromString()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Set\+Flags\+From\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets \mbox{\hyperlink{classv8_1_1V8}{V8}} flags from a string. \mbox{\Hypertarget{classv8_1_1V8_ae6a0f605e072e9e27e3666559d5c351f}\label{classv8_1_1V8_ae6a0f605e072e9e27e3666559d5c351f}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Set\+Natives\+Data\+Blob@{Set\+Natives\+Data\+Blob}}
 \index{Set\+Natives\+Data\+Blob@{Set\+Natives\+Data\+Blob}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Set\+Natives\+Data\+Blob(\+Startup\+Data $\ast$startup\+\_\+blob)}{SetNativesDataBlob(StartupData *startup_blob)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+V8\+::\+Set\+Natives\+Data\+Blob (
-\begin{DoxyParamCaption}
-\item[{{\bf Startup\+Data} $\ast$}]{startup\+\_\+blob}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_ae6a0f605e072e9e27e3666559d5c351f}{}\label{classv8_1_1V8_ae6a0f605e072e9e27e3666559d5c351f}
-Hand startup data to \hyperlink{classv8_1_1V8}{V8}, in case the embedder has chosen to build \hyperlink{classv8_1_1V8}{V8} with external startup data.
+\subsubsection{\texorpdfstring{Set\+Natives\+Data\+Blob()}{SetNativesDataBlob()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Set\+Natives\+Data\+Blob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} $\ast$}]{startup\+\_\+blob }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Hand startup data to \mbox{\hyperlink{classv8_1_1V8}{V8}}, in case the embedder has chosen to build \mbox{\hyperlink{classv8_1_1V8}{V8}} with external startup data.
 
 Note\+:
 \begin{DoxyItemize}
-\item By default the startup data is linked into the \hyperlink{classv8_1_1V8}{V8} library, in which case this function is not meaningful.
-\item If this needs to be called, it needs to be called before \hyperlink{classv8_1_1V8}{V8} tries to make use of its built-\/ins.
-\item To avoid unnecessary copies of data, \hyperlink{classv8_1_1V8}{V8} will point directly into the given data blob, so pretty please keep it around until \hyperlink{classv8_1_1V8}{V8} exit.
+\item By default the startup data is linked into the \mbox{\hyperlink{classv8_1_1V8}{V8}} library, in which case this function is not meaningful.
+\item If this needs to be called, it needs to be called before \mbox{\hyperlink{classv8_1_1V8}{V8}} tries to make use of its built-\/ins.
+\item To avoid unnecessary copies of data, \mbox{\hyperlink{classv8_1_1V8}{V8}} will point directly into the given data blob, so pretty please keep it around until \mbox{\hyperlink{classv8_1_1V8}{V8}} exit.
 \item Compression of the startup blob might be useful, but needs to handled entirely on the embedders\textquotesingle{} side.
 \item The call will abort if the data is invalid. 
-\end{DoxyItemize}\index{v8\+::\+V8@{v8\+::\+V8}!Set\+Return\+Address\+Location\+Resolver@{Set\+Return\+Address\+Location\+Resolver}}
+\end{DoxyItemize}\mbox{\Hypertarget{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}\label{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Set\+Return\+Address\+Location\+Resolver@{Set\+Return\+Address\+Location\+Resolver}}
 \index{Set\+Return\+Address\+Location\+Resolver@{Set\+Return\+Address\+Location\+Resolver}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Set\+Return\+Address\+Location\+Resolver(\+Return\+Address\+Location\+Resolver return\+\_\+address\+\_\+resolver)}{SetReturnAddressLocationResolver(ReturnAddressLocationResolver return_address_resolver)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+V8\+::\+Set\+Return\+Address\+Location\+Resolver (
-\begin{DoxyParamCaption}
-\item[{{\bf Return\+Address\+Location\+Resolver}}]{return\+\_\+address\+\_\+resolver}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}{}\label{classv8_1_1V8_a7a9e8a96dcb3c3d306c0061b0a8e39c8}
-Allows the host application to provide a callback that allows \hyperlink{namespacev8}{v8} to cooperate with a profiler that rewrites return addresses on stack. \index{v8\+::\+V8@{v8\+::\+V8}!Shutdown\+Platform@{Shutdown\+Platform}}
+\subsubsection{\texorpdfstring{Set\+Return\+Address\+Location\+Resolver()}{SetReturnAddressLocationResolver()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Set\+Return\+Address\+Location\+Resolver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacev8_a8ce54c75241be41ff6a25e9944eefd2a}{Return\+Address\+Location\+Resolver}}}]{return\+\_\+address\+\_\+resolver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Allows the host application to provide a callback that allows \mbox{\hyperlink{namespacev8}{v8}} to cooperate with a profiler that rewrites return addresses on stack. \mbox{\Hypertarget{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}\label{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!Shutdown\+Platform@{Shutdown\+Platform}}
 \index{Shutdown\+Platform@{Shutdown\+Platform}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Shutdown\+Platform()}{ShutdownPlatform()}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+V8\+::\+Shutdown\+Platform (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}{}\label{classv8_1_1V8_a228fad83cc2fe17f10cea1a6fb6669c7}
-Clears all references to the \hyperlink{classv8_1_1Platform}{v8\+::\+Platform}. This should be invoked after \hyperlink{classv8_1_1V8}{V8} was disposed. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Set\+Fatal\+Error\+Handler(\+Fatal\+Error\+Callback that))}{V8_DEPRECATED("Use isolate version", void SetFatalErrorHandler(FatalErrorCallback that))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Set\+Fatal\+Error\+HandlerFatal\+Error\+Callback that}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_adcb67f2cb8f0d94495b7d25e82aa223a}{}\label{classv8_1_1V8_adcb67f2cb8f0d94495b7d25e82aa223a}
-\hyperlink{classv8_1_1Set}{Set} the callback to invoke in case of fatal errors. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Set\+Allow\+Code\+Generation\+From\+Strings\+Callback(                                                                                                                           Allow\+Code\+Generation\+From\+Strings\+Callback that))}{V8_DEPRECATED("Use isolate version", void SetAllowCodeGenerationFromStringsCallback(                                                                                                                           AllowCodeGenerationFromStringsCallback that))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Set\+Allow\+Code\+Generation\+From\+Strings\+Callback                                                                                                                                                                                                                                                   Allow\+Code\+Generation\+From\+Strings\+Callback that}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_acae9c7876f625ba81077856fda3d1325}{}\label{classv8_1_1V8_acae9c7876f625ba81077856fda3d1325}
-\hyperlink{classv8_1_1Set}{Set} the callback to invoke to check if code generation from strings should be allowed. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", bool Is\+Dead())}{V8_DEPRECATED("Use isolate version", bool IsDead())}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{bool }]{Is\+Dead()}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_aaf432a021a1ab586cd2d888c915d47f8}{}\label{classv8_1_1V8_aaf432a021a1ab586cd2d888c915d47f8}
-Check if \hyperlink{classv8_1_1V8}{V8} is dead and therefore unusable. This is the case after fatal errors such as out-\/of-\/memory situations. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", bool Add\+Message\+Listener(\+Message\+Callback that,                                                                                                               Local$<$ Value $>$ data=\+Local$<$ Value $>$()))}{V8_DEPRECATED("Use isolate version", bool AddMessageListener(MessageCallback that,                                                                                                               Local< Value > data=Local< Value >()))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{bool }]{Add\+Message\+ListenerMessage\+Callback that,                                                                                                                                                                                                                           Local$<$ Value $>$ data=\+Local$<$ Value $>$()}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_af1fd60572a6ce6d9effa9a32a6d1c766}{}\label{classv8_1_1V8_af1fd60572a6ce6d9effa9a32a6d1c766}
-Adds a message listener.
+\subsubsection{\texorpdfstring{Shutdown\+Platform()}{ShutdownPlatform()}}
+{\footnotesize\ttfamily static void v8\+::\+V8\+::\+Shutdown\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-The same message listener can be added more than once and in that case it will be called more than once for each message.
+Clears all references to the \mbox{\hyperlink{classv8_1_1Platform}{v8\+::\+Platform}}. This should be invoked after \mbox{\hyperlink{classv8_1_1V8}{V8}} was disposed. \mbox{\Hypertarget{classv8_1_1V8_a4e1339bb218a43e6776dea1a20340115}\label{classv8_1_1V8_a4e1339bb218a43e6776dea1a20340115}} 
+\index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}!v8\+::\+V8@{v8\+::\+V8}}
+\subsubsection{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N()}{V8\_DEPRECATE\_SOON()}}
+{\footnotesize\ttfamily v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON (\begin{DoxyParamCaption}\item[{\char`\"{}Use \mbox{\hyperlink{classv8_1_1V8_a3a21191d183bf7b1235d029e6fdf438f}{Enable\+Web\+Assembly\+Trap\+Handler}}\char`\"{}}]{,  }\item[{static bool }]{Register\+Default\+Signal\+Handler() }\end{DoxyParamCaption})}
 
-If data is specified, it will be passed to the callback when it is called. Otherwise, the exception object will be passed to the callback instead. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Remove\+Message\+Listeners(\+Message\+Callback that))}{V8_DEPRECATED("Use isolate version", void RemoveMessageListeners(MessageCallback that))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Remove\+Message\+ListenersMessage\+Callback that}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a5a6ecfbbf0629d96ad7d5603960f551b}{}\label{classv8_1_1V8_a5a6ecfbbf0629d96ad7d5603960f551b}
-Remove all message listeners from the specified callback function. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions(                               bool capture, int frame\+\_\+limit=10,                               Stack\+Trace\+::\+Stack\+Trace\+Options options=\+Stack\+Trace\+::k\+Overview))}{V8_DEPRECATED("Use isolate version", void SetCaptureStackTraceForUncaughtExceptions(                               bool capture, int frame_limit=10,                               StackTrace::StackTraceOptions options=StackTrace::kOverview))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Set\+Capture\+Stack\+Trace\+For\+Uncaught\+Exceptions                                                           bool capture, int frame\+\_\+limit=10,                                                           Stack\+Trace\+::\+Stack\+Trace\+Options options=\+Stack\+Trace\+::k\+Overview}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a2acc2b593786b0f12f0d3853c44fcd29}{}\label{classv8_1_1V8_a2acc2b593786b0f12f0d3853c44fcd29}
-Tells \hyperlink{classv8_1_1V8}{V8} to capture current stack trace when uncaught exception occurs and report it to the message listeners. The option is off by default. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Set\+Failed\+Access\+Check\+Callback\+Function(\+Failed\+Access\+Check\+Callback))}{V8_DEPRECATED("Use isolate version", void SetFailedAccessCheckCallbackFunction(FailedAccessCheckCallback))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Set\+Failed\+Access\+Check\+Callback\+FunctionFailed\+Access\+Check\+Callback}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a3a1536ab17b6416848404db9805b92ae}{}\label{classv8_1_1V8_a3a1536ab17b6416848404db9805b92ae}
-Callback function for reporting failed access checks. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Add\+G\+C\+Prologue\+Callback(\+G\+C\+Callback callback,                                                                                                                           G\+C\+Type gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All))}{V8_DEPRECATED("Use isolate version", void AddGCPrologueCallback(GCCallback callback,                                                                                                                           GCType gc_type_filter=kGCTypeAll))}}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Add\+G\+C\+Prologue\+CallbackG\+C\+Callback callback,                                                                                                                                                                                                                                                   G\+C\+Type gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a3e9e0c8681a6bdf7938fc526ffa4f6b5}{}\label{classv8_1_1V8_a3e9e0c8681a6bdf7938fc526ffa4f6b5}
-Enables the host application to receive a notification before a garbage collection. Allocations are not allowed in the callback function, you therefore cannot manipulate objects (set or delete properties for example) since it is possible such operations will result in the allocation of objects. It is possible to specify the G\+C\+Type filter for your callback. But it is not possible to register the same callback function two times with different G\+C\+Type filters. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Remove\+G\+C\+Prologue\+Callback(\+G\+C\+Callback callback))}{V8_DEPRECATED("Use isolate version", void RemoveGCPrologueCallback(GCCallback callback))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Remove\+G\+C\+Prologue\+CallbackG\+C\+Callback callback}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_af56a1bbe2a567b71c70391b9162dbdfc}{}\label{classv8_1_1V8_af56a1bbe2a567b71c70391b9162dbdfc}
-This function removes callback which was installed by Add\+G\+C\+Prologue\+Callback function. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Add\+G\+C\+Epilogue\+Callback(\+G\+C\+Callback callback,                                                                                                                           G\+C\+Type gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All))}{V8_DEPRECATED("Use isolate version", void AddGCEpilogueCallback(GCCallback callback,                                                                                                                           GCType gc_type_filter=kGCTypeAll))}}]{\setlength{\rightskip}{0pt plus 5cm}static v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Add\+G\+C\+Epilogue\+CallbackG\+C\+Callback callback,                                                                                                                                                                                                                                                   G\+C\+Type gc\+\_\+type\+\_\+filter=k\+G\+C\+Type\+All}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a2226ad54c2d768cc1eea00d9a2bc207a}{}\label{classv8_1_1V8_a2226ad54c2d768cc1eea00d9a2bc207a}
-Enables the host application to receive a notification after a garbage collection. Allocations are not allowed in the callback function, you therefore cannot manipulate objects (set or delete properties for example) since it is possible such operations will result in the allocation of objects. It is possible to specify the G\+C\+Type filter for your callback. But it is not possible to register the same callback function two times with different G\+C\+Type filters. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Remove\+G\+C\+Epilogue\+Callback(\+G\+C\+Callback callback))}{V8_DEPRECATED("Use isolate version", void RemoveGCEpilogueCallback(GCCallback callback))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Remove\+G\+C\+Epilogue\+CallbackG\+C\+Callback callback}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a92cbf3c479cf64c17a72a84a431213e6}{}\label{classv8_1_1V8_a92cbf3c479cf64c17a72a84a431213e6}
-This function removes callback which was installed by Add\+G\+C\+Epilogue\+Callback function. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Terminate\+Execution(\+Isolate $\ast$isolate))}{V8_DEPRECATED("Use isolate version", void TerminateExecution(Isolate *isolate))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Terminate\+ExecutionIsolate $\ast$isolate}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a8c6ad462ff967cb3afe8c97c85311e71}{}\label{classv8_1_1V8_a8c6ad462ff967cb3afe8c97c85311e71}
-Forcefully terminate the current thread of Java\+Script execution in the given isolate.
-
-This method can be used by any thread even if that thread has not acquired the \hyperlink{classv8_1_1V8}{V8} lock with a \hyperlink{classv8_1_1Locker}{Locker} object.
-
-
-\begin{DoxyParams}{Parameters}
-{\em isolate} & The isolate in which to terminate the current JS execution. \\
-\hline
-\end{DoxyParams}
+Enable the default signal handler rather than using one provided by the embedder. \mbox{\Hypertarget{classv8_1_1V8_a18084f04050024b3e266277412737282}\label{classv8_1_1V8_a18084f04050024b3e266277412737282}} 
 \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", bool Is\+Execution\+Terminating(\+Isolate $\ast$isolate=\+N\+U\+L\+L))}{V8_DEPRECATED("Use isolate version", bool IsExecutionTerminating(Isolate *isolate=NULL))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{bool }]{Is\+Execution\+TerminatingIsolate $\ast$isolate=\+N\+U\+LL}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a5f7fe6a564362bb96289f8daf555ae21}{}\label{classv8_1_1V8_a5f7fe6a564362bb96289f8daf555ae21}
-Is \hyperlink{classv8_1_1V8}{V8} terminating Java\+Script execution.
+\subsubsection{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{V8\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}Use \mbox{\hyperlink{classv8_1_1SnapshotCreator}{Snapshot\+Creator}}\char`\"{}}]{,  }\item[{static \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} }]{Create\+Snapshot\+Data\+Blobconst char $\ast$embedded\+\_\+source=\+N\+U\+LL }\end{DoxyParamCaption})}
 
-Returns true if Java\+Script execution is currently terminating because of a call to Terminate\+Execution. In that case there are still Java\+Script frames on the stack and the termination exception is still active.
-
-
-\begin{DoxyParams}{Parameters}
-{\em isolate} & The isolate in which to check. \\
-\hline
-\end{DoxyParams}
+Bootstrap an isolate and a context from scratch to create a startup snapshot. Include the side-\/effects of running the optional script. Returns \{ N\+U\+LL, 0 \} on failure. The caller acquires ownership of the data array in the return value. \mbox{\Hypertarget{classv8_1_1V8_ac6020fb485b53eb8e5a6c1e3a8cbee63}\label{classv8_1_1V8_ac6020fb485b53eb8e5a6c1e3a8cbee63}} 
 \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Cancel\+Terminate\+Execution(\+Isolate $\ast$isolate))}{V8_DEPRECATED("Use isolate version", void CancelTerminateExecution(Isolate *isolate))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Cancel\+Terminate\+ExecutionIsolate $\ast$isolate}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a753d4225198ba18638d0b35d58fe8f8d}{}\label{classv8_1_1V8_a753d4225198ba18638d0b35d58fe8f8d}
-Resume execution capability in the given isolate, whose execution was previously forcefully terminated using Terminate\+Execution().
+\subsubsection{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{V8\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}Use \mbox{\hyperlink{classv8_1_1SnapshotCreator}{Snapshot\+Creator}}\char`\"{}}]{,  }\item[{static \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} }]{Warm\+Up\+Snapshot\+Data\+BlobStartup\+Data cold\+\_\+startup\+\_\+blob, const char $\ast$warmup\+\_\+source }\end{DoxyParamCaption})}
 
-When execution is forcefully terminated using Terminate\+Execution(), the isolate can not resume execution until all Java\+Script frames have propagated the uncatchable exception which is generated. This method allows the program embedding the engine to handle the termination event and resume execution capability, even if Java\+Script frames remain on the stack.
-
-This method can be used by any thread even if that thread has not acquired the \hyperlink{classv8_1_1V8}{V8} lock with a \hyperlink{classv8_1_1Locker}{Locker} object.
-
-
-\begin{DoxyParams}{Parameters}
-{\em isolate} & The isolate in which to resume execution capability. \\
-\hline
-\end{DoxyParams}
-\index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Visit\+External\+Resources(\+External\+Resource\+Visitor $\ast$visitor))}{V8_DEPRECATED("Use isolate version", void VisitExternalResources(ExternalResourceVisitor *visitor))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Visit\+External\+ResourcesExternal\+Resource\+Visitor $\ast$visitor}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a6f1eecbdac8c724d0d2b1c1932b9fd2f}{}\label{classv8_1_1V8_a6f1eecbdac8c724d0d2b1c1932b9fd2f}
-Iterates through all external resources referenced from current isolate heap. GC is not invoked prior to iterating, therefore there is no guarantee that visited objects are still alive. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Visit\+Handles\+With\+Class\+Ids(\+Persistent\+Handle\+Visitor $\ast$visitor))}{V8_DEPRECATED("Use isolate version", void VisitHandlesWithClassIds(PersistentHandleVisitor *visitor))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Visit\+Handles\+With\+Class\+IdsPersistent\+Handle\+Visitor $\ast$visitor}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a8e480f3cbe5604c1ac70a27ee712240d}{}\label{classv8_1_1V8_a8e480f3cbe5604c1ac70a27ee712240d}
-Iterates through all the persistent handles in the current isolate\textquotesingle{}s heap that have class\+\_\+ids. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Visit\+Handles\+With\+Class\+Ids(\+Isolate $\ast$isolate,                                                                                                                                       Persistent\+Handle\+Visitor $\ast$visitor))}{V8_DEPRECATED("Use isolate version", void VisitHandlesWithClassIds(Isolate *isolate,                                                                                                                                       PersistentHandleVisitor *visitor))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Visit\+Handles\+With\+Class\+IdsIsolate $\ast$isolate,                                                                                                                                                                                                                                                                           Persistent\+Handle\+Visitor $\ast$visitor}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_aea19300ca39260888118c12ac8af7550}{}\label{classv8_1_1V8_aea19300ca39260888118c12ac8af7550}
-Iterates through all the persistent handles in isolate\textquotesingle{}s heap that have class\+\_\+ids. \index{v8\+::\+V8@{v8\+::\+V8}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
-\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(""Use isolate version"", void Visit\+Handles\+For\+Partial\+Dependence(\+Isolate $\ast$isolate,                                                                                                                                                                       Persistent\+Handle\+Visitor $\ast$visitor))}{V8_DEPRECATED("Use isolate version", void VisitHandlesForPartialDependence(Isolate *isolate,                                                                                                                                                                       PersistentHandleVisitor *visitor))}}]{\setlength{\rightskip}{0pt plus 5cm}static V8\+\_\+\+I\+N\+L\+I\+NE v8\+::\+V8\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (
-\begin{DoxyParamCaption}
-\item[{\char`\"{}Use isolate version\char`\"{}}]{, }
-\item[{void }]{Visit\+Handles\+For\+Partial\+DependenceIsolate $\ast$isolate,                                                                                                                                                                                                                                                                                                                                           Persistent\+Handle\+Visitor $\ast$visitor}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_a277e8dbb630b54617af213b822811254}{}\label{classv8_1_1V8_a277e8dbb630b54617af213b822811254}
-Iterates through all the persistent handles in the current isolate\textquotesingle{}s heap that have class\+\_\+ids and are candidates to be marked as partially dependent handles. This will visit handles to young objects created since the last garbage collection but is free to visit an arbitrary superset of these objects. \index{v8\+::\+V8@{v8\+::\+V8}!Warm\+Up\+Snapshot\+Data\+Blob@{Warm\+Up\+Snapshot\+Data\+Blob}}
-\index{Warm\+Up\+Snapshot\+Data\+Blob@{Warm\+Up\+Snapshot\+Data\+Blob}!v8\+::\+V8@{v8\+::\+V8}}
-\subsubsection[{\texorpdfstring{Warm\+Up\+Snapshot\+Data\+Blob(\+Startup\+Data cold\+\_\+startup\+\_\+blob, const char $\ast$warmup\+\_\+source)}{WarmUpSnapshotDataBlob(StartupData cold_startup_blob, const char *warmup_source)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Startup\+Data} v8\+::\+V8\+::\+Warm\+Up\+Snapshot\+Data\+Blob (
-\begin{DoxyParamCaption}
-\item[{{\bf Startup\+Data}}]{cold\+\_\+startup\+\_\+blob, }
-\item[{const char $\ast$}]{warmup\+\_\+source}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1V8_adb8616cb7056b7e054f6694deae8dc2a}{}\label{classv8_1_1V8_adb8616cb7056b7e054f6694deae8dc2a}
 Bootstrap an isolate and a context from the cold startup blob, run the warm-\/up script to trigger code compilation. The side effects are then discarded. The resulting startup snapshot will include compiled code. Returns \{ N\+U\+LL, 0 \} on failure. The caller acquires ownership of the data array in the return value. The argument startup blob is untouched. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

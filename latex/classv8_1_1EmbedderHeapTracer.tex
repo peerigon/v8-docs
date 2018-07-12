@@ -4,45 +4,118 @@
 
 {\ttfamily \#include $<$v8.\+h$>$}
 
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1EmbedderHeapTracer_1_1AdvanceTracingActions}{Advance\+Tracing\+Actions}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a03f39acf619cc4b3de1061a514e4c27d}\label{classv8_1_1EmbedderHeapTracer_a03f39acf619cc4b3de1061a514e4c27d}} 
+enum {\bfseries Force\+Completion\+Action} \{ {\bfseries F\+O\+R\+C\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+I\+ON}, 
+{\bfseries D\+O\+\_\+\+N\+O\+T\+\_\+\+F\+O\+R\+C\+E\+\_\+\+C\+O\+M\+P\+L\+E\+T\+I\+ON}
+ \}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}{Trace\+Prologue} ()=0
+virtual void \mbox{\hyperlink{classv8_1_1EmbedderHeapTracer_a849c52f45fbfe1fd30664031898bf0d8}{Register\+V8\+References}} (const std\+::vector$<$ std\+::pair$<$ void $\ast$, void $\ast$$>$ $>$ \&embedder\+\_\+fields)=0
 \item 
-virtual void \hyperlink{classv8_1_1EmbedderHeapTracer_a94aa3bb3651e969f0f0726ee1c79cc3c}{Trace\+Wrappers\+From} (const std\+::vector$<$ std\+::pair$<$ void $\ast$, void $\ast$ $>$ $>$ \&internal\+\_\+fields)=0
+virtual void \mbox{\hyperlink{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}{Trace\+Prologue}} ()=0
 \item 
-virtual void \hyperlink{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}{Trace\+Epilogue} ()=0
+virtual bool \mbox{\hyperlink{classv8_1_1EmbedderHeapTracer_a33e9ab6a32d22aa104ccdfac9a023ddb}{Advance\+Tracing}} (double deadline\+\_\+in\+\_\+ms, \mbox{\hyperlink{structv8_1_1EmbedderHeapTracer_1_1AdvanceTracingActions}{Advance\+Tracing\+Actions}} actions)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_afbae420dc5bfc113c5c18a2c1e5af482}\label{classv8_1_1EmbedderHeapTracer_afbae420dc5bfc113c5c18a2c1e5af482}} 
+virtual bool {\bfseries Is\+Tracing\+Done} ()
+\item 
+virtual void \mbox{\hyperlink{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}{Trace\+Epilogue}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classv8_1_1EmbedderHeapTracer_a802d0e71f8b360c1391d166f32caf098}{Enter\+Final\+Pause}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classv8_1_1EmbedderHeapTracer_a997b79af3a065c17868638bfc0c0a0ab}{Abort\+Tracing}} ()=0
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a1828fe003680e216a5111a63cd3b6149}\label{classv8_1_1EmbedderHeapTracer_a1828fe003680e216a5111a63cd3b6149}} 
+void {\bfseries Finalize\+Tracing} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a7d0d7438df5ed1bf18287c7d6253d276}\label{classv8_1_1EmbedderHeapTracer_a7d0d7438df5ed1bf18287c7d6253d276}} 
+\mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} $\ast$ {\bfseries isolate} () const
+\item 
+\mbox{\hyperlink{classv8_1_1EmbedderHeapTracer_a1ee993c45a50443baa7b3ad036f9e1fa}{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}} (\char`\"{}Use Is\+Tracing\+Done\char`\"{}, virtual size\+\_\+t Number\+Of\+Wrappers\+To\+Trace() \{ return 0;\})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a7a04822523cb72d457a40f84d964297b}\label{classv8_1_1EmbedderHeapTracer_a7a04822523cb72d457a40f84d964297b}} 
+\mbox{\hyperlink{classv8_1_1Isolate}{v8\+::\+Isolate}} $\ast$ {\bfseries isolate\+\_\+} = nullptr
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a913fc415ac93e773a8e5d41f2f1878b6}\label{classv8_1_1EmbedderHeapTracer_a913fc415ac93e773a8e5d41f2f1878b6}} 
+class {\bfseries internal\+::\+Local\+Embedder\+Heap\+Tracer}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Interface for tracing through the embedder heap. During the \hyperlink{namespacev8}{v8} garbage collection, \hyperlink{namespacev8}{v8} collects hidden fields of all potential wrappers, and at the end of its marking phase iterates the collection and asks the embedder to trace through its heap and call \hyperlink{classv8_1_1PersistentBase_a14c051e0080bbe7fbe02be35865b9923}{Persistent\+Base\+::\+Register\+External\+Reference} on each js object reachable from any of the given wrappers.
+Interface for tracing through the embedder heap. During a \mbox{\hyperlink{namespacev8}{v8}} garbage collection, \mbox{\hyperlink{namespacev8}{v8}} collects hidden fields of all potential wrappers, and at the end of its marking phase iterates the collection and asks the embedder to trace through its heap and use reporter to report each Java\+Script object reachable from any of the given wrappers.
 
 Before the first call to the Trace\+Wrappers\+From function Trace\+Prologue will be called. When the garbage collection cycle is finished, Trace\+Epilogue will be called. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a997b79af3a065c17868638bfc0c0a0ab}\label{classv8_1_1EmbedderHeapTracer_a997b79af3a065c17868638bfc0c0a0ab}} 
+\index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Abort\+Tracing@{Abort\+Tracing}}
+\index{Abort\+Tracing@{Abort\+Tracing}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+\subsubsection{\texorpdfstring{Abort\+Tracing()}{AbortTracing()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Abort\+Tracing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called when tracing is aborted.
+
+The embedder is expected to throw away all intermediate data and reset to the initial state. \mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a33e9ab6a32d22aa104ccdfac9a023ddb}\label{classv8_1_1EmbedderHeapTracer_a33e9ab6a32d22aa104ccdfac9a023ddb}} 
+\index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Advance\+Tracing@{Advance\+Tracing}}
+\index{Advance\+Tracing@{Advance\+Tracing}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+\subsubsection{\texorpdfstring{Advance\+Tracing()}{AdvanceTracing()}}
+{\footnotesize\ttfamily virtual bool v8\+::\+Embedder\+Heap\+Tracer\+::\+Advance\+Tracing (\begin{DoxyParamCaption}\item[{double}]{deadline\+\_\+in\+\_\+ms,  }\item[{\mbox{\hyperlink{structv8_1_1EmbedderHeapTracer_1_1AdvanceTracingActions}{Advance\+Tracing\+Actions}}}]{actions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called to to make a tracing step in the embedder.
+
+The embedder is expected to trace its heap starting from wrappers reported by Register\+V8\+References method, and report back all reachable wrappers. Furthermore, the embedder is expected to stop tracing by the given deadline.
+
+Returns true if there is still work to do. \mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a802d0e71f8b360c1391d166f32caf098}\label{classv8_1_1EmbedderHeapTracer_a802d0e71f8b360c1391d166f32caf098}} 
+\index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Enter\+Final\+Pause@{Enter\+Final\+Pause}}
+\index{Enter\+Final\+Pause@{Enter\+Final\+Pause}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+\subsubsection{\texorpdfstring{Enter\+Final\+Pause()}{EnterFinalPause()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Enter\+Final\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called upon entering the final marking pause. No more incremental marking steps will follow this call. \mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a849c52f45fbfe1fd30664031898bf0d8}\label{classv8_1_1EmbedderHeapTracer_a849c52f45fbfe1fd30664031898bf0d8}} 
+\index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Register\+V8\+References@{Register\+V8\+References}}
+\index{Register\+V8\+References@{Register\+V8\+References}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+\subsubsection{\texorpdfstring{Register\+V8\+References()}{RegisterV8References()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Register\+V8\+References (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ void $\ast$, void $\ast$$>$ $>$ \&}]{embedder\+\_\+fields }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called by \mbox{\hyperlink{namespacev8}{v8}} to register internal fields of found wrappers.
+
+The embedder is expected to store them somewhere and trace reachable wrappers from them when called through $\vert$\+Advance\+Tracing$\vert$. \mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}\label{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}} 
 \index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Trace\+Epilogue@{Trace\+Epilogue}}
 \index{Trace\+Epilogue@{Trace\+Epilogue}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
-\subsubsection[{\texorpdfstring{Trace\+Epilogue()=0}{TraceEpilogue()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Trace\+Epilogue (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}{}\label{classv8_1_1EmbedderHeapTracer_a61b8dc3260247e2c47af8ad8f5775991}
-\hyperlink{classv8_1_1V8}{V8} will call this method at the end of the gc cycle. Allocation is {\itshape not} allowed in the Trace\+Epilogue. \index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Trace\+Prologue@{Trace\+Prologue}}
+\subsubsection{\texorpdfstring{Trace\+Epilogue()}{TraceEpilogue()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Trace\+Epilogue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called at the end of a GC cycle.
+
+Note that allocation is {\itshape not} allowed within $\vert$\+Trace\+Epilogue$\vert$. \mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}\label{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}} 
+\index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Trace\+Prologue@{Trace\+Prologue}}
 \index{Trace\+Prologue@{Trace\+Prologue}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
-\subsubsection[{\texorpdfstring{Trace\+Prologue()=0}{TracePrologue()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Trace\+Prologue (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}{}\label{classv8_1_1EmbedderHeapTracer_af4f747aa1d77a0d2f341846b94f6b1ce}
-\hyperlink{classv8_1_1V8}{V8} will call this method at the beginning of the gc cycle. \index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!Trace\+Wrappers\+From@{Trace\+Wrappers\+From}}
-\index{Trace\+Wrappers\+From@{Trace\+Wrappers\+From}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
-\subsubsection[{\texorpdfstring{Trace\+Wrappers\+From(const std\+::vector$<$ std\+::pair$<$ void $\ast$, void $\ast$ $>$ $>$ \&internal\+\_\+fields)=0}{TraceWrappersFrom(const std::vector< std::pair< void *, void * > > &internal_fields)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Trace\+Wrappers\+From (
-\begin{DoxyParamCaption}
-\item[{const std\+::vector$<$ std\+::pair$<$ void $\ast$, void $\ast$ $>$ $>$ \&}]{internal\+\_\+fields}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1EmbedderHeapTracer_a94aa3bb3651e969f0f0726ee1c79cc3c}{}\label{classv8_1_1EmbedderHeapTracer_a94aa3bb3651e969f0f0726ee1c79cc3c}
-\hyperlink{classv8_1_1V8}{V8} will call this method with internal fields of a potential wrappers. Embedder is expected to trace its heap (synchronously) and call \hyperlink{classv8_1_1PersistentBase_a14c051e0080bbe7fbe02be35865b9923}{Persistent\+Base\+::\+Register\+External\+Reference()} on all wrappers reachable from any of the given wrappers. 
+\subsubsection{\texorpdfstring{Trace\+Prologue()}{TracePrologue()}}
+{\footnotesize\ttfamily virtual void v8\+::\+Embedder\+Heap\+Tracer\+::\+Trace\+Prologue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called at the beginning of a GC cycle. \mbox{\Hypertarget{classv8_1_1EmbedderHeapTracer_a1ee993c45a50443baa7b3ad036f9e1fa}\label{classv8_1_1EmbedderHeapTracer_a1ee993c45a50443baa7b3ad036f9e1fa}} 
+\index{v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}!V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}}
+\index{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON@{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON}!v8\+::\+Embedder\+Heap\+Tracer@{v8\+::\+Embedder\+Heap\+Tracer}}
+\subsubsection{\texorpdfstring{V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+O\+N()}{V8\_DEPRECATE\_SOON()}}
+{\footnotesize\ttfamily v8\+::\+Embedder\+Heap\+Tracer\+::\+V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON (\begin{DoxyParamCaption}\item[{\char`\"{}Use Is\+Tracing\+Done\char`\"{}}]{,  }\item[{virtual size\+\_\+t Number\+Of\+Wrappers\+To\+Trace() \{ return 0;\}}]{ }\end{DoxyParamCaption})}
+
+Returns the number of wrappers that are still to be traced by the embedder. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

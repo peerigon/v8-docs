@@ -1,0 +1,32 @@
+\hypertarget{classv8_1_1Isolate_1_1AtomicsWaitWakeHandle}{}\section{v8\+:\+:Isolate\+:\+:Atomics\+Wait\+Wake\+Handle Class Reference}
+\label{classv8_1_1Isolate_1_1AtomicsWaitWakeHandle}\index{v8\+::\+Isolate\+::\+Atomics\+Wait\+Wake\+Handle@{v8\+::\+Isolate\+::\+Atomics\+Wait\+Wake\+Handle}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classv8_1_1Isolate_1_1AtomicsWaitWakeHandle_a3d31d451537b6eee01e71360f7e66c2e}{Wake}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Passed to $\vert$\+Atomics\+Wait\+Callback$\vert$ as a means of stopping an ongoing {\ttfamily Atomics.\+wait} call. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1Isolate_1_1AtomicsWaitWakeHandle_a3d31d451537b6eee01e71360f7e66c2e}\label{classv8_1_1Isolate_1_1AtomicsWaitWakeHandle_a3d31d451537b6eee01e71360f7e66c2e}} 
+\index{v8\+::\+Isolate\+::\+Atomics\+Wait\+Wake\+Handle@{v8\+::\+Isolate\+::\+Atomics\+Wait\+Wake\+Handle}!Wake@{Wake}}
+\index{Wake@{Wake}!v8\+::\+Isolate\+::\+Atomics\+Wait\+Wake\+Handle@{v8\+::\+Isolate\+::\+Atomics\+Wait\+Wake\+Handle}}
+\subsubsection{\texorpdfstring{Wake()}{Wake()}}
+{\footnotesize\ttfamily void v8\+::\+Isolate\+::\+Atomics\+Wait\+Wake\+Handle\+::\+Wake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stop this {\ttfamily Atomics.\+wait()} call and call the $\vert$\+Atomics\+Wait\+Callback$\vert$ with $\vert$k\+A\+P\+I\+Stopped$\vert$.
+
+This function may be called from another thread. The caller has to ensure through proper synchronization that it is not called after the finishing $\vert$\+Atomics\+Wait\+Callback$\vert$.
+
+Note that the E\+C\+M\+A\+Script specification does not plan for the possibility of wakeups that are neither coming from a timeout or an {\ttfamily Atomics.\+wake()} call, so this may invalidate assumptions made by existing code. The embedder may accordingly wish to schedule an exception in the finishing $\vert$\+Atomics\+Wait\+Callback$\vert$. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

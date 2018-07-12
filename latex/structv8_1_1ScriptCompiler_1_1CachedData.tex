@@ -7,36 +7,42 @@
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_ac1a1055d361e89b589c3fa98b79b9c25}\label{structv8_1_1ScriptCompiler_1_1CachedData_ac1a1055d361e89b589c3fa98b79b9c25}} 
 enum {\bfseries Buffer\+Policy} \{ {\bfseries Buffer\+Not\+Owned}, 
 {\bfseries Buffer\+Owned}
- \}\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_ac1a1055d361e89b589c3fa98b79b9c25}{}\label{structv8_1_1ScriptCompiler_1_1CachedData_ac1a1055d361e89b589c3fa98b79b9c25}
-
+ \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Cached\+Data} (const uint8\+\_\+t $\ast$data, int length, Buffer\+Policy buffer\+\_\+policy=Buffer\+Not\+Owned)\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_ab45b2bd22aa86eafd0b8eecbdc72d44e}{}\label{structv8_1_1ScriptCompiler_1_1CachedData_ab45b2bd22aa86eafd0b8eecbdc72d44e}
-
+\mbox{\Hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_ab45b2bd22aa86eafd0b8eecbdc72d44e}\label{structv8_1_1ScriptCompiler_1_1CachedData_ab45b2bd22aa86eafd0b8eecbdc72d44e}} 
+{\bfseries Cached\+Data} (const uint8\+\_\+t $\ast$data, int length, Buffer\+Policy buffer\+\_\+policy=Buffer\+Not\+Owned)
+\item 
+\mbox{\Hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_a50459db5fa0e01db839bcf14f786fa56}\label{structv8_1_1ScriptCompiler_1_1CachedData_a50459db5fa0e01db839bcf14f786fa56}} 
+{\bfseries Cached\+Data} (const \mbox{\hyperlink{structv8_1_1ScriptCompiler_1_1CachedData}{Cached\+Data}} \&)=delete
+\item 
+\mbox{\Hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_a6327b06938eba983da41bb1579195442}\label{structv8_1_1ScriptCompiler_1_1CachedData_a6327b06938eba983da41bb1579195442}} 
+\mbox{\hyperlink{structv8_1_1ScriptCompiler_1_1CachedData}{Cached\+Data}} \& {\bfseries operator=} (const \mbox{\hyperlink{structv8_1_1ScriptCompiler_1_1CachedData}{Cached\+Data}} \&)=delete
 \end{DoxyCompactItemize}
 \subsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-const uint8\+\_\+t $\ast$ {\bfseries data}\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_a31e313a969170116f98d5a76c110fe61}{}\label{structv8_1_1ScriptCompiler_1_1CachedData_a31e313a969170116f98d5a76c110fe61}
-
+\mbox{\Hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_a31e313a969170116f98d5a76c110fe61}\label{structv8_1_1ScriptCompiler_1_1CachedData_a31e313a969170116f98d5a76c110fe61}} 
+const uint8\+\_\+t $\ast$ {\bfseries data}
 \item 
-int {\bfseries length}\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_ad7b8b1b672095a2c33621d3d5b5c7f8f}{}\label{structv8_1_1ScriptCompiler_1_1CachedData_ad7b8b1b672095a2c33621d3d5b5c7f8f}
-
+\mbox{\Hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_ad7b8b1b672095a2c33621d3d5b5c7f8f}\label{structv8_1_1ScriptCompiler_1_1CachedData_ad7b8b1b672095a2c33621d3d5b5c7f8f}} 
+int {\bfseries length}
 \item 
-bool {\bfseries rejected}\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_aa1d16fbd48957df19d4cc1c886afff8f}{}\label{structv8_1_1ScriptCompiler_1_1CachedData_aa1d16fbd48957df19d4cc1c886afff8f}
-
+\mbox{\Hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_aa1d16fbd48957df19d4cc1c886afff8f}\label{structv8_1_1ScriptCompiler_1_1CachedData_aa1d16fbd48957df19d4cc1c886afff8f}} 
+bool {\bfseries rejected}
 \item 
-Buffer\+Policy {\bfseries buffer\+\_\+policy}\hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_a1e5c9ff625ac790139aec4294493fe32}{}\label{structv8_1_1ScriptCompiler_1_1CachedData_a1e5c9ff625ac790139aec4294493fe32}
-
+\mbox{\Hypertarget{structv8_1_1ScriptCompiler_1_1CachedData_a1e5c9ff625ac790139aec4294493fe32}\label{structv8_1_1ScriptCompiler_1_1CachedData_a1e5c9ff625ac790139aec4294493fe32}} 
+Buffer\+Policy {\bfseries buffer\+\_\+policy}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Compilation data that the embedder can cache and pass back to speed up future compilations. The data is produced if the Compiler\+Options passed to the compilation functions in \hyperlink{classv8_1_1ScriptCompiler}{Script\+Compiler} contains produce\+\_\+data\+\_\+to\+\_\+cache = true. The data to cache can then can be retrieved from \hyperlink{classv8_1_1UnboundScript}{Unbound\+Script}. 
+Compilation data that the embedder can cache and pass back to speed up future compilations. The data is produced if the Compiler\+Options passed to the compilation functions in \mbox{\hyperlink{classv8_1_1ScriptCompiler}{Script\+Compiler}} contains produce\+\_\+data\+\_\+to\+\_\+cache = true. The data to cache can then can be retrieved from \mbox{\hyperlink{classv8_1_1UnboundScript}{Unbound\+Script}}. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

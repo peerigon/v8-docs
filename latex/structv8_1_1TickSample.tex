@@ -1,0 +1,112 @@
+\hypertarget{structv8_1_1TickSample}{}\section{v8\+:\+:Tick\+Sample Struct Reference}
+\label{structv8_1_1TickSample}\index{v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_ae3223c2114f7140f8af1793802b94d42}\label{structv8_1_1TickSample_ae3223c2114f7140f8af1793802b94d42}} 
+enum {\bfseries Record\+C\+Entry\+Frame} \{ {\bfseries k\+Include\+C\+Entry\+Frame}, 
+{\bfseries k\+Skip\+C\+Entry\+Frame}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structv8_1_1TickSample_a5e763b4b249b3fba53241b82d4ef6eeb}{Init}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} \&state, Record\+C\+Entry\+Frame record\+\_\+c\+\_\+entry\+\_\+frame, bool update\+\_\+stats, bool use\+\_\+simulator\+\_\+reg\+\_\+state=true)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{structv8_1_1TickSample_a297e05d112f3c749bfead215393646c1}{Get\+Stack\+Sample}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} $\ast$state, Record\+C\+Entry\+Frame record\+\_\+c\+\_\+entry\+\_\+frame, void $\ast$$\ast$frames, size\+\_\+t frames\+\_\+limit, \mbox{\hyperlink{structv8_1_1SampleInfo}{v8\+::\+Sample\+Info}} $\ast$sample\+\_\+info, bool use\+\_\+simulator\+\_\+reg\+\_\+state=true)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_a6ca7bd9445806b92b938eab2e700c324}\label{structv8_1_1TickSample_a6ca7bd9445806b92b938eab2e700c324}} 
+State\+Tag {\bfseries state}
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_a33cfc3082f836ce04dfcb97a3691f599}\label{structv8_1_1TickSample_a33cfc3082f836ce04dfcb97a3691f599}} 
+void $\ast$ {\bfseries pc}
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_ae6c0db3c542c58b92e6da4438364c393}\label{structv8_1_1TickSample_ae6c0db3c542c58b92e6da4438364c393}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>void $\ast$ {\bfseries tos}\\
+\>void $\ast$ {\bfseries external\_callback\_entry}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_ae85c9bd6ff1da565d7e3066615a4d450}\label{structv8_1_1TickSample_ae85c9bd6ff1da565d7e3066615a4d450}} 
+void $\ast$ {\bfseries stack} \mbox{[}k\+Max\+Frames\+Count\mbox{]}
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_a00bfe6e03f75c291e220777fe74272d5}\label{structv8_1_1TickSample_a00bfe6e03f75c291e220777fe74272d5}} 
+unsigned {\bfseries frames\+\_\+count}\+: k\+Max\+Frames\+Count\+Log2
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_aa7c90f53d4ac6ab23727e21369f70b6e}\label{structv8_1_1TickSample_aa7c90f53d4ac6ab23727e21369f70b6e}} 
+bool {\bfseries has\+\_\+external\+\_\+callback}\+: 1
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_aece17f054264917dcf20fd9ef0616930}\label{structv8_1_1TickSample_aece17f054264917dcf20fd9ef0616930}} 
+bool {\bfseries update\+\_\+stats}\+: 1
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_a74b64cf598134b781b4ae1c65c31a70a}\label{structv8_1_1TickSample_a74b64cf598134b781b4ae1c65c31a70a}} 
+static const unsigned {\bfseries k\+Max\+Frames\+Count\+Log2} = 8
+\item 
+\mbox{\Hypertarget{structv8_1_1TickSample_a7f1b6ed32cd88d137e70d99adaa37d64}\label{structv8_1_1TickSample_a7f1b6ed32cd88d137e70d99adaa37d64}} 
+static const unsigned {\bfseries k\+Max\+Frames\+Count} = (1 $<$$<$ k\+Max\+Frames\+Count\+Log2) -\/ 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structv8_1_1TickSample_a297e05d112f3c749bfead215393646c1}\label{structv8_1_1TickSample_a297e05d112f3c749bfead215393646c1}} 
+\index{v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}!Get\+Stack\+Sample@{Get\+Stack\+Sample}}
+\index{Get\+Stack\+Sample@{Get\+Stack\+Sample}!v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}}
+\subsubsection{\texorpdfstring{Get\+Stack\+Sample()}{GetStackSample()}}
+{\footnotesize\ttfamily static bool v8\+::\+Tick\+Sample\+::\+Get\+Stack\+Sample (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} $\ast$}]{state,  }\item[{Record\+C\+Entry\+Frame}]{record\+\_\+c\+\_\+entry\+\_\+frame,  }\item[{void $\ast$$\ast$}]{frames,  }\item[{size\+\_\+t}]{frames\+\_\+limit,  }\item[{\mbox{\hyperlink{structv8_1_1SampleInfo}{v8\+::\+Sample\+Info}} $\ast$}]{sample\+\_\+info,  }\item[{bool}]{use\+\_\+simulator\+\_\+reg\+\_\+state = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a call stack sample from the isolate. 
+\begin{DoxyParams}{Parameters}
+{\em isolate} & The isolate. \\
+\hline
+{\em state} & Register state. \\
+\hline
+{\em record\+\_\+c\+\_\+entry\+\_\+frame} & Include or skip the runtime function. \\
+\hline
+{\em frames} & Caller allocated buffer to store stack frames. \\
+\hline
+{\em frames\+\_\+limit} & Maximum number of frames to capture. The buffer must be large enough to hold the number of frames. \\
+\hline
+{\em sample\+\_\+info} & The sample info is filled up by the function provides number of actual captured stack frames and the current VM state. \\
+\hline
+{\em use\+\_\+simulator\+\_\+reg\+\_\+state} & When set to true and \mbox{\hyperlink{classv8_1_1V8}{V8}} is running under a simulator, the method will use the simulator register state rather than the one provided with $\vert$state$\vert$ argument. Otherwise the method will use provided register $\vert$state$\vert$ as is. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Get\+Stack\+Sample is thread and signal safe and should only be called when the JS thread is paused or interrupted. Otherwise the behavior is undefined. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structv8_1_1TickSample_a5e763b4b249b3fba53241b82d4ef6eeb}\label{structv8_1_1TickSample_a5e763b4b249b3fba53241b82d4ef6eeb}} 
+\index{v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}!Init@{Init}}
+\index{Init@{Init}!v8\+::\+Tick\+Sample@{v8\+::\+Tick\+Sample}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void v8\+::\+Tick\+Sample\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{const \mbox{\hyperlink{structv8_1_1RegisterState}{v8\+::\+Register\+State}} \&}]{state,  }\item[{Record\+C\+Entry\+Frame}]{record\+\_\+c\+\_\+entry\+\_\+frame,  }\item[{bool}]{update\+\_\+stats,  }\item[{bool}]{use\+\_\+simulator\+\_\+reg\+\_\+state = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Initialize a tick sample from the isolate. 
+\begin{DoxyParams}{Parameters}
+{\em isolate} & The isolate. \\
+\hline
+{\em state} & Execution state. \\
+\hline
+{\em record\+\_\+c\+\_\+entry\+\_\+frame} & Include or skip the runtime function. \\
+\hline
+{\em update\+\_\+stats} & Whether update the sample to the aggregated stats. \\
+\hline
+{\em use\+\_\+simulator\+\_\+reg\+\_\+state} & When set to true and \mbox{\hyperlink{classv8_1_1V8}{V8}} is running under a simulator, the method will use the simulator register state rather than the one provided with $\vert$state$\vert$ argument. Otherwise the method will use provided register $\vert$state$\vert$ as is. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

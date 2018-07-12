@@ -13,50 +13,47 @@ Inheritance diagram for v8\+:\+:String\+:\+:External\+One\+Byte\+String\+Resourc
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource_a443edbb33926b2a9480fe0caac6e95ab}{$\sim$\+External\+One\+Byte\+String\+Resource} ()
+virtual \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource_a443edbb33926b2a9480fe0caac6e95ab}{$\sim$\+External\+One\+Byte\+String\+Resource}} ()
 \item 
-virtual const char $\ast$ \hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource_ac6183fe16dcb0d6f2906f7caf7ff1163}{data} () const  =0
+virtual const char $\ast$ \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource_aaeca31240d3dbf990d1b974e3c64593e}{data}} () const =0
 \item 
-virtual size\+\_\+t \hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource_aa1db65afab54efe13daf6bd39f2ad265}{length} () const  =0
+virtual size\+\_\+t \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource_ad6b702f05798bcfc3975cb922f32b5ab}{length}} () const =0
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-An \hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource} is a wrapper around an one-\/byte string buffer that resides outside \hyperlink{classv8_1_1V8}{V8}\textquotesingle{}s heap. Implement an \hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource} to manage the life cycle of the underlying buffer. Note that the string data must be immutable and that the data must be Latin-\/1 and not U\+T\+F-\/8, which would require special treatment internally in the engine and do not allow efficient indexing. Use String\+::\+New or convert to 16 bit data for non-\/\+Latin1. 
+An \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} is a wrapper around an one-\/byte string buffer that resides outside \mbox{\hyperlink{classv8_1_1V8}{V8}}\textquotesingle{}s heap. Implement an \mbox{\hyperlink{classv8_1_1String_1_1ExternalOneByteStringResource}{External\+One\+Byte\+String\+Resource}} to manage the life cycle of the underlying buffer. Note that the string data must be immutable and that the data must be Latin-\/1 and not U\+T\+F-\/8, which would require special treatment internally in the engine and do not allow efficient indexing. Use String\+::\+New or convert to 16 bit data for non-\/\+Latin1. 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classv8_1_1String_1_1ExternalOneByteStringResource_a443edbb33926b2a9480fe0caac6e95ab}\label{classv8_1_1String_1_1ExternalOneByteStringResource_a443edbb33926b2a9480fe0caac6e95ab}} 
 \index{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource@{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}!````~External\+One\+Byte\+String\+Resource@{$\sim$\+External\+One\+Byte\+String\+Resource}}
 \index{````~External\+One\+Byte\+String\+Resource@{$\sim$\+External\+One\+Byte\+String\+Resource}!v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource@{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}}
-\subsubsection[{\texorpdfstring{$\sim$\+External\+One\+Byte\+String\+Resource()}{~ExternalOneByteStringResource()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource\+::$\sim$\+External\+One\+Byte\+String\+Resource (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classv8_1_1String_1_1ExternalOneByteStringResource_a443edbb33926b2a9480fe0caac6e95ab}{}\label{classv8_1_1String_1_1ExternalOneByteStringResource_a443edbb33926b2a9480fe0caac6e95ab}
+\subsubsection{\texorpdfstring{$\sim$\+External\+One\+Byte\+String\+Resource()}{~ExternalOneByteStringResource()}}
+{\footnotesize\ttfamily virtual v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource\+::$\sim$\+External\+One\+Byte\+String\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
 Override the destructor to manage the life cycle of the underlying buffer. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1String_1_1ExternalOneByteStringResource_aaeca31240d3dbf990d1b974e3c64593e}\label{classv8_1_1String_1_1ExternalOneByteStringResource_aaeca31240d3dbf990d1b974e3c64593e}} 
 \index{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource@{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}!data@{data}}
 \index{data@{data}!v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource@{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}}
-\subsubsection[{\texorpdfstring{data() const  =0}{data() const  =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource\+::data (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1String_1_1ExternalOneByteStringResource_ac6183fe16dcb0d6f2906f7caf7ff1163}{}\label{classv8_1_1String_1_1ExternalOneByteStringResource_ac6183fe16dcb0d6f2906f7caf7ff1163}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily virtual const char$\ast$ v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 The string data from the underlying buffer. 
 
-Implemented in \hyperlink{classv8_1_1ExternalOneByteStringResourceImpl_a37ada5dc21ecb982c50482c90fffe529}{v8\+::\+External\+One\+Byte\+String\+Resource\+Impl}.
+Implemented in \mbox{\hyperlink{classv8_1_1ExternalOneByteStringResourceImpl_a417ecb5eb304b12c8806ff6d0306bc09}{v8\+::\+External\+One\+Byte\+String\+Resource\+Impl}}.
 
+\mbox{\Hypertarget{classv8_1_1String_1_1ExternalOneByteStringResource_ad6b702f05798bcfc3975cb922f32b5ab}\label{classv8_1_1String_1_1ExternalOneByteStringResource_ad6b702f05798bcfc3975cb922f32b5ab}} 
 \index{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource@{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}!length@{length}}
 \index{length@{length}!v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource@{v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource}}
-\subsubsection[{\texorpdfstring{length() const  =0}{length() const  =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\+\_\+t v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource\+::length (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classv8_1_1String_1_1ExternalOneByteStringResource_aa1db65afab54efe13daf6bd39f2ad265}{}\label{classv8_1_1String_1_1ExternalOneByteStringResource_aa1db65afab54efe13daf6bd39f2ad265}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily virtual size\+\_\+t v8\+::\+String\+::\+External\+One\+Byte\+String\+Resource\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
 The number of Latin-\/1 characters in the string. 
 
-Implemented in \hyperlink{classv8_1_1ExternalOneByteStringResourceImpl_aedcf350d46f64cf1e3045658920d1dc8}{v8\+::\+External\+One\+Byte\+String\+Resource\+Impl}.
+Implemented in \mbox{\hyperlink{classv8_1_1ExternalOneByteStringResourceImpl_a4015ab4f74c209ac484e5183b2039f58}{v8\+::\+External\+One\+Byte\+String\+Resource\+Impl}}.
 
 
 

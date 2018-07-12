@@ -7,44 +7,56 @@
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classv8_1_1MicrotasksScope_a826cf210978221741a0467cd9be6996f}\label{classv8_1_1MicrotasksScope_a826cf210978221741a0467cd9be6996f}} 
 enum {\bfseries Type} \{ {\bfseries k\+Run\+Microtasks}, 
 {\bfseries k\+Do\+Not\+Run\+Microtasks}
- \}\hypertarget{classv8_1_1MicrotasksScope_a826cf210978221741a0467cd9be6996f}{}\label{classv8_1_1MicrotasksScope_a826cf210978221741a0467cd9be6996f}
-
+ \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Microtasks\+Scope} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate, Type type)\hypertarget{classv8_1_1MicrotasksScope_a40348ac94c7e9ea405c2546d94d9d927}{}\label{classv8_1_1MicrotasksScope_a40348ac94c7e9ea405c2546d94d9d927}
-
+\mbox{\Hypertarget{classv8_1_1MicrotasksScope_a40348ac94c7e9ea405c2546d94d9d927}\label{classv8_1_1MicrotasksScope_a40348ac94c7e9ea405c2546d94d9d927}} 
+{\bfseries Microtasks\+Scope} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, Type type)
+\item 
+\mbox{\Hypertarget{classv8_1_1MicrotasksScope_a7944315d9e337a0608cccdd2483ae873}\label{classv8_1_1MicrotasksScope_a7944315d9e337a0608cccdd2483ae873}} 
+{\bfseries Microtasks\+Scope} (const \mbox{\hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope}} \&)=delete
+\item 
+\mbox{\Hypertarget{classv8_1_1MicrotasksScope_a371928b4483bfa87f26ee0652a4931ba}\label{classv8_1_1MicrotasksScope_a371928b4483bfa87f26ee0652a4931ba}} 
+\mbox{\hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope}} \& {\bfseries operator=} (const \mbox{\hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope}} \&)=delete
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{classv8_1_1MicrotasksScope_a1995095b585828067d367d5362bef65e}{Perform\+Checkpoint} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+static void \mbox{\hyperlink{classv8_1_1MicrotasksScope_a1995095b585828067d367d5362bef65e}{Perform\+Checkpoint}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
 \item 
-static int \hyperlink{classv8_1_1MicrotasksScope_ad49e24bc69b61d7a67045cf658da1fce}{Get\+Current\+Depth} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)
+static int \mbox{\hyperlink{classv8_1_1MicrotasksScope_ad49e24bc69b61d7a67045cf658da1fce}{Get\+Current\+Depth}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+static bool \mbox{\hyperlink{classv8_1_1MicrotasksScope_add7bcfed084afcd0d2729c3ac382145c}{Is\+Running\+Microtasks}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-This scope is used to control microtasks when k\+Scope\+Microtasks\+Invocation is used on \hyperlink{classv8_1_1Isolate}{Isolate}. In this mode every non-\/primitive call to \hyperlink{classv8_1_1V8}{V8} should be done inside some \hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope}. Microtasks are executed when topmost \hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope} marked as k\+Run\+Microtasks exits. k\+Do\+Not\+Run\+Microtasks should be used to annotate calls not intended to trigger microtasks. 
+This scope is used to control microtasks when k\+Scope\+Microtasks\+Invocation is used on \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}}. In this mode every non-\/primitive call to \mbox{\hyperlink{classv8_1_1V8}{V8}} should be done inside some \mbox{\hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope}}. Microtasks are executed when topmost \mbox{\hyperlink{classv8_1_1MicrotasksScope}{Microtasks\+Scope}} marked as k\+Run\+Microtasks exits. k\+Do\+Not\+Run\+Microtasks should be used to annotate calls not intended to trigger microtasks. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1MicrotasksScope_ad49e24bc69b61d7a67045cf658da1fce}\label{classv8_1_1MicrotasksScope_ad49e24bc69b61d7a67045cf658da1fce}} 
 \index{v8\+::\+Microtasks\+Scope@{v8\+::\+Microtasks\+Scope}!Get\+Current\+Depth@{Get\+Current\+Depth}}
 \index{Get\+Current\+Depth@{Get\+Current\+Depth}!v8\+::\+Microtasks\+Scope@{v8\+::\+Microtasks\+Scope}}
-\subsubsection[{\texorpdfstring{Get\+Current\+Depth(\+Isolate $\ast$isolate)}{GetCurrentDepth(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}static int v8\+::\+Microtasks\+Scope\+::\+Get\+Current\+Depth (
-\begin{DoxyParamCaption}
-\item[{{\bf Isolate} $\ast$}]{isolate}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1MicrotasksScope_ad49e24bc69b61d7a67045cf658da1fce}{}\label{classv8_1_1MicrotasksScope_ad49e24bc69b61d7a67045cf658da1fce}
-Returns current depth of nested k\+Run\+Microtasks scopes. \index{v8\+::\+Microtasks\+Scope@{v8\+::\+Microtasks\+Scope}!Perform\+Checkpoint@{Perform\+Checkpoint}}
+\subsubsection{\texorpdfstring{Get\+Current\+Depth()}{GetCurrentDepth()}}
+{\footnotesize\ttfamily static int v8\+::\+Microtasks\+Scope\+::\+Get\+Current\+Depth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns current depth of nested k\+Run\+Microtasks scopes. \mbox{\Hypertarget{classv8_1_1MicrotasksScope_add7bcfed084afcd0d2729c3ac382145c}\label{classv8_1_1MicrotasksScope_add7bcfed084afcd0d2729c3ac382145c}} 
+\index{v8\+::\+Microtasks\+Scope@{v8\+::\+Microtasks\+Scope}!Is\+Running\+Microtasks@{Is\+Running\+Microtasks}}
+\index{Is\+Running\+Microtasks@{Is\+Running\+Microtasks}!v8\+::\+Microtasks\+Scope@{v8\+::\+Microtasks\+Scope}}
+\subsubsection{\texorpdfstring{Is\+Running\+Microtasks()}{IsRunningMicrotasks()}}
+{\footnotesize\ttfamily static bool v8\+::\+Microtasks\+Scope\+::\+Is\+Running\+Microtasks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns true while microtasks are being executed. \mbox{\Hypertarget{classv8_1_1MicrotasksScope_a1995095b585828067d367d5362bef65e}\label{classv8_1_1MicrotasksScope_a1995095b585828067d367d5362bef65e}} 
+\index{v8\+::\+Microtasks\+Scope@{v8\+::\+Microtasks\+Scope}!Perform\+Checkpoint@{Perform\+Checkpoint}}
 \index{Perform\+Checkpoint@{Perform\+Checkpoint}!v8\+::\+Microtasks\+Scope@{v8\+::\+Microtasks\+Scope}}
-\subsubsection[{\texorpdfstring{Perform\+Checkpoint(\+Isolate $\ast$isolate)}{PerformCheckpoint(Isolate *isolate)}}]{\setlength{\rightskip}{0pt plus 5cm}static void v8\+::\+Microtasks\+Scope\+::\+Perform\+Checkpoint (
-\begin{DoxyParamCaption}
-\item[{{\bf Isolate} $\ast$}]{isolate}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classv8_1_1MicrotasksScope_a1995095b585828067d367d5362bef65e}{}\label{classv8_1_1MicrotasksScope_a1995095b585828067d367d5362bef65e}
+\subsubsection{\texorpdfstring{Perform\+Checkpoint()}{PerformCheckpoint()}}
+{\footnotesize\ttfamily static void v8\+::\+Microtasks\+Scope\+::\+Perform\+Checkpoint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Runs microtasks if no k\+Run\+Microtasks scope is currently active. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

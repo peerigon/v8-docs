@@ -1,6 +1,7 @@
 var searchData=
 [
   ['handlescope',['HandleScope',['../classv8_1_1HandleScope.html',1,'v8']]],
+  ['heapcodestatistics',['HeapCodeStatistics',['../classv8_1_1HeapCodeStatistics.html',1,'v8']]],
   ['heapgraphedge',['HeapGraphEdge',['../classv8_1_1HeapGraphEdge.html',1,'v8']]],
   ['heapgraphnode',['HeapGraphNode',['../classv8_1_1HeapGraphNode.html',1,'v8']]],
   ['heapobjectstatistics',['HeapObjectStatistics',['../classv8_1_1HeapObjectStatistics.html',1,'v8']]],

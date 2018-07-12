@@ -1,0 +1,35 @@
+\hypertarget{structv8_1_1DeserializeInternalFieldsCallback}{}\section{v8\+:\+:Deserialize\+Internal\+Fields\+Callback Struct Reference}
+\label{structv8_1_1DeserializeInternalFieldsCallback}\index{v8\+::\+Deserialize\+Internal\+Fields\+Callback@{v8\+::\+Deserialize\+Internal\+Fields\+Callback}}
+
+
+{\ttfamily \#include $<$v8.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1DeserializeInternalFieldsCallback_a3c407d887c4152824274df536ce3890d}\label{structv8_1_1DeserializeInternalFieldsCallback_a3c407d887c4152824274df536ce3890d}} 
+typedef void($\ast$ {\bfseries Callback\+Function}) (\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ holder, int index, \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} payload, void $\ast$data)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1DeserializeInternalFieldsCallback_a8888cd62b0decf9052f132eb00d88a0f}\label{structv8_1_1DeserializeInternalFieldsCallback_a8888cd62b0decf9052f132eb00d88a0f}} 
+{\bfseries Deserialize\+Internal\+Fields\+Callback} (Callback\+Function function=nullptr, void $\ast$data\+\_\+arg=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structv8_1_1DeserializeInternalFieldsCallback_ae6ed15ca92db4b4d75ceb0984e33d3fa}\label{structv8_1_1DeserializeInternalFieldsCallback_ae6ed15ca92db4b4d75ceb0984e33d3fa}} 
+void($\ast$ {\bfseries callback} )(\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ holder, int index, \mbox{\hyperlink{classv8_1_1StartupData}{Startup\+Data}} payload, void $\ast$data)
+\item 
+\mbox{\Hypertarget{structv8_1_1DeserializeInternalFieldsCallback_a7fd6b9dfc9e50e6b0429da860569e27f}\label{structv8_1_1DeserializeInternalFieldsCallback_a7fd6b9dfc9e50e6b0429da860569e27f}} 
+void $\ast$ {\bfseries data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback and supporting data used to implement embedder logic to deserialize internal fields. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

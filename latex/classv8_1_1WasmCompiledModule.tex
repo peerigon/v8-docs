@@ -1,0 +1,84 @@
+\hypertarget{classv8_1_1WasmCompiledModule}{}\section{v8\+:\+:Wasm\+Compiled\+Module Class Reference}
+\label{classv8_1_1WasmCompiledModule}\index{v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}}
+Inheritance diagram for v8\+:\+:Wasm\+Compiled\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classv8_1_1WasmCompiledModule}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structv8_1_1WasmCompiledModule_1_1BufferReference}{Buffer\+Reference}}
+\item 
+class \mbox{\hyperlink{classv8_1_1WasmCompiledModule_1_1TransferrableModule}{Transferrable\+Module}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1WasmCompiledModule_af5ba87d6a6d78c06360c753001417f57}\label{classv8_1_1WasmCompiledModule_af5ba87d6a6d78c06360c753001417f57}} 
+typedef std\+::pair$<$ std\+::unique\+\_\+ptr$<$ const uint8\+\_\+t\mbox{[}$\,$\mbox{]}$>$, size\+\_\+t $>$ {\bfseries Serialized\+Module}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classv8_1_1WasmCompiledModule_a982ad3bddae17c42b2f61b3231511915}\label{classv8_1_1WasmCompiledModule_a982ad3bddae17c42b2f61b3231511915}} 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use Buffer\+Reference.\char`\"{}, typedef std\+::pair$<$ const uint8\+\_\+t $\ast$C\+O\+M\+MA size\+\_\+t $>$ Caller\+Owned\+Buffer)
+\item 
+\mbox{\hyperlink{classv8_1_1WasmCompiledModule_1_1TransferrableModule}{Transferrable\+Module}} \mbox{\hyperlink{classv8_1_1WasmCompiledModule_a5872dd7762bf1c1ebcef833d8356f6ad}{Get\+Transferrable\+Module}} ()
+\item 
+\mbox{\hyperlink{structv8_1_1WasmCompiledModule_1_1BufferReference}{Buffer\+Reference}} \mbox{\hyperlink{classv8_1_1WasmCompiledModule_ad889c2d766016ebf74b7093e8b210aa2}{Get\+Wasm\+Wire\+Bytes\+Ref}} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1WasmCompiledModule_a92a8acb39305ce3bfa4c9029b91c2136}\label{classv8_1_1WasmCompiledModule_a92a8acb39305ce3bfa4c9029b91c2136}} 
+{\bfseries V8\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+S\+O\+ON} (\char`\"{}Use \mbox{\hyperlink{classv8_1_1WasmCompiledModule_ad889c2d766016ebf74b7093e8b210aa2}{Get\+Wasm\+Wire\+Bytes\+Ref}} version.\char`\"{}, Local$<$ \mbox{\hyperlink{classv8_1_1String}{String}} $>$ Get\+Wasm\+Wire\+Bytes())
+\item 
+Serialized\+Module \mbox{\hyperlink{classv8_1_1WasmCompiledModule_a56ba174cfc319056ecdfc870e6c9d832}{Serialize}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} $>$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule_a6bdfdf09e75ad1eb19d5b944e6177f74}{From\+Transferrable\+Module}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, const \mbox{\hyperlink{classv8_1_1WasmCompiledModule_1_1TransferrableModule}{Transferrable\+Module}} \&)
+\item 
+static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} $>$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule_abd5b90ef1d021e148c2fcb052a8651d4}{Deserialize\+Or\+Compile}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, \mbox{\hyperlink{structv8_1_1WasmCompiledModule_1_1BufferReference}{Buffer\+Reference}} serialized\+\_\+module, \mbox{\hyperlink{structv8_1_1WasmCompiledModule_1_1BufferReference}{Buffer\+Reference}} wire\+\_\+bytes)
+\item 
+\mbox{\Hypertarget{classv8_1_1WasmCompiledModule_a6dace1927ba208e592a4dc67ccc8149c}\label{classv8_1_1WasmCompiledModule_a6dace1927ba208e592a4dc67ccc8149c}} 
+static V8\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} $\ast$ {\bfseries Cast} (\mbox{\hyperlink{classv8_1_1Value}{Value}} $\ast$obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1WasmCompiledModule_abd5b90ef1d021e148c2fcb052a8651d4}\label{classv8_1_1WasmCompiledModule_abd5b90ef1d021e148c2fcb052a8651d4}} 
+\index{v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}!Deserialize\+Or\+Compile@{Deserialize\+Or\+Compile}}
+\index{Deserialize\+Or\+Compile@{Deserialize\+Or\+Compile}!v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}}
+\subsubsection{\texorpdfstring{Deserialize\+Or\+Compile()}{DeserializeOrCompile()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}}$>$ v8\+::\+Wasm\+Compiled\+Module\+::\+Deserialize\+Or\+Compile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{\mbox{\hyperlink{structv8_1_1WasmCompiledModule_1_1BufferReference}{Buffer\+Reference}}}]{serialized\+\_\+module,  }\item[{\mbox{\hyperlink{structv8_1_1WasmCompiledModule_1_1BufferReference}{Buffer\+Reference}}}]{wire\+\_\+bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+If possible, deserialize the module, otherwise compile it from the provided uncompiled bytes. \mbox{\Hypertarget{classv8_1_1WasmCompiledModule_a6bdfdf09e75ad1eb19d5b944e6177f74}\label{classv8_1_1WasmCompiledModule_a6bdfdf09e75ad1eb19d5b944e6177f74}} 
+\index{v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}!From\+Transferrable\+Module@{From\+Transferrable\+Module}}
+\index{From\+Transferrable\+Module@{From\+Transferrable\+Module}!v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}}
+\subsubsection{\texorpdfstring{From\+Transferrable\+Module()}{FromTransferrableModule()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}}$>$ v8\+::\+Wasm\+Compiled\+Module\+::\+From\+Transferrable\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{const \mbox{\hyperlink{classv8_1_1WasmCompiledModule_1_1TransferrableModule}{Transferrable\+Module}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Efficiently re-\/create a \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}}, without recompiling, from a \mbox{\hyperlink{classv8_1_1WasmCompiledModule_1_1TransferrableModule}{Transferrable\+Module}}. \mbox{\Hypertarget{classv8_1_1WasmCompiledModule_a5872dd7762bf1c1ebcef833d8356f6ad}\label{classv8_1_1WasmCompiledModule_a5872dd7762bf1c1ebcef833d8356f6ad}} 
+\index{v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}!Get\+Transferrable\+Module@{Get\+Transferrable\+Module}}
+\index{Get\+Transferrable\+Module@{Get\+Transferrable\+Module}!v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}}
+\subsubsection{\texorpdfstring{Get\+Transferrable\+Module()}{GetTransferrableModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classv8_1_1WasmCompiledModule_1_1TransferrableModule}{Transferrable\+Module}} v8\+::\+Wasm\+Compiled\+Module\+::\+Get\+Transferrable\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get an in-\/memory, non-\/persistable, and context-\/independent (meaning, suitable for transfer to another \mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} and \mbox{\hyperlink{classv8_1_1Context}{Context}}) representation of this wasm compiled module. \mbox{\Hypertarget{classv8_1_1WasmCompiledModule_ad889c2d766016ebf74b7093e8b210aa2}\label{classv8_1_1WasmCompiledModule_ad889c2d766016ebf74b7093e8b210aa2}} 
+\index{v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}!Get\+Wasm\+Wire\+Bytes\+Ref@{Get\+Wasm\+Wire\+Bytes\+Ref}}
+\index{Get\+Wasm\+Wire\+Bytes\+Ref@{Get\+Wasm\+Wire\+Bytes\+Ref}!v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}}
+\subsubsection{\texorpdfstring{Get\+Wasm\+Wire\+Bytes\+Ref()}{GetWasmWireBytesRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structv8_1_1WasmCompiledModule_1_1BufferReference}{Buffer\+Reference}} v8\+::\+Wasm\+Compiled\+Module\+::\+Get\+Wasm\+Wire\+Bytes\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the wasm-\/encoded bytes that were used to compile this module. \mbox{\Hypertarget{classv8_1_1WasmCompiledModule_a56ba174cfc319056ecdfc870e6c9d832}\label{classv8_1_1WasmCompiledModule_a56ba174cfc319056ecdfc870e6c9d832}} 
+\index{v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!v8\+::\+Wasm\+Compiled\+Module@{v8\+::\+Wasm\+Compiled\+Module}}
+\subsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily Serialized\+Module v8\+::\+Wasm\+Compiled\+Module\+::\+Serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Serialize the compiled module. The serialized data does not include the uncompiled bytes. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}

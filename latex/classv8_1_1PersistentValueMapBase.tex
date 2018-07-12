@@ -13,155 +13,144 @@ Inheritance diagram for v8\+:\+:Persistent\+Value\+Map\+Base$<$ K, V, Traits $>$
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classv8_1_1PersistentValueMapBase_1_1PersistentValueReference}{Persistent\+Value\+Reference}
+class \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_1_1PersistentValueReference}{Persistent\+Value\+Reference}}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$ {\bfseries Get\+Isolate} ()\hypertarget{classv8_1_1PersistentValueMapBase_a80da7adc6e8bdb166912075346116978}{}\label{classv8_1_1PersistentValueMapBase_a80da7adc6e8bdb166912075346116978}
-
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a80da7adc6e8bdb166912075346116978}\label{classv8_1_1PersistentValueMapBase_a80da7adc6e8bdb166912075346116978}} 
+\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ {\bfseries Get\+Isolate} ()
 \item 
-size\+\_\+t \hyperlink{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}{Size} ()
+size\+\_\+t \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}{Size}} ()
 \item 
-bool \hyperlink{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}{Is\+Weak} ()
+bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}{Is\+Weak}} ()
 \item 
-\hyperlink{classv8_1_1Local}{Local}$<$ V $>$ \hyperlink{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}{Get} (const K \&key)
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$ V $>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}{Get}} (const K \&key)
 \item 
-bool \hyperlink{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}{Contains} (const K \&key)
+bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}{Contains}} (const K \&key)
 \item 
-bool \hyperlink{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}{Set\+Return\+Value} (const K \&key, \hyperlink{classv8_1_1ReturnValue}{Return\+Value}$<$ \hyperlink{classv8_1_1Value}{Value} $>$ return\+Value)
+bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}{Set\+Return\+Value}} (const K \&key, \mbox{\hyperlink{classv8_1_1ReturnValue}{Return\+Value}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$ return\+Value)
 \item 
-void \hyperlink{classv8_1_1PersistentValueMapBase_a6fa5f720b283dd9fa626a67e7687dcd0}{Set\+Reference} (const K \&key, const \hyperlink{classv8_1_1Persistent}{Persistent}$<$ \hyperlink{classv8_1_1Object}{Object} $>$ \&parent)
+void \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}{Register\+Externally\+Referenced\+Object}} (K \&key)
 \item 
-void \hyperlink{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}{Register\+Externally\+Referenced\+Object} (K \&key)
+\mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ V $>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}{Remove}} (const K \&key)
 \item 
-\hyperlink{classv8_1_1Global}{Global}$<$ V $>$ \hyperlink{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}{Remove} (const K \&key)
+void \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}{Clear}} ()
 \item 
-void \hyperlink{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}{Clear} ()
-\item 
-\hyperlink{classv8_1_1PersistentValueMapBase_1_1PersistentValueReference}{Persistent\+Value\+Reference} \hyperlink{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}{Get\+Reference} (const K \&key)
+\mbox{\hyperlink{classv8_1_1PersistentValueMapBase_1_1PersistentValueReference}{Persistent\+Value\+Reference}} \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}{Get\+Reference}} (const K \&key)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Persistent\+Value\+Map\+Base} (\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$isolate)\hypertarget{classv8_1_1PersistentValueMapBase_a1adee3f8b1ff929f07ddf9e94c6108ed}{}\label{classv8_1_1PersistentValueMapBase_a1adee3f8b1ff929f07ddf9e94c6108ed}
-
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a1adee3f8b1ff929f07ddf9e94c6108ed}\label{classv8_1_1PersistentValueMapBase_a1adee3f8b1ff929f07ddf9e94c6108ed}} 
+{\bfseries Persistent\+Value\+Map\+Base} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
 \item 
-\hyperlink{classv8_1_1Isolate}{Isolate} $\ast$ {\bfseries isolate} ()\hypertarget{classv8_1_1PersistentValueMapBase_af2e83791955c6027213dd979eebeb8f4}{}\label{classv8_1_1PersistentValueMapBase_af2e83791955c6027213dd979eebeb8f4}
-
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_af2e83791955c6027213dd979eebeb8f4}\label{classv8_1_1PersistentValueMapBase_af2e83791955c6027213dd979eebeb8f4}} 
+\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$ {\bfseries isolate} ()
 \item 
-Traits\+::\+Impl $\ast$ {\bfseries impl} ()\hypertarget{classv8_1_1PersistentValueMapBase_aacd576258fbffaf366436a6ecdd8cdf5}{}\label{classv8_1_1PersistentValueMapBase_aacd576258fbffaf366436a6ecdd8cdf5}
-
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_aacd576258fbffaf366436a6ecdd8cdf5}\label{classv8_1_1PersistentValueMapBase_aacd576258fbffaf366436a6ecdd8cdf5}} 
+Traits\+::\+Impl $\ast$ {\bfseries impl} ()
 \item 
-void {\bfseries Remove\+Weak} (const K \&key)\hypertarget{classv8_1_1PersistentValueMapBase_a5c16ace49c257f760c92a010a93b4884}{}\label{classv8_1_1PersistentValueMapBase_a5c16ace49c257f760c92a010a93b4884}
-
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a5c16ace49c257f760c92a010a93b4884}\label{classv8_1_1PersistentValueMapBase_a5c16ace49c257f760c92a010a93b4884}} 
+void {\bfseries Remove\+Weak} (const K \&key)
 \end{DoxyCompactItemize}
 \subsection*{Static Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static V $\ast$ {\bfseries From\+Val} (Persistent\+Container\+Value v)\hypertarget{classv8_1_1PersistentValueMapBase_af8fcd471f2d53ffca9881f7c436044e8}{}\label{classv8_1_1PersistentValueMapBase_af8fcd471f2d53ffca9881f7c436044e8}
-
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_af8fcd471f2d53ffca9881f7c436044e8}\label{classv8_1_1PersistentValueMapBase_af8fcd471f2d53ffca9881f7c436044e8}} 
+static V $\ast$ {\bfseries From\+Val} (Persistent\+Container\+Value v)
 \item 
-static Persistent\+Container\+Value {\bfseries Clear\+And\+Leak} (\hyperlink{classv8_1_1Global}{Global}$<$ V $>$ $\ast$persistent)\hypertarget{classv8_1_1PersistentValueMapBase_a7b083c75829bbc4177729ffe9827c4ac}{}\label{classv8_1_1PersistentValueMapBase_a7b083c75829bbc4177729ffe9827c4ac}
-
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a7b083c75829bbc4177729ffe9827c4ac}\label{classv8_1_1PersistentValueMapBase_a7b083c75829bbc4177729ffe9827c4ac}} 
+static Persistent\+Container\+Value {\bfseries Clear\+And\+Leak} (\mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ V $>$ $\ast$persistent)
 \item 
-static Persistent\+Container\+Value {\bfseries Leak} (\hyperlink{classv8_1_1Global}{Global}$<$ V $>$ $\ast$persistent)\hypertarget{classv8_1_1PersistentValueMapBase_adacf68ca7b9fb19deab68711a70a8313}{}\label{classv8_1_1PersistentValueMapBase_adacf68ca7b9fb19deab68711a70a8313}
-
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_adacf68ca7b9fb19deab68711a70a8313}\label{classv8_1_1PersistentValueMapBase_adacf68ca7b9fb19deab68711a70a8313}} 
+static Persistent\+Container\+Value {\bfseries Leak} (\mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ V $>$ $\ast$persistent)
 \item 
-static \hyperlink{classv8_1_1Global}{Global}$<$ V $>$ \hyperlink{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}{Release} (Persistent\+Container\+Value v)
+static \mbox{\hyperlink{classv8_1_1Global}{Global}}$<$ V $>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}{Release}} (Persistent\+Container\+Value v)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$typename K, typename V, typename Traits$>$\\*
+\subsubsection*{template$<$typename K, typename V, typename Traits$>$\newline
 class v8\+::\+Persistent\+Value\+Map\+Base$<$ K, V, Traits $>$}
 
-A map wrapper that allows using \hyperlink{classv8_1_1Global}{Global} as a mapped value. C++11 embedders don\textquotesingle{}t need this class, as they can use \hyperlink{classv8_1_1Global}{Global} directly in std containers.
+A map wrapper that allows using \mbox{\hyperlink{classv8_1_1Global}{Global}} as a mapped value. C++11 embedders don\textquotesingle{}t need this class, as they can use \mbox{\hyperlink{classv8_1_1Global}{Global}} directly in std containers.
 
-The map relies on a backing map, whose type and accessors are described by the Traits class. The backing map will handle values of type Persistent\+Container\+Value, with all conversion into and out of \hyperlink{classv8_1_1V8}{V8} handles being transparently handled by this class. 
+The map relies on a backing map, whose type and accessors are described by the Traits class. The backing map will handle values of type Persistent\+Container\+Value, with all conversion into and out of \mbox{\hyperlink{classv8_1_1V8}{V8}} handles being transparently handled by this class. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}\label{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}} 
 \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Clear@{Clear}}
 \index{Clear@{Clear}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Clear()}{Clear()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ void {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Clear (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}{}\label{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}
-Traverses the map repeatedly, in case side effects of disposal cause insertions. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Contains@{Contains}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+void \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Traverses the map repeatedly, in case side effects of disposal cause insertions. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}\label{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Contains@{Contains}}
 \index{Contains@{Contains}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Contains(const K \&key)}{Contains(const K &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ bool {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Contains (
-\begin{DoxyParamCaption}
-\item[{const K \&}]{key}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}{}\label{classv8_1_1PersistentValueMapBase_a8c68e5f99c4042541c6d32232c97282a}
-Check whether a value is contained in the map. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Get@{Get}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Contains (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check whether a value is contained in the map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}\label{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Get@{Get}}
 \index{Get@{Get}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Get(const K \&key)}{Get(const K &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ {\bf Local}$<$V$>$ {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Get (
-\begin{DoxyParamCaption}
-\item[{const K \&}]{key}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}{}\label{classv8_1_1PersistentValueMapBase_a16b8f906ea42036c2f37d44813bf2a72}
-Get value stored in map. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Get\+Reference@{Get\+Reference}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+\mbox{\hyperlink{classv8_1_1Local}{Local}}$<$V$>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Get (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get value stored in map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}\label{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Get\+Reference@{Get\+Reference}}
 \index{Get\+Reference@{Get\+Reference}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Get\+Reference(const K \&key)}{GetReference(const K &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ {\bf Persistent\+Value\+Reference} {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Get\+Reference (
-\begin{DoxyParamCaption}
-\item[{const K \&}]{key}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}{}\label{classv8_1_1PersistentValueMapBase_a52e74c69b94c7ce77a65af9f32d68af4}
+\subsubsection{\texorpdfstring{Get\+Reference()}{GetReference()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+\mbox{\hyperlink{classv8_1_1PersistentValueMapBase_1_1PersistentValueReference}{Persistent\+Value\+Reference}} \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Get\+Reference (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 Get a reference to a map value. This enables fast, repeated access to a value stored in the map while the map remains unchanged.
 
-Careful\+: This is potentially unsafe, so please use with care. The value will become invalid if the value for this key changes in the underlying map, as a result of \hyperlink{classv8_1_1Set}{Set} or Remove for the same key; as a result of the weak callback for the same key; or as a result of calling \hyperlink{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}{Clear()} or destruction of the map. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Is\+Weak@{Is\+Weak}}
+Careful\+: This is potentially unsafe, so please use with care. The value will become invalid if the value for this key changes in the underlying map, as a result of \mbox{\hyperlink{classv8_1_1Set}{Set}} or Remove for the same key; as a result of the weak callback for the same key; or as a result of calling \mbox{\hyperlink{classv8_1_1PersistentValueMapBase_a1bf074e7a7c24713c9a3d40ddce89e74}{Clear()}} or destruction of the map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}\label{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Is\+Weak@{Is\+Weak}}
 \index{Is\+Weak@{Is\+Weak}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Is\+Weak()}{IsWeak()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ bool {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Is\+Weak (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}{}\label{classv8_1_1PersistentValueMapBase_a9f824b13dd30605589508db2740dd678}
-Return whether the map holds weak persistents. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Register\+Externally\+Referenced\+Object@{Register\+Externally\+Referenced\+Object}}
+\subsubsection{\texorpdfstring{Is\+Weak()}{IsWeak()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Is\+Weak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return whether the map holds weak persistents. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}\label{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Register\+Externally\+Referenced\+Object@{Register\+Externally\+Referenced\+Object}}
 \index{Register\+Externally\+Referenced\+Object@{Register\+Externally\+Referenced\+Object}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Register\+Externally\+Referenced\+Object(\+K \&key)}{RegisterExternallyReferencedObject(K &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ void {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Register\+Externally\+Referenced\+Object (
-\begin{DoxyParamCaption}
-\item[{K \&}]{key}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}{}\label{classv8_1_1PersistentValueMapBase_a7d1cd63172b997dfaac9d0f009edd709}
-Call V8\+::\+Register\+Externally\+Referenced\+Object with the map value for given key. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Release@{Release}}
+\subsubsection{\texorpdfstring{Register\+Externally\+Referenced\+Object()}{RegisterExternallyReferencedObject()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+void \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Register\+Externally\+Referenced\+Object (\begin{DoxyParamCaption}\item[{K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Call V8\+::\+Register\+Externally\+Referenced\+Object with the map value for given key. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}\label{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Release@{Release}}
 \index{Release@{Release}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Release(\+Persistent\+Container\+Value v)}{Release(PersistentContainerValue v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ static {\bf Global}$<$V$>$ {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Release (
-\begin{DoxyParamCaption}
-\item[{Persistent\+Container\+Value}]{v}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}{}\label{classv8_1_1PersistentValueMapBase_a9ffa7a4e0c59121c0471d71c04112966}
-Return a container value as \hyperlink{classv8_1_1Global}{Global} and make sure the weak callback is properly disposed of. All remove functionality should go through this. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Remove@{Remove}}
+\subsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+static \mbox{\hyperlink{classv8_1_1Global}{Global}}$<$V$>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Release (\begin{DoxyParamCaption}\item[{Persistent\+Container\+Value}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Return a container value as \mbox{\hyperlink{classv8_1_1Global}{Global}} and make sure the weak callback is properly disposed of. All remove functionality should go through this. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}\label{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Remove@{Remove}}
 \index{Remove@{Remove}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Remove(const K \&key)}{Remove(const K &key)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ {\bf Global}$<$V$>$ {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Remove (
-\begin{DoxyParamCaption}
-\item[{const K \&}]{key}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}{}\label{classv8_1_1PersistentValueMapBase_abd75a4c050416712167ba0bb9eace097}
-Return value for key and remove it from the map. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Set\+Reference@{Set\+Reference}}
-\index{Set\+Reference@{Set\+Reference}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Set\+Reference(const K \&key, const Persistent$<$ Object $>$ \&parent)}{SetReference(const K &key, const Persistent< Object > &parent)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ void {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Set\+Reference (
-\begin{DoxyParamCaption}
-\item[{const K \&}]{key, }
-\item[{const {\bf Persistent}$<$ {\bf Object} $>$ \&}]{parent}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_a6fa5f720b283dd9fa626a67e7687dcd0}{}\label{classv8_1_1PersistentValueMapBase_a6fa5f720b283dd9fa626a67e7687dcd0}
-Call \hyperlink{classv8_1_1Isolate_a055fc73d18747b96c51f00599cdd3ec1}{Isolate\+::\+Set\+Reference} with the given parent and the map value. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Set\+Return\+Value@{Set\+Return\+Value}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+\mbox{\hyperlink{classv8_1_1Global}{Global}}$<$V$>$ \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Remove (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return value for key and remove it from the map. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}\label{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Set\+Return\+Value@{Set\+Return\+Value}}
 \index{Set\+Return\+Value@{Set\+Return\+Value}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Set\+Return\+Value(const K \&key, Return\+Value$<$ Value $>$ return\+Value)}{SetReturnValue(const K &key, ReturnValue< Value > returnValue)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ bool {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Set\+Return\+Value (
-\begin{DoxyParamCaption}
-\item[{const K \&}]{key, }
-\item[{{\bf Return\+Value}$<$ {\bf Value} $>$}]{return\+Value}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}{}\label{classv8_1_1PersistentValueMapBase_a85201649d2bbd0ffdebe8be3d5c6447a}
-Get value stored in map and set it in return\+Value. Return true if a value was found. \index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Size@{Size}}
+\subsubsection{\texorpdfstring{Set\+Return\+Value()}{SetReturnValue()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+bool \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Set\+Return\+Value (\begin{DoxyParamCaption}\item[{const K \&}]{key,  }\item[{\mbox{\hyperlink{classv8_1_1ReturnValue}{Return\+Value}}$<$ \mbox{\hyperlink{classv8_1_1Value}{Value}} $>$}]{return\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get value stored in map and set it in return\+Value. Return true if a value was found. \mbox{\Hypertarget{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}\label{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}} 
+\index{v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}!Size@{Size}}
 \index{Size@{Size}!v8\+::\+Persistent\+Value\+Map\+Base@{v8\+::\+Persistent\+Value\+Map\+Base}}
-\subsubsection[{\texorpdfstring{Size()}{Size()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V , typename Traits $>$ size\+\_\+t {\bf v8\+::\+Persistent\+Value\+Map\+Base}$<$ K, V, Traits $>$\+::Size (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}{}\label{classv8_1_1PersistentValueMapBase_ade5c5db2a968fdabe073649e85b837eb}
+\subsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily template$<$typename K , typename V , typename Traits $>$ \\
+size\+\_\+t \mbox{\hyperlink{classv8_1_1PersistentValueMapBase}{v8\+::\+Persistent\+Value\+Map\+Base}}$<$ K, V, Traits $>$\+::Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 Return size of the map. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

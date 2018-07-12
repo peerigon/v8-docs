@@ -1,0 +1,37 @@
+\hypertarget{classv8_1_1CodeEventHandler}{}\section{v8\+:\+:Code\+Event\+Handler Class Reference}
+\label{classv8_1_1CodeEventHandler}\index{v8\+::\+Code\+Event\+Handler@{v8\+::\+Code\+Event\+Handler}}
+
+
+{\ttfamily \#include $<$v8-\/profiler.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classv8_1_1CodeEventHandler_a3d88d7de87c3b51d964ab5c8cc06dc03}{Code\+Event\+Handler}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+\mbox{\Hypertarget{classv8_1_1CodeEventHandler_a61d0870a92c4b814ea5dbe29acf463c6}\label{classv8_1_1CodeEventHandler_a61d0870a92c4b814ea5dbe29acf463c6}} 
+virtual void {\bfseries Handle} (\mbox{\hyperlink{classv8_1_1CodeEvent}{Code\+Event}} $\ast$code\+\_\+event)=0
+\item 
+\mbox{\Hypertarget{classv8_1_1CodeEventHandler_a3691182a45ff92e7d421c3a17bda305f}\label{classv8_1_1CodeEventHandler_a3691182a45ff92e7d421c3a17bda305f}} 
+void {\bfseries Enable} ()
+\item 
+\mbox{\Hypertarget{classv8_1_1CodeEventHandler_a9024641a77703a601dcdf840b888ff05}\label{classv8_1_1CodeEventHandler_a9024641a77703a601dcdf840b888ff05}} 
+void {\bfseries Disable} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface to listen to code creation events. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classv8_1_1CodeEventHandler_a3d88d7de87c3b51d964ab5c8cc06dc03}\label{classv8_1_1CodeEventHandler_a3d88d7de87c3b51d964ab5c8cc06dc03}} 
+\index{v8\+::\+Code\+Event\+Handler@{v8\+::\+Code\+Event\+Handler}!Code\+Event\+Handler@{Code\+Event\+Handler}}
+\index{Code\+Event\+Handler@{Code\+Event\+Handler}!v8\+::\+Code\+Event\+Handler@{v8\+::\+Code\+Event\+Handler}}
+\subsubsection{\texorpdfstring{Code\+Event\+Handler()}{CodeEventHandler()}}
+{\footnotesize\ttfamily v8\+::\+Code\+Event\+Handler\+::\+Code\+Event\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a new listener for the $\vert$isolate$\vert$. The isolate must be initialized. The listener object must be disposed after use by calling $\vert$\+Dispose$\vert$ method. Multiple listeners can be created for the same isolate. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8-\/profiler.\+h\end{DoxyCompactItemize}

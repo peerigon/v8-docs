@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wrapperinfocallback',['WrapperInfoCallback',['../classv8_1_1HeapProfiler.html#a677025dd201fd832e0464e5ab0b0d0d4',1,'v8::HeapProfiler']]]
+  ['returnaddresslocationresolver',['ReturnAddressLocationResolver',['../namespacev8.html#a8ce54c75241be41ff6a25e9944eefd2a',1,'v8']]]
 ];

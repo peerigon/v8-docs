@@ -1,0 +1,37 @@
+\hypertarget{classv8_1_1ValueDeserializer_1_1Delegate}{}\section{v8\+:\+:Value\+Deserializer\+:\+:Delegate Class Reference}
+\label{classv8_1_1ValueDeserializer_1_1Delegate}\index{v8\+::\+Value\+Deserializer\+::\+Delegate@{v8\+::\+Value\+Deserializer\+::\+Delegate}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1Object}{Object}} $>$ \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate_a8b06c19cba7e80c3c5271b0a2ca88a8a}{Read\+Host\+Object}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate)
+\item 
+virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} $>$ \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate_adcaa80ce590bbcfaac4929a9e7b49249}{Get\+Wasm\+Module\+From\+Id}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, uint32\+\_\+t transfer\+\_\+id)
+\item 
+virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$ \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} $>$ \mbox{\hyperlink{classv8_1_1ValueDeserializer_1_1Delegate_a2b42c5b9a4a60bd614e0b343f6be31b5}{Get\+Shared\+Array\+Buffer\+From\+Id}} (\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$isolate, uint32\+\_\+t clone\+\_\+id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classv8_1_1ValueDeserializer_1_1Delegate_a2b42c5b9a4a60bd614e0b343f6be31b5}\label{classv8_1_1ValueDeserializer_1_1Delegate_a2b42c5b9a4a60bd614e0b343f6be31b5}} 
+\index{v8\+::\+Value\+Deserializer\+::\+Delegate@{v8\+::\+Value\+Deserializer\+::\+Delegate}!Get\+Shared\+Array\+Buffer\+From\+Id@{Get\+Shared\+Array\+Buffer\+From\+Id}}
+\index{Get\+Shared\+Array\+Buffer\+From\+Id@{Get\+Shared\+Array\+Buffer\+From\+Id}!v8\+::\+Value\+Deserializer\+::\+Delegate@{v8\+::\+Value\+Deserializer\+::\+Delegate}}
+\subsubsection{\texorpdfstring{Get\+Shared\+Array\+Buffer\+From\+Id()}{GetSharedArrayBufferFromId()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}}$>$ v8\+::\+Value\+Deserializer\+::\+Delegate\+::\+Get\+Shared\+Array\+Buffer\+From\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{uint32\+\_\+t}]{clone\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get a \mbox{\hyperlink{classv8_1_1SharedArrayBuffer}{Shared\+Array\+Buffer}} given a clone\+\_\+id previously provided by Value\+Serializer\+::\+Get\+Shared\+Array\+Buffer\+Id \mbox{\Hypertarget{classv8_1_1ValueDeserializer_1_1Delegate_adcaa80ce590bbcfaac4929a9e7b49249}\label{classv8_1_1ValueDeserializer_1_1Delegate_adcaa80ce590bbcfaac4929a9e7b49249}} 
+\index{v8\+::\+Value\+Deserializer\+::\+Delegate@{v8\+::\+Value\+Deserializer\+::\+Delegate}!Get\+Wasm\+Module\+From\+Id@{Get\+Wasm\+Module\+From\+Id}}
+\index{Get\+Wasm\+Module\+From\+Id@{Get\+Wasm\+Module\+From\+Id}!v8\+::\+Value\+Deserializer\+::\+Delegate@{v8\+::\+Value\+Deserializer\+::\+Delegate}}
+\subsubsection{\texorpdfstring{Get\+Wasm\+Module\+From\+Id()}{GetWasmModuleFromId()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}}$>$ v8\+::\+Value\+Deserializer\+::\+Delegate\+::\+Get\+Wasm\+Module\+From\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate,  }\item[{uint32\+\_\+t}]{transfer\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get a \mbox{\hyperlink{classv8_1_1WasmCompiledModule}{Wasm\+Compiled\+Module}} given a transfer\+\_\+id previously provided by Value\+Serializer\+::\+Get\+Wasm\+Module\+Transfer\+Id \mbox{\Hypertarget{classv8_1_1ValueDeserializer_1_1Delegate_a8b06c19cba7e80c3c5271b0a2ca88a8a}\label{classv8_1_1ValueDeserializer_1_1Delegate_a8b06c19cba7e80c3c5271b0a2ca88a8a}} 
+\index{v8\+::\+Value\+Deserializer\+::\+Delegate@{v8\+::\+Value\+Deserializer\+::\+Delegate}!Read\+Host\+Object@{Read\+Host\+Object}}
+\index{Read\+Host\+Object@{Read\+Host\+Object}!v8\+::\+Value\+Deserializer\+::\+Delegate@{v8\+::\+Value\+Deserializer\+::\+Delegate}}
+\subsubsection{\texorpdfstring{Read\+Host\+Object()}{ReadHostObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classv8_1_1MaybeLocal}{Maybe\+Local}}$<$\mbox{\hyperlink{classv8_1_1Object}{Object}}$>$ v8\+::\+Value\+Deserializer\+::\+Delegate\+::\+Read\+Host\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classv8_1_1Isolate}{Isolate}} $\ast$}]{isolate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The embedder overrides this method to read some kind of host object, if possible. If not, a suitable exception should be thrown and Maybe\+Local$<$\+Object$>$() returned. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+v8/include/v8.\+h\end{DoxyCompactItemize}
